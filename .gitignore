@@ -1,5 +1,7 @@
 # Databricks
 .databricks/
+.venv/
+/s01-plataforma/docs/
 *.pyc
 __pycache__/
 .ipynb_checkpoints/
