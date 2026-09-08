@@ -13,6 +13,7 @@ cita o abstención.
 - `slides-S04.html`: deck de la sesión. Teclas: `←/→`, `F`, `T`, `M` para estrellas y `A` para respuestas.
 - `notebook.py`: notebook Databricks Source listo para importar.
 - `notebook-append.py`: ruta opcional con `ai_parse_document` → `ai_prep_search` → embeddings → recuperación sobre archivos de un Volume.
+- `slides-S04-append.html`: complemento sobre las 10 familias de recuperación, híbrido vs. reranking, facetas, grafos y nombres equivalentes en Databricks, Azure y AWS.
 - Video recomendado: [¿Qué son los EMBEDDINGS? — Grandes Modelos de Lenguaje (10:09)](https://www.youtube.com/watch?v=h4GNDHC-s50).
 
 ## Antes de ejecutar
