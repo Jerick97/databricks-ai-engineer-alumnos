@@ -1,7 +1,37 @@
 # SDD · Vigía de vigencia normativa SBS
 
 **Curso:** Databricks AI Engineer · **Sesión:** S05 · **Contexto:** Perú  
-**Estado:** primera implementación ejecutable · **Fecha:** 2026-09-08
+**Estado:** iteración dinámica ejecutable · **Fecha:** 2026-09-08
+
+## Iteración 2 — procesamiento dinámico y agentes configurables
+
+La versión ejecutable separa el contenido didáctico inicial del procesamiento real:
+
+- `bootstrap-laboratorio.py` crea una carga sintética explícita para el laboratorio.
+- `notebook-dinamico.py` no contiene el corpus: lee `documentos_pendientes`, procesa únicamente
+  snapshots con estado `pendiente`, calcula el diff contra la versión anterior, genera embeddings
+  para los cambios y deja trazabilidad.
+- En producción, `documentos_pendientes` debe alimentarse con Auto Loader desde snapshots
+  inmutables en un Volume. La detección de una nueva versión se basa en `norma_id`, `version` y
+  `content_hash`; el job no debe volver a procesar una fila marcada como `procesado`.
+- `workflow-config.json` define el patrón Lakeflow Jobs: una tarea SQL descubre el control-plane y
+  una tarea `For each` ejecuta una instancia por snapshot. Así, el conjunto de documentos puede
+  crecer sin editar el notebook.
+
+### Dónde viven los subagentes y el supervisor
+
+`agent-config.yaml` es el contrato versionado de roles, instrucciones, herramientas y permisos:
+
+- `historial`: identifica versiones y vigencia.
+- `comparador`: produce cambios por artículo y severidad.
+- `corroborador`: devuelve evidencia oficial y metadatos de fuente.
+- `supervisor`: enruta la pregunta y exige evidencia antes de responder.
+
+La configuración operativa se materializa en Databricks desde **Agents → Create Agent → Supervisor
+Agent**, conectando agentes especializados, endpoints, UC Functions, Genie o MCP según corresponda.
+El notebook conserva un supervisor lógico mínimo para validar el flujo sin depender de IDs de
+recursos externos; la creación de los recursos administrados requiere permisos de workspace y
+`EXECUTE` sobre las funciones/endpoints involucrados.
 
 ## 1. Objetivo
 

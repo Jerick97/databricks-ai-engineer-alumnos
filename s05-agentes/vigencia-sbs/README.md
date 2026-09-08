@@ -8,6 +8,10 @@ Entregable full stack de Databricks para el contexto regulatorio peruano.
 - `notebook.py`: corpus didáctico versionado, diff por artículo, embeddings, recuperación,
   herramientas read-only, router/agente, trazas y abstención.
 - `slides/S05-vigencia-deck.html`: material visual de la sesión.
+- `bootstrap-laboratorio.py`: seed explícito de fixtures; no forma parte del job productivo.
+- `notebook-dinamico.py`: procesador metadata-driven que descubre snapshots pendientes desde Delta.
+- `workflow-config.json`: Lakeflow Job con SQL de descubrimiento y `For each` dinámico.
+- `agent-config.yaml` y `SUBAGENTS.md`: contratos, ubicación y permisos de subagentes y supervisor.
 
 ## Caso
 
@@ -25,3 +29,10 @@ hasheados y procesados con `ai_parse_document`.
 
 El agente es de solo lectura: el modelo puede proponer una herramienta, pero la allowlist,
 los argumentos, la evidencia y la traza se validan antes de responder.
+
+## Flujo dinámico
+
+Ejecuta una vez `bootstrap-laboratorio.py` para preparar la clase y después ejecuta
+`notebook-dinamico.py`. En producción, Auto Loader alimenta `documentos_pendientes`; el mismo
+procesador se ejecuta solo para nuevos `doc_id` y un Lakeflow `For each` puede paralelizar cada
+snapshot. Repetir el job sin nuevas filas termina con `NO_PENDING_WORK`.
