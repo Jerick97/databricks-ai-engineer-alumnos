@@ -3,6 +3,7 @@
 .venv/
 /s01-plataforma/docs/
 /s02-pipelines/docs/
+/s03-genai/docs/
 *.pyc
 __pycache__/
 .ipynb_checkpoints/
