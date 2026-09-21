@@ -5,6 +5,7 @@
 /s02-pipelines/docs/
 /s03-genai/docs/
 /s04-rag/docs/
+/s05-agentes/docs/guia-tarea-sesion-05.md
 *.pyc
 __pycache__/
 .ipynb_checkpoints/
