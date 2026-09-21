@@ -4,6 +4,7 @@
 /s01-plataforma/docs/
 /s02-pipelines/docs/
 /s03-genai/docs/
+/s04-rag/docs/
 *.pyc
 __pycache__/
 .ipynb_checkpoints/
