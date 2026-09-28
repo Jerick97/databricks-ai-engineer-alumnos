@@ -311,20 +311,27 @@ if REVIEW_ERROR:
 
 # COMMAND ----------
 HUMAN_REVIEWS = []
+HUMAN_REVIEWER = "Emerson Suarez"
 for case_id in ("documento", "compuesto", "sin_costos"):
     row = next((r for r in review_rows if r["expectations"]["case_id"] == case_id), None)
     raw = dbutils.widgets.get(f"revision_{case_id}").strip()
-    item = {"case_id": case_id, "trace_id": row["trace_id"] if row else None, "status": "pending"}
+    item = {"case_id": case_id, "trace_id": row["trace_id"] if row else None,
+            "status": "pending", "human_reviewer": HUMAN_REVIEWER}
     if raw and row:
         value = json.loads(raw)
         if value.get("veredicto") not in {"correcto", "parcial", "incorrecto", "no_evaluable"}:
             raise ValueError(f"Veredicto inválido en revisión {case_id}")
         if len(str(value.get("evidencia", "")).strip()) < 20:
             raise ValueError(f"Explica la evidencia de revisión {case_id} (20 caracteres mínimo)")
-        item.update({"status": "reviewed", "veredicto": value["veredicto"],
-                     "evidencia": value["evidencia"], "origen": "revisión manual en notebook"})
+        item.update({"status": "approved" if value["veredicto"] == "correcto" else
+                     "pending" if value["veredicto"] == "no_evaluable" else "rejected",
+                     "veredicto": value["veredicto"], "evidence": value["evidencia"],
+                     "corrected_response": value.get("corrected_response", row["expectations"]["expected_response"]),
+                     "origen": "revisión manual en notebook"})
     HUMAN_REVIEWS.append(item)
-print("Revisiones registradas:", sum(r["status"] == "reviewed" for r in HUMAN_REVIEWS), "/ 3")
+for item in HUMAN_REVIEWS:
+    print(item["case_id"], "·", item["status"], "·", item.get("evidence", "sin evidencia"))
+print("Revisiones registradas:", sum(r["status"] in {"approved", "rejected"} for r in HUMAN_REVIEWS), "/ 3")
 
 # COMMAND ----------
 # MAGIC %md
@@ -349,7 +356,7 @@ REPORT = {
     "rules_metrics": RULE_RESULT.metrics if RULE_RESULT else None,
     "judge_metrics": JUDGE_RESULT.metrics if JUDGE_RESULT else None,
     "evaluation_errors": EVAL_ERRORS, "review_url": REVIEW_URL,
-    "review_error": REVIEW_ERROR, "review_status": "completa" if all(r["status"] == "reviewed" for r in HUMAN_REVIEWS) else "pendiente_humano",
+    "review_error": REVIEW_ERROR, "review_status": "completa" if all(r["status"] in {"approved", "rejected"} for r in HUMAN_REVIEWS) else "pendiente_humano",
     "cases": OBSERVED, "lexical_demo": LEXICAL, "lexical_error": LEXICAL_ERROR,
     "limitations": [
         "Genie requiere SQL warehouse; Free Edition devolvió RESOURCE_EXHAUSTED.",
@@ -364,17 +371,55 @@ with mlflow.start_run(run_name="S06-evidencia-personal-sin-genie") as export_run
     mlflow.log_text(json.dumps(DATA, ensure_ascii=False, indent=2), "dataset_s06.json")
     mlflow.log_dict(SCORES_EXPORT, "scores_s06.json")
     mlflow.log_text(json.dumps(HUMAN_REVIEWS, ensure_ascii=False, indent=2), "revision_humana.json")
+    def metric_text(value):
+        return "N/A" if value is None else str(value)
+    metrics_by_type = [
+        f"- {score['case_id']}: precision documental={metric_text(score['context_precision'])}; "
+        f"recall documental={metric_text(score['context_recall'])}."
+        for score in RULE_SCORES if score["context_precision"] is not None
+    ]
+    metric_lines = "\n".join(metrics_by_type)
+    sin_evidencia_score = next(s for s in RULE_SCORES if s["case_id"] == "sin_evidencia")
+    sin_evidencia_row = next(r for r in OBSERVED if r["expectations"]["case_id"] == "sin_evidencia")
+    irrelevant_docs = sorted({d["documento_id"] for d in sin_evidencia_row["outputs"]["contexts"]})
+    no_tool_ids = {"falta_anio", "falta_categoria", "sin_costos", "escritura", "inyeccion"}
+    no_tool_pass = sum(s["herramientas_correctas"] for s in RULE_SCORES if s["case_id"] in no_tool_ids)
     decision = (
         "# Decisión S06 · evaluación personal\n\n"
         f"Dataset SHA256: {DATASET_HASH}\n\n"
+        f"Run de exportación: {export_run.info.run_id}.\n\n"
         f"Casos planeados: {len(DATA)}; observados: {len(OBSERVED)}; errores de ejecución: {len(FAILED)}; "
         f"bloqueados por entorno: {len(BLOCKED_CASES)} (Genie).\n\n"
         f"Run de reglas: {SCORES_EXPORT['mlflow_rules_run_id']}; run de juez: {SCORES_EXPORT['mlflow_judge_run_id']}.\n\n"
-        f"Revisiones humanas: {sum(r['status'] == 'reviewed' for r in HUMAN_REVIEWS)}/3.\n\n"
+        f"Revisiones humanas: {sum(r['status'] in {'approved', 'rejected'} for r in HUMAN_REVIEWS)}/3; "
+        f"sesión revisada: {REVIEW_URL}.\n\n"
+        "## Métricas por tipo de caso\n\n"
+        f"- Herramientas: {sum(s['herramientas_correctas'] for s in RULE_SCORES)}/{len(RULE_SCORES)} "
+        "casos con selección esperada.\n"
+        f"- Ventas: oracle SQL independiente={oracle_total}; "
+        f"comparación tool/SQL={next(s for s in RULE_SCORES if s['case_id'] == 'ventas')['cifra_tool_vs_sql']}.\n"
+        f"- Aclaraciones, límite de costos y acciones prohibidas: {no_tool_pass}/{len(no_tool_ids)} "
+        "casos con selección de herramientas esperada (ninguna); el juez y humano comprueban el texto final.\n"
+        f"{metric_lines}\n"
+        f"- Juez: {json.dumps(JUDGE_RESULT.metrics if JUDGE_RESULT else {}, ensure_ascii=False, default=str)}; "
+        "mismo endpoint que el agente, con riesgo de auto preferencia.\n\n"
+        "## Fallo confirmado y regresión\n\n"
+        f"- `sin_evidencia` ({sin_evidencia_score['trace_id']}) recuperó documentos irrelevantes "
+        f"(precision={sin_evidencia_score['context_precision']}, "
+        f"recall=N/A porque no hay documentos relevantes): {', '.join(irrelevant_docs)}. "
+        "La respuesta final se abstuvo, pero citó esos documentos ajenos a descuentos; "
+        "el fallo está en la recuperación y en citar contexto irrelevante.\n"
+        "- Corrección propuesta: filtrar fragmentos por relevancia antes de pasarlos al agente; "
+        "si ninguno supera el umbral validado, devolver contexto vacío y abstenerse.\n"
+        "- Caso de regresión: repetir `sin_evidencia` con el mismo corpus y hash; exigir cero "
+        "fragmentos ni citas irrelevantes y ninguna cifra o requisito inventado. Medir también la tasa "
+        "de abstención correcta con nuevas preguntas sin respuesta documental.\n\n"
         "Decisión: no aprobar producción. El caso Genie carece de oracle y ejecución actuales; "
         "completarlo cuando vuelva el SQL warehouse y repetir la evaluación. "
-        "Revisar los fallos y desacuerdos de las trazas observadas antes de decidir un cambio de agente.\n\n"
-        "Para S08: muestrear 10 % del tráfico, 100 % de errores y revisar a diario.\n"
+        "Conservar `complete=false` y separar fallos de recuperación de errores de ejecución.\n\n"
+        "Para S08: muestrear 10 % del tráfico y 100 % de errores, excluir datos sensibles, "
+        "asignar revisión diaria a Emerson Suarez y alertar ante cualquier escritura prohibida "
+        "o más de 5 % de respuestas sin fuente en el muestreo. No hay tráfico productivo aún.\n"
     )
     mlflow.log_text(decision, "decision.md")
 print("Run exportado:", export_run.info.run_id)

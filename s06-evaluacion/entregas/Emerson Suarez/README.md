@@ -103,6 +103,24 @@ y que `review_url` abra la sesión revisada. No incluyas una URL particular en e
 La versión corregida del notebook conserva el enlace de Review App si CP5.2 se repite y
 muestra el estado de revisión real al final de CP6.
 
+#### Validación de `logged/` antes de entregar
+
+Los cinco archivos descargados abren y coinciden en hash, casos, trazas y run IDs: 11 casos
+planeados, 10 observados, 0 errores de ejecución, 3 revisiones y Genie bloqueado. **No entregues
+aún esta copia de `logged/`**: en `revision_humana.json` se cruzaron dos justificaciones.
+`compuesto` contiene la explicación de falta de costos y `sin_costos` contiene la de la cifra
+116024.88 y la política. Corrige esos **dos widgets** tras cotejar las trazas; `documento`
+está bien asociado. El exportador anterior también omitía el responsable humano, la respuesta
+correcta y las métricas y regresión que solicita la consigna.
+
+El notebook actualizado registra `approved`/`rejected`, `human_reviewer`, `evidence` y
+`corrected_response`; CP6 amplía `decision.md` con métricas por caso documental, el fallo de
+`sin_evidencia` (precision 0 y citas a documentos ajenos a descuentos), corrección propuesta y
+prueba de regresión. Una vez
+corregidos los widgets, ejecuta **solo CP5.2b y CP6**, comprueba las tres justificaciones
+impresas y reemplaza los cinco archivos de `logged/` por los del último run. Conserva el
+enlace de la sesión de Review App que llegó a 100 %; no repitas CP2 ni CP5.2.
+
 El notebook base del docente no se modificó. El notebook personal hace una evaluación nueva;
 los resultados del replay histórico de S05 permanecen separados.
 
@@ -115,8 +133,8 @@ no una evaluación nueva del agente en S06. Por eso el resumen declara
 
 ## Trabajo pendiente para cerrar S06
 
-1. Corregir el enlace de Review App en el run de exportación, descargar sus cinco artefactos
-   y comprobar su contenido.
+1. Corregir los widgets intercambiados, reexportar con el notebook actualizado y reemplazar
+   los cinco artefactos de `logged/` tras comprobar su contenido.
 2. Completar el caso Genie con SQL independiente cuando vuelva el warehouse; recalcular el
    hash del dataset y repetir la evaluación de ese caso.
 3. Conservar la decisión provisional y el enlace de la sesión de Review App efectivamente
