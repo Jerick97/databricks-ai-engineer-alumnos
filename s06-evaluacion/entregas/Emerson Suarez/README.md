@@ -1,7 +1,7 @@
 # Sesión 06 · Registro de avance y límite de Free Edition
 
-**Fecha:** 27 de septiembre de 2026. **Estado:** diez casos evaluados y tres revisiones
-registradas; CP6 y el caso Genie siguen pendientes.
+**Fecha:** 27 de septiembre de 2026. **Estado:** diez casos evaluados, tres revisiones
+registradas y CP6 ejecutado; falta validar la exportación y Genie sigue pendiente.
 
 El objetivo de S06 es evaluar el `ResponsesAgent` construido en S05 con casos nuevos,
 referencias independientes, trazas, métricas y revisión humana. Mi [entrega de S05](../../../s05-agentes/entregas/Emerson%20Suarez/evidencia.md)
@@ -90,8 +90,18 @@ Abre **solo** `notebook-s06-personal` en este mismo Git Folder y ejecútalo por 
 En la corrida actual, CP1 verificó el hash y recalculó **116024.88** para Bebidas 2026;
 CP2 observó **10 casos, 0 errores de ejecución y 1 Genie bloqueado**; CP3 y CP4 terminaron
 con métricas; Review App llegó a 100 % en la sesión revisada y CP5.2b mostró **3 / 3**.
-El siguiente paso es **CP6**. Una segunda ejecución accidental de CP5.2 creó otra sesión
-pendiente: su enlace no sustituye las tres respuestas ya guardadas en la sesión revisada.
+CP6 creó un run de exportación. Una segunda ejecución accidental de CP5.2 creó otra sesión
+pendiente; el `review_url` del primer run exportado apunta a esa sesión nueva. El JSON del
+reporte sí tiene `review_status: completa`, pero la línea de estado de esa versión del notebook
+imprimía por error «revisión humana pendiente».
+
+Para corregir **solo el enlace del reporte ya exportado**, sin repetir inferencias ni juicios:
+abre la sesión que mostraba **100 % Reviewed**, copia su URL, ejecuta una celda Python nueva
+en el notebook con `REVIEW_URL = "<URL de esa sesión revisada>"` y luego ejecuta **solo CP6**.
+Descarga los artefactos del **último** run de exportación y confirma `review_status: completa`
+y que `review_url` abra la sesión revisada. No incluyas una URL particular en el código Git.
+La versión corregida del notebook conserva el enlace de Review App si CP5.2 se repite y
+muestra el estado de revisión real al final de CP6.
 
 El notebook base del docente no se modificó. El notebook personal hace una evaluación nueva;
 los resultados del replay histórico de S05 permanecen separados.
@@ -105,7 +115,8 @@ no una evaluación nueva del agente en S06. Por eso el resumen declara
 
 ## Trabajo pendiente para cerrar S06
 
-1. Ejecutar CP6, descargar sus cinco artefactos y comprobar su contenido.
+1. Corregir el enlace de Review App en el run de exportación, descargar sus cinco artefactos
+   y comprobar su contenido.
 2. Completar el caso Genie con SQL independiente cuando vuelva el warehouse; recalcular el
    hash del dataset y repetir la evaluación de ese caso.
 3. Conservar la decisión provisional y el enlace de la sesión de Review App efectivamente

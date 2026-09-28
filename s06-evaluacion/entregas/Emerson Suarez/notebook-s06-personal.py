@@ -275,10 +275,13 @@ for row in LEXICAL:
 # MAGIC Para S08: muestrear 10 % del tráfico, 100 % de errores y revisar a diario.
 
 # COMMAND ----------
-REVIEW_URL, REVIEW_ERROR = None, None
+REVIEW_URL = globals().get("REVIEW_URL")
+REVIEW_ERROR = None
 review_ids = {"documento", "compuesto", "sin_costos"}
 review_rows = [row for row in OBSERVED if row["expectations"]["case_id"] in review_ids and row["trace_id"]]
-if len(review_rows) == 3:
+if REVIEW_URL:
+    print("Sesión Review App existente:", REVIEW_URL)
+elif len(review_rows) == 3:
     try:
         import mlflow.genai.labeling as labeling
         import mlflow.genai.label_schemas as schemas
@@ -376,7 +379,7 @@ with mlflow.start_run(run_name="S06-evidencia-personal-sin-genie") as export_run
     mlflow.log_text(decision, "decision.md")
 print("Run exportado:", export_run.info.run_id)
 print("Estado:", REPORT["cases_observed"], "observados,", len(FAILED), "errores de ejecución,",
-      len(BLOCKED_CASES), "bloqueado por entorno; revisión humana pendiente")
+      len(BLOCKED_CASES), "bloqueado por entorno; revisión humana", REPORT["review_status"])
 print("S06_REPORT=" + json.dumps(REPORT, ensure_ascii=False, default=str))
 
 # COMMAND ----------
