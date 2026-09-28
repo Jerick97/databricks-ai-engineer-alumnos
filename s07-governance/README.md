@@ -12,6 +12,8 @@
 
 ## Notebook principal — en esta carpeta
 
+Para un workspace personal de Databricks Free Edition, revisa las capacidades sujetas a permisos, configuración y cuota antes de ejecutar el notebook docente. La guía de ejecución personal en `docs/guia-tarea-sesion-07.md` se conserva localmente y no forma parte de este repositorio.
+
 [notebook.py](notebook.py): laboratorio S07 sobre AgenteNeptuno, Unity Catalog y guardrails. [Abrir el notebook validado](https://dbc-0410b264-20c7.cloud.databricks.com/editor/notebooks/1155658220803956?o=7474657121564806).
 
 Antes de ejecutar: completar S02/S04/S05, configurar catálogo y revisar la ruta `%run` a S05. El widget de moderación usa `ai_gateway` y el endpoint8B con Safety activo. La configuración del filtro afecta todas las llamadas a ese endpoint. Otro workspace necesita sus propios recursos y permisos.

@@ -7,6 +7,7 @@
 /s04-rag/docs/
 /s05-agentes/docs/guia-tarea-sesion-05.md
 /s06-evaluacion/docs/guia-tarea-sesion-06.md
+/s07-governance/docs/guia-tarea-sesion-07.md
 *.pyc
 __pycache__/
 .ipynb_checkpoints/
