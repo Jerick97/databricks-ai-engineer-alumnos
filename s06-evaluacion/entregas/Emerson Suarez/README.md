@@ -44,6 +44,25 @@ permite revisar el dataset y comprobar su hash en Databricks sin llamar a Genie 
 La referencia de Genie permanece `pending`: una cifra obtenida anteriormente por Genie no
 serviría como oracle independiente.
 
+### Cómo continuar CP1 en Databricks
+
+Conservo localmente `original/notebook-incompleto.ipynb`, el intento que se detuvo en `%run`.
+Para avanzar, abre `notebook-cp1-personal` en este mismo Git Folder:
+
+1. La primera celda verifica los once casos y el SHA256 del borrador. En la ejecución del
+   27 de septiembre mostró `Referencia Genie: pending`.
+2. Ejecuta **CP1.1** para revisar preguntas, herramientas y fuentes. El undécimo caso es
+   `lacteo_fuera_rango` y su referencia procede de la ficha de Lácteos de S04.
+3. Ejecuta **CP1.2** para leer el oracle previo de ventas y los textos de la política de
+   devoluciones y de la ficha de Lácteos. Confirma manualmente las etiquetas documentales.
+4. Conserva el hash impreso. El caso Genie seguirá pendiente hasta calcular su referencia
+   con SQL independiente sobre el catálogo personal; después habrá que actualizar el dataset
+   y congelar un hash nuevo antes de CP2.
+
+Este notebook prepara CP1 y no vuelve a ejecutar `%run`. El notebook base del docente no se
+modificó. Los resultados del replay histórico de S05 siguen separados de los once casos nuevos
+de S06.
+
 El replay encontró siete casos con selección de herramientas conforme a lo esperado;
 los cuatro casos que usaron herramientas no registraron errores. Dos respuestas de
 ventas coincidieron con el SQL previo. Las métricas documentales, calculadas por documento,
