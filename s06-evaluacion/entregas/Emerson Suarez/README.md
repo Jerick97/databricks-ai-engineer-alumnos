@@ -84,7 +84,7 @@ Abre **solo** `notebook-s06-personal` en este mismo Git Folder y ejecútalo por 
    al rellenarlos: esa celda crea otra sesión de Review App, nueva y pendiente. Tampoco repitas
    CP2, porque produciría otra corrida y otras trazas.
 4. Ejecuta **CP6 una vez después del 3 / 3**. Descarga los cinco artefactos del run de
-   exportación; comprueba que `revision_humana.json` tenga tres entradas `reviewed` y que
+   exportación; comprueba que `revision_humana.json` tenga tres entradas `approved` o `rejected` y que
    `evaluacion_s06.json` conserve `genie` como bloqueado, sin puntuarlo como fallo.
 
 En la corrida actual, CP1 verificó el hash y recalculó **116024.88** para Bebidas 2026;
@@ -120,6 +120,17 @@ prueba de regresión. Una vez
 corregidos los widgets, ejecuta **solo CP5.2b y CP6**, comprueba las tres justificaciones
 impresas y reemplaza los cinco archivos de `logged/` por los del último run. Conserva el
 enlace de la sesión de Review App que llegó a 100 %; no repitas CP2 ni CP5.2.
+
+#### Si Git Pull reinició Python
+
+Abre de nuevo `notebook-s06-personal` después del Pull y busca **Recuperación después de Git Pull**
+entre CP5.1 y CP5.2. Si esa sección no aparece, recarga la pestaña del notebook. Ejecuta su
+celda Python: recupera del run `ff733953b1424cee917ea1cd001d6900` los diez casos, las
+puntuaciones y el enlace de la Review App ya completada; también verifica el hash del dataset.
+Después comprueba los tres widgets de revisión y ejecuta **CP5.2b → CP6**. La salida de CP5.2b
+debe ser `3 / 3`. No hace falta volver a ejecutar CP0–CP4 ni CP5.2; esta última crearía otra
+sesión de Review App. Descarga del nuevo run de CP6 los cinco artefactos y reemplaza la copia
+anterior de `logged/`.
 
 El notebook base del docente no se modificó. El notebook personal hace una evaluación nueva;
 los resultados del replay histórico de S05 permanecen separados.

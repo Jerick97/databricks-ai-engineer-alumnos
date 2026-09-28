@@ -265,6 +265,62 @@ for row in LEXICAL:
 
 # COMMAND ----------
 # MAGIC %md
+# MAGIC ## Recuperación después de Git Pull · Solo si Python perdió sus variables
+# MAGIC Esta celda reconstruye CP1–CP4 desde el run exportado antes de corregir las revisiones.
+# MAGIC No llama al agente, al juez ni a Genie. Si ya tienes `OBSERVED` en memoria, sáltala.
+# MAGIC Usa el run `ff733953b1424cee917ea1cd001d6900`; cambia el ID si recuperas otra corrida.
+# MAGIC Después ejecuta **solo CP5.2b y CP6**. No repitas CP5.2, que crea otra sesión.
+
+# COMMAND ----------
+if "OBSERVED" not in globals():
+    import hashlib, json
+    from pathlib import Path
+    from types import SimpleNamespace
+    import pandas as pd
+    import mlflow
+
+    SOURCE_RUN_ID = "ff733953b1424cee917ea1cd001d6900"
+    def load_run_json(name):
+        path = Path(mlflow.artifacts.download_artifacts(run_id=SOURCE_RUN_ID, artifact_path=name))
+        return json.loads(path.read_text(encoding="utf-8"))
+
+    saved_report = load_run_json("evaluacion_s06.json")
+    DATA = load_run_json("dataset_s06.json")
+    saved_scores = load_run_json("scores_s06.json")
+    DATASET_HASH = hashlib.sha256(json.dumps(DATA, ensure_ascii=False, sort_keys=True).encode("utf-8")).hexdigest()
+    assert DATASET_HASH == saved_report["dataset_sha256"] and len(DATA) == 11
+    OBSERVED = saved_report["cases"]
+    assert len(OBSERVED) == 10 and saved_report["cases_environment_blocked"] == ["genie"]
+    FAILED = saved_report["cases_execution_failed"]
+    BLOCKED_CASES = saved_report["cases_environment_blocked"]
+    RULE_SCORES = saved_scores["deterministic_by_case"]
+    assert {s["case_id"] for s in RULE_SCORES} == {r["expectations"]["case_id"] for r in OBSERVED}
+    RULE_RESULT = SimpleNamespace(run_id=saved_scores["mlflow_rules_run_id"],
+                                  metrics=saved_report["rules_metrics"],
+                                  result_df=pd.DataFrame(saved_scores["mlflow_rules_by_case"]))
+    JUDGE_RESULT = SimpleNamespace(run_id=saved_scores["mlflow_judge_run_id"],
+                                   metrics=saved_report["judge_metrics"],
+                                   result_df=pd.DataFrame(saved_scores["mlflow_judge_by_case"]))
+    exp6 = mlflow.set_experiment(experiment_id=saved_report["experiment_id"])
+    ENDPOINT = saved_report["agent_model"]
+    JUDGE_MODEL = saved_report["judge_model"]
+    oracle_sql = saved_report["oracle_sql_ventas"]
+    oracle_total = saved_report["oracle_ventas"]
+    EVAL_ERRORS = saved_report["evaluation_errors"]
+    REVIEW_URL = saved_report["review_url"]
+    REVIEW_ERROR = saved_report["review_error"]
+    LEXICAL = saved_report["lexical_demo"]
+    LEXICAL_ERROR = saved_report["lexical_error"]
+    review_ids = {"documento", "compuesto", "sin_costos"}
+    review_rows = [r for r in OBSERVED if r["expectations"]["case_id"] in review_ids and r["trace_id"]]
+    assert len(review_rows) == 3 and "/tasks/labeling/" in REVIEW_URL
+    print("Recuperados:", len(OBSERVED), "casos y", len(RULE_SCORES), "scores del run", SOURCE_RUN_ID)
+    print("Review App recuperada:", REVIEW_URL)
+else:
+    print("OBSERVED ya está en memoria; usa CP5.2b y CP6")
+
+# COMMAND ----------
+# MAGIC %md
 # MAGIC ## CP5.2 · Revisión humana y diseño online
 # MAGIC Se intenta abrir una sesión privada con tres trazas reales. **Tú** debes leerlas y
 # MAGIC valorar cada una. En los widgets `revision_documento`, `revision_compuesto` y
