@@ -35,33 +35,34 @@ Los artefactos provisionales son:
 - [Puntuaciones deterministas](provisional-local/scores_s06_historico.json).
 - [Resumen y límites](provisional-local/evaluacion_s06_historica.json).
 
-Para continuar con **CP1** sin modificar el notebook del docente preparé el
-[notebook personal de CP1](notebook-cp1-personal.py), el
+Para continuar **CP0–CP6** sin modificar el notebook del docente preparé el
+[notebook personal de S06](notebook-s06-personal.py), el
 [borrador de once casos](provisional-local/dataset_s06_cp1_borrador.json) y sus
 [referencias y pendientes](provisional-local/referencias_s06_cp1.json). El caso adicional
 pregunta por un lote lácteo recibido a 8 °C y usa la ficha fuente de S04. El notebook personal
-permite revisar el dataset y comprobar su hash en Databricks sin llamar a Genie ni a `%run`.
-La referencia de Genie permanece `pending`: una cifra obtenida anteriormente por Genie no
-serviría como oracle independiente.
+reutiliza el agente Python de S05 con `%run` hasta CP3, sin pasar por el notebook de Genie.
+Valida las referencias, ejecuta los diez casos accesibles, calcula métricas, invoca MLflow,
+prepara tres revisiones humanas y exporta la evidencia. El caso Genie permanece `pending`:
+una cifra obtenida anteriormente por Genie no serviría como oracle independiente.
 
-### Cómo continuar CP1 en Databricks
+### Cómo continuar S06 en Databricks
 
 Conservo localmente `original/notebook-incompleto.ipynb`, el intento que se detuvo en `%run`.
-Para avanzar, abre `notebook-cp1-personal` en este mismo Git Folder:
+Abre **solo** `notebook-s06-personal` en este mismo Git Folder y ejecútalo por bloques:
 
-1. La primera celda verifica los once casos y el SHA256 del borrador. En la ejecución del
-   27 de septiembre mostró `Referencia Genie: pending`.
-2. Ejecuta **CP1.1** para revisar preguntas, herramientas y fuentes. El undécimo caso es
-   `lacteo_fuera_rango` y su referencia procede de la ficha de Lácteos de S04.
-3. Ejecuta **CP1.2** para leer el oracle previo de ventas y los textos de la política de
-   devoluciones y de la ficha de Lácteos. Confirma manualmente las etiquetas documentales.
-4. Conserva el hash impreso. El caso Genie seguirá pendiente hasta calcular su referencia
-   con SQL independiente sobre el catálogo personal; después habrá que actualizar el dataset
-   y congelar un hash nuevo antes de CP2.
+1. **CP0** carga el agente S05 hasta CP3. **CP1** verifica los once casos, el SHA256,
+   recalcula la cifra de ventas con SQL independiente y contrasta los documentos S04.
+2. **CP2** infiere diez casos nuevos; el undécimo (`genie`) queda bloqueado por la cuota del
+   warehouse. Revisa trazas y errores antes de seguir.
+3. **CP3–CP4** calculan reglas, MLflow GenAI y el juez. **CP5** muestra BLEU/ROUGE y prepara
+   tres trazas. Léelas, escribe veredicto y evidencia en los tres widgets de revisión, y
+   vuelve a ejecutar solo **CP5.2b**. Los widgets empiezan vacíos para no simular juicios humanos.
+4. **CP6** exporta `evaluacion_s06.json`, `dataset_s06.json`, `scores_s06.json`,
+   `revision_humana.json` y `decision.md`. Descárgalos del run. La decisión declara el bloqueo
+   Genie y no aprueba producción.
 
-Este notebook prepara CP1 y no vuelve a ejecutar `%run`. El notebook base del docente no se
-modificó. Los resultados del replay histórico de S05 siguen separados de los once casos nuevos
-de S06.
+El notebook base del docente no se modificó. El notebook personal hace una evaluación nueva;
+los resultados del replay histórico de S05 permanecen separados.
 
 El replay encontró siete casos con selección de herramientas conforme a lo esperado;
 los cuatro casos que usaron herramientas no registraron errores. Dos respuestas de
@@ -72,14 +73,12 @@ no una evaluación nueva del agente en S06. Por eso el resumen declara
 
 ## Trabajo pendiente para cerrar S06
 
-1. Confirmar las etiquetas del borrador de CP1 contra el corpus actual y calcular un oracle
-   SQL independiente para Genie cuando haya cómputo disponible.
-2. Ejecutar el dataset nuevo de S06, incluido el caso propio, cuando haya cómputo disponible.
-3. Alinear el oracle y la fuente declarada de Genie con el espacio personal: el notebook base
-   de S06 aún usa referencias al espacio y catálogo docentes.
-4. Ejecutar el juez de MLflow, revisar al menos tres casos como persona y registrar la decisión.
-5. Exportar los artefactos finales pedidos por la consigna. Los archivos de `provisional-local/`
-   quedan como evidencia del avance y no sustituyen esos artefactos.
+1. Ejecutar el notebook personal de CP0 a CP6 y revisar los errores observados.
+2. Revisar al menos tres trazas como persona y registrar la decisión.
+3. Completar el caso Genie con SQL independiente cuando vuelva el warehouse; recalcular el
+   hash del dataset y repetir la evaluación de ese caso.
+4. Descargar los artefactos del run. Los archivos de `provisional-local/` son fuentes del
+   borrador y evidencia histórica, no sustituyen los artefactos nuevos.
 
 Una API externa podría puntuar respuestas guardadas, pero cambiaría el entorno de evaluación
 y no resolvería la consulta pendiente de Genie. Mantendré separadas las métricas históricas
