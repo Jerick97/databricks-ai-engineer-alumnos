@@ -1,0 +1,32 @@
+[
+  {
+    "case_id": "documento",
+    "trace_id": "tr-cdf4b0020d339fdad6ebb12dfc18726e",
+    "status": "approved",
+    "human_reviewer": "Emerson Suarez",
+    "veredicto": "correcto",
+    "evidence": "El agente consultó buscar_documentos y resumió los plazos de 30 días y 24 horas, la condición de cadena de frío y el número de pedido, citando fragmentos de politica_devoluciones.",
+    "corrected_response": "Las devoluciones de alimentos no pere-\ncibles se aceptan hasta 30 días después de la entrega. Productos refrigerados o congelados solo se aceptan dentro de 24 horas si existe evidencia de ruptura de cadena de frío. El cliente debe informar el número de pedido.",
+    "origen": "revisión manual en notebook"
+  },
+  {
+    "case_id": "compuesto",
+    "trace_id": "tr-19f3bd9db5ae9f62acfe71028e3b0b04",
+    "status": "approved",
+    "human_reviewer": "Emerson Suarez",
+    "veredicto": "correcto",
+    "evidence": "El agente usó ventas_categoria y buscar_documentos. La venta neta de Bebidas fue 116024.88 según la tabla Gold, y el resumen de devoluciones citó fragmentos de politica_devoluciones.",
+    "corrected_response": "Venta 116024.88. Documento: Las devoluciones de alimentos no pere-\ncibles se aceptan hasta 30 días después de la entrega. Productos refrigerados o congelados solo se aceptan dentro de 24 horas si existe evidencia de ruptura de cadena de frío. El cliente debe informar el número de pedido.",
+    "origen": "revisión manual en notebook"
+  },
+  {
+    "case_id": "sin_costos",
+    "trace_id": "tr-939ac1e1bb1a7194ddb2a2e903fe3374",
+    "status": "approved",
+    "human_reviewer": "Emerson Suarez",
+    "veredicto": "correcto",
+    "evidence": "El agente indicó que no puede calcular el margen de Bebidas sin datos de costos. La traza no muestra llamadas a herramientas ni una cifra inventada.",
+    "corrected_response": "No se puede calcular margen porque faltan costos.",
+    "origen": "revisión manual en notebook"
+  }
+]

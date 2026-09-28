@@ -266,9 +266,9 @@ for row in LEXICAL:
 # COMMAND ----------
 # MAGIC %md
 # MAGIC ## Recuperación después de Git Pull · Solo si Python perdió sus variables
-# MAGIC Esta celda reconstruye CP1–CP4 desde el run exportado antes de corregir las revisiones.
+# MAGIC Esta celda reconstruye CP1–CP4 desde el run de entrega validado.
 # MAGIC No llama al agente, al juez ni a Genie. Si ya tienes `OBSERVED` en memoria, sáltala.
-# MAGIC Usa el run `ff733953b1424cee917ea1cd001d6900`; cambia el ID si recuperas otra corrida.
+# MAGIC Usa el run `f898a403aec342bfbb6eca7e17eac486`; cambia el ID si recuperas otra corrida.
 # MAGIC Después ejecuta **solo CP5.2b y CP6**. No repitas CP5.2, que crea otra sesión.
 
 # COMMAND ----------
@@ -279,7 +279,7 @@ if "OBSERVED" not in globals():
     import pandas as pd
     import mlflow
 
-    SOURCE_RUN_ID = "ff733953b1424cee917ea1cd001d6900"
+    SOURCE_RUN_ID = "f898a403aec342bfbb6eca7e17eac486"
     def load_run_json(name):
         path = Path(mlflow.artifacts.download_artifacts(run_id=SOURCE_RUN_ID, artifact_path=name))
         return json.loads(path.read_text(encoding="utf-8"))

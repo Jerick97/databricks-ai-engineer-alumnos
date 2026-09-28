@@ -1,7 +1,8 @@
 # Sesión 06 · Registro de avance y límite de Free Edition
 
 **Fecha:** 27 de septiembre de 2026. **Estado:** diez casos evaluados, tres revisiones
-registradas y CP6 ejecutado; falta validar la exportación y Genie sigue pendiente.
+humanas aprobadas y cinco artefactos del run de entrega validados. Genie sigue pendiente
+por la cuota de SQL warehouse de Free Edition; la decisión es no aprobar producción.
 
 El objetivo de S06 es evaluar el `ResponsesAgent` construido en S05 con casos nuevos,
 referencias independientes, trazas, métricas y revisión humana. Mi [entrega de S05](../../../s05-agentes/entregas/Emerson%20Suarez/evidencia.md)
@@ -55,9 +56,9 @@ Abre **solo** `notebook-s06-personal` en este mismo Git Folder y ejecútalo por 
    recalcula la cifra de ventas con SQL independiente y contrasta los documentos S04.
 2. **CP2** infiere diez casos nuevos; el undécimo (`genie`) queda bloqueado por la cuota del
    warehouse. Revisa trazas y errores antes de seguir.
-3. **CP3–CP4** calculan reglas, MLflow GenAI y el juez. **CP5** muestra BLEU/ROUGE y prepara
-   tres trazas. Léelas, escribe veredicto y evidencia en los tres widgets de revisión, y
-   vuelve a ejecutar solo **CP5.2b**. Los widgets empiezan vacíos para no simular juicios humanos.
+3. **CP3–CP4** calculan reglas, MLflow GenAI y el juez. **CP5** muestra BLEU/ROUGE;
+   **CP5.2** crea la sesión de Review App. Tras guardar allí tres respuestas esperadas,
+   registra veredictos y evidencia en los widgets y ejecuta **CP5.2b**.
 4. **CP6** exporta `evaluacion_s06.json`, `dataset_s06.json`, `scores_s06.json`,
    `revision_humana.json` y `decision.md`. Descárgalos del run. La decisión declara el bloqueo
    Genie y no aprueba producción.
@@ -87,50 +88,36 @@ Abre **solo** `notebook-s06-personal` en este mismo Git Folder y ejecútalo por 
    exportación; comprueba que `revision_humana.json` tenga tres entradas `approved` o `rejected` y que
    `evaluacion_s06.json` conserve `genie` como bloqueado, sin puntuarlo como fallo.
 
-En la corrida actual, CP1 verificó el hash y recalculó **116024.88** para Bebidas 2026;
-CP2 observó **10 casos, 0 errores de ejecución y 1 Genie bloqueado**; CP3 y CP4 terminaron
-con métricas; Review App llegó a 100 % en la sesión revisada y CP5.2b mostró **3 / 3**.
-CP6 creó un run de exportación. Una segunda ejecución accidental de CP5.2 creó otra sesión
-pendiente; el `review_url` del primer run exportado apunta a esa sesión nueva. El JSON del
-reporte sí tiene `review_status: completa`, pero la línea de estado de esa versión del notebook
-imprimía por error «revisión humana pendiente».
+#### Artefactos finales validados
 
-Para corregir **solo el enlace del reporte ya exportado**, sin repetir inferencias ni juicios:
-abre la sesión que mostraba **100 % Reviewed**, copia su URL, ejecuta una celda Python nueva
-en el notebook con `REVIEW_URL = "<URL de esa sesión revisada>"` y luego ejecuta **solo CP6**.
-Descarga los artefactos del **último** run de exportación y confirma `review_status: completa`
-y que `review_url` abra la sesión revisada. No incluyas una URL particular en el código Git.
-La versión corregida del notebook conserva el enlace de Review App si CP5.2 se repite y
-muestra el estado de revisión real al final de CP6.
+El run de exportación es `f898a403aec342bfbb6eca7e17eac486`. Sus cinco archivos están en
+[`logged/`](logged/): `dataset_s06.json`, `evaluacion_s06.json`, `scores_s06.json`,
+`revision_humana.json` y `decision.md`. El SHA256 del dataset coincide con el reporte:
+`40548383e256d082087e7be37843308b266abf811b313ae2942d4415d93e7591`.
+Hay 11 casos planeados, 10 observados, 0 errores de ejecución y 1 caso (`genie`) bloqueado
+por el entorno. Los diez casos tienen puntuaciones de reglas y juez. Review App llegó a
+**100 % Reviewed**; las tres revisiones del JSON tienen responsable, evidencia concreta,
+respuesta corregida y `trace_id` asociado al caso correcto. El reporte marca
+`review_status: completa` y enlaza esa sesión revisada.
 
-#### Validación de `logged/` antes de entregar
-
-Los cinco archivos descargados abren y coinciden en hash, casos, trazas y run IDs: 11 casos
-planeados, 10 observados, 0 errores de ejecución, 3 revisiones y Genie bloqueado. **No entregues
-aún esta copia de `logged/`**: en `revision_humana.json` se cruzaron dos justificaciones.
-`compuesto` contiene la explicación de falta de costos y `sin_costos` contiene la de la cifra
-116024.88 y la política. Corrige esos **dos widgets** tras cotejar las trazas; `documento`
-está bien asociado. El exportador anterior también omitía el responsable humano, la respuesta
-correcta y las métricas y regresión que solicita la consigna.
-
-El notebook actualizado registra `approved`/`rejected`, `human_reviewer`, `evidence` y
-`corrected_response`; CP6 amplía `decision.md` con métricas por caso documental, el fallo de
-`sin_evidencia` (precision 0 y citas a documentos ajenos a descuentos), corrección propuesta y
-prueba de regresión. Una vez
-corregidos los widgets, ejecuta **solo CP5.2b y CP6**, comprueba las tres justificaciones
-impresas y reemplaza los cinco archivos de `logged/` por los del último run. Conserva el
-enlace de la sesión de Review App que llegó a 100 %; no repitas CP2 ni CP5.2.
+La cifra de ventas fue **116024.88** y coincidió con el SQL independiente. La selección de
+herramientas fue correcta en **10/10** casos. `decision.md` registra el defecto confirmado en
+`sin_evidencia`: recuperó contexto ajeno a descuentos (`context_precision=0`) y citó un
+documento irrelevante pese a abstenerse. Incluye corrección, prueba de regresión y plan de
+muestreo online. Las métricas del juez son 1.0, pero agente y juez usaron el mismo endpoint;
+esa limitación figura en el reporte. La decisión conserva `complete=false` y **no aprueba
+producción** mientras Genie no pueda ejecutarse y el defecto documental siga abierto.
 
 #### Si Git Pull reinició Python
 
 Abre de nuevo `notebook-s06-personal` después del Pull y busca **Recuperación después de Git Pull**
 entre CP5.1 y CP5.2. Si esa sección no aparece, recarga la pestaña del notebook. Ejecuta su
-celda Python: recupera del run `ff733953b1424cee917ea1cd001d6900` los diez casos, las
+celda Python: recupera del run `f898a403aec342bfbb6eca7e17eac486` los diez casos, las
 puntuaciones y el enlace de la Review App ya completada; también verifica el hash del dataset.
 Después comprueba los tres widgets de revisión y ejecuta **CP5.2b → CP6**. La salida de CP5.2b
 debe ser `3 / 3`. No hace falta volver a ejecutar CP0–CP4 ni CP5.2; esta última crearía otra
-sesión de Review App. Descarga del nuevo run de CP6 los cinco artefactos y reemplaza la copia
-anterior de `logged/`.
+sesión de Review App. Si generas una nueva exportación, valida sus cinco artefactos antes de
+reemplazar la copia de `logged/`.
 
 El notebook base del docente no se modificó. El notebook personal hace una evaluación nueva;
 los resultados del replay histórico de S05 permanecen separados.
@@ -144,13 +131,11 @@ no una evaluación nueva del agente en S06. Por eso el resumen declara
 
 ## Trabajo pendiente para cerrar S06
 
-1. Corregir los widgets intercambiados, reexportar con el notebook actualizado y reemplazar
-   los cinco artefactos de `logged/` tras comprobar su contenido.
-2. Completar el caso Genie con SQL independiente cuando vuelva el warehouse; recalcular el
+1. Completar el caso Genie con SQL independiente cuando vuelva el warehouse; recalcular el
    hash del dataset y repetir la evaluación de ese caso.
-3. Conservar la decisión provisional y el enlace de la sesión de Review App efectivamente
-   revisada; no confundirla con la sesión adicional que quedó pendiente.
-4. Los archivos de `provisional-local/` son fuentes del
+2. Aplicar el filtro de relevancia documental y comprobar que `sin_evidencia` no cite
+   documentos ajenos a descuentos; luego repetir la regresión.
+3. Los archivos de `provisional-local/` son fuentes del
    borrador y evidencia histórica, no sustituyen los artefactos nuevos.
 
 Una API externa podría puntuar respuestas guardadas, pero cambiaría el entorno de evaluación
