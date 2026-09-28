@@ -38,7 +38,7 @@ Los artefactos provisionales son:
 - [Resumen y límites](provisional-local/evaluacion_s06_historica.json).
 
 Para continuar **CP0–CP6** sin modificar el notebook del docente preparé el
-[notebook personal de S06](notebook-s06-personal.py), el
+[notebook personal de S06 en Python](notebook-s06-personal-ejecutado.py), el
 [borrador de once casos](provisional-local/dataset_s06_cp1_borrador.json) y sus
 [referencias y pendientes](provisional-local/referencias_s06_cp1.json). El caso adicional
 pregunta por un lote lácteo recibido a 8 °C y usa la ficha fuente de S04. El notebook personal
@@ -50,7 +50,8 @@ una cifra obtenida anteriormente por Genie no serviría como oracle independient
 ### Cómo continuar S06 en Databricks
 
 Conservo localmente `original/notebook-incompleto.ipynb`, el intento que se detuvo en `%run`.
-Abre **solo** `notebook-s06-personal` en este mismo Git Folder y ejecútalo por bloques:
+Abre el notebook personal desde `notebook-s06-personal-ejecutado.py` o desde
+`notebook-s06-personal.ipynb` en este mismo Git Folder y ejecútalo por bloques:
 
 1. **CP0** carga el agente S05 hasta CP3. **CP1** verifica los once casos, el SHA256,
    recalcula la cifra de ventas con SQL independiente y contrasta los documentos S04.
@@ -94,6 +95,11 @@ El run de exportación es `f898a403aec342bfbb6eca7e17eac486`. Sus cinco archivos
 [`logged/`](logged/): `dataset_s06.json`, `evaluacion_s06.json`, `scores_s06.json`,
 `revision_humana.json` y `decision.md`. El SHA256 del dataset coincide con el reporte:
 `40548383e256d082087e7be37843308b266abf811b313ae2942d4415d93e7591`.
+Conservo también la [exportación Python del notebook personal](notebook-s06-personal-ejecutado.py)
+y su [exportación Jupyter con salidas de ejecución](notebook-s06-personal.ipynb).
+Los nombres base son distintos para evitar que Databricks confunda ambos formatos al importar
+el Git Folder. El [notebook original del primer intento](original/notebook-incompleto.ipynb)
+queda separado, junto con las capturas del bloqueo de Genie.
 Hay 11 casos planeados, 10 observados, 0 errores de ejecución y 1 caso (`genie`) bloqueado
 por el entorno. Los diez casos tienen puntuaciones de reglas y juez. Review App llegó a
 **100 % Reviewed**; las tres revisiones del JSON tienen responsable, evidencia concreta,
@@ -107,17 +113,6 @@ documento irrelevante pese a abstenerse. Incluye corrección, prueba de regresi�
 muestreo online. Las métricas del juez son 1.0, pero agente y juez usaron el mismo endpoint;
 esa limitación figura en el reporte. La decisión conserva `complete=false` y **no aprueba
 producción** mientras Genie no pueda ejecutarse y el defecto documental siga abierto.
-
-#### Si Git Pull reinició Python
-
-Abre de nuevo `notebook-s06-personal` después del Pull y busca **Recuperación después de Git Pull**
-entre CP5.1 y CP5.2. Si esa sección no aparece, recarga la pestaña del notebook. Ejecuta su
-celda Python: recupera del run `f898a403aec342bfbb6eca7e17eac486` los diez casos, las
-puntuaciones y el enlace de la Review App ya completada; también verifica el hash del dataset.
-Después comprueba los tres widgets de revisión y ejecuta **CP5.2b → CP6**. La salida de CP5.2b
-debe ser `3 / 3`. No hace falta volver a ejecutar CP0–CP4 ni CP5.2; esta última crearía otra
-sesión de Review App. Si generas una nueva exportación, valida sus cinco artefactos antes de
-reemplazar la copia de `logged/`.
 
 El notebook base del docente no se modificó. El notebook personal hace una evaluación nueva;
 los resultados del replay histórico de S05 permanecen separados.

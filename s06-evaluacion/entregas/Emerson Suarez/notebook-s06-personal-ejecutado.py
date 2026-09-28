@@ -3,6 +3,15 @@
 # dependencies = ["mlflow[databricks]==3.16.0", "databricks-openai==0.17.1", "databricks-mcp==0.9.2", "mcp==1.30.0", "jsonschema==4.23.0", "sacrebleu==2.5.1", "rouge-score==0.1.2"]
 # [tool.databricks.environment]
 # environment_version = "5"
+# dependencies = [
+#   "mlflow[databricks]==3.16.0",
+#   "databricks-openai==0.17.1",
+#   "databricks-mcp==0.9.2",
+#   "mcp==1.30.0",
+#   "jsonschema==4.23.0",
+#   "sacrebleu==2.5.1",
+#   "rouge-score==0.1.2",
+# ]
 # ///
 # MAGIC %md
 # MAGIC # S06 personal · Evaluación del agente Python de S05
@@ -12,6 +21,7 @@
 # MAGIC El notebook del docente no se modifica. Ejecuta por bloques y revisa CP1 antes de CP2.
 
 # COMMAND ----------
+
 dbutils.widgets.text("catalogo", "neptuno_emerson_suarez", "Catálogo personal S01–S05")
 dbutils.widgets.text("endpoint", "databricks-meta-llama-3-3-70b-instruct", "Endpoint del agente y juez")
 dbutils.widgets.text("genie_space_id", "01f1abfc72c01d3fa4040ad8ef137156", "Genie personal (pendiente)")
@@ -21,6 +31,7 @@ for case_id in ("documento", "compuesto", "sin_costos"):
     dbutils.widgets.text(f"revision_{case_id}", "", f"Revisión humana: {case_id} (JSON)")
 
 # COMMAND ----------
+
 # MAGIC %md
 # MAGIC ## CP0 · Cargar el agente de S05 sin llamar a Genie
 # MAGIC `%run` reconstruye las funciones UC y el RAG de S05 hasta CP3. Puede ejecutar demos
@@ -28,9 +39,11 @@ for case_id in ("documento", "compuesto", "sin_costos"):
 # MAGIC prerrequisito y corrígelo antes de evaluar calidad.
 
 # COMMAND ----------
+
 # MAGIC %run ../../../s05-agentes/notebooks/02-agente-responsesagent-cp3
 
 # COMMAND ----------
+
 # MAGIC %md
 # MAGIC ## CP1 · Congelar preguntas y referencias
 # MAGIC El borrador se preparó antes de esta corrida usando el SQL de CP0 de S05 y el corpus
@@ -38,6 +51,7 @@ for case_id in ("documento", "compuesto", "sin_costos"):
 # MAGIC relevantes sigan en el RAG actual. Lee las referencias antes de inferir.
 
 # COMMAND ----------
+
 from pathlib import Path
 import hashlib, json, os, time
 import mlflow
@@ -81,6 +95,7 @@ print("Política:", REFS["document_reference"]["texto"])
 print("Caso propio:", REFS["own_case_reference"]["texto"])
 
 # COMMAND ----------
+
 # MAGIC %md
 # MAGIC ## CP2 · Inferencia y trazas nuevas
 # MAGIC Se infieren los diez casos con referencia. Genie queda registrado como bloqueado por
@@ -88,6 +103,7 @@ print("Caso propio:", REFS["own_case_reference"]["texto"])
 # MAGIC respuesta vacía ni se cuenta como fallo de calidad. Ejecuta esta celda **una vez**.
 
 # COMMAND ----------
+
 @mlflow.trace(name="s06_personal_adapter", span_type="CHAIN")
 def predict_fn(question):
     start = time.perf_counter()
@@ -112,6 +128,7 @@ for row in ACTIVE_DATA:
 print("Observados:", len(OBSERVED), "· Errores de ejecución:", len(FAILED), "· Genie bloqueado:", len(BLOCKED_CASES))
 
 # COMMAND ----------
+
 # MAGIC %md
 # MAGIC ## CP3 · Reglas observables y recuperación documental
 # MAGIC Las métricas documentales deduplican por `documento_id`. Precision = relevantes
@@ -119,6 +136,7 @@ print("Observados:", len(OBSERVED), "· Errores de ejecución:", len(FAILED), "�
 # MAGIC `None` significa N/A. Una tool correcta no demuestra que el texto final sea correcto.
 
 # COMMAND ----------
+
 def tool_name(name):
     return UC_MAP.get(name, name).split(".")[-1]
 
@@ -158,6 +176,7 @@ assert len({"A", "B", "C"} & {"A", "D"}) / 2 == 0.5
 print("Microejemplo: precision 1/3; recall 1/2")
 
 # COMMAND ----------
+
 # MAGIC %md
 # MAGIC ## CP4 · MLflow GenAI y juez
 # MAGIC MLflow puntúa primero reglas deterministas sobre salidas ya guardadas; no vuelve a
@@ -165,6 +184,7 @@ print("Microejemplo: precision 1/3; recall 1/2")
 # MAGIC auto preferencia. Si el servicio falla, se conserva el error y las reglas de CP3.
 
 # COMMAND ----------
+
 @scorer
 def herramientas_correctas(outputs, expectations):
     return rule_scores(outputs, expectations)["herramientas_correctas"]
@@ -240,12 +260,14 @@ for error in EVAL_ERRORS:
     print("Bloqueo de evaluación:", error)
 
 # COMMAND ----------
+
 # MAGIC %md
 # MAGIC ## CP5.1 · BLEU y ROUGE: demostración de solapamiento
 # MAGIC Una paráfrasis correcta puede puntuar menos que una negación incorrecta. Este ejemplo
 # MAGIC sintético no mide la calidad del agente observado.
 
 # COMMAND ----------
+
 LEXICAL, LEXICAL_ERROR = [], None
 try:
     import sacrebleu
@@ -264,62 +286,7 @@ for row in LEXICAL:
     print(row)
 
 # COMMAND ----------
-# MAGIC %md
-# MAGIC ## Recuperación después de Git Pull · Solo si Python perdió sus variables
-# MAGIC Esta celda reconstruye CP1–CP4 desde el run de entrega validado.
-# MAGIC No llama al agente, al juez ni a Genie. Si ya tienes `OBSERVED` en memoria, sáltala.
-# MAGIC Usa el run `f898a403aec342bfbb6eca7e17eac486`; cambia el ID si recuperas otra corrida.
-# MAGIC Después ejecuta **solo CP5.2b y CP6**. No repitas CP5.2, que crea otra sesión.
 
-# COMMAND ----------
-if "OBSERVED" not in globals():
-    import hashlib, json
-    from pathlib import Path
-    from types import SimpleNamespace
-    import pandas as pd
-    import mlflow
-
-    SOURCE_RUN_ID = "f898a403aec342bfbb6eca7e17eac486"
-    def load_run_json(name):
-        path = Path(mlflow.artifacts.download_artifacts(run_id=SOURCE_RUN_ID, artifact_path=name))
-        return json.loads(path.read_text(encoding="utf-8"))
-
-    saved_report = load_run_json("evaluacion_s06.json")
-    DATA = load_run_json("dataset_s06.json")
-    saved_scores = load_run_json("scores_s06.json")
-    DATASET_HASH = hashlib.sha256(json.dumps(DATA, ensure_ascii=False, sort_keys=True).encode("utf-8")).hexdigest()
-    assert DATASET_HASH == saved_report["dataset_sha256"] and len(DATA) == 11
-    OBSERVED = saved_report["cases"]
-    assert len(OBSERVED) == 10 and saved_report["cases_environment_blocked"] == ["genie"]
-    FAILED = saved_report["cases_execution_failed"]
-    BLOCKED_CASES = saved_report["cases_environment_blocked"]
-    RULE_SCORES = saved_scores["deterministic_by_case"]
-    assert {s["case_id"] for s in RULE_SCORES} == {r["expectations"]["case_id"] for r in OBSERVED}
-    RULE_RESULT = SimpleNamespace(run_id=saved_scores["mlflow_rules_run_id"],
-                                  metrics=saved_report["rules_metrics"],
-                                  result_df=pd.DataFrame(saved_scores["mlflow_rules_by_case"]))
-    JUDGE_RESULT = SimpleNamespace(run_id=saved_scores["mlflow_judge_run_id"],
-                                   metrics=saved_report["judge_metrics"],
-                                   result_df=pd.DataFrame(saved_scores["mlflow_judge_by_case"]))
-    exp6 = mlflow.set_experiment(experiment_id=saved_report["experiment_id"])
-    ENDPOINT = saved_report["agent_model"]
-    JUDGE_MODEL = saved_report["judge_model"]
-    oracle_sql = saved_report["oracle_sql_ventas"]
-    oracle_total = saved_report["oracle_ventas"]
-    EVAL_ERRORS = saved_report["evaluation_errors"]
-    REVIEW_URL = saved_report["review_url"]
-    REVIEW_ERROR = saved_report["review_error"]
-    LEXICAL = saved_report["lexical_demo"]
-    LEXICAL_ERROR = saved_report["lexical_error"]
-    review_ids = {"documento", "compuesto", "sin_costos"}
-    review_rows = [r for r in OBSERVED if r["expectations"]["case_id"] in review_ids and r["trace_id"]]
-    assert len(review_rows) == 3 and "/tasks/labeling/" in REVIEW_URL
-    print("Recuperados:", len(OBSERVED), "casos y", len(RULE_SCORES), "scores del run", SOURCE_RUN_ID)
-    print("Review App recuperada:", REVIEW_URL)
-else:
-    print("OBSERVED ya está en memoria; usa CP5.2b y CP6")
-
-# COMMAND ----------
 # MAGIC %md
 # MAGIC ## CP5.2 · Revisión humana y diseño online
 # MAGIC Se intenta abrir una sesión privada con tres trazas reales. **Tú** debes leerlas y
@@ -331,6 +298,7 @@ else:
 # MAGIC Para S08: muestrear 10 % del tráfico, 100 % de errores y revisar a diario.
 
 # COMMAND ----------
+
 REVIEW_URL = globals().get("REVIEW_URL")
 REVIEW_ERROR = None
 review_ids = {"documento", "compuesto", "sin_costos"}
@@ -360,12 +328,14 @@ if REVIEW_ERROR:
     print("Review App no disponible:", REVIEW_ERROR)
 
 # COMMAND ----------
+
 # MAGIC %md
 # MAGIC ### CP5.2b · Registrar tu revisión
 # MAGIC Abre las tres trazas, completa los widgets y ejecuta esta celda. Puedes repetirla
 # MAGIC sin crear otra sesión de Review App ni volver a inferir las diez preguntas.
 
 # COMMAND ----------
+
 HUMAN_REVIEWS = []
 HUMAN_REVIEWER = "Emerson Suarez"
 for case_id in ("documento", "compuesto", "sin_costos"):
@@ -390,6 +360,7 @@ for item in HUMAN_REVIEWS:
 print("Revisiones registradas:", sum(r["status"] in {"approved", "rejected"} for r in HUMAN_REVIEWS), "/ 3")
 
 # COMMAND ----------
+
 # MAGIC %md
 # MAGIC ## CP6 · Exportar y decidir
 # MAGIC El reporte distingue observado, error de ejecución y Genie bloqueado. Descarga los
@@ -397,6 +368,7 @@ print("Revisiones registradas:", sum(r["status"] in {"approved", "rejected"} for
 # MAGIC `decision.md` registra la decisión provisional. No apruebes producción con pendientes.
 
 # COMMAND ----------
+
 SCORES_EXPORT = {"deterministic_by_case": RULE_SCORES,
                  "mlflow_rules_run_id": RULE_RESULT.run_id if RULE_RESULT else None,
                  "mlflow_judge_run_id": JUDGE_RESULT.run_id if JUDGE_RESULT else None,
@@ -484,6 +456,7 @@ print("Estado:", REPORT["cases_observed"], "observados,", len(FAILED), "errores 
 print("S06_REPORT=" + json.dumps(REPORT, ensure_ascii=False, default=str))
 
 # COMMAND ----------
+
 # MAGIC %md
 # MAGIC **Entrega:** descarga `evaluacion_s06.json`, `dataset_s06.json` y `scores_s06.json` del
 # MAGIC run exportado, junto con `revision_humana.json` y `decision.md`. Si faltan revisiones,
