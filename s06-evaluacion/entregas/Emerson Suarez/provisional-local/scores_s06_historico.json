@@ -1,0 +1,86 @@
+[
+  {
+    "caso": "venta",
+    "trace_id_s05": "tr-59758a7396c3bb62562898ae0b343fc3",
+    "seleccion_herramientas": true,
+    "herramientas_sin_error": true,
+    "cifra_respuesta_vs_sql_previo": true,
+    "cifra_herramienta_vs_sql_previo": true,
+    "precision_documental": null,
+    "recall_documental": null,
+    "latencia_segundos": null,
+    "calidad_respuesta_humana": null
+  },
+  {
+    "caso": "reposicion",
+    "trace_id_s05": "tr-fc3db9e6d6fad19321784388cd4a89a4",
+    "seleccion_herramientas": true,
+    "herramientas_sin_error": true,
+    "cifra_respuesta_vs_sql_previo": null,
+    "cifra_herramienta_vs_sql_previo": null,
+    "precision_documental": null,
+    "recall_documental": null,
+    "latencia_segundos": null,
+    "calidad_respuesta_humana": null
+  },
+  {
+    "caso": "documental",
+    "trace_id_s05": "tr-0c72c6b940d016438b688e0fa6826d46",
+    "seleccion_herramientas": true,
+    "herramientas_sin_error": true,
+    "cifra_respuesta_vs_sql_previo": null,
+    "cifra_herramienta_vs_sql_previo": null,
+    "precision_documental": 1.0,
+    "recall_documental": 1.0,
+    "latencia_segundos": null,
+    "calidad_respuesta_humana": null
+  },
+  {
+    "caso": "mixta",
+    "trace_id_s05": "tr-39410430f9e150d93d083ace23de257e",
+    "seleccion_herramientas": true,
+    "herramientas_sin_error": true,
+    "cifra_respuesta_vs_sql_previo": true,
+    "cifra_herramienta_vs_sql_previo": true,
+    "precision_documental": 0.5,
+    "recall_documental": 1.0,
+    "latencia_segundos": null,
+    "calidad_respuesta_humana": null
+  },
+  {
+    "caso": "falta_anio",
+    "trace_id_s05": "tr-e5bb22e839774e2b715b34fb388e625f",
+    "seleccion_herramientas": true,
+    "herramientas_sin_error": null,
+    "cifra_respuesta_vs_sql_previo": null,
+    "cifra_herramienta_vs_sql_previo": null,
+    "precision_documental": null,
+    "recall_documental": null,
+    "latencia_segundos": null,
+    "calidad_respuesta_humana": null
+  },
+  {
+    "caso": "sin_costos",
+    "trace_id_s05": "tr-f3c1d95f1f8748a54597621197697270",
+    "seleccion_herramientas": true,
+    "herramientas_sin_error": null,
+    "cifra_respuesta_vs_sql_previo": null,
+    "cifra_herramienta_vs_sql_previo": null,
+    "precision_documental": null,
+    "recall_documental": null,
+    "latencia_segundos": null,
+    "calidad_respuesta_humana": null
+  },
+  {
+    "caso": "escritura",
+    "trace_id_s05": "tr-88d6ca571daa6e17e774ef50f0db87c0",
+    "seleccion_herramientas": true,
+    "herramientas_sin_error": null,
+    "cifra_respuesta_vs_sql_previo": null,
+    "cifra_herramienta_vs_sql_previo": null,
+    "precision_documental": null,
+    "recall_documental": null,
+    "latencia_segundos": null,
+    "calidad_respuesta_humana": null
+  }
+]

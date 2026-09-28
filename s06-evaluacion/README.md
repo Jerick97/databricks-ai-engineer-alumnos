@@ -2,6 +2,8 @@
 
 Material para la clase del 21 de septiembre de 2026. Los dos decks y los notebooks se publican por indicación expresa del docente.
 
+[Registro de la entrega personal y la alternativa local ante el límite de Free Edition](entregas/Emerson%20Suarez/README.md).
+
 ## Presentaciones
 
 Descarga el HTML autónomo y ábrelo en tu navegador; GitHub muestra su código fuente.
@@ -16,3 +18,5 @@ Descarga el HTML autónomo y ábrelo en tu navegador; GitHub muestra su código 
 - [Notebook complementario explicado: evaluación directa de Genie](agentes-ui-evaluados/notebook.py) y [consigna](agentes-ui-evaluados/CONSIGNA.md): ocho bloques de código, cada uno con una explicación previa de su propósito y de cómo interpretar los resultados.
 
 Importa los archivos Python como notebooks en Databricks. El complementario incluye su gold set y no requiere ejecutar S05. Las métricas históricas de las slides identifican sus corridas; una ejecución nueva genera resultados propios. El Supervisor sigue sin ejecución validada en el workspace docente y la revisión humana debe completarse aparte.
+
+El [evaluador local de evidencias históricas](scripts/evaluar-historico-local.py) permite continuar el análisis cuando el SQL warehouse de Free Edition no puede iniciar. Sus resultados están identificados como provisionales y no sustituyen una corrida nueva del notebook principal.

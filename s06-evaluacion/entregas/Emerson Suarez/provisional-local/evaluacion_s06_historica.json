@@ -1,0 +1,22 @@
+{
+  "session": "S06",
+  "mode": "replay_historico_s05",
+  "complete": false,
+  "source_notebook": "s05-agentes\\entregas\\Emerson Suarez\\notebook.ipynb",
+  "source_sha256": "34249b56e495bf47aa8c2743ccb794114fc37764657e3c333e9698f39afd5689",
+  "dataset_sha256": "e883159845e3ed46b4a5cec7de064e18cf92dfa183f1f5e28b20451c5fe4a177",
+  "metrics": {
+    "casos_historicos": 7,
+    "seleccion_herramientas": 7,
+    "casos_con_herramientas": 4,
+    "herramientas_sin_error": 4,
+    "cifras_comparadas_con_sql_previo": 2
+  },
+  "limitations": [
+    "Son ejecuciones de S05, no inferencias nuevas del dataset de diez casos de S06.",
+    "Genie no se reejecutó: el SQL warehouse de Free Edition no inicia.",
+    "No hay latencia por caso en la tabla exportada ni juicio LLM nuevo.",
+    "Las etiquetas documentales y las respuestas requieren revisión humana.",
+    "No satisface por sí solo la entrega final ni demuestra calidad actual del agente."
+  ]
+}

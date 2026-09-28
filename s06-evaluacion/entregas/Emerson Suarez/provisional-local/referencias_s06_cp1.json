@@ -1,0 +1,28 @@
+{
+  "session": "S06",
+  "checkpoint": "CP1",
+  "status": "draft_pending_genie_oracle",
+  "dataset_sha256": "40548383e256d082087e7be37843308b266abf811b313ae2942d4415d93e7591",
+  "cases": 11,
+  "source_catalog": "neptuno_emerson_suarez",
+  "sales_reference": {
+    "category": "Bebidas",
+    "year": 2026,
+    "total": 116024.88,
+    "table": "neptuno_emerson_suarez.gold.ventas_por_categoria_mes",
+    "origin": "S05 CP0.2: SELECT categoria, year(mes), CAST(SUM(ingreso_neto) AS DECIMAL(18,2)) FROM Gold GROUP BY categoria, year(mes)"
+  },
+  "document_reference": {
+    "documento_id": "politica_devoluciones",
+    "texto": "Las devoluciones de alimentos no pere-\ncibles se aceptan hasta 30 días después de la entrega. Productos refrigerados o congelados solo se aceptan dentro de 24 horas si existe evidencia de ruptura de cadena de frío. El cliente debe informar el número de pedido."
+  },
+  "own_case_reference": {
+    "documento_id": "ficha_lacteos",
+    "texto": "Los productos lácteos se reciben entre 2 y 6 grados Celsius. Una lectura fuera de rango debe registrarse como incidencia y el lote queda en cuarentena hasta evaluación de calidad."
+  },
+  "pending": [
+    "Recalcular abril de 2026 con SQL independiente antes de inferir el caso Genie.",
+    "Confirmar etiquetas documentales en el corpus actual de Databricks.",
+    "Ejecutar las once preguntas por primera vez en S06 y volver a calcular el hash si se edita el dataset."
+  ]
+}

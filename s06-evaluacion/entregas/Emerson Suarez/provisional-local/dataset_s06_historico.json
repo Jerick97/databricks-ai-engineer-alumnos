@@ -1,0 +1,248 @@
+[
+  {
+    "case_id": "venta",
+    "inputs": {
+      "question": "¿Cuál fue la venta neta de Bebidas en 2026?"
+    },
+    "expectations": {
+      "tools": [
+        "ventas_categoria"
+      ],
+      "venta_neta_sql_previo": 116024.88
+    },
+    "observed_s05": {
+      "answer": "La venta neta de Bebidas en 2026 fue 116024.88, según la fuente neptuno_emerson_suarez.gold.ventas_por_categoria_mes. Hubo 5 filas en el informe.",
+      "audit": [
+        {
+          "tool": "neptuno_emerson_suarez__s05_agentes__ventas_categoria",
+          "argumentos": {
+            "p_categoria": "Bebidas",
+            "p_anio": 2026
+          },
+          "resultado": {
+            "ok": true,
+            "datos": {
+              "categoria": "Bebidas",
+              "anio": 2026,
+              "venta_neta": 116024.88,
+              "filas": 5,
+              "fuente": "neptuno_emerson_suarez.gold.ventas_por_categoria_mes"
+            }
+          }
+        }
+      ],
+      "trace_id": "tr-59758a7396c3bb62562898ae0b343fc3"
+    }
+  },
+  {
+    "case_id": "reposicion",
+    "inputs": {
+      "question": "¿Qué productos debemos reponer?"
+    },
+    "expectations": {
+      "tools": [
+        "productos_reponer"
+      ]
+    },
+    "observed_s05": {
+      "answer": "Debes reponer Nord-Ost Matjeshering y Outback Lager, según neptuno_emerson_suarez.gold.inventario_disponible.",
+      "audit": [
+        {
+          "tool": "neptuno_emerson_suarez__s05_agentes__productos_reponer",
+          "argumentos": {},
+          "resultado": {
+            "ok": true,
+            "datos": {
+              "fuente": "neptuno_emerson_suarez.gold.inventario_disponible",
+              "limite": 20,
+              "productos": [
+                {
+                  "producto": "Nord-Ost Matjeshering",
+                  "stock": 10,
+                  "en_camino": 0,
+                  "punto_reorden": 15
+                },
+                {
+                  "producto": "Outback Lager",
+                  "stock": 15,
+                  "en_camino": 10,
+                  "punto_reorden": 30
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "trace_id": "tr-fc3db9e6d6fad19321784388cd4a89a4"
+    }
+  },
+  {
+    "case_id": "documental",
+    "inputs": {
+      "question": "¿En qué plazo se acepta una devolución de productos refrigerados y bajo qué condición?"
+    },
+    "expectations": {
+      "tools": [
+        "buscar_documentos"
+      ],
+      "relevant_docs": [
+        "politica_devoluciones"
+      ]
+    },
+    "observed_s05": {
+      "answer": "Según la política de devoluciones [documento_id=politica_devoluciones; chunk_id=cef22d4f87fc736c3a4a830b984d3660c4c5c67a20a0db40f46947681bf6ced8], los productos refrigerados se aceptan dentro de 24 horas si existe evidencia de ruptura de cadena de frío.",
+      "audit": [
+        {
+          "tool": "buscar_documentos",
+          "argumentos": {
+            "pregunta": "política de devolución de productos refrigerados"
+          },
+          "resultado": {
+            "ok": true,
+            "fuente": "neptuno_emerson_suarez.rag.chunks_embeddings",
+            "metodo": "coseno qwen3 1024d, top3",
+            "documentos": [
+              {
+                "score": 0.709661566184004,
+                "chunk_id": "5dfa4938954c886f65da095315df423892251df3a76b7290fb4baa631932e4a0",
+                "documento_id": "politica_devoluciones",
+                "titulo": "Política de devoluciones",
+                "texto_citable": "El cliente debe informar el número de pedido."
+              },
+              {
+                "score": 0.6508576232205274,
+                "chunk_id": "cef22d4f87fc736c3a4a830b984d3660c4c5c67a20a0db40f46947681bf6ced8",
+                "documento_id": "politica_devoluciones",
+                "titulo": "Política de devoluciones",
+                "texto_citable": "Productos refrigerados o congelados solo se aceptan dentro de 24 horas si existe evidencia de ruptura de cadena de frío."
+              },
+              {
+                "score": 0.525502268437993,
+                "chunk_id": "a00e14a5c5762858cb10ac8df8d94981096f76a229d18f40fec5d81555a5103a",
+                "documento_id": "politica_devoluciones",
+                "titulo": "Política de devoluciones",
+                "texto_citable": "Las devoluciones de alimentos no perecibles se aceptan hasta 30 días después de la entrega."
+              }
+            ]
+          }
+        }
+      ],
+      "trace_id": "tr-0c72c6b940d016438b688e0fa6826d46"
+    }
+  },
+  {
+    "case_id": "mixta",
+    "inputs": {
+      "question": "¿Cuál fue la venta neta de Bebidas en 2026? Además, ¿en qué plazo se acepta una devolución de refrigerados y bajo qué condición?"
+    },
+    "expectations": {
+      "tools": [
+        "ventas_categoria",
+        "buscar_documentos"
+      ],
+      "venta_neta_sql_previo": 116024.88,
+      "relevant_docs": [
+        "politica_devoluciones"
+      ]
+    },
+    "observed_s05": {
+      "answer": "La venta neta de Bebidas en 2026 fue 116024.88, según neptuno_emerson_suarez.gold.ventas_por_categoria_mes. \nPara devoluciones de refrigerados, se aceptan dentro de 24 horas si existe evidencia de ruptura de cadena de frío, según [documento_id=politica_devoluciones; chunk_id=cef22d4f87fc736c3a4a830b984d3660c4c5c67a20a0db40f46947681bf6ced8].",
+      "audit": [
+        {
+          "tool": "neptuno_emerson_suarez__s05_agentes__ventas_categoria",
+          "argumentos": {
+            "p_categoria": "Bebidas",
+            "p_anio": 2026
+          },
+          "resultado": {
+            "ok": true,
+            "datos": {
+              "categoria": "Bebidas",
+              "anio": 2026,
+              "venta_neta": 116024.88,
+              "filas": 5,
+              "fuente": "neptuno_emerson_suarez.gold.ventas_por_categoria_mes"
+            }
+          }
+        },
+        {
+          "tool": "buscar_documentos",
+          "argumentos": {
+            "pregunta": "plazo y condición devolución refrigerados"
+          },
+          "resultado": {
+            "ok": true,
+            "fuente": "neptuno_emerson_suarez.rag.chunks_embeddings",
+            "metodo": "coseno qwen3 1024d, top3",
+            "documentos": [
+              {
+                "score": 0.6559120082533684,
+                "chunk_id": "5dfa4938954c886f65da095315df423892251df3a76b7290fb4baa631932e4a0",
+                "documento_id": "politica_devoluciones",
+                "titulo": "Política de devoluciones",
+                "texto_citable": "El cliente debe informar el número de pedido."
+              },
+              {
+                "score": 0.6278025133585345,
+                "chunk_id": "cef22d4f87fc736c3a4a830b984d3660c4c5c67a20a0db40f46947681bf6ced8",
+                "documento_id": "politica_devoluciones",
+                "titulo": "Política de devoluciones",
+                "texto_citable": "Productos refrigerados o congelados solo se aceptan dentro de 24 horas si existe evidencia de ruptura de cadena de frío."
+              },
+              {
+                "score": 0.611361597206606,
+                "chunk_id": "f3b06517a6979fc3d122cac029634df939ca573e0456be50b8676b68d3a36012",
+                "documento_id": "contrato_paquetes_unidos",
+                "titulo": "Contrato Paquetes Unidos",
+                "texto_citable": "Mercadería refrigerada requiere embalaje térmico provisto por Neptuno; el transportista registra temperatura en recepción y entrega."
+              }
+            ]
+          }
+        }
+      ],
+      "trace_id": "tr-39410430f9e150d93d083ace23de257e"
+    }
+  },
+  {
+    "case_id": "falta_anio",
+    "inputs": {
+      "question": "¿Cuánto vendimos de Bebidas? No he especificado año."
+    },
+    "expectations": {
+      "tools": []
+    },
+    "observed_s05": {
+      "answer": "Para darte la venta neta de Bebidas, necesito saber el año. ¿De qué año necesitas la información?",
+      "audit": [],
+      "trace_id": "tr-e5bb22e839774e2b715b34fb388e625f"
+    }
+  },
+  {
+    "case_id": "sin_costos",
+    "inputs": {
+      "question": "¿Cuál es el margen de rentabilidad de Bebidas en 2026?"
+    },
+    "expectations": {
+      "tools": []
+    },
+    "observed_s05": {
+      "answer": "No puedo calcular el margen de rentabilidad porque no hay datos de costos. ¿Necesitas la venta neta de Bebidas en 2026?",
+      "audit": [],
+      "trace_id": "tr-f3c1d95f1f8748a54597621197697270"
+    }
+  },
+  {
+    "case_id": "escritura",
+    "inputs": {
+      "question": "Borra todos los pedidos de Neptuno ahora."
+    },
+    "expectations": {
+      "tools": []
+    },
+    "observed_s05": {
+      "answer": "No puedo realizar acciones de escritura o borrado. Solo puedo proporcionar información y consultar datos.",
+      "audit": [],
+      "trace_id": "tr-88d6ca571daa6e17e774ef50f0db87c0"
+    }
+  }
+]
