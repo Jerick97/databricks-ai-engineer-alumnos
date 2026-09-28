@@ -1,6 +1,7 @@
 # Sesión 06 · Registro de avance y límite de Free Edition
 
-**Fecha:** 27 de septiembre de 2026. **Estado:** evaluación provisional; la entrega final sigue pendiente.
+**Fecha:** 27 de septiembre de 2026. **Estado:** diez casos evaluados y tres revisiones
+registradas; CP6 y el caso Genie siguen pendientes.
 
 El objetivo de S06 es evaluar el `ResponsesAgent` construido en S05 con casos nuevos,
 referencias independientes, trazas, métricas y revisión humana. Mi [entrega de S05](../../../s05-agentes/entregas/Emerson%20Suarez/evidencia.md)
@@ -61,6 +62,37 @@ Abre **solo** `notebook-s06-personal` en este mismo Git Folder y ejecútalo por 
    `revision_humana.json` y `decision.md`. Descárgalos del run. La decisión declara el bloqueo
    Genie y no aprueba producción.
 
+#### Revisión humana: dos lugares distintos
+
+1. **CP5.2** crea una sesión de Review App para `sin_costos`, `documento` y `compuesto`.
+   Abre el enlace que imprime esa celda. En **Expected response** escribe una respuesta
+   correcta en **texto normal**, sin JSON, para cada pregunta y pulsa **Save**. Comprueba que
+   Review App marque **100 % Reviewed**. Esto guarda referencias humanas en Review App.
+2. Vuelve al notebook. Los campos superiores `revision_sin_costos`, `revision_documento` y
+   `revision_compuesto` siguen vacíos aunque Review App marque 100 %. Cada uno necesita un
+   **JSON de veredicto y evidencia**, escrito tras comparar respuesta, fuente y herramientas:
+
+   ```json
+   {"veredicto":"correcto","evidencia":"La respuesta coincide con la fuente consultada y no inventa datos."}
+   ```
+
+   Cambia el veredicto a `parcial`, `incorrecto` o `no_evaluable` cuando corresponda. La
+   evidencia debe tener al menos 20 caracteres y describir lo que observaste, no una frase
+   genérica. Confirma cada widget con Enter o saliendo del campo.
+3. Ejecuta **solo CP5.2b**. La salida esperada es `Revisiones registradas: 3 / 3`; si muestra
+   `0 / 3`, comprueba que los tres widgets superiores contengan JSON válido. **No repitas CP5.2**
+   al rellenarlos: esa celda crea otra sesión de Review App, nueva y pendiente. Tampoco repitas
+   CP2, porque produciría otra corrida y otras trazas.
+4. Ejecuta **CP6 una vez después del 3 / 3**. Descarga los cinco artefactos del run de
+   exportación; comprueba que `revision_humana.json` tenga tres entradas `reviewed` y que
+   `evaluacion_s06.json` conserve `genie` como bloqueado, sin puntuarlo como fallo.
+
+En la corrida actual, CP1 verificó el hash y recalculó **116024.88** para Bebidas 2026;
+CP2 observó **10 casos, 0 errores de ejecución y 1 Genie bloqueado**; CP3 y CP4 terminaron
+con métricas; Review App llegó a 100 % en la sesión revisada y CP5.2b mostró **3 / 3**.
+El siguiente paso es **CP6**. Una segunda ejecución accidental de CP5.2 creó otra sesión
+pendiente: su enlace no sustituye las tres respuestas ya guardadas en la sesión revisada.
+
 El notebook base del docente no se modificó. El notebook personal hace una evaluación nueva;
 los resultados del replay histórico de S05 permanecen separados.
 
@@ -73,11 +105,12 @@ no una evaluación nueva del agente en S06. Por eso el resumen declara
 
 ## Trabajo pendiente para cerrar S06
 
-1. Ejecutar el notebook personal de CP0 a CP6 y revisar los errores observados.
-2. Revisar al menos tres trazas como persona y registrar la decisión.
-3. Completar el caso Genie con SQL independiente cuando vuelva el warehouse; recalcular el
+1. Ejecutar CP6, descargar sus cinco artefactos y comprobar su contenido.
+2. Completar el caso Genie con SQL independiente cuando vuelva el warehouse; recalcular el
    hash del dataset y repetir la evaluación de ese caso.
-4. Descargar los artefactos del run. Los archivos de `provisional-local/` son fuentes del
+3. Conservar la decisión provisional y el enlace de la sesión de Review App efectivamente
+   revisada; no confundirla con la sesión adicional que quedó pendiente.
+4. Los archivos de `provisional-local/` son fuentes del
    borrador y evidencia histórica, no sustituyen los artefactos nuevos.
 
 Una API externa podría puntuar respuestas guardadas, pero cambiaría el entorno de evaluación
