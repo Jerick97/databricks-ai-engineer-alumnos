@@ -1,5 +1,5 @@
 ---
-name: sbs-conversacion-orquestacion
+name: sk07-sbs-conversacion-orquestacion
 description: Construye, ejecuta o evalúa la conversación de SBS Radar sobre cambios, antes/después e implicancias combinando Genie, RAG y evidencias. Usar ante preguntas y seguimientos contextuales o conflictos entre fuentes; no para configurar únicamente un índice o adjudicar aprobación institucional.
 ---
 

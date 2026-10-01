@@ -1,11 +1,11 @@
 ---
-name: sbs-observabilidad-operacion
+name: sk11-sbs-observabilidad-operacion
 description: Diseñar, implementar localmente o revisar trazas, latencia por etapa, costos, errores operativos y frescura de captura del agente SBS Radar. Activar ante diagnósticos de ejecución, instrumentación o paneles operativos SBS; no asumir propiedad del gold jurídico ni de la evaluación experta de interpretaciones.
 ---
 
 # SBS observabilidad y operación — SK11
 
-Refinamiento081 provisional: registrar SET+32readbacks de una única sesión como33reservas nuevas; preservar ledger99/112 y manifest normalizado del conector separado de wireSEA. Cerrar con intención/readback/pointer y reconciliaciónGET-only sin refund ni resend. [Contrato, fuentes y límites081](../sbs-genie-datos/references/fresh-publication-081.md). Tests/instalación aislada no acreditan autenticación ni publicación cloud.
+Refinamiento081 provisional: registrar SET+32readbacks de una única sesión como33reservas nuevas; preservar ledger99/112 y manifest normalizado del conector separado de wireSEA. Cerrar con intención/readback/pointer y reconciliaciónGET-only sin refund ni resend. [Contrato, fuentes y límites081](../sk06-sbs-genie-datos/references/fresh-publication-081.md). Tests/instalación aislada no acreditan autenticación ni publicación cloud.
 
 Versión 0.1.21. **Provisional**: baseline/GREEN disponibles; integración y validación completa pendientes. Esta skill permite construir instrumentación local; componente local probado, integración pendiente. No autoriza despliegues ni exportación externa.
 

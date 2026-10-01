@@ -1,5 +1,5 @@
 ---
-name: sbs-modelos-configuracion
+name: sk05-sbs-modelos-configuracion
 description: Selecciona, fija o comprueba modelos y límites de embedding, reranking y generación de SBS Radar. Usar ante cambios de modelo, incompatibilidad, presupuesto de tokens o configuración de endpoints; no para comparar disposiciones ya extraídas ni diseñar toda la recuperación.
 ---
 
@@ -46,4 +46,4 @@ Para discriminar con mínimo cambio, preparar selección alternativa explícita 
 
 La selección de ensayo077 sólo llega a Apps por configuración del servidor con allowlist073/077, entrada `app080.py` y adaptador que fija `generation_selection_path` antes de la inicialización lazy. Conservar `app.py`, default073 y runtime077; no convertir un resultado favorable en fallback ni promoción global. Incluir en el snapshot selección y observación por hash, manteniendo la identidad del bundle de embeddings.
 
-Para empaquetar/desplegar exigir muestra real revisada PASS_CONTROLLED_SAMPLE, cuatro respuestas del mismo plan/admisión077 e identidad endpoint/model exacta; ligar todos los bytes probados al stage. HTTP200, prueba sintética, selección explícita o smoke072 no sustituyen calidad SBS ni aprobación del paquete. El código de conexión080 posterior requiere revisión de despliegue independiente. [Contrato compartido](../sbs-despliegue-e2e/references/app-selection-080.md).
+Para empaquetar/desplegar exigir muestra real revisada PASS_CONTROLLED_SAMPLE, cuatro respuestas del mismo plan/admisión077 e identidad endpoint/model exacta; ligar todos los bytes probados al stage. HTTP200, prueba sintética, selección explícita o smoke072 no sustituyen calidad SBS ni aprobación del paquete. El código de conexión080 posterior requiere revisión de despliegue independiente. [Contrato compartido](../sk12-sbs-despliegue-e2e/references/app-selection-080.md).

@@ -1,5 +1,5 @@
 ---
-name: sbs-canal-revision
+name: sk10-sbs-canal-revision
 description: Construye o verifica la interfaz de SBS Radar: novedades, comparación antes/después, conversación y revisión. Usar ante navegación, citas, accesibilidad, errores o recorridos de usuario; no para reconstruir índices sin cambios del canal.
 ---
 

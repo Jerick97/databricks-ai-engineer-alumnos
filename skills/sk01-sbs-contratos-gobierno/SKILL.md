@@ -1,5 +1,5 @@
 ---
-name: sbs-contratos-gobierno
+name: sk01-sbs-contratos-gobierno
 description: Define, valida o evoluciona contratos de documentos, versiones, evidencia, conversación y revisión de SBS Radar. Usar ante esquemas o estados incompatibles; no para descargar corpus, interpretar normas ni conceder permisos reales.
 ---
 

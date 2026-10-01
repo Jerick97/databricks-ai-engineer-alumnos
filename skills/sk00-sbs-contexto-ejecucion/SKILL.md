@@ -1,5 +1,5 @@
 ---
-name: sbs-contexto-ejecucion
+name: sk00-sbs-contexto-ejecucion
 description: Recupera o reanuda una tarea de SBS Radar, comprueba vigencia de entradas y checkpoints y evita repetir investigación existente. Usar al coordinar dependencias de la misión, no para interpretar normas o ingerir documentos.
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: sbs-evaluacion-jueces
+name: sk09-sbs-evaluacion-jueces
 description: Diseña referencias, particiones y benchmarks o evalúa calidad de cambios, recuperación, conversación y E2E de SBS Radar. Usar para medir aceptación y regresiones; no para sustituir al especialista ni para registrar solamente latencia o fallos operativos.
 ---
 

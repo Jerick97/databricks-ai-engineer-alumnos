@@ -1,5 +1,5 @@
 ---
-name: sbs-versiones-cambios
+name: sk03-sbs-versiones-cambios
 description: Alinea disposiciones, compara versiones o registra relaciones temporales de normativa SBS Radar. Usar ante renumeraciones, divisiones, fusiones o diferencias antes/después; no para configurar embeddings ni certificar implicancias jurídicas.
 ---
 

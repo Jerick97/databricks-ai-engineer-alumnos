@@ -1,5 +1,5 @@
 ---
-name: sbs-despliegue-e2e
+name: sk12-sbs-despliegue-e2e
 description: Empaqueta, ejecuta y verifica notebooks, despliegue y recuperación E2E de SBS Radar. Usar para una entrega operativa, preflight de destino, release, rollback o aceptación completa; no para una comparación normativa aislada.
 ---
 

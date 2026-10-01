@@ -1,5 +1,5 @@
 ---
-name: sbs-rag-hibrido
+name: sk04-sbs-rag-hibrido
 description: Construye o evalúa recuperación RAG de SBS Radar, incluyendo spans citables, búsquedas léxica/vectorial, RRF, reranking y contrapartes normativas. Usar para recuperar evidencia antes/después o diagnosticar resultados incompletos; no para seleccionar modelos aisladamente ni configurar Genie SQL.
 ---
 

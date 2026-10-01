@@ -1,5 +1,5 @@
 ---
-name: sbs-guardrails-permisos
+name: sk08-sbs-guardrails-permisos
 description: Diseña, implementa o prueba guardrails y permisos de SBS Radar cuando hay límites de fuentes, herramientas, roles, citas o estados. No activar solo para resumir documentos ni para sustituir autenticación real del backend.
 ---
 
@@ -59,8 +59,8 @@ Un fallo067 previo a cualquier PATCH se conserva y habilita únicamente una nuev
 
 ## Refinamiento221 provisional — política histórica hasta revocación
 
-El [modo histórico221](../sbs-genie-datos/references/immutable-snapshot-count-221.md) requiere admisión explícita del servidor, generación/snapshot/política fijados y revocación remota exacta sin caché antes/después. No heredar autoridad de ventanas expiradas, re-fechar evidencia ni permitir selección desde payload. Mantener identidad y SELECT-only actuales, límites ABA y fallo cerrado. Los contextos documentales derivan sólo de pares ya registrados y no modifican el foco persistente del artículo. Validación local no demuestra accesos reales.
+El [modo histórico221](../sk06-sbs-genie-datos/references/immutable-snapshot-count-221.md) requiere admisión explícita del servidor, generación/snapshot/política fijados y revocación remota exacta sin caché antes/después. No heredar autoridad de ventanas expiradas, re-fechar evidencia ni permitir selección desde payload. Mantener identidad y SELECT-only actuales, límites ABA y fallo cerrado. Los contextos documentales derivan sólo de pares ya registrados y no modifican el foco persistente del artículo. Validación local no demuestra accesos reales.
 
 ## Refinamiento223 provisional — autorización de plataforma explícita
 
-La excepción explícita de perfil223 sigue [contrato223](../sbs-genie-datos/references/platform-counts-223.md): garantía read-only del producto y actor App M2M, sin afirmar principal SELECT-only ni permisos humanos. Nunca degradar silenciosamente el perfil221; diagnóstico no concede autoridad.
+La excepción explícita de perfil223 sigue [contrato223](../sk06-sbs-genie-datos/references/platform-counts-223.md): garantía read-only del producto y actor App M2M, sin afirmar principal SELECT-only ni permisos humanos. Nunca degradar silenciosamente el perfil221; diagnóstico no concede autoridad.

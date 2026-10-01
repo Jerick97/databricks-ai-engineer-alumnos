@@ -1,5 +1,5 @@
 ---
-name: sbs-fundacion-datos
+name: sk02-sbs-fundacion-datos
 description: Captura, inventaría, extrae o actualiza documentos oficiales del corpus SBS Radar, con originales inmutables y cobertura explícita. Usar para datos y extracción de las dos familias; no para interpretar implicancias ni declarar vigencia jurídica.
 ---
 

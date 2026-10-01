@@ -1,5 +1,5 @@
 ---
-name: sbs-genie-datos
+name: sk06-sbs-genie-datos
 description: Prepara datos curados y configura, consulta o valida Genie de SBS Radar sobre normas, versiones, cambios y procesos. Usar ante preguntas estructuradas, SQL, warehouse o integración Genie; no para chunking, búsqueda vectorial ni interpretación normativa sin fuentes.
 ---
 
