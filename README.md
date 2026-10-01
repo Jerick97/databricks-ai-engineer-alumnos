@@ -88,3 +88,7 @@ El diseño IaC de SBS está documentado y pendiente de implementación completa;
 ## Skills del agente SBS Radar
 
 **[Abrir las 13 skills SK00–SK12](skills/README.md)** · instrucciones, referencias y evaluaciones. También se conservan en [su ubicación original](sbs-radar-workspace/skills/).
+
+## Framework agnóstico para nuevos agentes
+
+[Agent Engineering Skills — SK00–SK14](https://github.com/manuelarguelles/agent-engineering-skills): contexto, caso, arquitectura, ingesta, recuperación y demás responsabilidades seleccionadas según el proyecto. Independiente del caso SBS y de Databricks; versión provisional con evaluaciones documentadas.

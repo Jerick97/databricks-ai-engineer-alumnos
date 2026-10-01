@@ -19,3 +19,7 @@ Estas son copias de distribución. La fuente de trabajo se conserva en [sbs-rada
 | SK10 | [sbs-canal-revision](sk10-sbs-canal-revision/SKILL.md) | Construir y probar novedades, comparación, chat y fuentes |
 | SK11 | [sbs-observabilidad-operacion](sk11-sbs-observabilidad-operacion/SKILL.md) | Instrumentar trazas y operar captura/publicación con control de fallos |
 | SK12 | [sbs-despliegue-e2e](sk12-sbs-despliegue-e2e/SKILL.md) | Empaquetar notebooks/App y comprobar entrega y recuperación E2E |
+
+## Para construir agentes de otros tipos
+
+[Usa el framework agnóstico SK00–SK14](https://github.com/manuelarguelles/agent-engineering-skills). Las skills de esta carpeta mantienen el caso SBS; el nuevo repositorio permite elegir mecanismos por proyecto.
