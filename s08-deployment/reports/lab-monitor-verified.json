@@ -1,0 +1,57 @@
+{
+  "monitor": {
+    "data_profiling_config": {
+      "assets_dir": "/Shared/AIS08/monitor",
+      "baseline_table_name": "neptuno_manuel_arguelles.ais08_lab.inference_baseline",
+      "dashboard_id": "01f1ba1ec42a14e685504a71e6e191bb",
+      "drift_metrics_table_name": "neptuno_manuel_arguelles.ais08_lab.inference_flat_drift_metrics",
+      "monitor_version": 0,
+      "monitored_table_name": "neptuno_manuel_arguelles.ais08_lab.inference_flat",
+      "output_schema_id": "072e937d-4a67-4b92-a67c-b48b413cb9b8",
+      "profile_metrics_table_name": "neptuno_manuel_arguelles.ais08_lab.inference_flat_profile_metrics",
+      "status": "DATA_PROFILING_STATUS_ACTIVE",
+      "time_series": {
+        "granularities": [
+          "AGGREGATION_GRANULARITY_1_HOUR"
+        ],
+        "timestamp_column": "event_time"
+      }
+    },
+    "object_id": "f978ce71-ee30-4d43-88d3-60fb00453548",
+    "object_type": "table"
+  },
+  "refreshes": [
+    {
+      "end_time_ms": 1790479512610,
+      "object_id": "f978ce71-ee30-4d43-88d3-60fb00453548",
+      "object_type": "table",
+      "refresh_id": 475892185802083,
+      "start_time_ms": 1790479044858,
+      "state": "MONITOR_REFRESH_STATE_SUCCESS",
+      "trigger": "MONITOR_REFRESH_TRIGGER_MANUAL"
+    },
+    {
+      "end_time_ms": 1790478750575,
+      "object_id": "f978ce71-ee30-4d43-88d3-60fb00453548",
+      "object_type": "table",
+      "refresh_id": 312794834798968,
+      "start_time_ms": 1790478326793,
+      "state": "MONITOR_REFRESH_STATE_SUCCESS",
+      "trigger": "MONITOR_REFRESH_TRIGGER_MANUAL"
+    },
+    {
+      "end_time_ms": 1790478232819,
+      "object_id": "f978ce71-ee30-4d43-88d3-60fb00453548",
+      "object_type": "table",
+      "refresh_id": 894022512865522,
+      "start_time_ms": 1790477673722,
+      "state": "MONITOR_REFRESH_STATE_SUCCESS",
+      "trigger": "MONITOR_REFRESH_TRIGGER_MANUAL"
+    }
+  ],
+  "profile_table": "neptuno_manuel_arguelles.ais08_lab.inference_flat_profile_metrics",
+  "profile_rows": 42,
+  "drift_table": "neptuno_manuel_arguelles.ais08_lab.inference_flat_drift_metrics",
+  "drift_rows": 42,
+  "pass": true
+}

@@ -1,0 +1,881 @@
+{
+  "schema_version": "1.0",
+  "run_id": "astra-normative-review-004",
+  "generated_at_utc": "2026-09-28T01:06:04.609930+00:00",
+  "provenance": "ai_review",
+  "human_approved": false,
+  "model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "skill_invocation_path": "runs/astra-normative-review-004-invocation.json",
+  "scope": "Revisión documental acotada de 00771-2026, su prórroga y relación con 2286-2024 y 2220-2025. Sin vigencia actual exhaustiva ni aprobación institucional.",
+  "verdict": "passed_for_bounded_documentary_chain; current_global_applicability_not_evaluated",
+  "summary": "00771-2026 artículo Primero prorroga al 01/06/2026 el plazo del literal f) del artículo sétimo de 2286-2024, sólo para el supuesto b.2). El plazo anterior de esa misma combinación era 01/04/2026 por 2220-2025 artículo Primero. Se verifica el acto faltante de revisión 003, sin certificar actualidad normativa completa.",
+  "corpus": {
+    "documents": [
+      {
+        "source": {
+          "document_id": "sbs-00771-2026",
+          "family": "cybersecurity",
+          "source_kind": "normative",
+          "synthetic": false,
+          "version_id": "090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3",
+          "sha256": "090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3",
+          "url": "https://intranet2.sbs.gob.pe/dv_int_cn/2557/v1.0/Adjuntos/Res.%20N%C2%B0%2000771-2026.pdf",
+          "captured_at": "2026-09-28T00:58:11.211505+00:00",
+          "published_on": "2026-03-18",
+          "effective_on": null,
+          "date_unknown_reasons": {
+            "effective_on": "Pending SK09 review; literal clauses retained separately"
+          }
+        },
+        "original_path": "data/foundation-holdout/objects/09/090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3.pdf",
+        "rawtext_path": "data/foundation-holdout/derived/090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3/ca8d8c1cdbb072bdbcf81022f2620df8277dc8d0761a10f3e301318e1fd3f04f/ccad686f93d17c05620db551f783eb141c82789955e4b27d566aae941fa56568/rawtext.txt",
+        "result_path": "data/foundation-holdout/derived/090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3/ca8d8c1cdbb072bdbcf81022f2620df8277dc8d0761a10f3e301318e1fd3f04f/ccad686f93d17c05620db551f783eb141c82789955e4b27d566aae941fa56568/result.json",
+        "quality_at_capture": {
+          "status": "partial",
+          "limitations": [
+            "layout_table_review_pending",
+            "semantic_segmentation_pending"
+          ]
+        }
+      },
+      {
+        "source": {
+          "document_id": "sbs-2286-2024",
+          "family": "cybersecurity",
+          "source_kind": "normative",
+          "synthetic": false,
+          "version_id": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+          "sha256": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+          "url": "https://intranet2.sbs.gob.pe/dv_int_cn/2410/v2.0/Adjuntos/2286-2024.R%20%28modificado%29.pdf",
+          "captured_at": "2026-09-27T23:24:31.054252+00:00",
+          "published_on": null,
+          "effective_on": null,
+          "date_unknown_reasons": {
+            "published_on": "Unknown pending authoritative metadata review; not inferred from repository path",
+            "effective_on": "Unknown pending legal-effect review; not inferred from capture or path"
+          }
+        },
+        "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/0e/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9.pdf",
+        "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/d7ab1b22b63dedd7f2a0e731d38c760584be04ed65d901a47a5fa160875a4dab/rawtext.txt",
+        "result_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/d7ab1b22b63dedd7f2a0e731d38c760584be04ed65d901a47a5fa160875a4dab/result.json",
+        "quality_at_capture": {
+          "status": "partial",
+          "limitations": [
+            "layout_table_review_pending",
+            "semantic_segmentation_pending"
+          ]
+        }
+      },
+      {
+        "source": {
+          "document_id": "sbs-2220-2025",
+          "family": "cybersecurity",
+          "source_kind": "normative",
+          "synthetic": false,
+          "version_id": "689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55",
+          "sha256": "689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55",
+          "url": "https://intranet2.sbs.gob.pe/dv_int_cn/2506/v1.0/Adjuntos/Res.SBS%202220-2025.pdf",
+          "captured_at": "2026-09-27T23:24:31.231867+00:00",
+          "published_on": null,
+          "effective_on": null,
+          "date_unknown_reasons": {
+            "published_on": "Unknown pending authoritative metadata review; not inferred from repository path",
+            "effective_on": "Unknown pending legal-effect review; not inferred from capture or path"
+          }
+        },
+        "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/68/689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55.pdf",
+        "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/0905a638ac61ee563fb7cf40b8c9205cad74dfdb08932ba311ac0318746bb4a0/rawtext.txt",
+        "result_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/0905a638ac61ee563fb7cf40b8c9205cad74dfdb08932ba311ac0318746bb4a0/result.json",
+        "quality_at_capture": {
+          "status": "partial",
+          "limitations": [
+            "layout_table_review_pending",
+            "semantic_segmentation_pending"
+          ]
+        }
+      }
+    ],
+    "warning": "2286 es copia modificada del repositorio con notas posteriores; no facsímil histórico no modificado de 2024. Notas no sustituyen dispositivos originales 2220/00771."
+  },
+  "integrity_checks": [
+    {
+      "document_id": "sbs-00771-2026",
+      "version_id": "090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3",
+      "original_sha256": "090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3",
+      "rawtext_sha256": "053bb4fde6bf2d7b73b6573e79ea3561ecda6dc1a0402f04492a0d733bc02aaa",
+      "result_sha256": "2b1b3945a9f96a2a68bc9a5c8169fcf14731e477585b713bedf2e7271b2545f3",
+      "original_matches_capture": true,
+      "result_source_hash_matches": true,
+      "rawtext_equals_result": true,
+      "rawtext_hash_matches": true,
+      "fresh_strict_extraction_matches_raw": true,
+      "physical_page_count": 2,
+      "page_count_matches_capture": true,
+      "prefix_bytes_before_pdf_header": 2,
+      "provision_spans_valid": true,
+      "capture_rawtext_and_result_hash_match": true
+    },
+    {
+      "document_id": "sbs-2286-2024",
+      "version_id": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "original_sha256": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "rawtext_sha256": "3c19a4f4c19d9d7d4392fa7a228814504d9aa8b0fe62ca73409e25755b197458",
+      "result_sha256": "b2a4018432aa0d7a8d886bb54fdff1ba724afaf90892cf345ee49819d683d756",
+      "original_matches_capture": true,
+      "result_source_hash_matches": true,
+      "rawtext_equals_result": true,
+      "rawtext_hash_matches": true,
+      "fresh_strict_extraction_matches_raw": true,
+      "physical_page_count": 8,
+      "page_count_matches_capture": true,
+      "prefix_bytes_before_pdf_header": 0,
+      "provision_spans_valid": true
+    },
+    {
+      "document_id": "sbs-2220-2025",
+      "version_id": "689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55",
+      "original_sha256": "689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55",
+      "rawtext_sha256": "644741ee0488bb79dad9dfb4cf2d7c566799d6652c2796621492ce5b1d519a22",
+      "result_sha256": "1fe91eb4ce5c93838aeecb8875c790cdff7538e632b4ebeaea1b80205e77929f",
+      "original_matches_capture": true,
+      "result_source_hash_matches": true,
+      "rawtext_equals_result": true,
+      "rawtext_hash_matches": true,
+      "fresh_strict_extraction_matches_raw": true,
+      "physical_page_count": 2,
+      "page_count_matches_capture": true,
+      "prefix_bytes_before_pdf_header": 0,
+      "provision_spans_valid": true
+    }
+  ],
+  "citations": {
+    "0771-identity-date": {
+      "document_id": "sbs-00771-2026",
+      "version_id": "090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2557/v1.0/Adjuntos/Res.%20N%C2%B0%2000771-2026.pdf",
+      "original_path": "data/foundation-holdout/objects/09/090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3.pdf",
+      "original_sha256": "090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3",
+      "rawtext_path": "data/foundation-holdout/derived/090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3/ca8d8c1cdbb072bdbcf81022f2620df8277dc8d0761a10f3e301318e1fd3f04f/ccad686f93d17c05620db551f783eb141c82789955e4b27d566aae941fa56568/rawtext.txt",
+      "rawtext_sha256": "053bb4fde6bf2d7b73b6573e79ea3561ecda6dc1a0402f04492a0d733bc02aaa",
+      "page": 1,
+      "start": 71,
+      "end": 126,
+      "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+      "quote_raw": "Lima, 13 de Marzo de 2026\nRESOLUCIÓN SBS\nN° 00771-2026\n",
+      "provenance": "ai_review",
+      "human_approved": false,
+      "visual_original_verified": true,
+      "visual_review_run": "astra-normative-review-004"
+    },
+    "0771-considerando-2220": {
+      "document_id": "sbs-00771-2026",
+      "version_id": "090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2557/v1.0/Adjuntos/Res.%20N%C2%B0%2000771-2026.pdf",
+      "original_path": "data/foundation-holdout/objects/09/090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3.pdf",
+      "original_sha256": "090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3",
+      "rawtext_path": "data/foundation-holdout/derived/090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3/ca8d8c1cdbb072bdbcf81022f2620df8277dc8d0761a10f3e301318e1fd3f04f/ccad686f93d17c05620db551f783eb141c82789955e4b27d566aae941fa56568/rawtext.txt",
+      "rawtext_sha256": "053bb4fde6bf2d7b73b6573e79ea3561ecda6dc1a0402f04492a0d733bc02aaa",
+      "page": 1,
+      "start": 1013,
+      "end": 1472,
+      "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+      "quote_raw": "Que, mediante Resolución SBS N° 2220-2025, luego de \nevaluar el grado de avance en la implementación de las adecuaciones normativas, así como del \nvolumen y la transaccionalidad de las tarjetas emitidas por las empresas del sistema financiero, se \nprorrogó el plazo señalado en el literal f) del artículo sétimo de la Resolución SBS N° 2286-2024 hasta \nel 01 de abril de 2026, sólo sobre el supuesto señalado en el literal b.2.) del referido artículo sétimo;\n",
+      "provenance": "ai_review",
+      "human_approved": false,
+      "visual_original_verified": true,
+      "visual_review_run": "astra-normative-review-004"
+    },
+    "0771-considerando-scope": {
+      "document_id": "sbs-00771-2026",
+      "version_id": "090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2557/v1.0/Adjuntos/Res.%20N%C2%B0%2000771-2026.pdf",
+      "original_path": "data/foundation-holdout/objects/09/090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3.pdf",
+      "original_sha256": "090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3",
+      "rawtext_path": "data/foundation-holdout/derived/090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3/ca8d8c1cdbb072bdbcf81022f2620df8277dc8d0761a10f3e301318e1fd3f04f/ccad686f93d17c05620db551f783eb141c82789955e4b27d566aae941fa56568/rawtext.txt",
+      "rawtext_sha256": "053bb4fde6bf2d7b73b6573e79ea3561ecda6dc1a0402f04492a0d733bc02aaa",
+      "page": 1,
+      "start": 1472,
+      "end": 1939,
+      "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+      "quote_raw": "Que, considerando el avance de las empresas del sistema \nfinanciero hasta la fecha en la implementación del doble factor de autenticación en operaciones con \ntarjetas de crédito presente emitidas antes del 01 de julio de 2025, esta Superintendencia ha \nidentificado que las empresas requieren un mayor plazo para cumplir con las adecuaciones señaladas \nen el párrafo previo, considerando, entre otros aspectos, el proceso de renovación del stock de sus \ntarjetas;\n  \n",
+      "provenance": "ai_review",
+      "human_approved": false,
+      "visual_original_verified": true,
+      "visual_review_run": "astra-normative-review-004"
+    },
+    "0771-art1": {
+      "document_id": "sbs-00771-2026",
+      "version_id": "090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2557/v1.0/Adjuntos/Res.%20N%C2%B0%2000771-2026.pdf",
+      "original_path": "data/foundation-holdout/objects/09/090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3.pdf",
+      "original_sha256": "090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3",
+      "rawtext_path": "data/foundation-holdout/derived/090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3/ca8d8c1cdbb072bdbcf81022f2620df8277dc8d0761a10f3e301318e1fd3f04f/ccad686f93d17c05620db551f783eb141c82789955e4b27d566aae941fa56568/rawtext.txt",
+      "rawtext_sha256": "053bb4fde6bf2d7b73b6573e79ea3561ecda6dc1a0402f04492a0d733bc02aaa",
+      "page": 2,
+      "start": 2973,
+      "end": 3205,
+      "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+      "quote_raw": "Artículo Primero.- Prorrogar el plazo señalado en el literal \nf) del artículo sétimo de la Resolución SBS N° 2286-2024 hasta el 01 de junio de 2026, sólo sobre el \nsupuesto señalado en el literal b.2.) del referido artículo sétimo.\n",
+      "provenance": "ai_review",
+      "human_approved": false,
+      "visual_original_verified": true,
+      "visual_review_run": "astra-normative-review-004"
+    },
+    "0771-art2": {
+      "document_id": "sbs-00771-2026",
+      "version_id": "090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2557/v1.0/Adjuntos/Res.%20N%C2%B0%2000771-2026.pdf",
+      "original_path": "data/foundation-holdout/objects/09/090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3.pdf",
+      "original_sha256": "090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3",
+      "rawtext_path": "data/foundation-holdout/derived/090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3/ca8d8c1cdbb072bdbcf81022f2620df8277dc8d0761a10f3e301318e1fd3f04f/ccad686f93d17c05620db551f783eb141c82789955e4b27d566aae941fa56568/rawtext.txt",
+      "rawtext_sha256": "053bb4fde6bf2d7b73b6573e79ea3561ecda6dc1a0402f04492a0d733bc02aaa",
+      "page": 2,
+      "start": 3205,
+      "end": 3336,
+      "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+      "quote_raw": "Artículo Segundo.- La presente Resolución entra en \nvigencia al día siguiente de su publicación en el Diario Oficial El Peruano.\n \n",
+      "provenance": "ai_review",
+      "human_approved": false,
+      "visual_original_verified": true,
+      "visual_review_run": "astra-normative-review-004"
+    },
+    "2220-identity-date": {
+      "document_id": "sbs-2220-2025",
+      "version_id": "689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2506/v1.0/Adjuntos/Res.SBS%202220-2025.pdf",
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/68/689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55.pdf",
+      "original_sha256": "689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/0905a638ac61ee563fb7cf40b8c9205cad74dfdb08932ba311ac0318746bb4a0/rawtext.txt",
+      "rawtext_sha256": "644741ee0488bb79dad9dfb4cf2d7c566799d6652c2796621492ce5b1d519a22",
+      "page": 1,
+      "start": 85,
+      "end": 149,
+      "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+      "quote_raw": "Lima, 23 de junio 2025 \n \n \n Resolución S.B.S.  \nN°2220-2025 \n \n",
+      "provenance": "ai_review",
+      "human_approved": false,
+      "visual_original_verified": true,
+      "visual_review_run": "astra-normative-review-004"
+    },
+    "2220-art1": {
+      "document_id": "sbs-2220-2025",
+      "version_id": "689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2506/v1.0/Adjuntos/Res.SBS%202220-2025.pdf",
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/68/689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55.pdf",
+      "original_sha256": "689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/0905a638ac61ee563fb7cf40b8c9205cad74dfdb08932ba311ac0318746bb4a0/rawtext.txt",
+      "rawtext_sha256": "644741ee0488bb79dad9dfb4cf2d7c566799d6652c2796621492ce5b1d519a22",
+      "page": 2,
+      "start": 2740,
+      "end": 2976,
+      "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+      "quote_raw": "Artículo Primero.- Prorrogar el plazo señalado en el literal \nf) del artículo sétimo de la Resolución SBS N° 2286 -2024 hasta el 01 de abril de 2026, sólo sobre el \nsupuesto señalado en el literal b.2.) del referido artículo sétimo. \n \n",
+      "provenance": "ai_review",
+      "human_approved": false,
+      "visual_original_verified": true,
+      "visual_review_run": "astra-normative-review-004"
+    },
+    "2220-art2": {
+      "document_id": "sbs-2220-2025",
+      "version_id": "689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2506/v1.0/Adjuntos/Res.SBS%202220-2025.pdf",
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/68/689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55.pdf",
+      "original_sha256": "689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/0905a638ac61ee563fb7cf40b8c9205cad74dfdb08932ba311ac0318746bb4a0/rawtext.txt",
+      "rawtext_sha256": "644741ee0488bb79dad9dfb4cf2d7c566799d6652c2796621492ce5b1d519a22",
+      "page": 2,
+      "start": 2976,
+      "end": 3218,
+      "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+      "quote_raw": "Artículo Segundo. - Prorrogar el plazo de adecuación \nestablecido en el literal g) del artículo sétimo de la Resolución SBS N° 2286-2024 hasta el 01 de abril \nde 2026, sólo en lo referido al último párrafo del artículo 18° del Reglamento. \n \n",
+      "provenance": "ai_review",
+      "human_approved": false,
+      "visual_original_verified": true,
+      "visual_review_run": "astra-normative-review-004"
+    },
+    "2220-art3": {
+      "document_id": "sbs-2220-2025",
+      "version_id": "689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2506/v1.0/Adjuntos/Res.SBS%202220-2025.pdf",
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/68/689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55.pdf",
+      "original_sha256": "689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/0905a638ac61ee563fb7cf40b8c9205cad74dfdb08932ba311ac0318746bb4a0/rawtext.txt",
+      "rawtext_sha256": "644741ee0488bb79dad9dfb4cf2d7c566799d6652c2796621492ce5b1d519a22",
+      "page": 2,
+      "start": 3218,
+      "end": 3353,
+      "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+      "quote_raw": "Artículo Tercero.- La presente Resolución entra en \nvigencia al día siguiente de su publicación en el Diario Oficial El Peruano. \n \n  \n",
+      "provenance": "ai_review",
+      "human_approved": false,
+      "visual_original_verified": true,
+      "visual_review_run": "astra-normative-review-004"
+    },
+    "2286-identity-date": {
+      "document_id": "sbs-2286-2024",
+      "version_id": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2410/v2.0/Adjuntos/2286-2024.R%20%28modificado%29.pdf",
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/0e/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9.pdf",
+      "original_sha256": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/d7ab1b22b63dedd7f2a0e731d38c760584be04ed65d901a47a5fa160875a4dab/rawtext.txt",
+      "rawtext_sha256": "3c19a4f4c19d9d7d4392fa7a228814504d9aa8b0fe62ca73409e25755b197458",
+      "page": 1,
+      "start": 75,
+      "end": 143,
+      "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+      "quote_raw": "Lima, 26 de junio de 2024  \n  \nResolución S.B.S. \nN° 2286-2024  \n  \n",
+      "provenance": "ai_review",
+      "human_approved": false,
+      "visual_original_verified": true,
+      "visual_review_run": "astra-normative-review-004"
+    },
+    "2286-art7-head": {
+      "document_id": "sbs-2286-2024",
+      "version_id": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2410/v2.0/Adjuntos/2286-2024.R%20%28modificado%29.pdf",
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/0e/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9.pdf",
+      "original_sha256": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/d7ab1b22b63dedd7f2a0e731d38c760584be04ed65d901a47a5fa160875a4dab/rawtext.txt",
+      "rawtext_sha256": "3c19a4f4c19d9d7d4392fa7a228814504d9aa8b0fe62ca73409e25755b197458",
+      "page": 7,
+      "start": 16984,
+      "end": 17284,
+      "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+      "quote_raw": "Artículo Séptimo. - Las modificaciones al Reglamento de \nTarjetas de Crédito y Débito aprobado por Resolución SBS N° 6523 -2013, establecidas en el artículo \nPrimero de la presente Resolución cuentan con un plazo de adecuación hasta el 31 de diciembre de \n2024, salvo lo dispuesto a continuación: \n \n",
+      "provenance": "ai_review",
+      "human_approved": false,
+      "visual_original_verified": true,
+      "visual_review_run": "astra-normative-review-004"
+    },
+    "2286-art7-a": {
+      "document_id": "sbs-2286-2024",
+      "version_id": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2410/v2.0/Adjuntos/2286-2024.R%20%28modificado%29.pdf",
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/0e/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9.pdf",
+      "original_sha256": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/d7ab1b22b63dedd7f2a0e731d38c760584be04ed65d901a47a5fa160875a4dab/rawtext.txt",
+      "rawtext_sha256": "3c19a4f4c19d9d7d4392fa7a228814504d9aa8b0fe62ca73409e25755b197458",
+      "page": 7,
+      "start": 17284,
+      "end": 17489,
+      "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+      "quote_raw": "a) Operación con tarjeta de débito presente:  desde el día siguiente de la publicación de esta \nResolución, la empresa debe autenticar al usuario conforme al numeral 7.1 del artículo 16° del \nReglamento. \n",
+      "provenance": "ai_review",
+      "human_approved": false,
+      "visual_original_verified": true,
+      "visual_review_run": "astra-normative-review-004"
+    },
+    "2286-art7-b": {
+      "document_id": "sbs-2286-2024",
+      "version_id": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2410/v2.0/Adjuntos/2286-2024.R%20%28modificado%29.pdf",
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/0e/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9.pdf",
+      "original_sha256": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/d7ab1b22b63dedd7f2a0e731d38c760584be04ed65d901a47a5fa160875a4dab/rawtext.txt",
+      "rawtext_sha256": "3c19a4f4c19d9d7d4392fa7a228814504d9aa8b0fe62ca73409e25755b197458",
+      "page": 7,
+      "start": 17489,
+      "end": 17950,
+      "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+      "quote_raw": "b) Operación con tarjeta de crédito presente:  \nb.1.) En las tarjetas emitidas desde el 01 de julio de 2025 inclusive, la empresa debe autenticar \nal usuario conforme al numeral 7.1 del artículo 16° del Reglamento. \nb.2.) En las tarjetas emitidas antes del 01 de julio de 2025 y que aún sigan vigentes luego de \ndicha fecha, la empresa debe autenticar al usuario conforme al numeral 7.1 del artículo 16° del \nReglamento como máximo a partir de su renovación.1 \n",
+      "provenance": "ai_review",
+      "human_approved": false,
+      "visual_original_verified": true,
+      "visual_review_run": "astra-normative-review-004"
+    },
+    "2286-art7-cde": {
+      "document_id": "sbs-2286-2024",
+      "version_id": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2410/v2.0/Adjuntos/2286-2024.R%20%28modificado%29.pdf",
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/0e/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9.pdf",
+      "original_sha256": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/d7ab1b22b63dedd7f2a0e731d38c760584be04ed65d901a47a5fa160875a4dab/rawtext.txt",
+      "rawtext_sha256": "3c19a4f4c19d9d7d4392fa7a228814504d9aa8b0fe62ca73409e25755b197458",
+      "page": 7,
+      "start": 17950,
+      "end": 18793,
+      "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+      "quote_raw": "c) Operación con tarjeta de crédito o débito no presente : desde el 01 de julio de 2025 , la \nempresa debe autenticar al usuario conforme a los numerales  7.2 y 7.4 del artículo 16° del \nReglamento, independientemente de la fecha de emisión de la tarjeta. \nd) Operación con billeteras móviles de terceros basados en tokenización de tarjetas:  desde el \n01 de julio del 2025, la empresa debe autenticar al usuario conforme al numeral 7.3 del artículo \n16° del Reglamento, independientemente de la fecha de emisión de la tarjeta. \ne) Operación con tarjeta de crédito adicional en la modalidad de tarjeta no presente:  a partir \ndel 01 de diciembre de 2025 , la empresa debe autenticar al usuario conforme a lo señalado en \nlos numerales 7.2, 7.3 y 7.4 del artículo 16° del Reglamento , independientemente de la fecha de \nemisión de la tarjeta. \n",
+      "provenance": "ai_review",
+      "human_approved": false,
+      "visual_original_verified": true,
+      "visual_review_run": "astra-normative-review-004"
+    },
+    "2286-art7-f-p7": {
+      "document_id": "sbs-2286-2024",
+      "version_id": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2410/v2.0/Adjuntos/2286-2024.R%20%28modificado%29.pdf",
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/0e/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9.pdf",
+      "original_sha256": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/d7ab1b22b63dedd7f2a0e731d38c760584be04ed65d901a47a5fa160875a4dab/rawtext.txt",
+      "rawtext_sha256": "3c19a4f4c19d9d7d4392fa7a228814504d9aa8b0fe62ca73409e25755b197458",
+      "page": 7,
+      "start": 18793,
+      "end": 18984,
+      "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+      "quote_raw": "f) Responsabilidad por pérdidas en operaciones no reconocidas: desde el 01 de julio de 2025, \nla empresa es responsable de las pérdidas en operaciones no reconocidas, salvo que acredite la \n ",
+      "provenance": "ai_review",
+      "human_approved": false,
+      "visual_original_verified": true,
+      "visual_review_run": "astra-normative-review-004"
+    },
+    "2286-art7-f-p8": {
+      "document_id": "sbs-2286-2024",
+      "version_id": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2410/v2.0/Adjuntos/2286-2024.R%20%28modificado%29.pdf",
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/0e/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9.pdf",
+      "original_sha256": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/d7ab1b22b63dedd7f2a0e731d38c760584be04ed65d901a47a5fa160875a4dab/rawtext.txt",
+      "rawtext_sha256": "3c19a4f4c19d9d7d4392fa7a228814504d9aa8b0fe62ca73409e25755b197458",
+      "page": 8,
+      "start": 19170,
+      "end": 19462,
+      "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+      "quote_raw": "responsabilidad del usuario, conforme a lo establecido en los numerales 9 y 10 del artículo 23 del \nReglamento, con excepción de la operación prevista en el literal a) del presente artículo, en cuyo \ncaso la responsabilidad será exigible a partir de la vigencia de la presente Resolución.23 \n",
+      "provenance": "ai_review",
+      "human_approved": false,
+      "visual_original_verified": true,
+      "visual_review_run": "astra-normative-review-004"
+    },
+    "2286-art7-g": {
+      "document_id": "sbs-2286-2024",
+      "version_id": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2410/v2.0/Adjuntos/2286-2024.R%20%28modificado%29.pdf",
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/0e/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9.pdf",
+      "original_sha256": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/d7ab1b22b63dedd7f2a0e731d38c760584be04ed65d901a47a5fa160875a4dab/rawtext.txt",
+      "rawtext_sha256": "3c19a4f4c19d9d7d4392fa7a228814504d9aa8b0fe62ca73409e25755b197458",
+      "page": 8,
+      "start": 19462,
+      "end": 19612,
+      "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+      "quote_raw": "g) El numeral 7.5 del artículo 16° y el último párrafo del artículo 18° del Reglamento  tienen \nplazo de adecuación hasta el 01 de julio de 20254. \n \n",
+      "provenance": "ai_review",
+      "human_approved": false,
+      "visual_original_verified": true,
+      "visual_review_run": "astra-normative-review-004"
+    },
+    "2286-art8": {
+      "document_id": "sbs-2286-2024",
+      "version_id": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2410/v2.0/Adjuntos/2286-2024.R%20%28modificado%29.pdf",
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/0e/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9.pdf",
+      "original_sha256": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/d7ab1b22b63dedd7f2a0e731d38c760584be04ed65d901a47a5fa160875a4dab/rawtext.txt",
+      "rawtext_sha256": "3c19a4f4c19d9d7d4392fa7a228814504d9aa8b0fe62ca73409e25755b197458",
+      "page": 8,
+      "start": 19612,
+      "end": 19758,
+      "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+      "quote_raw": "Artículo Octavo.- La presente Resolución entra en vigencia a partir del día  \nsiguiente de su publicación en el Diario Oficial El Peruano. \n  \n  \n",
+      "provenance": "ai_review",
+      "human_approved": false,
+      "visual_original_verified": true,
+      "visual_review_run": "astra-normative-review-004"
+    },
+    "2286-note1": {
+      "document_id": "sbs-2286-2024",
+      "version_id": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2410/v2.0/Adjuntos/2286-2024.R%20%28modificado%29.pdf",
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/0e/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9.pdf",
+      "original_sha256": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/d7ab1b22b63dedd7f2a0e731d38c760584be04ed65d901a47a5fa160875a4dab/rawtext.txt",
+      "rawtext_sha256": "3c19a4f4c19d9d7d4392fa7a228814504d9aa8b0fe62ca73409e25755b197458",
+      "page": 7,
+      "start": 18985,
+      "end": 19094,
+      "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+      "quote_raw": "1 Prórroga de plazo al 1 de abril de 2026 por Resolución SBS N° 2220-2025, con fecha de vigencia 26.06.2025. ",
+      "provenance": "ai_review",
+      "human_approved": false,
+      "visual_original_verified": true,
+      "visual_review_run": "astra-normative-review-004"
+    },
+    "2286-note3": {
+      "document_id": "sbs-2286-2024",
+      "version_id": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2410/v2.0/Adjuntos/2286-2024.R%20%28modificado%29.pdf",
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/0e/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9.pdf",
+      "original_sha256": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/d7ab1b22b63dedd7f2a0e731d38c760584be04ed65d901a47a5fa160875a4dab/rawtext.txt",
+      "rawtext_sha256": "3c19a4f4c19d9d7d4392fa7a228814504d9aa8b0fe62ca73409e25755b197458",
+      "page": 8,
+      "start": 20014,
+      "end": 20112,
+      "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+      "quote_raw": "3 Prórroga de plazo al 1 de junio de 2026 sobre el literal b.2) por Resolución SBS N° 0771-2026. \n",
+      "provenance": "ai_review",
+      "human_approved": false,
+      "visual_original_verified": true,
+      "visual_review_run": "astra-normative-review-004"
+    },
+    "2286-art16-7-1": {
+      "document_id": "sbs-2286-2024",
+      "version_id": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2410/v2.0/Adjuntos/2286-2024.R%20%28modificado%29.pdf",
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/0e/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9.pdf",
+      "original_sha256": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/d7ab1b22b63dedd7f2a0e731d38c760584be04ed65d901a47a5fa160875a4dab/rawtext.txt",
+      "rawtext_sha256": "3c19a4f4c19d9d7d4392fa7a228814504d9aa8b0fe62ca73409e25755b197458",
+      "page": 2,
+      "start": 5125,
+      "end": 5367,
+      "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+      "quote_raw": "7.1 Para operaciones con tarjeta presente se requieren dos factores, donde el primero es el \nchip de la tarjeta  o su representación digital . E l segundo  factor puede ser una clave \nsecreta (PIN) u otro que establezca la Superintendencia.  ",
+      "provenance": "ai_review",
+      "human_approved": false,
+      "visual_original_verified": true,
+      "visual_review_run": "astra-normative-review-004"
+    },
+    "2286-art18-last": {
+      "document_id": "sbs-2286-2024",
+      "version_id": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2410/v2.0/Adjuntos/2286-2024.R%20%28modificado%29.pdf",
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/0e/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9.pdf",
+      "original_sha256": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/d7ab1b22b63dedd7f2a0e731d38c760584be04ed65d901a47a5fa160875a4dab/rawtext.txt",
+      "rawtext_sha256": "3c19a4f4c19d9d7d4392fa7a228814504d9aa8b0fe62ca73409e25755b197458",
+      "page": 3,
+      "start": 6939,
+      "end": 7218,
+      "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+      "quote_raw": "Artículo 18°.- Medidas en materia de seguridad de la información  \n \n(…) \nLa empresa debe poner a disposición de plataformas de terceros mecanismos para reemplazar \nlos datos de la tarjeta por un identificador único generado mediante técnicas criptográficas  \n(tokenización). \n \n",
+      "provenance": "ai_review",
+      "human_approved": false,
+      "visual_original_verified": true,
+      "visual_review_run": "astra-normative-review-004"
+    }
+  },
+  "visual_review": {
+    "renderer": "pdftoppm, 120 dpi, PNG; páginas físicas",
+    "pages": {
+      "sbs-00771-2026": [
+        1,
+        2
+      ],
+      "sbs-2286-2024": [
+        1,
+        2,
+        3,
+        7,
+        8
+      ],
+      "sbs-2220-2025": [
+        1,
+        2
+      ]
+    },
+    "inspected_pages": 9,
+    "images": [
+      {
+        "path": "runs/astra-normative-review-004-pages/sbs-00771-2026-p1.png",
+        "sha256": "adbe4a55eb241144a2fc6bc68a3908ebb986ebc27e6eb7fb3a8fe73437b2e61f",
+        "visually_inspected": true
+      },
+      {
+        "path": "runs/astra-normative-review-004-pages/sbs-00771-2026-p2.png",
+        "sha256": "cea0429cfada6fc6896f5c7c9761b2339873fad28a65076f6db5256c701990ab",
+        "visually_inspected": true
+      },
+      {
+        "path": "runs/astra-normative-review-004-pages/sbs-2220-2025-p1.png",
+        "sha256": "85f956db84cbd1c0e52ad7e846e93ea8667db2a6eec0f667058386785119c64c",
+        "visually_inspected": true
+      },
+      {
+        "path": "runs/astra-normative-review-004-pages/sbs-2220-2025-p2.png",
+        "sha256": "fc32e2aee6571b7724e7794074cbec7f88a097056045690416909f9f3348e5f0",
+        "visually_inspected": true
+      },
+      {
+        "path": "runs/astra-normative-review-004-pages/sbs-2286-2024-p1.png",
+        "sha256": "5f248cb6d8772bdb56b745af523183ca1b2da874796c5c81d313e50469bd515b",
+        "visually_inspected": true
+      },
+      {
+        "path": "runs/astra-normative-review-004-pages/sbs-2286-2024-p2.png",
+        "sha256": "b259dc169f9dbd530b8f4cacf4d65a881d336221dc6825ce1b90915341880f98",
+        "visually_inspected": true
+      },
+      {
+        "path": "runs/astra-normative-review-004-pages/sbs-2286-2024-p3.png",
+        "sha256": "cea722e8a9e3a7be96364a348dac6679b9774eb7abd733fb3defbba37d83e3b5",
+        "visually_inspected": true
+      },
+      {
+        "path": "runs/astra-normative-review-004-pages/sbs-2286-2024-p7.png",
+        "sha256": "dd7943e89bf6ed7bb698ec2947991cf14589c0b3fcfbadf2d9f54c76839e4a3c",
+        "visually_inspected": true
+      },
+      {
+        "path": "runs/astra-normative-review-004-pages/sbs-2286-2024-p8.png",
+        "sha256": "3d89852610aafdce63a00f5fd0f8be3e7107bb3ba8d876786dc18252aa18ff82",
+        "visually_inspected": true
+      }
+    ],
+    "findings": "Identidades, dispositivos y notas pertinentes legibles. Literal f) continúa entre páginas 7/8; números 1/2/3/4 son notas. No tablas ni anexos en 00771. No revisión visual exhaustiva de toda 2286.",
+    "signature_validation": "not_evaluated; firma/QR visibles no acreditan validación criptográfica"
+  },
+  "web_verification": {
+    "checked_at_utc": "2026-09-28T01:06:04.613869+00:00",
+    "url": "https://busquedas.elperuano.pe/dispositivo/NL/2495565-1",
+    "publisher": "Diario Oficial El Peruano",
+    "method": "web open primary publication page",
+    "publication_date": "2026-03-18",
+    "identity": "RESOLUCIÓN SBS N° 00771-2026",
+    "matches_original_dispositive_scope": true,
+    "observations": "Fecha de publicación, identidad y artículos Primero/Segundo corroborados. Un rótulo ajeno antes del título no se usa como evidencia.",
+    "local_frozen_web_capture": null,
+    "limitation": "Metadata primaria verificada en web en esta sesión; no captura local adicional ni validación de firma."
+  },
+  "findings": [
+    {
+      "id": "F01",
+      "status": "passed",
+      "kind": "limited_deadline_extension",
+      "severity_if_misstated": "critical",
+      "provision": "00771 artículo Primero → 2286 artículo Séptimo literal f), sólo supuesto b.2.)",
+      "before": {
+        "date": "2026-04-01",
+        "basis": [
+          "2220-art1"
+        ]
+      },
+      "after": {
+        "date": "2026-06-01",
+        "basis": [
+          "0771-art1"
+        ]
+      },
+      "literal_change": "Para f) sólo b.2), 01 de abril de 2026 pasa a 01 de junio de 2026. Nueva prórroga por remisión, sin reemplazar texto completo de 2286.",
+      "date_difference": {
+        "calendar_months": 2,
+        "calendar_days": 61,
+        "kind": "calendar_computation_between_stated_dates; not statutory duration language"
+      },
+      "original_baseline": {
+        "date": "2025-07-01",
+        "basis": [
+          "2286-art7-f-p7",
+          "2286-art7-f-p8"
+        ],
+        "qualification": "Fecha escrita en cuerpo de copia modificada; prórrogas acreditadas por sus actos."
+      },
+      "citations": [
+        "2220-art1",
+        "0771-art1",
+        "2286-art7-f-p7",
+        "2286-art7-f-p8"
+      ]
+    },
+    {
+      "id": "F02",
+      "status": "passed",
+      "kind": "scope_alignment",
+      "scope": "Literal f): responsabilidad por pérdidas en operaciones no reconocidas, salvo que la empresa acredite responsabilidad del usuario, con remisión a numerales 9 y 10 del artículo 23 del Reglamento de Tarjetas. Sólo supuesto b.2): operaciones con tarjeta de crédito presente, emitida antes del 01/07/2025 y aún vigente luego de esa fecha.",
+      "b2_authentication_text": "b.2 conserva obligación de autenticar conforme al numeral 7.1 del artículo 16 como máximo a partir de la renovación. 00771 no contiene sustitución expresa de ese texto.",
+      "inference_explicit": "El considerando explica avance de doble factor y renovación del stock; no amplía dispositivo a toda autenticación, tarjetas ni operaciones digitales. Tampoco implica ausencia de toda otra responsabilidad antes de nueva fecha.",
+      "citations": [
+        "2286-art7-b",
+        "2286-art7-f-p7",
+        "2286-art7-f-p8",
+        "2286-art16-7-1",
+        "0771-art1",
+        "0771-considerando-scope"
+      ]
+    },
+    {
+      "id": "F03",
+      "status": "passed",
+      "kind": "separate_prior_extension_not_repeated",
+      "finding": "2220 artículo Segundo prorroga g) hasta 01/04/2026 sólo respecto al último párrafo del artículo 18 (mecanismos de tokenización para plataformas de terceros). 00771 no menciona ni prorroga g) o ese párrafo; su artículo Segundo trata sólo de entrada en vigencia.",
+      "current_tokenization_deadline": "not_evaluated beyond these acts",
+      "citations": [
+        "2220-art2",
+        "2286-art7-g",
+        "2286-art18-last",
+        "0771-art1",
+        "0771-art2"
+      ]
+    },
+    {
+      "id": "F04",
+      "status": "passed",
+      "kind": "dates_separated",
+      "emission_date": "2026-03-13",
+      "publication_date": "2026-03-18",
+      "entry_into_force_date": "2026-03-19",
+      "entry_into_force_basis": "Inferencia calendario: artículo Segundo exige día siguiente de publicación; El Peruano indica 18/03/2026. No certifica vigencia actual completa.",
+      "capture_date": "2026-09-28T00:58:11.211505+00:00",
+      "extended_deadline": "2026-06-01",
+      "citations": [
+        "0771-identity-date",
+        "0771-art2"
+      ],
+      "publication_evidence": "web_verification"
+    },
+    {
+      "id": "F05",
+      "status": "passed",
+      "kind": "prior_evidence_gap_resolved",
+      "prior_review_reference": "runs/astra-normative-review-003.json T03; sólo localizador y limitación previa, no autoridad",
+      "finding": "Original completo 00771 de dos páginas disponible e íntegro según hash, con identidad y dispositivo cotejados visualmente. Nota 3 de 2286 corroborada en plazo y supuesto por acto; se cierra falta específica de original 0771.",
+      "not_resolved": [
+        "Exhaustividad de modificaciones/correcciones posteriores.",
+        "Actualidad completa de otros reglamentos/artículos.",
+        "Aplicabilidad a empresa, tarjeta u operación concretas."
+      ],
+      "citations": [
+        "2286-note3",
+        "0771-art1",
+        "0771-identity-date"
+      ]
+    },
+    {
+      "id": "F06",
+      "status": "passed",
+      "kind": "annotation_vs_operating_clause",
+      "finding": "Nota 1 junto a b.2 alude a 01/04/2026; su ubicación no amplía artículo Primero de 2220 ni 00771. Se conserva restricción f) sólo b.2).",
+      "citations": [
+        "2286-note1",
+        "2286-art7-b",
+        "2220-art1",
+        "0771-art1"
+      ]
+    }
+  ],
+  "negative_claim_checks": [
+    {
+      "claim": "00771 prorroga todas las obligaciones hasta junio de 2026",
+      "status": "failed",
+      "reason": "Dispositivo restringe a f) sólo b.2).",
+      "citations": [
+        "0771-art1",
+        "2286-art7-a",
+        "2286-art7-b",
+        "2286-art7-cde",
+        "2286-art7-g"
+      ]
+    },
+    {
+      "claim": "00771 prorroga tokenización del último párrafo de artículo 18",
+      "status": "failed",
+      "reason": "Ese supuesto sólo aparece en 2220 artículo Segundo.",
+      "citations": [
+        "2220-art2",
+        "0771-art1",
+        "0771-art2"
+      ]
+    },
+    {
+      "claim": "00771 cambia toda autenticación o artículo 20.3 de ciberseguridad",
+      "status": "failed",
+      "reason": "No contiene esa orden; no extrapolar desde considerandos.",
+      "citations": [
+        "0771-art1",
+        "0771-considerando-scope"
+      ]
+    }
+  ],
+  "consistency_review": {
+    "method": "Una revisión IA: cotejo entre dispositivos 00771/2220 y f)/b.2) de 2286; búsqueda separada de generalizaciones incorrectas y plazos no prorrogados.",
+    "blind_independent_comparison": "not_evaluated",
+    "multiple_judges": "not_evaluated",
+    "disagreements": [],
+    "limits": "Consistencia interna de fuentes; no acuerdo entre revisores independientes ni adjudicación humana."
+  },
+  "gates": [
+    {
+      "id": "G01",
+      "status": "passed",
+      "scope": "3/3 originales coinciden con SHA y versiones fijadas; conteos 2/8/2 páginas."
+    },
+    {
+      "id": "G02",
+      "status": "passed",
+      "scope": "3/3 rawtext coinciden con result, hashes, spans y extracción nueva estricta."
+    },
+    {
+      "id": "G03",
+      "status": "passed",
+      "scope": "9/9 páginas relevantes renderizadas e inspeccionadas; citas cotejadas visualmente."
+    },
+    {
+      "id": "G04",
+      "status": "passed",
+      "scope": "Antes/después, f) sólo b.2), fechas y prórroga g) separada verificados."
+    },
+    {
+      "id": "G05",
+      "status": "passed",
+      "scope": "Publicación 18/03/2026 y regla día siguiente verificadas para 00771; 19/03 marcado como inferencia calendario."
+    },
+    {
+      "id": "G06",
+      "status": "passed",
+      "scope": "Falta específica del acto 0771 resuelta; límites restantes explícitos."
+    },
+    {
+      "id": "G07",
+      "status": "passed",
+      "scope": "Procedencia IA conservada; human_approved=false; ningún impacto institucional aprobado."
+    },
+    {
+      "id": "G08",
+      "status": "not_evaluated",
+      "scope": "Vigencia y aplicabilidad actuales completas; historia normativa exhaustiva excluida."
+    },
+    {
+      "id": "G09",
+      "status": "not_evaluated",
+      "scope": "Fechas exactas de publicación/entrada en vigencia de 2286 y 2220 no revalidadas contra publicación primaria. Notas no son corroboración independiente."
+    },
+    {
+      "id": "G10",
+      "status": "not_evaluated",
+      "scope": "Validación de firmas digitales/autenticidad institucional, más allá de procedencia y correspondencia documental."
+    },
+    {
+      "id": "G11",
+      "status": "not_evaluated",
+      "scope": "Recall>=0.95, precisión>=0.90 y cero críticos omitidos del agente: sin inventario independiente ni salidas del agente bajo prueba."
+    },
+    {
+      "id": "G12",
+      "status": "not_evaluated",
+      "scope": "Aceptación RAG/E2E y ahorro humano>=0.30: sin qrels/k/umbrales congelados, ejecución o muestras pareadas. Costo desconocido."
+    },
+    {
+      "id": "G13",
+      "status": "not_evaluated",
+      "scope": "Aplicabilidad o impacto institucional en procesos concretos."
+    }
+  ],
+  "limitations": [
+    "No modificación de effective_on/quality de SourceDocument; inferencias temporales sólo en este informe.",
+    "Calidad partial de capturas permanece; revisión visual limitada a páginas enumeradas.",
+    "2286 contiene notas posteriores: no reconstrucción histórica completa.",
+    "00771 del original y 0771 de la nota se alinean por número/año y contenido, no por carpeta.",
+    "Sin modificación de corpus, índices, modelos, despliegue, impactos institucionales ni revisiones anteriores.",
+    "Costo desconocido; ahorro humano y exactitud jurídica global no medidos."
+  ],
+  "stop_rule": "Detener tras cadena 2286 → 2220 → 00771 y sus límites; sin expansión a otras normas.",
+  "citation_verification": {
+    "exact_and_page_bounded": 22,
+    "total": 22,
+    "offset_roundtrip_passed": true,
+    "raw_quotes_preserve_linebreaks_and_extraction_artifacts": true
+  },
+  "gate_counts": {
+    "passed": 7,
+    "failed": 0,
+    "not_evaluated": 6
+  },
+  "negative_claim_counts": {
+    "failed": 3,
+    "meaning": "Generalizaciones rechazadas; no fallas de integridad documental."
+  },
+  "input_hashes_unchanged_at_completion": true,
+  "skill_invocation_sha256": "3e3bfec6624beb1ed2f6ff2e2b0df0b7fd70ef9a769df41b4618f19137466bd7"
+}

@@ -1,0 +1,67 @@
+{
+  "course_id": "databricks-ai-engineer",
+  "session_ids": [
+    "S08"
+  ],
+  "class_date": "2026-09-28",
+  "audience": "Desde cero; continuidad del Copiloto de Datos Neptuno S01–S07",
+  "duration_minutes": 180,
+  "time_unit": "clock_minutes",
+  "scope": "full-session",
+  "target_scope": "full-session",
+  "class_ready": false,
+  "preparation_status": "authoring_and_validation_pending",
+  "syllabus_sources": [
+    {
+      "path": "/Users/macdenix/clawd/projects/databricks-genai-pathway/temario-curso/TEMARIO.md",
+      "section": "Sesión 8; Proyecto integrador; Resultado del curso",
+      "sha256": "e84cde07a10c39b0cdfd8b4cae5d6926be7912cc18c69e9afd0e16f296dc4a29"
+    },
+    {
+      "path": "/Users/macdenix/clawd/projects-index/personal/cursos-a-dictar/databricks-ai-engineer/PROJECT.md",
+      "section": "Continuidad23sep y parámetros"
+    }
+  ],
+  "project_rules": [
+    "/Users/macdenix/clawd/AGENTS.md",
+    "/Users/macdenix/nix-skills/skills/operational/deck-craft/references/course-contract.md"
+  ],
+  "teacher_root": "/Users/macdenix/clawd/databricks-ai-engineer",
+  "student_root": "/Users/macdenix/clawd/databricks-ai-engineer-alumnos",
+  "delivery_channel": "Paquete de clase local; evidencia docente separada de material del alumno",
+  "design_reference": "Stripe heredado S06/S07: indigo #533afd, navy #0d253d, HTML y controles existentes",
+  "existing_format": "HTML autónomo y enlazado; Databricks source Python; Markdown; JSON",
+  "feedback_applied": [
+    {
+      "criterion": "Explicar antes del código",
+      "source": "Feedback instructor21sep",
+      "change": "CP0–8: entrada, acción, salida, interpretación y recuperación"
+    },
+    {
+      "criterion": "Cumplir temario y validar con jueces",
+      "source": "Pedido26sep2026",
+      "change": "Matriz por promesa, tres revisiones independientes y evidencia de ejecución"
+    }
+  ],
+  "conflicts": [
+    {
+      "issue": "Fecha antigua README21sep; usuario dice último lunes",
+      "decision": "28sep2026",
+      "authority": "Usuario26sep2026"
+    },
+    {
+      "issue": "Temario3h académicas por confirmar; práctica previa180reloj",
+      "decision": "180min reloj con pausa10; prewarm fuera de clase",
+      "authority": "Continuidad operativa y encargo actual"
+    },
+    {
+      "issue": "Plan original 4 bloques de45min y dos descansos frente a secuencia técnica S08 con recursos asíncronos.",
+      "decision": "Conservar180min reloj; una pausa10min entre rollout y App, siguiendo estructura operativa reciente S05–S07. Minutos reorganizados para práctica y recuperación; tiempo estimado, no ensayo con alumnos.",
+      "authority": "Decisión de preparación dentro del encargo de completar S08; no cambia temas ni entregable prometidos."
+    }
+  ],
+  "unresolved": [
+    "Completar evidencia cloud y jueces antes de afirmar class_ready",
+    "No inferir S07 dictada ni Review App humana guardada desde material disponible"
+  ]
+}

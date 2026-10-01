@@ -1,0 +1,12 @@
+from pathlib import Path
+p=Path(__file__).with_name('index.html');s=p.read_text()
+s=s.replace('function vecindad() {','function vecindad() {\n    if(sel && sel.teaching) return sel.parrafo.slice(0, TOPE_VECINDAD);')
+s=s.replace("id:'fq15',parrafo:context", "id:'fq15',teaching:true,parrafo:context")
+s=s.replace('max_tokens: 500','max_tokens: 1200')
+s=s.replace("if (!boton || !panel) return;", "if (!boton || !panel) return;\n  panel.inert=true;")
+s=s.replace("panel.classList.add('fq-abierto');", "panel.inert=false; panel.classList.add('fq-abierto');")
+s=s.replace("panel.classList.remove('fq-abierto');", "panel.inert=true; panel.classList.remove('fq-abierto');")
+s=s.replace('pointer-events:none}#tip strong','pointer-events:auto}#tip strong')
+s=s.replace("document.addEventListener('pointerout',e=>{if(active&&!active.contains(e.relatedTarget))hideTip();});", "let tipTimer; box.addEventListener('pointerenter',()=>clearTimeout(tipTimer)); box.addEventListener('pointerleave',hideTip); document.addEventListener('pointerout',e=>{if(active&&!active.contains(e.relatedTarget)&&!box.contains(e.relatedTarget)){clearTimeout(tipTimer);tipTimer=setTimeout(hideTip,220);}});")
+p.write_text(s)
+print('Contexto, accesibilidad y longitud de respuesta corregidos')

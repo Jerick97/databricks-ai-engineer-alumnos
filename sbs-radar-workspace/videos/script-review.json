@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "reviewer": "independent-agent /root/archify_evidence",
+  "date": "2026-09-30",
+  "scope": "Evaluación docente de dos guiones de seis escenas. Revisión textual local frente a guía y evidencia ya contrastada; no certificación del agente ni evaluación del audio.",
+  "verdict": "PASS",
+  "material_errors": [],
+  "important_omissions": [],
+  "checks": [
+    "Inventario correcto: seis copias, cuatro resoluciones, dos pares comparables; números de resolución narrados sin error.",
+    "Ocho tablas expresadas en español corresponden a documents, versions, provisions, pairs, changes, evidence, reviews, processes.",
+    "Publicadores separados: tablas Genie en Delta UC y artefactos en Volumes con control Delta; no promoción automática de App.",
+    "RAG local BM25 + vector + RRF + reranker ONNX; Genie separado y conteo puro sin generador normativo.",
+    "Comparación extractiva e implicancias propuestas; citas no equivalen a corrección semántica.",
+    "Job pausado, promoción pendiente y aceptación abierta; 13 skills provisionales no equivalen a 13 invocaciones por consulta."
+  ],
+  "pronunciation_notes": [
+    {
+      "severity": "non_blocking",
+      "locations": [
+        "01-ingesta-publicacion/scene01",
+        "01-ingesta-publicacion/scene02",
+        "02-consulta-aplicacion/scene03"
+      ],
+      "note": "Escuchar síntesis Dora de SBS, PDF, SHA, BM, RRF y ONNX: están como siglas sin deletreo fonético explícito. Si resultan ininteligibles, normalizar sólo la capa TTS (p. ej. be eme veinticinco, erre erre efe). No se observa error textual de concepto."
+    },
+    {
+      "severity": "non_blocking",
+      "locations": [
+        "01-ingesta-publicacion/scene05",
+        "01-ingesta-publicacion/scene06",
+        "02-consulta-aplicacion/scene03",
+        "02-consulta-aplicacion/scene04"
+      ],
+      "note": "Comprobar audibilidad de RAG, embeddings, Genie, Unity Catalog, Volumes, reranking y SQL Warehouse. Conservar sus etiquetas visuales para vincular término escuchado y diagrama."
+    }
+  ],
+  "sources": [
+    "teaching-guide/content.json",
+    "teaching-guide/review.json",
+    "teaching-guide/review-skills.json",
+    "runs/ui246/test-source246/runs/sk06-pilot-002/documents.jsonl",
+    "runs/ui246/test-source246/runs/sk06-pilot-002/pairs.jsonl",
+    "runs/ui246/test-source246/src/sbs/genie/__init__.py:17",
+    "runs/ui246/test-source246/src/sbs/retrieval/__init__.py:247-350",
+    "runs/ui246/test-source246/src/sbs/conversation/__init__.py:217-283",
+    "runs/ui246/test-source246/src/sbs/conversation/hybrid_125.py:63-90",
+    "runs/ui246/test-source246/src/sbs/genie/publication_writer.py:32-55",
+    "src/sbs/operations/cloud_writer.py:49-76",
+    "ESTADO-ENTREGA.md:19-42"
+  ],
+  "artifacts": {
+    "videos/01-ingesta-publicacion/script.json": "e829729ea859642994c4b59ab18b6372c043b1350b4e59c7acf4c501101922df",
+    "videos/02-consulta-aplicacion/script.json": "c58ae6d22f5f9da8f87d14ce90786d49e761f3e498acd23a80a61b1906c334dc"
+  },
+  "limitations": [
+    "No audio sintetizado escuchado: pronunciación pendiente de control auditivo.",
+    "No llamadas cloud ni verificación de disponibilidad actual.",
+    "No modificación de guiones."
+  ]
+}

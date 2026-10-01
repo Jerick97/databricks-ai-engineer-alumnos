@@ -1,0 +1,389 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sbs:evaluation:018:records",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/pair"
+    },
+    {
+      "$ref": "#/$defs/question"
+    },
+    {
+      "$ref": "#/$defs/passage"
+    },
+    {
+      "$ref": "#/$defs/judgment"
+    },
+    {
+      "$ref": "#/$defs/reference"
+    }
+  ],
+  "$defs": {
+    "pair": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "pair_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "family": {
+          "enum": [
+            "cybersecurity",
+            "market_conduct"
+          ]
+        },
+        "before": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "document_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "version_id": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "original_path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "original_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "derivative_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "related_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "required": [
+            "document_id",
+            "version_id",
+            "original_path",
+            "original_sha256",
+            "derivative_sha256",
+            "related_ids"
+          ]
+        },
+        "after": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "document_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "version_id": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "original_path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "original_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "derivative_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "related_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "required": [
+            "document_id",
+            "version_id",
+            "original_path",
+            "original_sha256",
+            "derivative_sha256",
+            "related_ids"
+          ]
+        },
+        "dependency_component_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "partition": {
+          "enum": [
+            "development",
+            "reserved",
+            "excluded"
+          ]
+        },
+        "exposure_log": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "eligibility_evidence": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "pair_id",
+        "family",
+        "before",
+        "after",
+        "dependency_component_id",
+        "partition",
+        "exposure_log",
+        "eligibility_evidence"
+      ]
+    },
+    "question": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "query_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "family": {
+          "enum": [
+            "cybersecurity",
+            "market_conduct"
+          ]
+        },
+        "pair_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "question": {
+          "type": "string",
+          "minLength": 1
+        },
+        "task": {
+          "enum": [
+            "comparison",
+            "insufficient",
+            "temporal",
+            "cross_family"
+          ]
+        },
+        "provision_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "expected_answerability": {
+          "enum": [
+            "answerable",
+            "insufficient",
+            "ambiguous"
+          ]
+        },
+        "reference_id": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "query_id",
+        "family",
+        "pair_id",
+        "question",
+        "task",
+        "provision_ids",
+        "expected_answerability",
+        "reference_id"
+      ]
+    },
+    "passage": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "passage_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "document_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version_id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "rawtext_path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rawtext_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "page": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "quote": {
+          "type": "string",
+          "minLength": 1
+        },
+        "offset_unit": {
+          "const": "Unicode code points; zero-based; end-exclusive"
+        }
+      },
+      "required": [
+        "passage_id",
+        "document_id",
+        "version_id",
+        "rawtext_path",
+        "rawtext_sha256",
+        "page",
+        "start",
+        "end",
+        "quote",
+        "offset_unit"
+      ]
+    },
+    "judgment": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "query_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "passage_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "grade": {
+          "enum": [
+            0,
+            1,
+            2
+          ]
+        },
+        "side": {
+          "enum": [
+            "before",
+            "after",
+            "context"
+          ]
+        },
+        "reviewer_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "provenance": {
+          "enum": [
+            "ai_review",
+            "human_reference"
+          ]
+        },
+        "source_locator_verified": {
+          "type": "boolean"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "disagreement_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "query_id",
+        "passage_id",
+        "grade",
+        "side",
+        "reviewer_id",
+        "provenance",
+        "source_locator_verified",
+        "reason",
+        "disagreement_id"
+      ]
+    },
+    "reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "ai_review",
+            "human_reference",
+            "mixed"
+          ]
+        },
+        "review_provenance": {
+          "type": "object"
+        },
+        "families": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "changes": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "critical": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "insufficient_cases": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "required": [
+              "changes",
+              "critical",
+              "insufficient_cases"
+            ]
+          }
+        }
+      },
+      "required": [
+        "kind",
+        "review_provenance",
+        "families"
+      ]
+    }
+  },
+  "description": "Format-only schemas; also apply cross-record rules and original verification in protocol doc. Empty dataset is pending, not benchmark-ready."
+}

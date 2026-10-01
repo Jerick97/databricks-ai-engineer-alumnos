@@ -1,0 +1,85 @@
+{
+  "reviewer": "independent execution judge /root/judge_execution; not fix author",
+  "verdict": "PASS",
+  "scope": "teacher-delivery-regression",
+  "target_scope": "teacher notebook full execution using visible defaults, without Job overrides",
+  "class_ready": true,
+  "date": "2026-09-27T11:57:47.861826+00:00",
+  "artifact_hashes": {
+    "notebook-docente.py": "53f0e331e04e18766bdfe1ef5f22593e8639ca58e119c60800986a4037a73e4c",
+    "notebook.py": "4dbb89479b8d04d4e22de55110c9e47297e6e5f3d91e3d76339d9f9a4edf9510",
+    "scripts/build_teacher_notebook.py": "5ba6d419057ac5251910948f961f17792c774f471bee14b4cf7c1610fe26ee9c",
+    "scripts/validate_teacher_notebook.py": "8500b22dbbfff16eb07139bddec0c8919f5be4464a9eb310ca2e8ca52f627432",
+    "tests-delivery/test_teacher_defaults.py": "93f38ac2cf85f853533e5c78e62ac1f76665cc935852e44c0456af64ae4b8896",
+    "reports/teacher-delivery-regression.json": "39925d3e86f1239805b0c911f72e770a20d41d6fb3a72158eab8d0db2c9b7839",
+    "reports/notebook-docente-submit.json": "79f43aaf1c8e24948ce0adcf34fa2d5e84dfb9b330c90705f52fded30a7ad693",
+    "lab/config.json": "799cc5fdd23517980d45fb070e38444cdbb04dbef190142ccae59cec1927c2b6",
+    "lab/lab_config.py": "c9fda07a95c1de66dad6f4d3386065b180fc5fff3b61b94d5ba5c4b3d07b34db"
+  },
+  "evidence": [
+    {
+      "kind": "independent_local_execution",
+      "command": "/tmp/ais08-py312/bin/python -m unittest discover -s s08-deployment/tests-delivery -v",
+      "exit_code": 0,
+      "result": "1 regression test PASS. Five defaults resolve to teacher catalog/warehouse/schema/model/endpoint/App; mode verificar and rollout inspeccionar."
+    },
+    {
+      "kind": "independent_diff_review",
+      "command": "diff -u notebook.py notebook-docente.py; compare prior execution-judge hashes and submission staged_files",
+      "result": "Only header and five widget defaults differ; original notebook.py, agent.py and lab_config.py match prior approved core; zero staged source deltas."
+    },
+    {
+      "kind": "independent_read_only_cloud",
+      "command": "WorkspaceClient.jobs.get_run(439573581964505); jobs.get_run_output(1030213099534392); workspace.export(/Shared/curso-databricks-ai-engineer/s08-docente/S08-docente-validado, SOURCE)",
+      "result": {
+        "life_cycle_state": "TERMINATED",
+        "result_state": "SUCCESS",
+        "base_parameters_observed": "Absent in actual NotebookTask; submit source and manifest use {}",
+        "remote_source_matches_local": true,
+        "sha256": "53f0e331e04e18766bdfe1ef5f22593e8639ca58e119c60800986a4037a73e4c",
+        "mode": "verificar",
+        "checks": {
+          "CP0_inventory": true,
+          "CP1_real_agent_and_clarification": true,
+          "CP2_serving_invocation": true,
+          "CP5_real_rows_and_unique_ids": true,
+          "CP5_parser_fixture": true,
+          "CP6_profile_metrics_observed": true
+        },
+        "finished_utc": "2026-09-27T11:56:21.478377+00:00"
+      },
+      "cloud_mutations_by_judge": false
+    }
+  ],
+  "findings": [
+    {
+      "severity": "info",
+      "locator": "reports/teacher-delivery-regression.json",
+      "finding": "Previous validation injected mandatory widgets and therefore did not validate the blank-start teacher experience. This addendum specifically closes that delivery gap; the earlier full-session judgment must not be described as proof of defaults working."
+    },
+    {
+      "severity": "warning",
+      "locator": "reports/notebook-docente-observed.json:app",
+      "finding": "Current notebook output reports App compute stopped. Notebook checks do not assert active App compute or exercise the browser; this PASS closes widget defaults only and must not be interpreted as App operational now.",
+      "observed": {
+        "url": "https://ais08-neptuno-ui-7474657121564806.aws.databricksapps.com",
+        "compute_status": {
+          "message": "App compute was stopped due to workspace or account status.",
+          "state": "STOPPED"
+        },
+        "app_status": {
+          "message": "App status is unavailable.",
+          "state": "UNAVAILABLE"
+        }
+      }
+    }
+  ],
+  "unverified": [
+    "No automated browser Run all click or Chrome corporate SSO completion was exercised. Verified complete cloud Job execution of identical source with its visible defaults and no parameter overrides.",
+    "Existing interactive widget values can persist; the result applies to the newly delivered teacher path/defaults. User-modified or previously persisted values are outside this exact fresh-default validation.",
+    "The teacher copy targets the course workspace; student starter intentionally still requires each team to supply its own configuration.",
+    "Current App operation is not revalidated: latest notebook output reports stopped compute; instructor must resolve workspace/account availability before live UI demonstration."
+  ],
+  "conclusion": "Reported Completa warehouse_id regression is resolved for the new teacher artifact and workspace path. Existing curriculum/pedagogy/core execution evidence is unchanged; this is a focused delivery addendum, not a re-review of every course artifact.",
+  "class_ready_scope": "Only the corrected teacher default-start execution is approved; this addendum does not ratify current App availability or overall live infrastructure readiness."
+}

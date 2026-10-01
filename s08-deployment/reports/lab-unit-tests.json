@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "tests": 14,
+  "command": "python -m unittest discover -s s08-deployment/tests -v",
+  "scope": "pure contract security; not cloud execution"
+}

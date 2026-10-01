@@ -1,0 +1,11 @@
+{
+  "skill": "SK12",
+  "status": "failed",
+  "stage": "context_hash_preflight",
+  "error": "spec hash_changed detected after root added clarification to frozen spec",
+  "modified_hash": "8cf50fbd32b99851560fd138d12e3e62b9a364a03706c06df354ea3185047097",
+  "restored_hash": "7a028d0881c630950f69949229011238264fcaef3b70109776b3458c03929344",
+  "resolution": "Reverted only root clarification; authoritative user review update remains context/review-policy.json. Frozen spec bytes preserved.",
+  "executor_gap": "On exception, finally persisted notebook to fixed path (overwriting prior successful notebook), but skipped execution JSON update, leaving previous success metadata paired with failed notebook. SK12 refinement in progress.",
+  "fresh_rerun": "pending"
+}

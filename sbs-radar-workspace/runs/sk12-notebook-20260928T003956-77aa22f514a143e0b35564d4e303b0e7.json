@@ -1,0 +1,16 @@
+{
+  "run_id": "sk12-notebook-20260928T003956-77aa22f514a143e0b35564d4e303b0e7",
+  "status": "passed",
+  "started_at": "2026-09-28T00:39:56.238592+00:00",
+  "executed_at": "2026-09-28T00:39:57.046948+00:00",
+  "kernel": "python3",
+  "python_executable": "/Users/macdenix/clawd/projects/sbs-genie-e2e/.venv/bin/python",
+  "code_cells": 4,
+  "executed_cells": 4,
+  "errors": 0,
+  "error_class": null,
+  "source_sha256": "e983910bd2f5168ed42afc8c74760aae60d5bab16b214ffd69ea7512099068a2",
+  "output_path": "runs/sk12-notebook-20260928T003956-77aa22f514a143e0b35564d4e303b0e7-executed.ipynb",
+  "output_sha256": "c8295b97b05f8dca08a35b654b8a66efa6f2e90ea104b4cdc55183193d3214fc",
+  "scope": "Local offline corpus verification and declarative remote preflight; no deployed/E2E claim"
+}

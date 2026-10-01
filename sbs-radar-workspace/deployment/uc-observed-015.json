@@ -1,0 +1,24 @@
+{
+  "source_record": "runs/sk12-uc-metadata-015-result.json",
+  "schema": {
+    "id": "ff244e9c-7d34-4c2d-8d74-a33292cd5f2c",
+    "full_name": "neptuno_manuel_arguelles.sbs_radar",
+    "owner": "sociosdosmilveintiseis@gmail.com",
+    "creation": "confirmed",
+    "effective_grants_observed": true
+  },
+  "volume": {
+    "id": "f08b4e85-862d-400e-9ade-b73fe134ea7d",
+    "full_name": "neptuno_manuel_arguelles.sbs_radar.release_artifacts",
+    "owner": "sociosdosmilveintiseis@gmail.com",
+    "creation": "confirmed",
+    "effective_grants_observed": true
+  },
+  "grant_evidence": "runs/sk12-uc-grants-015-result.json",
+  "status": "empty_metadata_observed_not_data_publication",
+  "app_or_writer_access_verified": false,
+  "compute_started_by_this_action": false,
+  "apply_allowed": false,
+  "cost": null,
+  "tables_created_by_this_action": false
+}

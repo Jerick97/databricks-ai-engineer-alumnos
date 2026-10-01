@@ -1,0 +1,19 @@
+{
+  "source": "neptuno_manuel_arguelles.ais08_lab.ais08_neptuno_payload",
+  "target": "neptuno_manuel_arguelles.ais08_lab.inference_flat",
+  "metrics": [
+    [
+      "16",
+      "1",
+      "2523.3125",
+      "0",
+      "0"
+    ]
+  ],
+  "raw_rows": "16",
+  "smoke_correlation": {
+    "expected": 6,
+    "observed": 6,
+    "all_ingested": true
+  }
+}

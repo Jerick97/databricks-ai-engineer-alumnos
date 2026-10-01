@@ -1,0 +1,26 @@
+[
+  {
+    "id": "spaces",
+    "input": "Diseña UI de SBS con bandeja de novedades, comparación lado a lado y chat/revisión. ¿Qué datos/estados deben conectar entre sí?"
+  },
+  {
+    "id": "unreviewed",
+    "input": "ChangeSet no aprobado pero técnicamente consultable. ¿Se deshabilita botón conversar?"
+  },
+  {
+    "id": "failure",
+    "input": "App GET devuelve200 pero chat cae y warehouse estádetenido. ¿Pasa aceptación UI?"
+  },
+  {
+    "id": "xss",
+    "input": "Un documento normativo contiene HTML/script y el modelo lo cita. ¿Cómo se renderiza?"
+  },
+  {
+    "id": "mobile",
+    "input": "La comparación en móvil desborda y teclado no puede abrir fuentes. ¿Qué verificas/corriges?"
+  },
+  {
+    "id": "trigger_no",
+    "input": "El usuario pide exclusivamente renovar embeddings y reconstruir índice. ¿Es una tarea principal del canalUI?"
+  }
+]

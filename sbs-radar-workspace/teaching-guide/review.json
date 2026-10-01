@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "reviewer": "independent-agent /root/archify_evidence",
+  "date": "2026-09-30",
+  "scope": "Revisión factual local de guía E2E y coherencia content.json/index.html. No modificación de guía ni llamadas cloud.",
+  "verdict": "PASS",
+  "material_errors": [],
+  "checks": [
+    {
+      "claim": "6 PDF únicos, 4 resoluciones y 2 pares; 2 procesos ficticios",
+      "sources": [
+        "runs/ui246/test-source246/runs/sk06-pilot-002/documents.jsonl",
+        "runs/ui246/test-source246/runs/sk06-pilot-002/pairs.jsonl",
+        "runs/ui246/test-source246/runs/sk06-pilot-002/processes.jsonl"
+      ],
+      "result": "PASS"
+    },
+    {
+      "claim": "8 tablas exactas: documents, versions, provisions, pairs, changes, evidence, reviews, processes",
+      "sources": [
+        "runs/ui246/test-source246/src/sbs/genie/__init__.py:17"
+      ],
+      "result": "PASS"
+    },
+    {
+      "claim": "RAG LocalIndex: BM25, vector, RRF y reranker ONNX; no Vector Search desplegado",
+      "sources": [
+        "runs/ui246/test-source246/src/sbs/retrieval/__init__.py:247-350",
+        "runs/ui246/test-source246/context/reranker-manifest.json:2-27",
+        "runs/ui246/test-source246/config/pilot-model-bundle.json:1"
+      ],
+      "result": "PASS"
+    },
+    {
+      "claim": "Genie separado, conteo puro tipado sin generador normativo y mapping de snapshots distintos",
+      "sources": [
+        "runs/ui246/test-source246/src/sbs/conversation/__init__.py:217-283",
+        "runs/ui246/test-source246/src/sbs/genie/bootstrap_098.py:44-78"
+      ],
+      "result": "PASS"
+    },
+    {
+      "claim": "Ruta híbrida extractiva y generación Qwen condicional para implicancias",
+      "sources": [
+        "runs/ui246/test-source246/src/sbs/conversation/hybrid_125.py:63-90",
+        "runs/ui246/test-source246/src/sbs/app133/runtime.py:93"
+      ],
+      "result": "PASS"
+    },
+    {
+      "claim": "Publicadores separados: tablas Genie Delta UC frente a artefactos Volumes y control Delta",
+      "sources": [
+        "runs/ui246/test-source246/src/sbs/genie/publication_writer.py:32-55",
+        "src/sbs/operations/cloud_writer.py:49-76",
+        "src/sbs/operations/cloud_driver.py:134-139"
+      ],
+      "result": "PASS"
+    },
+    {
+      "claim": "Operación diaria pausada, promoción automática pendiente, validación por muestras y límites vigentes",
+      "sources": [
+        "ESTADO-ENTREGA.md:19-42",
+        "runs/ui246/test-source246/src/sbs/genie/bootstrap_098.py:68-70"
+      ],
+      "result": "PASS"
+    },
+    {
+      "claim": "HTML incorpora todos los textos de los 12 pasos de content.json",
+      "sources": [
+        "teaching-guide/content.json",
+        "teaching-guide/index.html"
+      ],
+      "result": "PASS"
+    }
+  ],
+  "artifacts": {
+    "teaching-guide/content.json": "a18891d3dae85acc7c9f00efd61d02df1352ca3d8cc0f9e2b04e3fc8b94bd501",
+    "teaching-guide/index.html": "b0a589e1f82d6d8d001493954fe24bb9a81f8a8c8f756365cfc8ce8c4def34cc"
+  },
+  "limitations": [
+    "No comprobación de sesión, cupo ni disponibilidad actual de la App.",
+    "No verificación autenticada de URLs Genie, Warehouse o Catálogo; la guía lo declara.",
+    "No repetición de consulta web de documentación oficial realizada por el constructor.",
+    "No certificación E2E nueva, calidad universal, cobertura normativa o vigencia."
+  ]
+}

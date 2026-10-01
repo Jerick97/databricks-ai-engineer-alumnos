@@ -1,0 +1,66 @@
+{
+  "artifact_kind": "refresh_job_binding_plan_not_Jobs_API_request",
+  "version": 2,
+  "recorded_at": "2026-09-28T02:53:57.834879+00:00",
+  "status": "local_driver_review_in_progress_cloud_not_configured",
+  "entrypoint": {
+    "notebook": "notebooks/sbs-radar-cloud-writer.ipynb",
+    "module": "sbs.operations.cloud_driver",
+    "function": "execute_from_config"
+  },
+  "job_settings_builder": "sbs.operations.cloud_dispatch.job_settings",
+  "compute": {
+    "mode": "serverless",
+    "environment_version": "4",
+    "environment_dependencies": [
+      "jsonschema==4.26.0",
+      "pypdf==6.13.3",
+      "requests==2.32.5",
+      "databricks-sdk==0.102.0",
+      "numpy==2.4.3",
+      "tokenizers==0.22.2",
+      "sqlglot==30.20.0"
+    ],
+    "existing_cluster_id": null,
+    "availability_verified": false,
+    "evidence": "runs/sk12-cluster-metadata-014.json"
+  },
+  "schedule": {
+    "quartz_cron_expression": "0 0 8 * * ?",
+    "timezone_id": "America/Lima",
+    "pause_status": "PAUSED"
+  },
+  "limits": {
+    "max_concurrent_runs": 1,
+    "queue_enabled": true,
+    "job_timeout_seconds": 900,
+    "task_timeout_seconds": 600,
+    "max_retries": 0,
+    "disable_auto_optimization": true
+  },
+  "candidate_resources": {
+    "warehouse_id": "828756322bedff37",
+    "control_table": "neptuno_manuel_arguelles.sbs_radar.refresh_control",
+    "volume_prefix": "/Volumes/neptuno_manuel_arguelles/sbs_radar/release_artifacts/sbs-refresh"
+  },
+  "bindings_still_unobserved": [
+    "dedicated_writer_principal",
+    "job_id",
+    "UC_control_table_id",
+    "actual_job_ACL",
+    "workspace_notebook_path",
+    "server_delivered_DriverConfig_sha256",
+    "code_release_manifest_sha256",
+    "trusted_admin_policy_with_issued_and_expiry_times"
+  ],
+  "data_mode": "reuse_sealed six PDF; new remote capture/discovery remains unimplemented in this driver",
+  "runtime_consumer": "load/materialize/promote implemented separately; automatic cloud app polling not yet bound",
+  "activation_allowed": false,
+  "cloud_executed": false,
+  "cost": null,
+  "supersedes": {
+    "path": "deployment/archive/refresh-job-001.json",
+    "sha256": "58a0d772120d752fa8107df2346ae08cbab4e2fc8f4b9f989b267fa126843d89"
+  },
+  "limits_of_document": "This JSON is a binding plan. Use job_settings only after actual metadata bindings exist; never submit this object to Jobs API."
+}

@@ -1,0 +1,703 @@
+{
+  "session": "S08",
+  "artifacts": {
+    "deck": "s08-deployment/slides/S08-autonomo.html",
+    "script": "s08-deployment/guion.md",
+    "student_repo": "/Users/macdenix/clawd/databricks-ai-engineer-alumnos"
+  },
+  "items": [
+    {
+      "id": "S08-CONTINUITY",
+      "kind": "concept",
+      "shown_in": [
+        "slide-01",
+        "slide-04",
+        "slide-05",
+        "slide-10",
+        "slide-12",
+        "slide-18",
+        "slide-22",
+        "slide-30",
+        "slide-42",
+        "slide-43",
+        "slide-47"
+      ],
+      "taught_in": [
+        "GUIA-DOCENTE.md#cp0",
+        "guion.md#slide-01",
+        "guion.md#slide-04",
+        "guion.md#slide-05",
+        "guion.md#slide-10",
+        "guion.md#slide-12",
+        "guion.md#slide-18",
+        "guion.md#slide-22",
+        "guion.md#slide-30",
+        "guion.md#slide-42",
+        "guion.md#slide-43",
+        "guion.md#slide-47"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#cp0"
+      ],
+      "delivered_as": [
+        "s08-deployment/notebook.py",
+        "s08-deployment/CONSIGNA.md",
+        "s08-deployment/GUIA-DOCENTE.md",
+        "s08-deployment/lab/config.json",
+        "s08-deployment/lab/agent.py",
+        "s08-deployment/lab/CONTINUIDAD.md",
+        "s08-deployment/lab/lab_config.py",
+        "s08-deployment/lab/lab_import_workspace.py"
+      ],
+      "availability": "student",
+      "notes": "Inventario nombra tablas, agente S05, benchmark S06 y controles S07; faltantes explícitos."
+    },
+    {
+      "id": "S08-SERVING",
+      "kind": "concept",
+      "shown_in": [
+        "slide-07",
+        "slide-08",
+        "slide-09",
+        "slide-14",
+        "slide-15"
+      ],
+      "taught_in": [
+        "GUIA-DOCENTE.md#cp2",
+        "guion.md#slide-07",
+        "guion.md#slide-08",
+        "guion.md#slide-09",
+        "guion.md#slide-14",
+        "guion.md#slide-15"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#cp2"
+      ],
+      "delivered_as": [
+        "s08-deployment/notebook.py",
+        "s08-deployment/CONSIGNA.md",
+        "s08-deployment/GUIA-DOCENTE.md",
+        "s08-deployment/lab/lab_deploy.py"
+      ],
+      "availability": "student",
+      "notes": "Distingue modelos custom, foundation y external; endpoint listo e invocación observada; explica cold start."
+    },
+    {
+      "id": "S08-DEPLOY",
+      "kind": "concept",
+      "shown_in": [
+        "slide-10",
+        "slide-11",
+        "slide-12",
+        "slide-13"
+      ],
+      "taught_in": [
+        "GUIA-DOCENTE.md#cp1",
+        "guion.md#slide-10",
+        "guion.md#slide-11",
+        "guion.md#slide-12",
+        "guion.md#slide-13"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#cp1"
+      ],
+      "delivered_as": [
+        "s08-deployment/notebook.py",
+        "s08-deployment/CONSIGNA.md",
+        "s08-deployment/GUIA-DOCENTE.md",
+        "s08-deployment/lab/agent.py",
+        "s08-deployment/lab/requirements.txt",
+        "s08-deployment/lab/lab_deploy.py",
+        "s08-deployment/lab/config.json"
+      ],
+      "availability": "student",
+      "notes": "Modelo empaquetado conserva código, dependencias, recursos e input example; distingue código Apps/Jobs de modelo UC."
+    },
+    {
+      "id": "S08-BUNDLES",
+      "kind": "concept",
+      "shown_in": [
+        "slide-37",
+        "slide-38",
+        "slide-39",
+        "slide-40"
+      ],
+      "taught_in": [
+        "GUIA-DOCENTE.md#cp7",
+        "guion.md#slide-37",
+        "guion.md#slide-38",
+        "guion.md#slide-39",
+        "guion.md#slide-40"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#cp7"
+      ],
+      "delivered_as": [
+        "s08-deployment/notebook.py",
+        "s08-deployment/CONSIGNA.md",
+        "s08-deployment/GUIA-DOCENTE.md",
+        "s08-deployment/bundle/databricks.yml",
+        "s08-deployment/bundle/ci-example.yml"
+      ],
+      "availability": "student",
+      "notes": "Valida bundle dev; explica gates test→eval→deploy y aislamiento dev/prod; no promueve producción sin decisión."
+    },
+    {
+      "id": "S08-ROLLOUT",
+      "kind": "concept",
+      "shown_in": [
+        "slide-16",
+        "slide-17",
+        "slide-18",
+        "slide-19",
+        "slide-34",
+        "slide-48"
+      ],
+      "taught_in": [
+        "GUIA-DOCENTE.md#cp3",
+        "guion.md#slide-16",
+        "guion.md#slide-17",
+        "guion.md#slide-18",
+        "guion.md#slide-19",
+        "guion.md#slide-34",
+        "guion.md#slide-48"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#cp3"
+      ],
+      "delivered_as": [
+        "s08-deployment/notebook.py",
+        "s08-deployment/CONSIGNA.md",
+        "s08-deployment/GUIA-DOCENTE.md",
+        "s08-deployment/lab/lab_rollout.py",
+        "s08-deployment/lab/lab_custom_rollout.py",
+        "s08-deployment/lab/lab_custom_rollout_verify.py",
+        "s08-deployment/lab/rollout_model.py"
+      ],
+      "availability": "student",
+      "notes": "Versiones numéricas resueltas; plan90/10 suma100; rollback restaura configuración y se verifica. Alias no mueve tráfico automáticamente."
+    },
+    {
+      "id": "S08-APPS",
+      "kind": "concept",
+      "shown_in": [
+        "slide-05",
+        "slide-15",
+        "slide-21",
+        "slide-22",
+        "slide-23",
+        "slide-24",
+        "slide-49"
+      ],
+      "taught_in": [
+        "GUIA-DOCENTE.md#cp4",
+        "guion.md#slide-05",
+        "guion.md#slide-15",
+        "guion.md#slide-21",
+        "guion.md#slide-22",
+        "guion.md#slide-23",
+        "guion.md#slide-24",
+        "guion.md#slide-49"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#cp4"
+      ],
+      "delivered_as": [
+        "s08-deployment/notebook.py",
+        "s08-deployment/CONSIGNA.md",
+        "s08-deployment/GUIA-DOCENTE.md",
+        "s08-deployment/app/app.py",
+        "s08-deployment/app/app.yaml",
+        "s08-deployment/app/requirements.txt",
+        "s08-deployment/lab/lab_app.py"
+      ],
+      "availability": "student",
+      "notes": "UI consulta endpoint desde backend autenticado; permisos identidad app explícitos; no afirma propagación de ACL del usuario si usa SP."
+    },
+    {
+      "id": "S08-INFERENCE",
+      "kind": "concept",
+      "shown_in": [
+        "slide-25",
+        "slide-26",
+        "slide-27",
+        "slide-28",
+        "slide-29"
+      ],
+      "taught_in": [
+        "GUIA-DOCENTE.md#cp5",
+        "guion.md#slide-25",
+        "guion.md#slide-26",
+        "guion.md#slide-27",
+        "guion.md#slide-28",
+        "guion.md#slide-29"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#cp5"
+      ],
+      "delivered_as": [
+        "s08-deployment/notebook.py",
+        "s08-deployment/CONSIGNA.md",
+        "s08-deployment/GUIA-DOCENTE.md",
+        "s08-deployment/lab/lab_monitor.py",
+        "s08-deployment/lab/lab_parse_contract.sql"
+      ],
+      "availability": "student",
+      "notes": "Identifica request real, JSON parseado y columnas de tiempo/latencia/estado; distingue tabla vacía, retraso e ingestión fallida."
+    },
+    {
+      "id": "S08-MONITOR",
+      "kind": "concept",
+      "shown_in": [
+        "slide-09",
+        "slide-30",
+        "slide-31",
+        "slide-32",
+        "slide-33",
+        "slide-34",
+        "slide-50"
+      ],
+      "taught_in": [
+        "GUIA-DOCENTE.md#cp6",
+        "guion.md#slide-09",
+        "guion.md#slide-30",
+        "guion.md#slide-31",
+        "guion.md#slide-32",
+        "guion.md#slide-33",
+        "guion.md#slide-34",
+        "guion.md#slide-50"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#cp6"
+      ],
+      "delivered_as": [
+        "s08-deployment/notebook.py",
+        "s08-deployment/CONSIGNA.md",
+        "s08-deployment/GUIA-DOCENTE.md",
+        "s08-deployment/lab/lab_monitor.py"
+      ],
+      "availability": "student",
+      "notes": "Monitor refrescado sobre tabla Delta aplanada, baseline y ventana definidos, métricas observadas; drift no se equipara a mala respuesta."
+    },
+    {
+      "id": "S08-GATEWAY",
+      "kind": "concept",
+      "shown_in": [
+        "slide-35",
+        "slide-36"
+      ],
+      "taught_in": [
+        "GUIA-DOCENTE.md#cp6",
+        "guion.md#slide-35",
+        "guion.md#slide-36"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#cp6"
+      ],
+      "delivered_as": [
+        "s08-deployment/notebook.py",
+        "s08-deployment/CONSIGNA.md",
+        "s08-deployment/GUIA-DOCENTE.md",
+        "s08-deployment/lab/lab_costs.sql"
+      ],
+      "availability": "student",
+      "notes": "Distingue payloads de consumo; define límite y alerta de costo; registra disponibilidad y permiso; no equipara tokens con factura final."
+    },
+    {
+      "id": "S08-PROMPTS",
+      "kind": "concept",
+      "shown_in": [
+        "slide-41",
+        "slide-42"
+      ],
+      "taught_in": [
+        "GUIA-DOCENTE.md#cp7",
+        "guion.md#slide-41",
+        "guion.md#slide-42"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#cp7"
+      ],
+      "delivered_as": [
+        "s08-deployment/notebook.py",
+        "s08-deployment/CONSIGNA.md",
+        "s08-deployment/GUIA-DOCENTE.md",
+        "s08-deployment/lab/lab_prompts.py"
+      ],
+      "availability": "student",
+      "notes": "Prompt versionado e identificable; alias resuelve versión; cambio y reversión dejan evidencia sin confundir alias de prompt/modelo."
+    },
+    {
+      "id": "S08-CERT",
+      "kind": "concept",
+      "shown_in": [
+        "slide-46",
+        "slide-47",
+        "slide-48",
+        "slide-49",
+        "slide-50",
+        "slide-51"
+      ],
+      "taught_in": [
+        "GUIA-DOCENTE.md#cp8",
+        "guion.md#slide-46",
+        "guion.md#slide-47",
+        "guion.md#slide-48",
+        "guion.md#slide-49",
+        "guion.md#slide-50",
+        "guion.md#slide-51"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#cp8"
+      ],
+      "delivered_as": [
+        "s08-deployment/notebook.py",
+        "s08-deployment/CONSIGNA.md",
+        "s08-deployment/GUIA-DOCENTE.md",
+        "s08-deployment/CERTIFICACION.md"
+      ],
+      "availability": "student",
+      "notes": "Responde preguntas originales con justificación y plan personal por dominio; no acredita aprobar examen."
+    },
+    {
+      "id": "S08-CLOUD",
+      "kind": "concept",
+      "shown_in": [
+        "slide-45"
+      ],
+      "taught_in": [
+        "GUIA-DOCENTE.md#cp8",
+        "guion.md#slide-45"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#cp8"
+      ],
+      "delivered_as": [
+        "s08-deployment/notebook.py",
+        "s08-deployment/CONSIGNA.md",
+        "s08-deployment/GUIA-DOCENTE.md",
+        "s08-deployment/CERTIFICACION.md"
+      ],
+      "availability": "student",
+      "notes": "Compara Vertex AI Endpoints, Azure ML Online Endpoints y SageMaker Endpoints por función; documenta diferencias de IAM/costos/latencia."
+    },
+    {
+      "id": "S08-FINAL",
+      "kind": "concept",
+      "shown_in": [
+        "slide-01",
+        "slide-02",
+        "slide-03",
+        "slide-06",
+        "slide-14",
+        "slide-20",
+        "slide-24",
+        "slide-29",
+        "slide-33",
+        "slide-43",
+        "slide-44",
+        "slide-52"
+      ],
+      "taught_in": [
+        "GUIA-DOCENTE.md#cp8",
+        "guion.md#slide-01",
+        "guion.md#slide-02",
+        "guion.md#slide-03",
+        "guion.md#slide-06",
+        "guion.md#slide-14",
+        "guion.md#slide-20",
+        "guion.md#slide-24",
+        "guion.md#slide-29",
+        "guion.md#slide-33",
+        "guion.md#slide-43",
+        "guion.md#slide-44",
+        "guion.md#slide-52"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#cp8"
+      ],
+      "delivered_as": [
+        "s08-deployment/notebook.py",
+        "s08-deployment/CONSIGNA.md",
+        "s08-deployment/GUIA-DOCENTE.md"
+      ],
+      "availability": "student",
+      "notes": "Manifiesto enlaza endpoint invocable, App, registro UC, evaluación y gobierno previos, inferencias, monitor y rollback; todo resultado tiene fecha e identidad; faltante bloquea cierre funcional."
+    },
+    {
+      "id": "REF-serving",
+      "kind": "external-resource",
+      "shown_in": [
+        "slide-07"
+      ],
+      "taught_in": [
+        "guion.md#slide-07"
+      ],
+      "practiced_in": [
+        "Panel ★ de fuentes"
+      ],
+      "delivered_as": [],
+      "availability": "external",
+      "url": "https://docs.databricks.com/aws/en/machine-learning/model-serving/",
+      "notes": "Documentación oficial enlazada desde marcador y panel."
+    },
+    {
+      "id": "REF-endpoint",
+      "kind": "external-resource",
+      "shown_in": [
+        "slide-08",
+        "slide-14",
+        "slide-16",
+        "slide-17"
+      ],
+      "taught_in": [
+        "guion.md#slide-08",
+        "guion.md#slide-14",
+        "guion.md#slide-16",
+        "guion.md#slide-17"
+      ],
+      "practiced_in": [
+        "Panel ★ de fuentes"
+      ],
+      "delivered_as": [],
+      "availability": "external",
+      "url": "https://docs.databricks.com/aws/en/machine-learning/model-serving/create-manage-serving-endpoints",
+      "notes": "Documentación oficial enlazada desde marcador y panel."
+    },
+    {
+      "id": "REF-alias",
+      "kind": "external-resource",
+      "shown_in": [
+        "slide-12",
+        "slide-16"
+      ],
+      "taught_in": [
+        "guion.md#slide-12",
+        "guion.md#slide-16"
+      ],
+      "practiced_in": [
+        "Panel ★ de fuentes"
+      ],
+      "delivered_as": [],
+      "availability": "external",
+      "url": "https://docs.databricks.com/aws/en/machine-learning/manage-model-lifecycle/",
+      "notes": "Documentación oficial enlazada desde marcador y panel."
+    },
+    {
+      "id": "REF-bundles",
+      "kind": "external-resource",
+      "shown_in": [
+        "slide-37"
+      ],
+      "taught_in": [
+        "guion.md#slide-37"
+      ],
+      "practiced_in": [
+        "Panel ★ de fuentes"
+      ],
+      "delivered_as": [],
+      "availability": "external",
+      "url": "https://docs.databricks.com/aws/en/dev-tools/bundles/",
+      "notes": "Documentación oficial enlazada desde marcador y panel."
+    },
+    {
+      "id": "REF-env",
+      "kind": "external-resource",
+      "shown_in": [
+        "slide-38"
+      ],
+      "taught_in": [
+        "guion.md#slide-38"
+      ],
+      "practiced_in": [
+        "Panel ★ de fuentes"
+      ],
+      "delivered_as": [],
+      "availability": "external",
+      "url": "https://docs.databricks.com/aws/en/dev-tools/bundles/deployment-modes",
+      "notes": "Documentación oficial enlazada desde marcador y panel."
+    },
+    {
+      "id": "REF-auth",
+      "kind": "external-resource",
+      "shown_in": [
+        "slide-05",
+        "slide-22",
+        "slide-23"
+      ],
+      "taught_in": [
+        "guion.md#slide-05",
+        "guion.md#slide-22",
+        "guion.md#slide-23"
+      ],
+      "practiced_in": [
+        "Panel ★ de fuentes"
+      ],
+      "delivered_as": [],
+      "availability": "external",
+      "url": "https://docs.databricks.com/aws/en/dev-tools/databricks-apps/auth",
+      "notes": "Documentación oficial enlazada desde marcador y panel."
+    },
+    {
+      "id": "REF-app",
+      "kind": "external-resource",
+      "shown_in": [
+        "slide-21",
+        "slide-23"
+      ],
+      "taught_in": [
+        "guion.md#slide-21",
+        "guion.md#slide-23"
+      ],
+      "practiced_in": [
+        "Panel ★ de fuentes"
+      ],
+      "delivered_as": [],
+      "availability": "external",
+      "url": "https://docs.databricks.com/aws/en/dev-tools/databricks-apps/model-serving",
+      "notes": "Documentación oficial enlazada desde marcador y panel."
+    },
+    {
+      "id": "REF-inference",
+      "kind": "external-resource",
+      "shown_in": [
+        "slide-26"
+      ],
+      "taught_in": [
+        "guion.md#slide-26"
+      ],
+      "practiced_in": [
+        "Panel ★ de fuentes"
+      ],
+      "delivered_as": [],
+      "availability": "external",
+      "url": "https://docs.databricks.com/aws/en/ai-gateway/inference-tables-serving-endpoints",
+      "notes": "Documentación oficial enlazada desde marcador y panel."
+    },
+    {
+      "id": "REF-monitor",
+      "kind": "external-resource",
+      "shown_in": [
+        "slide-32",
+        "slide-33"
+      ],
+      "taught_in": [
+        "guion.md#slide-32",
+        "guion.md#slide-33"
+      ],
+      "practiced_in": [
+        "Panel ★ de fuentes"
+      ],
+      "delivered_as": [],
+      "availability": "external",
+      "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/create-monitor-api",
+      "notes": "Documentación oficial enlazada desde marcador y panel."
+    },
+    {
+      "id": "REF-gateway",
+      "kind": "external-resource",
+      "shown_in": [
+        "slide-35"
+      ],
+      "taught_in": [
+        "guion.md#slide-35"
+      ],
+      "practiced_in": [
+        "Panel ★ de fuentes"
+      ],
+      "delivered_as": [],
+      "availability": "external",
+      "url": "https://docs.databricks.com/aws/en/ai-gateway/overview-serving-endpoints",
+      "notes": "Documentación oficial enlazada desde marcador y panel."
+    },
+    {
+      "id": "REF-prompt",
+      "kind": "external-resource",
+      "shown_in": [
+        "slide-41",
+        "slide-42"
+      ],
+      "taught_in": [
+        "guion.md#slide-41",
+        "guion.md#slide-42"
+      ],
+      "practiced_in": [
+        "Panel ★ de fuentes"
+      ],
+      "delivered_as": [],
+      "availability": "external",
+      "url": "https://docs.databricks.com/aws/en/mlflow3/genai/prompt-version-mgmt/prompt-registry/",
+      "notes": "Documentación oficial enlazada desde marcador y panel."
+    },
+    {
+      "id": "REF-exam",
+      "kind": "external-resource",
+      "shown_in": [
+        "slide-46",
+        "slide-51"
+      ],
+      "taught_in": [
+        "guion.md#slide-46",
+        "guion.md#slide-51"
+      ],
+      "practiced_in": [
+        "Panel ★ de fuentes"
+      ],
+      "delivered_as": [],
+      "availability": "external",
+      "url": "https://www.databricks.com/sites/default/files/2026-03/Databricks-Certified-Generative-AI-Engineer-Associate-Exam-Guide-Mar26.pdf",
+      "notes": "Documentación oficial enlazada desde marcador y panel."
+    },
+    {
+      "id": "REF-gcp",
+      "kind": "external-resource",
+      "shown_in": [
+        "slide-45"
+      ],
+      "taught_in": [
+        "guion.md#slide-45"
+      ],
+      "practiced_in": [
+        "Panel ★ de fuentes"
+      ],
+      "delivered_as": [],
+      "availability": "external",
+      "url": "https://docs.cloud.google.com/vertex-ai/docs/predictions/overview",
+      "notes": "Documentación oficial enlazada desde marcador y panel."
+    },
+    {
+      "id": "REF-azure",
+      "kind": "external-resource",
+      "shown_in": [
+        "slide-45"
+      ],
+      "taught_in": [
+        "guion.md#slide-45"
+      ],
+      "practiced_in": [
+        "Panel ★ de fuentes"
+      ],
+      "delivered_as": [],
+      "availability": "external",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-endpoints?view=azureml-api-2",
+      "notes": "Documentación oficial enlazada desde marcador y panel."
+    },
+    {
+      "id": "REF-aws",
+      "kind": "external-resource",
+      "shown_in": [
+        "slide-45"
+      ],
+      "taught_in": [
+        "guion.md#slide-45"
+      ],
+      "practiced_in": [
+        "Panel ★ de fuentes"
+      ],
+      "delivered_as": [],
+      "availability": "external",
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html",
+      "notes": "Documentación oficial enlazada desde marcador y panel."
+    }
+  ]
+}

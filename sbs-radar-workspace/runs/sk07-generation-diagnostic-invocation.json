@@ -1,0 +1,19 @@
+{
+  "run_id": "sk07-generation-diagnostic-001",
+  "started_at": "2026-09-28T00:03:06.731368+00:00",
+  "skill": "SK07",
+  "phase": "diagnostic_authorized",
+  "endpoint": "databricks-gpt-6-sol",
+  "max_requests": 1,
+  "max_tokens": 256,
+  "retry": false,
+  "data": "Synthetic documentary fixture explicitly non-normative; no real evidence or secrets",
+  "inputs": {
+    "skills/sbs-conversacion-orquestacion/SKILL.md": "c4545a5d9ffbbdc97d89feddd15458a98ca05e93466f4e62b0ba169939db4b8e",
+    "skills/sbs-conversacion-orquestacion/assets/generator-instructions.md": "d46681f9c5195833a2b620e00e95f7fc1f8c3202b5d3bc90f2912dcd550c8913",
+    "src/sbs/conversation/GeneratedClaims.json": "ee95b3cdbb3e581d50c201b214270bd6f69889a4b3045397f3f9c2e0c9050f78",
+    "src/sbs/conversation/databricks.py": "0364c40645760da2c55f43a255a4411a8df1e81ed62010bbeaab62073cccc8e7"
+  },
+  "status": "registered_before_inference",
+  "request_sha256": "54d4aa57d96729dfffba4c364f693962599383589f5cf441a40eae0726a46358"
+}

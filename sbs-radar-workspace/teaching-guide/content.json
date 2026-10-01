@@ -1,0 +1,294 @@
+{
+  "steps": [
+    [
+      "Definir qué problema resuelve",
+      "SK00–SK01 · canal, contratos y gobierno",
+      "Un analista necesita saber qué dice una copia anterior, qué dice otra y qué podría revisar en un proceso bancario ficticio.",
+      "Se fija la familia normativa, la norma, el par de copias y la disposición. El alcance de una consulta debe conservarse en todas sus herramientas.",
+      "Un contexto explícito de consulta, no una pregunta sin referencia documental.",
+      "“El agente nos ayuda a localizar, contrastar y documentar evidencia. Una implicancia propuesta todavía no es una decisión del banco.”",
+      "Abre el diagrama y presenta las dos rutas: preparar datos y responder preguntas. Usa ciberseguridad, Resolución 504-2021, artículo 20.3 como hilo conductor.",
+      "Pide al alumno identificar qué datos faltan en “¿qué cambió?”. Debe responder: norma, copias y punto a comparar.",
+      [
+        "graph",
+        "framework",
+        "app"
+      ]
+    ],
+    [
+      "Registrar e ingerir los PDF oficiales",
+      "SK02 · entrada y seguridad",
+      "URLs explícitas de fuentes SBS y una lista de hosts permitidos.",
+      "Se valida la URL, se descarga el PDF, se revisa su formato y se calcula SHA256. El original se conserva por contenido; el registro guarda procedencia e intento de captura. Una descarga repetida idéntica no crea un contenido nuevo.",
+      "SourceDocument: identidad de norma, familia, URL, hash y fecha de captura. Publicación y vigencia pueden quedar desconocidas.",
+      "“Guardar la fuente es conservar la prueba. El hash identifica estos bytes; no indica cuándo entró en vigor la norma.”",
+      "Muestra dos enlaces SBS del inventario y contrasta sus identificadores. Explica las seis copias y los dos pares disponibles.",
+      "¿Seis PDF significan seis normas? No: hay cuatro resoluciones y seis versiones documentales únicas.",
+      [
+        "inventory",
+        "codeingest"
+      ]
+    ],
+    [
+      "Extraer texto con trazabilidad",
+      "SK02 · normalización",
+      "Los PDF originales identificados por hash.",
+      "pypdf extrae texto y registra páginas, posiciones de caracteres —offsets— y señales de calidad. Se conservan el texto extraído y la relación con el original. Tablas, anexos y cortes de palabras requieren atención adicional.",
+      "Texto verificable por página y fragmento, con límites de cobertura explícitos.",
+      "“El modelo no debe inventar dónde está una frase. Guardamos el camino desde el fragmento hasta la página del PDF.”",
+      "En Comparación abre un original y busca el artículo seleccionado. Un texto extraído correcto no sustituye la revisión visual del PDF.",
+      "Comprueba una frase literal y su página. Si difieren, marca el problema de extracción antes de interpretar.",
+      [
+        "codeextract",
+        "app"
+      ]
+    ],
+    [
+      "Identificar pares y comparar disposiciones",
+      "SK03 · versiones y razonamiento",
+      "Dos copias de la misma norma y unidades documentales alineadas.",
+      "Se resuelven las correspondencias antes/después y se comparan pasajes. Se mantienen separadas la diferencia textual, la interpretación del cambio y la implicancia propuesta.",
+      "Un par documental y evidencia de comparación. Cobertura parcial no permite afirmar que no existan otros cambios.",
+      "“El selector ofrece un par por familia. Una opción contiene dos copias, A y B; no significa una única versión.”",
+      "Selecciona 504-2021 / artículo 20.3. Después cambia a conducta de mercado / 3274-2017 / artículo 27 y observa que el contexto cambia completo.",
+      "¿Cambiar un salto de línea implica cambiar una obligación? No: hay que revisar el contenido y su contexto.",
+      [
+        "ui",
+        "codehybrid",
+        "app"
+      ]
+    ],
+    [
+      "Preparar la recuperación RAG",
+      "SK04–SK05 · recuperación",
+      "Fragmentos con identidad de documento, versión, familia, página y offsets.",
+      "Se preparan unidades de recuperación y sus embeddings. Un embedding es una representación numérica útil para buscar similitud. Se fija modelo e identidad del índice; los vectores compatibles ya calculados pueden reutilizarse. El piloto conserva limitaciones de segmentación y cobertura.",
+      "Un índice local de pasajes y vectores, más metadatos para filtrar y citar.",
+      "“No enviamos todos los PDF en cada pregunta. Primero preparamos una forma de localizar fragmentos pertinentes.”",
+      "Abre el código RAG o el nodo Índice local del diagrama. Aclara que este piloto usa LocalIndex: no hay que presentarlo como Databricks Vector Search desplegado.",
+      "Distingue el fragmento usado para buscar de la evidencia ampliada y autorizada usada para responder.",
+      [
+        "graph",
+        "coderag",
+        "modeldocs"
+      ]
+    ],
+    [
+      "Curar y publicar datos para consumo",
+      "SK06–SK11 · herramientas y persistencia",
+      "Metadatos, comparación, identidad del índice RAG y procesos bancarios ficticios.",
+      "Se forman ocho tablas: documents, versions, provisions, pairs, changes, evidence, reviews y processes. Hay dos publicadores: publication_writer publica tablas Genie en Delta UC; cloud_writer publica artefactos en UC Volumes y un control/puntero Delta. Publicar esos artefactos no actualiza automáticamente la App.",
+      "Datos estructurados y artefactos verificables. RAG y Genie conservan snapshots distintos reconciliados mediante un mapping explícito.",
+      "“Las tablas sirven para contar y relacionar datos. Los PDF y artefactos conservan evidencia. Deben corresponder al mismo contenido verificado, aunque sus identificadores de snapshot no sean iguales.”",
+      "Abre el catálogo y después la ejecución histórica del writer. Muestra el notebook como explicación de implementación; no ejecutes una publicación nueva sólo para enseñar que existe.",
+      "¿Una fila en changes prueba un cambio normativo material confirmado? No; revisa granularidad, cobertura y estado de revisión.",
+      [
+        "catalog",
+        "publish",
+        "notebook",
+        "run",
+        "volumes"
+      ]
+    ],
+    [
+      "Recibir la pregunta y aplicar controles",
+      "SK07–SK08 · canal, borde y ruteo",
+      "Pregunta del usuario, sesión y selección de familia, par y disposición.",
+      "La App verifica identidad y acceso. El backend resuelve el contexto autorizado y los límites de consumo. Clasifica si la pregunta pide conteo, comparación o implicancias. Los datos del cliente o del PDF no conceden permisos.",
+      "Una consulta delimitada y dirigida a la herramienta correspondiente.",
+      "“Antes de buscar, debemos saber para quién buscamos y dentro de qué documentos.”",
+      "En la App selecciona el artículo y pregunta “¿Cómo estaba antes y cómo está ahora?”. Para ambas familias usa el alcance cruzado explícito; conserva conclusiones y citas separadas.",
+      "Comprueba que cambiar de familia no arrastre una disposición incompatible de la anterior.",
+      [
+        "app",
+        "codeapp",
+        "appdocs"
+      ]
+    ],
+    [
+      "Recuperar evidencia: híbrida, RRF y reranking",
+      "SK04–SK05–SK08 · grounding",
+      "La pregunta y el conjunto de documentos autorizado.",
+      "BM25 encuentra coincidencias léxicas; la búsqueda vectorial aproxima el significado. RRF combina posiciones de ambas listas; no suma directamente sus puntuaciones incompatibles. El reranker vuelve a evaluar relevancia sobre candidatos. Se aplican alcance y correspondencias A/B para formar evidencia utilizable.",
+      "Un EvidencePack con pasajes, citas, trazas y límites. Obtener resultados no certifica completitud normativa.",
+      "“BM25 ayuda con términos exactos; vectores con maneras distintas de decir algo; RRF reúne candidatos; el reranker ordena cuáles responden mejor.”",
+      "En el mapa sigue Índice local → Recuperación híbrida. Embedding del piloto: databricks-qwen3-embedding-0-6b. Reranker: cross-encoder/mmarco-mMiniLMv2-L12-H384-v1, ONNX local.",
+      "Ejemplo didáctico: un pasaje puesto 1 en una lista y 3 en otra recibe 1/(k+1)+1/(k+3) en RRF. k es una constante de la configuración; este ejemplo no fija su valor en producción.",
+      [
+        "coderag",
+        "graph"
+      ]
+    ],
+    [
+      "Usar Genie para preguntas estructuradas",
+      "SK06–SK07 · consulta de datos",
+      "Una pregunta de conteo/listado y contexto delimitado.",
+      "Genie consulta las tablas estructuradas mediante el SQL Warehouse. El adaptador verifica alcance y procedencia según sus controles. La ruta de conteo puro devuelve una respuesta tipada sin pasar por el generador normativo; Genie sigue siendo un servicio de IA.",
+      "Filas o conteos con su alcance. No son una opinión jurídica ni un resumen completo de los PDF.",
+      "“Para contar versiones consultamos datos estructurados. Para explicar un pasaje recuperamos evidencia textual. Son capacidades complementarias.”",
+      "Pregunta por cuántas versiones hay en el par seleccionado: se esperan dos. El inventario completo contiene seis copias; son dos alcances diferentes. No uses el conteo del par como total del corpus.",
+      "Pide al alumno decidir si “¿cuántas versiones?” va a Genie y si “¿qué dice el artículo?” necesita evidencia RAG.",
+      [
+        "genie",
+        "warehouse",
+        "geniedocs",
+        "inventory"
+      ]
+    ],
+    [
+      "Construir y validar la respuesta",
+      "SK07–SK08–SK09 · razonamiento y validación",
+      "Pasajes anteriores/posteriores, contexto y resultados de herramientas.",
+      "La ruta híbrida conserva la parte extractiva y puede usar databricks-qwen35-122b-a10b para propuestas de impacto. El servidor compone el contrato de respuesta y verifica citas y referencias contra evidencia autorizada. La evaluación semántica independiente es un control adicional; no queda resuelta sólo porque una cita exista.",
+      "Antes, después, explicación y, cuando corresponde, implicancia propuesta con límites y fuentes.",
+      "“Una respuesta convincente no basta: debemos poder volver de cada afirmación a la evidencia. Además, una cita correcta puede acompañar una interpretación equivocada.”",
+      "Pide una propuesta para un proceso ficticio. Abre las citas y distingue la afirmación literal de la recomendación. La revisión pendiente no impide conversar; no hay aprobación institucional disponible en esta sesión.",
+      "Pregunta “¿qué evidencia respalda esa implicancia?”. Si falta sustento, se declara la limitación; no se inventa una obligación.",
+      [
+        "app",
+        "codehybrid",
+        "review",
+        "modeldocs"
+      ]
+    ],
+    [
+      "Presentar el recorrido en Databricks Apps",
+      "SK10–SK12 · experiencia y despliegue",
+      "Backend, frontend, fuentes y configuración del paquete entregado.",
+      "Novedades permite elegir un par; Comparación muestra A/B y originales; Chat permite preguntas y seguimiento. Databricks Apps aloja la aplicación. La App utiliza un paquete/snapshot verificado; la promoción automática desde el writer sigue pendiente.",
+      "Un recorrido visible de usuario que conecta selección, evidencia y conversación.",
+      "“La App reúne las capacidades: no reemplaza los datos, la recuperación ni las validaciones.”",
+      "Abre el agente real para consultar datos. Usa la réplica con hover para explicar controles: su Foquito es un tutor separado, no ejecuta Genie ni el backend SBS. Actualizar catálogo en la réplica sólo muestra una explicación; en la App relee el corpus publicado y no ejecuta el Job.",
+      "El alumno debe poder decir en qué pantalla ve una fuente, dónde cambia el alcance y cuándo está usando una guía local.",
+      [
+        "app",
+        "ui",
+        "appdocs",
+        "promotion"
+      ]
+    ],
+    [
+      "Observar, evaluar y operar",
+      "SK09–SK11–SK12 · mejora y operación",
+      "Ejecuciones, hashes, métricas, resultados de pruebas y revisión de muestras.",
+      "Se conservan trazas y versiones para reconstruir resultados. Se revisan recuperación, citas, propuestas y fallos. La última evidencia aprobó muestras reales; no acredita cobertura universal, ahorro humano ni funcionamiento continuo.",
+      "Estado de entrega y gates pendientes: Job diario pausado, promoción continua, recuperación cloud y evaluación independiente completas abiertas.",
+      "“Un piloto demostrable y una operación continua tienen criterios de cierre distintos. Un Job configurado no es un Job diario funcionando.”",
+      "Muestra el Job en lectura y la evidencia histórica de ejecución. Antes de la demo verifica sesión, catálogo, originales y cupo del chat. Un cupo vencido no implica que la App esté apagada.",
+      "Si el chat no está disponible, muestra comparación y originales, y explica el bloqueo real. No presentes una respuesta guardada como generada en vivo.",
+      [
+        "job",
+        "run",
+        "state",
+        "jobsdocs"
+      ]
+    ]
+  ],
+  "resources": {
+    "app": [
+      "SBS Radar · aplicación real",
+      "https://sbs-radar-pilot-7474657121564806.aws.databricksapps.com/"
+    ],
+    "graph": [
+      "Diagrama Archify E2E",
+      "../../.archify/dataflow-sbs-e2e-20260930-082301/index.html"
+    ],
+    "ui": [
+      "Réplica explicada con hover y Foquito",
+      "../teaching-ui/index.html"
+    ],
+    "framework": [
+      "9 capas · 9 etapas · 12 decisiones",
+      "../web/index.html"
+    ],
+    "genie": [
+      "Espacio Genie del piloto",
+      "https://dbc-0410b264-20c7.cloud.databricks.com/genie/rooms/01f1bb81787b118c9bbc8980e3523a21?o=7474657121564806"
+    ],
+    "warehouse": [
+      "SQL Warehouse del piloto",
+      "https://dbc-0410b264-20c7.cloud.databricks.com/sql/warehouses/828756322bedff37?o=7474657121564806"
+    ],
+    "catalog": [
+      "Catálogo de tablas SBS Radar",
+      "https://dbc-0410b264-20c7.cloud.databricks.com/explore/data/neptuno_manuel_arguelles/sbs_radar?o=7474657121564806"
+    ],
+    "job": [
+      "Job SBS Radar · consultar estado",
+      "https://dbc-0410b264-20c7.cloud.databricks.com/?o=7474657121564806#job/989326861421503"
+    ],
+    "run": [
+      "Ejecución histórica real del writer",
+      "https://dbc-0410b264-20c7.cloud.databricks.com/?o=7474657121564806#job/989326861421503/run/817327291004649"
+    ],
+    "notebook": [
+      "Notebook SBS · writer",
+      "../notebooks/sbs-radar-cloud-writer.ipynb"
+    ],
+    "publish": [
+      "Notebook SBS · publicación Genie",
+      "../notebooks/sbs-radar-genie-publication.ipynb"
+    ],
+    "promotion": [
+      "Notebook SBS · promoción runtime",
+      "../notebooks/sbs-radar-runtime-promotion.ipynb"
+    ],
+    "s08": [
+      "Notebook del curso S08 · distinto del notebook SBS",
+      "https://dbc-0410b264-20c7.cloud.databricks.com/editor/notebooks/3142549814418784?o=7474657121564806"
+    ],
+    "inventory": [
+      "Inventario exacto de las seis copias",
+      "../runs/ui246/test-source246/runs/sk06-pilot-002/documents.jsonl"
+    ],
+    "state": [
+      "Estado y pendientes de la entrega",
+      "../ESTADO-ENTREGA.md"
+    ],
+    "review": [
+      "Revisión independiente de consultas reales",
+      "../runs/sk09-astra-actual244-review.json"
+    ],
+    "appdocs": [
+      "Documentación oficial · Databricks Apps",
+      "https://docs.databricks.com/aws/en/dev-tools/databricks-apps/"
+    ],
+    "geniedocs": [
+      "Documentación oficial · Genie",
+      "https://docs.databricks.com/aws/en/genie/"
+    ],
+    "volumes": [
+      "Documentación oficial · Unity Catalog Volumes",
+      "https://docs.databricks.com/aws/en/volumes/"
+    ],
+    "jobsdocs": [
+      "Documentación oficial · Lakeflow Jobs",
+      "https://docs.databricks.com/aws/en/jobs/"
+    ],
+    "modeldocs": [
+      "Documentación oficial · Model Serving",
+      "https://docs.databricks.com/aws/en/machine-learning/model-serving/"
+    ],
+    "codeingest": [
+      "Código · captura y contratos",
+      "../src/sbs/foundation/__init__.py"
+    ],
+    "codeextract": [
+      "Código · extracción",
+      "../src/sbs/foundation/extract.py"
+    ],
+    "coderag": [
+      "Código entregado · recuperación híbrida",
+      "../runs/ui246/test-source246/src/sbs/retrieval/__init__.py"
+    ],
+    "codehybrid": [
+      "Código entregado · comparación y propuestas",
+      "../runs/ui246/test-source246/src/sbs/conversation/hybrid_125.py"
+    ],
+    "codeapp": [
+      "Código entregado · rutas de la App",
+      "../runs/ui246/test-source246/src/sbs/webapp/__init__.py"
+    ]
+  },
+  "date": "2026-09-30"
+}

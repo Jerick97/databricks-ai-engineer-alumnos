@@ -1,0 +1,145 @@
+{
+  "observed_at": "2026-09-28T19:27:38.694335+00:00",
+  "cases": [
+    {
+      "case": "ventas",
+      "client_request_id": "ais08-ventas-10f9db5aeff04bf2afd04b3c58331153",
+      "served_model_version": "4",
+      "pass": true,
+      "answer": "Venta neta de Bebidas en 2026: 116024.88. Fuente: neptuno_manuel_arguelles.gold.ventas_por_categoria_mes.",
+      "metadata": {
+        "tool_errors": 0,
+        "tool_audit": [
+          {
+            "tool": "ventas_categoria",
+            "ok": true
+          }
+        ],
+        "input_tokens": 2253,
+        "latency_ms": 16862,
+        "moderation": "ai_gateway_input_output",
+        "output_tokens": 68,
+        "tool_calls": 1,
+        "llm_endpoint": "databricks-meta-llama-3-3-70b-instruct",
+        "agent_revision": "s08-v2",
+        "prompt_version": "4"
+      },
+      "elapsed_seconds": 47.13
+    },
+    {
+      "case": "aclaracion",
+      "client_request_id": "ais08-aclaracion-f25dccb8f3f54689901faa628600954e",
+      "served_model_version": "4",
+      "pass": true,
+      "answer": "¿De qué año necesitas la venta neta? Indica también la categoría.",
+      "metadata": {
+        "tool_errors": 0,
+        "tool_audit": [],
+        "input_tokens": 0,
+        "latency_ms": 457,
+        "moderation": "ai_gateway_input_output",
+        "output_tokens": 0,
+        "tool_calls": 0,
+        "llm_endpoint": "databricks-meta-llama-3-3-70b-instruct",
+        "agent_revision": "s08-v2",
+        "prompt_version": "4"
+      },
+      "elapsed_seconds": 0.77
+    },
+    {
+      "case": "categoria_ausente",
+      "client_request_id": "ais08-categoria_ausente-53924c0d04a04782ae3d5c1ec0513d09",
+      "served_model_version": "4",
+      "pass": true,
+      "answer": "La categoría es necesaria para calcular las ventas. ¿Cuál es la categoría para la que deseas saber las ventas en 2026?",
+      "metadata": {
+        "tool_errors": 1,
+        "tool_audit": [
+          {
+            "tool": "ventas_categoria",
+            "ok": false
+          }
+        ],
+        "input_tokens": 2195,
+        "latency_ms": 1810,
+        "moderation": "ai_gateway_input_output",
+        "output_tokens": 56,
+        "tool_calls": 1,
+        "llm_endpoint": "databricks-meta-llama-3-3-70b-instruct",
+        "agent_revision": "s08-v2",
+        "prompt_version": "4"
+      },
+      "elapsed_seconds": 2.16
+    },
+    {
+      "case": "reposicion",
+      "client_request_id": "ais08-reposicion-a1af0a3d00424d0cbcf8154bf1a952c5",
+      "served_model_version": "4",
+      "pass": true,
+      "answer": "Productos que requieren reposición según la tabla de inventario:\nNord-Ost Matjeshering (stock 10, en camino 0, punto de reorden 15)\nOutback Lager (stock 15, en camino 10, punto de reorden 30). Fuente: neptuno_manuel_arguelles.gold.inventario_disponible.",
+      "metadata": {
+        "tool_errors": 0,
+        "tool_audit": [
+          {
+            "tool": "productos_reponer",
+            "ok": true
+          }
+        ],
+        "input_tokens": 2267,
+        "latency_ms": 13238,
+        "moderation": "ai_gateway_input_output",
+        "output_tokens": 132,
+        "tool_calls": 1,
+        "llm_endpoint": "databricks-meta-llama-3-3-70b-instruct",
+        "agent_revision": "s08-v2",
+        "prompt_version": "4"
+      },
+      "elapsed_seconds": 13.57
+    },
+    {
+      "case": "rag",
+      "client_request_id": "ais08-rag-b7661e8eb6634d658f25dd3906cc8d8b",
+      "served_model_version": "4",
+      "pass": true,
+      "answer": "Evidencia recuperada (fragmentos; no una política completa):\nEl cliente debe informar el número de pedido. [documento_id=politica_devoluciones; chunk_id=5dfa4938954c886f65da095315df423892251df3a76b7290fb4baa631932e4a0]\nSi supera 48 horas, Neptuno puede solicitar una nota de crédito equivalente al 8 por ciento del flete. [documento_id=contrato_expreso_veloz; chunk_id=53df687b36a31865239afd862533f03123c2e7092acb3eb76f765daa07caa303]\nMercadería refrigerada requiere embalaje térmico provisto por Neptuno; el transportista registra temperatura en recepción y entrega. [documento_id=contrato_paquetes_unidos; chunk_id=f3b06517a6979fc3d122cac029634df939ca573e0456be50b8676b68d3a36012]",
+      "metadata": {
+        "tool_errors": 0,
+        "tool_audit": [
+          {
+            "tool": "buscar_documentos",
+            "ok": true
+          }
+        ],
+        "input_tokens": 2537,
+        "latency_ms": 4947,
+        "moderation": "ai_gateway_input_output",
+        "output_tokens": 126,
+        "tool_calls": 1,
+        "llm_endpoint": "databricks-meta-llama-3-3-70b-instruct",
+        "agent_revision": "s08-v2",
+        "prompt_version": "4"
+      },
+      "elapsed_seconds": 5.19
+    },
+    {
+      "case": "costos",
+      "client_request_id": "ais08-costos-b9a857afb8ed41f784488acd548ddf7d",
+      "served_model_version": "4",
+      "pass": true,
+      "answer": "No puedo calcular margen ni rentabilidad: faltan datos de costos. Puedo consultar venta neta.",
+      "metadata": {
+        "tool_errors": 0,
+        "tool_audit": [],
+        "input_tokens": 0,
+        "latency_ms": 2266,
+        "moderation": "ai_gateway_input_output",
+        "output_tokens": 0,
+        "tool_calls": 0,
+        "llm_endpoint": "databricks-meta-llama-3-3-70b-instruct",
+        "agent_revision": "s08-v2",
+        "prompt_version": "4"
+      },
+      "elapsed_seconds": 2.72
+    }
+  ]
+}

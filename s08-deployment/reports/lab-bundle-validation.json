@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "command": "databricks bundle validate -t dev --var catalog=...,schema=...,app_name=...,endpoint_name=...,warehouse_id=...,model_name=...,model_version=4",
+  "validated_on": "2026-09-26",
+  "cli": "0.288.0",
+  "deployment_executed": false,
+  "ci_executed": false,
+  "validated_at": "2026-09-26T22:22:00-05:00"
+}

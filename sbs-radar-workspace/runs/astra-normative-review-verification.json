@@ -1,0 +1,15 @@
+{
+  "run_id": "astra-normative-review-002",
+  "report_path": "runs/astra-normative-review.json",
+  "report_sha256": "7eec669345cb206c77fcb1ffd55550afdb7b427a66ce16f6b8a1b7f7d8257282",
+  "json_valid": true,
+  "literal_citations_verified": 9,
+  "original_hashes_verified": true,
+  "code_unchanged_since_review": true,
+  "visual_pages_reviewed": 8,
+  "technical_tests": {
+    "passed": 20,
+    "command": "python3 -m pytest tests/unit/test_evaluation.py -q"
+  },
+  "scope": "Artifact consistency and scoped visual review; not global normative or E2E acceptance."
+}

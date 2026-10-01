@@ -1,0 +1,1740 @@
+{
+  "01b8543d32ce9eaaca5d4f395955a94b1b85dd3e48d1c3b0a477ec248b8a23c8": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      14
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-22-f0fb1c074d1b8f08"
+  },
+  "05d40a671c349e509ce98698b48a3983349c44e24bd1dd3239e00663fe4d5392": {
+    "family": "market_conduct",
+    "origin": "automatic_structural",
+    "pages": [
+      2
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Primero-2b23d60546735360"
+  },
+  "06e8dd1b9a65add1b157cf89ddf78698add6800bedfe28ff09baa925155b4b57": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      18,
+      19
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Cuarto-3b6e28d9dd6af73a"
+  },
+  "0717d4ffa3a1624ffc40063fa25f16a8c3215614ef094bc35b38f0a5ee45c0fa": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      10
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-14-d983afc3ffeda1c0"
+  },
+  "0963bb69c9440f982f884245e59dc28d34ece8597c3140b596c3d8901d5b0b16": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      3,
+      4
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-3-d8e3ee88737c70b3"
+  },
+  "0d2cdcc399951a5f87e95082d6ccbc6d0d38c64232f852bea5f1edd1d3eced73": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      5
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-5-2f5f49ff52917e2c"
+  },
+  "0eff7e6a72f8a0507b5c9165237e79e28b395f14259336cfef136f22ab53beb1": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      7
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Quinto-7a559a808857bf8f"
+  },
+  "101cda904268c1855a9c327fa01e84cb3d2566bc6f666191fab1c01520c4e1bc": {
+    "family": "market_conduct",
+    "origin": "automatic_structural",
+    "pages": [
+      3
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-3-4c4eb6c51db67400"
+  },
+  "11047407f2d771b1fe62e06e2b0d11a849063eca6fc376e9085af503273d7db7": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      6
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-9-f48a6f72e829a646"
+  },
+  "12b7796413a0ed3eb417533684eba97bdf068deeb88f89c64da7eaa3c9436545": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      18
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Tercero-f126fa1d1da60708"
+  },
+  "14121a733b044309412b39d4463f3a57a6554efd8f5f8063e02934b608c9b81d": {
+    "family": "market_conduct",
+    "origin": "automatic_structural",
+    "pages": [
+      6
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-10-df9172c083a9408f"
+  },
+  "16a703a36d8a20e45c3d4cf0bb394ab3a03d3f8b11a3fd36cabd0603a265e632": {
+    "family": "market_conduct",
+    "origin": "automatic_structural",
+    "pages": [
+      4,
+      5
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-7-ec47d7fdd2be8d5b"
+  },
+  "1b04d8cc9654298eda5c53846ee9f842319daed9c2821ba58df4152e87c290b2": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      3,
+      4
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-3-d8e3ee88737c70b3"
+  },
+  "1e76c42f6663ad03e107231f07f09f8ba3442fbde2fd63bbfd19dc7fb8850f4d": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      6
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-8-80b91a18ddddc124"
+  },
+  "1f6c224a48bf57e848e02a8f4724b0b040422c70930d1963b1a3a6f95fe28ff9": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      14
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-23-5785a09143cc4bd5"
+  },
+  "210a537fe1445b6953c1fc55ec5d7694942e38c3e0bf7033aa2ea531af67bf49": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      2,
+      3
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-2-40a1ed9608242c7e"
+  },
+  "231b802814c15b07cb0b9e2ff58fa9e36d67fe2a2b47fdd9a881f44549aed583": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      4,
+      5
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-4-b763a0421b2f9d7a"
+  },
+  "259f6c826b889981e742c71f6aea00fa10a032c423dbe8e65641f03996017a91": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      23
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Décimo-da7afa0da40db56c"
+  },
+  "26f13248e89068b8a9e47516bad5586c3c562db1b36e9b4bf5b7d568a4867a06": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      2
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-1-12b8c56d102d58b9"
+  },
+  "29413636d181f3c07336c8fd7f9a6c37f5da7c2d81bb562abf2003f975f3bf44": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      19,
+      20
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Quinto-7a559a808857bf8f"
+  },
+  "2f14800138a5044513a501fd38fa8dd8fb8a9a06e72df679057ba2e5d00f53bb": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      13,
+      14
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-21-73fe5a2326069a53"
+  },
+  "301e845efb7e66eac95b95a6215a9eb3575643d124fb4ea892b899613bf16fff": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      17
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "final_provision-Cuarta-f615fbc90e516cae"
+  },
+  "318e16e852262dbe9bc18df4637b15cb2542f7bc9b63d6c932152aa14e1e2bb6": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      17
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "final_provision-Segunda-8270c8049085427b"
+  },
+  "339509246f8eee92e35d42511f7c1db34e88917312db4b2102437141c2628403": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      2
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Tercero-f126fa1d1da60708"
+  },
+  "34aecded828986c4388eb6c712056cc182438bd2f3e1928d88ab1faae7d09c8d": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      10,
+      11
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-15-d83ce82f15485fa8"
+  },
+  "34d68463e8dbebb20d5f6ffa6ee3090f9339c004b6b6347f69228a9d653f253d": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      12,
+      13
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-20-e450cd63648f95ba"
+  },
+  "374793294e4d7ac0426f54fda87c6aa3e158d34846a2ec299fe4545e95c4588a": {
+    "family": "market_conduct",
+    "origin": "automatic_structural",
+    "pages": [
+      7
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-13-2c56f9d37ec0165b"
+  },
+  "381ed60d65a5dbd7f1a7ca622078ac1e1b5edf5492a068a92288a9ccc44061d6": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      2,
+      3
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-2-40a1ed9608242c7e"
+  },
+  "3965f4a60d9c424c5d947d48eb5f09b32138b22112183ede40c8306a330fe425": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      7,
+      8,
+      9
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-12-b6e2dc2a8056fe6c"
+  },
+  "3efecc3a84ba8ee7cb09392365740833e8d14f9ac2b8ec1ce9677a6e40e43f11": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      4,
+      5
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-4-b763a0421b2f9d7a"
+  },
+  "40534d2f1ff8c096d1599287cc4e4d3d74a42217b04052096323e4fa2a5162c2": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      16
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-26-a1629c77cb69d004"
+  },
+  "485d22ca61a1e8fa93712c148682fc77e95e0d95bd1e3bba4f9f5f4c610f6bcc": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      7,
+      8
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Séptimo-2619281cfb824282"
+  },
+  "4a59f338b5a1f85ea073ffa186255639c734b83b1ea39be9eee2d5711fe3b341": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      18
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Tercero-f126fa1d1da60708"
+  },
+  "4b6ea0be3d78664ada8e80864d4b4ab78e31829a5f26cfa187f4bf675007be3f": {
+    "family": "market_conduct",
+    "origin": "automatic_structural",
+    "pages": [
+      6,
+      7
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-11-6df36270ceb5ed67"
+  },
+  "4cee6b6405714eb22b46093611bf86fe879f75566a4d8c7f89b8adfd13dab496": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      2
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Primero-2b23d60546735360"
+  },
+  "4d1c470f6ab0323ae498bd80d54d4c3640ad067676f56ba935a7af73419b7c8d": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      13
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-21-73fe5a2326069a53"
+  },
+  "4e81a585732db0fcbd34f5bcf7d1de6a43262446f29070ed9b1f625d6f945cea": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      9,
+      10
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-13-2f2dbac344c2d101"
+  },
+  "4e904094b0196f1793403a4ebbe7efad89cd7e012097009f6847a20f6f04a167": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      11
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-16-38cec727a33b720b"
+  },
+  "4f459196a59b6d6691b662a2482ee824f1ccb454bbc5f8350d1863cf1eb4dc48": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      5
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-5-2f5f49ff52917e2c"
+  },
+  "53a05b0160ba8e57ba3c3ccbaa5f7a72acc0cd6bcce1fa7ed3d88b2f19aac64f": {
+    "family": "market_conduct",
+    "origin": "automatic_structural",
+    "pages": [
+      5,
+      6
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-9-4be7cb44f07bac13"
+  },
+  "53aaaa02ebd1d487403d01bb2b131fec9177bc3ed641e5ed35746bb230e8ce34": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      21,
+      22
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Séptimo-2619281cfb824282"
+  },
+  "56e891e099362be021ce5b364ac348c4bdb7ef9ce45a4047ed996cd44dcbd381": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      5
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-6-4809b4f742d1bca0"
+  },
+  "5871248e7a046c7b8336ed720febacda49557beb1218b70707925fe94c96628f": {
+    "family": "market_conduct",
+    "origin": "automatic_structural",
+    "pages": [
+      4
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-5-f83204355c298e2f"
+  },
+  "5c555c2e93d2317803144d39d67ac039013064fd5dbef5a3a1670abb38b9bbea": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      7
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-11-b4115752d7caab69"
+  },
+  "604052826a898321997a3638aab8100acc565087db21b4e915bbc313337169b2": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      22
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Octavo-5ea3807e6537daaa"
+  },
+  "6113aa3a582f9c50d484d33bd40b98e395b3885b4b4fa40b6cf599098d329dc3": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      17
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "final_provision-Tercera-a2d09e663fba3129"
+  },
+  "61d33710349e4976af58d051aaba77530d383d9e2101049960750eb5f08325d9": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      16
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-27-6c77386367b28eb2"
+  },
+  "6210cf59eca6a09f315297e7f5eb824219ed1ad870f0e5dd7de978a8d661d567": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      11
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-17-94d1bc7138d65cbd"
+  },
+  "639e033edbf908acf6a0a9129cdaab16e350ca5c1b0b3585efda7ea0d5f3ab3c": {
+    "family": "market_conduct",
+    "origin": "automatic_structural",
+    "pages": [
+      2
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Primero-2b23d60546735360"
+  },
+  "65b26165923880b80c0ed0e897fed17bed52e252b6c50fe424430f6dcbea77be": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      12
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-19-1e64256ff8751e0a"
+  },
+  "66359b5fc827c1e56c537008b37432b34cde49e6313cfae2958a7b1f742fdd2b": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      17
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "final_provision-Tercera-a2d09e663fba3129"
+  },
+  "68807c6f72af9c44cc10d7c8dd2b59d387c180b84db929c7fc35c2f19300161b": {
+    "family": "market_conduct",
+    "origin": "automatic_structural",
+    "pages": [
+      5
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-8-c75cd160d764c020"
+  },
+  "6d25e34995a1eec8415a9502288a8075cb9628d9ecd96a925e944921e3c9fff7": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      11,
+      12
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-18-550be317dc95fbc7"
+  },
+  "70620f02b61e91a8f09527d85a6ebb131237947be9a7c87dea1cfa19618ff7d3": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      5,
+      6
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-7-5a15f525abb2e88a"
+  },
+  "70e2237631870bae82abd0a8169ff24f9b4b70733db3c83db2bd2ccd3d9569ba": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      22
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Octavo-5ea3807e6537daaa"
+  },
+  "71d0456cca6b2a7109d0cd3544e9e45b461f0cdc7ebde5b34eaecf282ca07879": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      17,
+      18
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Segundo-7718559a3d0c6e9d"
+  },
+  "7a5053f064cd8d06f7d039c693b27b6d66f617fee8333005a54e8bf3e9f6c4cd": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      10
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-14-d983afc3ffeda1c0"
+  },
+  "7b2e97367c1ae0af3a3a1a6e71a5d99bd42350adfc56f2fd1c612e4a13155fdf": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      12
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-19-1e64256ff8751e0a"
+  },
+  "7c71cc23db340ff56bdb5c7c06d89f5650bedd6f0b26e964521952faf82a5e93": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      13,
+      14
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-22-f0fb1c074d1b8f08"
+  },
+  "81c3780d3eb8d4a3369ae32e01b9a748190b1bf7d2784bae343e6f3f2c86c447": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      2
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-1-12b8c56d102d58b9"
+  },
+  "86ccc3e7358a01de2c9be3e680168d3d6117af7914df3cf839d56cc48a7cdf01": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      23
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Décimo-da7afa0da40db56c"
+  },
+  "882d5a7e33e7e68518dc64d35242319d1e3321a5c2da33a36888a8afd79c6eaa": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      17
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "final_provision-Segunda-8270c8049085427b"
+  },
+  "89f23657c55abb31deac627496718eddeca219d659c9c89c389929948c1c73ef": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      7,
+      8,
+      9
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-12-b6e2dc2a8056fe6c"
+  },
+  "8a047e5b752ea84e87411054230445b9a2c22cd384e2708f17f8b50cdb893047": {
+    "family": "market_conduct",
+    "origin": "automatic_structural",
+    "pages": [
+      4
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-6-75abb360b8ccf5c5"
+  },
+  "8d0ef59d658bf47c4bb9d47f6136f200b633fc4d9b4b16abee8a81110e014350": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      7
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Sexto-faffd27554ddb563"
+  },
+  "93622570815da182ed6c4b1fe26f2ca03db7036b1c82ff98dc92cab01f5a647a": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      2
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Primero-2b23d60546735360"
+  },
+  "95125233ddc79492e51dfb624c46f97bc77272cfb80ee6847f43feadb58562ca": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Primero-2b23d60546735360"
+  },
+  "9aa17ecc9eafb9086aea7b9edc0748712ac04e049644a5be839ed144a310a074": {
+    "family": "market_conduct",
+    "origin": "automatic_structural",
+    "pages": [
+      5,
+      6
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-9-4be7cb44f07bac13"
+  },
+  "9d9b4be709bdfa0a9bc6fab66ac229907b84b0b0ddae6db741825cad50157a60": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      9,
+      10
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-13-2f2dbac344c2d101"
+  },
+  "9e6aa628ea0ec71b4b1452df5dda418cdaf65c8e658114bdd8a84e80609ad75e": {
+    "family": "market_conduct",
+    "origin": "automatic_structural",
+    "pages": [
+      6
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-10-df9172c083a9408f"
+  },
+  "a2992b9d06c0524755c9c493ba569ec0c3ee4cc3451a20888ab28dcd9900758d": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      2
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Primero-2b23d60546735360"
+  },
+  "a39322088aeeda11ed9db0efb8a87c23ae4ffa025df592083a7fa04904c4a3cc": {
+    "family": "market_conduct",
+    "origin": "automatic_structural",
+    "pages": [
+      4
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-5-f83204355c298e2f"
+  },
+  "a545d60e02eb898df972dc0708d3f8c61dbbcf7c23fb3bc243c314ae33524dc2": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      18
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Cuarto-3b6e28d9dd6af73a"
+  },
+  "a69911dcb7b37e9c96834934ad457784de7db5a61f4f4e86667d9d9b0debb644": {
+    "family": "market_conduct",
+    "origin": "automatic_structural",
+    "pages": [
+      4
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-4-c27d54c27b63d30e"
+  },
+  "a7ff773181f6fc4912e1581d9bb0526c319613e82722b2311b8a66879ddf0782": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      17
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "final_provision-Primera-d337c6d4c8f79ca2"
+  },
+  "ab3905896217f412d4e64faf22fd216c4a0909c5cbd69e51c7c36de862c3678f": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      22,
+      23
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Noveno-25ae1dbcae3e7d75"
+  },
+  "ae3f639cf3d5e0d37126f810b14b4c8d64babafa97e4f561dab1e342897b464b": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      11,
+      12
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-18-550be317dc95fbc7"
+  },
+  "b00af814690eac0ea8c77b0f3ca47cdba181538b1603a68c14cc4150b0864785": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      14
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-23-5785a09143cc4bd5"
+  },
+  "b07ccfb957e4201eae336aaa786af6a3127edbb571b68c810402ccc68fabeb4c": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      6
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Segundo-7718559a3d0c6e9d"
+  },
+  "b0c64f96d70e01669c804ecfbad58eb44f83fbd302cba687308ed00581428680": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      5
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-6-4809b4f742d1bca0"
+  },
+  "bf2a784475093c172961031811a877bfd165a57838872f452eed110943d47e76": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      15,
+      16
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-25-af56c6fb860a5ef9"
+  },
+  "c2c0c6c98ea585b4f27203d002d99c101c7d5741aa7268058a44de2fdee33c08": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      12,
+      13
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-20-e450cd63648f95ba"
+  },
+  "c472c1a006ba36bc8a613a345c0895aa3665f15e5005177d88fa336786fc7048": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      7
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-11-b4115752d7caab69"
+  },
+  "c5c96c0b1adb02ff1bb740e471d776176abcda6fdcbebd166e375d1a5e30320e": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      14,
+      15
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-24-bff03c3825ef9acc"
+  },
+  "c99ec1017ffc7b120d746f39a13b9d976755330291dca8513c1379a3e783755e": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      10,
+      11
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-15-d83ce82f15485fa8"
+  },
+  "cab5698fe2da972e10932d6ebb7e42b8f61658698c6f0ccf076c312ee98e1a87": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      6,
+      7
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Cuarto-3b6e28d9dd6af73a"
+  },
+  "cbe6275861f0b330d962513d467263ff7876a29c0832e686b47a291a8035d87f": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      18,
+      19,
+      20
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Quinto-7a559a808857bf8f"
+  },
+  "d4091ff6204418df414603c82a896ad2546e81df05209afa8175ead341de20e8": {
+    "family": "market_conduct",
+    "origin": "automatic_structural",
+    "pages": [
+      3,
+      4
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-4-c27d54c27b63d30e"
+  },
+  "d7d269266c9e4a0a3449778a0a5dd29e68b669cafdf6e933fd156c008c83749a": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      17
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "final_provision-Cuarta-f615fbc90e516cae"
+  },
+  "d9816e88a45f18f002c77a2bd051c9c5dd64a426db30065ccb96fbfab87035a5": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      5,
+      6
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-7-5a15f525abb2e88a"
+  },
+  "dbfb63a071d94950bd0d9699ff1292061dde13cac4770b1b216f1dd1d835ebfa": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      6
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-9-f48a6f72e829a646"
+  },
+  "dd3c5f15fc0582cdf14d5e3ed99b2dfc6deffe50de023cae22a251f0660c4af7": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      2
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Segundo-7718559a3d0c6e9d"
+  },
+  "e07ca08ba4940c270bf7930b24878f3235ffb4411c32f1830b8771d1d184df0d": {
+    "family": "market_conduct",
+    "origin": "automatic_structural",
+    "pages": [
+      4,
+      5
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-7-ec47d7fdd2be8d5b"
+  },
+  "e121f988cbb73743b6cddf90e4b08f01dbbe57db327d5d2cd1cfec4512bf78bd": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      11
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-16-38cec727a33b720b"
+  },
+  "e278670e72f0565023eba34c8dca6fcf34ac942bc7039fa3de896b6e55ecd20c": {
+    "family": "market_conduct",
+    "origin": "automatic_structural",
+    "pages": [
+      6,
+      7
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-11-d305080bf750811e"
+  },
+  "e2aa7a234d4a09b0c19a7e133ade2f129f9f664ace5a2d4e80ee86b03d1adb8e": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      15,
+      16
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-25-af56c6fb860a5ef9"
+  },
+  "e5604395d12f02fed4a0788dc8ca9208322f5b5510d9ccc45360943e000d8a77": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      20,
+      21
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Sexto-faffd27554ddb563"
+  },
+  "e5bde17aff7e7b4846d8ceebd0d8f6a2298ea36dbd403008d30d556d234be55e": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      17
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "final_provision-Primera-d337c6d4c8f79ca2"
+  },
+  "e9ecf8a8ca131fc5948262625b00b5b9a41b1a5881e543c0093b6ca1fe793102": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      20,
+      21
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Sexto-faffd27554ddb563"
+  },
+  "ec6ac94927ca20741bc68767e35c021bcdd7f18104cd5304e1d294311f76eccc": {
+    "family": "market_conduct",
+    "origin": "automatic_structural",
+    "pages": [
+      7
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-12-9d07e0b8babea49e"
+  },
+  "ecbed89600c6bc6186194af5d14a0c21627ab8ed4d37a6544c95f893b2d61b3b": {
+    "family": "market_conduct",
+    "origin": "automatic_structural",
+    "pages": [
+      7
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-12-9d07e0b8babea49e"
+  },
+  "ed344b5a42513aa6bca5520098a4beea897b26c94433fc527da9d2b6e82f8ae2": {
+    "family": "market_conduct",
+    "origin": "automatic_structural",
+    "pages": [
+      7
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-13-2c56f9d37ec0165b"
+  },
+  "eea58d38a85de99ce25b9011804e0499c7544de775a709e1ee503e53b51884b6": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      8
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Octavo-5ea3807e6537daaa"
+  },
+  "eeba65aadee0d6c89de21426d36365e7d2a0aff86b7cce150b615542260cbdf2": {
+    "family": "market_conduct",
+    "origin": "automatic_structural",
+    "pages": [
+      4
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-6-75abb360b8ccf5c5"
+  },
+  "f0bee8e59c0b06c0681ee0097fbf58d949cb1a07cdb16cd05fa09bdcc23ac41f": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      16
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-26-a1629c77cb69d004"
+  },
+  "f2d9533de01dab9dc9bf4128e98690ffc88af73fd6226bb6e1a96c3b0b05c2a6": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      16,
+      17
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-27-6c77386367b28eb2"
+  },
+  "f524c4ff35c7d359ba19e5e2ddf8abbf56cc14e9f06acb3997ee823bb02f39e7": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      7
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-10-54817634810d7413"
+  },
+  "f7a01d13e9f243df1e663530a5458b9713d7673e49475c9aa019b021ec62d9f9": {
+    "family": "market_conduct",
+    "origin": "automatic_structural",
+    "pages": [
+      3
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-3-4c4eb6c51db67400"
+  },
+  "f81390657daca299750bbb951a8eb385e78ac8e16f6cbab3b07b815d12aee422": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      6
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-8-80b91a18ddddc124"
+  },
+  "f95b70ce239ac6eaee71f9a047d4951b684437ad3ce9e75abc6dd2d0504bb9ef": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      17,
+      18
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Segundo-7718559a3d0c6e9d"
+  },
+  "f9e7f19e589850be3cf305dbf4a10a88f0f0445c62086efd7d16ab22df1232b1": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      14,
+      15
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-24-bff03c3825ef9acc"
+  },
+  "f9f3d2dd70f1b8d34c37e3d00e9455cb49a1f0b3e9856e47012a0d2587be181b": {
+    "family": "market_conduct",
+    "origin": "automatic_structural",
+    "pages": [
+      5
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-8-c75cd160d764c020"
+  },
+  "fbf7a17b8c9b5a0ef3e1c0b6fd44e3d3d13c47f5883b36e5dadd37f435fb9345": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      21,
+      22
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Séptimo-2619281cfb824282"
+  },
+  "fcb0ba01ebdf15b8bcd2c10098bc7cc2ad36532389bade3259a93f0e2e8c83d4": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      7
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-10-54817634810d7413"
+  },
+  "fcbf8dd9ed6615b3638a375ff0a6f4f1eebf185ee5c0eb8c46353e7489678673": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      22,
+      23
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "resolution_article-Noveno-25ae1dbcae3e7d75"
+  },
+  "fdbc5d7c19a387ad8a227f057f1ff187a9341bf641ab3e3ff48fbf449ca64c99": {
+    "family": "cybersecurity",
+    "origin": "automatic_structural",
+    "pages": [
+      11
+    ],
+    "provenance": {
+      "algorithm": "numbered-headings-v6",
+      "legal_validation": false
+    },
+    "provision_id": "article-17-94d1bc7138d65cbd"
+  },
+  "structural-26695dde36201ba4b36d6df15dae90b2f1964d804ac6ba8caee7ce31720913ec": {
+    "family": "market_conduct",
+    "origin": "reused_ai_annotated_subspan",
+    "pages": [
+      16
+    ],
+    "provenance": {
+      "citation_derivation": "exact_subspan_of_reviewed_29.1_context",
+      "human_gold": false,
+      "institutional_approval": false,
+      "kind": "reused_ai_reference",
+      "review_citations": {
+        "after": {
+          "citation_id": "a9ea13aa33c808307aa799cb5bd43160f3dc0d6e604a0293ea1f4b3eafd2f2d8",
+          "document_id": "sbs-3274-2017",
+          "end": 54793,
+          "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+          "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/87/879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7.pdf",
+          "original_sha256": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+          "page": 16,
+          "quote_raw": "29.1 Los usuarios tienen derecho a efectuar pa gos por  encima de la cuota exigible en el periodo, \nconsiderando para tal efecto lo siguiente: \n1. No deben establecerse condiciones o limitaciones para el ejercicio del derecho. \n2. No pueden aplicarse comisiones, gastos, penalidades de ningún tipo por el ejercicio del derecho o \ncobros de naturaleza o efecto similar. \n3. Debe informarse, al momento de efectuar la operación, el monto que resulta aplicable por concepto de \nimpuestos.  \n4. Las empresas deben poner a disposición para realizar operaciones de pago anticipado y adelanto de  \ncuotas, como mínimo los mismos canales utiliz ados para  el pago de cuotas o de obligaciones de \ntarjeta de crédito, sin que resulten exigibles al usuario trámites o exigencias adicionales.23 \n \n",
+          "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/rawtext.txt",
+          "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/1731/v8.0/Adjuntos/3274-2017.R.pdf",
+          "start": 54007,
+          "version_id": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+          "visual_original_verified": true,
+          "visual_review_run": "astra-normative-review-003"
+        },
+        "before": {
+          "citation_id": "4ed2e727d567fc9b45ac7315b41b8f57844463b0474da94e95950bf408ac6509",
+          "document_id": "sbs-3274-2017",
+          "end": 53586,
+          "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+          "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/66/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342.pdf",
+          "original_sha256": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+          "page": 16,
+          "quote_raw": "29.1 Los usuarios tienen derecho a efectuar pagos por encima de la cuota exigible en el periodo, \nconsiderando para tal efecto lo siguiente: \n1. No deben establecerse condiciones o limitaciones para el ejercicio del derecho. \n2. No pueden aplicarse comisiones, gastos, penalidades de ningún tipo por el ejercicio del derecho o \ncobros de naturaleza o efecto similar. \n3. Debe informarse, al momento de efectuar la operación, el monto que resulta aplicable por concepto de \nimpuestos.  \n4. Los usuarios pueden efectuar los pagos en cualquiera de las oficinas de atención al público de la \nempresa en las que puedan realizarse operaciones de pagos y desembolsos, así como en otros \ncanales adicionales puestos a disposición por la empresa a los usuarios. \n \n",
+          "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/rawtext.txt",
+          "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/1731/v7.0/Adjuntos/3274-2017.R.pdf",
+          "start": 52830,
+          "version_id": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+          "visual_original_verified": true,
+          "visual_review_run": "astra-normative-review-003"
+        }
+      },
+      "run_id": "astra-normative-review-003"
+    },
+    "provision_id": "art29.1.4"
+  },
+  "structural-6bf1ff7e2641b57554e5d34cef41bd354fa6da492af7321f6089949feb91f6f0": {
+    "family": "market_conduct",
+    "origin": "reused_ai_annotated_subspan",
+    "pages": [
+      15
+    ],
+    "provenance": {
+      "citation_derivation": "reviewed_span_unchanged",
+      "human_gold": false,
+      "institutional_approval": false,
+      "kind": "reused_ai_reference",
+      "review_citations": {
+        "after": {
+          "citation_id": "be29e2424f893e22111ef1c577b8e439b00dc3f46b6abed23c6ee531f0ade26c",
+          "document_id": "sbs-3274-2017",
+          "end": 52708,
+          "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+          "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/87/879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7.pdf",
+          "original_sha256": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+          "page": 15,
+          "quote_raw": "Artículo 27. Responsabilidad de las empresas en la contratación de seguros asociados   \nLas empresas se encuentran sujetas a las exigencias  establecidas en el Reglamento de Comercialización  \nde Productos de Se guros, las normas que lo modifique n o sustituyan. Adicionalmente, las empresas que  \nofrezcan seguros considerados como una condición para contratar,  es decir, el seguro de desgravamen y  \nlos seguros para la protección del bien dado en garantía, deben observar lo siguiente:  \n1. Deben informar a los usuarios que tienen el derecho a elegir entre la contratación de l seguro ofrecido \npor las empresas; o un seguro contratado directamente por el usuario o a través de la designación de \nun corredor de seguros ; siempre que cumpla , a satisfacción de la s empresas, con las condiciones \npreviamente informadas. La difusión de la  referida información debe realizarse en la oferta de  los \nproductos que consideren a los seguros como una condición par a contratar , a través de los \nmecanismos que para tal efecto utilicen las empresas. \na) En el caso de que el usuario acredite la contratación,  por su cuenta, de un seguro que cumpla con \nlas condiciones establecidas por la empresa, no está obligado a tomar el seguro ofrecido y puede \nsustituirlo por el que hubiera contratado. En este supuesto, el seguro debe ser endosado a favor de \nla empresa hast a por e l monto del saldo adeudado; sin que ello genere una comisión o gasto \nadicional al usuario, siempre que se trate del seguro de desgravamen. En virtud del endoso, la \nempresa puede pactar con el usuario que el pago de la prima del seguro se adicione al pago de las \ncuotas periódicas previamente pactadas por el crédito o se debite de un producto pasivo. El \nendoso y forma de pago, por acuerdo de las partes, puede ser tramitado por el usuar io ante la \nempresa del sistema de seguros que emite la póliza y entr egado a  las empresas, o por las \nempresas.19 \nb) Si el usuario contrata el seguro comercializado por la empresa, esta debe en tregar a los \nasegurados las pólizas del seguro individual o, en su ca so, los certificados de seguro a que se \nrefiere el Reglamento de Transparencia de Información y Contratación de Seguros aprobado por la \nSuperintendencia, expedidos por las empresas del sistema de seguros. \n2. La fecha de pago de indemnizaciones a las empresa s es la que debe cons iderarse para realizar  la \nliquidación de la opera ción ac tiva. Las empresas tienen un plazo máximo de treinta (30) días de \nrecibida la indemnización para efectuar la liquidación. \n3. Las cláusulas adicionales a las pólizas contratadas o los productos de seguros que brinden coberturas \ndistintas a  las del seguro de desgravamen o a los seguros orientados a  la protección del bien en \ngarantía, deben ser opcionales y su  contratación debe ser realizada de manera independiente,  \ndebiendo requerir el consentimiento expreso de los usuarios por cada producto de seguro o cobertura \nadicional; par a lo cual, las empresas  deben resguardar los sustentos  correspondientes de dicho \nconsentimiento expreso.20 \n \n",
+          "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/rawtext.txt",
+          "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/1731/v8.0/Adjuntos/3274-2017.R.pdf",
+          "start": 49622,
+          "version_id": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+          "visual_original_verified": true,
+          "visual_review_run": "astra-normative-review-003"
+        },
+        "before": {
+          "citation_id": "ee248229311ebbad30ea8eabfae766a7d2434d4f53b12e8ed3b737a5ca6c08bb",
+          "document_id": "sbs-3274-2017",
+          "end": 51638,
+          "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+          "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/66/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342.pdf",
+          "original_sha256": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+          "page": 15,
+          "quote_raw": "Artículo 27. Responsabilidad de las empresas en la contratación de seguros asociados   \nLas empresas se encuentran sujetas a las exigencias establecidas en e l Reglamento de Comercialización \nde Productos de Seguros, las  normas que l o modifiquen o sustituyan . Adicionalmente, las empresas que \nofrezcan seguros considerados como una condición para contratar deben observar, adicionalmente, lo \nsiguiente:  \n1. Deben informar a los usuarios que tienen el derecho a elegir entre la co ntratación del seguro ofrecido \npor las empresas; o un seguro contratado directamente por el usuario o a través de la designación de \nun corredor de seguros ; siempre que cumpla , a satisfacción de la s empresas, con las condiciones \npreviamente informadas. La d ifusión de la  referida información debe realizarse en la oferta de  los \nproductos que consideren a los seguros como una condición para contratar , a través de los \nmecanismos que para tal efecto utilicen las empresas. \na) En el caso de que el usuario acredite la contratación, por su cuenta, de un seguro que cumpla con \nlas condiciones establecidas por la empresa, no está obligado a tomar el seguro ofrecido y puede \nsustituirlo por el que hubiera contratado. En este supuesto, el seguro debe ser endosado a favor \nde la empresa hasta por el monto del saldo adeudado ; sin que ello genere una comisión o gasto \nadicional al usuario , siempre que se trate del seguro de desgravamen . En virtud del endoso, la \nempresa puede pactar con el usuario que el pago de la prima del seguro s e adicione al pago de \nlas cuotas periódicas previamente pactadas por el crédito o se debite de un producto pasivo. El \nendoso y forma de pago, por acuerdo de l as partes, puede ser tramitado por el usuario ante la \nempresa del sistema de seguros que emite la póliza y entr egado a las empresas, o por las \nempresas.17 \nb) Si el usuario contrata el seguro comercializado por la empresa, esta debe entregar a los \nasegurados las pólizas del seguro individual o, en su caso, los certificados de seguro a que se \nrefiere el Reglamento de Transparencia de Información y Contratación de Seguros  aprobado por \nla Superintendencia, expedidos por las empresas del sistema de seguros. \n2. La fecha de pago de indemnizaciones a las empresa s es la que debe cons iderarse para realizar  la \nliquidación de la opera ción activa. Las empresas tienen un plazo máximo de treinta (30) días de \nrecibida la indemnización para efectuar la liquidación.  \n \n",
+          "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/rawtext.txt",
+          "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/1731/v7.0/Adjuntos/3274-2017.R.pdf",
+          "start": 49164,
+          "version_id": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+          "visual_original_verified": true,
+          "visual_review_run": "astra-normative-review-003"
+        }
+      },
+      "run_id": "astra-normative-review-003"
+    },
+    "provision_id": "art27"
+  },
+  "structural-72c48d6f7ab21705bbbcc6cb46747e2a96f144ae09c18e7f828d3921aaadeb74": {
+    "family": "market_conduct",
+    "origin": "reused_ai_annotated_subspan",
+    "pages": [
+      15
+    ],
+    "provenance": {
+      "citation_derivation": "reviewed_span_unchanged",
+      "human_gold": false,
+      "institutional_approval": false,
+      "kind": "reused_ai_reference",
+      "review_citations": {
+        "after": {
+          "citation_id": "be29e2424f893e22111ef1c577b8e439b00dc3f46b6abed23c6ee531f0ade26c",
+          "document_id": "sbs-3274-2017",
+          "end": 52708,
+          "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+          "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/87/879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7.pdf",
+          "original_sha256": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+          "page": 15,
+          "quote_raw": "Artículo 27. Responsabilidad de las empresas en la contratación de seguros asociados   \nLas empresas se encuentran sujetas a las exigencias  establecidas en el Reglamento de Comercialización  \nde Productos de Se guros, las normas que lo modifique n o sustituyan. Adicionalmente, las empresas que  \nofrezcan seguros considerados como una condición para contratar,  es decir, el seguro de desgravamen y  \nlos seguros para la protección del bien dado en garantía, deben observar lo siguiente:  \n1. Deben informar a los usuarios que tienen el derecho a elegir entre la contratación de l seguro ofrecido \npor las empresas; o un seguro contratado directamente por el usuario o a través de la designación de \nun corredor de seguros ; siempre que cumpla , a satisfacción de la s empresas, con las condiciones \npreviamente informadas. La difusión de la  referida información debe realizarse en la oferta de  los \nproductos que consideren a los seguros como una condición par a contratar , a través de los \nmecanismos que para tal efecto utilicen las empresas. \na) En el caso de que el usuario acredite la contratación,  por su cuenta, de un seguro que cumpla con \nlas condiciones establecidas por la empresa, no está obligado a tomar el seguro ofrecido y puede \nsustituirlo por el que hubiera contratado. En este supuesto, el seguro debe ser endosado a favor de \nla empresa hast a por e l monto del saldo adeudado; sin que ello genere una comisión o gasto \nadicional al usuario, siempre que se trate del seguro de desgravamen. En virtud del endoso, la \nempresa puede pactar con el usuario que el pago de la prima del seguro se adicione al pago de las \ncuotas periódicas previamente pactadas por el crédito o se debite de un producto pasivo. El \nendoso y forma de pago, por acuerdo de las partes, puede ser tramitado por el usuar io ante la \nempresa del sistema de seguros que emite la póliza y entr egado a  las empresas, o por las \nempresas.19 \nb) Si el usuario contrata el seguro comercializado por la empresa, esta debe en tregar a los \nasegurados las pólizas del seguro individual o, en su ca so, los certificados de seguro a que se \nrefiere el Reglamento de Transparencia de Información y Contratación de Seguros aprobado por la \nSuperintendencia, expedidos por las empresas del sistema de seguros. \n2. La fecha de pago de indemnizaciones a las empresa s es la que debe cons iderarse para realizar  la \nliquidación de la opera ción ac tiva. Las empresas tienen un plazo máximo de treinta (30) días de \nrecibida la indemnización para efectuar la liquidación. \n3. Las cláusulas adicionales a las pólizas contratadas o los productos de seguros que brinden coberturas \ndistintas a  las del seguro de desgravamen o a los seguros orientados a  la protección del bien en \ngarantía, deben ser opcionales y su  contratación debe ser realizada de manera independiente,  \ndebiendo requerir el consentimiento expreso de los usuarios por cada producto de seguro o cobertura \nadicional; par a lo cual, las empresas  deben resguardar los sustentos  correspondientes de dicho \nconsentimiento expreso.20 \n \n",
+          "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/rawtext.txt",
+          "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/1731/v8.0/Adjuntos/3274-2017.R.pdf",
+          "start": 49622,
+          "version_id": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+          "visual_original_verified": true,
+          "visual_review_run": "astra-normative-review-003"
+        },
+        "before": {
+          "citation_id": "ee248229311ebbad30ea8eabfae766a7d2434d4f53b12e8ed3b737a5ca6c08bb",
+          "document_id": "sbs-3274-2017",
+          "end": 51638,
+          "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+          "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/66/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342.pdf",
+          "original_sha256": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+          "page": 15,
+          "quote_raw": "Artículo 27. Responsabilidad de las empresas en la contratación de seguros asociados   \nLas empresas se encuentran sujetas a las exigencias establecidas en e l Reglamento de Comercialización \nde Productos de Seguros, las  normas que l o modifiquen o sustituyan . Adicionalmente, las empresas que \nofrezcan seguros considerados como una condición para contratar deben observar, adicionalmente, lo \nsiguiente:  \n1. Deben informar a los usuarios que tienen el derecho a elegir entre la co ntratación del seguro ofrecido \npor las empresas; o un seguro contratado directamente por el usuario o a través de la designación de \nun corredor de seguros ; siempre que cumpla , a satisfacción de la s empresas, con las condiciones \npreviamente informadas. La d ifusión de la  referida información debe realizarse en la oferta de  los \nproductos que consideren a los seguros como una condición para contratar , a través de los \nmecanismos que para tal efecto utilicen las empresas. \na) En el caso de que el usuario acredite la contratación, por su cuenta, de un seguro que cumpla con \nlas condiciones establecidas por la empresa, no está obligado a tomar el seguro ofrecido y puede \nsustituirlo por el que hubiera contratado. En este supuesto, el seguro debe ser endosado a favor \nde la empresa hasta por el monto del saldo adeudado ; sin que ello genere una comisión o gasto \nadicional al usuario , siempre que se trate del seguro de desgravamen . En virtud del endoso, la \nempresa puede pactar con el usuario que el pago de la prima del seguro s e adicione al pago de \nlas cuotas periódicas previamente pactadas por el crédito o se debite de un producto pasivo. El \nendoso y forma de pago, por acuerdo de l as partes, puede ser tramitado por el usuario ante la \nempresa del sistema de seguros que emite la póliza y entr egado a las empresas, o por las \nempresas.17 \nb) Si el usuario contrata el seguro comercializado por la empresa, esta debe entregar a los \nasegurados las pólizas del seguro individual o, en su caso, los certificados de seguro a que se \nrefiere el Reglamento de Transparencia de Información y Contratación de Seguros  aprobado por \nla Superintendencia, expedidos por las empresas del sistema de seguros. \n2. La fecha de pago de indemnizaciones a las empresa s es la que debe cons iderarse para realizar  la \nliquidación de la opera ción activa. Las empresas tienen un plazo máximo de treinta (30) días de \nrecibida la indemnización para efectuar la liquidación.  \n \n",
+          "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/rawtext.txt",
+          "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/1731/v7.0/Adjuntos/3274-2017.R.pdf",
+          "start": 49164,
+          "version_id": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+          "visual_original_verified": true,
+          "visual_review_run": "astra-normative-review-003"
+        }
+      },
+      "run_id": "astra-normative-review-003"
+    },
+    "provision_id": "art27"
+  },
+  "structural-a1846b1308fcae8f480124f1841aa5f1245a11c9055dc258ea09494c02fb79fc": {
+    "family": "cybersecurity",
+    "origin": "reused_ai_annotated_subspan",
+    "pages": [
+      13
+    ],
+    "provenance": {
+      "citation_derivation": "reviewed_span_unchanged",
+      "human_gold": false,
+      "institutional_approval": false,
+      "kind": "reused_ai_reference",
+      "review_citations": {
+        "after": {
+          "citation_id": "17ffc5739170c18d396cf0c3937b1a4455a89e4de25eed4e831a42c03326bc6a",
+          "document_id": "sbs-504-2021",
+          "end": 38584,
+          "offset_unit": "Unicode code points, zero-based, end-exclusive in rawtext.txt",
+          "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/b8/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18.pdf",
+          "original_sha256": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+          "page": 13,
+          "provision": "20.3",
+          "quote_raw": "20.3 La empresa es responsable de las pérdidas, salvo que acredite la responsabilidad del usuario, \npor las operaciones no reconocidas por los clientes que hayan sido efectuadas por canal digital sin \ncumplir con el requisito de autenticación reforzada, o en aplicación de la exención señalada en el \npárrafo 20.2 del presente artículo, o que fueron realizadas luego de que el usuario reportara el robo o \npérdida de sus credenciales.7 \n \n \n",
+          "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/rawtext.txt",
+          "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2046/v5.0/Adjuntos/504-2021.R%20.pdf",
+          "start": 38143,
+          "version_id": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+          "visual_original_verified": true
+        },
+        "before": {
+          "citation_id": "2ffda3aea66db35068ca7cd94dece7d333dfb497206d0e6932831a49dee73af6",
+          "document_id": "sbs-504-2021",
+          "end": 38598,
+          "offset_unit": "Unicode code points, zero-based, end-exclusive in rawtext.txt",
+          "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/10/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771.pdf",
+          "original_sha256": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771",
+          "page": 13,
+          "provision": "20.3",
+          "quote_raw": "20.3 Las operaciones no reconocidas por los clientes que h ayan sido efectuadas en aplicación  de la \nexención señalada en el párrafo 20.2 del presente artículo, o que fueron realizadas luego de que el \nusuario reportara el  robo o pérdida de sus credenciales, son responsabilidad de la empresa , para lo  \ncual debe n implementar mecanismos que ante el repudio de la operación por parte del usuario \ngaranticen su aplicación inmediata. \n \n",
+          "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/rawtext.txt",
+          "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2046/v4.0/Adjuntos/504-2021.R.pdf",
+          "start": 38158,
+          "version_id": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771",
+          "visual_original_verified": true
+        }
+      },
+      "run_id": "astra-normative-review-002"
+    },
+    "provision_id": "art20.3"
+  },
+  "structural-bfff74a43a1d99809eb8c2b2205d527ce49cb72cb46fd5ec3e08dec302184ecb": {
+    "family": "market_conduct",
+    "origin": "reused_ai_annotated_subspan",
+    "pages": [
+      16
+    ],
+    "provenance": {
+      "citation_derivation": "exact_subspan_of_reviewed_29.1_context",
+      "human_gold": false,
+      "institutional_approval": false,
+      "kind": "reused_ai_reference",
+      "review_citations": {
+        "after": {
+          "citation_id": "a9ea13aa33c808307aa799cb5bd43160f3dc0d6e604a0293ea1f4b3eafd2f2d8",
+          "document_id": "sbs-3274-2017",
+          "end": 54793,
+          "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+          "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/87/879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7.pdf",
+          "original_sha256": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+          "page": 16,
+          "quote_raw": "29.1 Los usuarios tienen derecho a efectuar pa gos por  encima de la cuota exigible en el periodo, \nconsiderando para tal efecto lo siguiente: \n1. No deben establecerse condiciones o limitaciones para el ejercicio del derecho. \n2. No pueden aplicarse comisiones, gastos, penalidades de ningún tipo por el ejercicio del derecho o \ncobros de naturaleza o efecto similar. \n3. Debe informarse, al momento de efectuar la operación, el monto que resulta aplicable por concepto de \nimpuestos.  \n4. Las empresas deben poner a disposición para realizar operaciones de pago anticipado y adelanto de  \ncuotas, como mínimo los mismos canales utiliz ados para  el pago de cuotas o de obligaciones de \ntarjeta de crédito, sin que resulten exigibles al usuario trámites o exigencias adicionales.23 \n \n",
+          "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/rawtext.txt",
+          "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/1731/v8.0/Adjuntos/3274-2017.R.pdf",
+          "start": 54007,
+          "version_id": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+          "visual_original_verified": true,
+          "visual_review_run": "astra-normative-review-003"
+        },
+        "before": {
+          "citation_id": "4ed2e727d567fc9b45ac7315b41b8f57844463b0474da94e95950bf408ac6509",
+          "document_id": "sbs-3274-2017",
+          "end": 53586,
+          "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+          "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/66/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342.pdf",
+          "original_sha256": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+          "page": 16,
+          "quote_raw": "29.1 Los usuarios tienen derecho a efectuar pagos por encima de la cuota exigible en el periodo, \nconsiderando para tal efecto lo siguiente: \n1. No deben establecerse condiciones o limitaciones para el ejercicio del derecho. \n2. No pueden aplicarse comisiones, gastos, penalidades de ningún tipo por el ejercicio del derecho o \ncobros de naturaleza o efecto similar. \n3. Debe informarse, al momento de efectuar la operación, el monto que resulta aplicable por concepto de \nimpuestos.  \n4. Los usuarios pueden efectuar los pagos en cualquiera de las oficinas de atención al público de la \nempresa en las que puedan realizarse operaciones de pagos y desembolsos, así como en otros \ncanales adicionales puestos a disposición por la empresa a los usuarios. \n \n",
+          "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/rawtext.txt",
+          "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/1731/v7.0/Adjuntos/3274-2017.R.pdf",
+          "start": 52830,
+          "version_id": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+          "visual_original_verified": true,
+          "visual_review_run": "astra-normative-review-003"
+        }
+      },
+      "run_id": "astra-normative-review-003"
+    },
+    "provision_id": "art29.1.4"
+  },
+  "structural-ebf4c590b5c5b63b0976c26fd2cbf21d2285d34729c103504a2ba6b91120f49a": {
+    "family": "cybersecurity",
+    "origin": "reused_ai_annotated_subspan",
+    "pages": [
+      13
+    ],
+    "provenance": {
+      "citation_derivation": "reviewed_span_unchanged",
+      "human_gold": false,
+      "institutional_approval": false,
+      "kind": "reused_ai_reference",
+      "review_citations": {
+        "after": {
+          "citation_id": "17ffc5739170c18d396cf0c3937b1a4455a89e4de25eed4e831a42c03326bc6a",
+          "document_id": "sbs-504-2021",
+          "end": 38584,
+          "offset_unit": "Unicode code points, zero-based, end-exclusive in rawtext.txt",
+          "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/b8/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18.pdf",
+          "original_sha256": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+          "page": 13,
+          "provision": "20.3",
+          "quote_raw": "20.3 La empresa es responsable de las pérdidas, salvo que acredite la responsabilidad del usuario, \npor las operaciones no reconocidas por los clientes que hayan sido efectuadas por canal digital sin \ncumplir con el requisito de autenticación reforzada, o en aplicación de la exención señalada en el \npárrafo 20.2 del presente artículo, o que fueron realizadas luego de que el usuario reportara el robo o \npérdida de sus credenciales.7 \n \n \n",
+          "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/rawtext.txt",
+          "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2046/v5.0/Adjuntos/504-2021.R%20.pdf",
+          "start": 38143,
+          "version_id": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+          "visual_original_verified": true
+        },
+        "before": {
+          "citation_id": "2ffda3aea66db35068ca7cd94dece7d333dfb497206d0e6932831a49dee73af6",
+          "document_id": "sbs-504-2021",
+          "end": 38598,
+          "offset_unit": "Unicode code points, zero-based, end-exclusive in rawtext.txt",
+          "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/10/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771.pdf",
+          "original_sha256": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771",
+          "page": 13,
+          "provision": "20.3",
+          "quote_raw": "20.3 Las operaciones no reconocidas por los clientes que h ayan sido efectuadas en aplicación  de la \nexención señalada en el párrafo 20.2 del presente artículo, o que fueron realizadas luego de que el \nusuario reportara el  robo o pérdida de sus credenciales, son responsabilidad de la empresa , para lo  \ncual debe n implementar mecanismos que ante el repudio de la operación por parte del usuario \ngaranticen su aplicación inmediata. \n \n",
+          "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/rawtext.txt",
+          "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2046/v4.0/Adjuntos/504-2021.R.pdf",
+          "start": 38158,
+          "version_id": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771",
+          "visual_original_verified": true
+        }
+      },
+      "run_id": "astra-normative-review-002"
+    },
+    "provision_id": "art20.3"
+  }
+}

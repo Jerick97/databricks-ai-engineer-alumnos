@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-30",
+  "scope": "Guía docente; sin ejecución ni cambios de infraestructura",
+  "artifact_sha256": "5c460fcaa0b9063188017afeb467aeb78d0b24481b9deff866e38a6556cd053a",
+  "steps": 12,
+  "sections": 18,
+  "links": 255,
+  "local_links": "all resolved",
+  "official_docs": "Apps, Genie, Volumes, Jobs, Model Serving opened via web",
+  "workspace_deep_links": "constructed from recorded IDs; not authenticated live validation",
+  "sbs_pdf_links": "reused exact URLs from deployed inventory, no new download",
+  "visual": "Previous three-column matrix inspected in native Chrome. Four-column revision structurally and independently reviewed; visual recheck not completed because user changed active Chrome window.",
+  "independent_review": "PASS: review.json (base); review-skills.json (current mapping, all 12 descriptions)",
+  "source_contract": "SK12 documented handoff boundaries reused; no new skill/component certification",
+  "skills": 13,
+  "skills_mapping_columns": 4
+}

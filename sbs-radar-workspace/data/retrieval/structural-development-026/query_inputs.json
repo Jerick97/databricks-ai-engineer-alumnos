@@ -1,0 +1,38 @@
+[
+  {
+    "cache_batch_sha256": "fd899cb778c0a03e523274a5a7936028d4330b1e029fd17265fcf242e16430e5",
+    "cache_status": "exact_hit",
+    "execution_status": "not_executed",
+    "input_sha256": "b2cabf95e6c38779905e2acee0c059ea8c7187d56f7c2e512e78f2605770736b",
+    "input_tokens": 66,
+    "model_identity": "242864ee8bbf14ac68fe6e27f3cb3d519eaf3d1d500c2b685610e17511c1202a",
+    "query_id": "cyber-art20-3",
+    "raw_question": "¿Cómo cambió la responsabilidad por pérdidas en operaciones digitales sin autenticación reforzada en el artículo 20.3 entre las versiones 4 y 5?",
+    "rendered_counting_input": "Instruct: Given a question about Peruvian financial regulation, retrieve relevant SBS passages that answer the question.\nQuery:¿Cómo cambió la responsabilidad por pérdidas en operaciones digitales sin autenticación reforzada en el artículo 20.3 entre las versiones 4 y 5?",
+    "role": "query"
+  },
+  {
+    "cache_batch_sha256": "fd899cb778c0a03e523274a5a7936028d4330b1e029fd17265fcf242e16430e5",
+    "cache_status": "exact_hit",
+    "execution_status": "not_executed",
+    "input_sha256": "7fd0fdca54cf740cb5309c2573d6ec54c5cf0ab0d27e9c993c7e2d911cee670c",
+    "input_tokens": 61,
+    "model_identity": "242864ee8bbf14ac68fe6e27f3cb3d519eaf3d1d500c2b685610e17511c1202a",
+    "query_id": "market-art27",
+    "raw_question": "¿Qué cambió en el artículo 27 sobre seguros adicionales, contratación independiente y consentimiento del usuario entre las versiones 7 y 8?",
+    "rendered_counting_input": "Instruct: Given a question about Peruvian financial regulation, retrieve relevant SBS passages that answer the question.\nQuery:¿Qué cambió en el artículo 27 sobre seguros adicionales, contratación independiente y consentimiento del usuario entre las versiones 7 y 8?",
+    "role": "query"
+  },
+  {
+    "cache_batch_sha256": "fd899cb778c0a03e523274a5a7936028d4330b1e029fd17265fcf242e16430e5",
+    "cache_status": "exact_hit",
+    "execution_status": "not_executed",
+    "input_sha256": "67ffd6a8de14a39ca3ba6d441f9fb44baa46ab582cc84b0b1c1b4a2bb2523cc6",
+    "input_tokens": 65,
+    "model_identity": "242864ee8bbf14ac68fe6e27f3cb3d519eaf3d1d500c2b685610e17511c1202a",
+    "query_id": "market-art29-1-4",
+    "raw_question": "¿Qué cambió en el artículo 29.1 numeral 4 sobre canales para pagos anticipados y adelantos de cuotas entre las versiones 7 y 8?",
+    "rendered_counting_input": "Instruct: Given a question about Peruvian financial regulation, retrieve relevant SBS passages that answer the question.\nQuery:¿Qué cambió en el artículo 29.1 numeral 4 sobre canales para pagos anticipados y adelantos de cuotas entre las versiones 7 y 8?",
+    "role": "query"
+  }
+]

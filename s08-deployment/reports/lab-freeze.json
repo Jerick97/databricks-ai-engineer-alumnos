@@ -1,0 +1,16 @@
+{
+  "frozen_at": "2026-09-27T03:27:21.540906+00:00",
+  "agent_version": "4",
+  "prompt_version": "4",
+  "agent_artifact_hash_still_matches": true,
+  "app_remote_verified_hashes_still_match": true,
+  "canary_report": "lab-custom-canary-verified.json",
+  "rollback_report": "lab-custom-rollback-verified.json",
+  "monitor_latest_refresh_success": true,
+  "monitor_profile_rows": 42,
+  "monitor_drift_rows": 42,
+  "technical_writer_processes_remaining": 0,
+  "limitation": "SSO browser consent manual pending; authenticated official HTTP App GET/POST tested; baseline monitor only1realrow; bundle validated, not deployed and CI not run.",
+  "notebook_source_changed_after_final_run": false,
+  "post_notebook_change": "Evidence-only custom rollout verifier added served entity versions and snapshot comparison; notebook/model/App unchanged."
+}

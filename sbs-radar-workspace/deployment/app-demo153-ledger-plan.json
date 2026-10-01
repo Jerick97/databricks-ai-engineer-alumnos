@@ -1,0 +1,35 @@
+{
+  "version": "demo153_external_orchestrator_plan",
+  "status": "plan_not_implemented_or_admitted",
+  "deployment_attempts_max": 1,
+  "process_epoch_max": 1,
+  "deadline_unix": 0,
+  "workers": 1,
+  "aggregate_reservation_caps": {
+    "generation_posts": 4,
+    "embedding_posts": 2,
+    "embedding_tokens": 20000
+  },
+  "journal": "deployment/state/app-demo153",
+  "before_each_action": [
+    "fresh deadline and deployment/sourcehash match",
+    "reserve worst-case provider attempt costs durably before M2M/UI action; unknown consumes reservation",
+    "bind capture_process epoch; unknown restart requires stop and new reviewed scope, never budget reset"
+  ],
+  "after_each_action": [
+    "record actual provider counts/capture IDs and unknowns",
+    "M2M/UI acceptance separate with observed subjects",
+    "stop or block subsequent actions on cap/deadline/epoch drift"
+  ],
+  "publisher_interface": {
+    "selector": "config/genie-bootstrap-098.json",
+    "publish_081_plan": "deployment/state/fresh-publication120 or successor independently reviewed",
+    "requirements": [
+      "rotation098 certificate/pointer verified through Appreader principal",
+      "no writerSP/owner credentials in app",
+      "fresh certificate5min refreshed independently of dailyJob"
+    ]
+  },
+  "server_global_budget_enforced": false,
+  "limitation": "App133 caps are per-process; external demo ledger and oversight remain required before interactive demo; platform restarts must never be presented as aggregate enforcement"
+}

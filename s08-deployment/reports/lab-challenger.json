@@ -1,0 +1,8 @@
+{
+  "version": "3",
+  "artifact_identical_to": "2",
+  "purpose": "Ensayo de mec\u00e1nica rollout/rollback; no comparaci\u00f3n de calidad entre algoritmos",
+  "model_uri": "models:/m-21ab8e3c116d41b584da09ae367142cb",
+  "status": "Development-only candidate, never used for agent traffic split; obsolete alias removed",
+  "replaced_by": "lab-custom-rollout-package.json"
+}

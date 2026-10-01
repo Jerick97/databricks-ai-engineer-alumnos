@@ -1,0 +1,129 @@
+{
+  "judge": "independent-pedagogy",
+  "agent": "/root/class_pedagogy_final",
+  "date": "2026-09-28T19:31:29.451830+00:00",
+  "verdict": "PASS",
+  "scope": "full-session",
+  "target_scope": "full-session",
+  "class_ready": false,
+  "dimension": "pedagogy",
+  "pedagogical_ready": true,
+  "class_ready_reason": "Dictamen pedagógico favorable. class_ready global corresponde a agregación de tres jueces finales vigentes y gates visual/funcional/entrega; no se hereda de los jueces históricos.",
+  "summary": "Revisión independiente de fuentes originales, secuencia completa CP0–8 y cambios de acceso docente. La sesión ofrece teoría, demostración resuelta, práctica y aceptación verificable; acceso preconfigurado docente separado del starter y CP4 navegador autenticado real resuelven los límites operativos pertinentes para hoy. Los tiempos requieren prewarm y no acreditan aprendizaje de cohorte.",
+  "artifact_hashes": {
+    "README.md": "c40f5907a57f85aa1abcb8ed7a77ce616ba9b34fdf8593a650d44990a135c100",
+    "index.html": "ed6ec63948319ee3e02eb9c928ec340b8c322281039f01293452a584f43e6dad",
+    "course-context.json": "e442f7d4de638a01313d3c32e574f195c5faf48c66b950e7c70ed85b9300f85d",
+    "agenda.json": "3747e52c1491e64c078a046cea88585e7aa7bb3ac07200c278042d757fbe7666",
+    "guion.md": "3fe533d8e02887cd168e0c6b9826b8e2fbd17eadd59bb366c509cf16dc3cf507",
+    "GUIA-DOCENTE.md": "da8290a37941287e560c34520c6c2df6e250930974160f1a9e06453d78ac86b2",
+    "CONSIGNA.md": "332c4c969300618c5dbecb103569070d5a9801194c3561caad1682e558ec37ce",
+    "PLAN-CLASE.md": "e06c535aeae9d4c86114038efb26d09845328be131d4c9ddf89102aaf513ee55",
+    "RUNBOOK.md": "61b3a2c169c87a6b7476dd78956be21c411b1344ce68b183b3b44213b18b2152",
+    "CERTIFICACION.md": "5beb52f7cc90efcd41d2fe78e022eb60414824f381e68db6ee30f3b7ab2856d2",
+    "EJEMPLO-RESUELTO.md": "ae4ea42e5901015994c32c8eb9b7494904066205d40bc23d2006fd30f6a6370c",
+    "ABRIR-NOTEBOOK-DOCENTE.md": "788344cf0e14fff458a9f8f07f24b8e84b75badd014f2852c9b26595c122f454",
+    "notebook.py": "4dbb89479b8d04d4e22de55110c9e47297e6e5f3d91e3d76339d9f9a4edf9510",
+    "notebook.ipynb": "8b350fde2321ca490642ffda5ec6188b5db90b1f5e4ae0258125072f78fa94f7",
+    "notebook-docente.py": "53f0e331e04e18766bdfe1ef5f22593e8639ca58e119c60800986a4037a73e4c",
+    "requirements.json": "6ea9a5101dbe85f835ac51e6c1486c4ef7ad7cac44af2ca25c0ecc87514c42ad",
+    "slides/content.json": "e878d06acd3babe1b6c796a18ecc00f0dd72384d590ad25d93150407a62938a6",
+    "slides/S08-deck.html": "f70b7cb05ebb9053d6220da35892d01497b4a7a30b68466415acc11e166164df",
+    "slides/S08-autonomo.html": "9b5049015512853a291fb5f69193f1ea9139293dfa1fa010bf5a450e5d680fcc",
+    "slides/deck.js": "31e25fd75f6cd7c6e59949f9b0c3874ebb27d1add52e5e688ccb72c4daec3eaf",
+    "slides/deck.css": "bda749f090d887dfd096b45efad15e47644ef17aab182a8ff766953a75909f05",
+    "reports/visual-qa.json": "812e38a2306bd574991bc662eaf46f0e250620bbfe0b17a5d7c4d6ca47d1451c",
+    "reports/structural-qa.json": "9fcf0dafec41c5d448ff3a7a0b3231e967b7c57e1e684fe1753bc4c7713493b5",
+    "reports/class-day-browser.json": "ddeacc1cb4cf4c3ad85201a90afc2369ba433e3fdc7d4133c56c80374d91175d",
+    "reports/notebook-docente-observed.json": "bc1c4b04c96e06537d44da85217b118fcbb5d0202fc0fae5988facdfd9de0e94",
+    "reports/teacher-delivery-judge.json": "8fce12f6b131f436305f2b6a8456e43de435a0102afff53a27001b90e217ec9b",
+    "reports/lab-monitor-values.json": "dae3617751266d784fdf5c09512f32118f6e900c237c208e404e273573001435",
+    "reports/lab-custom-canary-verified.json": "4bdcaa4a3b1c37444f8865751e6abfd0207118a67aad91eed7ecf4b5616a002e",
+    "reports/lab-custom-rollback-verified.json": "56e1c2f1900933969ceddd206f46992b59b79ed78d2af7bbc67f3dcdaed7d4ad",
+    "/Users/macdenix/clawd/projects/databricks-genai-pathway/temario-curso/TEMARIO.md": "e84cde07a10c39b0cdfd8b4cae5d6926be7912cc18c69e9afd0e16f296dc4a29",
+    "/Users/macdenix/clawd/projects-index/personal/cursos-a-dictar/databricks-ai-engineer/PROJECT.md": "8388fd47462edfa536e115ef471078449c19d9e90368ff2a5a0c5785ee85634c",
+    "/Users/macdenix/nix-skills/skills/operational/deck-craft/references/course-contract.md": "7f263b2768ad8382b25e7640b6072852075a1f70ec5d3f6f679a0d2884fc9d31",
+    "/Users/macdenix/nix-skills/skills/project/cursos-a-dictar/SKILL.md": "23d9f488524cc761e257c48c0b6d0c96a2a04cb50c2d75ecf7c1006e5dbaeda4"
+  },
+  "previous_report": "reports/judge-history/pedagogy-before-class-day-2026-09-28.json",
+  "evidence": [
+    {
+      "locator": "TEMARIO.md:87–116; PROJECT.md#Parámetros; course-context.json",
+      "method": "Lectura de contrato original y contexto",
+      "observed": "Público desde cero después de S01–07; continuidad Neptuno hasta endpoint, App, monitor y portfolio. Cubre Serving, despliegue, rollout, CI/CD, prompts, multicloud y diagnóstico de certificación sin afirmar examen aprobado."
+    },
+    {
+      "locator": "agenda.json; PLAN-CLASE.md; guion.md",
+      "method": "Lectura y recálculo local",
+      "observed": "180 minutos: teoría48, demo46, práctica54, recuperación22, pausa10. Ruta de52slides sin duplicados. CP3 inicia provisión durante CP2 y verifica rollback después; práctica completa desde cero puede acabar después de clase."
+    },
+    {
+      "locator": "slides/content.json#slide01–24; GUIA-DOCENTE.md#CP0–4; CONSIGNA.md#CP0–4",
+      "method": "Lectura cruzada de enseñanza, acción y aceptación",
+      "observed": "Define identidades, endpoint, cold start, contrato Responses y versión antes de uso. Canary custom complementario diferenciado del agente. CadaCP pide entrada real, resultado verificable, explicación y recuperación; 401/403 y timeout se localizan por frontera."
+    },
+    {
+      "locator": "slides/content.json#slide25–36; notebook-docente.py#CP5–6; EJEMPLO-RESUELTO.md#S08-INFERENCE/S08-MONITOR",
+      "method": "Lectura de ejemplo resuelto y explicación",
+      "observed": "Request real correlacionado con fila plana, parser fixture rotulado y discrepancia317/328ms explicada por capa. Ventana9eventos/media2635.7778ms y baseline1evento2614ms enseñan denominador y límites;42/42 filas de métricas no se presentan como84solicitudes. Drift no acredita pérdida semántica."
+    },
+    {
+      "locator": "slides/content.json#slide37–52; GUIA-DOCENTE.md#CP7–8; CONSIGNA.md#CP7–8",
+      "method": "Lectura de cierre y transferencia",
+      "observed": "Bundle validado separado de CI remoto; alias de prompt separado de conducta del modelo fijo. Portfolio exige versiones, evaluación/gobierno previos y rollback. Cuatro preguntas en clase y ocho posteriores evitan fingir doce respuestas individuales en17min; exige dos brechas y práctica."
+    },
+    {
+      "locator": "README.md#Acceso-docente-corregido; index.html; ABRIR-NOTEBOOK-DOCENTE.md; notebook-docente.py; reports/notebook-docente-observed.json",
+      "method": "Revisión sustantiva del cambio de ruta y lectura de evidencia histórica",
+      "observed": "Docente abre copia preconfigurada3142549814418784; starter notebook.py requiere valores por equipo. Reporte del27sep Job439573581964505 SUCCESS,30celdas y base_parameters={} acredita arranque con defaults, no Run all automatizado del navegador ni disponibilidad App de hoy."
+    },
+    {
+      "locator": "reports/class-day-browser.json",
+      "method": "Lectura del registro de observación Chrome del28sep; este juez no repite navegador",
+      "observed": "CP4 navegador→backend→endpoint con sesión corporativa: Bebidas2026 responde116024.88 y consulta sin año solicita aclaración. Recuperación real desde callback403 por Back to sign in. Identidad de backend SP explícita; no afirma aislamiento individual ni correlación requestID desde formulario."
+    },
+    {
+      "locator": "reports/visual-qa.json; reports/structural-qa.json; slides/*",
+      "method": "Lectura de QA existente y cotejo SHA contra juez previo",
+      "observed": "Deck, content, CSS/JS y QA no cambiaron desde revisión anterior; QA pass=true. Cambio de acceso está en README/índice/addendum, no altera secuencia ni diseño del deck. No se atribuye a este juez una nueva sesión de QA visual."
+    }
+  ],
+  "findings": [
+    {
+      "id": "PED-TEACHER-ROUTE",
+      "severity": "info",
+      "locator": "README.md#Acceso-docente-corregido; ABRIR-NOTEBOOK-DOCENTE.md",
+      "status": "resolved",
+      "finding": "La confusión entre starter y demo docente se resuelve con ruta explícita y defaults verificados sin parámetros externos. La guía general de importación sigue aplicando al alumno."
+    },
+    {
+      "id": "PED-CP4-LIVE",
+      "severity": "info",
+      "locator": "reports/class-day-browser.json; EJEMPLO-RESUELTO.md#S08-APPS",
+      "status": "resolved_with_historical_record",
+      "finding": "El límite SSO del ejemplo fechado27sep no describe el estado actual: el28sep se acreditó consulta real autenticada en Chrome. Mantener ambos cortes separados al explicar."
+    },
+    {
+      "id": "PED-TIMING",
+      "severity": "info",
+      "locator": "agenda.json#uncertainty; GUIA-DOCENTE.md#Antes-de-abrir-la-clase",
+      "status": "accepted_limitation",
+      "finding": "Carga amplia para180min: depende de recursos preparados/asignados y continuidad S01–07. Las54min de práctica permiten checkpoints guiados, no reconstrucción autónoma desde cero. No bloquea porque agenda y guía explicitan esta condición y recuperación posterior."
+    },
+    {
+      "id": "PED-COHORT",
+      "severity": "info",
+      "locator": "CONSIGNA.md#CP8; course-context.json",
+      "status": "accepted_limitation",
+      "finding": "Preparación no demuestra acceso de cada alumno, dictado S07 ni aprendizaje. Entregas reales se evalúan después; no exigirlas para aprobar preparación."
+    }
+  ],
+  "unverified": [
+    "No se ejecutó cloud, navegador ni mutaciones en esta revisión; los resultados reales se atribuyen a sus reportes fechados.",
+    "No hay ensayo180min con cohorte ni comprobación de permisos de cada alumno.",
+    "Run all del navegador no automatizado;30celdas verificadas históricamente por Jobs API sin parámetros.",
+    "Disponibilidad cloud puntual, CP3/monitor históricos y asincronía deben explicarse al mostrar el ejemplo.",
+    "No CI remoto, despliegue por bundle, factura medida o rate limiting operativo del agente acreditados; se enseñan con límites explícitos.",
+    "Paridad del ZIP/copia alumno y agregación global de jueces finales pertenecen al cierre; se excluyen hashes circulares."
+  ]
+}

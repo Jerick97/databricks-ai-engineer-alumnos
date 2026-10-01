@@ -1,0 +1,11 @@
+{
+  "status": "pending",
+  "phase": "S",
+  "configuration_sha256": "e78db2db604d580844916a427554057a44bc9e93927812b2653188f9a5ee4d5a",
+  "approved_by": "sociosdosmilveintiseis@gmail.com",
+  "accept_sql_cost_unknown": false,
+  "issued_at_ms": null,
+  "expires_at_ms": null,
+  "warehouse_running_observation_required": true,
+  "allow_start_if_stopped": false
+}

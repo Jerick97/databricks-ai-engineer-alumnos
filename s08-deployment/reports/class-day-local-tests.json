@@ -1,0 +1,19 @@
+{
+  "observed_at": "2026-09-28T19:27:57.880820+00:00",
+  "initial_attempt": {
+    "interpreter": "system Python3.14",
+    "result": "Flask missing; 12 other tests passed"
+  },
+  "isolated_environment": {
+    "command": "UV_CACHE_DIR=/private/tmp/ais08-uv-cache uv run --no-project --with Flask==3.1.3 --with databricks-sdk==0.143.0 --with jsonschema==4.26.0 python -m unittest discover -s s08-deployment/tests -v",
+    "tests": 14,
+    "passed": 14,
+    "errors": 0,
+    "exit_code": 0
+  },
+  "teacher_defaults": {
+    "tests": 1,
+    "passed": 1,
+    "errors": 0
+  }
+}

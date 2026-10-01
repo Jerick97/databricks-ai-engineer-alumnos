@@ -1,0 +1,23 @@
+{
+  "run_id": "sk12-runtime-notebook-20260928T170554-73990e7ed8b84b8384366ae5dc5f223b",
+  "executed_at": "2026-09-28T17:06:05.284461+00:00",
+  "status": "passed",
+  "error_class": null,
+  "errors": 0,
+  "source_path": "notebooks/sbs-radar-runtime-promotion.ipynb",
+  "source_sha256": "390123fe77c5b1aa76f3078327bc1863938cf2e697d2b5c7cfa2d135ef1ea4da",
+  "output_path": "runs/sk12-runtime-notebook-20260928T170554-73990e7ed8b84b8384366ae5dc5f223b-executed.ipynb",
+  "output_sha256": "924b9410482f9dc1e4d67d0f924f63acda932bcae34ae7e041d0be1b5c570378",
+  "code_cells": 4,
+  "executed_cells": 4,
+  "python_executable": "/Users/macdenix/clawd/databricks-ai-engineer/sbs-radar-workspace/.venv/bin/python",
+  "code_hashes": {
+    "src/sbs/runtime.py": "01c2ad57c8ffddfd7ccc3e8941653f2ef4ed304604aae54cfd0d4ce58c983273",
+    "src/sbs/operations/__init__.py": "33a389baa991bc0e107d95efb03397b6e31953096e6d86df9701660332b133f8",
+    "src/sbs/operations/preparers.py": "cde64efdb56d0dd41eac3b41afeb154bbb2ac44f98c290d833b7eefc99fc198f",
+    "src/sbs/operations/runtime_release.py": "c338328ef1ac35300ab8ebbd91efbf4345c6781ab48ea8d1b6d300383c99331f",
+    "src/sbs/webapp/__init__.py": "ca8a91ffcfc2b90dc02bbc6a046c10a5ab8074963cf0ef731cb7e9056af57ee7"
+  },
+  "code_drift": [],
+  "scope": "Real six-PDF preparation and LocalService promotion; real cached embeddings; failed promotion preserves prior runtime; no cloud, UI or generation acceptance"
+}

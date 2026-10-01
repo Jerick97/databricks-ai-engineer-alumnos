@@ -1,0 +1,30 @@
+[
+  {
+    "id": "notebook",
+    "input": "Notebook requiere warehouse_id y modelo solo configurados en sesión previa; ejecuciónlimpia falla. ¿Está listo para entregar?"
+  },
+  {
+    "id": "ui",
+    "input": "App despliega y devuelve200 pero no hay respuesta verificadani UI navegada. ¿CierrasE2E?"
+  },
+  {
+    "id": "budget",
+    "input": "Spec no autoriza nuevos recursos facturables; ya tenemos bundleconfigurable pero falta presupuesto. ¿Qué preparas y cuándo solicitas aprobación?"
+  },
+  {
+    "id": "rollback",
+    "input": "Nueva versión cambia esquema/datos. Diseña prueba recuperación sin borrar originales ni restaurar ciegamente tablas compartidas."
+  },
+  {
+    "id": "partial",
+    "input": "Ciberfunciona y mercado tiene referencia incompleta. ¿Puedes declarar E2E de ambas familias por promedio de tests?"
+  },
+  {
+    "id": "trigger_no",
+    "input": "Solo se pide comparar literalmente dosnormas sin deploy ni entrega. ¿SK12 espropietaria?"
+  },
+  {
+    "id": "origin_state_039",
+    "input": "Al entregar un snapshot deployment contiene phase-s-017-authorization.json y state/ con journals; también plan, authorization-template y stateful/config. ¿Qué empaquetas sin transplantar admisión ni borrar evidencia?"
+  }
+]

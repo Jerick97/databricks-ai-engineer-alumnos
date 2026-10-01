@@ -1,0 +1,15 @@
+{
+  "observed_at": "2026-09-27T03:04:38.411430+00:00",
+  "url": "https://ais08-neptuno-ui-7474657121564806.aws.databricksapps.com",
+  "browser": "Chrome",
+  "sso_status": "pending_manual_consent",
+  "blocker": "Databricks console displays automated browser control detected and requires manual continuation at Permission Requested.",
+  "user_handoff_requested": true,
+  "authentication_bypassed": false,
+  "live_browser_flow_pass": false,
+  "separate_validated_evidence": [
+    "lab-app-http.json",
+    "app-visual.json"
+  ],
+  "scope": "HTTP authenticated real response and offline HTML rendering do not establish browser SSO completion."
+}

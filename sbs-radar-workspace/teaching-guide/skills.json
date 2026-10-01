@@ -1,0 +1,308 @@
+{
+  "date": "2026-09-30",
+  "meaning": "responsibility mapping, not per-request invocation trace",
+  "skills": [
+    {
+      "id": "SK00",
+      "name": "sbs-contexto-ejecucion",
+      "version": "0.1.1",
+      "status": "Provisional",
+      "role": "Recuperar contexto, fijar entradas y coordinar dependencias",
+      "component_evidence": "Contexto y artefactos reutilizados con identidad y hashes.",
+      "path": "../skills/sbs-contexto-ejecucion/SKILL.md",
+      "evals": "../skills/sbs-contexto-ejecucion/evals/cases.json"
+    },
+    {
+      "id": "SK01",
+      "name": "sbs-contratos-gobierno",
+      "version": "0.1.1",
+      "status": "Provisional",
+      "role": "Definir contratos, roles y estados de documentos y respuestas",
+      "component_evidence": "Contratos aplicados; conversación separada de aprobación institucional.",
+      "path": "../skills/sbs-contratos-gobierno/SKILL.md",
+      "evals": "../skills/sbs-contratos-gobierno/evals/cases.json"
+    },
+    {
+      "id": "SK02",
+      "name": "sbs-fundacion-datos",
+      "version": "0.1.13",
+      "status": "Provisional",
+      "role": "Capturar PDF, preservar originales y extraer texto trazable",
+      "component_evidence": "Seis copias reales ingeridas y extraídas; cobertura completa no acreditada.",
+      "path": "../skills/sbs-fundacion-datos/SKILL.md",
+      "evals": "../skills/sbs-fundacion-datos/evals/cases.json"
+    },
+    {
+      "id": "SK03",
+      "name": "sbs-versiones-cambios",
+      "version": "0.1.4",
+      "status": "Provisional",
+      "role": "Alinear versiones y registrar diferencias antes/después",
+      "component_evidence": "Dos pares usados en comparaciones; alineación y calidad generales pendientes.",
+      "path": "../skills/sbs-versiones-cambios/SKILL.md",
+      "evals": "../skills/sbs-versiones-cambios/evals/cases.json"
+    },
+    {
+      "id": "SK04",
+      "name": "sbs-rag-hibrido",
+      "version": "0.1.6",
+      "status": "Provisional",
+      "role": "Construir recuperación léxica/vectorial, RRF, reranking y citas",
+      "component_evidence": "RAG integrado en las muestras; evaluación general y discrepancia histórica del reranker pendientes.",
+      "path": "../skills/sbs-rag-hibrido/SKILL.md",
+      "evals": "../skills/sbs-rag-hibrido/evals/cases.json"
+    },
+    {
+      "id": "SK05",
+      "name": "sbs-modelos-configuracion",
+      "version": "0.1.6",
+      "status": "Provisional",
+      "role": "Fijar modelos, tokenizer, identidad, endpoints y límites",
+      "component_evidence": "Embedding, reranker local y generación integrados en el piloto; no certifica cualquier selección futura.",
+      "path": "../skills/sbs-modelos-configuracion/SKILL.md",
+      "evals": "../skills/sbs-modelos-configuracion/evals/cases.json"
+    },
+    {
+      "id": "SK06",
+      "name": "sbs-genie-datos",
+      "version": "0.1.17",
+      "status": "Provisional",
+      "role": "Curar tablas, publicar y configurar consultas Genie",
+      "component_evidence": "Conteos y tablas del piloto probados; límites de alcance y procedencia documentados.",
+      "path": "../skills/sbs-genie-datos/SKILL.md",
+      "evals": "../skills/sbs-genie-datos/evals/cases.json"
+    },
+    {
+      "id": "SK07",
+      "name": "sbs-conversacion-orquestacion",
+      "version": "0.1.18",
+      "status": "Provisional",
+      "role": "Resolver contexto, enrutar herramientas y componer conversación",
+      "component_evidence": "Comparación, seguimiento y propuestas probados por muestra; generalización pendiente.",
+      "path": "../skills/sbs-conversacion-orquestacion/SKILL.md",
+      "evals": "../skills/sbs-conversacion-orquestacion/evals/cases.json"
+    },
+    {
+      "id": "SK08",
+      "name": "sbs-guardrails-permisos",
+      "version": "0.1.4",
+      "status": "Provisional",
+      "role": "Aplicar permisos, fuentes permitidas y validaciones de evidencia",
+      "component_evidence": "Controles de identidad, alcance, citas y cupos en el alcance revisado; no auditoría universal.",
+      "path": "../skills/sbs-guardrails-permisos/SKILL.md",
+      "evals": "../skills/sbs-guardrails-permisos/evals/cases.json"
+    },
+    {
+      "id": "SK09",
+      "name": "sbs-evaluacion-jueces",
+      "version": "0.1.2",
+      "status": "Provisional",
+      "role": "Evaluar calidad mediante casos, referencias y jueces independientes",
+      "component_evidence": "Muestras revisadas por IA; holdout independiente completo y métricas por familia pendientes.",
+      "path": "../skills/sbs-evaluacion-jueces/SKILL.md",
+      "evals": "../skills/sbs-evaluacion-jueces/evals/cases.json"
+    },
+    {
+      "id": "SK10",
+      "name": "sbs-canal-revision",
+      "version": "0.1.5",
+      "status": "Provisional",
+      "role": "Construir y probar novedades, comparación, chat y fuentes",
+      "component_evidence": "Recorridos reales de App probados; la guía local/Foquito es un artefacto diferente.",
+      "path": "../skills/sbs-canal-revision/SKILL.md",
+      "evals": "../skills/sbs-canal-revision/evals/cases.json"
+    },
+    {
+      "id": "SK11",
+      "name": "sbs-observabilidad-operacion",
+      "version": "0.1.21",
+      "status": "Provisional",
+      "role": "Instrumentar trazas y operar captura/publicación con control de fallos",
+      "component_evidence": "Writer real y readback documentados; Job diario pausado y recuperación cloud pendiente.",
+      "path": "../skills/sbs-observabilidad-operacion/SKILL.md",
+      "evals": "../skills/sbs-observabilidad-operacion/evals/cases.json"
+    },
+    {
+      "id": "SK12",
+      "name": "sbs-despliegue-e2e",
+      "version": "0.1.16",
+      "status": "Provisional",
+      "role": "Empaquetar notebooks/App y comprobar entrega y recuperación E2E",
+      "component_evidence": "App y evidencia histórica de notebooks disponibles; aceptación completa del spec sigue abierta.",
+      "path": "../skills/sbs-despliegue-e2e/SKILL.md",
+      "evals": "../skills/sbs-despliegue-e2e/evals/cases.json"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "title": "Definir qué problema resuelve",
+      "summary": "Se fija la familia normativa, la norma, el par de copias y la disposición. El alcance de una consulta debe conservarse en todas sus herramientas.",
+      "primary": [
+        "SK00",
+        "SK01"
+      ],
+      "support": [
+        "SK08",
+        "SK09"
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Registrar e ingerir los PDF oficiales",
+      "summary": "Se valida la URL, se descarga el PDF, se revisa su formato y se calcula SHA256. El original se conserva por contenido; el registro guarda procedencia e intento de captura. Una descarga repetida idéntica no crea un contenido nuevo.",
+      "primary": [
+        "SK02"
+      ],
+      "support": [
+        "SK00",
+        "SK01",
+        "SK08",
+        "SK11"
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Extraer texto con trazabilidad",
+      "summary": "pypdf extrae texto y registra páginas, posiciones de caracteres —offsets— y señales de calidad. Se conservan el texto extraído y la relación con el original. Tablas, anexos y cortes de palabras requieren atención adicional.",
+      "primary": [
+        "SK02"
+      ],
+      "support": [
+        "SK01",
+        "SK08",
+        "SK09"
+      ]
+    },
+    {
+      "step": 4,
+      "title": "Identificar pares y comparar disposiciones",
+      "summary": "Se resuelven las correspondencias antes/después y se comparan pasajes. Se mantienen separadas la diferencia textual, la interpretación del cambio y la implicancia propuesta.",
+      "primary": [
+        "SK03"
+      ],
+      "support": [
+        "SK01",
+        "SK02",
+        "SK09"
+      ]
+    },
+    {
+      "step": 5,
+      "title": "Preparar la recuperación RAG",
+      "summary": "Se preparan unidades de recuperación y sus embeddings. Un embedding es una representación numérica útil para buscar similitud. Se fija modelo e identidad del índice; los vectores compatibles ya calculados pueden reutilizarse. El piloto conserva limitaciones de segmentación y cobertura.",
+      "primary": [
+        "SK04",
+        "SK05"
+      ],
+      "support": [
+        "SK01",
+        "SK02",
+        "SK08",
+        "SK09"
+      ]
+    },
+    {
+      "step": 6,
+      "title": "Curar y publicar datos para consumo",
+      "summary": "Se forman ocho tablas: documents, versions, provisions, pairs, changes, evidence, reviews y processes. Hay dos publicadores: publication_writer publica tablas Genie en Delta UC; cloud_writer publica artefactos en UC Volumes y un control/puntero Delta. Publicar esos artefactos no actualiza automáticamente la App.",
+      "primary": [
+        "SK06",
+        "SK11"
+      ],
+      "support": [
+        "SK01",
+        "SK03",
+        "SK04",
+        "SK08",
+        "SK12"
+      ]
+    },
+    {
+      "step": 7,
+      "title": "Recibir la pregunta y aplicar controles",
+      "summary": "La App verifica identidad y acceso. El backend resuelve el contexto autorizado y los límites de consumo. Clasifica si la pregunta pide conteo, comparación o implicancias. Los datos del cliente o del PDF no conceden permisos.",
+      "primary": [
+        "SK07",
+        "SK08"
+      ],
+      "support": [
+        "SK01",
+        "SK10",
+        "SK11"
+      ]
+    },
+    {
+      "step": 8,
+      "title": "Recuperar evidencia: híbrida, RRF y reranking",
+      "summary": "BM25 encuentra coincidencias léxicas; la búsqueda vectorial aproxima el significado. RRF combina posiciones de ambas listas; no suma directamente sus puntuaciones incompatibles. El reranker vuelve a evaluar relevancia sobre candidatos. Se aplican alcance y correspondencias A/B para formar evidencia utilizable.",
+      "primary": [
+        "SK04",
+        "SK05"
+      ],
+      "support": [
+        "SK03",
+        "SK07",
+        "SK08",
+        "SK09"
+      ]
+    },
+    {
+      "step": 9,
+      "title": "Usar Genie para preguntas estructuradas",
+      "summary": "Genie consulta las tablas estructuradas mediante el SQL Warehouse. El adaptador verifica alcance y procedencia según sus controles. La ruta de conteo puro devuelve una respuesta tipada sin pasar por el generador normativo; Genie sigue siendo un servicio de IA.",
+      "primary": [
+        "SK06",
+        "SK07"
+      ],
+      "support": [
+        "SK01",
+        "SK08",
+        "SK11"
+      ]
+    },
+    {
+      "step": 10,
+      "title": "Construir y validar la respuesta",
+      "summary": "La ruta híbrida conserva la parte extractiva y puede usar databricks-qwen35-122b-a10b para propuestas de impacto. El servidor compone el contrato de respuesta y verifica citas y referencias contra evidencia autorizada. La evaluación semántica independiente es un control adicional; no queda resuelta sólo porque una cita exista.",
+      "primary": [
+        "SK07",
+        "SK08"
+      ],
+      "support": [
+        "SK03",
+        "SK05",
+        "SK09"
+      ]
+    },
+    {
+      "step": 11,
+      "title": "Presentar el recorrido en Databricks Apps",
+      "summary": "Novedades permite elegir un par; Comparación muestra A/B y originales; Chat permite preguntas y seguimiento. Databricks Apps aloja la aplicación. La App utiliza un paquete/snapshot verificado; la promoción automática desde el writer sigue pendiente.",
+      "primary": [
+        "SK10",
+        "SK12"
+      ],
+      "support": [
+        "SK07",
+        "SK08",
+        "SK11"
+      ]
+    },
+    {
+      "step": 12,
+      "title": "Observar, evaluar y operar",
+      "summary": "Se conservan trazas y versiones para reconstruir resultados. Se revisan recuperación, citas, propuestas y fallos. La última evidencia aprobó muestras reales; no acredita cobertura universal, ahorro humano ni funcionamiento continuo.",
+      "primary": [
+        "SK09",
+        "SK11",
+        "SK12"
+      ],
+      "support": [
+        "SK00",
+        "SK05",
+        "SK08"
+      ]
+    }
+  ]
+}

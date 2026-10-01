@@ -1,0 +1,108 @@
+{
+  "run_id": "astra-normative-review-005",
+  "registered_at_utc": "2026-09-28T04:16:22.952957+00:00",
+  "skill_id": "SK09",
+  "skill_version": "0.1.2",
+  "skill_path": "skills/sbs-evaluacion-jueces/SKILL.md",
+  "skill_sha256": "46e9f9851d46b2ec95f61dabdaed6ec30cc28799f8c8e017615d87dcff6d2b66",
+  "protocol_path": "skills/sbs-evaluacion-jueces/references/revision-ia.md",
+  "protocol_sha256": "8ee94f8b3b26614996e07d86cf6c9ce878d29240009e922f4305639933506b25",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "human_approved": false,
+  "scope": "Historical comparison of frozen G140 repository copies, G167 linkage, bank applicability conditional, leakage eligibility; no current-law determination",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "99996342db4cb7149f4f6a340495935d33008d1dc2d6709c7b4501059131ad5f",
+      "bytes": 1519,
+      "matches_inventory": null
+    },
+    {
+      "path": "skills/sbs-evaluacion-jueces/SKILL.md",
+      "sha256": "46e9f9851d46b2ec95f61dabdaed6ec30cc28799f8c8e017615d87dcff6d2b66",
+      "bytes": 4536,
+      "matches_inventory": null
+    },
+    {
+      "path": "skills/sbs-evaluacion-jueces/references/revision-ia.md",
+      "sha256": "8ee94f8b3b26614996e07d86cf6c9ce878d29240009e922f4305639933506b25",
+      "bytes": 2251,
+      "matches_inventory": null
+    },
+    {
+      "path": "context/holdout-source-candidates.json",
+      "sha256": "43cb17ac1f9f2e8d25ef14343f3c38e4a9fd39a871c3f00551501157c977d430",
+      "bytes": 32128,
+      "matches_inventory": null
+    },
+    {
+      "path": "runs/sk09-astra-005-dispatch-invocation.json",
+      "sha256": "1269f28e7107ca6e0cdc92de0c6a5d24d8e21c8ff0f6f7ab1f68ffca9adce9fc",
+      "bytes": 984,
+      "matches_inventory": null
+    },
+    {
+      "path": "data/foundation-holdout/objects/b9/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38.pdf",
+      "sha256": "b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38",
+      "bytes": 198427,
+      "matches_inventory": true
+    },
+    {
+      "path": "data/foundation-holdout/derived/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "sha256": "cb2f64e58eee51383c9f1cc9b5d7639716dee7cf410b561bc583a7ecea642215",
+      "bytes": 24309,
+      "matches_inventory": true
+    },
+    {
+      "path": "data/foundation-holdout/derived/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/result.json",
+      "sha256": "c17dd383010528f9c4f736106ec1061f3e3c1a785460d61d9312f4fd841fab01",
+      "bytes": 53307,
+      "matches_inventory": true
+    },
+    {
+      "path": "data/foundation-holdout/objects/77/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8.pdf",
+      "sha256": "778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8",
+      "bytes": 198127,
+      "matches_inventory": true
+    },
+    {
+      "path": "data/foundation-holdout/derived/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "sha256": "01c5a194f581f0a260410e417b72a83a866ced9680f877b74f4d48c786cb799e",
+      "bytes": 24016,
+      "matches_inventory": true
+    },
+    {
+      "path": "data/foundation-holdout/derived/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/result.json",
+      "sha256": "f903a47b7da646a5d2240059aa734157107332b485fb960117bf1c736baa7b7d",
+      "bytes": 52717,
+      "matches_inventory": true
+    },
+    {
+      "path": "data/foundation-holdout/objects/1f/1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0.pdf",
+      "sha256": "1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0",
+      "bytes": 196024,
+      "matches_inventory": true
+    },
+    {
+      "path": "data/foundation-holdout/derived/1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/f4e1f3fc370b26f5d3dd1c932b97ab417a8c6f08c0624dd413c75305474e2ae0/rawtext.txt",
+      "sha256": "0cdbb0dfc81e037164207a4208880598ac46f402dc9c88a23d2f32e01bfcffe3",
+      "bytes": 5124,
+      "matches_inventory": true
+    },
+    {
+      "path": "data/foundation-holdout/derived/1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/f4e1f3fc370b26f5d3dd1c932b97ab417a8c6f08c0624dd413c75305474e2ae0/result.json",
+      "sha256": "a9bd927f0dbd11bceafff5ba9e4cc58587e76fb95d01c3b28250e79d1fdfcf1a",
+      "bytes": 11667,
+      "matches_inventory": true
+    }
+  ],
+  "pre_read_disclosure": "Read SK09, protocol, AGENTS, dispatch and candidate inventory to identify inputs. Inventory contained literal snippets; no PDF, rawtext or result normative content read before this registration. Hash verification reads bytes only. No agent outputs consulted.",
+  "constraints": [
+    "No runtime/index/gold/spec writes",
+    "No cloud/credentials/endpoint inference",
+    "No insurance4143 review or scope expansion",
+    "Only frozen original/derived normative evidence",
+    "No independent holdout claim based on different PDF hashes"
+  ]
+}

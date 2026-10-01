@@ -1,0 +1,89 @@
+{
+  "reviewer": "independent delivery judge /root/class_delivery_judge; not author of reviewed changes",
+  "date": "2026-09-28T19:17:58.138807+00:00",
+  "verdict": "FAIL",
+  "scope": "class-day-delivery-addendum",
+  "target_scope": "class-day-delivery-addendum",
+  "class_ready": false,
+  "review_status": "reviewed current artifacts; pending author corrections and refreshed review",
+  "artifact_hashes": {
+    "index.html": "ed6ec63948319ee3e02eb9c928ec340b8c322281039f01293452a584f43e6dad",
+    "README.md": "c40f5907a57f85aa1abcb8ed7a77ce616ba9b34fdf8593a650d44990a135c100",
+    "STATE.md": "72cd6a4fbcbaf5da03eea54c5f5441db051cc6c19ce9ffd3356a1d387ee35c58",
+    "VALIDACION.md": "3f7a3848394a78e19375cf7e6cd3aa83ea5d4d9a0108295f6bdc692ea05a71e9",
+    "ABRIR-NOTEBOOK-DOCENTE.md": "87b54bd700a4692fffc1d25b56558dc685b83d85d7fa47f19fc34cefbf18738e",
+    "notebook-docente.py": "53f0e331e04e18766bdfe1ef5f22593e8639ca58e119c60800986a4037a73e4c",
+    "notebook.py": "4dbb89479b8d04d4e22de55110c9e47297e6e5f3d91e3d76339d9f9a4edf9510",
+    "course-context.json": "e442f7d4de638a01313d3c32e574f195c5faf48c66b950e7c70ed85b9300f85d",
+    "scripts/build_index.py": "a7a689f30f5d3a9f86ea28103833fe10508018ce6f2636d08902652660d5dae4",
+    "scripts/build_validation.py": "214fa989866cc4e3cafedc56b06a24e53f7dc2bf5908f2ab55f2093c15554978",
+    "scripts/package_material.py": "d47145ac1aff226eef76183653509d7b5e727ce0b7c5d55502ab23998cf50ccf",
+    "scripts/close_validation.py": "2a39a0f427e0e693993240598d62e01cf5011a7b48abf2a859ae465c91a186b9",
+    "tests-delivery/test_closure_gates.py": "e16e6ca1589fe2a37caf2aa06a02f2bebcd469b14335da6dd6084f740a40bf09",
+    "reports/class-day-browser.json": "436148023426b207ad6c1eb85dce9602c626c731325ea14fcb43e1198f9369a2",
+    "reports/teacher-delivery-judge.json": "8fce12f6b131f436305f2b6a8456e43de435a0102afff53a27001b90e217ec9b",
+    "reports/notebook-docente-observed.json": "bc1c4b04c96e06537d44da85217b118fcbb5d0202fc0fae5988facdfd9de0e94"
+  },
+  "evidence": [
+    {
+      "kind": "original_source_read",
+      "path": "/Users/macdenix/clawd/projects/databricks-genai-pathway/temario-curso/TEMARIO.md",
+      "section": "Session 8 lines 87-95; corporate identity App UI is part of the course promise"
+    },
+    {
+      "kind": "contract_read",
+      "path": "/Users/macdenix/nix-skills/skills/operational/deck-craft/references/course-contract.md",
+      "result": "Addendum cannot confer full-session class_ready; historical hashes do not approve changed delivery."
+    },
+    {
+      "kind": "independent_local_execution",
+      "command": "python3 -m unittest discover -s s08-deployment/tests-delivery -v",
+      "exit_code": 0,
+      "tests": 10,
+      "result": "All 10 tests PASS. Missing/false browser proof and missing/stale teacher proof reject closure."
+    },
+    {
+      "kind": "direct_source_review",
+      "path": "notebook-docente.py:198-211",
+      "result": "CP4 explicitly requires browser valid and invalid input. Six automatic notebook checks do not exercise it."
+    },
+    {
+      "kind": "static_package_link_review",
+      "result": "README.md references course-context.json absent from selected package files."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "medium",
+      "locator": "scripts/package_material.py:selected",
+      "finding": "course-context.json referenced from README.md is absent; notebook-docente-submit.json referenced from teacher instructions is absent. Add both before delivery."
+    },
+    {
+      "severity": "medium",
+      "locator": "ABRIR-NOTEBOOK-DOCENTE.md",
+      "finding": "App STOPPED is described as a current limitation, but class-day-browser reports ACTIVE/RUNNING. Date the historical observation and link current pending CP4 evidence."
+    },
+    {
+      "severity": "medium",
+      "locator": "scripts/build_validation.py",
+      "finding": "Generator still says final approval is in closure.json without warning that historical closure omitted CP4. Regeneration can discard the current manual correction."
+    },
+    {
+      "severity": "warning",
+      "locator": "reports/class-day-browser.json",
+      "finding": "CP4 remains pending explicit user consent in Chrome, live_browser_flow_pass=false, cases empty. No current browser E2E approval."
+    },
+    {
+      "severity": "warning",
+      "locator": "reports/teacher-delivery-judge.json:class_ready",
+      "finding": "Historical addendum contains class_ready=true; its own scope and conclusion only validate widget defaults. This review does not inherit a full-session approval."
+    }
+  ],
+  "unverified": [
+    "No cloud requests, browser execution, build or publication performed by this reviewer.",
+    "Final ZIP and student parity are pending author packaging; neither is hashed here to avoid a cyclic package/report dependency.",
+    "Full session curriculum, pedagogy and all technical execution were not rejudged in this focused addendum.",
+    "Constructor reported broader suite 12 PASS plus Flask import error; this reviewer independently ran only the 10 delivery tests."
+  ],
+  "conclusion": "Delivery correction gates and teacher defaults pass local regression, but the current delivery addendum needs documentation/package fixes. Overall class readiness remains false while CP4 lacks real browser evidence."
+}

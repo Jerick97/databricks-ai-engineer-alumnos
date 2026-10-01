@@ -1,0 +1,68 @@
+[
+  {
+    "disagreement_id": null,
+    "grade": 1,
+    "passage_id": "structural-a1846b1308fcae8f480124f1841aa5f1245a11c9055dc258ea09494c02fb79fc",
+    "provenance": "ai_review",
+    "query_id": "cyber-art20-3",
+    "reason": "Compiler positive from exact existing reviewed span for this reused question; not a new Astra judgment, exhaustive qrel or human approval.",
+    "reviewer_id": "structural-development-024-positive-mapping",
+    "side": "before",
+    "source_locator_verified": true
+  },
+  {
+    "disagreement_id": null,
+    "grade": 1,
+    "passage_id": "structural-ebf4c590b5c5b63b0976c26fd2cbf21d2285d34729c103504a2ba6b91120f49a",
+    "provenance": "ai_review",
+    "query_id": "cyber-art20-3",
+    "reason": "Compiler positive from exact existing reviewed span for this reused question; not a new Astra judgment, exhaustive qrel or human approval.",
+    "reviewer_id": "structural-development-024-positive-mapping",
+    "side": "after",
+    "source_locator_verified": true
+  },
+  {
+    "disagreement_id": null,
+    "grade": 1,
+    "passage_id": "structural-72c48d6f7ab21705bbbcc6cb46747e2a96f144ae09c18e7f828d3921aaadeb74",
+    "provenance": "ai_review",
+    "query_id": "market-art27",
+    "reason": "Compiler positive from exact existing reviewed span for this reused question; not a new Astra judgment, exhaustive qrel or human approval.",
+    "reviewer_id": "structural-development-024-positive-mapping",
+    "side": "before",
+    "source_locator_verified": true
+  },
+  {
+    "disagreement_id": null,
+    "grade": 1,
+    "passage_id": "structural-6bf1ff7e2641b57554e5d34cef41bd354fa6da492af7321f6089949feb91f6f0",
+    "provenance": "ai_review",
+    "query_id": "market-art27",
+    "reason": "Compiler positive from exact existing reviewed span for this reused question; not a new Astra judgment, exhaustive qrel or human approval.",
+    "reviewer_id": "structural-development-024-positive-mapping",
+    "side": "after",
+    "source_locator_verified": true
+  },
+  {
+    "disagreement_id": null,
+    "grade": 1,
+    "passage_id": "structural-bfff74a43a1d99809eb8c2b2205d527ce49cb72cb46fd5ec3e08dec302184ecb",
+    "provenance": "ai_review",
+    "query_id": "market-art29-1-4",
+    "reason": "Compiler positive from exact existing reviewed span for this reused question; not a new Astra judgment, exhaustive qrel or human approval.",
+    "reviewer_id": "structural-development-024-positive-mapping",
+    "side": "before",
+    "source_locator_verified": true
+  },
+  {
+    "disagreement_id": null,
+    "grade": 1,
+    "passage_id": "structural-26695dde36201ba4b36d6df15dae90b2f1964d804ac6ba8caee7ce31720913ec",
+    "provenance": "ai_review",
+    "query_id": "market-art29-1-4",
+    "reason": "Compiler positive from exact existing reviewed span for this reused question; not a new Astra judgment, exhaustive qrel or human approval.",
+    "reviewer_id": "structural-development-024-positive-mapping",
+    "side": "after",
+    "source_locator_verified": true
+  }
+]

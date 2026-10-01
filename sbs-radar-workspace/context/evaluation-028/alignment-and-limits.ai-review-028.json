@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "kind": "ai_review",
+    "model": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "skill_id": "SK09",
+    "skill_version": "0.1.2",
+    "human_approved": false,
+    "development_exposed": true,
+    "holdout": false,
+    "invocation_path": "runs/sk09-astra-relevance-028-invocation.json",
+    "rubric_path": "context/evaluation-028/rubric.frozen.md",
+    "rubric_sha256": "7881c18101486c84ef77daa7c31228c1bca3dede2c2a80eb72723a4a418b2ed3"
+  },
+  "alignment": "Before/after are exact document/version identities supplied by pairs.json; no chronology or current-law status inferred from folder/version number.",
+  "cases": [
+    {
+      "query_id": "cyber-art20-3",
+      "before_indices": [
+        84,
+        225
+      ],
+      "after_indices": [
+        125,
+        226
+      ],
+      "literal_comparison": "Antes20.3 asigna responsabilidad de operaciones desconocidas exentas20.2 o posteriores al reporte de credenciales y exige aplicación inmediata ante repudio. Después explicita pérdidas, agrega salvo acreditación de responsabilidad del usuario y operaciones digitales sin autenticación reforzada; conserva exención/reporte y ya no contiene en ese párrafo la fórmula de aplicación inmediata. La ausencia se afirma sólo respecto del texto comparado, no de todo el ordenamiento."
+    },
+    {
+      "query_id": "market-art27",
+      "before_indices": [
+        25,
+        227
+      ],
+      "after_indices": [
+        181,
+        228
+      ],
+      "literal_comparison": "Antes27 regula elección del asegurador, sustitución/endoso y liquidación. Después precisa desgravamen/protección del bien en garantía y añade27.3: opcionalidad, contratación independiente, consentimiento expreso por producto o cobertura y conservación de sustentos. Octava7 se conserva grado1 como contexto específico de desgravamen; no se afirma inexistencia previa global de consentimiento para coberturas adicionales."
+    },
+    {
+      "query_id": "market-art29-1-4",
+      "before_indices": [
+        27,
+        229
+      ],
+      "after_indices": [
+        183,
+        230
+      ],
+      "literal_comparison": "Antes permite oficinas donde se realizan pagos/desembolsos y otros canales que la empresa ponga a disposición. Después exige al menos los mismos canales usados para cuotas u obligaciones de tarjeta, sin trámites/exigencias adicionales. No se infiere qué canales concretos ofrece una empresa."
+    }
+  ],
+  "boundary_decisions": [
+    "Las definiciones/procesos de autenticación específicos y26.2 son contexto1; el gobierno SGSI-C y controles generales permanecen0 por no desarrollar el supuesto consultado.",
+    "Las coberturas de desgravamen de Octava7 y su ámbito transitorio son contexto1 de art27: contribuyen a evitar una inferencia de novedad jurídica global, pero no sustituyen la comparación del27.3.",
+    "La extensión de capítulo a personas jurídicas con excepción explícita del29 se considera contexto1 de alcance; los alcances institucionales generales sin vínculo operativo permanecen0.",
+    "Las notas de procedencia conectadas directamente a20.3 y27.3 se consideran1 aunque estén incorporadas a pasajes vecinos; otras notas de disposiciones contextuales no se convierten automáticamente en relevantes.",
+    "Fórmulas de aplicación del prepago, prohibición de limitarlo, registro de pagos en canales y cargos por prepago son contexto1; resolución de contratos/estados de cuenta/cajeros no aportan canal de prepago específico y son0."
+  ],
+  "limitations": [
+    "Completo respecto de221 pasajes elegibles/358 relaciones de este inventario; no certifica que la segmentación haya incluido todas las disposiciones, tablas o anexos del PDF.",
+    "Existen dos pares documentales y tres consultas: las dos de mercado comparten par y no son muestras independientes.",
+    "4 pasajes de grado2 por consulta incluyen duplicación/solapamiento de las dos evidencias sustantivas antes/después. No se deduplican ni se cuentan como4 cambios jurídicos.",
+    "Texto leído en derivados locales con hash y offsets verificados; localización por páginas de extracción comprobada. No se realizó inspección visual exhaustiva del PDF, ni se declara gate de fidelidad visual pasado.",
+    "Revisor IA único, una adjudicación; sin estimación de acuerdo entre jueces, sin rondas repetidas para maximizar acuerdo.",
+    "No lectura de rankings, scores, resultados RAG, juicios ni qrels previos. Sin red, inferencia remota, SQL, cloud, credenciales ni fuentes nuevas.",
+    "human_approved=false, development_exposed=true, holdout=false; sin eficacia operacional, exactitud jurídica global, ahorro humano ni coste cero inferidos."
+  ]
+}

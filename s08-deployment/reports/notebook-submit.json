@@ -1,0 +1,121 @@
+{
+  "run_id": 35725070281647,
+  "notebook_sha256": "4dbb89479b8d04d4e22de55110c9e47297e6e5f3d91e3d76339d9f9a4edf9510",
+  "workspace_path": "/Shared/curso-databricks-ai-engineer/s08-validation/notebook",
+  "mode": "verificar",
+  "source_export_verified": true,
+  "staged_files": [
+    {
+      "path": "lab/CONTINUIDAD.md",
+      "sha256": "096273a3351ec0f3d76a634a57ab137fe0688eb8cf7a7632059f85635c2e691d"
+    },
+    {
+      "path": "lab/agent.py",
+      "sha256": "200febf66d9d8a36acd05fed147776e761156e27d065df600489dd838f292bb4"
+    },
+    {
+      "path": "lab/config.json",
+      "sha256": "799cc5fdd23517980d45fb070e38444cdbb04dbef190142ccae59cec1927c2b6"
+    },
+    {
+      "path": "lab/lab_app.py",
+      "sha256": "655a4a6e734838cb6c9e8e574f33dac5c588705b053430e6c453041e32077c1c"
+    },
+    {
+      "path": "lab/lab_app_smoke.py",
+      "sha256": "ca449c453a00fe5673cef62ae8635df3cc52864c55a3df6240dddaefe4c695d2"
+    },
+    {
+      "path": "lab/lab_config.py",
+      "sha256": "c9fda07a95c1de66dad6f4d3386065b180fc5fff3b61b94d5ba5c4b3d07b34db"
+    },
+    {
+      "path": "lab/lab_costs.sql",
+      "sha256": "dc3d2ed8530dca3372c6302b58d7dc9a69feacbb403e5d3ddd0f66d7015b11b2"
+    },
+    {
+      "path": "lab/lab_custom_rollout.py",
+      "sha256": "a362609395256969d16adf53f149153fab7aee42bf7377fa957d8aa88f0d3101"
+    },
+    {
+      "path": "lab/lab_custom_rollout_verify.py",
+      "sha256": "f9241d079d533b0ccb3cdf228c687055a9eb56edb3c73d032336c7bc7f7eda53"
+    },
+    {
+      "path": "lab/lab_deploy.py",
+      "sha256": "4634aaa447797307a40e23455d545a8c0029868b80848508ce8e599b9762aeff"
+    },
+    {
+      "path": "lab/lab_import_workspace.py",
+      "sha256": "ddc8f0326ae4c56a72643d798f33d6a19383f9cccdebdf797d4cdca9bde4a787"
+    },
+    {
+      "path": "lab/lab_lifecycle.py",
+      "sha256": "97064afffd8ab78342f104ca288d1af71db5db96929d5b3ce7a400cacf3e2e62"
+    },
+    {
+      "path": "lab/lab_monitor.py",
+      "sha256": "087833c48e179ecc7cc388b5784a8227fde8bef2b75376635fc89efd3e27caab"
+    },
+    {
+      "path": "lab/lab_parse_contract.sql",
+      "sha256": "89efa2c9c49a2dd4292b9a3f8f8e5ac7d0ce89c0adaab5ce4338da9687417495"
+    },
+    {
+      "path": "lab/lab_preflight.py",
+      "sha256": "805245ef7f859105abdfc44b19eca6ac99f220e449e19812fb36615d7a6ca002"
+    },
+    {
+      "path": "lab/lab_prompts.py",
+      "sha256": "1f2b830644f3799047d76f96aefec9ee62057e4b2c9b04fcfee8a13b863013c0"
+    },
+    {
+      "path": "lab/lab_rollout.py",
+      "sha256": "9661b99e9b0635b66b26566cc3b414eda899e794ba49733e62b4ddb4681b2329"
+    },
+    {
+      "path": "lab/lab_security_smoke.py",
+      "sha256": "436bcb98ce1a8de65eb90b913dec452741c5488a1da2d9e86dc7fd8809973ecd"
+    },
+    {
+      "path": "lab/lab_smoke.py",
+      "sha256": "dee2d97be74e95e1035476eb2f9a6e408fa9054fbb2e97923f6fb231e455031b"
+    },
+    {
+      "path": "lab/lab_status.py",
+      "sha256": "ead35550d5cda6299971420a961987ec64ace2f9d1dd256b8df77c9511f8678e"
+    },
+    {
+      "path": "lab/lab_verify_monitor.py",
+      "sha256": "296d4bb62d1426891f7c8b8fea9904447aac2f85a3a9af836b3ac7a9e7a600a1"
+    },
+    {
+      "path": "lab/requirements.txt",
+      "sha256": "f7d7bf19dbd785f8b1f408fd2b4eb68a36b8c767550d0fb0b05878ff0ee5f277"
+    },
+    {
+      "path": "lab/rollout_model.py",
+      "sha256": "3d0eade350fd2394b475f3cfe3181dd7e829f1ec4202398516bd560283929dc8"
+    },
+    {
+      "path": "app/app.py",
+      "sha256": "dfc6dbce6f563c9123b0033986cedfdfc9cc5625809388a4b754c0271048e965"
+    },
+    {
+      "path": "app/app.yaml",
+      "sha256": "f5f6869db1013fd0c680e80625b1a3255a132fbb43e3c42da76c460bb2b70736"
+    },
+    {
+      "path": "app/requirements.txt",
+      "sha256": "a4dcedb7b00ef849c6cbfaa6a33dca579f5bbe09bc526a6177d640d517937151"
+    },
+    {
+      "path": "bundle/ci-example.yml",
+      "sha256": "591d0c0653911404846fa1ce7a46143eb5eefc27e59a03577192178a5b4c3b99"
+    },
+    {
+      "path": "bundle/databricks.yml",
+      "sha256": "2b424d0b15d5a3563284de0701f02792ede8447622ca349f9312f2348e7e798f"
+    }
+  ]
+}

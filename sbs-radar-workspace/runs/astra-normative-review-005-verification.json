@@ -1,0 +1,75 @@
+{
+  "run_id": "astra-normative-review-005-verification",
+  "verified_at_utc": "2026-09-28T04:22:37.259105+00:00",
+  "status": "passed_for_artifact_integrity_and_quote_location_only",
+  "human_approved": false,
+  "artifacts": {
+    "runs/astra-normative-review-005-invocation.json": "79a12dfe86e807af6cd3674c54eb6890deddde84ecd43bebaf2406fdf037e872",
+    "runs/astra-normative-review-005.json": "6c0285dad87b60726208e4f335d1bb62b09aacb37f4e2dc5f66e819edefca88e",
+    "runs/astra-normative-review-005.md": "19366d21bd6cd6808762b2829a6b4a802d5ac8d4bbe47f5ffa45998804abf6f3"
+  },
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "unchanged_since_invocation": true
+    },
+    {
+      "path": "skills/sbs-evaluacion-jueces/SKILL.md",
+      "unchanged_since_invocation": true
+    },
+    {
+      "path": "skills/sbs-evaluacion-jueces/references/revision-ia.md",
+      "unchanged_since_invocation": true
+    },
+    {
+      "path": "context/holdout-source-candidates.json",
+      "unchanged_since_invocation": true
+    },
+    {
+      "path": "runs/sk09-astra-005-dispatch-invocation.json",
+      "unchanged_since_invocation": true
+    },
+    {
+      "path": "data/foundation-holdout/objects/b9/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38.pdf",
+      "unchanged_since_invocation": true
+    },
+    {
+      "path": "data/foundation-holdout/derived/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "unchanged_since_invocation": true
+    },
+    {
+      "path": "data/foundation-holdout/derived/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/result.json",
+      "unchanged_since_invocation": true
+    },
+    {
+      "path": "data/foundation-holdout/objects/77/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8.pdf",
+      "unchanged_since_invocation": true
+    },
+    {
+      "path": "data/foundation-holdout/derived/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "unchanged_since_invocation": true
+    },
+    {
+      "path": "data/foundation-holdout/derived/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/result.json",
+      "unchanged_since_invocation": true
+    },
+    {
+      "path": "data/foundation-holdout/objects/1f/1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0.pdf",
+      "unchanged_since_invocation": true
+    },
+    {
+      "path": "data/foundation-holdout/derived/1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/f4e1f3fc370b26f5d3dd1c932b97ab417a8c6f08c0624dd413c75305474e2ae0/rawtext.txt",
+      "unchanged_since_invocation": true
+    },
+    {
+      "path": "data/foundation-holdout/derived/1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/f4e1f3fc370b26f5d3dd1c932b97ab417a8c6f08c0624dd413c75305474e2ae0/result.json",
+      "unchanged_since_invocation": true
+    }
+  ],
+  "unique_citations_exact_slice_passed": 31,
+  "unique_citations_total": 31,
+  "source_pdf_page_reextraction_matches": 20,
+  "source_pdf_page_reextraction_total": 20,
+  "visually_reviewed_pages": 16,
+  "meaning": "This evidence confirms preserved inputs and localizable quotations. It does not certify agent performance, independent holdout, publication/vigency, complete normative chain, human savings or institutional approval."
+}

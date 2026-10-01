@@ -1,0 +1,37 @@
+{
+  "endpoint": "ais08-neptuno-rollout",
+  "workspace_host": "https://dbc-0410b264-20c7.cloud.databricks.com",
+  "model_name": "neptuno_manuel_arguelles.ais08_lab.ventas_rollout",
+  "served_entities": [
+    {
+      "entity_name": "neptuno_manuel_arguelles.ais08_lab.ventas_rollout",
+      "entity_version": "2",
+      "name": "challenger",
+      "scale_to_zero_enabled": true,
+      "workload_size": "Small",
+      "workload_type": "CPU"
+    },
+    {
+      "entity_name": "neptuno_manuel_arguelles.ais08_lab.ventas_rollout",
+      "entity_version": "1",
+      "name": "champion",
+      "scale_to_zero_enabled": true,
+      "workload_size": "Small",
+      "workload_type": "CPU"
+    }
+  ],
+  "traffic_config": {
+    "routes": [
+      {
+        "served_entity_name": "challenger",
+        "served_model_name": "challenger",
+        "traffic_percentage": 0
+      },
+      {
+        "served_entity_name": "champion",
+        "served_model_name": "champion",
+        "traffic_percentage": 100
+      }
+    ]
+  }
+}

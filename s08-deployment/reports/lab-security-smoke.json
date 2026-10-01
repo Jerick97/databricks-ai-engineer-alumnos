@@ -1,0 +1,17 @@
+[
+  {
+    "case": "injection",
+    "pass": true,
+    "blocked_reason": "patron_inyeccion_conocido"
+  },
+  {
+    "case": "oversize",
+    "pass": true,
+    "blocked_reason": "limite_caracteres"
+  },
+  {
+    "case": "managed_safety",
+    "pass": true,
+    "verdict": "unsafe"
+  }
+]

@@ -1,0 +1,896 @@
+{
+  "at": "2026-09-28T17:52:00.725007+00:00",
+  "status": "compatible_under_observed_contract_for_local_exposed_development",
+  "decision": "The three exact cached query vectors may be paired operationally with these231 document vectors for a new local development evaluation; no immutable-weight equality or unchanged numerical mapping is established.",
+  "scope": "Compatibility decision only; no index built, metrics, holdout acceptance, runtime promotion or new remote request",
+  "model": {
+    "bundle_hash": "242864ee8bbf14ac68fe6e27f3cb3d519eaf3d1d500c2b685610e17511c1202a",
+    "endpoint": "databricks-qwen3-embedding-0-6b",
+    "expected_and_returned_model": "qwen3-embedding-0-6b-112025",
+    "dimension": 1024,
+    "tokenizer": "Qwen/Qwen3-Embedding-0.6B",
+    "tokenizer_revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+    "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+    "query_prefix": "Instruct: ",
+    "query_instruction": "Given a question about Peruvian financial regulation, retrieve relevant SBS passages that answer the question.",
+    "document_prefix": "",
+    "normalization": "provider_output_unmodified",
+    "remote_weights_hash": null
+  },
+  "checks": [
+    {
+      "name": "model_envelope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:data/retrieval/sk04-real-001/queries-000.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "historical_query_file_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "historical_endpoint_file_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/endpoint-0000.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "comparable_endpoint_fields",
+      "passed": true,
+      "detail": {
+        "config_version": 1,
+        "endpoint": "databricks-qwen3-embedding-0-6b",
+        "models": [
+          {
+            "entity_name": null,
+            "entity_version": null,
+            "foundation_model_name": "system.ai.qwen3-embedding-0-6b"
+          }
+        ],
+        "task": "llm/v1/embeddings"
+      }
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-plan-v2.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/vectors.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "real_document_output",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dataset_hash:questions.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dataset_hash:passages.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dataset_hash:judgments.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dataset_hash:pairs.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dataset_hash:query_inputs.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dataset_hash:pair_wrappers.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dataset_hash:passage_metadata.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dataset_hash:context.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dataset_hash:reference_provenance.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dataset_hash:automatic_gaps.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dataset_hash:embedding_inputs.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dataset_hash:qrels_partial.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dataset_hash:manifest.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "corpus_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "document_passage_order",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "execution_model_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "query_endpoint_response_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "role_separation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_query_list",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tokenizer_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "query_input:cyber-art20-3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "query_input:market-art27",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "query_input:market-art29-1-4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "query_token_counts",
+      "passed": true,
+      "detail": [
+        66,
+        61,
+        65
+      ]
+    },
+    {
+      "name": "query_dimensions_finite",
+      "passed": true,
+      "detail": "3 x1024"
+    },
+    {
+      "name": "document_dimensions_finite",
+      "passed": true,
+      "detail": "231 x1024"
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0000.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0000.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0001.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0001.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0002.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0002.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0003.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0003.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0004.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0004.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0005.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0005.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0006.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0006.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0007.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0007.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0008.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0008.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0009.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0009.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0010.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0010.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0011.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0011.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0012.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0012.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0013.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0013.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0014.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0014.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0015.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0015.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0016.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0016.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0017.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0017.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0018.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0018.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0019.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0019.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0020.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0020.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0021.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0021.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0022.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0022.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0023.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0023.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0024.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0024.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:24",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:24",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0025.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0025.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0026.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0026.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:26",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:26",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0027.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0027.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:27",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:27",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/intent-0028.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "envelope:runs/sk04-embeddings-041-vectors/result-0028.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_binding:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "batch_contract:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "document_vectors_equal_receipts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "document_totals",
+      "passed": true,
+      "detail": {
+        "requests": 29,
+        "prompt_tokens": 106278
+      }
+    }
+  ],
+  "inputs_sha256": {
+    "config/pilot-model-bundle.json": "76620b8bee92f3751503ca4658f396355dd1d436deac66a0155c1ab8bfd735ed",
+    "runs/sk04-real-001-report.json": "5571b244f9fd920ea3a9c8b9748b1bea971b07348a3f9aac3b32d6405c664de3",
+    "data/retrieval/sk04-real-001/queries-000.json": "fd899cb778c0a03e523274a5a7936028d4330b1e029fd17265fcf242e16430e5",
+    "data/retrieval/sk04-real-001/endpoint-observation.json": "e78afbc5fd3ef9137d9bd7d9cdb87860d86586c655ebf015c6e969839291b2eb",
+    "runs/sk04-embeddings-041-vectors/endpoint-0000.json": "7804bad118a004677eef72e6ec5e225b933f9b35ee3f5c572bd14c97052e1267",
+    "runs/sk04-embeddings-041-plan-v2.json": "518bc0f1c6b41b179d9900ecdfe818b1b0a13e8fb808f53366004a7ccbf2f9ac",
+    "runs/sk04-embeddings-041-vectors/vectors.json": "41a10dfba9bca41cba860c185c9bebee7613a7566567d210b5a07577c8ae1d01",
+    "data/retrieval/structural-development-026/artifacts.json": "9aecd4a5615fa55ac60ce77d762512bda1591b2f08c34eb73ce03c0e25a0b438",
+    "data/retrieval/structural-development-026/questions.json": "f683270ddefa9c320f262cda73f9a85920395401a147204d9c13930e7f8d46f3",
+    "data/retrieval/structural-development-026/passages.json": "2c9f89ff048ef31822f317b476b5d10e586f12398db2731db1118e25b4e13ac4",
+    "data/retrieval/structural-development-026/judgments.json": "6cf60236fabfa52c3446a6f59ebf403b870a9744d1c8430fbdb23d260236752b",
+    "data/retrieval/structural-development-026/pairs.json": "98ee070f3ce1717ba59f961d9fdd5fdd497c5a94a688e91fbca79538c426b997",
+    "data/retrieval/structural-development-026/query_inputs.json": "bd1e2bfbe7b422b8b57418473dbbca344a3ad2914df5646f33b361e56bdd0e2e",
+    "data/retrieval/structural-development-026/pair_wrappers.json": "5c63c45d65286d5b0d6e1fd345901f11d7d4f81e7ca550b84166c6fc8c6d65cb",
+    "data/retrieval/structural-development-026/passage_metadata.json": "072bd75ad3b076e15fea9f4ae17a90370dc060638ccdadda99842b50b381b4d0",
+    "data/retrieval/structural-development-026/context.json": "ea89fcbb9db9d96dae24dea2db979803a047c0863334618a33a3ab6d3cf5f210",
+    "data/retrieval/structural-development-026/reference_provenance.json": "746f7224ba7a7db388d68f732ceebb38ece6c4d61d7a519cc76df3e4fcbc328e",
+    "data/retrieval/structural-development-026/automatic_gaps.json": "627386955437e9643475dcc9d451953af42c0fb9c847cecf483d9ad7bccbc6e0",
+    "data/retrieval/structural-development-026/embedding_inputs.json": "0ff6df5bbbb7faa322c5ed8898d2f08f5d77721719d4eab7ab7b19a29fd6f2f9",
+    "data/retrieval/structural-development-026/qrels_partial.json": "bb00cec2e8245a67acaed4ecf4700f6cbbc55b082932776be45b0eb718d18cf8",
+    "data/retrieval/structural-development-026/manifest.json": "b5e51af49a8f1a3288d303b87b526fc0c3ad2b383849b12cd357a9090285b537",
+    "runs/sk04-embeddings-041-vectors/intent-0000.json": "8592bfde8b3dd051cdeb51198f296852bf3c2948e153ce71b2065cec0d580af3",
+    "runs/sk04-embeddings-041-vectors/result-0000.json": "431963619a3a7dc5bfb4b27b72ceaeecc5ea77d6ba3ec2ef4b57e414d6e66c1f",
+    "runs/sk04-embeddings-041-vectors/intent-0001.json": "6a7d0b9dbe8babb36260784ff543dcfcc1b861f2258814f5bfaa9a58d4adc29b",
+    "runs/sk04-embeddings-041-vectors/result-0001.json": "4346c21cf114f80abccfe5c95bbea280c32573586902ad3c1a269fc1f9d07561",
+    "runs/sk04-embeddings-041-vectors/intent-0002.json": "000c675295b64234841c123736d6200aa908ba690315eb5a22eefe26f9a93b01",
+    "runs/sk04-embeddings-041-vectors/result-0002.json": "8d5471a41332699123b5f2245666f2fc66724f407fe7f14fef8dd6c69d097c49",
+    "runs/sk04-embeddings-041-vectors/intent-0003.json": "d78b41202b9bc602d6eae3b28ebffcc2f88a2f4f9f8fedf7b0f8f33d4032e0a3",
+    "runs/sk04-embeddings-041-vectors/result-0003.json": "a2ecb68c22277ba2c05f85f98695a85853b6b53485b7f35a10b187c7e52f5e63",
+    "runs/sk04-embeddings-041-vectors/intent-0004.json": "17a9c3c2cb7a2c1bc78c2af313fd628a199d0ee3b8e3235271cd4db8d93880f4",
+    "runs/sk04-embeddings-041-vectors/result-0004.json": "e2de845e4912a3b2ec5ee0b8a80e772d2f06dedc2945527da77d1f9441ae4b49",
+    "runs/sk04-embeddings-041-vectors/intent-0005.json": "a0f008fbdb660c0bcea46daa8eecba63680e78ade2868e5755e9299b6c958763",
+    "runs/sk04-embeddings-041-vectors/result-0005.json": "98b958aa6b2a9239d65cb076b901aa965a6e27ed6036b157b0255e95ea713b24",
+    "runs/sk04-embeddings-041-vectors/intent-0006.json": "f9d85fe5df729a02184cf550665b6dcd1836f63f1b7c89ba0fa258c01b7e9999",
+    "runs/sk04-embeddings-041-vectors/result-0006.json": "bb6299f5ffd1b1d499b22dfcae95f8dad14483fa8e0eed72f7df84807ebf9a51",
+    "runs/sk04-embeddings-041-vectors/intent-0007.json": "4446006475576ab9e1b73754dbc8983dacc3c0e2ec3807257515485ce4b78cd7",
+    "runs/sk04-embeddings-041-vectors/result-0007.json": "69ec01c3710f49cb94400a4c996757b8cd7d6803aa00d280a4bed6627a3eeb04",
+    "runs/sk04-embeddings-041-vectors/intent-0008.json": "01c5b6fade5726bc78a2dc494519a525dea7ab5fc0e06f2cd805ed092f2b092f",
+    "runs/sk04-embeddings-041-vectors/result-0008.json": "158c6ce159b5a9d5b7ea104688cd9cd7fbf90ee1b0f13740dd8936fa621f88bc",
+    "runs/sk04-embeddings-041-vectors/intent-0009.json": "ea13042a5782d1a490c13b24f34a97961571b0dce75b92270fdd257c16fb4a89",
+    "runs/sk04-embeddings-041-vectors/result-0009.json": "b1ae50e099d09fcc15532261e64e98ba01d3f9c55c7a0581e5b8c861b49ec0c3",
+    "runs/sk04-embeddings-041-vectors/intent-0010.json": "e6076c0ac2d6c1191414d7915ee8053ffe9403bae81691e97750eb49ed341536",
+    "runs/sk04-embeddings-041-vectors/result-0010.json": "62526b213c227d58d77e22e30abe6d3f0c823dbb5b019727be8db14cb8101020",
+    "runs/sk04-embeddings-041-vectors/intent-0011.json": "e7858d14c9b53f722dcb4148f0b606cfb1ea5e71a5347eb341474804ffd2084e",
+    "runs/sk04-embeddings-041-vectors/result-0011.json": "55f69f70a8e5d8205f0beaa4e6b1d98f26b05cb6ffea9c40984c4f920b80db64",
+    "runs/sk04-embeddings-041-vectors/intent-0012.json": "a3a443ea60f747db33ce0d4d377be6aeb7af34629f520eaea7072c9cef76abed",
+    "runs/sk04-embeddings-041-vectors/result-0012.json": "dfe20e5316660d369d35425f93889771a4b412ce918fa0483f5adc479f382aea",
+    "runs/sk04-embeddings-041-vectors/intent-0013.json": "60937d936f5e53dffa2597203123c87df0b8a1f3c2d132b342aad2d2322d9e72",
+    "runs/sk04-embeddings-041-vectors/result-0013.json": "a39042af274133f8adf2c2cb77cd07edd9c08b32ecb69a14bebdb732783a75a3",
+    "runs/sk04-embeddings-041-vectors/intent-0014.json": "8b3a161f17e298f83488a4d1b6b945c12d2aa86b3816f49b3548a137589ca9d0",
+    "runs/sk04-embeddings-041-vectors/result-0014.json": "05edbaa269bea9521d3769df9cee8db835ffa2840bbe0d1d172021dad985cf60",
+    "runs/sk04-embeddings-041-vectors/intent-0015.json": "e871ee7e592e8d32f51cbd6d8513460a0aa7c1ca15ea1d0721569974304d6216",
+    "runs/sk04-embeddings-041-vectors/result-0015.json": "b946102e57a7490a261b8f16bfef6e284a18148abb742a4186f46e8064c4edca",
+    "runs/sk04-embeddings-041-vectors/intent-0016.json": "1a5e4b845a1c5e8a7f8a35b92a09287c5abd722f16e7aebcc080578ec828fe2a",
+    "runs/sk04-embeddings-041-vectors/result-0016.json": "394b56ed1949f6602e6af1bb60081738b3b0616c3222ebd4fccffda3f2470842",
+    "runs/sk04-embeddings-041-vectors/intent-0017.json": "69f73e205eed3a465304e6317e9cff0c65d8678e0f08f69207f2a5f6af57544d",
+    "runs/sk04-embeddings-041-vectors/result-0017.json": "4436b6e174bef51ce47cec80c03627da8cf6dfcdd5a4a8f35c8b67ee0f083ee8",
+    "runs/sk04-embeddings-041-vectors/intent-0018.json": "d657ae9c4d309d372a55b59a0d45576b41a9bfb5020d793b29409948e462a953",
+    "runs/sk04-embeddings-041-vectors/result-0018.json": "5e6c50b796908cf0803cf97178d5a7400ed330204320c035bf757fe3661bd8d9",
+    "runs/sk04-embeddings-041-vectors/intent-0019.json": "4799c40c0d876d5104a5531487cc41accfb45a9aae45238faa10d70dee39a216",
+    "runs/sk04-embeddings-041-vectors/result-0019.json": "ff5708b10710aff45b601e198920e4fa7fd47939bcf9c223e8817b39f3d7ce95",
+    "runs/sk04-embeddings-041-vectors/intent-0020.json": "fb89be766ad6865e44a7e71209d415d69148711cde1d28e42b2e02b6f27f27b9",
+    "runs/sk04-embeddings-041-vectors/result-0020.json": "4ae43acccd0a08698226c77b9ccc76ac4d9d56dd9cfdd15764ad159b6ab568a5",
+    "runs/sk04-embeddings-041-vectors/intent-0021.json": "07ea05d7240284bce13f02ed65350a834def6937366837f9de03d1c07b3f6e9d",
+    "runs/sk04-embeddings-041-vectors/result-0021.json": "5d805cf3d83c625474fb47dd2ac98c1e1c06ecf191ad750bde8dc915e44db4a5",
+    "runs/sk04-embeddings-041-vectors/intent-0022.json": "398c6f061dfc6e22401c6c371b6d908cb48f706700d3599dba74adecad79d05e",
+    "runs/sk04-embeddings-041-vectors/result-0022.json": "134d5d855055d2b0e1d0f73ec3c03f537b5cec41482c75fff419bb630bd78386",
+    "runs/sk04-embeddings-041-vectors/intent-0023.json": "c53ede573dccce0a6c60ded4d86df8398c32233bb5afd58daf5c4b24e7105a0f",
+    "runs/sk04-embeddings-041-vectors/result-0023.json": "476326459a5522214541faf29edad3d92ef3e146d38d9e6cf0afeeebd196e0e6",
+    "runs/sk04-embeddings-041-vectors/intent-0024.json": "19a02abc2cd93597cf1b476731c50b5f458fda49013908e297c6e672e73a8ee4",
+    "runs/sk04-embeddings-041-vectors/result-0024.json": "df8616d5c35855c1030c4172690827d347e78bf83037bf9bfe1cad1065367121",
+    "runs/sk04-embeddings-041-vectors/intent-0025.json": "5cad8eaf090bf79fbaf37495a7010c2ed7040b52a72bd587f59e4046ee4cd097",
+    "runs/sk04-embeddings-041-vectors/result-0025.json": "69df23eb2e1bc7b917cf7cb410cc92051885ec958968ab1796db41b3c9119f9f",
+    "runs/sk04-embeddings-041-vectors/intent-0026.json": "04fbe0e7039c17f8c76407a821953c1c48d1f00a998c2de5b60fdea803d99b70",
+    "runs/sk04-embeddings-041-vectors/result-0026.json": "8414e38f0ab6d9886a85f570acd58df11dfef4b3d2fe6918fa64f954cebe2c47",
+    "runs/sk04-embeddings-041-vectors/intent-0027.json": "36862c7cb866edda99dba39f510fbd868b5794193374fa960b2d34b570db72d4",
+    "runs/sk04-embeddings-041-vectors/result-0027.json": "d9faa5cd02f21ac284349c82dcf848d2d3fd4020beb08003e4652720c17907d0",
+    "runs/sk04-embeddings-041-vectors/intent-0028.json": "5f2ee03dfac7898d818330242d2b30975ce64e766da32f67ca86038c744e6e20",
+    "runs/sk04-embeddings-041-vectors/result-0028.json": "b4a7e9e72fd6e54503aecb20a60df8cf2757033940dc4a077c7db96a91443421"
+  },
+  "limitations": [
+    "Observed endpoint fields and response name are compatible; provider weights remain unobserved/mutable. This is an operational compatibility assumption, not proof of identical remote weights.",
+    "Historical config036 SHA and old bundle config SHA use different/insufficiently evidenced projections; their inequality is not used as demonstrated drift or equality. Comparable fields are checked directly instead.",
+    "Historical page corpus/chunking differs from new structural corpus. Keep new corpus identity and build a separate index only in a later authorized local task; never relabel old index.",
+    "Queries are three exposed development questions; compatibility does not establish retrieval relevance or holdout acceptance.",
+    "No new queries/inference authorized by this report; original plan29POST consumed. No credentials or SDK/network accessed."
+  ],
+  "remote_calls": 0,
+  "index_built": false,
+  "skill_changes": false
+}

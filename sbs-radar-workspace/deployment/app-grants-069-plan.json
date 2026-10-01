@@ -1,0 +1,332 @@
+{
+  "status": "prepared_pending_independent_review",
+  "principal_client_id": "a947eccf-5f94-4369-a3d4-8f83b4ea98a1",
+  "principal_id": "77041447522099",
+  "targets": [
+    [
+      "catalog",
+      "neptuno_manuel_arguelles",
+      "USE_CATALOG"
+    ],
+    [
+      "schema",
+      "neptuno_manuel_arguelles.sbs_radar",
+      "USE_SCHEMA"
+    ],
+    [
+      "table",
+      "neptuno_manuel_arguelles.sbs_radar.documents",
+      "SELECT"
+    ],
+    [
+      "table",
+      "neptuno_manuel_arguelles.sbs_radar.versions",
+      "SELECT"
+    ],
+    [
+      "table",
+      "neptuno_manuel_arguelles.sbs_radar.provisions",
+      "SELECT"
+    ],
+    [
+      "table",
+      "neptuno_manuel_arguelles.sbs_radar.pairs",
+      "SELECT"
+    ],
+    [
+      "table",
+      "neptuno_manuel_arguelles.sbs_radar.changes",
+      "SELECT"
+    ],
+    [
+      "table",
+      "neptuno_manuel_arguelles.sbs_radar.evidence",
+      "SELECT"
+    ],
+    [
+      "table",
+      "neptuno_manuel_arguelles.sbs_radar.reviews",
+      "SELECT"
+    ],
+    [
+      "table",
+      "neptuno_manuel_arguelles.sbs_radar.processes",
+      "SELECT"
+    ],
+    [
+      "volume",
+      "neptuno_manuel_arguelles.sbs_radar.release_artifacts",
+      "READ_VOLUME"
+    ]
+  ],
+  "inputs": {
+    "runs/sk00-autonomy-053.json": "241b0946ab052ead92a8e29a4abb8bc98d064030c5933a45397465df6fcb8d43",
+    "deployment/cloud-proposal-016.json": "e2596fd41cf69ded2e04ee74620ccfa9abff53886fd0f14859c9eccdf1249b63",
+    "runs/sk08-app-access-066/app.json": "c2d91f1d30f8828df923ed450ce4b673a4a39e1adddb62139213965338a36c99",
+    "runs/sk08-app-access-066/genie-permissions.json": "7f98f15882d71e4fb66adcbf7993e62a29174ccdf9382376bb77431949538824",
+    "runs/sk08-app-access-066/invocation.json": "27c04c0e00c9ad73b197377d21b0ae9dfebfa902520661f3624e86a5c37a2c56",
+    "runs/sk08-app-access-066/principal.json": "7d25079a3d5971a7d066b2ccff32d1b3f82aca8a10c18c25dd133c859cd66ceb",
+    "runs/sk08-app-access-066/record.json": "8f55f3e48627fd4da1e7aa70a9378456c223243fadb3649ac77ae298a4dbd046",
+    "runs/sk08-app-access-066/warehouse-permissions.json": "610a1901f91e4f62a0e452461d85976c1f05af306410978a6108739a5f791f32",
+    "runs/sk08-app-access-066/warehouse.json": "3e75e3ccea6b1c789fd0c3e23c9d05be563aa7ae1c937085419ca98ec176173d",
+    "runs/sk08-app-access-066b/grants-catalog-neptuno_manuel_arguelles.json": "c84dc5d09ae72e95cdc6eb8da5f14105e7f80d7f099f8c83ac274a8879576942",
+    "runs/sk08-app-access-066b/grants-schema-sbs_radar.json": "afbac8910f75b521e3342e66347f9c7fd8d6d75a8dd77bf7fcc644b61465d930",
+    "runs/sk08-app-access-066b/grants-table-changes.json": "afbac8910f75b521e3342e66347f9c7fd8d6d75a8dd77bf7fcc644b61465d930",
+    "runs/sk08-app-access-066b/grants-table-documents.json": "afbac8910f75b521e3342e66347f9c7fd8d6d75a8dd77bf7fcc644b61465d930",
+    "runs/sk08-app-access-066b/grants-table-evidence.json": "afbac8910f75b521e3342e66347f9c7fd8d6d75a8dd77bf7fcc644b61465d930",
+    "runs/sk08-app-access-066b/grants-table-pairs.json": "afbac8910f75b521e3342e66347f9c7fd8d6d75a8dd77bf7fcc644b61465d930",
+    "runs/sk08-app-access-066b/grants-table-processes.json": "afbac8910f75b521e3342e66347f9c7fd8d6d75a8dd77bf7fcc644b61465d930",
+    "runs/sk08-app-access-066b/grants-table-provisions.json": "afbac8910f75b521e3342e66347f9c7fd8d6d75a8dd77bf7fcc644b61465d930",
+    "runs/sk08-app-access-066b/grants-table-reviews.json": "afbac8910f75b521e3342e66347f9c7fd8d6d75a8dd77bf7fcc644b61465d930",
+    "runs/sk08-app-access-066b/grants-table-versions.json": "afbac8910f75b521e3342e66347f9c7fd8d6d75a8dd77bf7fcc644b61465d930",
+    "runs/sk08-app-access-066b/grants-volume-release_artifacts.json": "afbac8910f75b521e3342e66347f9c7fd8d6d75a8dd77bf7fcc644b61465d930",
+    "runs/sk08-app-access-066b/invocation.json": "ca4169bd95a4f37fe33d77246084a228d350c1e54bf004f9bdd52ff6fa91200d",
+    "runs/sk08-app-access-066b/record.json": "549a60138030ae7b2e3ec00458f7213589a50606a210f10604d5e4f86e2960eb",
+    "deployment/state/app-grants-067/before.json": "f7a3cd69f0b1175414fb015cebc0898f0af6c8d36e051cba4a9daa5057b5f9ad",
+    "deployment/state/app-grants-067/result.json": "01dc02ba7561d1f906f5703e21bf0771f7852bca13645bb7438cd0ccc2b1843a",
+    "runs/sk08-app-grants-067.py": "f3ee2831a388d9d1e496c6a884bb1c8ed0a1d2d91a70b7f61340bd106456ea9b"
+  },
+  "baseline_deltas": [
+    {
+      "path": "/api/2.1/unity-catalog/permissions/catalog/neptuno_manuel_arguelles",
+      "body": {
+        "changes": [
+          {
+            "principal": "a947eccf-5f94-4369-a3d4-8f83b4ea98a1",
+            "add": [
+              "USE_CATALOG"
+            ]
+          }
+        ]
+      },
+      "kind": "catalog",
+      "name": "neptuno_manuel_arguelles",
+      "privilege": "USE_CATALOG"
+    },
+    {
+      "path": "/api/2.1/unity-catalog/permissions/schema/neptuno_manuel_arguelles.sbs_radar",
+      "body": {
+        "changes": [
+          {
+            "principal": "a947eccf-5f94-4369-a3d4-8f83b4ea98a1",
+            "add": [
+              "USE_SCHEMA"
+            ]
+          }
+        ]
+      },
+      "kind": "schema",
+      "name": "neptuno_manuel_arguelles.sbs_radar",
+      "privilege": "USE_SCHEMA"
+    },
+    {
+      "path": "/api/2.1/unity-catalog/permissions/table/neptuno_manuel_arguelles.sbs_radar.documents",
+      "body": {
+        "changes": [
+          {
+            "principal": "a947eccf-5f94-4369-a3d4-8f83b4ea98a1",
+            "add": [
+              "SELECT"
+            ]
+          }
+        ]
+      },
+      "kind": "table",
+      "name": "neptuno_manuel_arguelles.sbs_radar.documents",
+      "privilege": "SELECT"
+    },
+    {
+      "path": "/api/2.1/unity-catalog/permissions/table/neptuno_manuel_arguelles.sbs_radar.versions",
+      "body": {
+        "changes": [
+          {
+            "principal": "a947eccf-5f94-4369-a3d4-8f83b4ea98a1",
+            "add": [
+              "SELECT"
+            ]
+          }
+        ]
+      },
+      "kind": "table",
+      "name": "neptuno_manuel_arguelles.sbs_radar.versions",
+      "privilege": "SELECT"
+    },
+    {
+      "path": "/api/2.1/unity-catalog/permissions/table/neptuno_manuel_arguelles.sbs_radar.provisions",
+      "body": {
+        "changes": [
+          {
+            "principal": "a947eccf-5f94-4369-a3d4-8f83b4ea98a1",
+            "add": [
+              "SELECT"
+            ]
+          }
+        ]
+      },
+      "kind": "table",
+      "name": "neptuno_manuel_arguelles.sbs_radar.provisions",
+      "privilege": "SELECT"
+    },
+    {
+      "path": "/api/2.1/unity-catalog/permissions/table/neptuno_manuel_arguelles.sbs_radar.pairs",
+      "body": {
+        "changes": [
+          {
+            "principal": "a947eccf-5f94-4369-a3d4-8f83b4ea98a1",
+            "add": [
+              "SELECT"
+            ]
+          }
+        ]
+      },
+      "kind": "table",
+      "name": "neptuno_manuel_arguelles.sbs_radar.pairs",
+      "privilege": "SELECT"
+    },
+    {
+      "path": "/api/2.1/unity-catalog/permissions/table/neptuno_manuel_arguelles.sbs_radar.changes",
+      "body": {
+        "changes": [
+          {
+            "principal": "a947eccf-5f94-4369-a3d4-8f83b4ea98a1",
+            "add": [
+              "SELECT"
+            ]
+          }
+        ]
+      },
+      "kind": "table",
+      "name": "neptuno_manuel_arguelles.sbs_radar.changes",
+      "privilege": "SELECT"
+    },
+    {
+      "path": "/api/2.1/unity-catalog/permissions/table/neptuno_manuel_arguelles.sbs_radar.evidence",
+      "body": {
+        "changes": [
+          {
+            "principal": "a947eccf-5f94-4369-a3d4-8f83b4ea98a1",
+            "add": [
+              "SELECT"
+            ]
+          }
+        ]
+      },
+      "kind": "table",
+      "name": "neptuno_manuel_arguelles.sbs_radar.evidence",
+      "privilege": "SELECT"
+    },
+    {
+      "path": "/api/2.1/unity-catalog/permissions/table/neptuno_manuel_arguelles.sbs_radar.reviews",
+      "body": {
+        "changes": [
+          {
+            "principal": "a947eccf-5f94-4369-a3d4-8f83b4ea98a1",
+            "add": [
+              "SELECT"
+            ]
+          }
+        ]
+      },
+      "kind": "table",
+      "name": "neptuno_manuel_arguelles.sbs_radar.reviews",
+      "privilege": "SELECT"
+    },
+    {
+      "path": "/api/2.1/unity-catalog/permissions/table/neptuno_manuel_arguelles.sbs_radar.processes",
+      "body": {
+        "changes": [
+          {
+            "principal": "a947eccf-5f94-4369-a3d4-8f83b4ea98a1",
+            "add": [
+              "SELECT"
+            ]
+          }
+        ]
+      },
+      "kind": "table",
+      "name": "neptuno_manuel_arguelles.sbs_radar.processes",
+      "privilege": "SELECT"
+    },
+    {
+      "path": "/api/2.1/unity-catalog/permissions/volume/neptuno_manuel_arguelles.sbs_radar.release_artifacts",
+      "body": {
+        "changes": [
+          {
+            "principal": "a947eccf-5f94-4369-a3d4-8f83b4ea98a1",
+            "add": [
+              "READ_VOLUME"
+            ]
+          }
+        ]
+      },
+      "kind": "volume",
+      "name": "neptuno_manuel_arguelles.sbs_radar.release_artifacts",
+      "privilege": "READ_VOLUME"
+    },
+    {
+      "path": "/api/2.0/permissions/genie/01f1bb81787b118c9bbc8980e3523a21",
+      "body": {
+        "access_control_list": [
+          {
+            "service_principal_name": "a947eccf-5f94-4369-a3d4-8f83b4ea98a1",
+            "permission_level": "CAN_RUN"
+          }
+        ]
+      },
+      "kind": "genie",
+      "name": "01f1bb81787b118c9bbc8980e3523a21",
+      "privilege": "CAN_RUN"
+    },
+    {
+      "path": "/api/2.0/permissions/warehouses/828756322bedff37",
+      "body": {
+        "access_control_list": [
+          {
+            "service_principal_name": "a947eccf-5f94-4369-a3d4-8f83b4ea98a1",
+            "permission_level": "CAN_USE"
+          }
+        ]
+      },
+      "kind": "warehouses",
+      "name": "828756322bedff37",
+      "privilege": "CAN_USE"
+    }
+  ],
+  "fresh_preflight_required": true,
+  "limits": {
+    "max_requests": 43,
+    "max_patch": 13,
+    "wall_clock_seconds": 600,
+    "response_bytes": 1048576,
+    "automatic_retries": 0,
+    "sql": 0,
+    "app_start_deploy": 0
+  },
+  "group_handling": "Match only observed SCIM group display names including indirect memberships. Do not equate account users/users-clone with workspace users. Unknown users membership means explicit scoped CAN_USE is proposed; no claim of exhaustive effective access. Existing broad privileges for known app/groups stop the operation.",
+  "genie_identity": {
+    "space_id": "01f1bb81787b118c9bbc8980e3523a21",
+    "observed_acl_object_id": "/genie/2365958246005085",
+    "request_path_uses_space_id": true
+  },
+  "runtime_bindings_next": {
+    "app": "sbs-radar-pilot",
+    "principal_client_id": "a947eccf-5f94-4369-a3d4-8f83b4ea98a1",
+    "warehouse_id": "828756322bedff37",
+    "genie_space_id": "01f1bb81787b118c9bbc8980e3523a21",
+    "volume": "/Volumes/neptuno_manuel_arguelles/sbs_radar/release_artifacts",
+    "auth": "M2M runtime Config only; no secret creation or developer profile in app",
+    "pending": [
+      "effective Apps runtime identity",
+      "publication snapshot certificate",
+      "SELECT-only policy runtime binding",
+      "app resources configuration/deploy/start separate"
+    ]
+  },
+  "rollback": "No automatic rollback; remove only exact recorded additions under separately reviewed reconciliation, preserve prior/group ACLs.",
+  "e2e": false,
+  "empty_assignment_policy": {
+    "before": "Only exact{} normalized to no visible rows for additions; unknown_before recorded; no absence/privacy/SELECT-only conclusion",
+    "after": "Explicit assignment arrays mandatory; each initially unknown UC resource requires direct app assignment for authorized privilege; known app/groups excessive grants rejected",
+    "preservation": "Known baseline assignments exact; unknown baseline cannot establish absent assignments and permits newly visible unrelated rows"
+  }
+}

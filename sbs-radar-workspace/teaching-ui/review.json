@@ -1,0 +1,136 @@
+{
+  "status": "PASS_LOCAL_REVIEW",
+  "timestamp_utc": "2026-09-30T13:17:56.530659+00:00",
+  "skills": [
+    "SK09",
+    "CreatorZ",
+    "Foquito"
+  ],
+  "reviewer": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "agent": "/root/astra_ui225",
+    "independent": true
+  },
+  "files_sha256": {
+    "teaching-ui/index.html": "a259b8c750693ac95d1289509977690c3221e279399a7a77fb45891a11ba0752",
+    "teaching-ui/build_ui.py": "a34679964e52bca8aeb4dc8a29ec61ebaccde365600b15df4a80dfda5e3e1fbe",
+    "teaching-ui/integrate_tutor.py": "0e45abe141819ce9055970c3abebc3bd9be8bbf5f22981658b9bcc59a8689740",
+    "teaching-ui/refine_tutor.py": "2f2d799841ad26a07924150c32913f5338f186fb3a987bea87956cb2c6ea3096",
+    "teaching-ui/refine_final.py": "256e1165226d212f1998b99a8d149a83f820a4b53d7fbe4b65e5691a5cde7001",
+    "teaching-ui/contexto-tutor.md": "68eb21a23778ae2f108cde89b02ca540ccfb61ce37122f90842166cf38247b95",
+    "teaching-ui/explicaciones.json": "e89d1a327fb39e2e85152b2fb2c1c7086282cd7530d38aa8176be45530f89cc6",
+    "teaching-ui/review_payload.cjs": "4140041901d7d1b5cbe730860a6144aa2e9d3110fe47b5d16015bceaf185e830",
+    "teaching-ui/review_no_key.cjs": "4303747ca0be6fa4f59a98479988414aa6d38a243e101e8ab4d2f3a8ce59a72f",
+    "teaching-ui/review_literal_checks.json": "57ed44cb7babcf21f6e0161453da33014cc7b6c93bd4eec0b0d2edeb035c5f05",
+    "runs/ui246/test-source246/src/sbs/webapp/static/index.html": "a191c6501b26caf4c0b5b7fb1538ea3df8b881c13365136cf741f1b523f432f4",
+    "runs/ui246/test-source246/src/sbs/webapp/static/style.css": "7d808576d357c00b8808b0c381032b3bc7356b33d142eda3d9adfeaa19c5fd81",
+    "skills/sbs-evaluacion-jueces/SKILL.md": "46e9f9851d46b2ec95f61dabdaed6ec30cc28799f8c8e017615d87dcff6d2b66",
+    "skills/sbs-evaluacion-jueces/references/revision-ia.md": "8ee94f8b3b26614996e07d86cf6c9ce878d29240009e922f4305639933506b25",
+    "/Users/macdenix/.claude/skills/foquito/SKILL.md": "56bec86e1e7422d14fed7479fb0c2f254e9050cc82800a1eb02f5b43048827b5",
+    "/Users/macdenix/clawd/openclaw-codex/openclaw-workspace/skills/skill-creator-z/SKILL.md": "913c602cca1fcc8bfbe6a7b6300199f098c178970952302579d152029491fc99",
+    "teaching-ui/ground_ui_facts.py": "e21d5a9effb5d7af560052931a24ef781375b19fcc240e6f8cecf64703e82121",
+    "teaching-ui/review_ui_facts.cjs": "aad5f5a88e560250ef9b17d71ad9468d57f2201243768050778a2c5c5ae1107b",
+    "teaching-ui/fix_tooltip.py": "acc1313497c182d0d0509149b07ee8870de5533139d3cbbf517438f30a17acf3"
+  },
+  "scope": "Revisión estática y funciones DOM simuladas sin red. No edición del HTML por revisor; UI nativa y llamada viva pertenecen al coordinador.",
+  "blocking_findings": [],
+  "resolved_findings": [
+    {
+      "id": "selection_context_dropped",
+      "severity": "P1",
+      "resolution": "sel.teaching ahora entrega sel.parrafo a vecindad/material; dos contextos y alcance cruzado comprobados."
+    },
+    {
+      "id": "closed_panel_keyboard",
+      "severity": "P2",
+      "resolution": "Panel cerrado inert; apertura y cierre sincronizan inert."
+    },
+    {
+      "id": "tooltip_hover",
+      "severity": "P2",
+      "resolution": "pointer-events auto, retraso al salir, cancelación al entrar al tooltip y al mostrar uno nuevo."
+    },
+    {
+      "id": "busy_question_false_sent",
+      "severity": "P2",
+      "resolution": "openSbsTutor devuelve false al ocupado y caller muestra espera sin borrar pregunta."
+    }
+  ],
+  "findings": [],
+  "checks": [
+    {
+      "id": "source_fidelity",
+      "status": "passed",
+      "evidence": "CSS original íntegro como prefijo; todos IDs originales preservados. Tres pares antes/después iguales a muestra244, salvo strip de whitespace exterior; esa muestra ya fue cotejada con PDF/rawspan."
+    },
+    {
+      "id": "navigation",
+      "status": "passed_static",
+      "evidence": "Familia reconstruye par/disposición compatibles; tabs conservan selección y aria-current; comparar y conversar enlazan estado actual. Un par por familia representa dos copias."
+    },
+    {
+      "id": "help_accessibility",
+      "status": "passed_static",
+      "evidence": "Ayudas por pointer/focus, aria-describedby/roletooltip, Escape y foco visible; touch requiere modo ayuda y primer toque muestra explicación. Validación nativa/lector de pantalla no ejecutada por este revisor."
+    },
+    {
+      "id": "tutor_context",
+      "status": "passed",
+      "command": "node teaching-ui/review_payload.cjs",
+      "evidence": "Dos contextos reales generados: cyber20.3 y market29.1.4; material contiene pasajes seleccionados, checkbox y límites de extracto parcial. Dos scripts inline con sintaxis válida."
+    },
+    {
+      "id": "no_key_fallback",
+      "status": "passed_dom_mock",
+      "command": "node teaching-ui/review_no_key.cjs",
+      "evidence": "Funciones reales preguntar/turno/precomputada con clave vacía; explicación preparada mostrada, aviso de falta de clave, input liberado y0fetch. No lectura de sidecar/localStorage ni navegador; no E2E."
+    },
+    {
+      "id": "honest_local_scope",
+      "status": "passed",
+      "evidence": "Guía y tutor se diferencian del agente real; no backend Databricks invocado. Fuentes originales sólo enlaces externos con noopener. Contexto declara extractos parciales y no deducir ausencia. Foquito vivo usa proveedor remoto: local describe archivo/estado, no inferencia offline."
+    },
+    {
+      "id": "live_semantic_response",
+      "status": "not_evaluated_by_reviewer",
+      "evidence": "Coordinador prueba pregunta exacta sobre una opción del selector; instrucción SYS corregida no garantiza obediencia del modelo."
+    },
+    {
+      "id": "deterministic_ui_facts",
+      "status": "passed_dom_mock",
+      "command": "node teaching-ui/review_ui_facts.cjs",
+      "evidence": "Pregunta exacta del usuario con typo, reformulación del coordinador y followup Actualizar catálogo:3 respuestas preparadas correctas,6 mensajes conservados, etiqueta sin llamada al modelo,0preguntar/0fetch. Responde un par por familia con dos copias y refresco local sin nuevas versiones."
+    },
+    {
+      "id": "native_navigation",
+      "status": "passed_coordinator_observation",
+      "evidence": "Coordinador informó familia y comparación PASS en UI nativa. No atribuir observación a este revisor ni certificar accesibilidad completa."
+    },
+    {
+      "id": "final_tooltip_geometry_and_plural",
+      "status": "passed",
+      "evidence": "Tooltip usa debajo cuando cabe y encima cuando no cabe; dos cálculos geométricos comprueban no solapar disparador en ambos casos. Plural disposiciones corregido. Payload/no-key/FAQ3 pruebas locales repetidas PASS."
+    },
+    {
+      "id": "native_final_faq",
+      "status": "passed_coordinator_observation",
+      "evidence": "Coordinador informó pregunta exacta y seguimiento ejecutados en UI nativa con dos respuestas preparadas etiquetadas. No atribuirlos al modelo vivo ni a ejecución browser del revisor."
+    }
+  ],
+  "credentials_or_sidecar_read": false,
+  "remote_calls_by_reviewer": 0,
+  "index_edited_by_reviewer": false,
+  "full_accessibility_certified": false,
+  "live_e2e_approved": false,
+  "observed_live_limit": {
+    "status": "failed_prior_live_sample_then_bounded_deterministic_fix",
+    "evidence": "Coordinador observó que el modelo confundía una opción con una versión y luego sugería nuevos pares al actualizar esta réplica. SYS por sí solo no resolvió el error. Nueva rama responde hechos cerrados localmente, con etiqueta explícita; no demuestra calidad general del tutor."
+  },
+  "limitations": [
+    "Pruebas DOM simuladas no son E2E del navegador ni llamadas al modelo.",
+    "FAQ preparada cubre patrones revisados; otras formulaciones usan Foquito y pueden producir errores.",
+    "Pasajes completos visibles; contexto tutor deliberadamente parcial y declarado.",
+    "No se certifica accesibilidad completa ni fidelidad visual pixel por pixel."
+  ]
+}

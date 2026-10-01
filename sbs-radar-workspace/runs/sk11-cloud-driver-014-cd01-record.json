@@ -1,0 +1,43 @@
+{
+  "completed_at": "2026-09-28T02:58:44.332494+00:00",
+  "skill": "SK11",
+  "version": "0.1.14",
+  "invocation": "runs/sk11-cloud-driver-014-cd01-invocation.json",
+  "old_skill_sha256": "be529094913d110995add8d9ffa620e0b9c44659c21575cb305abe2c1f1cc099",
+  "new_skill_sha256": "19410a1af98a2a0a66526d25237fcac46bd6d35f071efbaaf93281832f1c8448",
+  "finding": "CD01",
+  "review_preserved": {
+    "path": "runs/sk09-cloud-driver-014-review.json",
+    "sha256": "ef7123329bafdb1da88157d277ed38d89d4543daabda4c943cc6ffa3c76f1136"
+  },
+  "red": {
+    "artifact": "runs/sk11-cloud-driver-014-cd01-red.txt",
+    "failed": 6,
+    "passed": 17
+  },
+  "green": {
+    "artifact": "runs/sk11-cloud-driver-014-cd01-final-green.txt",
+    "passed": 45,
+    "failed": 0
+  },
+  "fix": "Sanitize response.raw.read and response.close failures; close once best effort, preserve active safe error including HTTP409 conflict/JSON/bytes cap; no retry",
+  "new_writer_guard_regression": "Actual generated ClustersAPI+single-attempt injected transport, sanitized stream error reaches writer_guard unchanged as safe code",
+  "original_probe_replay": "runs/sk11-cloud-driver-014-cd01-original-probes.json",
+  "original_probe_note": "Original check harness marks only literal True as passed; raw_error_sanitized returns a detail dict, so reported passed remains false although observed.safe=true, closed=true and requests=1. Preserved original reports/source; own explicit assertions verify behavior. Initial replay needed tests/unit PYTHONPATH, corrected without source change.",
+  "notebook_source_unchanged": true,
+  "notebook_sha256": "81dd296edc3cc5e388bb8af546f79226dbc4f108b83480858f189c7a59a83b75",
+  "notebook_prior_execution": "runs/sk11-cloud-driver-014-notebook-latest.json",
+  "artifact_sha256": {
+    "src/sbs/operations/cloud_driver.py": "c79a3fff25a8799d9f1337a09655c35c355b7dc28aeed21e9b9700384bc9f4b8",
+    "tests/unit/test_cloud_driver.py": "48cfd822b240fff8b8bd1a7c07f2a8b3226a381405d2339457ae8864749ec362",
+    "skills/sbs-observabilidad-operacion/SKILL.md": "19410a1af98a2a0a66526d25237fcac46bd6d35f071efbaaf93281832f1c8448"
+  },
+  "protected_files_unchanged": 59,
+  "remote_calls": 0,
+  "cost": null,
+  "status": "ready_for_independent_SK09_retest",
+  "limits": [
+    "Offline fixtures only; notebook execute/cloud not rerun",
+    "No claim of authenticated cloud, resource activation or runtime promotion"
+  ]
+}

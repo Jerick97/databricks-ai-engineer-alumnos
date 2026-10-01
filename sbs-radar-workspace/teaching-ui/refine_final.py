@@ -1,0 +1,13 @@
+from pathlib import Path
+p=Path(__file__).with_name('index.html');s=p.read_text()
+s=s.replace('function showTip(target){if(!target)return;', 'function showTip(target){clearTimeout(tipTimer);if(!target)return;')
+s=s.replace("if (ocupado) { panel.inert=false; panel.classList.add('fq-abierto'); return; }", "if (ocupado) { panel.inert=false; panel.classList.add('fq-abierto'); return false; }")
+s=s.replace('turno(question,pensando());','turno(question,pensando()); return true;')
+s=s.replace("window.openSbsTutor(q,tutorContext());put('messages','Pregunta enviada al tutor didáctico con el contexto seleccionado. Su conversación es independiente del agente SBS Radar real.');", "let accepted=window.openSbsTutor(q,tutorContext());put('messages',accepted===false?'El tutor está respondiendo. Conservamos tu pregunta; envíala cuando termine.':'Pregunta enviada al tutor didáctico con el contexto seleccionado. Su conversación es independiente del agente SBS Radar real.');")
+s=s.replace('Muestra documental local · captura del 29/09/2026','Muestra documental local · captura de interfaz del 30/09/2026')
+s=s.replace('Captura UI244 · 29/09/2026','Captura UI244 · 30/09/2026')
+s=s.replace('SYS +=', "SYS += ' El selector Versiones a comparar ofrece UN PAR por familia en esta guía: una opción representa DOS copias documentales A y B. No significa una sola versión. Disposición elige un artículo dentro de ese par; no filtra el número de pares. Actualizar catálogo en la guía sólo restablece su muestra local; no incorpora versiones nuevas.';\n  SYS +=")
+s=s.replace('29/09/2026','30/09/2026')
+s=s.replace("panel.classList.add('fq-abierto'); return false;", "panel.classList.add('fq-abierto'); panel.setAttribute('aria-hidden','false'); return false;")
+p.write_text(s)
+print('Semántica de pares y bordes de interacción corregidos')

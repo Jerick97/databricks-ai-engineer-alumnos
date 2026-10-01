@@ -1,0 +1,214 @@
+{
+  "slide-06": {
+    "resource_summary": "Notebook docente: verificar inspecciona recursos; crear solicita cambios por etapas.",
+    "resource_links": [
+      {
+        "title": "GitHub · notebook-docente.py",
+        "url": "https://github.com/manuelarguelles/databricks-ai-engineer-alumnos/blob/main/s08-deployment/notebook-docente.py"
+      },
+      {
+        "title": "Abrir notebook CP0–CP8",
+        "url": "https://dbc-0410b264-20c7.cloud.databricks.com/editor/notebooks/3142549814418784?o=7474657121564806"
+      }
+    ]
+  },
+  "slide-11": {
+    "resource_summary": "agent.py implementa el agente; lab_deploy.py empaqueta código, dependencias y recursos.",
+    "resource_links": [
+      {
+        "title": "GitHub · agent.py",
+        "url": "https://github.com/manuelarguelles/databricks-ai-engineer-alumnos/blob/main/s08-deployment/lab/agent.py"
+      },
+      {
+        "title": "GitHub · lab_deploy.py",
+        "url": "https://github.com/manuelarguelles/databricks-ai-engineer-alumnos/blob/main/s08-deployment/lab/lab_deploy.py"
+      }
+    ]
+  },
+  "slide-12": {
+    "resource_summary": "Registramos agente_neptuno en Unity Catalog; el ensayo documentado utilizó la versión 4.",
+    "resource_links": [
+      {
+        "title": "GitHub · lab_deploy.py",
+        "url": "https://github.com/manuelarguelles/databricks-ai-engineer-alumnos/blob/main/s08-deployment/lab/lab_deploy.py"
+      },
+      {
+        "title": "Ver modelo en Catalog",
+        "url": "https://dbc-0410b264-20c7.cloud.databricks.com/explore/data/models/neptuno_manuel_arguelles/ais08_lab/agente_neptuno?o=7474657121564806"
+      }
+    ]
+  },
+  "slide-14": {
+    "resource_summary": "Publicamos la versión del agente en ais08-neptuno y probamos una invocación real.",
+    "resource_links": [
+      {
+        "title": "GitHub · lab_deploy.py",
+        "url": "https://github.com/manuelarguelles/databricks-ai-engineer-alumnos/blob/main/s08-deployment/lab/lab_deploy.py"
+      },
+      {
+        "title": "GitHub · lab_smoke.py",
+        "url": "https://github.com/manuelarguelles/databricks-ai-engineer-alumnos/blob/main/s08-deployment/lab/lab_smoke.py"
+      },
+      {
+        "title": "Ver endpoint en Serving",
+        "url": "https://dbc-0410b264-20c7.cloud.databricks.com/ml/endpoints/ais08-neptuno?o=7474657121564806"
+      }
+    ]
+  },
+  "slide-16": {
+    "resource_summary": "champion identifica una versión registrada; Serving fija una versión numérica.",
+    "resource_links": [
+      {
+        "title": "GitHub · lab_rollout.py",
+        "url": "https://github.com/manuelarguelles/databricks-ai-engineer-alumnos/blob/main/s08-deployment/lab/lab_rollout.py"
+      },
+      {
+        "title": "Ver modelo y versiones",
+        "url": "https://dbc-0410b264-20c7.cloud.databricks.com/explore/data/models/neptuno_manuel_arguelles/ais08_lab/agente_neptuno?o=7474657121564806"
+      }
+    ]
+  },
+  "slide-19": {
+    "resource_summary": "El canary se ensayó en ais08-neptuno-rollout, un servicio complementario.",
+    "resource_links": [
+      {
+        "title": "GitHub · lab_custom_rollout.py",
+        "url": "https://github.com/manuelarguelles/databricks-ai-engineer-alumnos/blob/main/s08-deployment/lab/lab_custom_rollout.py"
+      },
+      {
+        "title": "Ver endpoint de canary",
+        "url": "https://dbc-0410b264-20c7.cloud.databricks.com/ml/endpoints/ais08-neptuno-rollout?o=7474657121564806"
+      }
+    ]
+  },
+  "slide-21": {
+    "resource_summary": "El backend de Neptuno recibe la pregunta y llama al endpoint del agente.",
+    "resource_links": [
+      {
+        "title": "GitHub · app.py",
+        "url": "https://github.com/manuelarguelles/databricks-ai-engineer-alumnos/blob/main/s08-deployment/app/app.py"
+      },
+      {
+        "title": "Abrir Neptuno",
+        "url": "https://ais08-neptuno-ui-7474657121564806.aws.databricksapps.com/"
+      }
+    ]
+  },
+  "slide-23": {
+    "resource_summary": "app.yaml declara el recurso; lab_app.py publica la interfaz en Databricks Apps.",
+    "resource_links": [
+      {
+        "title": "GitHub · app.yaml",
+        "url": "https://github.com/manuelarguelles/databricks-ai-engineer-alumnos/blob/main/s08-deployment/app/app.yaml"
+      },
+      {
+        "title": "GitHub · lab_app.py",
+        "url": "https://github.com/manuelarguelles/databricks-ai-engineer-alumnos/blob/main/s08-deployment/lab/lab_app.py"
+      },
+      {
+        "title": "Ver administración de la App",
+        "url": "https://dbc-0410b264-20c7.cloud.databricks.com/apps/ais08-neptuno-ui?o=7474657121564806"
+      }
+    ]
+  },
+  "slide-24": {
+    "resource_summary": "La prueba de clase se hace en la interfaz: consulta válida y aclaración por datos faltantes.",
+    "resource_links": [
+      {
+        "title": "GitHub · lab_app_smoke.py",
+        "url": "https://github.com/manuelarguelles/databricks-ai-engineer-alumnos/blob/main/s08-deployment/lab/lab_app_smoke.py"
+      },
+      {
+        "title": "Probar Neptuno",
+        "url": "https://ais08-neptuno-ui-7474657121564806.aws.databricksapps.com/"
+      }
+    ]
+  },
+  "slide-27": {
+    "resource_summary": "El SQL conserva campos medibles de las inferencias en inference_flat.",
+    "resource_links": [
+      {
+        "title": "GitHub · lab_parse_contract.sql",
+        "url": "https://github.com/manuelarguelles/databricks-ai-engineer-alumnos/blob/main/s08-deployment/lab/lab_parse_contract.sql"
+      },
+      {
+        "title": "Ver tabla procesada",
+        "url": "https://dbc-0410b264-20c7.cloud.databricks.com/explore/data/neptuno_manuel_arguelles/ais08_lab/inference_flat?o=7474657121564806"
+      }
+    ]
+  },
+  "slide-32": {
+    "resource_summary": "lab_monitor.py configura el monitor sobre inference_flat y su baseline.",
+    "resource_links": [
+      {
+        "title": "GitHub · lab_monitor.py",
+        "url": "https://github.com/manuelarguelles/databricks-ai-engineer-alumnos/blob/main/s08-deployment/lab/lab_monitor.py"
+      },
+      {
+        "title": "Ver tabla y monitor",
+        "url": "https://dbc-0410b264-20c7.cloud.databricks.com/explore/data/neptuno_manuel_arguelles/ais08_lab/inference_flat?o=7474657121564806"
+      }
+    ]
+  },
+  "slide-33": {
+    "resource_summary": "El ensayo obtuvo métricas; abre el dashboard para inspeccionar su última actualización.",
+    "resource_links": [
+      {
+        "title": "GitHub · lab_verify_monitor.py",
+        "url": "https://github.com/manuelarguelles/databricks-ai-engineer-alumnos/blob/main/s08-deployment/lab/lab_verify_monitor.py"
+      },
+      {
+        "title": "Abrir dashboard de monitoreo",
+        "url": "https://dbc-0410b264-20c7.cloud.databricks.com/dashboardsv3/01f1ba1ec42a14e685504a71e6e191bb?o=7474657121564806"
+      }
+    ]
+  },
+  "slide-37": {
+    "resource_summary": "databricks.yml es el manifiesto del bundle; el despliegue remoto de CI no se ejecutó.",
+    "resource_links": [
+      {
+        "title": "GitHub · databricks.yml",
+        "url": "https://github.com/manuelarguelles/databricks-ai-engineer-alumnos/blob/main/s08-deployment/bundle/databricks.yml"
+      },
+      {
+        "title": "GitHub · ci-example.yml",
+        "url": "https://github.com/manuelarguelles/databricks-ai-engineer-alumnos/blob/main/s08-deployment/bundle/ci-example.yml"
+      }
+    ]
+  },
+  "slide-40": {
+    "resource_summary": "El bundle se validó localmente; el notebook disponible corresponde al ensayo docente.",
+    "resource_links": [
+      {
+        "title": "GitHub · databricks.yml",
+        "url": "https://github.com/manuelarguelles/databricks-ai-engineer-alumnos/blob/main/s08-deployment/bundle/databricks.yml"
+      },
+      {
+        "title": "Abrir notebook desplegado",
+        "url": "https://dbc-0410b264-20c7.cloud.databricks.com/editor/notebooks/3142549814418784?o=7474657121564806"
+      }
+    ]
+  },
+  "slide-41": {
+    "resource_summary": "lab_prompts.py administra las versiones y alias del prompt utilizado por Neptuno.",
+    "resource_links": [
+      {
+        "title": "GitHub · lab_prompts.py",
+        "url": "https://github.com/manuelarguelles/databricks-ai-engineer-alumnos/blob/main/s08-deployment/lab/lab_prompts.py"
+      },
+      {
+        "title": "Abrir esquema ais08_lab",
+        "url": "https://dbc-0410b264-20c7.cloud.databricks.com/explore/data/neptuno_manuel_arguelles/ais08_lab?o=7474657121564806"
+      }
+    ]
+  },
+  "slide-17": {
+    "resource_summary": "Canary: probar una candidata con poco tráfico y ampliar sólo si cumple los criterios.",
+    "resource_links": [
+      {
+        "title": "Consultar glosario de S08",
+        "url": "S08-autonomo.html#53"
+      }
+    ]
+  }
+}

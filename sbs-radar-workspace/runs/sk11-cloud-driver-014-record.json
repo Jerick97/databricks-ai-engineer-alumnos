@@ -1,0 +1,90 @@
+{
+  "completed_at": "2026-09-28T02:51:41.114075+00:00",
+  "skill": "SK11",
+  "version": "0.1.13",
+  "SK12": "0.1.4",
+  "invocation": "runs/sk11-cloud-driver-014-invocation.json",
+  "old_skill_sha256": "0fed92060eb9cd67172db1a9e6ed38544f9dc782d604f0204a78995cf9340a6c",
+  "new_skill_sha256": "be529094913d110995add8d9ffa620e0b9c44659c21575cb305abe2c1f1cc099",
+  "red": "runs/sk11-cloud-driver-014-red.txt",
+  "first_integration": "runs/sk11-cloud-driver-014-integration-first.txt",
+  "first_integration_note": "2 harness failures: asdict tuple instead of JSON array and invalid SDK row-filter field name. Corrected fixtures to actual JSON/SDK shapes; no broadened acceptance.",
+  "tests_driver_dispatch": "runs/sk11-cloud-driver-014-final-green.txt",
+  "regression": "runs/sk11-cloud-driver-014-regression-green.txt",
+  "notebook": {
+    "run_id": "sk11-cloud-driver-014-20260928T025050-bbaebd2fd4f248938afcf7f1456f2bcc",
+    "status": "passed",
+    "code_cells": 2,
+    "executed_cells": 2,
+    "errors": 0,
+    "error_class": null,
+    "source": "notebooks/sbs-radar-cloud-writer.ipynb",
+    "source_sha256": "81dd296edc3cc5e388bb8af546f79226dbc4f108b83480858f189c7a59a83b75",
+    "executed": "runs/sk11-cloud-driver-014-20260928T025050-bbaebd2fd4f248938afcf7f1456f2bcc-executed.ipynb",
+    "executed_sha256": "e11bde455ea41fe710483f8e7bb46c89a237fd68392822dace9fb041690458bf",
+    "scope": "real local kernel, default preflight only; no SDK constructed/auth or cloud requests",
+    "cost": null
+  },
+  "artifact_sha256": {
+    "src/sbs/operations/cloud_driver.py": "8f86e2a9ec1365775e0f43e778184e5382197106925d3962d102593045c3f760",
+    "tests/unit/test_cloud_driver.py": "1f4a839eecd25ec369af6432fc219c42448e59be1fbf019d43f2fd9e9523d36e",
+    "notebooks/sbs-radar-cloud-writer.ipynb": "81dd296edc3cc5e388bb8af546f79226dbc4f108b83480858f189c7a59a83b75",
+    "skills/sbs-observabilidad-operacion/SKILL.md": "be529094913d110995add8d9ffa620e0b9c44659c21575cb305abe2c1f1cc099",
+    "skills/sbs-observabilidad-operacion/references/cloud-driver.md": "7e3709a04c6550573249391972d8a06edf5000e4b03260e57458f64c29cc0f11"
+  },
+  "protected": {
+    "files_checked": 59,
+    "changed": []
+  },
+  "sdk": {
+    "version": "0.102.0",
+    "base_client_file": "/opt/homebrew/lib/python3.14/site-packages/databricks/sdk/_base_client.py",
+    "base_client_sha256": "123151ac009ffee8f5285543071de92249f61c59c5a578d6dadbc28fbd2740f6"
+  },
+  "sources": [
+    "https://databricks-sdk-py.readthedocs.io/en/latest/workspace/catalog/tables.html",
+    "https://docs.databricks.com/aws/en/optimizations/isolation/isolation-levels",
+    "https://databricks-sdk-py.readthedocs.io/en/latest/authentication.html",
+    "runs/sk11-serverless-compute-014-invocation.json"
+  ],
+  "api": [
+    "DriverConfig.from_dict(closed_json)",
+    "load_config(server_file,expected_sha256)",
+    "preflight(config_or_none)",
+    "bind_driver(config,services,evidence_mode=...)",
+    "execute_from_config(config,project_root,job_id=...,run_id=...,release_id=...)"
+  ],
+  "verified_local": [
+    "preflight no network/auth",
+    "config/policy/backend/release pins",
+    "metadata identity/Serializable/owner/visible table policy/warehouse running rejection",
+    "current executor and current Job/task/effective params through existing dispatcher",
+    "daily registration through existing CAS ledger",
+    "serverless no fake cluster calls",
+    "six-PDF real local prepare and existing135vectors no embedding inference; fixtureFiles/SQL durable receipt recovery",
+    "SDK serializers with single workspace API attempt, quota and safe errors"
+  ],
+  "limits": [
+    "Cloud table,preseed,Volumes,Job,compute/env,warehouse permissions still need observed bindings and authorized execution",
+    "Trusted administrator assumption, not global exclusivity or adversarial-admin proof",
+    "SDK Run lacks historical environment/run-as",
+    "SDK auth-provider traffic not bounded by workspace request transport quota",
+    "release manifest input identity differs from generated outputmanifest; dispatcher terminal result-probe linkage not claimed",
+    "Notebook only preflight executed; execute cloud path only locally fixture-tested",
+    "Prepared135raw does not promote export002141/runtime",
+    "Active driverconfig is external to release manifest to avoid hash self-reference; config pin delivered separately",
+    "execute_from_config only reuse_sealed six PDFs/cached embeddings; web discovery and remote refresh not implemented"
+  ],
+  "status": "ready_for_independent_SK09_review",
+  "remote_calls": 0,
+  "cloud_resource_actions": 0,
+  "cost": null,
+  "regression_result": {
+    "passed": 94,
+    "failed": 0
+  },
+  "driver_dispatch_result": {
+    "passed": 38,
+    "failed": 0
+  }
+}

@@ -1,0 +1,15 @@
+# App153 candidato final independiente del Job
+
+Reutiliza únicamente archivos manifestados de source133v3 (afa0e1...), sin copiar caches Python añadidos por pruebas. Misma semántica125/133, mismo selector098 y readerSP observado. Añade app.yaml (python app133.py, SBS_MODE cloud, host/publicOrigin observados, worker1) y closure deployment/requirements-app.txt exactamente141; requirements raíz ya lo referencia. Snapshot nuevo con deadline0, no listo para desplegar ni evidencia Linux nueva.
+
+CLI local: PYTHONPATH=src .venv/bin/python deployment/app_candidate_153.py --destination <nueva-carpeta>. Candidato entregado runs/sk12-app-candidate-153-source. Ningún original133/125/141 fue modificado. Materializador fija ventana absoluta máximo30min justo antes del deploy y crea copia NUEVA, jamás modifica template ni plazos históricos:
+
+PYTHONPATH=src .venv/bin/python deployment/app_candidate_153.py --materialize runs/sk12-app-candidate-153-source --destination <nuevo-release> --linux-evidence <report-real-canary141.json> --linux-sha256 <sha-observado> --expires-at-unix <deadline>
+
+Gate139 requiere reporte exacto firmado por hash invocación, PASS_CONTROLLED_SAMPLE Astrahigh y todos inputs/respuestas125 originales. GateLinux requiere reporte real141/151 Linux3.11, source133idéntico, dependencies141exactas, comparaciónnumérica sameinput/passed y provider/SQL0. No genera ese reporte ni interpreta mocks como evidencia. Canary técnico puede desplegarse antes del releasefinal, eliminando circularidad; M2M y UI real sólo después de deployfinal.
+
+Materialización revalida todos bytesbase, únicas adiciones app.yaml/requirements closure, configdeadline cambia sólo ese campo; conserva caps4generation/2embedding/20000tokens porproceso. Produce deployment-payload.json exacto app/sourceprefixhash/SNAPSHOT/deadline/uploadcount/deploymax1/startmax0. El ejecutorcloud final sigue separado: reutilizar ScopedApi080 + RAWupload/AUTOexport de145/151 (RAWexportFILE no soportado según149/150), observar AppACL/compute antes1deploy, nunca auto-reenviar intent ambiguo. No se implementó aquí otro transportcloud.
+
+Plan acotado externo deployment/app-demo153-ledger-plan.json: max1deployment/1processepoca, reservas durables antes API/UI, contar unknown, sin reset/restart. Es PLAN, no enforcement agregado implementado; App133 sólo limita cada proceso. UI/demo requieren materializar ese ledger y supervisar el proceso/deadline antes de habilitaracciones. Interfacespublisher081/selector098/cert5min son gates independientes de Job; no sustituirlos por statusdeployment. Conservar capturaM2M/UI/sujeto y stopcompute aldeadline. Coste desconocido; sin disponibilidadcontinua.
+
+3 pruebas focalizadas PASS: Linuxausente/noLinux falla, deadline0 falla, snapshotreal/materializedfixture cambia sólo deadline y mantiene template, closureapp/env/requirements. Materializedfixture usa gate simulado exclusivamente para contrato local; NO reportLinuxaceptado ni releaseadmitido. Preparación actual no emitióventana y no llamó nube.

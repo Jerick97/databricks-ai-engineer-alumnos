@@ -1,0 +1,8 @@
+{
+  "user_reported_error": "Completa warehouse_id",
+  "reproduced": true,
+  "root_cause": "Delivered generic notebook declares empty widgets; previous validator injected catalog/warehouse/suffix/schema/S07 as Job parameters. No interactive default-start validation existed.",
+  "previous_validated_run": 35725070281647,
+  "corrective_artifact": "notebook-docente.py",
+  "corrective_validation": "Complete cloud execution with base_parameters empty; does not claim automated browser Run all."
+}

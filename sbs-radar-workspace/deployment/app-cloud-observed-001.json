@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python",
+    "app.py"
+  ],
+  "env": [
+    {
+      "name": "SBS_MODE",
+      "value": "cloud"
+    },
+    {
+      "name": "SBS_PUBLIC_ORIGIN",
+      "value": "https://sbs-radar-pilot-7474657121564806.aws.databricksapps.com"
+    },
+    {
+      "name": "DATABRICKS_HOST",
+      "value": "https://dbc-0410b264-20c7.cloud.databricks.com"
+    }
+  ]
+}

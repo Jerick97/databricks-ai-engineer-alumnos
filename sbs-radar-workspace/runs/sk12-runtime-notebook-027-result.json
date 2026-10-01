@@ -1,0 +1,13 @@
+{
+  "at": "2026-09-28T06:56:24.219722+00:00",
+  "skill": "SK12 0.1.9",
+  "record": "runs/sk12-runtime-notebook-20260928T065540-b8668b2b5c5b4d4a9dc10307ad29a6b1.json",
+  "record_sha256": "9ea1e734ba54cc85fde75db1c4409126e800e356ce164aa7e0f444ad3a82552f",
+  "notebook_path": "runs/sk12-runtime-notebook-20260928T065540-b8668b2b5c5b4d4a9dc10307ad29a6b1-executed.ipynb",
+  "notebook_sha256": "571ebb423d34f3025490db16513b3f49b29cd30727663f399bf4eec1b4a3808d",
+  "status": "passed",
+  "executed_cells": 4,
+  "errors": 0,
+  "frozen_input_drift": [],
+  "scope": "Real six-PDF preparation and LocalService promotion; real cached embeddings; failed promotion preserves prior runtime; no cloud, UI or generation acceptance"
+}

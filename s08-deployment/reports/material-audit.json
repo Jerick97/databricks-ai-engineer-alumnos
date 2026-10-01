@@ -1,0 +1,47 @@
+{
+  "pass": true,
+  "checks": [
+    {
+      "name": "13 requisitos y archivos existentes",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "IPYNB equivale al source",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Paridad docente/alumno/ZIP",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Sin patrones de credenciales privadas en paquete",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Índice sin enlaces locales rotos",
+      "pass": true,
+      "detail": [
+        "slides/S08-autonomo.html",
+        "notebook.py",
+        "notebook.ipynb",
+        "CONSIGNA.md",
+        "GUIA-DOCENTE.md",
+        "PLAN-CLASE.md",
+        "EJEMPLO-RESUELTO.md",
+        "CERTIFICACION.md",
+        "VALIDACION.md",
+        "RUNBOOK.md"
+      ]
+    },
+    {
+      "name": "Sintaxis de módulos Python",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "scope": "Archivos locales y ZIP; no sustituye ejecución cloud ni revisión pedagógica"
+}

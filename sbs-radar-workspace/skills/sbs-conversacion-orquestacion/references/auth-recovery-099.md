@@ -1,0 +1,7 @@
+# Recuperación099 — provisional, revisión independiente pendiente
+
+SK05/SK07 mediante CreatorZ. Reutiliza recuperación075 y contratos094; no cambia API, alcance ni credenciales. Baseline real:094 terminó antes de inicializar WorkspaceClient con cero generaciones/embeddings y sólo admisión/resultado. CLI corroboró rechazo de escritura de caché al renovar; se necesita login normal desde Terminal del usuario. No se atribuye fallo al proveedor.
+
+099 fija por hash el resultado/admisión originales y toda la clausura094. Rechaza cualquier intención, petición, contador positivo/ambiguo o estado de destino existente. Autentica normalmente antes de admitir, luego utiliza el módulo094 congelado cambiando únicamente el directorio destino. Original094 permanece intacto y su admisión impide relanzarlo. Límite agregado de inferencias094+099=4 y embeddings=2; no nueva cuota. El alias de ejecución se llama094-auth-recovery-099; los metadatos internos de fase094 conservan el plan probado.
+
+Siete pruebas offline comprueban estado original real, rechazo de actividad/ambigüedad/intención/readmisión; preflight pasa sin autenticar. Baseline es el fallo real094, no un ensayo sintético atribuido como medición conductual. Independiente debe verificar bypasses, conservación del alcance y autenticación previa a la admisión. No ejecutar sin su revisión. No prueba respuestas, calidad normativa, SQL, App ni E2E. Coste desconocido. Ninguna recuperación si hay posibles inferencias previas; conservar timeout ambiguo sin refund.

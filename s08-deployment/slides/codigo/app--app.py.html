@@ -1,0 +1,30 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>app/app.py · S08</title><style>body{font:18px system-ui;margin:32px;color:#122b43}header{max-width:1000px}a{color:#533afd}pre{font:14px/1.6 ui-monospace,monospace;overflow:auto;background:#f6f9fc;padding:20px}pre span{display:block}pre span:target{background:#fff0ad}pre a{display:inline-block;width:4ch;color:#65788a}p{line-height:1.5}</style><header><h1>app/app.py</h1><p>Código del repositorio local · Neptuno S08. Esta copia permite examinar el script sin ejecutarlo.</p><p>GitHub: acceso pendiente de verificar; los remotos configurados devolvieron 404 el 30/09/2026. No se presenta esta copia como una publicación remota.</p><p><a href="../../app/app.py">Abrir archivo original</a> · <a href="../S08-autonomo.html#21">Volver a las diapositivas</a></p></header><pre><span id="L1"><a href="#L1">1</a> &quot;&quot;&quot;UI servidor: el navegador nunca recibe credenciales Databricks.&quot;&quot;&quot;</span>
+<span id="L2"><a href="#L2">2</a> import os</span>
+<span id="L3"><a href="#L3">3</a> import uuid</span>
+<span id="L4"><a href="#L4">4</a> from flask import Flask, request, render_template_string</span>
+<span id="L5"><a href="#L5">5</a> from databricks.sdk import WorkspaceClient</span>
+<span id="L6"><a href="#L6">6</a> app=Flask(__name__)</span>
+<span id="L7"><a href="#L7">7</a> app.config[&#x27;MAX_CONTENT_LENGTH&#x27;]=12000</span>
+<span id="L8"><a href="#L8">8</a> PAGE=&#x27;&#x27;&#x27;&lt;!doctype html&gt;&lt;html lang=&quot;es&quot;&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&gt;&lt;title&gt;Neptuno · S08&lt;/title&gt;</span>
+<span id="L9"><a href="#L9">9</a> &lt;style&gt;body{font:18px system-ui;max-width:820px;margin:50px auto;padding:24px;color:#123}textarea{box-sizing:border-box;width:100%;height:110px;font:inherit}button{font:inherit;padding:12px;background:#e44332;color:white;border:0}pre{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.6;background:#f2f5f7;padding:20px}&lt;/style&gt;</span>
+<span id="L10"><a href="#L10">10</a> &lt;h1&gt;Copiloto de Datos Neptuno&lt;/h1&gt;&lt;p&gt;Consulta ventas por categoría y año, reposición o políticas documentadas.&lt;/p&gt;</span>
+<span id="L11"><a href="#L11">11</a> &lt;form method=&quot;post&quot;&gt;&lt;label for=&quot;q&quot;&gt;Pregunta&lt;/label&gt;&lt;textarea id=&quot;q&quot; name=&quot;question&quot; maxlength=&quot;2000&quot; required&gt;{{ question }}&lt;/textarea&gt;&lt;p&gt;&lt;button&gt;Consultar&lt;/button&gt;&lt;/p&gt;&lt;/form&gt;</span>
+<span id="L12"><a href="#L12">12</a> {% if answer %}&lt;h2&gt;Respuesta&lt;/h2&gt;&lt;pre&gt;{{ answer }}&lt;/pre&gt;{% endif %}</span>
+<span id="L13"><a href="#L13">13</a> &lt;p&gt;Acceso corporativo mediante Databricks Apps. El servidor consulta con la identidad de la App, no con los permisos individuales del usuario. No ingreses datos personales ni secretos.&lt;/p&gt;&lt;/html&gt;&#x27;&#x27;&#x27;</span>
+<span id="L14"><a href="#L14">14</a> @app.route(&#x27;/&#x27;,methods=[&#x27;GET&#x27;,&#x27;POST&#x27;])</span>
+<span id="L15"><a href="#L15">15</a> def index():</span>
+<span id="L16"><a href="#L16">16</a>     answer=&#x27;&#x27;;question=&#x27;&#x27;</span>
+<span id="L17"><a href="#L17">17</a>     if request.method==&#x27;POST&#x27;:</span>
+<span id="L18"><a href="#L18">18</a>         question=request.form.get(&#x27;question&#x27;,&#x27;&#x27;).strip()</span>
+<span id="L19"><a href="#L19">19</a>         if not question or len(question)&gt;2000:</span>
+<span id="L20"><a href="#L20">20</a>             return render_template_string(PAGE,question=question[:2000],answer=&#x27;Pregunta vacía o demasiado larga. Escribe entre 1 y 2000 caracteres y vuelve a intentar.&#x27;),400</span>
+<span id="L21"><a href="#L21">21</a>         try:</span>
+<span id="L22"><a href="#L22">22</a>             w=WorkspaceClient()</span>
+<span id="L23"><a href="#L23">23</a>             result=w.api_client.do(&#x27;POST&#x27;,f&quot;/serving-endpoints/{os.environ[&#x27;SERVING_ENDPOINT&#x27;]}/invocations&quot;,body={&#x27;input&#x27;:[{&#x27;role&#x27;:&#x27;user&#x27;,&#x27;content&#x27;:question}], &#x27;client_request_id&#x27;:str(uuid.uuid4())})</span>
+<span id="L24"><a href="#L24">24</a>             answer=&#x27;\n&#x27;.join(part.get(&#x27;text&#x27;,&#x27;&#x27;) for item in result.get(&#x27;output&#x27;,[]) for part in item.get(&#x27;content&#x27;,[]) if part.get(&#x27;type&#x27;)==&#x27;output_text&#x27;) or &#x27;Respuesta sin texto; revisa el endpoint.&#x27;</span>
+<span id="L25"><a href="#L25">25</a>         except Exception:</span>
+<span id="L26"><a href="#L26">26</a>             answer=&#x27;La consulta no pudo completarse. Revisa el estado del endpoint con el instructor.&#x27;</span>
+<span id="L27"><a href="#L27">27</a>     return render_template_string(PAGE,question=question,answer=answer)</span>
+<span id="L28"><a href="#L28">28</a> @app.get(&#x27;/health&#x27;)</span>
+<span id="L29"><a href="#L29">29</a> def health():return {&#x27;status&#x27;:&#x27;ok&#x27;}</span>
+</pre></html>

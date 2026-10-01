@@ -1,0 +1,2 @@
+# Required for executed literal SQL AST verification; fail closed if unavailable.
+sqlglot==30.20.0

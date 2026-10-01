@@ -1,0 +1,107 @@
+[
+  {
+    "id": "serving",
+    "title": "serving",
+    "url": "https://docs.databricks.com/aws/en/machine-learning/model-serving/",
+    "checked_on": "2026-09-26",
+    "type": "official_documentation"
+  },
+  {
+    "id": "endpoint",
+    "title": "endpoint",
+    "url": "https://docs.databricks.com/aws/en/machine-learning/model-serving/create-manage-serving-endpoints",
+    "checked_on": "2026-09-26",
+    "type": "official_documentation"
+  },
+  {
+    "id": "alias",
+    "title": "alias",
+    "url": "https://docs.databricks.com/aws/en/machine-learning/manage-model-lifecycle/",
+    "checked_on": "2026-09-26",
+    "type": "official_documentation"
+  },
+  {
+    "id": "bundles",
+    "title": "bundles",
+    "url": "https://docs.databricks.com/aws/en/dev-tools/bundles/",
+    "checked_on": "2026-09-26",
+    "type": "official_documentation"
+  },
+  {
+    "id": "env",
+    "title": "env",
+    "url": "https://docs.databricks.com/aws/en/dev-tools/bundles/deployment-modes",
+    "checked_on": "2026-09-26",
+    "type": "official_documentation"
+  },
+  {
+    "id": "auth",
+    "title": "auth",
+    "url": "https://docs.databricks.com/aws/en/dev-tools/databricks-apps/auth",
+    "checked_on": "2026-09-26",
+    "type": "official_documentation"
+  },
+  {
+    "id": "app",
+    "title": "app",
+    "url": "https://docs.databricks.com/aws/en/dev-tools/databricks-apps/model-serving",
+    "checked_on": "2026-09-26",
+    "type": "official_documentation"
+  },
+  {
+    "id": "inference",
+    "title": "inference",
+    "url": "https://docs.databricks.com/aws/en/ai-gateway/inference-tables-serving-endpoints",
+    "checked_on": "2026-09-26",
+    "type": "official_documentation"
+  },
+  {
+    "id": "monitor",
+    "title": "monitor",
+    "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/create-monitor-api",
+    "checked_on": "2026-09-26",
+    "type": "official_documentation"
+  },
+  {
+    "id": "gateway",
+    "title": "gateway",
+    "url": "https://docs.databricks.com/aws/en/ai-gateway/overview-serving-endpoints",
+    "checked_on": "2026-09-26",
+    "type": "official_documentation"
+  },
+  {
+    "id": "prompt",
+    "title": "prompt",
+    "url": "https://docs.databricks.com/aws/en/mlflow3/genai/prompt-version-mgmt/prompt-registry/",
+    "checked_on": "2026-09-26",
+    "type": "official_documentation"
+  },
+  {
+    "id": "exam",
+    "title": "exam",
+    "url": "https://www.databricks.com/sites/default/files/2026-03/Databricks-Certified-Generative-AI-Engineer-Associate-Exam-Guide-Mar26.pdf",
+    "checked_on": "2026-09-26",
+    "type": "official_documentation"
+  },
+  {
+    "id": "gcp",
+    "title": "gcp",
+    "url": "https://docs.cloud.google.com/vertex-ai/docs/predictions/overview",
+    "checked_on": "2026-09-26",
+    "type": "official_documentation"
+  },
+  {
+    "id": "azure",
+    "title": "azure",
+    "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-endpoints?view=azureml-api-2",
+    "checked_on": "2026-09-26",
+    "type": "official_documentation"
+  },
+  {
+    "id": "aws",
+    "title": "aws",
+    "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html",
+    "checked_on": "2026-09-26",
+    "type": "official_documentation"
+  }
+]

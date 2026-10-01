@@ -1,0 +1,35 @@
+{
+  "validated_at": "2026-09-28T19:28:48.629222+00:00",
+  "url": "https://ais08-neptuno-ui-7474657121564806.aws.databricksapps.com",
+  "method": "Chrome native accessibility via cua_repl",
+  "compute_status": "ACTIVE",
+  "app_status": "RUNNING",
+  "endpoint_status": "READY",
+  "endpoint_pending_config": false,
+  "login": "existing Google account selected successfully",
+  "sso_status": "consent_authorized_by_user_then_authenticated",
+  "live_browser_flow_pass": true,
+  "cases": [
+    {
+      "question": "¿Cuánto vendimos de Bebidas en 2026?",
+      "observed_answer": "Venta neta de Bebidas en 2026: 116024.88. Fuente: neptuno_manuel_arguelles.gold.ventas_por_categoria_mes.",
+      "pass": true
+    },
+    {
+      "question": "¿Cuánto vendimos de Bebidas?",
+      "observed_answer": "¿De qué año necesitas la venta neta? Indica también la categoría.",
+      "pass": true
+    }
+  ],
+  "blocker": null,
+  "authentication_bypassed": false,
+  "observation_source": "Live cua_repl Chrome accessibility tree: form submitted with setValue/click, then response read in subsequent getAXState. No API substitution.",
+  "recovery": "First consent callback returned Login error/403; Back to sign in completed authentication and rendered real form.",
+  "backend_identity": "App service principal; not per-user row isolation",
+  "app_source_sha256": "dfc6dbce6f563c9123b0033986cedfdfc9cc5625809388a4b754c0271048e965",
+  "limitations": [
+    "No per-request backend log correlation from browser (form does not expose request ID).",
+    "No new-user cohort test or remote CI.",
+    "Observed availability is point in time."
+  ]
+}

@@ -1,0 +1,29 @@
+# Ejemplo GitHub Actions: copiar a .github/workflows sólo tras configurar identidad OIDC.
+# No se ha ejecutado CI remoto; la validación local está en reports/lab-bundle-validation.json.
+name: validate-neptuno
+on: [pull_request, workflow_dispatch]
+permissions:
+  contents: read
+  id-token: write
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    environment: dev
+    env:
+      DATABRICKS_AUTH_TYPE: github-oidc
+      DATABRICKS_HOST: ${{ vars.DATABRICKS_HOST }}
+      DATABRICKS_CLIENT_ID: ${{ vars.DATABRICKS_CLIENT_ID }}
+      BUNDLE_VAR_catalog: ${{ vars.CATALOG }}
+      BUNDLE_VAR_schema: ${{ vars.SCHEMA }}
+      BUNDLE_VAR_app_name: ${{ vars.APP_NAME }}
+      BUNDLE_VAR_endpoint_name: ${{ vars.ENDPOINT_NAME }}
+      BUNDLE_VAR_warehouse_id: ${{ vars.WAREHOUSE_ID }}
+      BUNDLE_VAR_model_name: ${{ vars.MODEL_NAME }}
+      BUNDLE_VAR_model_version: ${{ vars.MODEL_VERSION }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: databricks/setup-cli@main
+      - run: databricks bundle validate -t dev
+        working-directory: s08-deployment/bundle
+      # Promoción: evaluaciones S06/S07 + smoke + aprobación environment prod.
+      # No desplegar automáticamente desde pull_request.

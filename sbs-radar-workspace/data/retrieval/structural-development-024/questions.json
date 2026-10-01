@@ -1,0 +1,38 @@
+[
+  {
+    "expected_answerability": "answerable",
+    "family": "cybersecurity",
+    "pair_id": "cyber-504",
+    "provision_ids": [
+      "art20.3"
+    ],
+    "query_id": "cyber-art20-3",
+    "question": "¿Cómo cambió la responsabilidad por pérdidas en operaciones digitales sin autenticación reforzada en el artículo 20.3 entre las versiones 4 y 5?",
+    "reference_id": "reused-reference-cyber-art20-3",
+    "task": "comparison"
+  },
+  {
+    "expected_answerability": "answerable",
+    "family": "market_conduct",
+    "pair_id": "market-3274",
+    "provision_ids": [
+      "art27"
+    ],
+    "query_id": "market-art27",
+    "question": "¿Qué cambió en el artículo 27 sobre seguros adicionales, contratación independiente y consentimiento del usuario entre las versiones 7 y 8?",
+    "reference_id": "reused-reference-market-art27",
+    "task": "comparison"
+  },
+  {
+    "expected_answerability": "answerable",
+    "family": "market_conduct",
+    "pair_id": "market-3274",
+    "provision_ids": [
+      "art29.1.4"
+    ],
+    "query_id": "market-art29-1-4",
+    "question": "¿Qué cambió en el artículo 29.1 numeral 4 sobre canales para pagos anticipados y adelantos de cuotas entre las versiones 7 y 8?",
+    "reference_id": "reused-reference-market-art29-1-4",
+    "task": "comparison"
+  }
+]

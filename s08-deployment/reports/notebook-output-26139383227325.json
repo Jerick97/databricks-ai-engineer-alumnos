@@ -1,0 +1,78 @@
+{
+  "error": "RuntimeError: ServiceError(error_code=, message='[TABLE_OR_VIEW_NOT_FOUND] The table or view `neptuno_manuel_arguelles`.`ais08_lab`.`inference_flat` cannot be found. Verify the spelling and correctness of the schema and catalog.\\nSearch path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `workspace`.`default`].\\nIf you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.\\nTo tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 1 pos 110')\n[Trace ID: 00-8a0802d5848308508173b6fb75b07596-ecb46f2e2a2d7e85-00]",
+  "error_trace": "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m\n\u001b[0;31mRuntimeError\u001b[0m                              Traceback (most recent call last)\nFile \u001b[0;32m<command-6979181574224906>, line 10\u001b[0m\n\u001b[1;32m      8\u001b[0m     \u001b[38;5;28;01mreturn\u001b[39;00m r\u001b[38;5;241m.\u001b[39mresult\u001b[38;5;241m.\u001b[39mdata_array \u001b[38;5;129;01mor\u001b[39;00m []\n\u001b[1;32m      9\u001b[0m raw\u001b[38;5;241m=\u001b[39mquery(\u001b[38;5;124mf\u001b[39m\u001b[38;5;124m'\u001b[39m\u001b[38;5;124mSELECT count(*) FROM \u001b[39m\u001b[38;5;132;01m{\u001b[39;00mschema\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124m.ais08_neptuno_payload\u001b[39m\u001b[38;5;124m'\u001b[39m)\n\u001b[0;32m---> 10\u001b[0m flat\u001b[38;5;241m=\u001b[39m\u001b[43mquery\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;124;43mf\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[38;5;124;43mSELECT count(*), count(DISTINCT request_id), sum(CASE WHEN parse_status=\u001b[39;49m\u001b[38;5;124;43m'\u001b[39;49m\u001b[38;5;124;43mparse_error\u001b[39;49m\u001b[38;5;124;43m'\u001b[39;49m\u001b[38;5;124;43m THEN 1 ELSE 0 END) FROM \u001b[39;49m\u001b[38;5;132;43;01m{\u001b[39;49;00m\u001b[43mschema\u001b[49m\u001b[38;5;132;43;01m}\u001b[39;49;00m\u001b[38;5;124;43m.inference_flat\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[43m)\u001b[49m\n\u001b[1;32m     11\u001b[0m \u001b[38;5;28;01massert\u001b[39;00m \u001b[38;5;28mint\u001b[39m(raw[\u001b[38;5;241m0\u001b[39m][\u001b[38;5;241m0\u001b[39m])\u001b[38;5;241m>\u001b[39m\u001b[38;5;241m0\u001b[39m \u001b[38;5;129;01mand\u001b[39;00m \u001b[38;5;28mint\u001b[39m(flat[\u001b[38;5;241m0\u001b[39m][\u001b[38;5;241m0\u001b[39m])\u001b[38;5;241m>\u001b[39m\u001b[38;5;241m0\u001b[39m,\u001b[38;5;124m'\u001b[39m\u001b[38;5;124mEsperar logs y ejecutar flatten; no inventar filas\u001b[39m\u001b[38;5;124m'\u001b[39m\n\u001b[1;32m     12\u001b[0m \u001b[38;5;28;01massert\u001b[39;00m flat[\u001b[38;5;241m0\u001b[39m][\u001b[38;5;241m0\u001b[39m]\u001b[38;5;241m==\u001b[39mflat[\u001b[38;5;241m0\u001b[39m][\u001b[38;5;241m1\u001b[39m],\u001b[38;5;124m'\u001b[39m\u001b[38;5;124mIDs duplicados\u001b[39m\u001b[38;5;124m'\u001b[39m\n\nFile \u001b[0;32m<command-6979181574224906>, line 7\u001b[0m, in \u001b[0;36mquery\u001b[0;34m(statement)\u001b[0m\n\u001b[1;32m      6\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;21mquery\u001b[39m(statement):\n\u001b[0;32m----> 7\u001b[0m     r\u001b[38;5;241m=\u001b[39m\u001b[43mlab_monitor\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43msql\u001b[49m\u001b[43m(\u001b[49m\u001b[43mw\u001b[49m\u001b[43m,\u001b[49m\u001b[43mstatement\u001b[49m\u001b[43m)\u001b[49m\n\u001b[1;32m      8\u001b[0m     \u001b[38;5;28;01mreturn\u001b[39;00m r\u001b[38;5;241m.\u001b[39mresult\u001b[38;5;241m.\u001b[39mdata_array \u001b[38;5;129;01mor\u001b[39;00m []\n\nFile \u001b[0;32m/Workspace/Shared/curso-databricks-ai-engineer/s08-validation/lab/lab_monitor.py:13\u001b[0m, in \u001b[0;36msql\u001b[0;34m(w, statement)\u001b[0m\n\u001b[1;32m     11\u001b[0m \u001b[38;5;28;01mwhile\u001b[39;00m r\u001b[38;5;241m.\u001b[39mstatus\u001b[38;5;241m.\u001b[39mstate\u001b[38;5;241m.\u001b[39mvalue \u001b[38;5;129;01min\u001b[39;00m {\u001b[38;5;124m'\u001b[39m\u001b[38;5;124mPENDING\u001b[39m\u001b[38;5;124m'\u001b[39m,\u001b[38;5;124m'\u001b[39m\u001b[38;5;124mRUNNING\u001b[39m\u001b[38;5;124m'\u001b[39m} \u001b[38;5;129;01mand\u001b[39;00m time\u001b[38;5;241m.\u001b[39mmonotonic()\u001b[38;5;241m<\u001b[39mdeadline:\n\u001b[1;32m     12\u001b[0m     time\u001b[38;5;241m.\u001b[39msleep(\u001b[38;5;241m2\u001b[39m);r\u001b[38;5;241m=\u001b[39mw\u001b[38;5;241m.\u001b[39mstatement_execution\u001b[38;5;241m.\u001b[39mget_statement(r\u001b[38;5;241m.\u001b[39mstatement_id)\n\u001b[0;32m---> 13\u001b[0m \u001b[38;5;28;01mif\u001b[39;00m r\u001b[38;5;241m.\u001b[39mstatus\u001b[38;5;241m.\u001b[39mstate\u001b[38;5;241m.\u001b[39mvalue\u001b[38;5;241m!=\u001b[39m\u001b[38;5;124m'\u001b[39m\u001b[38;5;124mSUCCEEDED\u001b[39m\u001b[38;5;124m'\u001b[39m:\u001b[38;5;28;01mraise\u001b[39;00m \u001b[38;5;167;01mRuntimeError\u001b[39;00m(\u001b[38;5;28mstr\u001b[39m(r\u001b[38;5;241m.\u001b[39mstatus\u001b[38;5;241m.\u001b[39merror))\n\u001b[1;32m     14\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m r\n\n\u001b[0;31mRuntimeError\u001b[0m: ServiceError(error_code=<ServiceErrorCode.BAD_REQUEST: 'BAD_REQUEST'>, message='[TABLE_OR_VIEW_NOT_FOUND] The table or view `neptuno_manuel_arguelles`.`ais08_lab`.`inference_flat` cannot be found. Verify the spelling and correctness of the schema and catalog.\\nSearch path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `workspace`.`default`].\\nIf you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.\\nTo tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 1 pos 110')",
+  "metadata": {
+    "cleanup_duration": 0,
+    "creator_user_name": "sociosdosmilveintiseis@gmail.com",
+    "effective_performance_target": "PERFORMANCE_OPTIMIZED",
+    "end_time": 1790477516508,
+    "execution_duration": 85000,
+    "job_id": 266916665551695,
+    "job_run_id": 26139383227325,
+    "number_in_job": 514473188287204,
+    "run_id": 514473188287204,
+    "run_name": "s08",
+    "run_page_url": "https://dbc-0410b264-20c7.cloud.databricks.com/?o=7474657121564806#job/266916665551695/run/514473188287204",
+    "run_type": "SUBMIT_RUN",
+    "setup_duration": 5000,
+    "start_time": 1790477426162,
+    "state": {
+      "life_cycle_state": "TERMINATED",
+      "result_state": "FAILED",
+      "state_message": "Workload failed, see run output for details",
+      "user_cancelled_or_timedout": false
+    },
+    "status": {
+      "state": "TERMINATED",
+      "termination_details": {
+        "code": "RUN_EXECUTION_ERROR",
+        "message": "Workload failed, see run output for details",
+        "type": "CLIENT_ERROR"
+      }
+    },
+    "tasks": [
+      {
+        "attempt_number": 1,
+        "cleanup_duration": 0,
+        "effective_performance_target": "PERFORMANCE_OPTIMIZED",
+        "end_time": 1790477516508,
+        "environment_key": "s08",
+        "execution_duration": 85000,
+        "notebook_task": {
+          "base_parameters": {
+            "catalogo": "neptuno_manuel_arguelles",
+            "warehouse_id": "828756322bedff37",
+            "sufijo": "neptuno",
+            "esquema": "ais08_lab",
+            "s07_schema": "s07_bda09634f2",
+            "modo": "verificar",
+            "rollout": "inspeccionar",
+            "source_sha256": "c880b932257fc2639f2304edefa679fce0584e67f9f5d210665168cd98ed99ac"
+          },
+          "notebook_path": "/Shared/curso-databricks-ai-engineer/s08-validation/notebook",
+          "source": "WORKSPACE"
+        },
+        "run_id": 514473188287204,
+        "run_page_url": "https://dbc-0410b264-20c7.cloud.databricks.com/?o=7474657121564806#job/266916665551695/run/514473188287204",
+        "setup_duration": 5000,
+        "start_time": 1790477426162,
+        "state": {
+          "life_cycle_state": "TERMINATED",
+          "result_state": "FAILED",
+          "state_message": "Workload failed, see run output for details",
+          "user_cancelled_or_timedout": false
+        },
+        "status": {
+          "state": "TERMINATED",
+          "termination_details": {
+            "code": "RUN_EXECUTION_ERROR",
+            "message": "Workload failed, see run output for details",
+            "type": "CLIENT_ERROR"
+          }
+        },
+        "task_key": "s08"
+      }
+    ]
+  },
+  "notebook_output": {}
+}

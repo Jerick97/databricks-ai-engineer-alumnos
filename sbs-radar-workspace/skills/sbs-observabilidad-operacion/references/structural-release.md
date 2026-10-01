@@ -1,0 +1,11 @@
+# Preparación y promoción estructural022
+
+API `build_real_hooks(..., structural_evidence=True)` prepara wrappers SK03 completos desde pares/fuentes actuales, sin inferencia. `structural_evidence=False` conserva generación legacy explícita para compatibilidad. SK03 guarda versión1, wrappers originales/derivados, proyecciones citables propias y anotaciones IA separadas. SK06 cura esas provisiones y fija el hash de wrappers en configuración; no publica tablas ni certificados.
+
+`load_release` verifica cierre previo y reproduce cada wrapper determinista desde los originales. Exige igualdad completa (mapas incluidos), hash de configuración, pares y provisiones proyectadas antes del swap. Un sobre resealado con mapping alterado se rechaza. Versión/hash ausentes de forma contradictoria no se tratan como legacy. Algoritmos incompatibles requieren preparación nueva; no reinterpretar silenciosamente un release existente con otra semántica.
+
+`operations.structural_evidence` proyecta notas, marcadores, continuaciones, exclusiones y expansiones a Provision con identidad propia y texto continuo exacto. EvidencePack recibe campos cerrados sin pages/synthetic adicionales; metadata paralela conserva páginas y tipo. Original_comparison no se altera en almacenamiento. El foco estructural recompone una comparación tipada sobre unidades verificadas, no sobre páginas renombradas.
+
+SK04 mantiene inputs/modelo/caché exactos de rawpages. Semántica estructural no tiene nuevos embeddings: pending_not_built explícito. Fuente nueva sin vector exacto continúa EMBEDDINGS_MISSING conforme contrato existente. Las expansiones posteriores no acreditan mejora de recuperación. Genie continúa no disponible para release nuevo no publicado.
+
+Pruebas022: seis PDFs sellados y135vectores locales, staging/publicación local, loader, HTTP TestClient, mapas resealados rechazados antes swap con snapshot/sesión anterior conservados, legacy y suplemento4036fuera del corpus sellado. No red/SQL/modelos/browser; no E2E cloud/UI ni aceptación normativa. Fallo de test histórico de conteo actualizado para contar solo anotaciones art1 (dos), porque ahora hay además exclusiones citables; no relajar su validación literal.

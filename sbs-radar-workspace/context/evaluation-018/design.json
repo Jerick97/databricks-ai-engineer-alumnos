@@ -1,0 +1,79 @@
+{
+  "protocol_id": "sbs-family-evaluation-018-design-v1",
+  "status": "pending_refs",
+  "effective_frozen_protocol": null,
+  "scope": "Preregistered design for future held-out evaluation; not a completed benchmark",
+  "families": [
+    "cybersecurity",
+    "market_conduct"
+  ],
+  "retrieval": {
+    "k": [
+      5,
+      20
+    ],
+    "primary_k": 5,
+    "candidate_k": 20,
+    "variants": [
+      "lexical",
+      "vector",
+      "rrf",
+      "rrf_rerank"
+    ],
+    "thresholds": {
+      "recall": 0.9,
+      "ndcg": 0.8,
+      "counterparts": 1.0
+    },
+    "aggregation": "macro per query within each family; counterpart gate additionally every eligible comparison query; no pooling families",
+    "diagnostic_k": 20,
+    "missing": "not_evaluated; never omit missing queries from acceptance denominator",
+    "gain": "linear nonnegative grades; 0 irrelevant, 1 relevant supporting context, 2 directly answers material issue",
+    "rationale": {
+      "k5": "Bound the first evidence set to five passages for reviewer inspection; independent of known three-query scores. Both sides must fit or expose a budget failure; never trim qrels to force feasibility.",
+      "k20": "Candidate-stage diagnostic to separate candidate recall from reranking; not a second chance acceptance gate.",
+      "recall": "Prospective retrieval objective: retrieve at least 90% of relevant evidence on average per family in the primary budget; differs from change-detector recall95%.",
+      "ndcg": "Prospective ordering utility objective of at least80% ideal linear-gain DCG; not an empirically established safety threshold.",
+      "counterparts": "Every comparison needs at least one verified passage on each side; perfect counterpart presence does not imply all relevant evidence or entailment."
+    }
+  },
+  "change_gates": {
+    "recall": 0.95,
+    "precision": 0.9,
+    "critical_omitted": 0,
+    "citations_faithful_localizable": 1.0,
+    "insufficiency_flagged": 1.0,
+    "median_paired_time_saving": 0.3
+  },
+  "partitions": {
+    "unit": "complete before/after pair and connected document/version/derivation/neighbor/amendment component",
+    "acceptance_pairs": [],
+    "development": "Known pilot and Astra003/004/005 are exposed development/review evidence; do not relabel as reserved",
+    "target_pair_count": "up to10 per family, not minimum10",
+    "unknown_lineage": "not_evaluated until resolved; absence of byte overlap alone is insufficient"
+  },
+  "freeze_rules": [
+    "Do not modify thresholds after viewing new held-out outputs. Any revision creates a new design and preserves prior result.",
+    "Populate real original/corpus/question hashes, qrels and counterpart maps, complete tune/holdout partitions and provenance before freeze_protocol.",
+    "freeze_protocol remains unchanged; pending empty references must not be passed as valid frozen protocol.",
+    "Gold may not be solely produced/approved by the evaluated model; preserve reviewer independence, AI provenance and disagreements. AI pilot permitted; expert-reference acceptance remains separate."
+  ],
+  "inputs": {
+    "skills/sbs-evaluacion-jueces/SKILL.md": "46e9f9851d46b2ec95f61dabdaed6ec30cc28799f8c8e017615d87dcff6d2b66",
+    "docs/12-spec-agente-v0.2.md": "7a028d0881c630950f69949229011238264fcaef3b70109776b3458c03929344",
+    "docs/13-plan-implementacion-skills.md": "eb617af73e77a339ac9ad0695503b84e2bf2529750db1f58681f9769e13d4f75",
+    "src/sbs/evaluation/__init__.py": "04bc6a21e21f35371a2c8f96bc03d7b7f0487bd9b4c470238f66d51a70c5acec",
+    "tests/unit/test_evaluation.py": "ddccb9e17b471124e18dc1c68730a8e8cdcb91b935df2142803ba02b250c0557",
+    "runs/sk04-real-001-report.json": "5571b244f9fd920ea3a9c8b9748b1bea971b07348a3f9aac3b32d6405c664de3",
+    "runs/sk04-real-001-protocol.json": "85103535452d4872042e4aee49c5b1452fb8e44cc19afc40e73b057349a0c572",
+    "context/holdout-source-candidates.json": "43cb17ac1f9f2e8d25ef14343f3c38e4a9fd39a871c3f00551501157c977d430",
+    "runs/sk02-holdout-report.md": "24a1b513f946e283855a38c0afa48a2a3737860809cfabdcb5f0a3ce56df3c62",
+    "runs/astra-normative-review-003.json": "590a8f400674d48a0d2b80e83d04c6ba4c5b0b84cdde8c8432f609059552ff24",
+    "runs/astra-normative-review-004.json": "5b19f6f7f0860e01d37246bdfc35626ce1d72c41bddc2f3c6b778ec4296d4816",
+    "runs/astra-normative-review-005.json": "6c0285dad87b60726208e4f335d1bb62b09aacb37f4e2dc5f66e819edefca88e",
+    "runs/sk02-holdout-manifest.json": "72b1680484d27ce683199881a6098b3354f9b815b3f9a7589882d291bcc859a7",
+    "runs/sk02-holdout-counterparts-manifest.json": "7aa13cd4f6cb2c1a310399ba3ce79871ffc9c98793d8aa889c6cabe03e9727df",
+    "runs/sk02-holdout-0771-manifest.json": "6c807d55344f5e4cc6dee690baac7c62094f745c3f9f3cfbee710fe256843986"
+  },
+  "cost": null
+}

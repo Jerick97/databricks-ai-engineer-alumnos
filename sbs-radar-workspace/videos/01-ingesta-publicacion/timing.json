@@ -1,0 +1,49 @@
+{
+  "duration": 194.833,
+  "fps": 30,
+  "voice": "ef_dora",
+  "chapters": [
+    {
+      "id": "scene01",
+      "start": 0,
+      "duration": 28.5,
+      "voice_duration": 26.986666666666668,
+      "title": "El objetivo: conservar evidencia"
+    },
+    {
+      "id": "scene02",
+      "start": 28.5,
+      "duration": 28.833,
+      "voice_duration": 27.30666666666667,
+      "title": "Capturar y preservar el original"
+    },
+    {
+      "id": "scene03",
+      "start": 57.333,
+      "duration": 31.333,
+      "voice_duration": 29.802666666666667,
+      "title": "Del PDF a pasajes verificables"
+    },
+    {
+      "id": "scene04",
+      "start": 88.667,
+      "duration": 30.2,
+      "voice_duration": 28.672,
+      "title": "Qué contiene este piloto"
+    },
+    {
+      "id": "scene05",
+      "start": 118.867,
+      "duration": 38.2,
+      "voice_duration": 36.693333333333335,
+      "title": "Preparar dos formas de consultar"
+    },
+    {
+      "id": "scene06",
+      "start": 157.067,
+      "duration": 37.767,
+      "voice_duration": 36.266666666666666,
+      "title": "Publicar no equivale a actualizar la App"
+    }
+  ]
+}

@@ -1,0 +1,461 @@
+<html lang="es"><meta charset="utf-8"><title>Guion docente S08</title><style>body{max-width:1000px;margin:40px auto;font:18px/1.6 system-ui}pre{white-space:pre-wrap}</style><h1>Guion docente S08</h1><pre># S08 · Guion por diapositiva
+
+Lunes 28 de septiembre de 2026. Agenda de 180 minutos reloj estimados, incluida pausa de 10 minutos. Abrir GUIA-DOCENTE.md para el recorrido técnico y CONSIGNA.md para aceptación; agenda.json contiene distribución de teoría, demo, práctica y recuperación. Las notas no afirman que las salidas esperadas ya se observaron.
+
+&lt;a id=&quot;slide-01&quot;&gt;&lt;/a&gt;
+## slide-01 · El copiloto termina cuando otro usuario puede operarlo
+
+Retomar S05 agente, S06 evaluación y S07 controles. Preguntar qué se rompe si cerramos nuestro notebook: sesión, credenciales, variables y cómputo. Hoy empaquetamos esas dependencias y conservamos la evidencia. El objetivo es un despliegue de laboratorio reproducible; la autorización productiva requiere criterios del negocio.
+
+Contrato: S08-FINAL, S08-CONTINUITY.
+Abrir: CONSIGNA.md#cp8. Evidencia de aceptación: Manifiesto enlaza endpoint invocable, App, registro UC, evaluación y gobierno previos, inferencias, monitor y rollback; todo resultado tiene fecha e identidad; faltante bloquea cierre funcional.
+Abrir: CONSIGNA.md#cp0. Evidencia de aceptación: Inventario nombra tablas, agente S05, benchmark S06 y controles S07; faltantes explícitos.
+
+&lt;a id=&quot;slide-02&quot;&gt;&lt;/a&gt;
+## slide-02 · La clase conecta una llamada con su evidencia
+
+Agenda estimada. El instructor prepara los recursos cloud antes de entrar: creación del endpoint, App y primera actualización del monitor pueden superar un bloque. La práctica utiliza recursos individuales o recursos docentes accesibles; los resultados previos se identifican por ejecución. Consultar agenda.json para el desglose definitivo.
+
+Contrato: S08-FINAL.
+Abrir: CONSIGNA.md#cp8. Evidencia de aceptación: Manifiesto enlaza endpoint invocable, App, registro UC, evaluación y gobierno previos, inferencias, monitor y rollback; todo resultado tiene fecha e identidad; faltante bloquea cierre funcional.
+
+&lt;a id=&quot;slide-03&quot;&gt;&lt;/a&gt;
+## slide-03 · Cada entrega debe permitir repetir una decisión
+
+Mostrar CONSIGNA.md antes de la demo. Un enlace que abre es necesario pero no suficiente: el evaluador debe reconstruir con qué versión respondió el agente, qué controles aplicaron y qué se haría si la calidad cae. Separar archivos proporcionados de salidas que generará el alumno.
+
+Contrato: S08-FINAL.
+Abrir: CONSIGNA.md#cp8. Evidencia de aceptación: Manifiesto enlaza endpoint invocable, App, registro UC, evaluación y gobierno previos, inferencias, monitor y rollback; todo resultado tiene fecha e identidad; faltante bloquea cierre funcional.
+
+&lt;a id=&quot;slide-04&quot;&gt;&lt;/a&gt;
+## slide-04 · Neptuno conserva datos, herramientas y controles
+
+No cambiar de proyecto al llegar a producción. Si alguna tabla o función falta, recuperar su sesión. No sustituir una tool por una respuesta escrita a mano. El empaquetado cambia el acceso técnico a los datos: el resultado de negocio debe pasar nuevamente las pruebas de regresión.
+
+Contrato: S08-CONTINUITY.
+Abrir: CONSIGNA.md#cp0. Evidencia de aceptación: Inventario nombra tablas, agente S05, benchmark S06 y controles S07; faltantes explícitos.
+
+&lt;a id=&quot;slide-05&quot;&gt;&lt;/a&gt;
+## slide-05 · Una solicitud cruza tres identidades diferentes
+
+Dibujar las fronteras: navegador → backend de App → endpoint → datos/herramientas. Una App con identidad propia no hereda automáticamente todos los permisos de cada usuario. Debemos elegir app authorization o user authorization conscientemente y comprobar los permisos en cada salto. No poner un PAT en JavaScript.
+
+Contrato: S08-APPS, S08-CONTINUITY.
+Abrir: CONSIGNA.md#cp4. Evidencia de aceptación: UI consulta endpoint desde backend autenticado; permisos identidad app explícitos; no afirma propagación de ACL del usuario si usa SP.
+Abrir: CONSIGNA.md#cp0. Evidencia de aceptación: Inventario nombra tablas, agente S05, benchmark S06 y controles S07; faltantes explícitos.
+Fuentes: https://docs.databricks.com/aws/en/dev-tools/databricks-apps/auth
+
+&lt;a id=&quot;slide-06&quot;&gt;&lt;/a&gt;
+## slide-06 · Antes de desplegar comprobamos el acceso necesario
+
+Explicar workspace, catálogo, esquema y warehouse al aparecer. Verificar capacidad de registrar modelos, crear endpoint/App y tablas. Completar las variables de alumno desde la guía; las coordenadas docentes son evidencia, no credenciales compartidas. Un warehouse detenido puede arrancar al ejecutar SQL.
+
+Contrato: S08-FINAL.
+Abrir: CONSIGNA.md#cp8. Evidencia de aceptación: Manifiesto enlaza endpoint invocable, App, registro UC, evaluación y gobierno previos, inferencias, monitor y rollback; todo resultado tiene fecha e identidad; faltante bloquea cierre funcional.
+
+&lt;a id=&quot;slide-07&quot;&gt;&lt;/a&gt;
+## slide-07 · Model Serving reúne tres tipos de servicio
+
+Nuestro agente se empaqueta como artefacto custom y llama a un modelo base. Distinguir el endpoint del agente y el endpoint del LLM: tienen contratos, permisos y costos diferentes. La categoría seleccionada determina qué opciones de escalado y Gateway están disponibles.
+
+Contrato: S08-SERVING.
+Abrir: CONSIGNA.md#cp2. Evidencia de aceptación: Distingue modelos custom, foundation y external; endpoint listo e invocación observada; explica cold start.
+Fuentes: https://docs.databricks.com/aws/en/machine-learning/model-serving/
+
+&lt;a id=&quot;slide-08&quot;&gt;&lt;/a&gt;
+## slide-08 · Serverless elimina servidores que administrar, no la espera
+
+No prometer que todo endpoint soporta scale-to-zero ni latencia de milisegundos para un agente con LLM y SQL. Comparar una consulta interactiva y un proceso batch nocturno. Medir primera solicitud separada de solicitudes calientes. La configuración docente y el ensayo deben revelar el tradeoff.
+
+Contrato: S08-SERVING.
+Abrir: CONSIGNA.md#cp2. Evidencia de aceptación: Distingue modelos custom, foundation y external; endpoint listo e invocación observada; explica cold start.
+Fuentes: https://docs.databricks.com/aws/en/machine-learning/model-serving/create-manage-serving-endpoints
+
+&lt;a id=&quot;slide-09&quot;&gt;&lt;/a&gt;
+## slide-09 · La latencia total suma más que el tiempo del modelo
+
+Ejemplo didáctico: una respuesta puede demorarse porque el warehouse arranca, aunque el LLM responda rápido. Mostrar timestamps de cliente y servicio cuando estén disponibles. No restar latencias tomadas con relojes no sincronizados ni comparar p95 de unas pocas llamadas como SLA.
+
+Contrato: S08-SERVING, S08-MONITOR.
+Abrir: CONSIGNA.md#cp2. Evidencia de aceptación: Distingue modelos custom, foundation y external; endpoint listo e invocación observada; explica cold start.
+Abrir: CONSIGNA.md#cp6. Evidencia de aceptación: Monitor refrescado sobre tabla Delta aplanada, baseline y ventana definidos, métricas observadas; drift no se equipara a mala respuesta.
+
+&lt;a id=&quot;slide-10&quot;&gt;&lt;/a&gt;
+## slide-10 · Un notebook depende de un contexto que Serving no tiene
+
+Abrir el módulo del agente del laboratorio. Señalar qué acceso Spark fue reemplazado por SQL Statement Execution y dónde se valida la entrada. El código servido no debe necesitar que el docente haya ejecutado una celda previamente. Las dependencias quedan declaradas; para producción, congelar además el entorno resuelto y repetir las pruebas.
+
+Contrato: S08-DEPLOY, S08-CONTINUITY.
+Abrir: CONSIGNA.md#cp1. Evidencia de aceptación: Modelo empaquetado conserva código, dependencias, recursos e input example; distingue código Apps/Jobs de modelo UC.
+Abrir: CONSIGNA.md#cp0. Evidencia de aceptación: Inventario nombra tablas, agente S05, benchmark S06 y controles S07; faltantes explícitos.
+
+&lt;a id=&quot;slide-11&quot;&gt;&lt;/a&gt;
+## slide-11 · Empaquetar el agente conserva su contrato de entrada y salida
+
+ResponsesAgent es una interfaz; no añade automáticamente razonamiento ni permisos. Validar una pregunta legítima, una ambigua y una maliciosa con el mismo contrato. El cuerpo de la petición debe coincidir con la firma registrada: messages de Chat Completions e input de Responses no son intercambiables.
+
+Contrato: S08-DEPLOY.
+Abrir: CONSIGNA.md#cp1. Evidencia de aceptación: Modelo empaquetado conserva código, dependencias, recursos e input example; distingue código Apps/Jobs de modelo UC.
+
+&lt;a id=&quot;slide-12&quot;&gt;&lt;/a&gt;
+## slide-12 · Registrar una versión fija permite repetir la prueba
+
+Mostrar el artefacto registrado y los recursos declarados. La versión es inmutable; el alias se puede mover. Si falla el test local del modelo empaquetado, no continuar creando endpoints en bucle. Revisar imports, paquetes, firma y permisos. Registrar el error y la corrección.
+
+Contrato: S08-DEPLOY, S08-CONTINUITY.
+Abrir: CONSIGNA.md#cp1. Evidencia de aceptación: Modelo empaquetado conserva código, dependencias, recursos e input example; distingue código Apps/Jobs de modelo UC.
+Abrir: CONSIGNA.md#cp0. Evidencia de aceptación: Inventario nombra tablas, agente S05, benchmark S06 y controles S07; faltantes explícitos.
+Fuentes: https://docs.databricks.com/aws/en/machine-learning/manage-model-lifecycle/
+
+&lt;a id=&quot;slide-13&quot;&gt;&lt;/a&gt;
+## slide-13 · Deploy model y deploy code responden preguntas distintas
+
+Ambos patrones tienen usos válidos. Promover el mismo artefacto conserva lo evaluado; ejecutar código en cada entorno también valida sus dependencias y datos, pero puede producir artefactos diferentes. Decidir qué congelar: código, prompt, modelo, paquetes y referencias. Evitar presentar un patrón como siempre superior.
+
+Contrato: S08-DEPLOY.
+Abrir: CONSIGNA.md#cp1. Evidencia de aceptación: Modelo empaquetado conserva código, dependencias, recursos e input example; distingue código Apps/Jobs de modelo UC.
+
+&lt;a id=&quot;slide-14&quot;&gt;&lt;/a&gt;
+## slide-14 · Un endpoint listo todavía necesita una prueba funcional
+
+READY significa disponible para recibir solicitudes; no prueba calidad. Comparar con la salida CP1 y registrar request_id cuando el servicio lo exponga. Un 401/403 dirige a autenticación/permisos; un error de modelo dirige a sus logs. No mostrar valores secretos en capturas.
+
+Contrato: S08-SERVING, S08-FINAL.
+Abrir: CONSIGNA.md#cp2. Evidencia de aceptación: Distingue modelos custom, foundation y external; endpoint listo e invocación observada; explica cold start.
+Abrir: CONSIGNA.md#cp8. Evidencia de aceptación: Manifiesto enlaza endpoint invocable, App, registro UC, evaluación y gobierno previos, inferencias, monitor y rollback; todo resultado tiene fecha e identidad; faltante bloquea cierre funcional.
+Fuentes: https://docs.databricks.com/aws/en/machine-learning/model-serving/create-manage-serving-endpoints
+
+&lt;a id=&quot;slide-15&quot;&gt;&lt;/a&gt;
+## slide-15 · Los fallos enseñan qué frontera revisar primero
+
+Actividad de dos minutos: asignar un error al salto navegador/App/endpoint/warehouse. No reintentar ciegamente una operación con efectos. Para consultas de sólo lectura, usar reintentos limitados, backoff y timeout; devolver al usuario un mensaje útil sin stacktrace sensible.
+
+Contrato: S08-SERVING, S08-APPS.
+Abrir: CONSIGNA.md#cp2. Evidencia de aceptación: Distingue modelos custom, foundation y external; endpoint listo e invocación observada; explica cold start.
+Abrir: CONSIGNA.md#cp4. Evidencia de aceptación: UI consulta endpoint desde backend autenticado; permisos identidad app explícitos; no afirma propagación de ACL del usuario si usa SP.
+
+&lt;a id=&quot;slide-16&quot;&gt;&lt;/a&gt;
+## slide-16 · Un alias nombra una versión, no reparte tráfico
+
+Primero distinguir capacidades: la documentación de Gateway marca traffic splitting para custom endpoints, no para endpoints de agentes administrados. El laboratorio principal es agent/v1/responses y no admite split. CP3 usa un endpoint custom complementario que consulta ventas reales de UC; no es otro agente. Demostrar que mover un alias no necesariamente actualiza un endpoint ya fijado a una versión. Leer la versión del alias y la configuración del endpoint por separado. Nuestro procedimiento resuelve el alias y configura explícitamente la versión deseada antes de probarla.
+
+Contrato: S08-ROLLOUT.
+Abrir: CONSIGNA.md#cp3. Evidencia de aceptación: Versiones numéricas resueltas; plan90/10 suma100; rollback restaura configuración y se verifica. Alias no mueve tráfico automáticamente.
+Fuentes: https://docs.databricks.com/aws/en/machine-learning/manage-model-lifecycle/ · https://docs.databricks.com/aws/en/machine-learning/model-serving/create-manage-serving-endpoints
+
+&lt;a id=&quot;slide-17&quot;&gt;&lt;/a&gt;
+## slide-17 · Canary limita exposición y A/B compara alternativas
+
+Un split 90/10 es configuración probabilística, no garantía de nueve y una respuestas en diez llamadas. A/B requiere diseño de experimento: unidad de asignación, ventana, muestra y criterio. En CP3 las dos versiones custom implementan la misma consulta real: sólo se demuestra mecánica de enrutamiento y rollback, no superioridad de calidad.
+
+Contrato: S08-ROLLOUT.
+Abrir: CONSIGNA.md#cp3. Evidencia de aceptación: Versiones numéricas resueltas; plan90/10 suma100; rollback restaura configuración y se verifica. Alias no mueve tráfico automáticamente.
+Fuentes: https://docs.databricks.com/aws/en/machine-learning/model-serving/create-manage-serving-endpoints
+
+&lt;a id=&quot;slide-18&quot;&gt;&lt;/a&gt;
+## slide-18 · Decidimos el rollback antes de observar el resultado
+
+Ejemplo de política didáctica: cualquier fuga confirmada detiene la promoción; errores y latencia se comparan contra un baseline del mismo entorno. No inventar umbrales universales. El alumno debe escribir criterio, responsable y versión anterior antes de lanzar el canary.
+
+Contrato: S08-ROLLOUT, S08-CONTINUITY.
+Abrir: CONSIGNA.md#cp3. Evidencia de aceptación: Versiones numéricas resueltas; plan90/10 suma100; rollback restaura configuración y se verifica. Alias no mueve tráfico automáticamente.
+Abrir: CONSIGNA.md#cp0. Evidencia de aceptación: Inventario nombra tablas, agente S05, benchmark S06 y controles S07; faltantes explícitos.
+
+&lt;a id=&quot;slide-19&quot;&gt;&lt;/a&gt;
+## slide-19 · La práctica termina al restaurar y volver a consultar
+
+No basta guardar el JSON del PUT; volver a consultar el endpoint. Diferenciar rollback del tráfico, rollback del prompt y rollback de datos. Preservar snapshots previos; trabajar exclusivamente sobre el endpoint del laboratorio. No alterar un servicio compartido del curso.
+
+Contrato: S08-ROLLOUT.
+Abrir: CONSIGNA.md#cp3. Evidencia de aceptación: Versiones numéricas resueltas; plan90/10 suma100; rollback restaura configuración y se verifica. Alias no mueve tráfico automáticamente.
+
+&lt;a id=&quot;slide-20&quot;&gt;&lt;/a&gt;
+## slide-20 · La pausa deja una versión estable para continuar
+
+Pausa real; no llenar estos diez minutos con explicación. Antes de pausar, confirmar que ningún alumno cambia recursos ajenos y que el instructor tiene una ejecución conocida. Un recurso todavía iniciándose se registra pendiente, no aprobado.
+
+Contrato: S08-FINAL.
+Abrir: CONSIGNA.md#cp8. Evidencia de aceptación: Manifiesto enlaza endpoint invocable, App, registro UC, evaluación y gobierno previos, inferencias, monitor y rollback; todo resultado tiene fecha e identidad; faltante bloquea cierre funcional.
+
+&lt;a id=&quot;slide-21&quot;&gt;&lt;/a&gt;
+## slide-21 · Una App convierte la API en una tarea para una persona
+
+Abrir app/ y explicar qué archivo inicia el servidor y cómo recibe configuración. La UI no debe exponer secretos, logs internos ni resultados crudos de herramientas. El navegador conversa con el backend autenticado, no con un PAT incrustado hacia el endpoint.
+
+Contrato: S08-APPS.
+Abrir: CONSIGNA.md#cp4. Evidencia de aceptación: UI consulta endpoint desde backend autenticado; permisos identidad app explícitos; no afirma propagación de ACL del usuario si usa SP.
+Fuentes: https://docs.databricks.com/aws/en/dev-tools/databricks-apps/model-serving
+
+&lt;a id=&quot;slide-22&quot;&gt;&lt;/a&gt;
+## slide-22 · Autenticar al usuario no garantiza filtrar sus datos
+
+En el laboratorio describir con exactitud el modo implementado. Si todos ven el mismo corpus autorizado con identidad de App, no afirmar seguridad por fila para cada usuario. La identidad del usuario no se transmite automáticamente por todos los saltos. Una ACL al endpoint controla invocación, no por sí sola autorización a cada dato.
+
+Contrato: S08-APPS, S08-CONTINUITY.
+Abrir: CONSIGNA.md#cp4. Evidencia de aceptación: UI consulta endpoint desde backend autenticado; permisos identidad app explícitos; no afirma propagación de ACL del usuario si usa SP.
+Abrir: CONSIGNA.md#cp0. Evidencia de aceptación: Inventario nombra tablas, agente S05, benchmark S06 y controles S07; faltantes explícitos.
+Fuentes: https://docs.databricks.com/aws/en/dev-tools/databricks-apps/auth
+
+&lt;a id=&quot;slide-23&quot;&gt;&lt;/a&gt;
+## slide-23 · Los recursos declarados evitan credenciales pegadas al código
+
+Mostrar app.yaml y recursos de la aplicación. Distinguir un nombre de endpoint de una credencial. No poner valores de tokens en widgets, repositorio ni HTML. Si el SDK no autentica, corregir configuración del servicio; no resolver la falla pegando el token del docente.
+
+Contrato: S08-APPS.
+Abrir: CONSIGNA.md#cp4. Evidencia de aceptación: UI consulta endpoint desde backend autenticado; permisos identidad app explícitos; no afirma propagación de ACL del usuario si usa SP.
+Fuentes: https://docs.databricks.com/aws/en/dev-tools/databricks-apps/model-serving · https://docs.databricks.com/aws/en/dev-tools/databricks-apps/auth
+
+&lt;a id=&quot;slide-24&quot;&gt;&lt;/a&gt;
+## slide-24 · Probamos la interfaz con éxito y con error
+
+Comparar la respuesta de la App con la llamada de CP2. Probar entrada vacía y una petición fuera de política. Verificar que el mensaje visible no muestra stacktrace ni credenciales y que el botón permite volver a intentar. Guardar evidencia del servicio y de la UI por separado.
+
+Contrato: S08-APPS, S08-FINAL.
+Abrir: CONSIGNA.md#cp4. Evidencia de aceptación: UI consulta endpoint desde backend autenticado; permisos identidad app explícitos; no afirma propagación de ACL del usuario si usa SP.
+Abrir: CONSIGNA.md#cp8. Evidencia de aceptación: Manifiesto enlaza endpoint invocable, App, registro UC, evaluación y gobierno previos, inferencias, monitor y rollback; todo resultado tiene fecha e identidad; faltante bloquea cierre funcional.
+
+&lt;a id=&quot;slide-25&quot;&gt;&lt;/a&gt;
+## slide-25 · Una llamada correcta puede dejar evidencia incompleta
+
+La escritura de tablas de inferencia es asíncrona y puede tardar. La ausencia momentánea de filas no implica que no haya tráfico. Anotar rango temporal y request_id, revisar configuración y esperar la ventana indicada antes de concluir una falla. No reemplazar una tabla vacía por filas inventadas.
+
+Contrato: S08-INFERENCE.
+Abrir: CONSIGNA.md#cp5. Evidencia de aceptación: Identifica request real, JSON parseado y columnas de tiempo/latencia/estado; distingue tabla vacía, retraso e ingestión fallida.
+
+&lt;a id=&quot;slide-26&quot;&gt;&lt;/a&gt;
+## slide-26 · Inference Tables conservan el intercambio para analizarlo
+
+Usar AI Gateway-enabled inference tables vigentes. No modificar el schema de la tabla administrada. La tabla cruda contiene información potencialmente sensible: aplicar acceso y retención S07; para compartir resultados, exportar sólo métricas y casos sintéticos autorizados.
+
+Contrato: S08-INFERENCE.
+Abrir: CONSIGNA.md#cp5. Evidencia de aceptación: Identifica request real, JSON parseado y columnas de tiempo/latencia/estado; distingue tabla vacía, retraso e ingestión fallida.
+Fuentes: https://docs.databricks.com/aws/en/ai-gateway/inference-tables-serving-endpoints
+
+&lt;a id=&quot;slide-27&quot;&gt;&lt;/a&gt;
+## slide-27 · Aplanar JSON convierte el intercambio en columnas medibles
+
+Abrir la transformación real del laboratorio. Leer primero el schema observado: no copiar rutas JSON de una API distinta. Separar dato ausente de cero; conservar timestamp y versión. Deduplicar por identificador cuando la entrega de logs pueda repetir registros. No confundir longitud en caracteres con tokens facturados.
+
+Contrato: S08-INFERENCE.
+Abrir: CONSIGNA.md#cp5. Evidencia de aceptación: Identifica request real, JSON parseado y columnas de tiempo/latencia/estado; distingue tabla vacía, retraso e ingestión fallida.
+
+&lt;a id=&quot;slide-28&quot;&gt;&lt;/a&gt;
+## slide-28 · Una fila defectuosa debe ser visible, no desaparecer
+
+Ejercicio: un cambio de formato mueve el texto de la respuesta. Si el flatten produce null, el dashboard no debe reportar respuesta de longitud cero como éxito. Preservar conteo de entradas, duplicados y errores de extracción. Un fixture de fallo es prueba de transformación, no tráfico real.
+
+Contrato: S08-INFERENCE.
+Abrir: CONSIGNA.md#cp5. Evidencia de aceptación: Identifica request real, JSON parseado y columnas de tiempo/latencia/estado; distingue tabla vacía, retraso e ingestión fallida.
+
+&lt;a id=&quot;slide-29&quot;&gt;&lt;/a&gt;
+## slide-29 · Seguimos una solicitud real hasta su fila procesada
+
+El instructor debe preparar registros con antelación; en clase se usa una ventana reciente y se distingue nueva llamada de evidencia previa. Comparar datos antes/después. Si la entrega del log tarda, registrar pendiente y revisar en el bloque de recuperación; no afirmar pipeline completo.
+
+Contrato: S08-INFERENCE, S08-FINAL.
+Abrir: CONSIGNA.md#cp5. Evidencia de aceptación: Identifica request real, JSON parseado y columnas de tiempo/latencia/estado; distingue tabla vacía, retraso e ingestión fallida.
+Abrir: CONSIGNA.md#cp8. Evidencia de aceptación: Manifiesto enlaza endpoint invocable, App, registro UC, evaluación y gobierno previos, inferencias, monitor y rollback; todo resultado tiene fecha e identidad; faltante bloquea cierre funcional.
+
+&lt;a id=&quot;slide-30&quot;&gt;&lt;/a&gt;
+## slide-30 · Monitorear operación y calidad exige señales distintas
+
+S06 aporta los casos de referencia y la revisión humana. Un servicio rápido puede responder mal; una respuesta correcta puede tardar demasiado. Mantener denominadores explícitos para evaluar ambos. Alertas operativas disparan diagnóstico; no prueban por sí solas deterioro semántico.
+
+Contrato: S08-MONITOR, S08-CONTINUITY.
+Abrir: CONSIGNA.md#cp6. Evidencia de aceptación: Monitor refrescado sobre tabla Delta aplanada, baseline y ventana definidos, métricas observadas; drift no se equipara a mala respuesta.
+Abrir: CONSIGNA.md#cp0. Evidencia de aceptación: Inventario nombra tablas, agente S05, benchmark S06 y controles S07; faltantes explícitos.
+
+&lt;a id=&quot;slide-31&quot;&gt;&lt;/a&gt;
+## slide-31 · Drift señala un cambio, no demuestra una falla
+
+Ejemplo Neptuno: llegan preguntas más largas después de habilitar el chat a otra área. La longitud cambia, pero todavía no sabemos si bajó la calidad. Revisar casos y ground truth. Distinguir drift de datos, caída de calidad y bug del parser.
+
+Contrato: S08-MONITOR.
+Abrir: CONSIGNA.md#cp6. Evidencia de aceptación: Monitor refrescado sobre tabla Delta aplanada, baseline y ventana definidos, métricas observadas; drift no se equipara a mala respuesta.
+
+&lt;a id=&quot;slide-32&quot;&gt;&lt;/a&gt;
+## slide-32 · El monitor necesita una tabla y una comparación
+
+Lakehouse Monitoring aparece hoy como data profiling dentro de data quality monitoring. El laboratorio configura un perfil compatible con sus columnas reales; una respuesta de texto no es automáticamente una etiqueta de clasificación. No forzar InferenceLog si los campos no cumplen su contrato.
+
+Contrato: S08-MONITOR.
+Abrir: CONSIGNA.md#cp6. Evidencia de aceptación: Monitor refrescado sobre tabla Delta aplanada, baseline y ventana definidos, métricas observadas; drift no se equipara a mala respuesta.
+Fuentes: https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/create-monitor-api
+
+&lt;a id=&quot;slide-33&quot;&gt;&lt;/a&gt;
+## slide-33 · Crear el monitor no equivale a obtener métricas
+
+Separar configuración aceptada, refresh en curso y refresh terminado. Mostrar el dashboard cuando esté generado. Con pocas solicitudes la evidencia demuestra que el circuito funciona; no estima deriva poblacional ni garantiza ausencia de riesgo. Guardar IDs y timestamps del refresh.
+
+Contrato: S08-MONITOR, S08-FINAL.
+Abrir: CONSIGNA.md#cp6. Evidencia de aceptación: Monitor refrescado sobre tabla Delta aplanada, baseline y ventana definidos, métricas observadas; drift no se equipara a mala respuesta.
+Abrir: CONSIGNA.md#cp8. Evidencia de aceptación: Manifiesto enlaza endpoint invocable, App, registro UC, evaluación y gobierno previos, inferencias, monitor y rollback; todo resultado tiene fecha e identidad; faltante bloquea cierre funcional.
+Fuentes: https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/create-monitor-api
+
+&lt;a id=&quot;slide-34&quot;&gt;&lt;/a&gt;
+## slide-34 · Una alerta útil indica quién debe hacer qué
+
+En parejas redactar un runbook para aumento de errores: verificar despliegue reciente, revisar logs, limitar tráfico o restaurar versión y repetir smoke. Establecer qué señales necesitan revisión humana. No reentrenar ni cambiar prompt automáticamente por cualquier drift.
+
+Contrato: S08-MONITOR, S08-ROLLOUT.
+Abrir: CONSIGNA.md#cp6. Evidencia de aceptación: Monitor refrescado sobre tabla Delta aplanada, baseline y ventana definidos, métricas observadas; drift no se equipara a mala respuesta.
+Abrir: CONSIGNA.md#cp3. Evidencia de aceptación: Versiones numéricas resueltas; plan90/10 suma100; rollback restaura configuración y se verifica. Alias no mueve tráfico automáticamente.
+
+&lt;a id=&quot;slide-35&quot;&gt;&lt;/a&gt;
+## slide-35 · AI Gateway permite observar y limitar según el endpoint
+
+La documentación actual también presenta Unity Gateway; su disponibilidad no es la misma para todos los tipos de endpoint. No confundir usage tables con un presupuesto en moneda. La compatibilidad de guardrails y rate limits depende del tipo de endpoint y de la versión del gateway. Inspeccionar las capacidades del endpoint S08. Una opción no soportada se documenta sin atribuirle protección.
+
+Contrato: S08-GATEWAY.
+Abrir: CONSIGNA.md#cp6. Evidencia de aceptación: Distingue payloads de consumo; define límite y alerta de costo; registra disponibilidad y permiso; no equipara tokens con factura final.
+Fuentes: https://docs.databricks.com/aws/en/ai-gateway/overview-serving-endpoints
+
+&lt;a id=&quot;slide-36&quot;&gt;&lt;/a&gt;
+## slide-36 · El costo combina inferencia, servicio y datos
+
+Usar un cálculo hipotético identificado como tal: solicitudes × tokens medios × tarifa, más capacidad y almacenamiento. Las tarifas se consultan al diseñar; no congelar precios inventados. Scale-to-zero reduce parte del costo ocioso, no elimina todos los recursos del recorrido.
+
+Contrato: S08-GATEWAY.
+Abrir: CONSIGNA.md#cp6. Evidencia de aceptación: Distingue payloads de consumo; define límite y alerta de costo; registra disponibilidad y permiso; no equipara tokens con factura final.
+
+&lt;a id=&quot;slide-37&quot;&gt;&lt;/a&gt;
+## slide-37 · El bundle describe recursos que podemos revisar en Git
+
+Databricks Asset Bundles es el nombre del temario; la documentación actual usa Declarative Automation Bundles. Abrir bundle/databricks.yml del kit. Identificar variables, target y recursos de endpoint/App. Un bundle validate exitoso valida configuración, no ejecuta la aplicación ni prueba permisos de runtime.
+
+Contrato: S08-BUNDLES.
+Abrir: CONSIGNA.md#cp7. Evidencia de aceptación: Valida bundle dev; explica gates test→eval→deploy y aislamiento dev/prod; no promueve producción sin decisión.
+Fuentes: https://docs.databricks.com/aws/en/dev-tools/bundles/
+
+&lt;a id=&quot;slide-38&quot;&gt;&lt;/a&gt;
+## slide-38 · Separar entornos exige más que cambiar un nombre
+
+No vender targets dev/prod en el mismo workspace como aislamiento total. Mostrar qué variable cambia entre targets y qué recursos comparten. Evitar que una configuración de desarrollo pueda escribir accidentalmente en los datos productivos. La topología exacta de clase queda en la guía.
+
+Contrato: S08-BUNDLES.
+Abrir: CONSIGNA.md#cp7. Evidencia de aceptación: Valida bundle dev; explica gates test→eval→deploy y aislamiento dev/prod; no promueve producción sin decisión.
+Fuentes: https://docs.databricks.com/aws/en/dev-tools/bundles/deployment-modes
+
+&lt;a id=&quot;slide-39&quot;&gt;&lt;/a&gt;
+## slide-39 · La promoción se detiene si falla una puerta de calidad
+
+CI ejecuta verificaciones por cambio; CD aplica una versión aprobada al entorno. El ejemplo de CI se entrega para adaptar a la cuenta del alumno: existencia del YAML no significa que una corrida remota de CI haya ocurrido. Separar bundle validado, recursos desplegados y pipeline CI ejecutado.
+
+Contrato: S08-BUNDLES.
+Abrir: CONSIGNA.md#cp7. Evidencia de aceptación: Valida bundle dev; explica gates test→eval→deploy y aislamiento dev/prod; no promueve producción sin decisión.
+
+&lt;a id=&quot;slide-40&quot;&gt;&lt;/a&gt;
+## slide-40 · Podemos revisar el plan antes de desplegar el target
+
+El orden CP7 se explica aquí porque producción requiere repetibilidad; el notebook puede ejecutarlo al final. Dar comandos exactos desde bundle/. Cada alumno usa su propio perfil local y variables. No usar el nombre del perfil docente como prerequisito del starter.
+
+Contrato: S08-BUNDLES.
+Abrir: CONSIGNA.md#cp7. Evidencia de aceptación: Valida bundle dev; explica gates test→eval→deploy y aislamiento dev/prod; no promueve producción sin decisión.
+
+&lt;a id=&quot;slide-41&quot;&gt;&lt;/a&gt;
+## slide-41 · Versionar el prompt permite explicar qué cambió
+
+El prompt registry conserva versiones; cambiar un alias no garantiza que un proceso con caché recargue inmediatamente ni que el endpoint cambie su artefacto. Registrar versión efectivamente usada. Si el laboratorio congela el prompt en el modelo, una promoción requiere reconstrucción/despliegue explícito.
+
+Contrato: S08-PROMPTS.
+Abrir: CONSIGNA.md#cp7. Evidencia de aceptación: Prompt versionado e identificable; alias resuelve versión; cambio y reversión dejan evidencia sin confundir alias de prompt/modelo.
+Fuentes: https://docs.databricks.com/aws/en/mlflow3/genai/prompt-version-mgmt/prompt-registry/
+
+&lt;a id=&quot;slide-42&quot;&gt;&lt;/a&gt;
+## slide-42 · El rollback del prompt también necesita una prueba
+
+CP7 registra una nueva versión didáctica, mueve y restaura el alias, y compara los IDs resueltos. El modelo servido fija el prompt en su artefacto: sigue usando la versión declarada aunque se mueva el alias. La prueba no despliega una regresión de conducta. Si se quisiera cambiar la conducta, habría que empaquetar, actualizar la versión única y repetir los casos S06/S07.
+
+Contrato: S08-PROMPTS, S08-CONTINUITY.
+Abrir: CONSIGNA.md#cp7. Evidencia de aceptación: Prompt versionado e identificable; alias resuelve versión; cambio y reversión dejan evidencia sin confundir alias de prompt/modelo.
+Abrir: CONSIGNA.md#cp0. Evidencia de aceptación: Inventario nombra tablas, agente S05, benchmark S06 y controles S07; faltantes explícitos.
+Fuentes: https://docs.databricks.com/aws/en/mlflow3/genai/prompt-version-mgmt/prompt-registry/
+
+&lt;a id=&quot;slide-43&quot;&gt;&lt;/a&gt;
+## slide-43 · El portafolio reúne el recorrido completo del copiloto
+
+CP8: presentar en tres minutos una pregunta de negocio y recorrer desde App hasta métrica. Explicar un límite real y qué falta para producción. No presentar el test docente como evaluación del alumno ni afirmar que todas las funcionalidades soportan toda escala.
+
+Contrato: S08-FINAL, S08-CONTINUITY.
+Abrir: CONSIGNA.md#cp8. Evidencia de aceptación: Manifiesto enlaza endpoint invocable, App, registro UC, evaluación y gobierno previos, inferencias, monitor y rollback; todo resultado tiene fecha e identidad; faltante bloquea cierre funcional.
+Abrir: CONSIGNA.md#cp0. Evidencia de aceptación: Inventario nombra tablas, agente S05, benchmark S06 y controles S07; faltantes explícitos.
+
+&lt;a id=&quot;slide-44&quot;&gt;&lt;/a&gt;
+## slide-44 · La entrega se evalúa por evidencia, no por capturas bonitas
+
+Usar rúbrica de CONSIGNA.md. Revisar accesos de lectura del evaluador sin publicar datos crudos. Capturas complementan IDs y archivos; no sustituyen código. Un requisito no ejecutado se declara pendiente aunque el resto del paquete esté completo.
+
+Contrato: S08-FINAL.
+Abrir: CONSIGNA.md#cp8. Evidencia de aceptación: Manifiesto enlaza endpoint invocable, App, registro UC, evaluación y gobierno previos, inferencias, monitor y rollback; todo resultado tiene fecha e identidad; faltante bloquea cierre funcional.
+
+&lt;a id=&quot;slide-45&quot;&gt;&lt;/a&gt;
+## slide-45 · Los equivalentes cloud cumplen funciones comparables
+
+Cápsula conceptual, no práctica de tres nubes. Comparar función de servicio de predicción; SDK, identidad, redes, autoscaling y tarifas no son idénticos. El arquitecto compara disponibilidad, integración, latencia y costo total antes de elegir.
+
+Contrato: S08-CLOUD.
+Abrir: CONSIGNA.md#cp8. Evidencia de aceptación: Compara Vertex AI Endpoints, Azure ML Online Endpoints y SageMaker Endpoints por función; documenta diferencias de IAM/costos/latencia.
+Fuentes: https://docs.cloud.google.com/vertex-ai/docs/predictions/overview · https://learn.microsoft.com/en-us/azure/machine-learning/concept-endpoints?view=azureml-api-2 · https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html
+
+&lt;a id=&quot;slide-46&quot;&gt;&lt;/a&gt;
+## slide-46 · El examen evalúa decisiones en seis dominios
+
+Abrir CERTIFICACION.md para nombres oficiales y mapa a sesiones. Guía oficial consultada: marzo 2026; volver a comprobar antes de inscribirse. El curso prepara competencias, no garantiza aprobar. Evitar dumps: practicar con preguntas originales y justificar por qué los distractores fallan.
+
+Contrato: S08-CERT.
+Abrir: CONSIGNA.md#cp8. Evidencia de aceptación: Responde preguntas originales con justificación y plan personal por dominio; no acredita aprobar examen.
+Fuentes: https://www.databricks.com/sites/default/files/2026-03/Databricks-Certified-Generative-AI-Engineer-Associate-Exam-Guide-Mar26.pdf
+
+&lt;a id=&quot;slide-47&quot;&gt;&lt;/a&gt;
+## slide-47 · Un endpoint disponible puede incumplir el contrato
+
+Pregunta original de repaso. Dejar que respondan antes de mostrar decisión. Conectar operación con evaluación: no sirve elevar timeout ni cambiar el color de la App para corregir un error de grounding. Pide identificar la evidencia que demostraría la corrección.
+
+Contrato: S08-CERT, S08-CONTINUITY.
+Abrir: CONSIGNA.md#cp8. Evidencia de aceptación: Responde preguntas originales con justificación y plan personal por dominio; no acredita aprobar examen.
+Abrir: CONSIGNA.md#cp0. Evidencia de aceptación: Inventario nombra tablas, agente S05, benchmark S06 y controles S07; faltantes explícitos.
+
+&lt;a id=&quot;slide-48&quot;&gt;&lt;/a&gt;
+## slide-48 · Mover champion no prueba que el servicio cambió
+
+Caso original. Diferenciar plano de registro y plano de serving. Si el alumno contesta “reiniciar el notebook”, pedir que ubique dónde se ejecuta la inferencia. La solución requiere verificar configuración efectiva y trazabilidad, no confiar en un nombre.
+
+Contrato: S08-CERT, S08-ROLLOUT.
+Abrir: CONSIGNA.md#cp8. Evidencia de aceptación: Responde preguntas originales con justificación y plan personal por dominio; no acredita aprobar examen.
+Abrir: CONSIGNA.md#cp3. Evidencia de aceptación: Versiones numéricas resueltas; plan90/10 suma100; rollback restaura configuración y se verifica. Alias no mueve tráfico automáticamente.
+
+&lt;a id=&quot;slide-49&quot;&gt;&lt;/a&gt;
+## slide-49 · El permiso de la App no reemplaza el del usuario
+
+Caso original de identidad. Contrastar autenticación corporativa con autorización a documentos. No aceptar como respuesta guardar tokens personales en el browser. Pedir evidencia de una prueba permitida y otra denegada si se afirma aislamiento por usuario.
+
+Contrato: S08-CERT, S08-APPS.
+Abrir: CONSIGNA.md#cp8. Evidencia de aceptación: Responde preguntas originales con justificación y plan personal por dominio; no acredita aprobar examen.
+Abrir: CONSIGNA.md#cp4. Evidencia de aceptación: UI consulta endpoint desde backend autenticado; permisos identidad app explícitos; no afirma propagación de ACL del usuario si usa SP.
+
+&lt;a id=&quot;slide-50&quot;&gt;&lt;/a&gt;
+## slide-50 · Una métrica de drift pide investigar antes de actuar
+
+Caso original. Pedir causa alternativa: cambio de público, temporada, interfaz o parser. No entrenar sobre respuestas no revisadas sólo porque hay drift. Conectar monitor → selección de casos → revisión humana → evaluación → cambio versionado.
+
+Contrato: S08-CERT, S08-MONITOR.
+Abrir: CONSIGNA.md#cp8. Evidencia de aceptación: Responde preguntas originales con justificación y plan personal por dominio; no acredita aprobar examen.
+Abrir: CONSIGNA.md#cp6. Evidencia de aceptación: Monitor refrescado sobre tabla Delta aplanada, baseline y ventana definidos, métricas observadas; drift no se equipara a mala respuesta.
+
+&lt;a id=&quot;slide-51&quot;&gt;&lt;/a&gt;
+## slide-51 · Tu plan de estudio parte de errores que puedes explicar
+
+Cerrar con un plan personal: registrar dominio, decisión errada, evidencia corregida y nueva fecha de práctica. Consultar la guía vigente antes del examen para condiciones actualizadas. Ocho clases no sustituyen práctica sostenida en el entorno.
+
+Contrato: S08-CERT.
+Abrir: CONSIGNA.md#cp8. Evidencia de aceptación: Responde preguntas originales con justificación y plan personal por dominio; no acredita aprobar examen.
+Fuentes: https://www.databricks.com/sites/default/files/2026-03/Databricks-Certified-Generative-AI-Engineer-Associate-Exam-Guide-Mar26.pdf
+
+&lt;a id=&quot;slide-52&quot;&gt;&lt;/a&gt;
+## slide-52 · Cerramos con una demostración y un límite explícito
+
+Ronda de cierre: cada participante explica su recorrido y un pendiente. La aprobación del material docente sólo indica que fue preparado y revisado; el aprendizaje del alumno se demuestra con su entrega. Dejar ruta de recuperación para quien no pudo terminar por permisos o tiempos cloud.
+
+Contrato: S08-FINAL.
+Abrir: CONSIGNA.md#cp8. Evidencia de aceptación: Manifiesto enlaza endpoint invocable, App, registro UC, evaluación y gobierno previos, inferencias, monitor y rollback; todo resultado tiene fecha e identidad; faltante bloquea cierre funcional.
+</pre></html>

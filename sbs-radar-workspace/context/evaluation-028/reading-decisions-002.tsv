@@ -1,0 +1,46 @@
+indices	grade	rationale
+64,105	0	Acto de aprobación y título SGSI-C; no aporta condiciones sobre responsabilidad por pérdidas ni excepción de autenticación.
+65,106	0	Alcance institucional general del reglamento; no determina el supuesto de responsabilidad del art20.3 consultado.
+66,107	1	Define autenticación, canal digital, credenciales y categorías de factores; permite interpretar el requisito omitido en el supuesto consultado, sin asignar responsabilidad.
+67,108	0	Concepto y objetivos generales de SGSI-C; protección y no repudio de información no equivalen a asignación de pérdidas por operaciones desconocidas.
+68,109	0	Proporcionalidad y regímenes por clase/tamaño de entidad; no detalla el supuesto de operación ni responsabilidad del art20.3.
+69,110	0	Aprobación y recursos del directorio para SGSI-C; responsabilidad organizativa distinta de asumir pérdidas de clientes.
+70,111	0	Implementación del SGSI-C por gerencia; no asigna pérdidas por operaciones no reconocidas.
+71,112	0	Comité de riesgos, plan y capacitación; no aporta la regla de responsabilidad consultada.
+72,113	0	Funciones de seguridad y equipo de incidentes; autenticación es una función general, sin definir exenciones o quién asume pérdidas.
+73,114	0	Reporte periódico de gestión de seguridad; no aborda pérdidas ni autenticación reforzada del art20.3.
+74,115	0	Objetivos, amenazas y controles generales SGSI-C; no establece el supuesto específico de responsabilidad.
+75,116	0	Perímetro organizacional y tecnológico del SGSI-C; ajeno a la comparación específica.
+76,117	0	Catálogo de controles mínimos físicos, lógicos, criptográficos y de incidentes. Remisión general al subcapítulo de autenticación no desarrolla la exención, autenticación reforzada ni asignación de pérdidas consultada.
+77,118	0	Planes operativos, revisión y capacitación de seguridad; no aporta el contenido de responsabilidad consultado.
+78,119	0	Programa de ciberseguridad y marco de diagnóstico; no define responsabilidad por operaciones desconocidas.
+79,120	0	Reporte de incidentes y análisis forense; pérdida de información/fraude como eventos reportables no equivale a asignación de pérdidas al usuario o empresa.
+80,121	0	Intercambio de información de amenazas; el rótulo de autenticación al final no contiene regla del requisito ni pérdidas.
+81,122	1	Proceso de autenticación, registros y monitoreo de transacciones fraudulentas/credenciales comprometidas contextualiza operaciones no reconocidas, sin decidir responsabilidad patrimonial.
+82,123	0	Enrolamiento inicial y ciclo de credenciales: dos factores para identificar al usuario no son regla de autenticación de la operación ni la exención/pérdida consultada.
+83,124	1	Artículo19 define qué operaciones exigen autenticación reforzada y los factores independientes; contexto específico del requisito al que se refiere20.3, sin asignar pérdidas.
+84	2	Artículo20 incluye20.3 anterior: responsabilidad empresarial por operaciones desconocidas bajo exención20.2 o posteriores al reporte de robo/pérdida de credenciales, con aplicación inmediata ante repudio. Sustenta directamente el lado anterior.
+85	0	Requisitos de API y autorización de operaciones de terceros; no define responsabilidad por operaciones sin autenticación reforzada.
+86,127	0	Responsabilidades contractuales de proveedores tecnológicos y controles; no son responsabilidad patrimonial por operaciones desconocidas de clientes.
+87,128	0	Seguridad de nube, segregación y registros; sin regla de pérdidas del art20.3.
+88,129	0	Contratación de procesamiento significativo, auditoría, salida y certificaciones; ajeno al supuesto de responsabilidad consultado.
+89,130	0	Autorización de procesamiento desde el exterior; no define responsabilidad por operaciones digitales desconocidas.
+90,131	1	26.2 hace aplicable el subcapítulo de autenticación a operaciones del19 por canal digital en régimen simplificado; contexto específico de alcance del requisito, sin asignar pérdidas.
+91,132	0	Director responsable y evaluación independiente en régimen reforzado SGSI-C; no es autenticación reforzada ni responsabilidad por pérdidas.
+92,133	0	Integración de riesgos de seguridad con riesgo operacional; no desarrolla el supuesto consultado.
+93,134	0	Contenido de informes de gobierno/riesgos; no asigna pérdidas ni define exenciones de autenticación.
+94,135	0	Reporte de interrupciones por incidentes de seguridad; no regula operaciones no reconocidas.
+95,136	0	Aplicación del régimen26.1 a corredores de seguros; no extiende ni modifica la regla de20.3 consultada.
+96,137	0	Actividades de auditoría interna por tipo de entidad; no regula asunción de pérdidas por autenticación insuficiente.
+97,138	0	Auditoría externa de sistemas y validez de información financiera; art20 citado pertenece a otra norma, no20.3 de autenticación.
+98,139	0	Procedimientos administrativos de autorizaciones de procesamiento exterior/régimen simplificado; ajenos a pérdidas del cliente.
+99,140	0	Proveedor, subcontratación y responsabilidad por sus resultados; objeto diferente de pérdidas por operaciones desconocidas del art20.3.
+100,141	0	Gestión de riesgo operacional de proveedores y registro de contratos; no resuelve responsabilidad por operación sin autenticación reforzada.
+101,142	0	Datos, soporte y vigencia de tarjetas; remisión de autenticación permite omitir nombre impreso, no trata exención ni responsabilidad por pérdidas.
+102,143	0	Soportes e información del dinero electrónico; no asigna pérdidas por operaciones digitales no reconocidas.
+103,144	0	Plan de adecuación inicial y plazo del subcapítulo de autenticación de2022; no describe el cambio de responsabilidad entre versiones4/5 consultado.
+104,145	0	Vigencia original de2021 y excepciones de tarjetas/auditoría; no evidencia el cambio específico de20.3.
+125	2	Artículo20 posterior contiene20.3: empresa responsable de pérdidas salvo acreditación de responsabilidad del usuario; añade operaciones digitales sin cumplir autenticación reforzada y conserva exención20.2/reporte de credenciales. Sustento directo posterior; desaparece del párrafo la fórmula de aplicación inmediata.
+126	1	Aunque el cuerpo es de API, la nota7 identifica la modificación del20.3 por2286-2024 y su remisión al plazo de adecuación; contexto local de procedencia del cambio, no sustituye el texto sustantivo ni acredita vigencia global.
+225	2	Span específico20.3 anterior: responsabilidad de empresa en exención20.2 y operaciones tras reporte de credenciales; exige mecanismos de aplicación inmediata ante repudio. Evidencia directa anterior solapada con el artículo20 completo.
+226	2	Span específico20.3 posterior: pérdidas a cargo de empresa salvo acreditación de responsabilidad del usuario, incluye falta de autenticación reforzada, exención20.2 y reporte de credenciales. Evidencia directa posterior solapada con artículo20 completo.

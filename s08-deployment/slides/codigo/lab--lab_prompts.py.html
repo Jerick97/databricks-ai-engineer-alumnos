@@ -1,0 +1,22 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>lab/lab_prompts.py · S08</title><style>body{font:18px system-ui;margin:32px;color:#122b43}header{max-width:1000px}a{color:#533afd}pre{font:14px/1.6 ui-monospace,monospace;overflow:auto;background:#f6f9fc;padding:20px}pre span{display:block}pre span:target{background:#fff0ad}pre a{display:inline-block;width:4ch;color:#65788a}p{line-height:1.5}</style><header><h1>lab/lab_prompts.py</h1><p>Código del repositorio local · Neptuno S08. Esta copia permite examinar el script sin ejecutarlo.</p><p>GitHub: acceso pendiente de verificar; los remotos configurados devolvieron 404 el 30/09/2026. No se presenta esta copia como una publicación remota.</p><p><a href="../../lab/lab_prompts.py">Abrir archivo original</a> · <a href="../S08-autonomo.html#41">Volver a las diapositivas</a></p></header><pre><span id="L1"><a href="#L1">1</a> &quot;&quot;&quot;CP7: prueba alias challenger y rollback; no altera el prompt de modelos ya servidos.&quot;&quot;&quot;</span>
+<span id="L2"><a href="#L2">2</a> import argparse,os</span>
+<span id="L3"><a href="#L3">3</a> import mlflow</span>
+<span id="L4"><a href="#L4">4</a> from lab_deploy import CONFIG,save</span>
+<span id="L5"><a href="#L5">5</a> p=argparse.ArgumentParser();p.add_argument(&#x27;--profile&#x27;);a=p.parse_args()</span>
+<span id="L6"><a href="#L6">6</a> if a.profile:os.environ[&#x27;DATABRICKS_CONFIG_PROFILE&#x27;]=a.profile</span>
+<span id="L7"><a href="#L7">7</a> mlflow.set_registry_uri(&#x27;databricks-uc&#x27;)</span>
+<span id="L8"><a href="#L8">8</a> name=f&quot;{CONFIG[&#x27;catalog&#x27;]}.{CONFIG[&#x27;schema&#x27;]}.neptuno_system&quot;</span>
+<span id="L9"><a href="#L9">9</a> old=mlflow.genai.load_prompt(f&#x27;prompts:/{name}@champion&#x27;)</span>
+<span id="L10"><a href="#L10">10</a> candidate=mlflow.genai.register_prompt(name=name,template=old.template+&#x27;\nResponde con evidencia explícita.&#x27;,commit_message=&#x27;CP7 challenger didáctico; no promovido a Serving&#x27;)</span>
+<span id="L11"><a href="#L11">11</a> mlflow.genai.set_prompt_alias(name,&#x27;challenger&#x27;,candidate.version)</span>
+<span id="L12"><a href="#L12">12</a> # Simulación operacional REAL sobre el alias de prompt aislado; restaura siempre champion.</span>
+<span id="L13"><a href="#L13">13</a> try:</span>
+<span id="L14"><a href="#L14">14</a>     mlflow.genai.set_prompt_alias(name,&#x27;champion&#x27;,candidate.version)</span>
+<span id="L15"><a href="#L15">15</a>     promoted=mlflow.genai.load_prompt(f&#x27;prompts:/{name}@champion&#x27;).version</span>
+<span id="L16"><a href="#L16">16</a> finally:</span>
+<span id="L17"><a href="#L17">17</a>     mlflow.genai.set_prompt_alias(name,&#x27;champion&#x27;,old.version)</span>
+<span id="L18"><a href="#L18">18</a> restored=mlflow.genai.load_prompt(f&#x27;prompts:/{name}@champion&#x27;).version</span>
+<span id="L19"><a href="#L19">19</a> assert restored==old.version</span>
+<span id="L20"><a href="#L20">20</a> save(&#x27;prompts&#x27;,{&#x27;name&#x27;:name,&#x27;original&#x27;:old.version,&#x27;challenger&#x27;:candidate.version,&#x27;promoted_then_rolled_back&#x27;:promoted,&#x27;restored&#x27;:restored,&#x27;affects_existing_model&#x27;:False})</span>
+<span id="L21"><a href="#L21">21</a> print(&#x27;Prompt alias rollback verified; endpoint template remains pinned&#x27;)</span>
+</pre></html>

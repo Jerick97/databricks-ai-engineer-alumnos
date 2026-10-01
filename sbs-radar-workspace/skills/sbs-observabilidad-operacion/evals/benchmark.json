@@ -1,0 +1,13 @@
+{
+  "skill": "SK11",
+  "condition_skill_version": "0.1.0",
+  "current_skill_version": "0.1.1",
+  "independent_grade": "../../../runs/sk08-sk11-behavior-grade.json",
+  "status": "provisional",
+  "blind": false,
+  "repeats": 1,
+  "tokens": null,
+  "time_ms": null,
+  "variance": null,
+  "limits": "v0.1.1 refinement/component evidence separate; no production validation"
+}

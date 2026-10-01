@@ -1,0 +1,6 @@
+{
+  "endpoint": "databricks-gpt-6-sol",
+  "rate_limits": null,
+  "has_id": false,
+  "permissions_get_exception_type": "KeyError"
+}

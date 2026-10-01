@@ -1,0 +1,14 @@
+{
+  "allowed_hosts": [
+    "www.sbs.gob.pe"
+  ],
+  "sources": [
+    {
+      "document_id": "sbs-3274-2017",
+      "family": "market_conduct",
+      "url": "https://www.sbs.gob.pe/Portals/0/jer/Auto_Nuevas_Empresas/Sistema_Financiero/7.%20Reg.%20de%20Gesti%C3%B3n%20de%20Conducta%20de%20Mercado_%20Res.%20SBS%20N%C2%B0%203274-2017.pdf",
+      "source_kind": "normative",
+      "synthetic": false
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "type": "object",
+  "properties": {
+    "pair_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "family": {
+      "enum": [
+        "cybersecurity",
+        "market_conduct"
+      ]
+    },
+    "before": {
+      "type": "object",
+      "properties": {
+        "document_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "version_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "document_id",
+        "version_id"
+      ],
+      "additionalProperties": false
+    },
+    "after": {
+      "type": "object",
+      "properties": {
+        "document_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "version_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "document_id",
+        "version_id"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "pair_id",
+    "family",
+    "before",
+    "after"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sbs:contracts:VersionPair:0.1.0",
+  "title": "VersionPair",
+  "description": "SK01 v0.1.0. Local structural contract. Does not establish source truth, immutable persistence, citation literalness or authenticated authorization. Unknown fields rejected; ModelBundle parameters alone permits scalar extension keys."
+}

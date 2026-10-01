@@ -1,0 +1,132 @@
+[
+  {
+    "source": {
+      "document_id": "sbs-00771-2026",
+      "family": "cybersecurity",
+      "source_kind": "normative",
+      "synthetic": false,
+      "version_id": "090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3",
+      "sha256": "090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3",
+      "url": "https://intranet2.sbs.gob.pe/dv_int_cn/2557/v1.0/Adjuntos/Res.%20N%C2%B0%2000771-2026.pdf",
+      "captured_at": "2026-09-28T00:58:11.211505+00:00",
+      "published_on": "2026-03-18",
+      "effective_on": null,
+      "date_unknown_reasons": {
+        "effective_on": "Pending SK09 review; literal clauses retained separately"
+      }
+    },
+    "original_path": "data/foundation-holdout/objects/09/090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3.pdf",
+    "rawtext_path": "data/foundation-holdout/derived/090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3/ca8d8c1cdbb072bdbcf81022f2620df8277dc8d0761a10f3e301318e1fd3f04f/ccad686f93d17c05620db551f783eb141c82789955e4b27d566aae941fa56568/rawtext.txt",
+    "result_path": "data/foundation-holdout/derived/090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3/ca8d8c1cdbb072bdbcf81022f2620df8277dc8d0761a10f3e301318e1fd3f04f/ccad686f93d17c05620db551f783eb141c82789955e4b27d566aae941fa56568/result.json",
+    "pages": 2,
+    "quality": {
+      "status": "partial",
+      "limitations": [
+        "layout_table_review_pending",
+        "semantic_segmentation_pending"
+      ]
+    },
+    "original_sha256": "090cbc764923809f092f24636b300b2465575295ef909fd151007f05438546b3",
+    "result_sha256": "2b1b3945a9f96a2a68bc9a5c8169fcf14731e477585b713bedf2e7271b2545f3",
+    "rawtext_sha256": "053bb4fde6bf2d7b73b6573e79ea3561ecda6dc1a0402f04492a0d733bc02aaa"
+  },
+  {
+    "source": {
+      "document_id": "sbs-g140-2009",
+      "family": "cybersecurity",
+      "source_kind": "normative",
+      "synthetic": false,
+      "version_id": "b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38",
+      "sha256": "b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38",
+      "url": "https://intranet2.sbs.gob.pe/dv_int_cn/249/v2.0/Adjuntos/g-140-2009.pdf",
+      "captured_at": "2026-09-28T00:58:11.599840+00:00",
+      "published_on": null,
+      "effective_on": null,
+      "date_unknown_reasons": {
+        "effective_on": "Pending SK09 review; literal clauses retained separately",
+        "published_on": "Pending authoritative date reconciliation"
+      }
+    },
+    "original_path": "data/foundation-holdout/objects/b9/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38.pdf",
+    "rawtext_path": "data/foundation-holdout/derived/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+    "result_path": "data/foundation-holdout/derived/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/result.json",
+    "pages": 9,
+    "quality": {
+      "status": "partial",
+      "limitations": [
+        "annex_references_pending",
+        "layout_table_review_pending",
+        "semantic_segmentation_pending"
+      ]
+    },
+    "original_sha256": "b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38",
+    "result_sha256": "c17dd383010528f9c4f736106ec1061f3e3c1a785460d61d9312f4fd841fab01",
+    "rawtext_sha256": "cb2f64e58eee51383c9f1cc9b5d7639716dee7cf410b561bc583a7ecea642215"
+  },
+  {
+    "source": {
+      "document_id": "sbs-g167-2012",
+      "family": "cybersecurity",
+      "source_kind": "normative",
+      "synthetic": false,
+      "version_id": "1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0",
+      "sha256": "1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0",
+      "url": "https://intranet2.sbs.gob.pe/intranet/INT_CN/DV_INT_CN/161/v1.0/Adjuntos/g-167-2012.c.pdf",
+      "captured_at": "2026-09-28T00:58:12.053110+00:00",
+      "published_on": null,
+      "effective_on": null,
+      "date_unknown_reasons": {
+        "effective_on": "Pending SK09 review; literal clauses retained separately",
+        "published_on": "Pending authoritative date reconciliation"
+      }
+    },
+    "original_path": "data/foundation-holdout/objects/1f/1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0.pdf",
+    "rawtext_path": "data/foundation-holdout/derived/1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/f4e1f3fc370b26f5d3dd1c932b97ab417a8c6f08c0624dd413c75305474e2ae0/rawtext.txt",
+    "result_path": "data/foundation-holdout/derived/1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/f4e1f3fc370b26f5d3dd1c932b97ab417a8c6f08c0624dd413c75305474e2ae0/result.json",
+    "pages": 2,
+    "quality": {
+      "status": "partial",
+      "limitations": [
+        "annex_references_pending",
+        "layout_table_review_pending",
+        "semantic_segmentation_pending"
+      ]
+    },
+    "original_sha256": "1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0",
+    "result_sha256": "a9bd927f0dbd11bceafff5ba9e4cc58587e76fb95d01c3b28250e79d1fdfcf1a",
+    "rawtext_sha256": "0cdbb0dfc81e037164207a4208880598ac46f402dc9c88a23d2f32e01bfcffe3"
+  },
+  {
+    "source": {
+      "document_id": "sbs-4036-2022",
+      "family": "market_conduct",
+      "source_kind": "normative",
+      "synthetic": false,
+      "version_id": "594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d",
+      "sha256": "594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d",
+      "url": "https://intranet2.sbs.gob.pe/dv_int_cn/2230/v1.0/Adjuntos/4036-2022.r.pdf",
+      "captured_at": "2026-09-28T00:58:12.579440+00:00",
+      "published_on": null,
+      "effective_on": null,
+      "date_unknown_reasons": {
+        "effective_on": "Pending SK09 review; literal clauses retained separately",
+        "published_on": "Pending authoritative date reconciliation"
+      }
+    },
+    "original_path": "data/foundation-holdout/objects/59/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d.pdf",
+    "rawtext_path": "data/foundation-holdout/derived/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+    "result_path": "data/foundation-holdout/derived/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/result.json",
+    "pages": 15,
+    "quality": {
+      "status": "partial",
+      "limitations": [
+        "annex_references_pending",
+        "layout_table_review_pending",
+        "semantic_segmentation_pending"
+      ]
+    },
+    "original_sha256": "594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d",
+    "result_sha256": "13af66189f7759ce29d74b08717e88c78b4acc92e131b56c829eabf2a4e12c80",
+    "rawtext_sha256": "b6f83c6421c0b049fe52a2297d29b080baa02f1164d0951acf3a95f7c6b440e2"
+  }
+]

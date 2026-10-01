@@ -1,0 +1,24 @@
+{
+  "profile": "databricks-ai-engineer-aws",
+  "state_root": null,
+  "writer": {
+    "host": null,
+    "schema_name": "neptuno_manuel_arguelles.sbs_radar",
+    "schema_id": "ff244e9c-7d34-4c2d-8d74-a33292cd5f2c",
+    "warehouse_id": "828756322bedff37",
+    "executor_id": null,
+    "owner": "sociosdosmilveintiseis@gmail.com",
+    "plan_sha256": "ec0832f9e5eb3dc1acc326d6499b31ad95d1e5d9be5ca363ca1b5eaae0974715",
+    "policy": {
+      "trusted_administrators": null,
+      "exclusive_maintenance": null,
+      "retention": null,
+      "no_inherited_abac": null,
+      "issued_at_ms": null,
+      "expires_at_ms": null
+    },
+    "evidence_mode": "real",
+    "max_http_calls": 512
+  },
+  "status": "template_incomplete_not_executable"
+}

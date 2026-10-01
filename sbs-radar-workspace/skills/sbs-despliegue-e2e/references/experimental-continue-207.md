@@ -1,0 +1,13 @@
+# SK12 Continuación207 — fuente parcial204, sin reset de intentos
+
+CreatorZ/SK12 0.1.16 provisional.204 hizo42mkdir,9imports intentados y8readbacks exitosos,112HTTP; no start/deploy. Noveno import no conserva errorHTTP y el export posterior produjo404; la causa precisa del import es desconocida, no se atribuye a OAuth ni a un timeout sin evidencia. Cleanup204 confirmóSTOPPED; observación207 nueva vuelve a confirmarSTOPPED con fuente191 e identidad propia.
+
+207 reutiliza PACKAGE19924687d… y deadline1790719123 íntegros. Sin rematerialización, cuota renovada ni modificación de archivos anteriores. Prioraggregate1017HTTP/243upload/84mkdir/2start/2deploy permanece. Nuevos máximos:1487HTTP,226upload,0mkdir,1start,1deploy.9+226=235imports para234archivos en199/204/207: intento fallido adicional visible, sin devolución oculta. Review requiere PASS_EXPERIMENTAL_CONTINUE_207, freeze_sha256 y one_additional_failed_import_attempt_retained:true.
+
+Reanudación exige42directorios existentesDIRECTORY, descarga/hash fresco de8archivos verificados y reconcilia el noveno medianteGET antes de nueva mutación. Si existeFILE: export/hash exacto y adopción sin upload; si falta: evidencia durable y una nueva importación. Los225archivos nunca intentados deben faltar antes de su únicaimportación. overwritefalse siempre. Verificar234bytesmanifestantesstart. No mkdir, no upload de8verificados, no reintento interno ante timeout/API incierto.
+
+Cualquier excepciónimport futura conserva sólo tipo y etapa; jamásstr(exc), headers o body arbitrario. Sigue un únicoexport de reconciliación. Si no confirma bytes, termina. Recibos fallidos/historia intactos. Tests incluyen error con textoSECRET y comprueban su ausencia del registro.
+
+GETSTOPPED fresco antesstart; unstart y posteriorautorestoreowner/source/time acotados. Gate194 exige active terminal explícito y get_deployment fresco, pendingnull antesdeploy. Supervisor conserva MISMOcfg hasta parada; fallos despuésstart limpian recurso conocido. Si falla subida antesstart, compute ya estabaSTOPPED y no se simula stop propio. Handoff produce ledger199/continuation207.json y recibo199 equivalente207, compatibles199/206. Cuatroreservas192 conservadas sin nuevaasignación; numeric188 FAIL/final153 bloqueado.
+
+Siete tests localesPASS: fuente/pins/contadores, adopciónambigua existente, importacióntrasausencia fresca, driftverificado/directorios/archivoajeno, tipoexcepciónsinsecretos/sinretry, expiraciónantesauth/cfgsupervisor y flujoresume→1start→terminalguard→deployfallido→cleanup. No acreditan cloud/UI. Comando: `PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src .venv/bin/python -m unittest tests.unit.test_experimental_207 -v`.

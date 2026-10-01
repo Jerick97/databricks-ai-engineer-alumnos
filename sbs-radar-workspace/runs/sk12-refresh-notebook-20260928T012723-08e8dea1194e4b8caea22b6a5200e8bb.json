@@ -1,0 +1,15 @@
+{
+  "run_id": "sk12-refresh-notebook-20260928T012723-08e8dea1194e4b8caea22b6a5200e8bb",
+  "executed_at": "2026-09-28T01:27:27.948844+00:00",
+  "status": "passed",
+  "error_class": null,
+  "errors": 0,
+  "source_path": "notebooks/sbs-radar-cloud-refresh.ipynb",
+  "source_sha256": "fec0d43f9d04fe6283db47a632898b11f74d9b92f2c16b48e0a711391ad39a2c",
+  "output_path": "runs/sk12-refresh-notebook-20260928T012723-08e8dea1194e4b8caea22b6a5200e8bb-executed.ipynb",
+  "output_sha256": "a9383d0b43a5a8a47529e43bc31e29c2ab77a7edd7e64d8c634882cddc44e0a8",
+  "code_cells": 3,
+  "executed_cells": 3,
+  "python_executable": "/Users/macdenix/clawd/projects/sbs-genie-e2e/.venv/bin/python",
+  "scope": "Real six-PDF local preparation with existing real embeddings; isolated fault/recovery; no cloud or agent acceptance"
+}

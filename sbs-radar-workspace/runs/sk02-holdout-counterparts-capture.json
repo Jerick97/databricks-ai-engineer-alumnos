@@ -1,0 +1,68 @@
+[
+  {
+    "source": {
+      "document_id": "sbs-g140-2009",
+      "family": "cybersecurity",
+      "source_kind": "normative",
+      "synthetic": false,
+      "version_id": "778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8",
+      "sha256": "778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8",
+      "url": "https://intranet2.sbs.gob.pe/dv_int_cn/249/v1.0/Adjuntos/g-140-2009.c.pdf",
+      "captured_at": "2026-09-28T00:59:14.856586+00:00",
+      "published_on": null,
+      "effective_on": null,
+      "date_unknown_reasons": {
+        "published_on": "Review pending; path version not publication",
+        "effective_on": "Review pending"
+      }
+    },
+    "original_path": "data/foundation-holdout/objects/77/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8.pdf",
+    "rawtext_path": "data/foundation-holdout/derived/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+    "result_path": "data/foundation-holdout/derived/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/result.json",
+    "pages": 9,
+    "quality": {
+      "status": "partial",
+      "limitations": [
+        "annex_references_pending",
+        "layout_table_review_pending",
+        "semantic_segmentation_pending"
+      ]
+    },
+    "original_sha256": "778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8",
+    "result_sha256": "f903a47b7da646a5d2240059aa734157107332b485fb960117bf1c736baa7b7d",
+    "rawtext_sha256": "01c5a194f581f0a260410e417b72a83a866ced9680f877b74f4d48c786cb799e"
+  },
+  {
+    "source": {
+      "document_id": "sbs-4143-2019",
+      "family": "market_conduct",
+      "source_kind": "normative",
+      "synthetic": false,
+      "version_id": "64e0908b80049245265eb23c96255a3ebfb5b8a3a498dc207622366a77452077",
+      "sha256": "64e0908b80049245265eb23c96255a3ebfb5b8a3a498dc207622366a77452077",
+      "url": "https://intranet2.sbs.gob.pe/dv_int_cn/1865/v1.0/Adjuntos/4143-2019.R.pdf",
+      "captured_at": "2026-09-28T00:59:15.421026+00:00",
+      "published_on": null,
+      "effective_on": null,
+      "date_unknown_reasons": {
+        "published_on": "Review pending; path version not publication",
+        "effective_on": "Review pending"
+      }
+    },
+    "original_path": "data/foundation-holdout/objects/64/64e0908b80049245265eb23c96255a3ebfb5b8a3a498dc207622366a77452077.pdf",
+    "rawtext_path": "data/foundation-holdout/derived/64e0908b80049245265eb23c96255a3ebfb5b8a3a498dc207622366a77452077/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/442ce1d980a99f7e40241056e92a35c70cc35998ce5a07ae763c221bef1ea1b7/rawtext.txt",
+    "result_path": "data/foundation-holdout/derived/64e0908b80049245265eb23c96255a3ebfb5b8a3a498dc207622366a77452077/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/442ce1d980a99f7e40241056e92a35c70cc35998ce5a07ae763c221bef1ea1b7/result.json",
+    "pages": 27,
+    "quality": {
+      "status": "partial",
+      "limitations": [
+        "annex_references_pending",
+        "layout_table_review_pending",
+        "semantic_segmentation_pending"
+      ]
+    },
+    "original_sha256": "64e0908b80049245265eb23c96255a3ebfb5b8a3a498dc207622366a77452077",
+    "result_sha256": "e403d501fcfd101fa57ea32008c2e04d390f7f786f7212cce620874f8558a5ed",
+    "rawtext_sha256": "d724cd2c04611ee4b81215f250712e682bba02126722fd51bda2d153ce36315c"
+  }
+]

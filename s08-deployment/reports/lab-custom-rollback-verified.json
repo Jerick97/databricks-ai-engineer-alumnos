@@ -1,0 +1,56 @@
+{
+  "endpoint": "ais08-neptuno-rollout",
+  "state": {
+    "config_update": "NOT_UPDATING",
+    "ready": "READY"
+  },
+  "task": null,
+  "traffic": {
+    "routes": [
+      {
+        "served_entity_name": "challenger",
+        "served_model_name": "challenger",
+        "traffic_percentage": 0
+      },
+      {
+        "served_entity_name": "champion",
+        "served_model_name": "champion",
+        "traffic_percentage": 100
+      }
+    ]
+  },
+  "source": "UC ventas S05 real",
+  "served_entities": [
+    {
+      "name": "challenger",
+      "entity_name": "neptuno_manuel_arguelles.ais08_lab.ventas_rollout",
+      "entity_version": "2"
+    },
+    {
+      "name": "champion",
+      "entity_name": "neptuno_manuel_arguelles.ais08_lab.ventas_rollout",
+      "entity_version": "1"
+    }
+  ],
+  "oracle_venta_neta": 116024.88,
+  "counts_by_revision": {
+    "champion": 5
+  },
+  "requests": 5,
+  "all_business_values_correct": true,
+  "examples": [
+    {
+      "categoria": "Bebidas",
+      "anio": 2026,
+      "venta_neta": 116024.88,
+      "filas": 5,
+      "fuente": "neptuno_manuel_arguelles.gold.ventas_por_categoria_mes",
+      "revision": "champion"
+    }
+  ],
+  "all_active_routes_observed": true,
+  "pass": true,
+  "limitation": "Porcentajes configuran probabilidades; estos conteos no prueban una diferencia de calidad entre algoritmos.",
+  "matches_saved_baseline": true,
+  "comparison_note": "Debe ser true despu\u00e9s del rollback; false durante el canary es esperado."
+}

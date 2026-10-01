@@ -1,0 +1,16 @@
+{
+  "invoked_at": "2026-09-28T02:56:40.296256+00:00",
+  "skill": "SK11",
+  "version": "0.1.13",
+  "method": "CreatorZ finding\u2192RED\u2192minimal fix\u2192GREEN",
+  "inputs_sha256": {
+    "skills/sbs-observabilidad-operacion/SKILL.md": "be529094913d110995add8d9ffa620e0b9c44659c21575cb305abe2c1f1cc099",
+    "/Users/macdenix/clawd/openclaw-codex/openclaw-workspace/skills/skill-creator-z/SKILL.md": "913c602cca1fcc8bfbe6a7b6300199f098c178970952302579d152029491fc99",
+    "runs/sk09-cloud-driver-014-review.json": "ef7123329bafdb1da88157d277ed38d89d4543daabda4c943cc6ffa3c76f1136",
+    "src/sbs/operations/cloud_driver.py": "8f86e2a9ec1365775e0f43e778184e5382197106925d3962d102593045c3f760",
+    "tests/unit/test_cloud_driver.py": "1f4a839eecd25ec369af6432fc219c42448e59be1fbf019d43f2fd9e9523d36e",
+    "notebooks/sbs-radar-cloud-writer.ipynb": "81dd296edc3cc5e388bb8af546f79226dbc4f108b83480858f189c7a59a83b75"
+  },
+  "scope": "CD01 read/close safe exceptions only; preserve conflict and caps",
+  "remote_calls": 0
+}

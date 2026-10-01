@@ -1,0 +1,35 @@
+{
+  "endpoint": "ais08-neptuno-rollout",
+  "state": {
+    "config_update": "NOT_UPDATING",
+    "ready": "READY"
+  },
+  "task": null,
+  "traffic": {
+    "routes": [
+      {
+        "served_entity_name": "challenger",
+        "served_model_name": "challenger",
+        "traffic_percentage": 0
+      },
+      {
+        "served_entity_name": "champion",
+        "served_model_name": "champion",
+        "traffic_percentage": 100
+      }
+    ]
+  },
+  "source": "UC ventas S05 real",
+  "served_entities": [
+    {
+      "name": "challenger",
+      "entity_name": "neptuno_manuel_arguelles.ais08_lab.ventas_rollout",
+      "entity_version": "2"
+    },
+    {
+      "name": "champion",
+      "entity_name": "neptuno_manuel_arguelles.ais08_lab.ventas_rollout",
+      "entity_version": "1"
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "id": "slide-53",
+  "title": "Glosario de S08",
+  "body": [
+    [
+      "Agente",
+      "Software que interpreta una solicitud y decide qué herramientas utilizar para responder. Neptuno combina un modelo con herramientas y reglas."
+    ],
+    [
+      "LLM",
+      "Modelo de lenguaje que interpreta y genera texto. Es un componente del agente; el agente también incluye código, herramientas y controles."
+    ],
+    [
+      "Tool / herramienta",
+      "Función que el agente puede invocar para consultar datos o realizar una operación autorizada."
+    ],
+    [
+      "RAG",
+      "Recuperar fragmentos de documentos y usarlos como contexto para responder con evidencia."
+    ],
+    [
+      "Embedding",
+      "Representación numérica de un texto que ayuda a buscar fragmentos de significado parecido."
+    ],
+    [
+      "Prompt",
+      "Instrucciones y contexto que recibe el modelo. El prompt de sistema establece el comportamiento general."
+    ],
+    [
+      "Notebook",
+      "Documento con celdas de código y explicación. Sirve para desarrollar, ejecutar y comprobar pasos."
+    ],
+    [
+      "Script",
+      "Archivo de código ejecutable, como lab_deploy.py, que automatiza una tarea."
+    ],
+    [
+      "API",
+      "Contrato para que dos programas se comuniquen. La App llama a la API del endpoint."
+    ],
+    [
+      "SDK",
+      "Biblioteca que facilita usar una API desde código. El SDK de Databricks permite crear e inspeccionar recursos."
+    ],
+    [
+      "Empaquetado",
+      "Reunir código, dependencias y configuración para ejecutar el agente fuera de la sesión del notebook."
+    ],
+    [
+      "Dependencia",
+      "Biblioteca o recurso que necesita el código: por ejemplo MLflow, un warehouse o una tabla."
+    ],
+    [
+      "Artefacto",
+      "Archivo producido o conservado por una ejecución: código empaquetado, métricas o un reporte."
+    ],
+    [
+      "MLflow",
+      "Herramientas para registrar ejecuciones, modelos, evaluaciones y otros elementos del ciclo de vida de IA."
+    ],
+    [
+      "Registro / Registry",
+      "Catálogo de modelos o prompts y sus versiones. Registrar permite identificarlos y administrarlos; todavía falta desplegarlos para servir solicitudes."
+    ],
+    [
+      "Versión",
+      "Edición identificable de un modelo, prompt o código. El ensayo de Neptuno registró la versión 4 del agente."
+    ],
+    [
+      "Alias",
+      "Nombre que apunta a una versión, como champion. Cambiarlo no cambia por sí solo el tráfico del endpoint."
+    ],
+    [
+      "Champion / challenger",
+      "Nombres habituales para la versión estable y la candidata. No prueban por sí mismos cuál tiene mejor calidad."
+    ],
+    [
+      "Despliegue / deployment",
+      "Publicar código o un modelo en un entorno que puede ejecutarlo para otros usuarios."
+    ],
+    [
+      "Serving",
+      "Servicio que ejecuta un modelo o agente cuando recibe solicitudes. Neptuno se publicó mediante Model Serving."
+    ],
+    [
+      "Endpoint",
+      "Punto de acceso a un servicio. ais08-neptuno recibe solicitudes de inferencia a través de su API."
+    ],
+    [
+      "Inferencia",
+      "Una ejecución del modelo o agente para producir una respuesta a partir de una entrada."
+    ],
+    [
+      "Serverless",
+      "La plataforma administra el cómputo subyacente. Sigue habiendo configuración, permisos, límites y coste."
+    ],
+    [
+      "Scale to zero",
+      "Reducir a cero el cómputo activo de un servicio cuando no se usa, si su configuración lo permite."
+    ],
+    [
+      "Cold start",
+      "Tiempo de arranque antes de responder cuando el servicio necesita activar su cómputo."
+    ],
+    [
+      "Latencia",
+      "Tiempo que tarda una solicitud en recibir respuesta; incluye modelo, herramientas y comunicaciones."
+    ],
+    [
+      "Canary",
+      "Enviar una parte pequeña del tráfico a una versión nueva, por ejemplo 10 %, manteniendo 90 % en la estable. Se observa antes de ampliar. En S08 se ensayó en ais08-neptuno-rollout, no en el endpoint principal."
+    ],
+    [
+      "Traffic split",
+      "Reparto porcentual de solicitudes entre versiones. Es el mecanismo usado para un canary cuando el tipo de endpoint lo admite."
+    ],
+    [
+      "A/B",
+      "Comparar alternativas con grupos y métricas definidos para decidir cuál funciona mejor. Un canary busca principalmente reducir el riesgo del despliegue."
+    ],
+    [
+      "Rollout",
+      "Introducción de una versión nueva; puede hacerse gradualmente o mediante sustitución."
+    ],
+    [
+      "Rollback",
+      "Volver a una versión o configuración anterior y comprobar que responde correctamente."
+    ],
+    [
+      "Databricks App",
+      "Aplicación con interfaz y backend alojados en Databricks. La App de Neptuno llama al endpoint del agente."
+    ],
+    [
+      "Autenticación",
+      "Comprobar quién eres. Iniciar sesión identifica al usuario."
+    ],
+    [
+      "Autorización / permisos",
+      "Determinar qué puede hacer esa identidad: consultar tablas, invocar servicios o administrar recursos."
+    ],
+    [
+      "Identidad de servicio",
+      "Identidad usada por una aplicación o proceso automático para acceder a recursos con permisos propios."
+    ],
+    [
+      "Unity Catalog",
+      "Capa de gobierno para organizar recursos y controlar accesos. En el curso contiene tablas, funciones y el modelo registrado."
+    ],
+    [
+      "Catálogo / esquema / tabla",
+      "Jerarquía para organizar datos: catálogo → esquema → tabla. Por ejemplo neptuno_manuel_arguelles.ais08_lab.inference_flat."
+    ],
+    [
+      "SQL Warehouse",
+      "Cómputo que ejecuta consultas SQL. Su identificador indica qué warehouse utilizar."
+    ],
+    [
+      "Inference Tables",
+      "Tablas que capturan intercambios del servicio para analizarlos, según la configuración y las capacidades del endpoint."
+    ],
+    [
+      "JSON / aplanado",
+      "JSON organiza datos en campos y estructuras anidadas. Aplanar extrae campos a columnas para poder analizarlos."
+    ],
+    [
+      "Request ID / traza",
+      "Identificador de una solicitud y registro de su recorrido; permiten relacionar respuesta, herramientas y evidencia."
+    ],
+    [
+      "Observabilidad",
+      "Usar logs, métricas y trazas para entender qué está haciendo el sistema y diagnosticar problemas."
+    ],
+    [
+      "Baseline",
+      "Referencia con la que comparas resultados actuales: por ejemplo un conjunto de datos anterior."
+    ],
+    [
+      "Drift",
+      "Cambio en la distribución de datos o señales respecto de una referencia. Pide investigar; no demuestra por sí solo una falla."
+    ],
+    [
+      "AI Gateway",
+      "Controles de acceso y uso, registro y límites alrededor de servicios de IA, según las capacidades del endpoint."
+    ],
+    [
+      "Bundle",
+      "Conjunto de archivos que declara recursos de Databricks y cómo desplegarlos. Su manifiesto principal es databricks.yml."
+    ],
+    [
+      "IaC",
+      "Infraestructura como código: definir y versionar recursos y configuraciones para poder reproducirlos."
+    ],
+    [
+      "CI/CD",
+      "Automatizar comprobaciones, integración y entrega de cambios. En S08 se proporcionó el ejemplo; no se ejecutó un pipeline remoto de CI."
+    ],
+    [
+      "Target / entorno",
+      "Destino de un despliegue, como desarrollo o producción, con sus recursos, permisos y configuración."
+    ],
+    [
+      "SHA-256",
+      "Función que calcula una huella de 256 bits del contenido, usualmente escrita como 64 caracteres hexadecimales. Permite detectar cambios; no cifra el archivo ni acredita por sí sola quién lo creó."
+    ],
+    [
+      "Smoke test",
+      "Prueba breve de funciones esenciales: por ejemplo enviar una pregunta y comprobar una respuesta válida."
+    ],
+    [
+      "Checkpoint / criterio de aceptación",
+      "Paso de control y condición observable para considerarlo cumplido. READY no sustituye una consulta funcional."
+    ],
+    [
+      "Skill",
+      "Procedimiento reutilizable que guía al asistente para construir o validar una parte. Puede ejecutar scripts; no es el servicio desplegado."
+    ]
+  ],
+  "kind": "glossary",
+  "notes": "Abre un término para mostrar su definición. Recorre la lista con desplazamiento. Canary: introducir una candidata con tráfico limitado y vigilar; rollback: volver y comprobar. SHA-256 permite comparar contenido, no verificar autoría. Los nombres y resultados de Neptuno corresponden al ensayo registrado, no a una comprobación del estado actual.",
+  "requirements": [
+    "S08-FINAL"
+  ],
+  "refs": [],
+  "ey": "Consulta docente · términos del recorrido"
+}

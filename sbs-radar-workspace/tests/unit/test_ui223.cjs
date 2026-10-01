@@ -1,0 +1,20 @@
+'use strict';
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
+const root=path.resolve(__dirname,'../..');
+const js=fs.readFileSync(path.join(root,'runs/sk06-platform-counts-223-overlay/source/src/sbs/webapp/static/app.js'),'utf8');
+const context={node:(tag,value,className)=>({tag,value,className,children:[],append(...items){this.children.push(...items);}}),sourceLink:value=>({tag:'a',value})};
+vm.createContext(context);vm.runInContext(js.slice(js.indexOf('function structuredResults('),js.indexOf('function assistantPresentation211(')),context);
+const result={kind:'documentary_count',publication_evidence_temporality:'historical',historical_label:'Conteo del snapshot publicado ABC · 2026-09-29',meaning:'Versiones del par documental',query_id:'q',snapshot:'snapshot',query:'SELECT COUNT(*) VERSION AS OF 7',columns:['document_version_count'],rows:[['2']],context:{selected_provision_id:null,pair:{before:{version_id:'a',document_id:'docA'},after:{version_id:'b',document_id:'docB'}}}};
+const original=JSON.stringify(result),box=context.node('article');context.structuredResults(box,[result]);
+assert.equal(box.children[0].tag,'p');assert.equal(box.children[0].value,result.historical_label);
+assert.equal(box.children[1].tag,'details'); // Label is visible without opening details.
+assert.equal(box.children[1].children.filter(n=>n.tag==='a').length,2);
+assert.ok(box.children[1].children.some(n=>n.value==='Consulta: q · Disposición: Par documental'));
+assert.ok(box.children[1].children.some(n=>n.tag==='pre'&&n.value===result.query));
+assert.equal(JSON.stringify(result),original);
+const legacy=context.node('article');context.structuredResults(legacy,[{...result,publication_evidence_temporality:'current'}]);
+assert.equal(legacy.children.length,1);assert.equal(legacy.children[0].tag,'details');
+const injection=context.node('article');context.structuredResults(injection,[{...result,historical_label:'<script>alert(1)</script>'}]);
+assert.equal(injection.children[0].value,'<script>alert(1)</script>');
+assert.ok(!js.slice(js.indexOf('function structuredResults('),js.indexOf('function assistantPresentation211(')).includes('innerHTML'));
+console.log('UI223 PASS: historical label visible outside details; old mode unchanged; exact query and both sources preserved as text.');

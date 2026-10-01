@@ -1,0 +1,226 @@
+[
+  {
+    "source": {
+      "document_id": "sbs-3240-2023",
+      "family": "market_conduct",
+      "source_kind": "normative",
+      "synthetic": false,
+      "version_id": "e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1",
+      "sha256": "e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1",
+      "url": "https://intranet2.sbs.gob.pe/dv_int_cn/2305/v1.0/Adjuntos/3240-2023.R.pdf",
+      "captured_at": "2026-09-28T04:37:42.543083+00:00",
+      "published_on": null,
+      "effective_on": null,
+      "date_unknown_reasons": {
+        "published_on": "Literal issue dates/footnotes retained; publication metadata reconciliation pending SK09",
+        "effective_on": "Pending SK09 normative review; no effect inferred from repository version"
+      }
+    },
+    "original_path": "data/foundation-holdout/objects/e3/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1.pdf",
+    "rawtext_path": "data/foundation-holdout/derived/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/a8750324698b9eeabd8cd9a0f560c530df6380c60b7b99da07c65087ecf8d910/rawtext.txt",
+    "result_path": "data/foundation-holdout/derived/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/a8750324698b9eeabd8cd9a0f560c530df6380c60b7b99da07c65087ecf8d910/result.json",
+    "pages": 7,
+    "quality": {
+      "status": "partial",
+      "limitations": [
+        "annex_references_pending",
+        "layout_table_review_pending",
+        "semantic_segmentation_pending"
+      ]
+    },
+    "original_sha256": "e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1",
+    "result_sha256": "3c2b5bad01be433e033ca62383b495d5a649deb4ebdc0dc62b971880951556ab",
+    "rawtext_sha256": "48ed43b6b32f82c5b8279aa949ec9d743c70ff470e5b4fdcad8a554e5a2f3872",
+    "source_capture": "real secure transport8GETledger; this sealing reuses exact verified bytes",
+    "classification": "official_repository_annotated_copy_of_amending_act_not_pristine_publication",
+    "literal_evidence": [
+      {
+        "pattern": "Lima, 02 de octubre de 2023",
+        "page": 1,
+        "start": 0,
+        "end": 443,
+        "text": " \n \nLos Laureles Nº 214 - Lima 27 - Perú   Telf. : (511) 6309000 \nLima, 02 de octubre de 2023 \n \nResolución S.B.S. \nN° 3240-2023 \n \nLa Superintendenta de Banca, Seguros y \nAdministradoras Privadas de Fondos de Pensiones \n \n \n     CONSIDERANDO: \n \nQue, mediante  la Resolución SBS N° 3274 -2017 y sus \nmodificatorias se aprobó el Reglamento de Gestión de Conducta de Mercado del Sistema Financiero, con la \nfinalidad de que las empresas cuenten",
+        "text_sha256": "84bd73ed4a515710fdd33a6c1baa7f15159982f9a6b988801815d5d100f553a3"
+      },
+      {
+        "pattern": "Artículo Sexto",
+        "page": 5,
+        "start": 11552,
+        "end": 11996,
+        "text": "e la autenticación reforzada, \nsiempre que la empresa cumpla con: \n(…)” \n \n     Artículo Sexto. - Modificar el Reglamento de Reclamos y \nRequerimientos, aprobado mediante la Resolución SBS N° 4036-2022, conforme se indica a continuación: \n \n1. Modificar el párrafo 4.1 del artículo 4 , la Segunda Disposición Complementaria Final  y el \ncódigo del motivo de reclamo 115 “Indebida contratación” aplicable a las empresas \nsupervisadas del Anexo C",
+        "text_sha256": "3e81b08f54c992aa1b0dc4564641663ff3dc774fc843b36a2f77df64fc82b817"
+      },
+      {
+        "pattern": "Artículo Sexto",
+        "page": 6,
+        "start": 14444,
+        "end": 14888,
+        "text": "l El Peruano. \n \n \nRegístrese, comuníquese y publíquese. \n \n \n \n \n1 Mediante el artículo Sexto de la Resolución SBS Nº 2286-2024, vigente a partir del 29/06/2024, se dispuso lo siguiente: “Con \nrelación al plazo de adecuación establecido en el artículo Séptimo de la Resolución SBS N° 3240 -2023, para la implementación de las \nmodificaciones al numeral 4 del párrafo 29.1 del artículo 29 del Reglamento de Gestión de Conducta de Mercado del Si",
+        "text_sha256": "464bca61d555018df1c20299d7ec03c1bfe06090b9395a881b6ff6950453dcd9"
+      },
+      {
+        "pattern": "4036.?2022",
+        "page": 5,
+        "start": 11664,
+        "end": 12103,
+        "text": "eglamento de Reclamos y \nRequerimientos, aprobado mediante la Resolución SBS N° 4036-2022, conforme se indica a continuación: \n \n1. Modificar el párrafo 4.1 del artículo 4 , la Segunda Disposición Complementaria Final  y el \ncódigo del motivo de reclamo 115 “Indebida contratación” aplicable a las empresas \nsupervisadas del Anexo C: Códigos de Motivos de Reclamos , de acuerdo con los siguientes \ntextos: \n \n“Artículo 4. Tramitación de re",
+        "text_sha256": "be202b34ae79fef3729860cf67487317a537d559404b31e94164494c10e37e03"
+      },
+      {
+        "pattern": "2286.?2024",
+        "page": 6,
+        "start": 14483,
+        "end": 14922,
+        "text": "ese y publíquese. \n \n \n \n \n1 Mediante el artículo Sexto de la Resolución SBS Nº 2286-2024, vigente a partir del 29/06/2024, se dispuso lo siguiente: “Con \nrelación al plazo de adecuación establecido en el artículo Séptimo de la Resolución SBS N° 3240 -2023, para la implementación de las \nmodificaciones al numeral 4 del párrafo 29.1 del artículo 29 del Reglamento de Gestión de Conducta de Mercado del Sistema \nFinanciero, aprobado median",
+        "text_sha256": "abb6d5667e102a570f36a22fe8cd372e6cdc0fb8e718fd08d28488dfc540c3b1"
+      },
+      {
+        "pattern": "Artículo S[eé]ptimo",
+        "page": 6,
+        "start": 14608,
+        "end": 15054,
+        "text": "e dispuso lo siguiente: “Con \nrelación al plazo de adecuación establecido en el artículo Séptimo de la Resolución SBS N° 3240 -2023, para la implementación de las \nmodificaciones al numeral 4 del párrafo 29.1 del artículo 29 del Reglamento de Gestión de Conducta de Mercado del Sistema \nFinanciero, aprobado mediante Resolución SBS N° 3274 -2017, se amplía el plazo otorgado por ciento ochenta (180) días adicionales \ncontados a partir del vencim",
+        "text_sha256": "92eac4e5c41120d1d0be5be3d88b946139aec2209c934627698d3a9008de4a4d"
+      },
+      {
+        "pattern": "Artículo S[eé]timo",
+        "page": 6,
+        "start": 13807,
+        "end": 14252,
+        "text": "productos y servicios contratados, o a las operaciones asociadas a estos.” \n \n  Artículo Sétimo.- Las modificaciones establecidas en l os \nartículos Primero y  Tercero cuentan con un plazo de adecuación de ciento ochenta  (180) días desde la \nvigencia de la presente resolución, salvo la modificación del artículo 29 del Reglamento de Gestión de \nConducta de Mercado del Sistema Financiero, que cuenta con un plazo de adecuación de trescientos s",
+        "text_sha256": "4fd51a138984c4ae5922e10d07cc48e9b3db63ee497118a125152d98e2013c10"
+      },
+      {
+        "pattern": "publicaci[oó]n",
+        "page": 2,
+        "start": 3202,
+        "end": 3643,
+        "text": " opiniones de los usuarios respecto \nde la propuesta de norma, se dispuso la prepublicación del proyecto de resolución, en el portal electrónico de \nla Superintendencia, al amparo de lo dispuesto en el Decreto Supremo N ° 001-2009-JUS; y que en lo \nconcerniente a la modificación del Reglamento de Reclamos y Requerimientos , se publica sobre la base de \nlas condiciones de excepción establecidas en el artículo 14 del Decreto Supremo N ° 00",
+        "text_sha256": "91ad49f317e995dfae7fc9498fb058e59e6c6fb12aad11ef68e4fa527e453306"
+      },
+      {
+        "pattern": "publicaci[oó]n",
+        "page": 6,
+        "start": 14333,
+        "end": 14774,
+        "text": "vo.- La presente resolución entra en vigencia a \npartir del día siguiente de su publicación en el Diario Oficial El Peruano. \n \n \nRegístrese, comuníquese y publíquese. \n \n \n \n \n1 Mediante el artículo Sexto de la Resolución SBS Nº 2286-2024, vigente a partir del 29/06/2024, se dispuso lo siguiente: “Con \nrelación al plazo de adecuación establecido en el artículo Séptimo de la Resolución SBS N° 3240 -2023, para la implementación de las \nmo",
+        "text_sha256": "966adcc68f0b6b899fac06c5605afae46ebbedd92adaa19cf45cf28a65e0d21f"
+      }
+    ],
+    "repository_version_not_legal_effect": true,
+    "subsequent_2286_2024_annotation_present": true,
+    "extraction_warning": "pypdf strict reader emitted Xref table not zero-indexed warning; original bytes preserved; extraction quality partial"
+  },
+  {
+    "source": {
+      "document_id": "sbs-4036-2022",
+      "family": "market_conduct",
+      "source_kind": "normative",
+      "synthetic": false,
+      "version_id": "7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749",
+      "sha256": "7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749",
+      "url": "https://intranet2.sbs.gob.pe/dv_int_cn/2230/v6.0/Adjuntos/4036-2022.R%20.pdf",
+      "captured_at": "2026-09-28T04:37:42.546804+00:00",
+      "published_on": null,
+      "effective_on": null,
+      "date_unknown_reasons": {
+        "published_on": "Literal issue dates/footnotes retained; publication metadata reconciliation pending SK09",
+        "effective_on": "Pending SK09 normative review; no effect inferred from repository version"
+      }
+    },
+    "original_path": "data/foundation-holdout/objects/7c/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749.pdf",
+    "rawtext_path": "data/foundation-holdout/derived/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+    "result_path": "data/foundation-holdout/derived/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/result.json",
+    "pages": 16,
+    "quality": {
+      "status": "partial",
+      "limitations": [
+        "annex_references_pending",
+        "layout_table_review_pending",
+        "semantic_segmentation_pending"
+      ]
+    },
+    "original_sha256": "7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749",
+    "result_sha256": "29c111b93000ea34ffaf94c00b9534c4de1ca230703416299192beac4e75b37a",
+    "rawtext_sha256": "1946f8f1988a8fd55e9a13d878dfc671cd65277af8b1a28adf2f7d7ad90063e2",
+    "source_capture": "real secure transport8GETledger; this sealing reuses exact verified bytes",
+    "classification": "official_repository_consolidated_copy_version6_not_asserted_current",
+    "literal_evidence": [
+      {
+        "pattern": "Lima, 28 de diciembre de 2022",
+        "page": 1,
+        "start": 183,
+        "end": 642,
+        "text": "   \n \n \nLos Laureles Nº 214 - Lima 27 - Perú   Telf.: (511) 6309000 \n1 \n \n \n \n \nLima, 28 de diciembre de 2022 \n \nResolución S.B.S. \nN° 04036- 2022 \n \nLa Superintendenta de Banca, Seguros y \nAdministradoras Privadas de Fondos de Pensiones \n \n \nCONSIDERANDO: \n \nQue, conforme al artículo 345 de la Ley N° 26702, Ley \nGeneral del Sistema Financiero y del Sistema de Seguros y Orgánica de la Superintendencia de \nBanca y Seguros, la Superintendencia protege los i",
+        "text_sha256": "8aed889196abeb90193b1e6d15087998bab5b79e7b2188a9c21fb40e890cb3df"
+      },
+      {
+        "pattern": "3240.?2023",
+        "page": 3,
+        "start": 9099,
+        "end": 9205,
+        "text": "reclamo o de un requerimiento. \n \n1 Párrafo modificado por la Resolución SBS N° 3240-2023 del 03/10/2023. ",
+        "text_sha256": "d07a2ef531414773766e9ee56010cd3ca7ff8ccdcf842732887b5ab19dd0e4ea"
+      },
+      {
+        "pattern": "3240.?2023",
+        "page": 11,
+        "start": 40017,
+        "end": 40123,
+        "text": "mar en dicho plazo sobre los \n \n10 Literal incorporado por la Resolución SBS N° 3240-2023 del 03/10/2023. ",
+        "text_sha256": "86cd943f65b36bddeeea0f7c7e5f25b78df500aac165548475867d0ad0be3a6b"
+      },
+      {
+        "pattern": "2286.?2024",
+        "page": 10,
+        "start": 36084,
+        "end": 36489,
+        "text": "os más frecuentes de reclamo.  \n \n8 Párrafo modificado por la Resolución SBS Nº 2286-2024, vigente a partir del 29/06/2024, con plazo de adecuación \nconforme al artículo séptimo de la misma Resolución SBS N°2286-2024. \n9 Párrafo modificado por la Resolución SBS Nº 2286-2024, vigente a partir del 29/06/2024, con plazo de adecuación \nconforme al artículo séptimo de la misma Resolución SBS N°2286-2024. \n ",
+        "text_sha256": "ab1d90006675104a8039b8bbdbb4a4e2ba0b7da4f8d0ed6af6f244e89be79664"
+      },
+      {
+        "pattern": "2286.?2024",
+        "page": 10,
+        "start": 36211,
+        "end": 36489,
+        "text": " plazo de adecuación \nconforme al artículo séptimo de la misma Resolución SBS N°2286-2024. \n9 Párrafo modificado por la Resolución SBS Nº 2286-2024, vigente a partir del 29/06/2024, con plazo de adecuación \nconforme al artículo séptimo de la misma Resolución SBS N°2286-2024. \n ",
+        "text_sha256": "3bc8b277dacb4a665820180be54a5269f592cfbd43e7cb2256d04446b2567156"
+      },
+      {
+        "pattern": "Art[ií]culo 2",
+        "page": 3,
+        "start": 6169,
+        "end": 6609,
+        "text": "istradoras Privadas de \nFondos de Pensiones (AFP), en adelante las empresas. \n \nArtículo 2. Definiciones \nPara efecto s de lo dispuesto en el presente Reglamento , deben considerarse las siguientes \ndefiniciones y referencias: \n1. Empresas: las consideradas en el alcance del artículo 1. \n2. Ley General: Ley General del Sistema Financiero y del Sistema de Seguros y Orgánica de la \nSuperintendencia de Banca y Seguros, Ley N° 26702 y sus n",
+        "text_sha256": "6384c9dc96ee5ad22223614ad67573403d7f51c5dfca6dc74a520ff4642274e4"
+      },
+      {
+        "pattern": "Artículo Octavo",
+        "page": 15,
+        "start": 52354,
+        "end": 52799,
+        "text": "es de recepción y/o respuesta de reclamos, conforme a la normativa \nvigente. \n \nArtículo Octavo.- La presente Resolución entra en vigencia el \n1 de enero de 2024 , siendo dicho mes el primer periodo a reportar de acuerdo con lo señalado en el \nartículo 16 del Reglamento. A la entrada en vigencia del citado Reglamento , quedan derogadas la \nCircular G-184-2015, Circular de Atención al Usuario y el Capítulo I del Título VI del Reglamento del \n",
+        "text_sha256": "1f4ba069e354d133ced10edf755b5645fb5742ba5ce76417bb37feec96bae051"
+      },
+      {
+        "pattern": "sistema financiero",
+        "page": 1,
+        "start": 430,
+        "end": 878,
+        "text": "IDERANDO: \n \nQue, conforme al artículo 345 de la Ley N° 26702, Ley \nGeneral del Sistema Financiero y del Sistema de Seguros y Orgánica de la Superintendencia de \nBanca y Seguros, la Superintendencia protege los intereses del público en el ámbito de  los sistemas \nfinanciero y de seguros; y conforme al inciso d) del artículo 57 del Texto Único Ordenado de la Ley del \nSistema Privado de Administración de Fondos de Pensiones, aprobado por Decreto ",
+        "text_sha256": "8b540e463bbc4dccd52f97680836c413f2121279510b1ca12b80d3fe8dbd31cf"
+      },
+      {
+        "pattern": "sistema financiero",
+        "page": 1,
+        "start": 1441,
+        "end": 1889,
+        "text": "o de atención de reclamos y requerimientos de los usuarios de las empresas \ndel sistema financiero, de seguros y privado de pensiones; \n \nQue, se han producido importantes cambios y avances en \nlos servicios financieros como resultado de la innovación tecnológica en  un entorno de mayor \ndigitalización, los cuales además se han acelerado como consecuencia de la pandemi a originada a \nraíz del COVID-19;  \n \nQue, los referidos cambios y avances s",
+        "text_sha256": "9e2e0b5288bd431fb3c014cc47c65b85c996efd5461473b9ea32ff67f28687bc"
+      }
+    ],
+    "repository_version_not_legal_effect": true,
+    "subsequent_2286_2024_annotation_present": true,
+    "extraction_warning": "pypdf strict reader emitted Xref table not zero-indexed warning; original bytes preserved; extraction quality partial"
+  }
+]

@@ -1,0 +1,847 @@
+{
+  "skill": "sbs-modelos-configuracion",
+  "version": "0.1.1",
+  "skillhash": "ed4a626c7e023a59359d03b1bea5853899c37430464512993caf2ab7503b3a92",
+  "observed_at": "2026-09-27T23:27:26.890804+00:00",
+  "profile": "databricks-ai-engineer-aws",
+  "mode": "read_only_metadata",
+  "inference_executed": false,
+  "compute_started": false,
+  "resources_created": false,
+  "cost_observed": null,
+  "tokens_observed": null,
+  "endpoints": [
+    {
+      "name": "ais08-neptuno",
+      "task": "agent/v1/responses",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": "neptuno_manuel_arguelles.ais08_lab.agente_neptuno",
+          "entity_version": "4",
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": null,
+          "workload_type": "CPU",
+          "workload_size": "Small",
+          "scale_to_zero_enabled": true
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 3
+    },
+    {
+      "name": "ais08-neptuno-rollout",
+      "task": null,
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": "neptuno_manuel_arguelles.ais08_lab.ventas_rollout",
+          "entity_version": "2",
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": null,
+          "workload_type": "CPU",
+          "workload_size": "Small",
+          "scale_to_zero_enabled": true
+        },
+        {
+          "entity_name": "neptuno_manuel_arguelles.ais08_lab.ventas_rollout",
+          "entity_version": "1",
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": null,
+          "workload_type": "CPU",
+          "workload_size": "Small",
+          "scale_to_zero_enabled": true
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 4
+    },
+    {
+      "name": "databricks-gpt-5-6-sol",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.databricks-gpt-5-6-sol",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-gpt-6-astra",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.databricks-gpt-6-astra",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-gpt-6-sol",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.databricks-gpt-6-sol",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-gpt-6-luna",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.databricks-gpt-6-luna",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-grok-4-6",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.databricks-grok-4-6",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-gpt-5-6-luna",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.databricks-gpt-5-6-luna",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-gpt-5-6-terra",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.databricks-gpt-5-6-terra",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-glm-5-3-flash",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.databricks-glm-5-3-flash",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-glm-5-2",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.databricks-glm-5-2",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-glm-5-3",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.databricks-glm-5-3",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-kimi-k3",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.databricks-kimi-k3",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-inkling",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.databricks-inkling",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-claude-opus-4-8",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.databricks-claude-opus-4-8",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-claude-opus-5",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.databricks-claude-opus-5",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-claude-opus-5-5",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.databricks-claude-opus-5-5",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-gemini-3-5-flash",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.databricks-gemini-3-5-flash",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-gemini-3-7-flash",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.databricks-gemini-3-7-flash",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-gemini-3-8-flash",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.databricks-gemini-3-8-flash",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-gpt-oss-120b",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.gpt-oss-120b",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-claude-sonnet-5",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.databricks-claude-sonnet-5",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-gpt-oss-20b",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.gpt-oss-20b",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-qwen3-next-80b-a3b-instruct",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.qwen3-next-80b-a3b-instruct",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-qwen35-122b-a10b",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.databricks-qwen35-122b-a10b",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-llama-4-maverick",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.llama-4-maverick",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-gemma-3-12b",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.gemma-3-12b-it",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-gte-large-en",
+      "task": "llm/v1/embeddings",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.gte_large_en_v1_5",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-bge-large-en",
+      "task": "llm/v1/embeddings",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.bge_large_en_v1_5",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-meta-llama-3-1-8b-instruct",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.meta_llama_v3_1_8b_instruct",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-meta-llama-3-3-70b-instruct",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.llama_v3_3_70b_instruct",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-qwen3-embedding-0-6b",
+      "task": "llm/v1/embeddings",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.qwen3-embedding-0-6b",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-deepseek-v4-flash-0731",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.databricks-deepseek-v4-flash-0731",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-deepseek-v4-1-flash",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.databricks-deepseek-v4-1-flash",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    },
+    {
+      "name": "databricks-deepseek-v4-pro-0813",
+      "task": "llm/v1/chat",
+      "state": {
+        "ready": "READY",
+        "config_update": "NOT_UPDATING"
+      },
+      "models": [
+        {
+          "entity_name": null,
+          "entity_version": null,
+          "external_model_name": null,
+          "provider": null,
+          "task": null,
+          "foundation_model_name": "system.ai.databricks-deepseek-v4-pro-0813",
+          "workload_type": null,
+          "workload_size": null,
+          "scale_to_zero_enabled": null
+        }
+      ],
+      "configuration_status": "observed",
+      "config_version": 1
+    }
+  ],
+  "warehouses": [
+    {
+      "id": "828756322bedff37",
+      "name": "Serverless Starter Warehouse",
+      "state": "STOPPED",
+      "warehouse_type": "PRO",
+      "enable_serverless_compute": true,
+      "auto_stop_mins": 10
+    }
+  ],
+  "errors": [],
+  "tokenizer_status": "pending_real_candidate_tokenizer",
+  "integration_status": "metadata_only_not_inference_verified",
+  "endpoints_status": "observed",
+  "warehouses_status": "observed",
+  "selection_status": "pending_limits_tokenizers_prices_and_authorized_inference"
+}

@@ -1,0 +1,58 @@
+{
+  "provider": "local Kokoro",
+  "voice": "ef_dora",
+  "language": "es",
+  "speed": 0.95,
+  "duration": 209.467,
+  "technical_checks": [
+    {
+      "id": "scene01",
+      "seconds": 30.634666666666668,
+      "peak": 26504,
+      "clipped_samples": 0,
+      "non_silent": true,
+      "sha256": "70a9083c990bb50ceefeb136e5332090ffa097b34f589504cb4f513d0913e5d3"
+    },
+    {
+      "id": "scene02",
+      "seconds": 32.0,
+      "peak": 30287,
+      "clipped_samples": 0,
+      "non_silent": true,
+      "sha256": "7f12c8b004fb7784c35a1a1c3e746544bdc84edb31c2a464afbd209edfaf1f2b"
+    },
+    {
+      "id": "scene03",
+      "seconds": 36.330666666666666,
+      "peak": 32768,
+      "clipped_samples": 1,
+      "non_silent": true,
+      "sha256": "6bce8222d2b82997dfef46aa5c4033a16bf975f5d31393fcb1cba9c850c308ab"
+    },
+    {
+      "id": "scene04",
+      "seconds": 29.418666666666667,
+      "peak": 28855,
+      "clipped_samples": 0,
+      "non_silent": true,
+      "sha256": "6a8cc2a437c7e9033157c433392b73d572e07a1843435fb3033b5dab357bd7ae"
+    },
+    {
+      "id": "scene05",
+      "seconds": 36.906666666666666,
+      "peak": 32546,
+      "clipped_samples": 0,
+      "non_silent": true,
+      "sha256": "e6d059b853d720e209041c023f59e0edd0d9eb6706e4e14ee37fc7bd7e46654c"
+    },
+    {
+      "id": "scene06",
+      "seconds": 35.093333333333334,
+      "peak": 30712,
+      "clipped_samples": 0,
+      "non_silent": true,
+      "sha256": "3ea5c548a7a4cc8d8dd3cdc4a1f0f2b7f0542100a00212e91a34ca9cb3e45e90"
+    }
+  ],
+  "perceptual_listening": "not claimed"
+}

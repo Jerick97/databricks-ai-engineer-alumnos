@@ -1,0 +1,1 @@
+{"configuration":{"config_version":1,"endpoint":"databricks-qwen3-embedding-0-6b","models":[{"entity_name":null,"entity_version":null,"foundation_model_name":"system.ai.qwen3-embedding-0-6b"}],"task":"llm/v1/embeddings"},"matches_prior_verified_configuration":true}

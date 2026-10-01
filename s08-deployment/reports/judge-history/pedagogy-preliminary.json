@@ -1,0 +1,102 @@
+{
+  "judge": "independent-pedagogy",
+  "agent": "/root/judge_pedagogy",
+  "date": "2026-09-27T02:59:13.364211+00:00",
+  "verdict": "FAIL",
+  "scope": "full-session",
+  "target_scope": "full-session",
+  "class_ready": false,
+  "dimension": "pedagogy",
+  "summary": "La estructura didáctica y los hallazgos iniciales están resueltos. Falta completar la lectura guiada de evidencia CP5–6; no se aprueba el recorrido pedagógico completo mientras la práctica solo cuente filas y el ejemplo resuelto siga sin interpretación de métricas. Esta revisión no emite un dictamen de ejecución cloud.",
+  "artifact_hashes": {
+    "README.md": "b55d147b6c9357e3393536c9a3b733b02fc6f2bdf0d681ac3b0d8cfa8902d3a4",
+    "PLAN-CLASE.md": "0c9e44ee82c6acc07bf58e7f0ebe583199063c524699ab64e3d97133f49d5d97",
+    "GUIA-DOCENTE.md": "3351f7e31eddf2c841861bc7c4b805b174537241ece48249e624d9dd857feee9",
+    "CONSIGNA.md": "332c4c969300618c5dbecb103569070d5a9801194c3561caad1682e558ec37ce",
+    "CERTIFICACION.md": "5beb52f7cc90efcd41d2fe78e022eb60414824f381e68db6ee30f3b7ab2856d2",
+    "RUNBOOK.md": "61b3a2c169c87a6b7476dd78956be21c411b1344ce68b183b3b44213b18b2152",
+    "EJEMPLO-RESUELTO.md": "7d85e44d8197cd1a95b41d6ebbc9ef1a94f2a55b20137ada9be309513320b278",
+    "VALIDACION.md": "8d2fdea792ddf478c39d4adf10b66efec907282c10fe15edb6d893bad58d9ece",
+    "agenda.json": "b13e02c899af3414ea1d8b32355a79c5872613709ba2d1a725cb60ac3aa49c1a",
+    "guion.md": "4bf9dd057bd380d4d67d117c7bdeff22061f74157b667c180aa973964eff9144",
+    "notebook.py": "b5db8f115ced1594e5e6b5a837d6f1312302088a360477077873150b6fcae0b5",
+    "notebook.ipynb": "5c788b4459f9a846522b2ce6d7b75949400c77a9ee5675ca36aa037701e96342",
+    "slides/content.json": "0fd0b11c1541501f52927e8282a3b42e663c69112f848728357918a7654a14f3",
+    "slides/S08-deck.html": "fc6f5b72c511e33b8afbdea080a63786f4864d697c4accc303bbb15442b114e3",
+    "slides/S08-autonomo.html": "23e24ab1fa61e549a47a98704c21105086948b88c080236326145a0f42c8788c",
+    "slides/deck.js": "31e25fd75f6cd7c6e59949f9b0c3874ebb27d1add52e5e688ccb72c4daec3eaf",
+    "slides/deck.css": "bda749f090d887dfd096b45efad15e47644ef17aab182a8ff766953a75909f05",
+    "lab/lab_config.py": "c9fda07a95c1de66dad6f4d3386065b180fc5fff3b61b94d5ba5c4b3d07b34db",
+    "lab/lab_monitor.py": "fd53ed0dbb2c4a5d753ff526fa6959e88f0d6d5bc533a25adca0ea3dcb71c3dd",
+    "reports/visual-qa.json": "844f015f6468f1feec42d33c49ca0d6f6273d60b96d3c422531e9db18ab04c48"
+  },
+  "source_hashes": {
+    "/Users/macdenix/nix-skills/skills/operational/deck-craft/references/course-contract.md": "7f263b2768ad8382b25e7640b6072852075a1f70ec5d3f6f679a0d2884fc9d31",
+    "/Users/macdenix/clawd/projects/databricks-genai-pathway/temario-curso/TEMARIO.md": "e84cde07a10c39b0cdfd8b4cae5d6926be7912cc18c69e9afd0e16f296dc4a29",
+    "/Users/macdenix/clawd/projects-index/personal/cursos-a-dictar/databricks-ai-engineer/PROJECT.md": "59e024e6966cf292552b338a48e936d42794045a658458d08e743d7ef497e48c"
+  },
+  "evidence": [
+    {
+      "locator": "agenda.json",
+      "observed": "Ruta secuencial exacta de las52slides, una aparición por slide;180min reloj,10min pausa; subtotales por actividad coinciden. Tiempos estimados, no ensayados."
+    },
+    {
+      "locator": "GUIA-DOCENTE.md; RUNBOOK.md; notebook.py#CP0",
+      "observed": "Separa prerrequisitos, prewarm, modos crear/verificar, configuración aislada por equipo, identidad App/servicio/usuario y recuperación."
+    },
+    {
+      "locator": "notebook.py#CP1–CP4; CONSIGNA.md#CP3",
+      "observed": "Recupera proyecto S01–07, presenta teoría/acciones/aceptación y distingue agente Responses del custom canary. No atribuye tráfico o mejora de calidad al alias."
+    },
+    {
+      "locator": "notebook.py#CP7; GUIA-DOCENTE.md#Terminal",
+      "observed": "Bundle se valida por comando concreto de Terminal con variables de configuración. Prompt muestra registro, resolución y restauración de alias sin afirmar cambio de conducta del artefacto fijo."
+    },
+    {
+      "locator": "CERTIFICACION.md; slides/content.json#slide-47–50; reports/visual-qa.json",
+      "observed": "12preguntas originales con distractores/razones, mapa6dominios,4enclase8posteriores. Reporte QA observa ocultación/revelado de respuesta; revisado reporte, no repetida UI por este juez."
+    },
+    {
+      "locator": "EJEMPLO-RESUELTO.md",
+      "observed": "Corte temporal/hashes explícitos; cinco smoke Serving y latencias contextualizados sin generalizar calidad. Declara canary, App UI y monitor pendientes al corte."
+    }
+  ],
+  "findings": [
+    {
+      "id": "PED-CP5",
+      "severity": "high",
+      "locator": "notebook.py#CP5; EJEMPLO-RESUELTO.md#S08-INFERENCE; CONSIGNA.md#CP5",
+      "finding": "La aceptación pide seguir una solicitud real desde JSON crudo hasta fila plana, pero la práctica ejecutable solo consulta conteos. El ejemplo ofrece un agregado, no el par entrada/salida que un principiante pueda interpretar.",
+      "required_change": "Añadir consulta exacta por client_request_id/databricks_request_id según esquema observado, inspección saneada de campos crudos y fila flat correlacionada, y una breve interpretación del resultado. Mantener espera asíncrona explícita."
+    },
+    {
+      "id": "PED-CP6",
+      "severity": "high",
+      "locator": "notebook.py#CP6; EJEMPLO-RESUELTO.md#S08-MONITOR",
+      "finding": "La práctica observa únicamente count(*) de tablas profile/drift. No muestra cómo escoger ventana, columna, tamaño de muestra y valor de métrica para cumplir la interpretación exigida. El ejemplo permanece en monitor pendiente.",
+      "required_change": "Añadir consulta ejecutable de una métrica real con ventana y denominador; explicar comparación contra baseline y límite del tamaño de muestra. Completar ejemplo resuelto al llegar evidencia o conservar FAIL de preparación completa."
+    },
+    {
+      "id": "PED-TIMING",
+      "severity": "info",
+      "locator": "agenda.json#b3,b5,b7; RUNBOOK.md",
+      "finding": "El plan cabe nominalmente en180min con recursos prewarm, pero no hay ensayo completo observado. CP3 y observabilidad dependen de preparación previa; ejecución desde cero queda fuera del bloque.",
+      "required_change": "Conservar esta limitación y comprobar prewarm antes de clase; no anunciar180min ensayados."
+    }
+  ],
+  "resolved_initial_findings": [
+    "Agenda dejó de repetir21slides en apertura y20en cierre; ruta principal única.",
+    "Respuestas de los casos se ocultan hasta revelado.",
+    "Pausa ya no pide App antes de construirla.",
+    "Notebook parametriza nombres por equipo y sincroniza config con Terminal.",
+    "CP3 distingue compatibilidad real del endpoint y muestra práctica custom separada.",
+    "CP7 incorpora comandos de validación y ejercicio de alias reproducible.",
+    "CP8 identifica las13entregas de consigna."
+  ],
+  "unverified": [
+    "Este juez no ejecutó servicios ni notebooks cloud y no acredita funcionamiento por lectura de código.",
+    "Versión final v4, ejecución completa de notebook, canary/rollback, monitor terminado y recorrido SSO/UI se resuelven por evidencia y juez de ejecución.",
+    "Paridad ZIP/repositorio alumno se delega a ejecución; no inferida de63archivos declarados.",
+    "Aprendizaje de alumnos y tiempos de dictado no son observables antes de clase."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "invoked_at": "2026-09-28T02:43:51.962913+00:00",
+  "skills": {
+    "SK11": "0.1.12",
+    "SK12": "0.1.4",
+    "CreatorZ": "observed file"
+  },
+  "input_hashes": {
+    "skills/sbs-observabilidad-operacion/SKILL.md": "0fed92060eb9cd67172db1a9e6ed38544f9dc782d604f0204a78995cf9340a6c",
+    "skills/sbs-despliegue-e2e/SKILL.md": "93d8dd77eb2ad7522489bbf9ec1a5c73944a67847c47a701d35cd620aa0158ce",
+    "/Users/macdenix/clawd/openclaw-codex/openclaw-workspace/skills/skill-creator-z/SKILL.md": "913c602cca1fcc8bfbe6a7b6300199f098c178970952302579d152029491fc99",
+    "src/sbs/operations/cloud_dispatch.py": "4fc76b5e15c670f1daf6b15ae34046277c218e2206ce0aed3dcbc969bed5396a",
+    "src/sbs/operations/shared_control.py": "6af23e32e000a3606462880489b5d8b6253c8e42cf0fcd96920d1381735f03c8",
+    "src/sbs/operations/cloud_writer.py": "564d3591444455c70b9b69d293c648365817a97a51bbd881936a3837881fa696",
+    "src/sbs/operations/volume_artifacts.py": "25096a24708fa8dc3415f09970908d733e4f6c885d187b9a52b4314c2558f62b"
+  },
+  "scope": "driver and notebook offline assembly; no resources, SQL or Jobs calls",
+  "baseline": "Driver absent; existing reviewed adapters reused",
+  "design": "Closed pinned config; typed SDK services on single-attempt transport with normal Config.authenticate; current Jobs/task/ACL/subject and UC metadata observations plus explicit trusted-admin policy assumptions; no new approval regime",
+  "root_compute_coordination": "Root owns WriterConfig serverless adaptation; current clusters GET returned [] so no invented cluster",
+  "remote_calls": 0,
+  "cost": null
+}

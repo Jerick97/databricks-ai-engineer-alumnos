@@ -1,0 +1,169 @@
+{
+  "metadata": {
+    "kind": "ai_review",
+    "model": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "skill_id": "SK09",
+    "skill_version": "0.1.2",
+    "human_approved": false,
+    "development_exposed": true,
+    "holdout": false,
+    "invocation_path": "runs/sk09-astra-relevance-028-invocation.json",
+    "rubric_path": "context/evaluation-028/rubric.frozen.md",
+    "rubric_sha256": "7881c18101486c84ef77daa7c31228c1bca3dede2c2a80eb72723a4a418b2ed3"
+  },
+  "queries": {
+    "cyber-art20-3": {
+      "eligible": 84,
+      "judged": 84,
+      "grades": {
+        "0": 71,
+        "1": 9,
+        "2": 4
+      },
+      "by_side": {
+        "before": {
+          "0": 36,
+          "1": 4,
+          "2": 2
+        },
+        "after": {
+          "0": 35,
+          "1": 5,
+          "2": 2
+        }
+      },
+      "no_juzgable": 0,
+      "missing": []
+    },
+    "market-art27": {
+      "eligible": 137,
+      "judged": 137,
+      "grades": {
+        "0": 121,
+        "1": 12,
+        "2": 4
+      },
+      "by_side": {
+        "before": {
+          "0": 59,
+          "1": 5,
+          "2": 2
+        },
+        "after": {
+          "0": 62,
+          "1": 7,
+          "2": 2
+        }
+      },
+      "no_juzgable": 0,
+      "missing": []
+    },
+    "market-art29-1-4": {
+      "eligible": 137,
+      "judged": 137,
+      "grades": {
+        "0": 124,
+        "2": 4,
+        "1": 9
+      },
+      "by_side": {
+        "before": {
+          "0": 60,
+          "2": 2,
+          "1": 4
+        },
+        "after": {
+          "0": 64,
+          "1": 5,
+          "2": 2
+        }
+      },
+      "no_juzgable": 0,
+      "missing": []
+    }
+  },
+  "total_eligible_relations": 358,
+  "total_judged": 358,
+  "unique_eligible_passages": 221,
+  "total_inventory_passages": 231,
+  "excluded_passages": [
+    {
+      "inventory_index": 146,
+      "passage_id": "6279ba99c272c8437e9631283438c399fb7144f6741ba73857e180447458baf1",
+      "document_id": "sbs-2286-2024",
+      "version_id": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "reason": "Document/version outside the two frozen pairs; no eligible query relationship"
+    },
+    {
+      "inventory_index": 147,
+      "passage_id": "c7a317b835802b11836b7492a50343d038d8f1941d2a5acec62da5b5341f30de",
+      "document_id": "sbs-2286-2024",
+      "version_id": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "reason": "Document/version outside the two frozen pairs; no eligible query relationship"
+    },
+    {
+      "inventory_index": 148,
+      "passage_id": "00546594b2d421fd9d914b47568278cf54fa449fdd7d1b16c5b74fd023c69023",
+      "document_id": "sbs-2286-2024",
+      "version_id": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "reason": "Document/version outside the two frozen pairs; no eligible query relationship"
+    },
+    {
+      "inventory_index": 149,
+      "passage_id": "464934f48476c3b4d2147824c66924cb7806d9b94dd044241baeadb6574c0b0a",
+      "document_id": "sbs-2286-2024",
+      "version_id": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "reason": "Document/version outside the two frozen pairs; no eligible query relationship"
+    },
+    {
+      "inventory_index": 150,
+      "passage_id": "dc662323bf4b9f70e39eda7cad8f5b4f4ab4ebfcadf07a817be7eea2e39ac055",
+      "document_id": "sbs-2286-2024",
+      "version_id": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "reason": "Document/version outside the two frozen pairs; no eligible query relationship"
+    },
+    {
+      "inventory_index": 151,
+      "passage_id": "fd7940c2695a09a5b6a916e4fc173752c908bb79b8be644cb51640fa9dce169f",
+      "document_id": "sbs-2286-2024",
+      "version_id": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "reason": "Document/version outside the two frozen pairs; no eligible query relationship"
+    },
+    {
+      "inventory_index": 152,
+      "passage_id": "fb94a3b26fd4fdcff895a8651fbbbc791a896d1c91f6a84fc19b791a90ad7950",
+      "document_id": "sbs-2286-2024",
+      "version_id": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "reason": "Document/version outside the two frozen pairs; no eligible query relationship"
+    },
+    {
+      "inventory_index": 153,
+      "passage_id": "6c00ff43daaa48b7aee79c03cfd11ff25ea3f4b4ac69311c1c64fa12f353d959",
+      "document_id": "sbs-2220-2025",
+      "version_id": "689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55",
+      "reason": "Document/version outside the two frozen pairs; no eligible query relationship"
+    },
+    {
+      "inventory_index": 154,
+      "passage_id": "72cbfb1ba7b597822c3e0d13afa14704334373974ee590d38cc953bc311b3283",
+      "document_id": "sbs-2220-2025",
+      "version_id": "689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55",
+      "reason": "Document/version outside the two frozen pairs; no eligible query relationship"
+    },
+    {
+      "inventory_index": 155,
+      "passage_id": "7340baf268c9ded2f4098eb1688268445a6a29ff58d9d1b160cf1f3663073a44",
+      "document_id": "sbs-2220-2025",
+      "version_id": "689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55",
+      "reason": "Document/version outside the two frozen pairs; no eligible query relationship"
+    }
+  ],
+  "missing": [],
+  "complete_relative_to_frozen_inventory": true,
+  "legally_exhaustive": false,
+  "raw_slice_verified": 358,
+  "page_mapping_verified": 358,
+  "pdf_visual_review": "not_performed; local original hashes and extraction page offsets verified",
+  "repeated_judge_rounds": 0
+}

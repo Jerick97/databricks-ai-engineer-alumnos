@@ -1,0 +1,249 @@
+{
+  "artifact_hashes": {
+    "slides/S08-deck.html": "f70b7cb05ebb9053d6220da35892d01497b4a7a30b68466415acc11e166164df",
+    "slides/S08-autonomo.html": "9b5049015512853a291fb5f69193f1ea9139293dfa1fa010bf5a450e5d680fcc",
+    "slides/content.json": "e878d06acd3babe1b6c796a18ecc00f0dd72384d590ad25d93150407a62938a6",
+    "slides/deck.css": "bda749f090d887dfd096b45efad15e47644ef17aab182a8ff766953a75909f05",
+    "slides/deck.js": "31e25fd75f6cd7c6e59949f9b0c3874ebb27d1add52e5e688ccb72c4daec3eaf"
+  },
+  "pass": true,
+  "scenarios": [
+    {
+      "pass": true,
+      "slides": 52,
+      "viewport": [
+        1440,
+        900
+      ],
+      "scale": 0.92,
+      "theme": "indigo",
+      "issues": []
+    },
+    {
+      "pass": true,
+      "slides": 52,
+      "viewport": [
+        1440,
+        900
+      ],
+      "scale": 1,
+      "theme": "indigo",
+      "issues": []
+    },
+    {
+      "pass": true,
+      "slides": 52,
+      "viewport": [
+        1440,
+        900
+      ],
+      "scale": 1.08,
+      "theme": "indigo",
+      "issues": []
+    },
+    {
+      "pass": true,
+      "slides": 52,
+      "viewport": [
+        1440,
+        900
+      ],
+      "scale": 0.92,
+      "theme": "fuego",
+      "issues": []
+    },
+    {
+      "pass": true,
+      "slides": 52,
+      "viewport": [
+        1440,
+        900
+      ],
+      "scale": 1,
+      "theme": "fuego",
+      "issues": []
+    },
+    {
+      "pass": true,
+      "slides": 52,
+      "viewport": [
+        1440,
+        900
+      ],
+      "scale": 1.08,
+      "theme": "fuego",
+      "issues": []
+    },
+    {
+      "pass": true,
+      "slides": 52,
+      "viewport": [
+        1024,
+        768
+      ],
+      "scale": 0.92,
+      "theme": "indigo",
+      "issues": []
+    },
+    {
+      "pass": true,
+      "slides": 52,
+      "viewport": [
+        1024,
+        768
+      ],
+      "scale": 1,
+      "theme": "indigo",
+      "issues": []
+    },
+    {
+      "pass": true,
+      "slides": 52,
+      "viewport": [
+        1024,
+        768
+      ],
+      "scale": 1.08,
+      "theme": "indigo",
+      "issues": []
+    },
+    {
+      "pass": true,
+      "slides": 52,
+      "viewport": [
+        1024,
+        768
+      ],
+      "scale": 0.92,
+      "theme": "fuego",
+      "issues": []
+    },
+    {
+      "pass": true,
+      "slides": 52,
+      "viewport": [
+        1024,
+        768
+      ],
+      "scale": 1,
+      "theme": "fuego",
+      "issues": []
+    },
+    {
+      "pass": true,
+      "slides": 52,
+      "viewport": [
+        1024,
+        768
+      ],
+      "scale": 1.08,
+      "theme": "fuego",
+      "issues": []
+    },
+    {
+      "pass": true,
+      "slides": 52,
+      "viewport": [
+        390,
+        844
+      ],
+      "scale": 0.92,
+      "theme": "indigo",
+      "issues": []
+    },
+    {
+      "pass": true,
+      "slides": 52,
+      "viewport": [
+        390,
+        844
+      ],
+      "scale": 1,
+      "theme": "indigo",
+      "issues": []
+    },
+    {
+      "pass": true,
+      "slides": 52,
+      "viewport": [
+        390,
+        844
+      ],
+      "scale": 1.08,
+      "theme": "indigo",
+      "issues": []
+    },
+    {
+      "pass": true,
+      "slides": 52,
+      "viewport": [
+        390,
+        844
+      ],
+      "scale": 0.92,
+      "theme": "fuego",
+      "issues": []
+    },
+    {
+      "pass": true,
+      "slides": 52,
+      "viewport": [
+        390,
+        844
+      ],
+      "scale": 1,
+      "theme": "fuego",
+      "issues": []
+    },
+    {
+      "pass": true,
+      "slides": 52,
+      "viewport": [
+        390,
+        844
+      ],
+      "scale": 1.08,
+      "theme": "fuego",
+      "issues": []
+    }
+  ],
+  "checks": [
+    {
+      "name": "single advance",
+      "pass": true
+    },
+    {
+      "name": "End",
+      "pass": true
+    },
+    {
+      "name": "theme persistence",
+      "pass": true
+    },
+    {
+      "name": "font persistence",
+      "pass": true
+    },
+    {
+      "name": "references",
+      "pass": true
+    },
+    {
+      "name": "notes",
+      "pass": true
+    },
+    {
+      "name": "quiz hidden initially",
+      "pass": true
+    },
+    {
+      "name": "quiz answer reveal",
+      "pass": true
+    },
+    {
+      "name": "standalone",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

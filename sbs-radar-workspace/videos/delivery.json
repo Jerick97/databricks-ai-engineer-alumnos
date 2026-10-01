@@ -1,0 +1,69 @@
+{
+  "status": "MP4_EXPORTED",
+  "videos": [
+    {
+      "project": "01-ingesta-publicacion",
+      "seconds": 194.833,
+      "html_sha256": "82a5dc89a49adad42e917932726951a43e1b2102b4c8f2206445848d78d085c4",
+      "mp4_exported": true,
+      "voice": "ef_dora",
+      "static_lint": "PASS",
+      "visual_validation": "HyperFrames check passed in user Terminal",
+      "audio_peak_note": "One full-scale sample in one scene; no full perceptual listening claimed.",
+      "tts_normalization": null,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "194.833333",
+          "size": "10872489"
+        }
+      }
+    },
+    {
+      "project": "02-consulta-aplicacion",
+      "seconds": 209.467,
+      "html_sha256": "7ef40bcccb338023b2471698b7e565760424c77e9b5dee32bab73bc8c8d9bddf",
+      "mp4_exported": true,
+      "voice": "ef_dora",
+      "static_lint": "PASS",
+      "visual_validation": "HyperFrames check passed in user Terminal",
+      "audio_peak_note": "One full-scale sample in one scene; no full perceptual listening claimed.",
+      "tts_normalization": "ONNX spelled o, ene, ene, equis in video 2 scene 3; Spanish ASR confirms ONNX after correction",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "209.500000",
+          "size": "11375519"
+        }
+      }
+    }
+  ],
+  "independent_content_review": "script-review.json",
+  "render_command": "zsh /Users/macdenix/clawd/databricks-ai-engineer/sbs-radar-workspace/videos/renderizar.command"
+}

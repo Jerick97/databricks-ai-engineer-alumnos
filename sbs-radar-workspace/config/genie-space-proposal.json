@@ -1,0 +1,47 @@
+{
+  "version": "0.1.0",
+  "title": "SBS Radar — datos documentales",
+  "namespace": "sbs_radar",
+  "catalog": null,
+  "space_id": null,
+  "warehouse_id": null,
+  "tables": [
+    "documents",
+    "versions",
+    "provisions",
+    "pairs",
+    "changes",
+    "evidence",
+    "reviews",
+    "processes"
+  ],
+  "instructions": [
+    "Usa exclusivamente tablas curadas del namespace de misión.",
+    "Indica snapshot, filtros y cobertura. No equipares cero filas a ausencia legal.",
+    "Versiones de repositorio no demuestran vigencia. Procesos ficticios no son normas.",
+    "Las anotaciones IA no son aprobación humana. Interpretación normativa requiere EvidencePack."
+  ],
+  "sql_examples": "runs/sk06-component-real/example-queries.json",
+  "benchmark": "runs/sk06-component-real/benchmark-questions.json",
+  "status": "reviewable_not_applied",
+  "scoped_api_version": "0.1.1",
+  "scoped_result_verification": {
+    "status": "pending_trusted_backend_bindings",
+    "catalog_constructor": "ScopedCatalog(pinned_bundle, trusted_contexts, table_prefix)",
+    "execution_probe": "Independent executed SQL, bound parameters, source tables and deployed snapshot by query_id; never Genie summary or payload claims",
+    "query_policy": "exact_parameterized_reference_templates_only",
+    "supported_meanings": [
+      "document_version_list",
+      "document_version_count",
+      "provision_row_list",
+      "provision_row_count"
+    ],
+    "unsupported": [
+      "arbitrary_generated_SQL",
+      "material_normative_change_counts",
+      "target_date_legal_validity",
+      "partial_or_paginated_rows"
+    ],
+    "caller_entrypoint": "ask_scoped(question, context=QueryContext)"
+  }
+}

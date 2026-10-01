@@ -1,0 +1,10 @@
+{
+  "executed_at": "2026-09-28T00:00:58.270237+00:00",
+  "kernel": "python3",
+  "code_cells": 4,
+  "executed_cells": 4,
+  "errors": 0,
+  "source_sha256": "e983910bd2f5168ed42afc8c74760aae60d5bab16b214ffd69ea7512099068a2",
+  "output_sha256": "eb5a2c39be4effc7e2c877ed796ea0db70104ebd89807ab153219cfd9f03dbe1",
+  "scope": "Local offline corpus verification and declarative remote preflight; no deployed/E2E claim"
+}

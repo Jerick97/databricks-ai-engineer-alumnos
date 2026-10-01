@@ -1,0 +1,14 @@
+{
+  "run_id": "sk11-remote-refresh-015-notebook-20260928T032110-93d95f83790f446a86d45c84dfc85096",
+  "status": "passed",
+  "code_cells": 2,
+  "executed_cells": 2,
+  "errors": 0,
+  "error_class": null,
+  "source": "notebooks/sbs-radar-cloud-writer.ipynb",
+  "source_sha256": "c66e71fe970a6308fa894ad58e1dd95267d946364ee654591b043b11d57efb19",
+  "executed": "runs/sk11-remote-refresh-015-notebook-20260928T032110-93d95f83790f446a86d45c84dfc85096-executed.ipynb",
+  "executed_sha256": "4b4358b654e7bee989870ed3e87b634cc609eb3a2567b7804c7232c1847561b9",
+  "scope": "real local kernel, default preflight only; no SDK constructed/auth or cloud requests",
+  "cost": null
+}

@@ -1,0 +1,48 @@
+{
+  "at": "2026-09-28T04:00:53.296469+00:00",
+  "status": "passed_local_technical_review",
+  "invocation": "runs/sk09-genie-publication-writer-016-invocation.json",
+  "constructor": "sk06_green",
+  "reviewer": "sk07_green",
+  "findings": [],
+  "tests": {
+    "existing_writer_tests": 22,
+    "independent_probes": 8,
+    "failed": 0,
+    "artifacts": [
+      "runs/sk09-genie-publication-writer-016-tests.txt",
+      "runs/sk09-genie-publication-writer-016-probes.json"
+    ]
+  },
+  "verified": [
+    "Fixed export002 eight tables/164 rows; SQL reconstructs closed table/column names and separately typed string parameters",
+    "Observed schema UUID/catalog+schema owner/actor/warehouse direct permission and RUNNING precede mutation",
+    "Journal intent file exists before all16 mutations; known missing effects are not resent and committed lost responses reconcile from exact contents",
+    "Rows, UC identity, history actor/version and query history independently constrain certificate/registry publication",
+    "Corrupt contents and policy metadata reject; masked tables rejected before insertion",
+    "Actual SDK wire fixture covers typed404 table absence, userName and flattened query history filters",
+    "Two executed notebook preflight cells hash-match source/result, no errors, explicit pending/noSDK/no cloud"
+  ],
+  "harness_correction": "Initial independent harness used macOS /var symlink temp path, correctly rejected by journal no-symlink protection; resolved temp root before probes. Initial notebook assertion expected aggregate164 printed but output prints per-table141 etc. Corrected assertion; initial harness errors preserved separately. No component edits.",
+  "limits": [
+    "No SQL/GET/Files/identity operation or inference remote",
+    "Actual SQL permission/provider syntax/query-history availability still unverified",
+    "Exclusive trusted-admin maintenance/retention/ABAC absence are declared assumptions; not historical proof or ABA prevention",
+    "RUNNING check cannot atomically prevent warehouse transition before SQL; cost unknown",
+    "Server-local durable journal required for safe resumption; losing journal with existing tables fails closed",
+    "Successful local write fixture/certificate is not Genie-space setup, reader governance, runtime binding, UI or E2E acceptance",
+    "This review authorizes no execution and changes no original sources"
+  ],
+  "input_hashes_unchanged": {
+    "skills/sbs-evaluacion-jueces/SKILL.md": true,
+    "src/sbs/genie/publication_writer.py": true,
+    "tests/unit/test_publication_writer.py": true,
+    "runs/sk06-publication-writer-016-record.json": true,
+    "skills/sbs-genie-datos/SKILL.md": true,
+    "notebooks/sbs-radar-genie-publication.ipynb": true,
+    "skills/sbs-genie-datos/references/publication-writer.md": true
+  },
+  "remote_calls": 0,
+  "mutations_remote": 0,
+  "cost": null
+}

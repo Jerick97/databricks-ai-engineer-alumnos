@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-28T17:53:00.239450+00:00",
+  "skill": "SK09v0.1.2",
+  "status": "passed_observed_contract_compatibility_for_local_development",
+  "invocation": "runs/sk09-query-compatibility-046-invocation.json",
+  "input_result_sha256": "534851854b5586e536d862e71fa2372010130cc8498d23ddd9cbc0698de0ec07",
+  "script_sha256": "22d20c6d13c00b518c4948c142572ce54bddd28248ed8c63184c5997723997a1",
+  "independent_replay": {
+    "method": "AST remove only final output-write and print; execute same inspected local checks; original result unchanged",
+    "checks": 153,
+    "passed": 153,
+    "all_output_fields_equal_except_timestamp": true
+  },
+  "findings": [],
+  "decision": "Three exact cached queryvectors can be paired with231new documentvectors for frozen local exposed-development evaluation under the observed operational contract. This is not a proof of unchanged remote weights or numerical mapping.",
+  "verified": [
+    "Historical query and endpoint file hashes match001report; current sealed receipts match045dataset/model identity.",
+    "Exact query texts/order, instruction framing, role, tokenizer revision/file hash and counted inputtokens agree; query3x1024/document231x1024 finite.",
+    "Comparable001/045endpoint/task/configversion/foundationmodel projection matches directly; unrelated configuration hash encodings are not treated as drift proof.",
+    "All29batch model/role/input-plan binding and assembled documentvectors match final output; separate structural corpus identity retained."
+  ],
+  "limits": [
+    "No network/auth/model rerun, index creation/promotion or ranking alteration.",
+    "Remoteweights remain mutable/unobserved; this explicit compatibility assumption must accompany subsequent metrics.",
+    "Three exposed developmentqueries only; no holdout, retrieval quality or business/E2E acceptance.",
+    "04129POST allowance already consumed; this review grants no extra inference or SQL authority."
+  ]
+}

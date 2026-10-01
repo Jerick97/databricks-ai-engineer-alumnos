@@ -1,0 +1,94 @@
+{
+  "type": "object",
+  "properties": {
+    "document_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "version_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "family": {
+      "enum": [
+        "cybersecurity",
+        "market_conduct"
+      ]
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$",
+      "minLength": 64,
+      "maxLength": 64
+    },
+    "captured_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "published_on": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "effective_on": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "date_unknown_reasons": {
+      "type": "object",
+      "properties": {
+        "published_on": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "effective_on": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "source_kind": {
+      "enum": [
+        "normative",
+        "draft",
+        "fictitious_process"
+      ]
+    },
+    "synthetic": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "document_id",
+    "version_id",
+    "family",
+    "url",
+    "sha256",
+    "captured_at",
+    "published_on",
+    "effective_on",
+    "date_unknown_reasons",
+    "source_kind",
+    "synthetic"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sbs:contracts:SourceDocument:0.1.0",
+  "title": "SourceDocument",
+  "description": "SK01 v0.1.0. Local structural contract. Does not establish source truth, immutable persistence, citation literalness or authenticated authorization. Unknown fields rejected; ModelBundle parameters alone permits scalar extension keys."
+}

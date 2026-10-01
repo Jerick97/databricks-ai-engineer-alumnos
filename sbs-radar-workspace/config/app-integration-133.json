@@ -1,0 +1,1 @@
+{"version":1,"status":"prepared_quality_and_target_review_required","deadline_unix":0,"generation_posts_per_process":4,"embedding_posts_per_process":2,"embedding_tokens_per_process":20000,"workspace_host":"https://dbc-0410b264-20c7.cloud.databricks.com","reader_client_id":"a947eccf-5f94-4369-a3d4-8f83b4ea98a1","worker_count":1}

@@ -1,0 +1,19 @@
+{
+  "kind": "unavailable",
+  "review_provenance": {
+    "status": "pending_refs",
+    "human_baseline": "not_collected"
+  },
+  "families": {
+    "cybersecurity": {
+      "changes": [],
+      "critical": [],
+      "insufficient_cases": []
+    },
+    "market_conduct": {
+      "changes": [],
+      "critical": [],
+      "insufficient_cases": []
+    }
+  }
+}

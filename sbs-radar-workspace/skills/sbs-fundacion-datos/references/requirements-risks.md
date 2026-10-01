@@ -1,0 +1,10 @@
+# Requisitos / riesgos
+
+- missing_annex: corpus incompleto; dependencia anexo registrada
+- same_url_new_bytes: conserva ambos originales inmutables; URL no es versión normativa
+- ocr_table: calidad parcial/pending; no indexar cifras desordenadas fiables; offsets del texto extraido no binario
+- idempotent: objeto por hash; intentos separados; reanuda etapas sin duplicación
+- fixture_pressure: no sustituye corpusreal; dosfamilias separadas
+- trigger_no: deriva interpretación a conversación/análisis
+
+Límites: falta OCR no se resuelve inventando texto; HTTP200 no indicaPDFválido; fechaefecto nunca igualar a captura.

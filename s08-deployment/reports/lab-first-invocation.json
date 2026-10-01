@@ -1,0 +1,32 @@
+{
+  "version_expected": "1 during v2 update",
+  "output": [
+    {
+      "type": "message",
+      "id": "c447ba47-193c-42d7-9169-1f9bf2fb8e65",
+      "content": [
+        {
+          "text": "En 2026 vendimos **Bebidas** por un total neto de **116 024.88**【documento_id=neptuno_manuel_arguelles.gold.ventas_por_categoria_mes; chunk_id=...】.",
+          "type": "output_text",
+          "annotations": []
+        }
+      ],
+      "role": "assistant"
+    }
+  ],
+  "custom_outputs": {
+    "tool_errors": 0,
+    "tool_audit": [
+      {
+        "tool": "ventas_categoria",
+        "ok": true
+      }
+    ],
+    "input_tokens": 847,
+    "latency_ms": 2494,
+    "output_tokens": 179,
+    "tool_calls": 1,
+    "llm_endpoint": "databricks-gpt-oss-120b",
+    "agent_revision": "s08-v1"
+  }
+}

@@ -1,0 +1,26 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>lab/lab_app.py · S08</title><style>body{font:18px system-ui;margin:32px;color:#122b43}header{max-width:1000px}a{color:#533afd}pre{font:14px/1.6 ui-monospace,monospace;overflow:auto;background:#f6f9fc;padding:20px}pre span{display:block}pre span:target{background:#fff0ad}pre a{display:inline-block;width:4ch;color:#65788a}p{line-height:1.5}</style><header><h1>lab/lab_app.py</h1><p>Código del repositorio local · Neptuno S08. Esta copia permite examinar el script sin ejecutarlo.</p><p>GitHub: acceso pendiente de verificar; los remotos configurados devolvieron 404 el 30/09/2026. No se presenta esta copia como una publicación remota.</p><p><a href="../../lab/lab_app.py">Abrir archivo original</a> · <a href="../S08-autonomo.html#23">Volver a las diapositivas</a></p></header><pre><span id="L1"><a href="#L1">1</a> &quot;&quot;&quot;CP4: crea App aislada y sube el código, sin tokens en archivos/browser.&quot;&quot;&quot;</span>
+<span id="L2"><a href="#L2">2</a> import os, json, argparse</span>
+<span id="L3"><a href="#L3">3</a> from pathlib import Path</span>
+<span id="L4"><a href="#L4">4</a> from databricks.sdk import WorkspaceClient</span>
+<span id="L5"><a href="#L5">5</a> from databricks.sdk.errors import NotFound</span>
+<span id="L6"><a href="#L6">6</a> from databricks.sdk.service import apps</span>
+<span id="L7"><a href="#L7">7</a> from databricks.sdk.service.workspace import ImportFormat</span>
+<span id="L8"><a href="#L8">8</a> from lab_deploy import CONFIG, save</span>
+<span id="L9"><a href="#L9">9</a> </span>
+<span id="L10"><a href="#L10">10</a> def main():</span>
+<span id="L11"><a href="#L11">11</a>     p=argparse.ArgumentParser();p.add_argument(&#x27;--profile&#x27;);a=p.parse_args()</span>
+<span id="L12"><a href="#L12">12</a>     if a.profile:os.environ[&#x27;DATABRICKS_CONFIG_PROFILE&#x27;]=a.profile</span>
+<span id="L13"><a href="#L13">13</a>     w=WorkspaceClient();c=CONFIG</span>
+<span id="L14"><a href="#L14">14</a>     assert c[&#x27;app_name&#x27;].startswith(&#x27;ais08-&#x27;)</span>
+<span id="L15"><a href="#L15">15</a>     try: app=w.apps.get(c[&#x27;app_name&#x27;])</span>
+<span id="L16"><a href="#L16">16</a>     except NotFound:</span>
+<span id="L17"><a href="#L17">17</a>         app=w.apps.create(app=apps.App(name=c[&#x27;app_name&#x27;],description=&#x27;S08 Neptuno: UI sobre Serving&#x27;,resources=[apps.AppResource(name=&#x27;neptuno-endpoint&#x27;,serving_endpoint=apps.AppResourceServingEndpoint(name=c[&#x27;endpoint&#x27;],permission=apps.AppResourceServingEndpointServingEndpointPermission.CAN_QUERY))])).result()</span>
+<span id="L18"><a href="#L18">18</a>     source=f&quot;/Users/{w.current_user.me().user_name}/AIS08-labfiles/app&quot;</span>
+<span id="L19"><a href="#L19">19</a>     w.workspace.mkdirs(source)</span>
+<span id="L20"><a href="#L20">20</a>     for path in (Path(__file__).resolve().parents[1]/&#x27;app&#x27;).iterdir():</span>
+<span id="L21"><a href="#L21">21</a>         if path.is_file():w.workspace.upload(source+&#x27;/&#x27;+path.name,path.read_bytes(),format=ImportFormat.AUTO,overwrite=True)</span>
+<span id="L22"><a href="#L22">22</a>     deployment=w.apps.deploy(c[&#x27;app_name&#x27;],app_deployment=apps.AppDeployment(source_code_path=&quot;/Workspace&quot;+source))</span>
+<span id="L23"><a href="#L23">23</a>     save(&#x27;app&#x27;,{&#x27;name&#x27;:app.name,&#x27;url&#x27;:app.url,&#x27;source_code_path&#x27;:source,&#x27;submitted&#x27;:True})</span>
+<span id="L24"><a href="#L24">24</a>     print(&#x27;App deployment submitted:&#x27;,app.name)</span>
+<span id="L25"><a href="#L25">25</a> if __name__==&#x27;__main__&#x27;:main()</span>
+</pre></html>

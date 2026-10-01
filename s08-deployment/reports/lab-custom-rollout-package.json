@@ -1,0 +1,10 @@
+{
+  "model": "neptuno_manuel_arguelles.ais08_lab.ventas_rollout",
+  "versions": [
+    "1",
+    "2"
+  ],
+  "endpoint": "ais08-neptuno-rollout",
+  "source": "UC ventas S05 real",
+  "purpose": "Mecánica canary; ambas versiones preservan misma cifra y sólo etiqueta revision cambia"
+}

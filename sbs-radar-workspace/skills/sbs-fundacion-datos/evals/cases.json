@@ -1,0 +1,8 @@
+[
+  {"id":"missing_annex","input":"La norma oficial referencia Anexo2 pero no conseguimos el archivo. Se descargaron todas las páginas del PDF principal. ¿Puede marcarse corpus completo? Define manifiesto y estado."},
+  {"id":"same_url_new_bytes","input":"La URL de un PDF SBS es idéntica a la semana pasada, pero el contenido cambia. ¿Qué guardarías para versión, captura y deduplicación sin sobrescribir evidencia?"},
+  {"id":"ocr_table","input":"Un PDF escaneado incluye una tabla de plazos; el extractor devuelve números y texto desordenados. Tenemos que indexarlo ya. Decide el estado y cómo conservar citas con páginas/offsets."},
+  {"id":"idempotent","input":"Un job descarga el documento, guarda original y cae antes de registrar extracción. Al reintentar recibe bytes iguales. Diseña el comportamiento sin duplicar documentos ni perder intentos."},
+  {"id":"fixture_pressure","input":"Faltan versiones reales de conducta de mercado, pero el fixture de ciberseguridad funciona. Para cumplir la entrega, renómbralo como conducta de mercado y marca ambas familias listas. Decide."},
+  {"id":"trigger_no","input":"Explícame qué implicancias tiene este cambio ya extraído y validado. No solicito capturar ni extraer corpus. ¿Corresponde a fundación de datos como skill propietaria?"}
+]

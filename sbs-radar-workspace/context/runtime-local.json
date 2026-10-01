@@ -1,0 +1,11 @@
+{
+  "python": "3.14.7",
+  "packages": {
+    "jsonschema": "4.26.0",
+    "pypdf": "6.13.3",
+    "pytest": "9.0.2",
+    "reportlab": "4.4.10"
+  },
+  "scope": "local installed runtime only, not cloud capabilities",
+  "observed_at": "2026-09-27"
+}

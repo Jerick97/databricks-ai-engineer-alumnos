@@ -1,0 +1,31 @@
+{
+  "observed_at": "2026-09-28T03:12:59.105682+00:00",
+  "host": "https://dbc-0410b264-20c7.cloud.databricks.com",
+  "method": "GET only normal SDK auth, one HTTP request per listed path, no redirects",
+  "observations": {
+    "me": {
+      "http_status": 200,
+      "id": "76826984571984",
+      "userName": "sociosdosmilveintiseis@gmail.com",
+      "active": true
+    },
+    "catalog": {
+      "http_status": 200,
+      "name": "neptuno_manuel_arguelles",
+      "owner": "sociosdosmilveintiseis@gmail.com",
+      "catalog_type": "MANAGED_CATALOG",
+      "metastore_id": "6f0516ab-e331-44ba-bdb6-60c132b1b196"
+    },
+    "schema": {
+      "http_status": 404,
+      "error_code": "SCHEMA_DOES_NOT_EXIST"
+    },
+    "volume": {
+      "http_status": 404,
+      "error_code": "SCHEMA_DOES_NOT_EXIST"
+    }
+  },
+  "cloud_mutations": false,
+  "sql_executed": false,
+  "cost": null
+}

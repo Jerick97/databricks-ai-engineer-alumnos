@@ -1,0 +1,12 @@
+{
+  "url": "https://ais08-neptuno-ui-7474657121564806.aws.databricksapps.com",
+  "health_status": 200,
+  "health_ok": true,
+  "invalid_status": 400,
+  "invalid_has_form": true,
+  "invalid_escaped": true,
+  "post_status": 200,
+  "has_expected_business_answer": true,
+  "has_source": true,
+  "pass": true
+}

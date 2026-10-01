@@ -1,0 +1,212 @@
+{
+  "run": "sk02-amendments-capture-20260927T232431Z",
+  "skill": {
+    "name": "sbs-fundacion-datos",
+    "path": "skills/sbs-fundacion-datos/SKILL.md",
+    "sha256": "505922f76d5edf62dd1f425ca111cd607cb612e8a80fad67aad4817a7a36f25d"
+  },
+  "manifest": "/Users/macdenix/clawd/projects/sbs-genie-e2e/context/pilot-amendments-manifest.json",
+  "manifest_sha256": "76084e75b5357481059273fbced1b1c5f87eced5aa346ce41de7dc4f64ead768",
+  "root": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository",
+  "source_count": 3,
+  "sources": [
+    {
+      "source": {
+        "document_id": "sbs-2286-2024",
+        "family": "cybersecurity",
+        "source_kind": "normative",
+        "synthetic": false,
+        "version_id": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+        "sha256": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+        "url": "https://intranet2.sbs.gob.pe/dv_int_cn/2410/v2.0/Adjuntos/2286-2024.R%20%28modificado%29.pdf",
+        "captured_at": "2026-09-27T23:24:31.054252+00:00",
+        "published_on": null,
+        "effective_on": null,
+        "date_unknown_reasons": {
+          "published_on": "Unknown pending authoritative metadata review; not inferred from repository path",
+          "effective_on": "Unknown pending legal-effect review; not inferred from capture or path"
+        }
+      },
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/0e/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9.pdf",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/d7ab1b22b63dedd7f2a0e731d38c760584be04ed65d901a47a5fa160875a4dab/rawtext.txt",
+      "result_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/d7ab1b22b63dedd7f2a0e731d38c760584be04ed65d901a47a5fa160875a4dab/result.json",
+      "pages": 8,
+      "rawtext_chars": 20264,
+      "quality": {
+        "status": "partial",
+        "limitations": [
+          "layout_table_review_pending",
+          "semantic_segmentation_pending"
+        ]
+      },
+      "verified_original_hash_contracts_offsets_cache": true,
+      "cross_family_review_required": true,
+      "identity_content_review": {
+        "status": "heading_number_matches_requested_document",
+        "text": "2286-2024",
+        "start": 128,
+        "end": 137,
+        "page": 1,
+        "limitation": "Confirms displayed resolution identity, not legal validity or exhaustive consolidation history"
+      },
+      "references_to_2286_2024": [
+        {
+          "text": "2286-2024",
+          "start": 128,
+          "end": 137
+        }
+      ]
+    },
+    {
+      "source": {
+        "document_id": "sbs-2220-2025",
+        "family": "cybersecurity",
+        "source_kind": "normative",
+        "synthetic": false,
+        "version_id": "689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55",
+        "sha256": "689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55",
+        "url": "https://intranet2.sbs.gob.pe/dv_int_cn/2506/v1.0/Adjuntos/Res.SBS%202220-2025.pdf",
+        "captured_at": "2026-09-27T23:24:31.231867+00:00",
+        "published_on": null,
+        "effective_on": null,
+        "date_unknown_reasons": {
+          "published_on": "Unknown pending authoritative metadata review; not inferred from repository path",
+          "effective_on": "Unknown pending legal-effect review; not inferred from capture or path"
+        }
+      },
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/68/689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55.pdf",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/0905a638ac61ee563fb7cf40b8c9205cad74dfdb08932ba311ac0318746bb4a0/rawtext.txt",
+      "result_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/0905a638ac61ee563fb7cf40b8c9205cad74dfdb08932ba311ac0318746bb4a0/result.json",
+      "pages": 2,
+      "rawtext_chars": 3476,
+      "quality": {
+        "status": "partial",
+        "limitations": [
+          "layout_table_review_pending",
+          "semantic_segmentation_pending"
+        ]
+      },
+      "verified_original_hash_contracts_offsets_cache": true,
+      "cross_family_review_required": true,
+      "identity_content_review": {
+        "status": "heading_number_matches_requested_document",
+        "text": "2220-2025",
+        "start": 136,
+        "end": 145,
+        "page": 1,
+        "limitation": "Confirms displayed resolution identity, not legal validity or exhaustive consolidation history"
+      },
+      "references_to_2286_2024": [
+        {
+          "text": "2286-2024",
+          "start": 719,
+          "end": 728
+        },
+        {
+          "text": "2286 -\n2024",
+          "start": 1290,
+          "end": 1301
+        },
+        {
+          "text": "2286 -2024",
+          "start": 2849,
+          "end": 2859
+        },
+        {
+          "text": "2286-2024",
+          "start": 3103,
+          "end": 3112
+        }
+      ]
+    },
+    {
+      "source": {
+        "document_id": "sbs-3274-2017",
+        "family": "market_conduct",
+        "source_kind": "normative",
+        "synthetic": false,
+        "version_id": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+        "sha256": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+        "url": "https://intranet2.sbs.gob.pe/dv_int_cn/1731/v8.0/Adjuntos/3274-2017.R.pdf",
+        "captured_at": "2026-09-27T23:24:31.372349+00:00",
+        "published_on": null,
+        "effective_on": null,
+        "date_unknown_reasons": {
+          "published_on": "Unknown pending authoritative metadata review; not inferred from repository path",
+          "effective_on": "Unknown pending legal-effect review; not inferred from capture or path"
+        }
+      },
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/87/879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7.pdf",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/rawtext.txt",
+      "result_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/result.json",
+      "pages": 45,
+      "rawtext_chars": 148092,
+      "quality": {
+        "status": "partial",
+        "limitations": [
+          "annex_references_pending",
+          "layout_table_review_pending",
+          "semantic_segmentation_pending"
+        ]
+      },
+      "verified_original_hash_contracts_offsets_cache": true,
+      "cross_family_review_required": false,
+      "identity_content_review": {
+        "status": "heading_number_matches_requested_document",
+        "text": "3274-2017",
+        "start": 144,
+        "end": 153,
+        "page": 1,
+        "limitation": "Confirms displayed resolution identity, not legal validity or exhaustive consolidation history"
+      },
+      "references_to_2286_2024": [],
+      "discovery_status": "candidate_URL_successfully_fetched_and_PDF_heading_identity_verified; path_was_not_observed_link"
+    }
+  ],
+  "discovery": [
+    {
+      "url": "https://intranet2.sbs.gob.pe/dv_int_cn/2410/v2.0/Adjuntos/2286-2024.R%20%28modificado%29.pdf",
+      "status": "observed_primary_url",
+      "document_id": "sbs-2286-2024",
+      "cross_family_review_required": true
+    },
+    {
+      "url": "https://intranet2.sbs.gob.pe/dv_int_cn/2506/v1.0/Adjuntos/Res.SBS%202220-2025.pdf",
+      "status": "observed_primary_url",
+      "document_id": "sbs-2220-2025",
+      "cross_family_review_required": true
+    },
+    {
+      "url": "https://intranet2.sbs.gob.pe/dv_int_cn/1731/v8.0/Adjuntos/3274-2017.R.pdf",
+      "status": "candidate_url_pattern_hypothesis",
+      "document_id": "sbs-3274-2017",
+      "cross_family_review_required": false
+    }
+  ],
+  "limitations": [
+    "Raw page spans only; semantic segmentation, layout/tables, annexes and legal dates require review",
+    "URL v8 is a discovery hypothesis derived from an existing path pattern, not an observed link",
+    "Amendment sources assigned cybersecurity as instructed; cross-family relevance is separate report metadata, not a SourceDocument field",
+    "No challenge bypass; allowlisted HTTPS transport with normal TLS verification"
+  ],
+  "attempts": [
+    {
+      "id": 4,
+      "status": "captured",
+      "error": null
+    },
+    {
+      "id": 5,
+      "status": "captured",
+      "error": null
+    },
+    {
+      "id": 6,
+      "status": "captured",
+      "error": null
+    }
+  ],
+  "parser_warnings": [
+    "pypdf emitted non-zero-indexed xref correction warnings; original bytes unchanged; quality remains partial."
+  ]
+}

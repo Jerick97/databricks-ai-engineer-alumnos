@@ -1,0 +1,65 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>lab/lab_monitor.py · S08</title><style>body{font:18px system-ui;margin:32px;color:#122b43}header{max-width:1000px}a{color:#533afd}pre{font:14px/1.6 ui-monospace,monospace;overflow:auto;background:#f6f9fc;padding:20px}pre span{display:block}pre span:target{background:#fff0ad}pre a{display:inline-block;width:4ch;color:#65788a}p{line-height:1.5}</style><header><h1>lab/lab_monitor.py</h1><p>Código del repositorio local · Neptuno S08. Esta copia permite examinar el script sin ejecutarlo.</p><p>GitHub: acceso pendiente de verificar; los remotos configurados devolvieron 404 el 30/09/2026. No se presenta esta copia como una publicación remota.</p><p><a href="../../lab/lab_monitor.py">Abrir archivo original</a> · <a href="../S08-autonomo.html#32">Volver a las diapositivas</a></p></header><pre><span id="L1"><a href="#L1">1</a> &quot;&quot;&quot;CP5–CP6: payload real -&gt; métricas sin texto/PII -&gt; data profiling.&quot;&quot;&quot;</span>
+<span id="L2"><a href="#L2">2</a> import argparse,os,json,time</span>
+<span id="L3"><a href="#L3">3</a> from pathlib import Path</span>
+<span id="L4"><a href="#L4">4</a> from databricks.sdk import WorkspaceClient</span>
+<span id="L5"><a href="#L5">5</a> from databricks.sdk.service import dataquality as dq</span>
+<span id="L6"><a href="#L6">6</a> from lab_deploy import CONFIG,save</span>
+<span id="L7"><a href="#L7">7</a> </span>
+<span id="L8"><a href="#L8">8</a> def sql(w,statement):</span>
+<span id="L9"><a href="#L9">9</a>     r=w.statement_execution.execute_statement(warehouse_id=CONFIG[&#x27;warehouse_id&#x27;],statement=statement,wait_timeout=&#x27;50s&#x27;)</span>
+<span id="L10"><a href="#L10">10</a>     deadline=time.monotonic()+180</span>
+<span id="L11"><a href="#L11">11</a>     while r.status.state.value in {&#x27;PENDING&#x27;,&#x27;RUNNING&#x27;} and time.monotonic()&lt;deadline:</span>
+<span id="L12"><a href="#L12">12</a>         time.sleep(2);r=w.statement_execution.get_statement(r.statement_id)</span>
+<span id="L13"><a href="#L13">13</a>     if r.status.state.value!=&#x27;SUCCEEDED&#x27;:raise RuntimeError(str(r.status.error))</span>
+<span id="L14"><a href="#L14">14</a>     return r</span>
+<span id="L15"><a href="#L15">15</a> </span>
+<span id="L16"><a href="#L16">16</a> def main():</span>
+<span id="L17"><a href="#L17">17</a>     p=argparse.ArgumentParser();p.add_argument(&#x27;--profile&#x27;);p.add_argument(&#x27;--create-monitor&#x27;,action=&#x27;store_true&#x27;);p.add_argument(&#x27;--refresh&#x27;,action=&#x27;store_true&#x27;);a=p.parse_args()</span>
+<span id="L18"><a href="#L18">18</a>     if a.profile:os.environ[&#x27;DATABRICKS_CONFIG_PROFILE&#x27;]=a.profile</span>
+<span id="L19"><a href="#L19">19</a>     w=WorkspaceClient();c=CONFIG;schema=f&quot;{c[&#x27;catalog&#x27;]}.{c[&#x27;schema&#x27;]}&quot;;raw=schema+&#x27;.ais08_neptuno_payload&#x27;;flat=schema+&#x27;.inference_flat&#x27;</span>
+<span id="L20"><a href="#L20">20</a>     columns={x.name for x in w.tables.get(raw).columns}</span>
+<span id="L21"><a href="#L21">21</a>     required={&#x27;databricks_request_id&#x27;,&#x27;request_time&#x27;,&#x27;status_code&#x27;,&#x27;execution_duration_ms&#x27;,&#x27;response&#x27;,&#x27;request&#x27;,&#x27;served_entity_id&#x27;,&#x27;client_request_id&#x27;}</span>
+<span id="L22"><a href="#L22">22</a>     if not required&lt;=columns:raise ValueError(&#x27;Esquema diferente al contrato; inspecciona antes de flatten: &#x27;+str(columns))</span>
+<span id="L23"><a href="#L23">23</a>     # No inventar logs: el monitor necesita eventos escritos por Serving, no fixtures.</span>
+<span id="L24"><a href="#L24">24</a>     count=sql(w,f&#x27;SELECT count(*) FROM {raw}&#x27;).result.data_array[0][0]</span>
+<span id="L25"><a href="#L25">25</a>     if int(count)==0:raise RuntimeError(&#x27;Inference table vacía: espera ingestión asíncrona (hasta una hora) y reintenta&#x27;)</span>
+<span id="L26"><a href="#L26">26</a>     sql(w,f&#x27;&#x27;&#x27;CREATE TABLE IF NOT EXISTS {flat} (request_id STRING,served_entity_id STRING,event_time TIMESTAMP,status_code INT,latency_ms DOUBLE,input_chars BIGINT,output_chars BIGINT,input_tokens BIGINT,output_tokens BIGINT,tool_calls BIGINT,tool_errors BIGINT,agent_revision STRING,parse_status STRING) TBLPROPERTIES (delta.enableChangeDataFeed=true)&#x27;&#x27;&#x27;)</span>
+<span id="L27"><a href="#L27">27</a>     # MERGE evita duplicar eventos al repetir el job. No modificar la tabla administrada raw.</span>
+<span id="L28"><a href="#L28">28</a>     sql(w,f&#x27;&#x27;&#x27;MERGE INTO {flat} t USING (</span>
+<span id="L29"><a href="#L29">29</a>       SELECT databricks_request_id request_id, served_entity_id, request_time event_time,status_code,</span>
+<span id="L30"><a href="#L30">30</a>       CAST(execution_duration_ms AS DOUBLE) latency_ms,</span>
+<span id="L31"><a href="#L31">31</a>       length(get_json_object(request,&#x27;$.input[0].content&#x27;)) input_chars,</span>
+<span id="L32"><a href="#L32">32</a>       length(get_json_object(response,&#x27;$.output[0].content[0].text&#x27;)) output_chars,</span>
+<span id="L33"><a href="#L33">33</a>       CAST(get_json_object(response,&#x27;$.custom_outputs.input_tokens&#x27;) AS BIGINT) input_tokens,</span>
+<span id="L34"><a href="#L34">34</a>       CAST(get_json_object(response,&#x27;$.custom_outputs.output_tokens&#x27;) AS BIGINT) output_tokens,</span>
+<span id="L35"><a href="#L35">35</a>       CAST(get_json_object(response,&#x27;$.custom_outputs.tool_calls&#x27;) AS BIGINT) tool_calls,</span>
+<span id="L36"><a href="#L36">36</a>       CAST(get_json_object(response,&#x27;$.custom_outputs.tool_errors&#x27;) AS BIGINT) tool_errors,</span>
+<span id="L37"><a href="#L37">37</a>       get_json_object(response,&#x27;$.custom_outputs.agent_revision&#x27;) agent_revision,</span>
+<span id="L38"><a href="#L38">38</a>       CASE WHEN status_code&gt;=400 THEN &#x27;http_error&#x27; WHEN get_json_object(response,&#x27;$.output[0].content[0].text&#x27;) IS NULL THEN &#x27;parse_error&#x27; ELSE &#x27;ok&#x27; END parse_status</span>
+<span id="L39"><a href="#L39">39</a>       FROM {raw} QUALIFY row_number() OVER(PARTITION BY databricks_request_id ORDER BY request_time DESC)=1</span>
+<span id="L40"><a href="#L40">40</a>     ) s ON t.request_id=s.request_id WHEN NOT MATCHED THEN INSERT *&#x27;&#x27;&#x27;)</span>
+<span id="L41"><a href="#L41">41</a>     result=sql(w,f&quot;SELECT count(*),sum(tool_errors),avg(latency_ms),sum(CASE WHEN parse_status=&#x27;parse_error&#x27; THEN 1 ELSE 0 END),sum(CASE WHEN parse_status=&#x27;http_error&#x27; THEN 1 ELSE 0 END) FROM {flat}&quot;).result.data_array</span>
+<span id="L42"><a href="#L42">42</a>     report={&#x27;source&#x27;:raw,&#x27;target&#x27;:flat,&#x27;metrics&#x27;:result,&#x27;raw_rows&#x27;:count}</span>
+<span id="L43"><a href="#L43">43</a>     smoke=Path(__file__).resolve().parents[1]/&#x27;reports/lab-smoke-serving.json&#x27;</span>
+<span id="L44"><a href="#L44">44</a>     if smoke.exists():</span>
+<span id="L45"><a href="#L45">45</a>         import re</span>
+<span id="L46"><a href="#L46">46</a>         ids=[r.get(&#x27;client_request_id&#x27;) for r in json.loads(smoke.read_text()) if r.get(&#x27;client_request_id&#x27;)]</span>
+<span id="L47"><a href="#L47">47</a>         if ids:</span>
+<span id="L48"><a href="#L48">48</a>             assert all(re.fullmatch(r&#x27;[a-zA-Z0-9_-]+&#x27;,i) for i in ids)</span>
+<span id="L49"><a href="#L49">49</a>             quoted=&#x27;,&#x27;.join(&quot;&#x27;&quot;+i+&quot;&#x27;&quot; for i in ids)</span>
+<span id="L50"><a href="#L50">50</a>             matched=sql(w,f&#x27;SELECT count(DISTINCT client_request_id) FROM {raw} WHERE client_request_id IN ({quoted})&#x27;).result.data_array[0][0]</span>
+<span id="L51"><a href="#L51">51</a>             report[&#x27;smoke_correlation&#x27;]={&#x27;expected&#x27;:len(ids),&#x27;observed&#x27;:int(matched),&#x27;all_ingested&#x27;:int(matched)==len(ids)}</span>
+<span id="L52"><a href="#L52">52</a>     save(&#x27;flatten&#x27;,report)</span>
+<span id="L53"><a href="#L53">53</a>     if a.create_monitor:</span>
+<span id="L54"><a href="#L54">54</a>         sql(w,f&#x27;CREATE TABLE IF NOT EXISTS {schema}.inference_baseline AS SELECT * FROM {flat} WHERE parse_status=\&#x27;ok\&#x27;&#x27;)</span>
+<span id="L55"><a href="#L55">55</a>         table=w.tables.get(flat); output=w.schemas.get(schema)</span>
+<span id="L56"><a href="#L56">56</a>         monitor=dq.Monitor(object_type=&#x27;table&#x27;,object_id=table.table_id,data_profiling_config=dq.DataProfilingConfig(</span>
+<span id="L57"><a href="#L57">57</a>           output_schema_id=output.schema_id,baseline_table_name=schema+&#x27;.inference_baseline&#x27;,assets_dir=f&quot;/Shared/AIS08/{c[&#x27;schema&#x27;]}/monitor&quot;,time_series=dq.TimeSeriesConfig(timestamp_column=&#x27;event_time&#x27;,granularities=[dq.AggregationGranularity.AGGREGATION_GRANULARITY_1_HOUR]),warehouse_id=c[&#x27;warehouse_id&#x27;]))</span>
+<span id="L58"><a href="#L58">58</a>         result=w.data_quality.create_monitor(monitor=monitor)</span>
+<span id="L59"><a href="#L59">59</a>         save(&#x27;monitor&#x27;,result.as_dict())</span>
+<span id="L60"><a href="#L60">60</a>     if a.refresh:</span>
+<span id="L61"><a href="#L61">61</a>         table=w.tables.get(flat)</span>
+<span id="L62"><a href="#L62">62</a>         refreshed=w.data_quality.create_refresh(&#x27;table&#x27;,table.table_id,dq.Refresh(object_type=&#x27;table&#x27;,object_id=table.table_id))</span>
+<span id="L63"><a href="#L63">63</a>         save(&#x27;monitor-refresh&#x27;,refreshed.as_dict())</span>
+<span id="L64"><a href="#L64">64</a> if __name__==&#x27;__main__&#x27;:main()</span>
+</pre></html>

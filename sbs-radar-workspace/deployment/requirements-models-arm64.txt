@@ -1,0 +1,7 @@
+# Observed/tested local arm64 CPU environment, not an x86/cloud certification.
+-r requirements-local.txt
+tokenizers==0.22.2
+onnxruntime==1.26.0
+numpy==2.4.3
+databricks-sdk==0.102.0
+requests==2.32.5

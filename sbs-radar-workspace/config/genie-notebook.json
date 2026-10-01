@@ -1,0 +1,56 @@
+{
+  "config_version": "0.1.0",
+  "namespace": "sbs_radar",
+  "catalog": null,
+  "warehouse_id": null,
+  "space_id": null,
+  "profile": "databricks-ai-engineer-aws",
+  "snapshot": "a17e6dbfa26e1794729e472100ffd3c57d1e0b2f4956bb8209111923b42059c9",
+  "max_polls": 8,
+  "poll_seconds": 1,
+  "sdk_transport_timeout_seconds": 30,
+  "permission_probe": "trusted_backend_required",
+  "allowed_tables": [
+    "documents",
+    "versions",
+    "provisions",
+    "pairs",
+    "changes",
+    "evidence",
+    "reviews",
+    "processes"
+  ],
+  "status": "pending_authorized_resources",
+  "expected_backend_grants": "Dedicated principal SELECT only on mission tables; CAN USE; Genie access.",
+  "observed_warehouse": {
+    "id": "828756322bedff37",
+    "name": "Serverless Starter Warehouse",
+    "state": "STOPPED",
+    "warehouse_type": "PRO",
+    "enable_serverless_compute": true,
+    "auto_stop_mins": 10
+  },
+  "resource_policy": "No start, DDL, space creation or course-resource mutation performed.",
+  "query_execution_boundary": "Server-generated Genie SQL cannot be inspected before execution; backend grants required.",
+  "curation_config_hash": "4c6a78554b6f8281abc0c97bab3f1b5e80c396aed25942afc0013016ade0432c",
+  "scoped_api_version": "0.1.1",
+  "scoped_result_verification": {
+    "status": "pending_trusted_backend_bindings",
+    "catalog_constructor": "ScopedCatalog(pinned_bundle, trusted_contexts, table_prefix)",
+    "execution_probe": "Independent executed SQL, bound parameters, source tables and deployed snapshot by query_id; never Genie summary or payload claims",
+    "query_policy": "exact_parameterized_reference_templates_only",
+    "supported_meanings": [
+      "document_version_list",
+      "document_version_count",
+      "provision_row_list",
+      "provision_row_count"
+    ],
+    "unsupported": [
+      "arbitrary_generated_SQL",
+      "material_normative_change_counts",
+      "target_date_legal_validity",
+      "partial_or_paginated_rows"
+    ],
+    "caller_entrypoint": "ask_scoped(question, context=QueryContext)"
+  }
+}

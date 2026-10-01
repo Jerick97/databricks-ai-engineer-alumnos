@@ -1,0 +1,765 @@
+{
+  "component": "SK03-pilot",
+  "version": "0.1.0",
+  "coverage": "partial",
+  "items": [
+    {
+      "pair_id": "cyber-504",
+      "family": "cybersecurity",
+      "provision_id": "art20.3",
+      "before": {
+        "document_id": "sbs-504-2021",
+        "version_id": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771",
+        "page": 13,
+        "citation_id": "2ffda3aea66db35068ca7cd94dece7d333dfb497206d0e6932831a49dee73af6",
+        "provision_id": "art20.3",
+        "start": 38158,
+        "end": 38598,
+        "text": "20.3 Las operaciones no reconocidas por los clientes que h ayan sido efectuadas en aplicación  de la \nexención señalada en el párrafo 20.2 del presente artículo, o que fueron realizadas luego de que el \nusuario reportara el  robo o pérdida de sus credenciales, son responsabilidad de la empresa , para lo  \ncual debe n implementar mecanismos que ante el repudio de la operación por parte del usuario \ngaranticen su aplicación inmediata. \n \n",
+        "source_kind": "normative",
+        "synthetic": false
+      },
+      "after": {
+        "document_id": "sbs-504-2021",
+        "version_id": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+        "page": 13,
+        "citation_id": "17ffc5739170c18d396cf0c3937b1a4455a89e4de25eed4e831a42c03326bc6a",
+        "provision_id": "art20.3",
+        "start": 38143,
+        "end": 38584,
+        "text": "20.3 La empresa es responsable de las pérdidas, salvo que acredite la responsabilidad del usuario, \npor las operaciones no reconocidas por los clientes que hayan sido efectuadas por canal digital sin \ncumplir con el requisito de autenticación reforzada, o en aplicación de la exención señalada en el \npárrafo 20.2 del presente artículo, o que fueron realizadas luego de que el usuario reportara el robo o \npérdida de sus credenciales.7 \n \n \n",
+        "source_kind": "normative",
+        "synthetic": false
+      },
+      "citations": [
+        {
+          "document_id": "sbs-504-2021",
+          "version_id": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+          "page": 13,
+          "citation_id": "17ffc5739170c18d396cf0c3937b1a4455a89e4de25eed4e831a42c03326bc6a",
+          "provision_id": "art20.3",
+          "start": 38143,
+          "end": 38584,
+          "text": "20.3 La empresa es responsable de las pérdidas, salvo que acredite la responsabilidad del usuario, \npor las operaciones no reconocidas por los clientes que hayan sido efectuadas por canal digital sin \ncumplir con el requisito de autenticación reforzada, o en aplicación de la exención señalada en el \npárrafo 20.2 del presente artículo, o que fueron realizadas luego de que el usuario reportara el robo o \npérdida de sus credenciales.7 \n \n \n",
+          "source_kind": "normative"
+        },
+        {
+          "document_id": "sbs-504-2021",
+          "version_id": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771",
+          "page": 13,
+          "citation_id": "2ffda3aea66db35068ca7cd94dece7d333dfb497206d0e6932831a49dee73af6",
+          "provision_id": "art20.3",
+          "start": 38158,
+          "end": 38598,
+          "text": "20.3 Las operaciones no reconocidas por los clientes que h ayan sido efectuadas en aplicación  de la \nexención señalada en el párrafo 20.2 del presente artículo, o que fueron realizadas luego de que el \nusuario reportara el  robo o pérdida de sus credenciales, son responsabilidad de la empresa , para lo  \ncual debe n implementar mecanismos que ante el repudio de la operación por parte del usuario \ngaranticen su aplicación inmediata. \n \n",
+          "source_kind": "normative"
+        }
+      ],
+      "annotation": {
+        "kind": "reused_ai_reference",
+        "run_id": "astra-normative-review-002",
+        "human_gold": false,
+        "institutional_approval": false,
+        "review_citations": {
+          "before": {
+            "document_id": "sbs-504-2021",
+            "version_id": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771",
+            "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2046/v4.0/Adjuntos/504-2021.R.pdf",
+            "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/10/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771.pdf",
+            "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/rawtext.txt",
+            "original_sha256": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771",
+            "page": 13,
+            "provision": "20.3",
+            "citation_id": "2ffda3aea66db35068ca7cd94dece7d333dfb497206d0e6932831a49dee73af6",
+            "start": 38158,
+            "end": 38598,
+            "offset_unit": "Unicode code points, zero-based, end-exclusive in rawtext.txt",
+            "quote_raw": "20.3 Las operaciones no reconocidas por los clientes que h ayan sido efectuadas en aplicación  de la \nexención señalada en el párrafo 20.2 del presente artículo, o que fueron realizadas luego de que el \nusuario reportara el  robo o pérdida de sus credenciales, son responsabilidad de la empresa , para lo  \ncual debe n implementar mecanismos que ante el repudio de la operación por parte del usuario \ngaranticen su aplicación inmediata. \n \n",
+            "visual_original_verified": true
+          },
+          "after": {
+            "document_id": "sbs-504-2021",
+            "version_id": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+            "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2046/v5.0/Adjuntos/504-2021.R%20.pdf",
+            "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/b8/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18.pdf",
+            "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/rawtext.txt",
+            "original_sha256": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+            "page": 13,
+            "provision": "20.3",
+            "citation_id": "17ffc5739170c18d396cf0c3937b1a4455a89e4de25eed4e831a42c03326bc6a",
+            "start": 38143,
+            "end": 38584,
+            "offset_unit": "Unicode code points, zero-based, end-exclusive in rawtext.txt",
+            "quote_raw": "20.3 La empresa es responsable de las pérdidas, salvo que acredite la responsabilidad del usuario, \npor las operaciones no reconocidas por los clientes que hayan sido efectuadas por canal digital sin \ncumplir con el requisito de autenticación reforzada, o en aplicación de la exención señalada en el \npárrafo 20.2 del presente artículo, o que fueron realizadas luego de que el usuario reportara el robo o \npérdida de sus credenciales.7 \n \n \n",
+            "visual_original_verified": true
+          }
+        },
+        "citation_derivation": "reviewed_span_unchanged"
+      },
+      "change_set": {
+        "change_set_id": "changeset-b84060b227d6206d1515332fc2e7ccaef916810540747696bf95b691895d9d4b",
+        "pair": {
+          "pair_id": "cyber-504",
+          "family": "cybersecurity",
+          "before": {
+            "document_id": "sbs-504-2021",
+            "version_id": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771"
+          },
+          "after": {
+            "document_id": "sbs-504-2021",
+            "version_id": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18"
+          }
+        },
+        "evidence": {
+          "evidence_id": "evidence-b84060b227d6206d1515332fc2e7ccaef916810540747696bf95b691895d9d4b",
+          "evidence_version": "0.1.0",
+          "pair": {
+            "pair_id": "cyber-504",
+            "family": "cybersecurity",
+            "before": {
+              "document_id": "sbs-504-2021",
+              "version_id": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771"
+            },
+            "after": {
+              "document_id": "sbs-504-2021",
+              "version_id": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18"
+            }
+          },
+          "citations": [
+            {
+              "document_id": "sbs-504-2021",
+              "version_id": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+              "page": 13,
+              "citation_id": "17ffc5739170c18d396cf0c3937b1a4455a89e4de25eed4e831a42c03326bc6a",
+              "provision_id": "art20.3",
+              "start": 38143,
+              "end": 38584,
+              "text": "20.3 La empresa es responsable de las pérdidas, salvo que acredite la responsabilidad del usuario, \npor las operaciones no reconocidas por los clientes que hayan sido efectuadas por canal digital sin \ncumplir con el requisito de autenticación reforzada, o en aplicación de la exención señalada en el \npárrafo 20.2 del presente artículo, o que fueron realizadas luego de que el usuario reportara el robo o \npérdida de sus credenciales.7 \n \n \n",
+              "source_kind": "normative"
+            },
+            {
+              "document_id": "sbs-504-2021",
+              "version_id": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771",
+              "page": 13,
+              "citation_id": "2ffda3aea66db35068ca7cd94dece7d333dfb497206d0e6932831a49dee73af6",
+              "provision_id": "art20.3",
+              "start": 38158,
+              "end": 38598,
+              "text": "20.3 Las operaciones no reconocidas por los clientes que h ayan sido efectuadas en aplicación  de la \nexención señalada en el párrafo 20.2 del presente artículo, o que fueron realizadas luego de que el \nusuario reportara el  robo o pérdida de sus credenciales, son responsabilidad de la empresa , para lo  \ncual debe n implementar mecanismos que ante el repudio de la operación por parte del usuario \ngaranticen su aplicación inmediata. \n \n",
+              "source_kind": "normative"
+            }
+          ],
+          "coverage": "partial",
+          "limitations": [
+            "annex_references_pending",
+            "caller_coverage_partial",
+            "extraction_coverage_unverified",
+            "layout_table_review_pending",
+            "materiality_not_assessed",
+            "not_current_consolidation",
+            "pilot_ai_annotated_subset_only",
+            "semantic_segmentation_pending"
+          ],
+          "synthetic": false
+        },
+        "processing_status": "partial",
+        "review_status": "unreviewed",
+        "change_ids": [
+          "acee696cc300d4bf11628432bb5f871dd845f88c85f81cf4c218e3ec9c7e8a7f"
+        ]
+      },
+      "changes": [
+        {
+          "kind": "literal_modification",
+          "before": [
+            "art20.3"
+          ],
+          "after": [
+            "art20.3"
+          ],
+          "citation_ids": [
+            "17ffc5739170c18d396cf0c3937b1a4455a89e4de25eed4e831a42c03326bc6a",
+            "2ffda3aea66db35068ca7cd94dece7d333dfb497206d0e6932831a49dee73af6"
+          ],
+          "materiality": "not_assessed",
+          "change_id": "acee696cc300d4bf11628432bb5f871dd845f88c85f81cf4c218e3ec9c7e8a7f"
+        }
+      ],
+      "alignments": [
+        {
+          "before": [
+            "art20.3"
+          ],
+          "after": [
+            "art20.3"
+          ],
+          "method": "explicit"
+        }
+      ],
+      "candidates": [],
+      "provenance": {
+        "component": "SK03",
+        "version": "0.1.0",
+        "before": {
+          "sha256": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771",
+          "extractor": "pypdf-6.13.3-raw-v2",
+          "config_hash": "24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9",
+          "rawtext_sha256": "66b63adace8a5e1f053d9af72b0c5fe45780cba6b6c1d0670673f1fcde919ce2",
+          "document_id": "sbs-504-2021",
+          "version_id": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771",
+          "bundle_id": "f7abf0dce8968b6626ba035b48f81d07f7676ea0ebaef94ba8089cac4b7e7ede"
+        },
+        "after": {
+          "sha256": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+          "extractor": "pypdf-6.13.3-raw-v2",
+          "config_hash": "24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9",
+          "rawtext_sha256": "1481d6a74d7f6988a2bdcb10081724101b41553fdfca03279a3dcb8076d96a3a",
+          "document_id": "sbs-504-2021",
+          "version_id": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+          "bundle_id": "b936eaca61e94fb7a6eab48518bb9f47e98b075d90d7d3da9e0973be6d120324"
+        }
+      },
+      "no_changes": false
+    },
+    {
+      "pair_id": "market-3274",
+      "family": "market_conduct",
+      "provision_id": "art27",
+      "before": {
+        "document_id": "sbs-3274-2017",
+        "version_id": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+        "page": 15,
+        "citation_id": "ee248229311ebbad30ea8eabfae766a7d2434d4f53b12e8ed3b737a5ca6c08bb",
+        "provision_id": "art27",
+        "start": 49164,
+        "end": 51638,
+        "text": "Artículo 27. Responsabilidad de las empresas en la contratación de seguros asociados   \nLas empresas se encuentran sujetas a las exigencias establecidas en e l Reglamento de Comercialización \nde Productos de Seguros, las  normas que l o modifiquen o sustituyan . Adicionalmente, las empresas que \nofrezcan seguros considerados como una condición para contratar deben observar, adicionalmente, lo \nsiguiente:  \n1. Deben informar a los usuarios que tienen el derecho a elegir entre la co ntratación del seguro ofrecido \npor las empresas; o un seguro contratado directamente por el usuario o a través de la designación de \nun corredor de seguros ; siempre que cumpla , a satisfacción de la s empresas, con las condiciones \npreviamente informadas. La d ifusión de la  referida información debe realizarse en la oferta de  los \nproductos que consideren a los seguros como una condición para contratar , a través de los \nmecanismos que para tal efecto utilicen las empresas. \na) En el caso de que el usuario acredite la contratación, por su cuenta, de un seguro que cumpla con \nlas condiciones establecidas por la empresa, no está obligado a tomar el seguro ofrecido y puede \nsustituirlo por el que hubiera contratado. En este supuesto, el seguro debe ser endosado a favor \nde la empresa hasta por el monto del saldo adeudado ; sin que ello genere una comisión o gasto \nadicional al usuario , siempre que se trate del seguro de desgravamen . En virtud del endoso, la \nempresa puede pactar con el usuario que el pago de la prima del seguro s e adicione al pago de \nlas cuotas periódicas previamente pactadas por el crédito o se debite de un producto pasivo. El \nendoso y forma de pago, por acuerdo de l as partes, puede ser tramitado por el usuario ante la \nempresa del sistema de seguros que emite la póliza y entr egado a las empresas, o por las \nempresas.17 \nb) Si el usuario contrata el seguro comercializado por la empresa, esta debe entregar a los \nasegurados las pólizas del seguro individual o, en su caso, los certificados de seguro a que se \nrefiere el Reglamento de Transparencia de Información y Contratación de Seguros  aprobado por \nla Superintendencia, expedidos por las empresas del sistema de seguros. \n2. La fecha de pago de indemnizaciones a las empresa s es la que debe cons iderarse para realizar  la \nliquidación de la opera ción activa. Las empresas tienen un plazo máximo de treinta (30) días de \nrecibida la indemnización para efectuar la liquidación.  \n \n",
+        "source_kind": "normative",
+        "synthetic": false
+      },
+      "after": {
+        "document_id": "sbs-3274-2017",
+        "version_id": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+        "page": 15,
+        "citation_id": "be29e2424f893e22111ef1c577b8e439b00dc3f46b6abed23c6ee531f0ade26c",
+        "provision_id": "art27",
+        "start": 49622,
+        "end": 52708,
+        "text": "Artículo 27. Responsabilidad de las empresas en la contratación de seguros asociados   \nLas empresas se encuentran sujetas a las exigencias  establecidas en el Reglamento de Comercialización  \nde Productos de Se guros, las normas que lo modifique n o sustituyan. Adicionalmente, las empresas que  \nofrezcan seguros considerados como una condición para contratar,  es decir, el seguro de desgravamen y  \nlos seguros para la protección del bien dado en garantía, deben observar lo siguiente:  \n1. Deben informar a los usuarios que tienen el derecho a elegir entre la contratación de l seguro ofrecido \npor las empresas; o un seguro contratado directamente por el usuario o a través de la designación de \nun corredor de seguros ; siempre que cumpla , a satisfacción de la s empresas, con las condiciones \npreviamente informadas. La difusión de la  referida información debe realizarse en la oferta de  los \nproductos que consideren a los seguros como una condición par a contratar , a través de los \nmecanismos que para tal efecto utilicen las empresas. \na) En el caso de que el usuario acredite la contratación,  por su cuenta, de un seguro que cumpla con \nlas condiciones establecidas por la empresa, no está obligado a tomar el seguro ofrecido y puede \nsustituirlo por el que hubiera contratado. En este supuesto, el seguro debe ser endosado a favor de \nla empresa hast a por e l monto del saldo adeudado; sin que ello genere una comisión o gasto \nadicional al usuario, siempre que se trate del seguro de desgravamen. En virtud del endoso, la \nempresa puede pactar con el usuario que el pago de la prima del seguro se adicione al pago de las \ncuotas periódicas previamente pactadas por el crédito o se debite de un producto pasivo. El \nendoso y forma de pago, por acuerdo de las partes, puede ser tramitado por el usuar io ante la \nempresa del sistema de seguros que emite la póliza y entr egado a  las empresas, o por las \nempresas.19 \nb) Si el usuario contrata el seguro comercializado por la empresa, esta debe en tregar a los \nasegurados las pólizas del seguro individual o, en su ca so, los certificados de seguro a que se \nrefiere el Reglamento de Transparencia de Información y Contratación de Seguros aprobado por la \nSuperintendencia, expedidos por las empresas del sistema de seguros. \n2. La fecha de pago de indemnizaciones a las empresa s es la que debe cons iderarse para realizar  la \nliquidación de la opera ción ac tiva. Las empresas tienen un plazo máximo de treinta (30) días de \nrecibida la indemnización para efectuar la liquidación. \n3. Las cláusulas adicionales a las pólizas contratadas o los productos de seguros que brinden coberturas \ndistintas a  las del seguro de desgravamen o a los seguros orientados a  la protección del bien en \ngarantía, deben ser opcionales y su  contratación debe ser realizada de manera independiente,  \ndebiendo requerir el consentimiento expreso de los usuarios por cada producto de seguro o cobertura \nadicional; par a lo cual, las empresas  deben resguardar los sustentos  correspondientes de dicho \nconsentimiento expreso.20 \n \n",
+        "source_kind": "normative",
+        "synthetic": false
+      },
+      "citations": [
+        {
+          "document_id": "sbs-3274-2017",
+          "version_id": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+          "page": 15,
+          "citation_id": "be29e2424f893e22111ef1c577b8e439b00dc3f46b6abed23c6ee531f0ade26c",
+          "provision_id": "art27",
+          "start": 49622,
+          "end": 52708,
+          "text": "Artículo 27. Responsabilidad de las empresas en la contratación de seguros asociados   \nLas empresas se encuentran sujetas a las exigencias  establecidas en el Reglamento de Comercialización  \nde Productos de Se guros, las normas que lo modifique n o sustituyan. Adicionalmente, las empresas que  \nofrezcan seguros considerados como una condición para contratar,  es decir, el seguro de desgravamen y  \nlos seguros para la protección del bien dado en garantía, deben observar lo siguiente:  \n1. Deben informar a los usuarios que tienen el derecho a elegir entre la contratación de l seguro ofrecido \npor las empresas; o un seguro contratado directamente por el usuario o a través de la designación de \nun corredor de seguros ; siempre que cumpla , a satisfacción de la s empresas, con las condiciones \npreviamente informadas. La difusión de la  referida información debe realizarse en la oferta de  los \nproductos que consideren a los seguros como una condición par a contratar , a través de los \nmecanismos que para tal efecto utilicen las empresas. \na) En el caso de que el usuario acredite la contratación,  por su cuenta, de un seguro que cumpla con \nlas condiciones establecidas por la empresa, no está obligado a tomar el seguro ofrecido y puede \nsustituirlo por el que hubiera contratado. En este supuesto, el seguro debe ser endosado a favor de \nla empresa hast a por e l monto del saldo adeudado; sin que ello genere una comisión o gasto \nadicional al usuario, siempre que se trate del seguro de desgravamen. En virtud del endoso, la \nempresa puede pactar con el usuario que el pago de la prima del seguro se adicione al pago de las \ncuotas periódicas previamente pactadas por el crédito o se debite de un producto pasivo. El \nendoso y forma de pago, por acuerdo de las partes, puede ser tramitado por el usuar io ante la \nempresa del sistema de seguros que emite la póliza y entr egado a  las empresas, o por las \nempresas.19 \nb) Si el usuario contrata el seguro comercializado por la empresa, esta debe en tregar a los \nasegurados las pólizas del seguro individual o, en su ca so, los certificados de seguro a que se \nrefiere el Reglamento de Transparencia de Información y Contratación de Seguros aprobado por la \nSuperintendencia, expedidos por las empresas del sistema de seguros. \n2. La fecha de pago de indemnizaciones a las empresa s es la que debe cons iderarse para realizar  la \nliquidación de la opera ción ac tiva. Las empresas tienen un plazo máximo de treinta (30) días de \nrecibida la indemnización para efectuar la liquidación. \n3. Las cláusulas adicionales a las pólizas contratadas o los productos de seguros que brinden coberturas \ndistintas a  las del seguro de desgravamen o a los seguros orientados a  la protección del bien en \ngarantía, deben ser opcionales y su  contratación debe ser realizada de manera independiente,  \ndebiendo requerir el consentimiento expreso de los usuarios por cada producto de seguro o cobertura \nadicional; par a lo cual, las empresas  deben resguardar los sustentos  correspondientes de dicho \nconsentimiento expreso.20 \n \n",
+          "source_kind": "normative"
+        },
+        {
+          "document_id": "sbs-3274-2017",
+          "version_id": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+          "page": 15,
+          "citation_id": "ee248229311ebbad30ea8eabfae766a7d2434d4f53b12e8ed3b737a5ca6c08bb",
+          "provision_id": "art27",
+          "start": 49164,
+          "end": 51638,
+          "text": "Artículo 27. Responsabilidad de las empresas en la contratación de seguros asociados   \nLas empresas se encuentran sujetas a las exigencias establecidas en e l Reglamento de Comercialización \nde Productos de Seguros, las  normas que l o modifiquen o sustituyan . Adicionalmente, las empresas que \nofrezcan seguros considerados como una condición para contratar deben observar, adicionalmente, lo \nsiguiente:  \n1. Deben informar a los usuarios que tienen el derecho a elegir entre la co ntratación del seguro ofrecido \npor las empresas; o un seguro contratado directamente por el usuario o a través de la designación de \nun corredor de seguros ; siempre que cumpla , a satisfacción de la s empresas, con las condiciones \npreviamente informadas. La d ifusión de la  referida información debe realizarse en la oferta de  los \nproductos que consideren a los seguros como una condición para contratar , a través de los \nmecanismos que para tal efecto utilicen las empresas. \na) En el caso de que el usuario acredite la contratación, por su cuenta, de un seguro que cumpla con \nlas condiciones establecidas por la empresa, no está obligado a tomar el seguro ofrecido y puede \nsustituirlo por el que hubiera contratado. En este supuesto, el seguro debe ser endosado a favor \nde la empresa hasta por el monto del saldo adeudado ; sin que ello genere una comisión o gasto \nadicional al usuario , siempre que se trate del seguro de desgravamen . En virtud del endoso, la \nempresa puede pactar con el usuario que el pago de la prima del seguro s e adicione al pago de \nlas cuotas periódicas previamente pactadas por el crédito o se debite de un producto pasivo. El \nendoso y forma de pago, por acuerdo de l as partes, puede ser tramitado por el usuario ante la \nempresa del sistema de seguros que emite la póliza y entr egado a las empresas, o por las \nempresas.17 \nb) Si el usuario contrata el seguro comercializado por la empresa, esta debe entregar a los \nasegurados las pólizas del seguro individual o, en su caso, los certificados de seguro a que se \nrefiere el Reglamento de Transparencia de Información y Contratación de Seguros  aprobado por \nla Superintendencia, expedidos por las empresas del sistema de seguros. \n2. La fecha de pago de indemnizaciones a las empresa s es la que debe cons iderarse para realizar  la \nliquidación de la opera ción activa. Las empresas tienen un plazo máximo de treinta (30) días de \nrecibida la indemnización para efectuar la liquidación.  \n \n",
+          "source_kind": "normative"
+        }
+      ],
+      "annotation": {
+        "kind": "reused_ai_reference",
+        "run_id": "astra-normative-review-003",
+        "human_gold": false,
+        "institutional_approval": false,
+        "review_citations": {
+          "before": {
+            "document_id": "sbs-3274-2017",
+            "version_id": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+            "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/1731/v7.0/Adjuntos/3274-2017.R.pdf",
+            "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/66/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342.pdf",
+            "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/rawtext.txt",
+            "original_sha256": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+            "page": 15,
+            "citation_id": "ee248229311ebbad30ea8eabfae766a7d2434d4f53b12e8ed3b737a5ca6c08bb",
+            "start": 49164,
+            "end": 51638,
+            "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+            "quote_raw": "Artículo 27. Responsabilidad de las empresas en la contratación de seguros asociados   \nLas empresas se encuentran sujetas a las exigencias establecidas en e l Reglamento de Comercialización \nde Productos de Seguros, las  normas que l o modifiquen o sustituyan . Adicionalmente, las empresas que \nofrezcan seguros considerados como una condición para contratar deben observar, adicionalmente, lo \nsiguiente:  \n1. Deben informar a los usuarios que tienen el derecho a elegir entre la co ntratación del seguro ofrecido \npor las empresas; o un seguro contratado directamente por el usuario o a través de la designación de \nun corredor de seguros ; siempre que cumpla , a satisfacción de la s empresas, con las condiciones \npreviamente informadas. La d ifusión de la  referida información debe realizarse en la oferta de  los \nproductos que consideren a los seguros como una condición para contratar , a través de los \nmecanismos que para tal efecto utilicen las empresas. \na) En el caso de que el usuario acredite la contratación, por su cuenta, de un seguro que cumpla con \nlas condiciones establecidas por la empresa, no está obligado a tomar el seguro ofrecido y puede \nsustituirlo por el que hubiera contratado. En este supuesto, el seguro debe ser endosado a favor \nde la empresa hasta por el monto del saldo adeudado ; sin que ello genere una comisión o gasto \nadicional al usuario , siempre que se trate del seguro de desgravamen . En virtud del endoso, la \nempresa puede pactar con el usuario que el pago de la prima del seguro s e adicione al pago de \nlas cuotas periódicas previamente pactadas por el crédito o se debite de un producto pasivo. El \nendoso y forma de pago, por acuerdo de l as partes, puede ser tramitado por el usuario ante la \nempresa del sistema de seguros que emite la póliza y entr egado a las empresas, o por las \nempresas.17 \nb) Si el usuario contrata el seguro comercializado por la empresa, esta debe entregar a los \nasegurados las pólizas del seguro individual o, en su caso, los certificados de seguro a que se \nrefiere el Reglamento de Transparencia de Información y Contratación de Seguros  aprobado por \nla Superintendencia, expedidos por las empresas del sistema de seguros. \n2. La fecha de pago de indemnizaciones a las empresa s es la que debe cons iderarse para realizar  la \nliquidación de la opera ción activa. Las empresas tienen un plazo máximo de treinta (30) días de \nrecibida la indemnización para efectuar la liquidación.  \n \n",
+            "visual_original_verified": true,
+            "visual_review_run": "astra-normative-review-003"
+          },
+          "after": {
+            "document_id": "sbs-3274-2017",
+            "version_id": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+            "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/1731/v8.0/Adjuntos/3274-2017.R.pdf",
+            "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/87/879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7.pdf",
+            "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/rawtext.txt",
+            "original_sha256": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+            "page": 15,
+            "citation_id": "be29e2424f893e22111ef1c577b8e439b00dc3f46b6abed23c6ee531f0ade26c",
+            "start": 49622,
+            "end": 52708,
+            "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+            "quote_raw": "Artículo 27. Responsabilidad de las empresas en la contratación de seguros asociados   \nLas empresas se encuentran sujetas a las exigencias  establecidas en el Reglamento de Comercialización  \nde Productos de Se guros, las normas que lo modifique n o sustituyan. Adicionalmente, las empresas que  \nofrezcan seguros considerados como una condición para contratar,  es decir, el seguro de desgravamen y  \nlos seguros para la protección del bien dado en garantía, deben observar lo siguiente:  \n1. Deben informar a los usuarios que tienen el derecho a elegir entre la contratación de l seguro ofrecido \npor las empresas; o un seguro contratado directamente por el usuario o a través de la designación de \nun corredor de seguros ; siempre que cumpla , a satisfacción de la s empresas, con las condiciones \npreviamente informadas. La difusión de la  referida información debe realizarse en la oferta de  los \nproductos que consideren a los seguros como una condición par a contratar , a través de los \nmecanismos que para tal efecto utilicen las empresas. \na) En el caso de que el usuario acredite la contratación,  por su cuenta, de un seguro que cumpla con \nlas condiciones establecidas por la empresa, no está obligado a tomar el seguro ofrecido y puede \nsustituirlo por el que hubiera contratado. En este supuesto, el seguro debe ser endosado a favor de \nla empresa hast a por e l monto del saldo adeudado; sin que ello genere una comisión o gasto \nadicional al usuario, siempre que se trate del seguro de desgravamen. En virtud del endoso, la \nempresa puede pactar con el usuario que el pago de la prima del seguro se adicione al pago de las \ncuotas periódicas previamente pactadas por el crédito o se debite de un producto pasivo. El \nendoso y forma de pago, por acuerdo de las partes, puede ser tramitado por el usuar io ante la \nempresa del sistema de seguros que emite la póliza y entr egado a  las empresas, o por las \nempresas.19 \nb) Si el usuario contrata el seguro comercializado por la empresa, esta debe en tregar a los \nasegurados las pólizas del seguro individual o, en su ca so, los certificados de seguro a que se \nrefiere el Reglamento de Transparencia de Información y Contratación de Seguros aprobado por la \nSuperintendencia, expedidos por las empresas del sistema de seguros. \n2. La fecha de pago de indemnizaciones a las empresa s es la que debe cons iderarse para realizar  la \nliquidación de la opera ción ac tiva. Las empresas tienen un plazo máximo de treinta (30) días de \nrecibida la indemnización para efectuar la liquidación. \n3. Las cláusulas adicionales a las pólizas contratadas o los productos de seguros que brinden coberturas \ndistintas a  las del seguro de desgravamen o a los seguros orientados a  la protección del bien en \ngarantía, deben ser opcionales y su  contratación debe ser realizada de manera independiente,  \ndebiendo requerir el consentimiento expreso de los usuarios por cada producto de seguro o cobertura \nadicional; par a lo cual, las empresas  deben resguardar los sustentos  correspondientes de dicho \nconsentimiento expreso.20 \n \n",
+            "visual_original_verified": true,
+            "visual_review_run": "astra-normative-review-003"
+          }
+        },
+        "citation_derivation": "reviewed_span_unchanged"
+      },
+      "change_set": {
+        "change_set_id": "changeset-86d3bfc545d437849de3130243daf50f5200ff2d721cda9dd687d90bcf9875ed",
+        "pair": {
+          "pair_id": "market-3274",
+          "family": "market_conduct",
+          "before": {
+            "document_id": "sbs-3274-2017",
+            "version_id": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342"
+          },
+          "after": {
+            "document_id": "sbs-3274-2017",
+            "version_id": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7"
+          }
+        },
+        "evidence": {
+          "evidence_id": "evidence-86d3bfc545d437849de3130243daf50f5200ff2d721cda9dd687d90bcf9875ed",
+          "evidence_version": "0.1.0",
+          "pair": {
+            "pair_id": "market-3274",
+            "family": "market_conduct",
+            "before": {
+              "document_id": "sbs-3274-2017",
+              "version_id": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342"
+            },
+            "after": {
+              "document_id": "sbs-3274-2017",
+              "version_id": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7"
+            }
+          },
+          "citations": [
+            {
+              "document_id": "sbs-3274-2017",
+              "version_id": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+              "page": 15,
+              "citation_id": "be29e2424f893e22111ef1c577b8e439b00dc3f46b6abed23c6ee531f0ade26c",
+              "provision_id": "art27",
+              "start": 49622,
+              "end": 52708,
+              "text": "Artículo 27. Responsabilidad de las empresas en la contratación de seguros asociados   \nLas empresas se encuentran sujetas a las exigencias  establecidas en el Reglamento de Comercialización  \nde Productos de Se guros, las normas que lo modifique n o sustituyan. Adicionalmente, las empresas que  \nofrezcan seguros considerados como una condición para contratar,  es decir, el seguro de desgravamen y  \nlos seguros para la protección del bien dado en garantía, deben observar lo siguiente:  \n1. Deben informar a los usuarios que tienen el derecho a elegir entre la contratación de l seguro ofrecido \npor las empresas; o un seguro contratado directamente por el usuario o a través de la designación de \nun corredor de seguros ; siempre que cumpla , a satisfacción de la s empresas, con las condiciones \npreviamente informadas. La difusión de la  referida información debe realizarse en la oferta de  los \nproductos que consideren a los seguros como una condición par a contratar , a través de los \nmecanismos que para tal efecto utilicen las empresas. \na) En el caso de que el usuario acredite la contratación,  por su cuenta, de un seguro que cumpla con \nlas condiciones establecidas por la empresa, no está obligado a tomar el seguro ofrecido y puede \nsustituirlo por el que hubiera contratado. En este supuesto, el seguro debe ser endosado a favor de \nla empresa hast a por e l monto del saldo adeudado; sin que ello genere una comisión o gasto \nadicional al usuario, siempre que se trate del seguro de desgravamen. En virtud del endoso, la \nempresa puede pactar con el usuario que el pago de la prima del seguro se adicione al pago de las \ncuotas periódicas previamente pactadas por el crédito o se debite de un producto pasivo. El \nendoso y forma de pago, por acuerdo de las partes, puede ser tramitado por el usuar io ante la \nempresa del sistema de seguros que emite la póliza y entr egado a  las empresas, o por las \nempresas.19 \nb) Si el usuario contrata el seguro comercializado por la empresa, esta debe en tregar a los \nasegurados las pólizas del seguro individual o, en su ca so, los certificados de seguro a que se \nrefiere el Reglamento de Transparencia de Información y Contratación de Seguros aprobado por la \nSuperintendencia, expedidos por las empresas del sistema de seguros. \n2. La fecha de pago de indemnizaciones a las empresa s es la que debe cons iderarse para realizar  la \nliquidación de la opera ción ac tiva. Las empresas tienen un plazo máximo de treinta (30) días de \nrecibida la indemnización para efectuar la liquidación. \n3. Las cláusulas adicionales a las pólizas contratadas o los productos de seguros que brinden coberturas \ndistintas a  las del seguro de desgravamen o a los seguros orientados a  la protección del bien en \ngarantía, deben ser opcionales y su  contratación debe ser realizada de manera independiente,  \ndebiendo requerir el consentimiento expreso de los usuarios por cada producto de seguro o cobertura \nadicional; par a lo cual, las empresas  deben resguardar los sustentos  correspondientes de dicho \nconsentimiento expreso.20 \n \n",
+              "source_kind": "normative"
+            },
+            {
+              "document_id": "sbs-3274-2017",
+              "version_id": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+              "page": 15,
+              "citation_id": "ee248229311ebbad30ea8eabfae766a7d2434d4f53b12e8ed3b737a5ca6c08bb",
+              "provision_id": "art27",
+              "start": 49164,
+              "end": 51638,
+              "text": "Artículo 27. Responsabilidad de las empresas en la contratación de seguros asociados   \nLas empresas se encuentran sujetas a las exigencias establecidas en e l Reglamento de Comercialización \nde Productos de Seguros, las  normas que l o modifiquen o sustituyan . Adicionalmente, las empresas que \nofrezcan seguros considerados como una condición para contratar deben observar, adicionalmente, lo \nsiguiente:  \n1. Deben informar a los usuarios que tienen el derecho a elegir entre la co ntratación del seguro ofrecido \npor las empresas; o un seguro contratado directamente por el usuario o a través de la designación de \nun corredor de seguros ; siempre que cumpla , a satisfacción de la s empresas, con las condiciones \npreviamente informadas. La d ifusión de la  referida información debe realizarse en la oferta de  los \nproductos que consideren a los seguros como una condición para contratar , a través de los \nmecanismos que para tal efecto utilicen las empresas. \na) En el caso de que el usuario acredite la contratación, por su cuenta, de un seguro que cumpla con \nlas condiciones establecidas por la empresa, no está obligado a tomar el seguro ofrecido y puede \nsustituirlo por el que hubiera contratado. En este supuesto, el seguro debe ser endosado a favor \nde la empresa hasta por el monto del saldo adeudado ; sin que ello genere una comisión o gasto \nadicional al usuario , siempre que se trate del seguro de desgravamen . En virtud del endoso, la \nempresa puede pactar con el usuario que el pago de la prima del seguro s e adicione al pago de \nlas cuotas periódicas previamente pactadas por el crédito o se debite de un producto pasivo. El \nendoso y forma de pago, por acuerdo de l as partes, puede ser tramitado por el usuario ante la \nempresa del sistema de seguros que emite la póliza y entr egado a las empresas, o por las \nempresas.17 \nb) Si el usuario contrata el seguro comercializado por la empresa, esta debe entregar a los \nasegurados las pólizas del seguro individual o, en su caso, los certificados de seguro a que se \nrefiere el Reglamento de Transparencia de Información y Contratación de Seguros  aprobado por \nla Superintendencia, expedidos por las empresas del sistema de seguros. \n2. La fecha de pago de indemnizaciones a las empresa s es la que debe cons iderarse para realizar  la \nliquidación de la opera ción activa. Las empresas tienen un plazo máximo de treinta (30) días de \nrecibida la indemnización para efectuar la liquidación.  \n \n",
+              "source_kind": "normative"
+            }
+          ],
+          "coverage": "partial",
+          "limitations": [
+            "annex_references_pending",
+            "caller_coverage_partial",
+            "extraction_coverage_unverified",
+            "layout_table_review_pending",
+            "materiality_not_assessed",
+            "not_current_consolidation",
+            "pilot_ai_annotated_subset_only",
+            "semantic_segmentation_pending"
+          ],
+          "synthetic": false
+        },
+        "processing_status": "partial",
+        "review_status": "unreviewed",
+        "change_ids": [
+          "d8cd51cf6844309d0881453f9ac52458881635f6252bb4d036801efc2d78f030"
+        ]
+      },
+      "changes": [
+        {
+          "kind": "literal_modification",
+          "before": [
+            "art27"
+          ],
+          "after": [
+            "art27"
+          ],
+          "citation_ids": [
+            "be29e2424f893e22111ef1c577b8e439b00dc3f46b6abed23c6ee531f0ade26c",
+            "ee248229311ebbad30ea8eabfae766a7d2434d4f53b12e8ed3b737a5ca6c08bb"
+          ],
+          "materiality": "not_assessed",
+          "change_id": "d8cd51cf6844309d0881453f9ac52458881635f6252bb4d036801efc2d78f030"
+        }
+      ],
+      "alignments": [
+        {
+          "before": [
+            "art27"
+          ],
+          "after": [
+            "art27"
+          ],
+          "method": "explicit"
+        }
+      ],
+      "candidates": [],
+      "provenance": {
+        "component": "SK03",
+        "version": "0.1.0",
+        "before": {
+          "sha256": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+          "extractor": "pypdf-6.13.3-raw-v2",
+          "config_hash": "7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b",
+          "rawtext_sha256": "c9422c55c0a4f13ba2d94918e7f23ff401ede29b9f9448e23be57468b7e8073c",
+          "document_id": "sbs-3274-2017",
+          "version_id": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+          "bundle_id": "0fd0c89c78385b181dcf912752251c796d1c76adeb3eb4412e629bf2e0bbea94"
+        },
+        "after": {
+          "sha256": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+          "extractor": "pypdf-6.13.3-raw-v2",
+          "config_hash": "7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b",
+          "rawtext_sha256": "d383f9575cea1f844e4c4cd19b6bf489f12794a58a37688b1c64171219dce1d3",
+          "document_id": "sbs-3274-2017",
+          "version_id": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+          "bundle_id": "dd28904ad59ffc064d3fcb4c408c5511c1844db0b26b5613c9ec46bcb9d33fa9"
+        }
+      },
+      "no_changes": false
+    },
+    {
+      "pair_id": "market-3274",
+      "family": "market_conduct",
+      "provision_id": "art29.1.4",
+      "before": {
+        "document_id": "sbs-3274-2017",
+        "version_id": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+        "page": 16,
+        "citation_id": "subset-0412d15d3509e0beac10a6e7846572ababb0a431532e10c6bf97cf2474195ddd",
+        "provision_id": "art29.1.4",
+        "start": 53316,
+        "end": 53586,
+        "text": "4. Los usuarios pueden efectuar los pagos en cualquiera de las oficinas de atención al público de la \nempresa en las que puedan realizarse operaciones de pagos y desembolsos, así como en otros \ncanales adicionales puestos a disposición por la empresa a los usuarios. \n \n",
+        "source_kind": "normative",
+        "synthetic": false
+      },
+      "after": {
+        "document_id": "sbs-3274-2017",
+        "version_id": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+        "page": 16,
+        "citation_id": "subset-ca18ca9daede4f7bc10b6592a44b1424a85fb34c1a39a22f055cbd64e68b82b6",
+        "provision_id": "art29.1.4",
+        "start": 54495,
+        "end": 54793,
+        "text": "4. Las empresas deben poner a disposición para realizar operaciones de pago anticipado y adelanto de  \ncuotas, como mínimo los mismos canales utiliz ados para  el pago de cuotas o de obligaciones de \ntarjeta de crédito, sin que resulten exigibles al usuario trámites o exigencias adicionales.23 \n \n",
+        "source_kind": "normative",
+        "synthetic": false
+      },
+      "citations": [
+        {
+          "document_id": "sbs-3274-2017",
+          "version_id": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+          "page": 16,
+          "citation_id": "subset-0412d15d3509e0beac10a6e7846572ababb0a431532e10c6bf97cf2474195ddd",
+          "provision_id": "art29.1.4",
+          "start": 53316,
+          "end": 53586,
+          "text": "4. Los usuarios pueden efectuar los pagos en cualquiera de las oficinas de atención al público de la \nempresa en las que puedan realizarse operaciones de pagos y desembolsos, así como en otros \ncanales adicionales puestos a disposición por la empresa a los usuarios. \n \n",
+          "source_kind": "normative"
+        },
+        {
+          "document_id": "sbs-3274-2017",
+          "version_id": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+          "page": 16,
+          "citation_id": "subset-ca18ca9daede4f7bc10b6592a44b1424a85fb34c1a39a22f055cbd64e68b82b6",
+          "provision_id": "art29.1.4",
+          "start": 54495,
+          "end": 54793,
+          "text": "4. Las empresas deben poner a disposición para realizar operaciones de pago anticipado y adelanto de  \ncuotas, como mínimo los mismos canales utiliz ados para  el pago de cuotas o de obligaciones de \ntarjeta de crédito, sin que resulten exigibles al usuario trámites o exigencias adicionales.23 \n \n",
+          "source_kind": "normative"
+        }
+      ],
+      "annotation": {
+        "kind": "reused_ai_reference",
+        "run_id": "astra-normative-review-003",
+        "human_gold": false,
+        "institutional_approval": false,
+        "review_citations": {
+          "before": {
+            "document_id": "sbs-3274-2017",
+            "version_id": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+            "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/1731/v7.0/Adjuntos/3274-2017.R.pdf",
+            "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/66/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342.pdf",
+            "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/rawtext.txt",
+            "original_sha256": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+            "page": 16,
+            "citation_id": "4ed2e727d567fc9b45ac7315b41b8f57844463b0474da94e95950bf408ac6509",
+            "start": 52830,
+            "end": 53586,
+            "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+            "quote_raw": "29.1 Los usuarios tienen derecho a efectuar pagos por encima de la cuota exigible en el periodo, \nconsiderando para tal efecto lo siguiente: \n1. No deben establecerse condiciones o limitaciones para el ejercicio del derecho. \n2. No pueden aplicarse comisiones, gastos, penalidades de ningún tipo por el ejercicio del derecho o \ncobros de naturaleza o efecto similar. \n3. Debe informarse, al momento de efectuar la operación, el monto que resulta aplicable por concepto de \nimpuestos.  \n4. Los usuarios pueden efectuar los pagos en cualquiera de las oficinas de atención al público de la \nempresa en las que puedan realizarse operaciones de pagos y desembolsos, así como en otros \ncanales adicionales puestos a disposición por la empresa a los usuarios. \n \n",
+            "visual_original_verified": true,
+            "visual_review_run": "astra-normative-review-003"
+          },
+          "after": {
+            "document_id": "sbs-3274-2017",
+            "version_id": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+            "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/1731/v8.0/Adjuntos/3274-2017.R.pdf",
+            "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/87/879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7.pdf",
+            "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/rawtext.txt",
+            "original_sha256": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+            "page": 16,
+            "citation_id": "a9ea13aa33c808307aa799cb5bd43160f3dc0d6e604a0293ea1f4b3eafd2f2d8",
+            "start": 54007,
+            "end": 54793,
+            "offset_unit": "Unicode code points; zero-based; end-exclusive in rawtext.txt",
+            "quote_raw": "29.1 Los usuarios tienen derecho a efectuar pa gos por  encima de la cuota exigible en el periodo, \nconsiderando para tal efecto lo siguiente: \n1. No deben establecerse condiciones o limitaciones para el ejercicio del derecho. \n2. No pueden aplicarse comisiones, gastos, penalidades de ningún tipo por el ejercicio del derecho o \ncobros de naturaleza o efecto similar. \n3. Debe informarse, al momento de efectuar la operación, el monto que resulta aplicable por concepto de \nimpuestos.  \n4. Las empresas deben poner a disposición para realizar operaciones de pago anticipado y adelanto de  \ncuotas, como mínimo los mismos canales utiliz ados para  el pago de cuotas o de obligaciones de \ntarjeta de crédito, sin que resulten exigibles al usuario trámites o exigencias adicionales.23 \n \n",
+            "visual_original_verified": true,
+            "visual_review_run": "astra-normative-review-003"
+          }
+        },
+        "citation_derivation": "exact_subspan_of_reviewed_29.1_context"
+      },
+      "change_set": {
+        "change_set_id": "changeset-11bedf9a5b8de707f8bf1c7de8c7057660b6057073cdc1f661df97cd93121967",
+        "pair": {
+          "pair_id": "market-3274",
+          "family": "market_conduct",
+          "before": {
+            "document_id": "sbs-3274-2017",
+            "version_id": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342"
+          },
+          "after": {
+            "document_id": "sbs-3274-2017",
+            "version_id": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7"
+          }
+        },
+        "evidence": {
+          "evidence_id": "evidence-11bedf9a5b8de707f8bf1c7de8c7057660b6057073cdc1f661df97cd93121967",
+          "evidence_version": "0.1.0",
+          "pair": {
+            "pair_id": "market-3274",
+            "family": "market_conduct",
+            "before": {
+              "document_id": "sbs-3274-2017",
+              "version_id": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342"
+            },
+            "after": {
+              "document_id": "sbs-3274-2017",
+              "version_id": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7"
+            }
+          },
+          "citations": [
+            {
+              "document_id": "sbs-3274-2017",
+              "version_id": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+              "page": 16,
+              "citation_id": "subset-0412d15d3509e0beac10a6e7846572ababb0a431532e10c6bf97cf2474195ddd",
+              "provision_id": "art29.1.4",
+              "start": 53316,
+              "end": 53586,
+              "text": "4. Los usuarios pueden efectuar los pagos en cualquiera de las oficinas de atención al público de la \nempresa en las que puedan realizarse operaciones de pagos y desembolsos, así como en otros \ncanales adicionales puestos a disposición por la empresa a los usuarios. \n \n",
+              "source_kind": "normative"
+            },
+            {
+              "document_id": "sbs-3274-2017",
+              "version_id": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+              "page": 16,
+              "citation_id": "subset-ca18ca9daede4f7bc10b6592a44b1424a85fb34c1a39a22f055cbd64e68b82b6",
+              "provision_id": "art29.1.4",
+              "start": 54495,
+              "end": 54793,
+              "text": "4. Las empresas deben poner a disposición para realizar operaciones de pago anticipado y adelanto de  \ncuotas, como mínimo los mismos canales utiliz ados para  el pago de cuotas o de obligaciones de \ntarjeta de crédito, sin que resulten exigibles al usuario trámites o exigencias adicionales.23 \n \n",
+              "source_kind": "normative"
+            }
+          ],
+          "coverage": "partial",
+          "limitations": [
+            "annex_references_pending",
+            "caller_coverage_partial",
+            "extraction_coverage_unverified",
+            "layout_table_review_pending",
+            "materiality_not_assessed",
+            "not_current_consolidation",
+            "pilot_ai_annotated_subset_only",
+            "semantic_segmentation_pending"
+          ],
+          "synthetic": false
+        },
+        "processing_status": "partial",
+        "review_status": "unreviewed",
+        "change_ids": [
+          "fb2bb7d3f55f89beecc97a2b288897420e52b3f1117debfe372e3b17459e6b66"
+        ]
+      },
+      "changes": [
+        {
+          "kind": "literal_modification",
+          "before": [
+            "art29.1.4"
+          ],
+          "after": [
+            "art29.1.4"
+          ],
+          "citation_ids": [
+            "subset-0412d15d3509e0beac10a6e7846572ababb0a431532e10c6bf97cf2474195ddd",
+            "subset-ca18ca9daede4f7bc10b6592a44b1424a85fb34c1a39a22f055cbd64e68b82b6"
+          ],
+          "materiality": "not_assessed",
+          "change_id": "fb2bb7d3f55f89beecc97a2b288897420e52b3f1117debfe372e3b17459e6b66"
+        }
+      ],
+      "alignments": [
+        {
+          "before": [
+            "art29.1.4"
+          ],
+          "after": [
+            "art29.1.4"
+          ],
+          "method": "explicit"
+        }
+      ],
+      "candidates": [],
+      "provenance": {
+        "component": "SK03",
+        "version": "0.1.0",
+        "before": {
+          "sha256": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+          "extractor": "pypdf-6.13.3-raw-v2",
+          "config_hash": "7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b",
+          "rawtext_sha256": "c9422c55c0a4f13ba2d94918e7f23ff401ede29b9f9448e23be57468b7e8073c",
+          "document_id": "sbs-3274-2017",
+          "version_id": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+          "bundle_id": "ba045fc919e0f61b06286fea81bada210273b55f009da7fbf997fc47750f383c"
+        },
+        "after": {
+          "sha256": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+          "extractor": "pypdf-6.13.3-raw-v2",
+          "config_hash": "7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b",
+          "rawtext_sha256": "d383f9575cea1f844e4c4cd19b6bf489f12794a58a37688b1c64171219dce1d3",
+          "document_id": "sbs-3274-2017",
+          "version_id": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+          "bundle_id": "71bf7f44293f7f96d8ab49dddf82f352b954d9f833ec90f2371cb78daeff1b9e"
+        }
+      },
+      "no_changes": false
+    }
+  ],
+  "input_files": [
+    {
+      "path": "context/pilot-amendments-manifest.json",
+      "sha256": "76084e75b5357481059273fbced1b1c5f87eced5aa346ce41de7dc4f64ead768"
+    },
+    {
+      "path": "context/pilot-repository-manifest.json",
+      "sha256": "c996f89c07ac21813c065fd7eb5e4364455d498bc0bbf58c07e4370832b2669c"
+    },
+    {
+      "path": "data/foundation-repository/derived/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/d7ab1b22b63dedd7f2a0e731d38c760584be04ed65d901a47a5fa160875a4dab/rawtext.txt",
+      "sha256": "3c19a4f4c19d9d7d4392fa7a228814504d9aa8b0fe62ca73409e25755b197458"
+    },
+    {
+      "path": "data/foundation-repository/derived/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/d7ab1b22b63dedd7f2a0e731d38c760584be04ed65d901a47a5fa160875a4dab/result.json",
+      "sha256": "b2a4018432aa0d7a8d886bb54fdff1ba724afaf90892cf345ee49819d683d756"
+    },
+    {
+      "path": "data/foundation-repository/derived/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/rawtext.txt",
+      "sha256": "66b63adace8a5e1f053d9af72b0c5fe45780cba6b6c1d0670673f1fcde919ce2"
+    },
+    {
+      "path": "data/foundation-repository/derived/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/result.json",
+      "sha256": "aca479067212837e1b6d90742892ca630a2ab0699e27b447eb729379c9d19379"
+    },
+    {
+      "path": "data/foundation-repository/derived/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/rawtext.txt",
+      "sha256": "c9422c55c0a4f13ba2d94918e7f23ff401ede29b9f9448e23be57468b7e8073c"
+    },
+    {
+      "path": "data/foundation-repository/derived/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/result.json",
+      "sha256": "3bf4d7227a281a90422e64726a427b7aaae2e4499d11a62d2bfd2b1e0d12e11e"
+    },
+    {
+      "path": "data/foundation-repository/derived/689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/0905a638ac61ee563fb7cf40b8c9205cad74dfdb08932ba311ac0318746bb4a0/rawtext.txt",
+      "sha256": "644741ee0488bb79dad9dfb4cf2d7c566799d6652c2796621492ce5b1d519a22"
+    },
+    {
+      "path": "data/foundation-repository/derived/689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/0905a638ac61ee563fb7cf40b8c9205cad74dfdb08932ba311ac0318746bb4a0/result.json",
+      "sha256": "1fe91eb4ce5c93838aeecb8875c790cdff7538e632b4ebeaea1b80205e77929f"
+    },
+    {
+      "path": "data/foundation-repository/derived/879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/rawtext.txt",
+      "sha256": "d383f9575cea1f844e4c4cd19b6bf489f12794a58a37688b1c64171219dce1d3"
+    },
+    {
+      "path": "data/foundation-repository/derived/879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/result.json",
+      "sha256": "d298b739142b159a822521fdf2492fed34226c939775c8a49cbe75ce6a19367f"
+    },
+    {
+      "path": "data/foundation-repository/derived/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/rawtext.txt",
+      "sha256": "1481d6a74d7f6988a2bdcb10081724101b41553fdfca03279a3dcb8076d96a3a"
+    },
+    {
+      "path": "data/foundation-repository/derived/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/result.json",
+      "sha256": "65b2304a6379933215424b0d077881bfd3ab9fcd631512ae1575e55013960488"
+    },
+    {
+      "path": "data/foundation-repository/objects/0e/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9.pdf",
+      "sha256": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9"
+    },
+    {
+      "path": "data/foundation-repository/objects/10/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771.pdf",
+      "sha256": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771"
+    },
+    {
+      "path": "data/foundation-repository/objects/66/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342.pdf",
+      "sha256": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342"
+    },
+    {
+      "path": "data/foundation-repository/objects/68/689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55.pdf",
+      "sha256": "689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55"
+    },
+    {
+      "path": "data/foundation-repository/objects/87/879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7.pdf",
+      "sha256": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7"
+    },
+    {
+      "path": "data/foundation-repository/objects/b8/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18.pdf",
+      "sha256": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18"
+    },
+    {
+      "path": "runs/astra-normative-review-003.json",
+      "sha256": "590a8f400674d48a0d2b80e83d04c6ba4c5b0b84cdde8c8432f609059552ff24"
+    },
+    {
+      "path": "runs/astra-normative-review.json",
+      "sha256": "7eec669345cb206c77fcb1ffd55550afdb7b427a66ce16f6b8a1b7f7d8257282"
+    },
+    {
+      "path": "runs/sk02-amendments-capture.json",
+      "sha256": "43f0a2d6494bda55a0182c5964c88cd31cd859bc2c97cd813b13267505630272"
+    },
+    {
+      "path": "runs/sk02-repository-capture.json",
+      "sha256": "5aa790331595736d982719f6a271da537557b2e9f2c0b9f9259065618cb53402"
+    }
+  ],
+  "limitations": [
+    "AI annotations reused; not human gold or institutional approval.",
+    "Only selected copied spans; no exhaustive or current consolidated law claim.",
+    "Literal differences include extraction spacing and footnote markers; materiality not assessed."
+  ],
+  "bundle_path": "runs/sk03-pilot-bundle.json"
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "name": "databricks-gpt-5-6-sol",
+    "id_available": false,
+    "permission_level": null,
+    "state": {
+      "config_update": "NOT_UPDATING",
+      "ready": "READY"
+    }
+  },
+  {
+    "name": "databricks-gpt-6-sol",
+    "id_available": false,
+    "permission_level": null,
+    "state": {
+      "config_update": "NOT_UPDATING",
+      "ready": "READY"
+    }
+  }
+]

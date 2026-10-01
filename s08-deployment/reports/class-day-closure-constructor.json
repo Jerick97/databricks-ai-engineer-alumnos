@@ -1,0 +1,41 @@
+{
+  "date": "2026-09-28T19:08:55.662079+00:00",
+  "role": "constructor; independent review required",
+  "scope": "S08 closure browser and corrected teacher proof gates",
+  "skills": [
+    "cursos-a-dictar",
+    "systematic-debugging",
+    "test-driven-development",
+    "verification-before-completion"
+  ],
+  "root_cause": "Previous aggregate gate omitted browser proof and teacher corrected-artifact proof; HTTP/render alone permitted class_ready.",
+  "change": "Require strict live_browser_flow_pass true and PASS teacher-delivery judge with current notebook-docente hash; preserve previous closure in content-addressed history before write. Current SSO status reads class-day report; prior app-browser status is labeled historical.",
+  "red": {
+    "command": "python3 -m unittest discover -s s08-deployment/tests-delivery -p test_closure_gates.py -v",
+    "tests": 9,
+    "failures_including_subtests": 11,
+    "reason": "Old script marked class_ready true despite missing/failed/stale required evidence."
+  },
+  "green": {
+    "command": "python3 -m unittest discover -s s08-deployment/tests-delivery -v",
+    "tests": 10,
+    "exit_code": 0
+  },
+  "broader_check": {
+    "command": "sbs-radar-workspace/.venv/bin/python -m unittest discover -s s08-deployment/tests -v",
+    "passed": 12,
+    "import_errors": 1,
+    "error": "test_app: ModuleNotFoundError flask; previous /tmp/ais08-py312/bin/python no longer exists."
+  },
+  "real_closure_regenerated": false,
+  "cloud_calls": false,
+  "artifact_hashes": {
+    "scripts/close_validation.py": "2a39a0f427e0e693993240598d62e01cf5011a7b48abf2a859ae465c91a186b9",
+    "tests-delivery/test_closure_gates.py": "e16e6ca1589fe2a37caf2aa06a02f2bebcd469b14335da6dd6084f740a40bf09"
+  },
+  "limits": [
+    "Consumes signed-off report booleans; does not independently replay UI.",
+    "Existing historical judge hash mismatches still fail their unchanged gates.",
+    "Live class-day browser report must be produced by real browser execution, not this fixture."
+  ]
+}

@@ -1,0 +1,417 @@
+{
+  "status": "local_copy_only",
+  "files": 102,
+  "ipynb_cells": 30,
+  "student_root": "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment",
+  "parity_pass": true,
+  "entries": [
+    {
+      "path": "course-context.json",
+      "sha256": "e442f7d4de638a01313d3c32e574f195c5faf48c66b950e7c70ed85b9300f85d"
+    },
+    {
+      "path": "notebook-docente.py",
+      "sha256": "53f0e331e04e18766bdfe1ef5f22593e8639ca58e119c60800986a4037a73e4c"
+    },
+    {
+      "path": "ABRIR-NOTEBOOK-DOCENTE.md",
+      "sha256": "788344cf0e14fff458a9f8f07f24b8e84b75badd014f2852c9b26595c122f454"
+    },
+    {
+      "path": "STATE.md",
+      "sha256": "a4fbe0ae2ff692616d75ce5c5cddba78a774c86caba58662635649e944a093b6"
+    },
+    {
+      "path": "README.md",
+      "sha256": "c40f5907a57f85aa1abcb8ed7a77ce616ba9b34fdf8593a650d44990a135c100"
+    },
+    {
+      "path": "CONSIGNA.md",
+      "sha256": "332c4c969300618c5dbecb103569070d5a9801194c3561caad1682e558ec37ce"
+    },
+    {
+      "path": "CERTIFICACION.md",
+      "sha256": "5beb52f7cc90efcd41d2fe78e022eb60414824f381e68db6ee30f3b7ab2856d2"
+    },
+    {
+      "path": "notebook.py",
+      "sha256": "4dbb89479b8d04d4e22de55110c9e47297e6e5f3d91e3d76339d9f9a4edf9510"
+    },
+    {
+      "path": "notebook.ipynb",
+      "sha256": "8b350fde2321ca490642ffda5ec6188b5db90b1f5e4ae0258125072f78fa94f7"
+    },
+    {
+      "path": "index.html",
+      "sha256": "ed6ec63948319ee3e02eb9c928ec340b8c322281039f01293452a584f43e6dad"
+    },
+    {
+      "path": "slides/S08-autonomo.html",
+      "sha256": "9b5049015512853a291fb5f69193f1ea9139293dfa1fa010bf5a450e5d680fcc"
+    },
+    {
+      "path": "slides/S08-deck.html",
+      "sha256": "f70b7cb05ebb9053d6220da35892d01497b4a7a30b68466415acc11e166164df"
+    },
+    {
+      "path": "slides/content.json",
+      "sha256": "e878d06acd3babe1b6c796a18ecc00f0dd72384d590ad25d93150407a62938a6"
+    },
+    {
+      "path": "slides/deck.css",
+      "sha256": "bda749f090d887dfd096b45efad15e47644ef17aab182a8ff766953a75909f05"
+    },
+    {
+      "path": "slides/deck.js",
+      "sha256": "31e25fd75f6cd7c6e59949f9b0c3874ebb27d1add52e5e688ccb72c4daec3eaf"
+    },
+    {
+      "path": "app/app.py",
+      "sha256": "dfc6dbce6f563c9123b0033986cedfdfc9cc5625809388a4b754c0271048e965"
+    },
+    {
+      "path": "app/app.yaml",
+      "sha256": "f5f6869db1013fd0c680e80625b1a3255a132fbb43e3c42da76c460bb2b70736"
+    },
+    {
+      "path": "app/requirements.txt",
+      "sha256": "a4dcedb7b00ef849c6cbfaa6a33dca579f5bbe09bc526a6177d640d517937151"
+    },
+    {
+      "path": "lab/CONTINUIDAD.md",
+      "sha256": "096273a3351ec0f3d76a634a57ab137fe0688eb8cf7a7632059f85635c2e691d"
+    },
+    {
+      "path": "lab/agent.py",
+      "sha256": "200febf66d9d8a36acd05fed147776e761156e27d065df600489dd838f292bb4"
+    },
+    {
+      "path": "lab/config.json",
+      "sha256": "799cc5fdd23517980d45fb070e38444cdbb04dbef190142ccae59cec1927c2b6"
+    },
+    {
+      "path": "lab/lab_app.py",
+      "sha256": "655a4a6e734838cb6c9e8e574f33dac5c588705b053430e6c453041e32077c1c"
+    },
+    {
+      "path": "lab/lab_app_smoke.py",
+      "sha256": "ca449c453a00fe5673cef62ae8635df3cc52864c55a3df6240dddaefe4c695d2"
+    },
+    {
+      "path": "lab/lab_config.py",
+      "sha256": "c9fda07a95c1de66dad6f4d3386065b180fc5fff3b61b94d5ba5c4b3d07b34db"
+    },
+    {
+      "path": "lab/lab_costs.sql",
+      "sha256": "dc3d2ed8530dca3372c6302b58d7dc9a69feacbb403e5d3ddd0f66d7015b11b2"
+    },
+    {
+      "path": "lab/lab_custom_rollout.py",
+      "sha256": "a362609395256969d16adf53f149153fab7aee42bf7377fa957d8aa88f0d3101"
+    },
+    {
+      "path": "lab/lab_custom_rollout_verify.py",
+      "sha256": "899e2449f2665c27622683ceed7cdf8d02d6b2eb2765e5cac658c5f221d32331"
+    },
+    {
+      "path": "lab/lab_deploy.py",
+      "sha256": "4634aaa447797307a40e23455d545a8c0029868b80848508ce8e599b9762aeff"
+    },
+    {
+      "path": "lab/lab_import_workspace.py",
+      "sha256": "ddc8f0326ae4c56a72643d798f33d6a19383f9cccdebdf797d4cdca9bde4a787"
+    },
+    {
+      "path": "lab/lab_lifecycle.py",
+      "sha256": "97064afffd8ab78342f104ca288d1af71db5db96929d5b3ce7a400cacf3e2e62"
+    },
+    {
+      "path": "lab/lab_monitor.py",
+      "sha256": "087833c48e179ecc7cc388b5784a8227fde8bef2b75376635fc89efd3e27caab"
+    },
+    {
+      "path": "lab/lab_parse_contract.sql",
+      "sha256": "89efa2c9c49a2dd4292b9a3f8f8e5ac7d0ce89c0adaab5ce4338da9687417495"
+    },
+    {
+      "path": "lab/lab_preflight.py",
+      "sha256": "805245ef7f859105abdfc44b19eca6ac99f220e449e19812fb36615d7a6ca002"
+    },
+    {
+      "path": "lab/lab_prompts.py",
+      "sha256": "1f2b830644f3799047d76f96aefec9ee62057e4b2c9b04fcfee8a13b863013c0"
+    },
+    {
+      "path": "lab/lab_rollout.py",
+      "sha256": "9661b99e9b0635b66b26566cc3b414eda899e794ba49733e62b4ddb4681b2329"
+    },
+    {
+      "path": "lab/lab_security_smoke.py",
+      "sha256": "436bcb98ce1a8de65eb90b913dec452741c5488a1da2d9e86dc7fd8809973ecd"
+    },
+    {
+      "path": "lab/lab_smoke.py",
+      "sha256": "dee2d97be74e95e1035476eb2f9a6e408fa9054fbb2e97923f6fb231e455031b"
+    },
+    {
+      "path": "lab/lab_status.py",
+      "sha256": "ead35550d5cda6299971420a961987ec64ace2f9d1dd256b8df77c9511f8678e"
+    },
+    {
+      "path": "lab/lab_verify_monitor.py",
+      "sha256": "296d4bb62d1426891f7c8b8fea9904447aac2f85a3a9af836b3ac7a9e7a600a1"
+    },
+    {
+      "path": "lab/requirements.txt",
+      "sha256": "f7d7bf19dbd785f8b1f408fd2b4eb68a36b8c767550d0fb0b05878ff0ee5f277"
+    },
+    {
+      "path": "lab/rollout_model.py",
+      "sha256": "3d0eade350fd2394b475f3cfe3181dd7e829f1ec4202398516bd560283929dc8"
+    },
+    {
+      "path": "bundle/ci-example.yml",
+      "sha256": "591d0c0653911404846fa1ce7a46143eb5eefc27e59a03577192178a5b4c3b99"
+    },
+    {
+      "path": "bundle/databricks.yml",
+      "sha256": "2b424d0b15d5a3563284de0701f02792ede8447622ca349f9312f2348e7e798f"
+    },
+    {
+      "path": "GUIA-DOCENTE.md",
+      "sha256": "da8290a37941287e560c34520c6c2df6e250930974160f1a9e06453d78ac86b2"
+    },
+    {
+      "path": "PLAN-CLASE.md",
+      "sha256": "e06c535aeae9d4c86114038efb26d09845328be131d4c9ddf89102aaf513ee55"
+    },
+    {
+      "path": "agenda.json",
+      "sha256": "3747e52c1491e64c078a046cea88585e7aa7bb3ac07200c278042d757fbe7666"
+    },
+    {
+      "path": "EJEMPLO-RESUELTO.md",
+      "sha256": "ae4ea42e5901015994c32c8eb9b7494904066205d40bc23d2006fd30f6a6370c"
+    },
+    {
+      "path": "requirements.json",
+      "sha256": "6ea9a5101dbe85f835ac51e6c1486c4ef7ad7cac44af2ca25c0ecc87514c42ad"
+    },
+    {
+      "path": "VALIDACION.md",
+      "sha256": "0cde358b3081e1ffb5e44e82f897bb20619c4b11e46bad3c6784e762fc8a058f"
+    },
+    {
+      "path": "RUNBOOK.md",
+      "sha256": "61b3a2c169c87a6b7476dd78956be21c411b1344ce68b183b3b44213b18b2152"
+    },
+    {
+      "path": "ENTREGA.md",
+      "sha256": "7c654149e47288b19512e9ae01aea107b76b2b83e20a20250e6569173958b547"
+    },
+    {
+      "path": "guion.md",
+      "sha256": "3fe533d8e02887cd168e0c6b9826b8e2fbd17eadd59bb366c509cf16dc3cf507"
+    },
+    {
+      "path": "sources.json",
+      "sha256": "be6f8590cb16394a7f92137e02993b649bd53b328f15cec80adaec7f6c2961a3"
+    },
+    {
+      "path": "coverage-manifest.json",
+      "sha256": "a2dc4545972105b7a6a69ac89280d375c7cc6c1d918f8687a16112d3419e8cd5"
+    },
+    {
+      "path": "reports/class-day-smoke-serving.json",
+      "sha256": "07ee92aa323b3c47e9885e1c15fbd453f62a1bb774a0681db9aeebb6bffff537"
+    },
+    {
+      "path": "reports/class-day-local-tests.json",
+      "sha256": "d2f56e122004338f111aced8af84b2ef058f00655fdfc907c0a84b838b726575"
+    },
+    {
+      "path": "reports/class-day-closure-constructor.json",
+      "sha256": "9fcec14a6bd226be5e638235b8846230d3324889e98eb3f7f9b54151a61f9964"
+    },
+    {
+      "path": "reports/notebook-docente-submit.json",
+      "sha256": "79f43aaf1c8e24948ce0adcf34fa2d5e84dfb9b330c90705f52fded30a7ad693"
+    },
+    {
+      "path": "reports/class-day-browser.json",
+      "sha256": "ddeacc1cb4cf4c3ad85201a90afc2369ba433e3fdc7d4133c56c80374d91175d"
+    },
+    {
+      "path": "reports/class-day-start.json",
+      "sha256": "d0757b857e9fcdfe8d4c00807a7ea551fa45a4acac2fa1d74a35d07a8d2a2c46"
+    },
+    {
+      "path": "reports/class-day-review.json",
+      "sha256": "b2e7b8404658dcdce60810b6d0cec7ba4723874418d708b2b22a9531d959f70d"
+    },
+    {
+      "path": "reports/teacher-delivery-judge.json",
+      "sha256": "8fce12f6b131f436305f2b6a8456e43de435a0102afff53a27001b90e217ec9b"
+    },
+    {
+      "path": "reports/notebook-docente-observed.json",
+      "sha256": "bc1c4b04c96e06537d44da85217b118fcbb5d0202fc0fae5988facdfd9de0e94"
+    },
+    {
+      "path": "reports/teacher-delivery-regression.json",
+      "sha256": "39925d3e86f1239805b0c911f72e770a20d41d6fb3a72158eab8d0db2c9b7839"
+    },
+    {
+      "path": "reports/visual-qa.json",
+      "sha256": "812e38a2306bd574991bc662eaf46f0e250620bbfe0b17a5d7c4d6ca47d1451c"
+    },
+    {
+      "path": "reports/structural-qa.json",
+      "sha256": "9fcf0dafec41c5d448ff3a7a0b3231e967b7c57e1e684fe1753bc4c7713493b5"
+    },
+    {
+      "path": "reports/app-visual.json",
+      "sha256": "cdf9918c351777604e55c473e3d524420705103a57dd902d1d18767721454032"
+    },
+    {
+      "path": "reports/import-validation.json",
+      "sha256": "3cc995274189ce1143d36fe970af82dded9169793e5d9964cca09053205a59d9"
+    },
+    {
+      "path": "reports/lab-monitor-values.json",
+      "sha256": "dae3617751266d784fdf5c09512f32118f6e900c237c208e404e273573001435"
+    },
+    {
+      "path": "reports/lab-monitor-refresh.json",
+      "sha256": "da6117d9c5af03e7f7de2d57c58494e608bbe74d19b093dbb2a0c003ebc900d2"
+    },
+    {
+      "path": "reports/lab-freeze.json",
+      "sha256": "2cd3661a6b4fc3511011c23cd46706ff3fe095bc5874e2c3ebbbf60b6d034213"
+    },
+    {
+      "path": "reports/lab-rollout-api-limitation.json",
+      "sha256": "1eaf2bc7d384e6abdba313b3399f442bfc4a78d49a8eb688d7583098ceab5eac"
+    },
+    {
+      "path": "reports/lab-app-source-check.json",
+      "sha256": "0918d58b9ec83b2c3c4abb95f6e4e254668694cf00a38cd5594600169ed578ee"
+    },
+    {
+      "path": "reports/lab-source-hashes.json",
+      "sha256": "35d1e9101b406a0785c51e8576ee1600ab714ef3915488777cac6e9860fba0f3"
+    },
+    {
+      "path": "reports/lab-status.json",
+      "sha256": "b2ddd85a3c1f9d3853538a0f7c40c0fa3bb70cad908f2a74b19bcecbac284cd9"
+    },
+    {
+      "path": "reports/lab-parse-fixtures.json",
+      "sha256": "e10dafc0e0acff3c5e527eb927450a70bb4ce660ed9d155ba9966a71bd187518"
+    },
+    {
+      "path": "reports/lab-preflight.json",
+      "sha256": "cc94ee643c7f21601892a81d22ebd1c5009c4d0c4ef74bc71e1a7b07ec06c312"
+    },
+    {
+      "path": "reports/lab-package.json",
+      "sha256": "fa3a03a3417cfe31d0f789b07779b4bf31d11a7b91adbb09853a06750a6f8b12"
+    },
+    {
+      "path": "reports/lab-artifact-check.json",
+      "sha256": "2a4bfe991602e4e1df81453999c7a87d72cb4bb8011517d6439a4db7ee1bb39a"
+    },
+    {
+      "path": "reports/lab-smoke-local.json",
+      "sha256": "738ff7efda46e267606f0b13798416fd1bede992d306488d2e2118d506d31d41"
+    },
+    {
+      "path": "reports/lab-smoke-serving.json",
+      "sha256": "a17e3d574ffe015c1c9f691cd6c8555a8592f4766f6c953823de7e07d9afba1a"
+    },
+    {
+      "path": "reports/lab-security-smoke.json",
+      "sha256": "6dd49056cbdeb70a096b457157d3b75e411d0052b533a31afe199a758bedb9fa"
+    },
+    {
+      "path": "reports/lab-app-http.json",
+      "sha256": "a6881fafb7090ae7249b453f8aa8f63508e52e3406c296d179d4bae5627e4a70"
+    },
+    {
+      "path": "reports/lab-flatten.json",
+      "sha256": "0aa2c1ba3fbc8dacd0b43b4adbd6987b21af1f7600d8f59abde88347ee697134"
+    },
+    {
+      "path": "reports/lab-monitor.json",
+      "sha256": "fe0ff2549e87a8666b8477f55adbeb2e1a10f45086e887a93b9c089eb4e09044"
+    },
+    {
+      "path": "reports/lab-monitor-verified.json",
+      "sha256": "8bf585d71519ed799e1c302f26e8d8adcc756169051657c5e4ac51f9c8fc570f"
+    },
+    {
+      "path": "reports/lab-prompts.json",
+      "sha256": "73aeba26b53c00cceb0bb72612908cd407e87381b3e881675586bd5c92d9f80c"
+    },
+    {
+      "path": "reports/lab-bundle-validation.json",
+      "sha256": "903285fc8ece1079df40961261c34295414156c30200bfe65b759c63745a6563"
+    },
+    {
+      "path": "reports/lab-unit-tests.json",
+      "sha256": "04cd05e363d38c8f57fb8144d906c9f51cd73429fef5c602ec44503484224f53"
+    },
+    {
+      "path": "reports/lab-custom-rollout-package.json",
+      "sha256": "01d9a959b5e83e4d2370a1d5141bad27ff7dec0b8dbc7535b91073c1eb03e8a9"
+    },
+    {
+      "path": "reports/lab-rollout-before.json",
+      "sha256": "437aa537e13e9a970ab5ca7102f25bdcbbe8118c76c032ccaec3530c8309b443"
+    },
+    {
+      "path": "reports/lab-rollout.json",
+      "sha256": "845e349a7bdb6bd9bab091bd066d0873b5103336e7365df3c81e9a30423d302e"
+    },
+    {
+      "path": "reports/lab-custom-rollout-verified.json",
+      "sha256": "f2556272208b0808c524de6a8e0630755681e23934a5cc471a770eff1ae6fc88"
+    },
+    {
+      "path": "reports/lab-custom-canary-verified.json",
+      "sha256": "4bdcaa4a3b1c37444f8865751e6abfd0207118a67aad91eed7ecf4b5616a002e"
+    },
+    {
+      "path": "reports/lab-custom-rollback-verified.json",
+      "sha256": "56e1c2f1900933969ceddd206f46992b59b79ed78d2af7bbc67f3dcdaed7d4ad"
+    },
+    {
+      "path": "reports/notebook-observed.json",
+      "sha256": "711645f87a6c0c4ca6552abc9861fcee1a1dd9030cb1a40725cbfe44edfb4e4a"
+    },
+    {
+      "path": "reports/app-browser.json",
+      "sha256": "7f2ea6e7cbbea310c582a8cdd83bb723067481d9587865c2c1bfafe89e508c67"
+    },
+    {
+      "path": "reports/curriculum-judge.json",
+      "sha256": "4dcd1e9f5f1a66e8385b6bca4e4d94b132aa1598749f1d843a3cea4871184f29"
+    },
+    {
+      "path": "reports/coverage-judge.json",
+      "sha256": "2592e0ed32eca3e1e5971baf1f58574e70340e20f7ae171cac4b0bbabef75bc2"
+    },
+    {
+      "path": "reports/pedagogy-judge.json",
+      "sha256": "4e0996cfee840f884e2e82f1f8b2751915ba4d08eaceb7612212248ea1e1c546"
+    },
+    {
+      "path": "reports/execution-judge.json",
+      "sha256": "3e4780089c85cef83b77845f93ff4b3bc50794d0c9602cbe633831c4ec674412"
+    },
+    {
+      "path": "reports/closure.json",
+      "sha256": "20fb8873c172624abc62951f2e2862c053e15abc1f299959f5368d9846fcff5c"
+    }
+  ]
+}
