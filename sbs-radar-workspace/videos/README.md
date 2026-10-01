@@ -5,12 +5,11 @@
 
 ## Estado
 
-Guiones revisados independientemente; audios españoles Kokoro `ef_dora` generados. Composiciones HyperFrames creadas. Los MP4 **no están exportados**: Chromium no inicia dentro de la sesión restringida de macOS (`MachPortRendezvous`, Permission denied 1100). La validación visual no se declara aprobada. El script detiene la exportación si la comprobación completa encuentra un error.
-
+Los dos MP4 están exportados y se incluyen en esta entrega: 1920×1080, video H.264 y audio AAC. Duración: 3:15 y 3:29. Guiones revisados independientemente y voz española Kokoro `ef_dora`. La exportación se completó desde Terminal; los archivos `render-probe.json` conservan sus propiedades técnicas. Esto no acredita una revisión humana completa del montaje.
 Para validar y exportar ambos desde Terminal:
 
 ```sh
-zsh /Users/macdenix/clawd/databricks-ai-engineer/sbs-radar-workspace/videos/renderizar.command
+zsh renderizar.command
 ```
 
 El comando genera `01-ingesta-publicacion.mp4` y `02-consulta-aplicacion.mp4` en esta carpeta. No llama Databricks, no publica contenido y no modifica la App.

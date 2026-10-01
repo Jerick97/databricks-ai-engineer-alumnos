@@ -1,3 +1,7 @@
+## Actualización de entrega
+MP4 exportado desde Terminal y verificado mediante ffprobe; consultar `render-probe.json`. El bloqueo de Chromium descrito abajo corresponde al intento anterior. No se afirma una revisión humana completa del video.
+
+## Registro histórico
 # Estado de entrega
 Guion: revisión independiente PASS (../script-review.json).
 Voz: Kokoro ef_dora, español, 0.95; seis archivos WAV más narración completa WAV/M4A. Duraciones medidas, audio no vacío y picos comprobados.
