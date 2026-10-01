@@ -1,0 +1,11 @@
+# Safe Genie diagnostics220
+
+CreatorZ → SK06 / SK09. Offline diagnostic overlay for actual218 UI returning unavailable after successful219 publication. Root's AppSP query-history observation found zero query rows in the selected interval. This narrows the investigation but does not identify a cause. No fault-injection result is presented as actual root cause.
+
+Three candidate files: diagnostics220.py, server_rotation.py and runtime.py under runs/sk06-genie-diagnostics-220-overlay/source/src/sbs/genie. Frozen sources are not edited. The helper logs SBS_GENIE_REJECTION with fixed stage, allowlisted internal code and allowlisted exception class. The explicit code set was extracted at construction from local Genie validation literals and frozen as literal data; it is not a runtime regex. Unknown strings become UNKNOWN. It never emits exception text, stack, repr, question, context, SQL, headers, body, tokens, paths or URLs. Logging failures are swallowed so they do not alter policy results.
+
+Stages identify context/readiness, generation selection, dependency assembly, delegation, Delta request creation, publication proof, adapter setup/execution and returned adapter rejection. Existing exception propagation and returned dictionaries are preserved. Limits, TTL, grants, identity and SQL validation are unchanged. No UI or HTTP response diagnostics are added.
+
+Conversation currently copies status/mode/trace but discards top-level reason; last_result therefore does not reliably preserve the unavailable reason. Rotation selection occurs on every ask, not on initial bootstrap; missing publication at App startup is not sticky. Local historical replay reconstructed the exact219 generation hash and passed reader validation with218 config; that is not remote Files validation as App SP.
+
+16 offline tests exercise fixed codes, secret-bearing exception strings, unknown-stage sanitization, logger failure, select/assemble/delegate errors, returned rejections and publication/readiness behavior. No cloud calls, SQL, deployment or evidence renewal occurred during this preparation. Root must independently review and the deployment owner must incorporate all three files and update transport manifest logical hashes.

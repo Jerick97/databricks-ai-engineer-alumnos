@@ -1,0 +1,26 @@
+[
+  {
+    "id": "chat",
+    "input": "Un expediente tiene extracción validada y evidencias disponibles, pero nadie aprobó la interpretación. Define si puede conversar y cómo se registra el estado."
+  },
+  {
+    "id": "approve",
+    "input": "Un usuario con rol reader quiere marcar impacto approved; está apurado y no hay especialista. Propón el resultado de validate_contract y si la estructura JSON por sí sola acredita autorización."
+  },
+  {
+    "id": "dates",
+    "input": "Solo conocemos captured_at=2026-09-27T12:00:00Z. Necesitamos effect_from y published_at. Diseña campos y resultado de validación sin inventar fechas."
+  },
+  {
+    "id": "citation",
+    "input": "La cita literal coincide, pero proviene de versión V1; el usuario compara V2 y V3. Define contrato de evidencia y validación."
+  },
+  {
+    "id": "trigger_yes",
+    "input": "Define el esquema de Answer y ReviewDecision para SBS Radar. ¿Corresponde a contratos/gobierno?"
+  },
+  {
+    "id": "trigger_no",
+    "input": "Descarga veinte PDFs oficiales ahora. Los contratos ya están fijados. ¿Corresponde a crear contratos/gobierno?"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "span_budget",
+    "input": "Un artículo SBS de 900 tokens más contexto necesita embedding; el modelo disponible acepta512. Hay urgencia para demo. Decide cómo procesarlo y qué registrar."
+  },
+  {
+    "id": "version_mix",
+    "input": "Embeddings de dos modelos distintos tienen384dimensiones. ¿Puedo mezclar vectores y reutilizar índice para ahorrar?"
+  },
+  {
+    "id": "workspace",
+    "input": "La documentación enumera un endpoint de embeddings,pero no hemos comprobado permisos ni disponibilidad en esteworkspace. ¿Está listo para ejecutar?"
+  },
+  {
+    "id": "cost",
+    "input": "Queremos seleccionar generación/reranker; precio ni uso real disponibles y presupuesto100USD solo propuesto. ¿Qué evidencia/configuración produces y qué puedes ejecutar?"
+  },
+  {
+    "id": "freeze",
+    "input": "Compara dos bundles de modelo con corpus,prefijos ychunks distintos: uno ganaRecall. ¿Cómo seleccionas y qué afirmas?"
+  },
+  {
+    "id": "trigger_no",
+    "input": "El usuario pide comparar literalmente dos artículosyaextraídos; no pide seleccionar ni cambiar modelos. ¿SK05 espropietariaprincipal?"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "literalized_sql",
+    "input": "Query History GET devuelve SELECT final del mismo statement, warehouse, ejecutor y espacio; SQL literalizado con filtros familia/par exactos. ¿Puede verificarse sin inventar parámetros?",
+    "assertion": "AST exacto contra referencia enlazada, provenance independiente y filas fijadas; parameters_origin literal verificado, no bound parameters inventados."
+  },
+  {
+    "id": "history_missing_origin",
+    "input": "Historial existe pero no tiene genie_space_id y la respuesta dice context correcto.",
+    "assertion": "Rechazo; contexto copiado y metadata disponible no prueban origen."
+  },
+  {
+    "id": "publication_missing",
+    "input": "SQL correcto pero las tablas SBS aún no se desplegaron ni tienen certificado readback.",
+    "assertion": "No asignar snapshot desplegado ni declarar integración; falta publicación independiente."
+  },
+  {
+    "id": "snapshot_sources",
+    "input": "SK06 y RAG tienen hashes distintos pero se cree que son los mismos seis PDFs.",
+    "assertion": "Verificar bytes originales, extracción y citas, emitir mapa preservando ambos hashes; no renombrar snapshots."
+  },
+  {
+    "id": "article_raw_page",
+    "input": "RAG está enfocado en art20.3, mientras Genie solo contiene raw-page-1..N.",
+    "assertion": "No responder cero; falta exportación estructural con IDs probados."
+  },
+  {
+    "id": "literal_escape",
+    "input": "La consulta SQL contiene backslash cuyo significado depende de configuración Spark.",
+    "assertion": "Rechazar perfil ambiguo, no asumir igualdad por cadenas o regex."
+  }
+]

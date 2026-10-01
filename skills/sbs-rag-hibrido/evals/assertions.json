@@ -1,0 +1,36 @@
+{
+  "native_rrf": [
+    "Una sola fusión RRF",
+    "Reranking posterior y trace de origen"
+  ],
+  "counterpart": [
+    "Busca explícitamente contraparte",
+    "Sin contraparte declara insuficiencia"
+  ],
+  "empty": [
+    "No afirma sin cambios por vacío/error"
+  ],
+  "span": [
+    "Separa cita/embedding/expansión",
+    "Conserva offset literal y presupuesto"
+  ],
+  "untrusted": [
+    "PDF no amplía autorización",
+    "Filtros persisten durante expansión"
+  ],
+  "trigger_no": [
+    "Selección de modelo no es tarea principal de recuperación"
+  ],
+  "durable_embedding_041": [
+    "Preflight no construye cliente ni autentica; no trunca",
+    "Plan fija29lotes de8máximo y108126reserva, coste desconocido",
+    "Intención durable antesPOST; fallo ambiguo bloquea resend; resume valida resultados",
+    "No índice nuevo, merge queries ni equivalencia de pesos inferida"
+  ],
+  "structural_ranking_047": [
+    "Revisión→compatibilidad→dataset→rawresult hashes verificados antes consumo",
+    "IDs/citas/inputparts intactos, origen separado y proyección explícita",
+    "Filtros antes de score, pool RRF20 idéntico, ninguna expansión benchmark",
+    "IDs/ranklexical exactos; bound aritmético transparente no ajuste por relevancia"
+  ]
+}

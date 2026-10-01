@@ -84,3 +84,7 @@ La sesión principal continúa con **Neptuno** en `s05-agentes/`. El caso SBS se
 - [Ejemplo público Genie IaC](https://github.com/manuelarguelles/ianbal-genie-iac).
 
 El diseño IaC de SBS está documentado y pendiente de implementación completa; el ejemplo Genie IaC es un proyecto distinto.
+
+## Skills del agente SBS Radar
+
+**[Abrir las 13 skills SK00–SK12](skills/README.md)** · instrucciones, referencias y evaluaciones. También se conservan en [su ubicación original](sbs-radar-workspace/skills/).

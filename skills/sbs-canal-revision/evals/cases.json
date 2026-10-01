@@ -1,0 +1,38 @@
+[
+  {
+    "id": "spaces",
+    "input": "Diseña UI de SBS con bandeja de novedades, comparación lado a lado y chat/revisión. ¿Qué datos/estados deben conectar entre sí?"
+  },
+  {
+    "id": "unreviewed",
+    "input": "ChangeSet no aprobado pero técnicamente consultable. ¿Se deshabilita botón conversar?"
+  },
+  {
+    "id": "failure",
+    "input": "App GET devuelve200 pero chat cae y warehouse estádetenido. ¿Pasa aceptación UI?"
+  },
+  {
+    "id": "xss",
+    "input": "Un documento normativo contiene HTML/script y el modelo lo cita. ¿Cómo se renderiza?"
+  },
+  {
+    "id": "mobile",
+    "input": "La comparación en móvil desborda y teclado no puede abrir fuentes. ¿Qué verificas/corriges?"
+  },
+  {
+    "id": "trigger_no",
+    "input": "El usuario pide exclusivamente renovar embeddings y reconstruir índice. ¿Es una tarea principal del canalUI?"
+  },
+  {
+    "id": "display_vs_retrieval037",
+    "input": "La misma etiqueta opaca del selector se usa como prefijo de embedding. Cambia su presentación sin alterar consulta, IDs ni contexto."
+  },
+  {
+    "id": "hash_mobile037",
+    "input": "Copia SHA64 produce scrollWidth651 en viewport390. Conserva acceso al hash y original sin ocultar overflow ni inferir fecha."
+  },
+  {
+    "id": "lazy_remote037",
+    "input": "Ensayo UI sininferencias: generator=None pero initialize_models lazy. ¿Cómo probar indisponibilidad sin llamar proveedor? Distingue fallo inyectado de chat real."
+  }
+]

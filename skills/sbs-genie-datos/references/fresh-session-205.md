@@ -1,0 +1,11 @@
+# SK06 / CreatorZ — inyección de sesión205
+
+Objetivo: reutilizar el ejecutor081 revisado con Config de sesión OAuth pública mantenida en memoria por el orquestador203, evitando construir un ConfigCLI nuevo durante execute/reconcile. No iniciar autenticación ni SQL al construir205.
+
+Único cambio funcional en `runs/sk06-sk11-fresh-205.py`: `execute(root, review_path, *, cfg=None)` y `reconcile(root, review_path, *, cfg=None)` aceptan la configuración explícita. Las dos construcciones Config(profile=...) quedan condicionadas a cfg is None. El fallback histórico se conserva para CLI; el orquestador debe pasar cfg explícitamente. No hay monkeypatch global, cambio de proveedor ni extracción/serialización de tokens. Los imports y código081restante son idénticos byteporbyte.
+
+El check_review081 y sus86pins siguen ejecutándose, luego prepare confirma todas las entradas; el host del Configinyectado se contrasta contra el server fijado antes de journal/transport/SQL. Identidadpublisher, warehouse, gobernanza,8tablas164filas, versiones, SET +32lecturas en sesión única, cap33SQL, capsHTTP, deadlines, TTL, publicación/readback y ledger `deployment/state/fresh-readback-081` permanecen intactos. Reconcile sigue GET-only.205no evita ni renueva una ventana/gate, no cambia autorizaciones o presupuestos, no crea otra fase/ledger, no aporta evidencia E2E por sí solo.
+
+Evidencia offline: originalreview081válido,86pins/8tablas164filas/32lecturasconfirmados por preflight205;104testsPASS (101regresiones081 +3nuevos). Test de diffexacto limita cambios a4líneas; execute/reconcile con hostajeno fallan antes de construir segundoConfig/transporte. Un doble inicial de SingleAttemptApi era función y no clase; reconcile lo rechazó antes del gate; evidencia preservada y doble corregido, sin cambio productivo.
+
+Uso tras revisión independiente205: cargar módulo205 y llamar `execute(root, 'runs/sk09-fresh-081-review.json', cfg=cfg)` con Configretenido de203. Review205suplementa, no reemplaza, review081. Freeze205fija adaptador/tests/ref/evidencia y hashes de freeze/review081. No ejecutar directamente por CLI si el propósito es conservar la sesión en memoria. No modificación de081/199/204ni datos de publicación; no nube/auth/SQL durante esta construcción.

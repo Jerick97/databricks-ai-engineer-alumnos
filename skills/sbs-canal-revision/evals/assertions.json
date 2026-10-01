@@ -1,0 +1,20 @@
+{
+  "spaces": [
+    "Conecta tres espacios con mismos IDs/contexto"
+  ],
+  "unreviewed": [
+    "Chat disponible sin aprobación previa"
+  ],
+  "failure": [
+    "HTTP200 no acredita UI/chat"
+  ],
+  "xss": [
+    "Renderiza como texto escapado, sin ejecutar contenido"
+  ],
+  "mobile": [
+    "Prueba teclado/foco y viewport real"
+  ],
+  "trigger_no": [
+    "Índice corresponde a recuperación, no canalprincipal"
+  ]
+}

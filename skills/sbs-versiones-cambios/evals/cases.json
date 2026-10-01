@@ -1,0 +1,8 @@
+[
+  {"id":"renumbering","input":"Artículo12 antes y14 ahora tienen el mismo texto. Un full outer join por número reporta baja y alta. Propón alineamiento y clasificación sin inventar obligación nueva."},
+  {"id":"split","input":"Una disposición antigua se divide en dos nuevas y una frase se traslada a anexo. ¿Puede asumirse relación1:1 y descartar elresto?"},
+  {"id":"retroactive","input":"Capturamos hoy una corrección que declara efectos desde fecha anterior. ¿Cómo conservas lo conocido ayer y lo efectivo según la nueva evidencia sin reescribir historia?"},
+  {"id":"same_text_missing_annex","input":"No hay diferencias en el cuerpo principal pero falta el anexo nuevo. El usuario quiere 'sin cambios'. Decide cobertura y resultado."},
+  {"id":"reconstruction","input":"Solo tenemos norma base y modificatoria, no consolidadooficial. Construimos texto actualizado. ¿Qué etiqueta, procedencia y límite requiere la versión derivada?"},
+  {"id":"trigger_no","input":"Configura embeddings y reranking para encontrar disposiciones ya alineadas. ¿Es comparación/versionado la skillpropietaria?"}
+]
