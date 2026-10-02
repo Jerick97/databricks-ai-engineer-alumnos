@@ -1,0 +1,2 @@
+# Refinamiento193 provisional
+Separar reserva de acciones estructuradas de la cuota de generación/embedding. HTTP100 del lector no limita100SQL internos. Usar RotationReader existente contra captura real reciente del store protegido antes de acción; App revalida remoto durante consulta. Cuatro receipts192 preceden las dos acciones193 en el mismo ledger191. No reenvío, timestamps nuevos ficticios ni promoción por resultado plausible. Contratos/probes locales no prueban E2E. Ver runs/sk06-sk10-counts-193-runbook.md.

@@ -1,0 +1,22 @@
+{
+  "skill": "SK03",
+  "version": "0.1.0",
+  "started_at": "2026-09-27T23:57:41.667537+00:00",
+  "scope": [
+    "cyber art20.3",
+    "market art27",
+    "market art29.1.4"
+  ],
+  "mode": "deterministic structural subset reuse of existing AI annotations; no new inference",
+  "inputs": {
+    "skills/sbs-versiones-cambios/SKILL.md": "bd2a4979d9150711d5eaf8cd5c5ada557b35e95b2b284640a00a1a7d242fbedb",
+    "skills/sbs-evaluacion-jueces/SKILL.md": "46e9f9851d46b2ec95f61dabdaed6ec30cc28799f8c8e017615d87dcff6d2b66",
+    "runs/astra-normative-review-003.json": "590a8f400674d48a0d2b80e83d04c6ba4c5b0b84cdde8c8432f609059552ff24",
+    "runs/astra-normative-review.json": "7eec669345cb206c77fcb1ffd55550afdb7b427a66ce16f6b8a1b7f7d8257282",
+    "runs/sk02-repository-capture.json": "5aa790331595736d982719f6a271da537557b2e9f2c0b9f9259065618cb53402",
+    "runs/sk02-amendments-capture.json": "43f0a2d6494bda55a0182c5964c88cd31cd859bc2c97cd813b13267505630272"
+  },
+  "reference": "SK09 v0.1.2; references are AI annotations, not human gold",
+  "status": "started",
+  "network_calls": 0
+}

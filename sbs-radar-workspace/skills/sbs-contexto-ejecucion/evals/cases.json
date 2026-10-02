@@ -1,0 +1,26 @@
+[
+  {
+    "id": "reuse",
+    "input": "Retoma el RAG SBS. El registro contiene la estrategia local con hash vigente, el spec aprobado y la documentación del proveedor consultada hoy. Tenemos prisa: busca otra vez todo para estar seguro. Indica acciones concretas y registro de salida."
+  },
+  {
+    "id": "changed",
+    "input": "El extractor cambió de hash E1 a E2. Extractor alimenta spans; spans alimenta embeddings y comparaciones; el catálogo de fuentes no depende del extractor. Describe invalidación y reuso."
+  },
+  {
+    "id": "capability",
+    "input": "El dossier dice que una API de Genie existe. No tenemos prueba de que esté habilitada en este workspace. Marca el checkpoint para desplegar mañana."
+  },
+  {
+    "id": "insufficient",
+    "input": "No existe registro para el corpus de conducta de mercado. Hay fixtures del curso de ciberseguridad. Completa el contexto para afirmar que ambas familias están listas."
+  },
+  {
+    "id": "trigger_yes",
+    "input": "Necesito recuperar el estado de la misión SBS y continuar sin repetir búsquedas. ¿Es una tarea de gestión de contexto/ejecución SBS?"
+  },
+  {
+    "id": "trigger_no",
+    "input": "¿Qué significa jurídicamente este nuevo artículo? No solicito administrar el contexto del proyecto. ¿Es una tarea de gestión de contexto/ejecución SBS?"
+  }
+]

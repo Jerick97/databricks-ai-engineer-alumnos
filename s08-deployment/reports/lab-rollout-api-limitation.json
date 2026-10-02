@@ -1,0 +1,14 @@
+{
+  "observed_on": "2026-09-26",
+  "timezone": "America/Lima",
+  "endpoint": "ais08-neptuno-rollout",
+  "api": "PUT /api/2.0/serving-endpoints/{name}/config",
+  "attempted_body_fields": [
+    "traffic_config"
+  ],
+  "result": "REJECTED",
+  "error_type": "BadRequest",
+  "message": "Config needs to be set and config.served_models must contain at least one element",
+  "correction": "Reenviar served_entities existentes con traffic_config; esperar READY y NOT_UPDATING. En este ensayo se observó reprovisionamiento incluso preservando versiones/tamaños.",
+  "documentation": "https://docs.databricks.com/aws/en/machine-learning/model-serving/serve-multiple-models-to-serving-endpoint"
+}

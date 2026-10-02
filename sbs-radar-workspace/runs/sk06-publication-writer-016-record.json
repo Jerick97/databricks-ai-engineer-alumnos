@@ -1,0 +1,89 @@
+{
+  "task": "SK06 checkpoint16 executable initial publication",
+  "created_at": "2026-09-28T03:58:46.654572+00:00",
+  "invocation": "runs/sk06-publication-writer-016-invocation.json",
+  "skill_version": "0.1.11 provisional",
+  "creator": "skill-creator-z",
+  "status": "local_construction_tested_independent_review_pending",
+  "hashes": {
+    "src/sbs/genie/publication_writer.py": "dfc77bd2064729f92037ad7ce0bce863e616439c6bef2e427c2ad1670f1c252c",
+    "tests/unit/test_publication_writer.py": "1ae642fd882d76fe5be84ba7a315ecf8c203078ece9ed434ec887dc1c7ee7454",
+    "skills/sbs-genie-datos/SKILL.md": "139816285867031a37aedf60c6404c7c36c3d496d024858ed7a773adaec35364",
+    "skills/sbs-genie-datos/references/publication-writer.md": "a3118146b3bad26e9c67de7830d6d01e6b03ced1423342ce8f806f7ff308d262",
+    "notebooks/sbs-radar-genie-publication.ipynb": "822f82c45de7c23bc249af817fa6ac8e9d08a275387af28fb28b2c0271f811a3",
+    "runs/sk06-publication-writer-016-plan.json": "ec0832f9e5eb3dc1acc326d6499b31ad95d1e5d9be5ca363ca1b5eaae0974715",
+    "runs/sk06-publication-writer-016-preflight.json": "91f5732845282ab00d52b693de7d5ad7c7b9ee59912416d51a4ba4afa2bb8780",
+    "runs/sk06-publication-writer-016-server-template.json": "3df599add3e4db0735f9ff6bb10d94ee44ef48bc9bb1efdcf51fba1c1f96e2ba",
+    "runs/sk06-publication-writer-016-notebook.json": "d0b09e0af60d495e50748946f7b37fc977548d58f9a8428de2e767baa6f8ef3a",
+    "runs/sk06-publication-writer-016-notebook-executed.ipynb": "19bfb1c8efd0426e373aa6fc0b98bc5bd822eee1b35af92f0db25d9b1bad4e9a",
+    "runs/sk06-publication-writer-016-red.txt": "09d12eec0ac237b15dbc050266ea7358a9101430b771d14daaa20720bdf82c57",
+    "runs/sk06-publication-writer-016-green.txt": "90a32637b9e769a88fcbeca246ac5310f6e39ec3ac6a34c5be29b4ef4f03ec46"
+  },
+  "api": [
+    "load_write_plan(root, publication_id=...)",
+    "preflight(plan, config=None)",
+    "sdk_writer(plan, config, journal, sdk_config=Config(...))",
+    "PublicationWriter.publish(certificate_directory=...,registry_directory=...)"
+  ],
+  "red": {
+    "path": "runs/sk06-publication-writer-016-red.txt",
+    "finding": "Module absent; export-to-write-plan capability missing"
+  },
+  "green": {
+    "path": "runs/sk06-publication-writer-016-green.txt",
+    "tests": 92,
+    "writer_tests": 22,
+    "scope": "real export002 content, adapter fixtures and generated official SDK over HTTP fixtures; no remote evidence"
+  },
+  "notebook": {
+    "path": "notebooks/sbs-radar-genie-publication.ipynb",
+    "executed_record": "runs/sk06-publication-writer-016-notebook.json",
+    "cells": "2/2 local preflight"
+  },
+  "reuse": [
+    "sealed pilot002 loader and source snapshot mapping",
+    "PublicationReader32 readback certificates",
+    "HistoryRegistryBuilder32 independent GET observations",
+    "RegistryAdmin and no-symlink append-only helpers",
+    "reviewed operations SingleAttemptApi; no changes to operations"
+  ],
+  "research": {
+    "primary_sources": [
+      "https://docs.databricks.com/aws/en/dev-tools/sql-execution-tutorial",
+      "https://docs.databricks.com/aws/en/tables/history"
+    ],
+    "sdk_version": "0.102.0",
+    "sqlglot": "30.20.0",
+    "observations": [
+      "Official SDK SCIM wire uses userName",
+      "QueryHistory filter dot notation required at HTTP transport",
+      "Table absence requires bounded typed404 response, not any transport failure"
+    ]
+  },
+  "coverage": [
+    "exact8 tables/164rows incl141provisions",
+    "16 mutations/64 read statements/32 independent history GETs",
+    "real observed fixture versions9 rather than assumed zero",
+    "lost response after commit reconciles; absent effect never retransmitted",
+    "unrelated existing tables refused before writes",
+    "RUNNING before every SQL; owner identity/namespace UUID/directwarehouseACL",
+    "corrupt content/history and replacedUCidentity rejected",
+    "journal symlink rejected",
+    "generated SQL parsed by SQLGlot30.20.0, values separately bound",
+    "SDK serializers/HTTP fixture; network never used"
+  ],
+  "remote_sql": 0,
+  "cloud_gets": 0,
+  "resources_created": 0,
+  "inference": 0,
+  "limits": [
+    "Initial publisher uses existing owner identity, not app or Job writer; no role elevation",
+    "Administrative maintenance/retention/ABAC declarations are assumptions, not GET historical proof",
+    "HTTP workspace cap512; OAuth traffic not counted; cost unknown",
+    "RUNNING GET cannot atomically prevent shutdown before SQL",
+    "Unconfirmed mutations remain pending, no destructive rollback or blind retry",
+    "Journal must survive resume; existing foreign/orphaned table not adopted",
+    "Genie space/reader governance/runtime binding not created or activated",
+    "No cloud/E2E acceptance; SK09 independent review pending"
+  ]
+}

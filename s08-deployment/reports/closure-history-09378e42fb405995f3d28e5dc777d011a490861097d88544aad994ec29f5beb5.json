@@ -1,0 +1,64 @@
+{
+  "validated_at": "2026-09-28T19:32:25.569909+00:00",
+  "session": "S08",
+  "scope": "full-session",
+  "class_ready": false,
+  "gates": {
+    "judge_curriculum": false,
+    "judge_pedagogy": true,
+    "judge_execution": true,
+    "coverage": true,
+    "visual": true,
+    "structure": true,
+    "material": true,
+    "app_http": true,
+    "app_render": true,
+    "monitor": true,
+    "canary": true,
+    "rollback": true,
+    "notebook": true,
+    "live_browser_flow": true,
+    "teacher_delivery": true,
+    "local_cases": true,
+    "served_cases": true,
+    "security_cases": true,
+    "unit_contracts": true,
+    "registered_source": true,
+    "served_current_model": true,
+    "requirements": true,
+    "current_visual_hashes": true
+  },
+  "judges": {
+    "curriculum": {
+      "verdict": "PASS",
+      "scope": "full-session",
+      "stale_hashes": [
+        "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/README.md",
+        "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/VALIDACION.md",
+        "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/index.html"
+      ]
+    },
+    "pedagogy": {
+      "verdict": "PASS",
+      "scope": "full-session",
+      "stale_hashes": []
+    },
+    "execution": {
+      "verdict": "PASS",
+      "scope": "full-session",
+      "stale_hashes": []
+    }
+  },
+  "unverified": {
+    "browser_sso": "consent_authorized_by_user_then_authenticated",
+    "historical_browser_sso": "pending_manual_consent",
+    "remote_ci": "not_executed; bundle validation only",
+    "publication": "local student copy and ZIP; no remote push",
+    "cohort_runtime": "Each participant needs assigned permissions/resources; teaching times estimated"
+  },
+  "notebook_run_id": 35725070281647,
+  "notebook_sha256": "4dbb89479b8d04d4e22de55110c9e47297e6e5f3d91e3d76339d9f9a4edf9510",
+  "live_browser_evidence": "reports/class-day-browser.json",
+  "teacher_delivery_evidence": "reports/teacher-delivery-judge.json",
+  "teacher_notebook_sha256": "53f0e331e04e18766bdfe1ef5f22593e8639ca58e119c60800986a4037a73e4c"
+}

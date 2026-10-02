@@ -1,0 +1,8 @@
+{
+  "legacy_notebook": "runs/sk12-notebook-executed.ipynb",
+  "legacy_record": "runs/sk12-notebook-execution.json",
+  "status": "not_valid_as_current_acceptance",
+  "reason": "Old executor overwrote notebook on failed retry but retained previous success metadata. Historical success metadata cannot verify the overwritten artifact.",
+  "canonical_pointer": "runs/sk12-notebook-latest.json",
+  "fix": "SK12 v0.1.1 unique artifacts per execution"
+}

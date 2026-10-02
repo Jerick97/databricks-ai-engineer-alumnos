@@ -1,0 +1,94 @@
+{
+  "run_id": "astra-normative-review-006",
+  "registered_at_utc": "2026-09-28T04:42:36.091438+00:00",
+  "skill_id": "SK09",
+  "skill_version": "0.1.2",
+  "skill_path": "skills/sbs-evaluacion-jueces/SKILL.md",
+  "skill_sha256": "46e9f9851d46b2ec95f61dabdaed6ec30cc28799f8c8e017615d87dcff6d2b66",
+  "protocol_path": "skills/sbs-evaluacion-jueces/references/revision-ia.md",
+  "protocol_sha256": "8ee94f8b3b26614996e07d86cf6c9ce878d29240009e922f4305639933506b25",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "human_approved": false,
+  "scope": "Historical literal comparison of frozen4036 copies and3240 annotated amending act, bank scope, date separation, annex and lineage evidence, partition eligibility. No current-law or independent holdout claim.",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "99996342db4cb7149f4f6a340495935d33008d1dc2d6709c7b4501059131ad5f",
+      "matches_record": null
+    },
+    {
+      "path": "skills/sbs-evaluacion-jueces/SKILL.md",
+      "sha256": "46e9f9851d46b2ec95f61dabdaed6ec30cc28799f8c8e017615d87dcff6d2b66",
+      "matches_record": null
+    },
+    {
+      "path": "skills/sbs-evaluacion-jueces/references/revision-ia.md",
+      "sha256": "8ee94f8b3b26614996e07d86cf6c9ce878d29240009e922f4305639933506b25",
+      "matches_record": null
+    },
+    {
+      "path": "runs/sk09-astra-006-dispatch-invocation.json",
+      "sha256": "616ad7724e1959c247ee06e2ddebe42a78d2d9989616a034f4557a7bbb92a876",
+      "matches_record": null
+    },
+    {
+      "path": "runs/sk02-market-holdout-018-record.json",
+      "sha256": "3cd7b4f097b01a80efb62b6c247db30e0f1167a00f113ed3aad69e3a65f309eb",
+      "matches_record": null
+    },
+    {
+      "path": "data/foundation-holdout/objects/59/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d.pdf",
+      "sha256": "594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d",
+      "matches_record": true
+    },
+    {
+      "path": "data/foundation-holdout/derived/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "sha256": "b6f83c6421c0b049fe52a2297d29b080baa02f1164d0951acf3a95f7c6b440e2",
+      "matches_record": true
+    },
+    {
+      "path": "data/foundation-holdout/derived/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/result.json",
+      "sha256": "13af66189f7759ce29d74b08717e88c78b4acc92e131b56c829eabf2a4e12c80",
+      "matches_record": true
+    },
+    {
+      "path": "data/foundation-holdout/objects/e3/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1.pdf",
+      "sha256": "e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1",
+      "matches_record": true
+    },
+    {
+      "path": "data/foundation-holdout/derived/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/a8750324698b9eeabd8cd9a0f560c530df6380c60b7b99da07c65087ecf8d910/rawtext.txt",
+      "sha256": "48ed43b6b32f82c5b8279aa949ec9d743c70ff470e5b4fdcad8a554e5a2f3872",
+      "matches_record": true
+    },
+    {
+      "path": "data/foundation-holdout/derived/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/a8750324698b9eeabd8cd9a0f560c530df6380c60b7b99da07c65087ecf8d910/result.json",
+      "sha256": "3c2b5bad01be433e033ca62383b495d5a649deb4ebdc0dc62b971880951556ab",
+      "matches_record": true
+    },
+    {
+      "path": "data/foundation-holdout/objects/7c/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749.pdf",
+      "sha256": "7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749",
+      "matches_record": true
+    },
+    {
+      "path": "data/foundation-holdout/derived/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "sha256": "1946f8f1988a8fd55e9a13d878dfc671cd65277af8b1a28adf2f7d7ad90063e2",
+      "matches_record": true
+    },
+    {
+      "path": "data/foundation-holdout/derived/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/result.json",
+      "sha256": "29c111b93000ea34ffaf94c00b9534c4de1ca230703416299192beac4e75b37a",
+      "matches_record": true
+    }
+  ],
+  "pre_read_disclosure": "Read SK09, protocol, parent dispatch and SK02 capture record before registering original/derivative content review. SK02 record contains literal snippets; these are prior exposure and not substituted for original evidence. No PDF/rawtext/result content read in006 before registration; hash reads bytes only.",
+  "forbidden": [
+    "new web or downloads",
+    "questions/answers/qrels inspection or generation",
+    "index/spec/gold/runtime/cloud writes",
+    "other files outside runs/astra-normative-review-006*"
+  ],
+  "supplementary_originals_registered": []
+}

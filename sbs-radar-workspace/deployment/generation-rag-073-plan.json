@@ -1,0 +1,59 @@
+{
+  "status": "prepared_pending_independent_review",
+  "generation_selection": "config/generation-selection-073.json",
+  "activation": "server default initialize_models uses controlled-trial candidate; quality not accepted; no deployment/start authorized by selection",
+  "turns": [
+    {
+      "question": "¿Cómo cambió la responsabilidad por pérdidas en operaciones digitales sin autenticación reforzada en el artículo 20.3 entre las versiones 4 y 5?",
+      "pair_id": "cyber-504",
+      "provision_id": "art20.3",
+      "query_cached": true
+    },
+    {
+      "question": "¿Qué cambió en el artículo 27 sobre seguros adicionales, contratación independiente y consentimiento del usuario entre las versiones 7 y 8?",
+      "pair_id": "market-3274",
+      "provision_id": "art27",
+      "query_cached": true
+    },
+    {
+      "question": "¿Qué cambió en el artículo 29.1 numeral 4 sobre canales para pagos anticipados y adelantos de cuotas entre las versiones 7 y 8?",
+      "pair_id": "market-3274",
+      "provision_id": "art29.1.4",
+      "query_cached": true
+    },
+    {
+      "question": "¿Y qué implicancia propuesta tiene ese cambio para un proceso ficticio de atención de pagos anticipados, y qué límite impide afirmar vigencia actual?",
+      "pair_id": "market-3274",
+      "provision_id": "art29.1.4",
+      "query_cached": false
+    }
+  ],
+  "limits": {
+    "generation_posts": 4,
+    "generation_output_tokens_each": 5000,
+    "generation_input_characters_each": 120000,
+    "new_query_embedding_posts": 2,
+    "new_query_embedding_tokens_total": 20000,
+    "automatic_retries": 0,
+    "new_document_embeddings": 0
+  },
+  "embedding_authorization": "Separate controlled query-inference trial under autonomy053; does not reuse exhausted041 document publication quota",
+  "runtime": "LocalService base135 with cached original query vectors, real local reranker and verified focal comparison expansion; no structural231 promotion",
+  "inputs": {
+    "src/sbs/models/generation_selection.py": "930fcb56eb70c4c4b7d14ecd428bf26fa1bb8c43693aac35694dab73dd703427",
+    "src/sbs/conversation/databricks.py": "fb26961fb0cff11104c0dbe38517967f7f05188f710ce3299ddb8dfc8be3d02a",
+    "src/sbs/runtime.py": "5cc2026aafa843c2d6cb5ef8a96815f5425f9a5549b29aaf6379f464ad9b3d5b",
+    "config/generation-selection-073.json": "855b26355aeda42762575584a04c3ea320a341a9fcf75c95949c20f290d5273b",
+    "config/pilot-model-bundle.json": "76620b8bee92f3751503ca4658f396355dd1d436deac66a0155c1ab8bfd735ed",
+    "runs/sk05-generation-candidates-072-databricks-qwen3-next-80b-a3b-instruct.json": "2ca91c6c4aa7539c1e4028d964fa5c628486fa06f3a20905a0555af75c53bd11",
+    "runs/sk04-real-001-protocol.json": "85103535452d4872042e4aee49c5b1452fb8e44cc19afc40e73b057349a0c572",
+    "data/retrieval/sk04-real-001/queries-000.json": "fd899cb778c0a03e523274a5a7936028d4330b1e029fd17265fcf242e16430e5",
+    "data/retrieval/sk04-real-001/index.json": "3390bb05d9ee8a2d8a43aeb5cd5a43083553bfc4b257847d765918e24451b1f9",
+    "skills/sbs-modelos-configuracion/SKILL.md": "58c084896df9b9d1e92480d4c51f18932092e3705d34b65dc36e6db2b618c547",
+    "skills/sbs-conversacion-orquestacion/SKILL.md": "057cb99cf42e21578fd4cdda3d87afb4d5ba1ec3f7dd9c7089aa30f193a420ad",
+    "skills/sbs-conversacion-orquestacion/assets/generator-instructions.md": "7480b63934721baf176c9330208d80e12a53c426a832df8076169fdc050b0386",
+    "runs/sk00-autonomy-053.json": "241b0946ab052ead92a8e29a4abb8bc98d064030c5933a45397465df6fcb8d43"
+  },
+  "quality_evaluated": false,
+  "cost": null
+}

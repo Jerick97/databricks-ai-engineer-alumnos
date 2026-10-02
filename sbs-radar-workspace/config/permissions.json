@@ -1,0 +1,19 @@
+{
+  "version": "0.1.0",
+  "families": ["cybersecurity", "market_conduct"],
+  "roles": {
+    "reader": ["chat", "open_evidence", "create_proposal"],
+    "reviewer": ["chat", "open_evidence", "create_proposal", "review", "approve", "reject"],
+    "compliance_owner": ["chat", "open_evidence", "create_proposal", "review", "approve", "reject"]
+  },
+  "query_actions": ["chat", "open_evidence", "create_proposal"],
+  "query_processing_statuses": ["ready", "partial"],
+  "tools": {
+    "retrieve_evidence": "chat",
+    "open_evidence": "open_evidence",
+    "create_proposal": "create_proposal",
+    "review_evidence": "review",
+    "approve_review": "approve",
+    "reject_review": "reject"
+  }
+}

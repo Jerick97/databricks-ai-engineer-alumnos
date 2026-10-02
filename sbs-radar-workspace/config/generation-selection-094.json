@@ -1,0 +1,12 @@
+{
+  "status": "selected_for_controlled_trial",
+  "endpoint": "databricks-gpt-oss-120b",
+  "expected_response_model": "gpt-oss-120b-080525",
+  "observation_path": "runs/sk05-generation-candidates-090-databricks-gpt-oss-120b.json",
+  "observation_sha256": "7cea220fc9ae4584485ca068a1e66c3346f4603cf38d6d2275e2e109c4d6488d",
+  "max_requests": 4,
+  "max_output_tokens": 5000,
+  "max_input_chars": 120000,
+  "quality_accepted": false,
+  "scope": "Controlled evaluation only;091 orientation failure remains. Not Apps/default promotion."
+}

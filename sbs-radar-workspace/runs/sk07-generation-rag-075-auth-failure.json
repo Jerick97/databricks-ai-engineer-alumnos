@@ -1,0 +1,20 @@
+{
+  "at": "2026-09-28T22:07:48.730728+00:00",
+  "skill": "SK07 via CreatorZ recovery075",
+  "creator_z_sha256": "913c602cca1fcc8bfbe6a7b6300199f098c178970952302579d152029491fc99",
+  "failed_session": 10264,
+  "exit_code": 1,
+  "failure": "SDK constructor normal auth token refresh cache write blocked by sandbox before model initialization",
+  "observed_call_site": "LocalService.initialize_models WorkspaceClient constructor before transport construction",
+  "state_files": [
+    "admission.json"
+  ],
+  "admission_sha256": "6f5d0de530afc1986bac99fb4209dec12b5da5d116817c4f19081a05b8ec40fe",
+  "inference_posts": 0,
+  "query_embedding_posts": 0,
+  "auth_refresh_session": 34065,
+  "auth_refresh_exit_code": 0,
+  "auth_refresh_inferences": 0,
+  "recovery": "Archive exact single-admission directory; execute unchanged reviewed075 once under original4/2 budgets; no spent budget reset",
+  "status": "prepared_pending_independent_recovery_review"
+}

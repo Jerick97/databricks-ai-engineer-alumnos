@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "enabled": false,
+  "workspace_host": "https://dbc-0410b264-20c7.cloud.databricks.com",
+  "executor_id": 77041447522099,
+  "client_id": "a947eccf-5f94-4369-a3d4-8f83b4ea98a1",
+  "runtime_config_path": "config/genie-runtime-cloud.json",
+  "runtime_config_sha256": null,
+  "certificate_path": "config/genie-publication.json",
+  "certificate_sha256": null,
+  "policy_path": "config/genie-admin-policy.json",
+  "policy_sha256": null,
+  "evidence_prefix": "/Volumes/neptuno_manuel_arguelles/sbs_radar/release_artifacts/registry",
+  "genie_acl_object_id": null
+}

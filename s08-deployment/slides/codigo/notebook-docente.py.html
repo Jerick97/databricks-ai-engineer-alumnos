@@ -1,0 +1,342 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>notebook-docente.py · S08</title><style>body{font:18px system-ui;margin:32px;color:#122b43}header{max-width:1000px}a{color:#533afd}pre{font:14px/1.6 ui-monospace,monospace;overflow:auto;background:#f6f9fc;padding:20px}pre span{display:block}pre span:target{background:#fff0ad}pre a{display:inline-block;width:4ch;color:#65788a}p{line-height:1.5}</style><header><h1>notebook-docente.py</h1><p>Código del repositorio local · Neptuno S08. Esta copia permite examinar el script sin ejecutarlo.</p><p><a href="https://github.com/manuelarguelles/databricks-ai-engineer-alumnos/blob/main/s08-deployment/notebook-docente.py">Ver este archivo en GitHub · repositorio de alumnos</a></p><p><a href="../../notebook-docente.py">Abrir archivo original</a> · <a href="../S08-autonomo.html#6">Volver a las diapositivas</a></p></header><pre><span id="L1"><a href="#L1">1</a> # Databricks notebook source</span>
+<span id="L2"><a href="#L2">2</a> # MAGIC %md</span>
+<span id="L3"><a href="#L3">3</a> # MAGIC # S08 · Docente · Neptuno se despliega y se observa vivo</span>
+<span id="L4"><a href="#L4">4</a> # MAGIC **Copia docente preconfigurada para el workspace del curso.** Ejecuta Run all con `modo=verificar`: catálogo, warehouse, esquema y recursos ya tienen los valores del ensayo. No necesita parámetros de Job. El starter de alumnos sigue siendo `notebook.py`, con configuración propia por equipo.</span>
+<span id="L5"><a href="#L5">5</a> # MAGIC 180 minutos reloj estimados. Importa **la carpeta completa**, no sólo este notebook.</span>
+<span id="L6"><a href="#L6">6</a> # MAGIC Cada celda explica entrada, efecto y resultado. `modo=verificar` recorre recursos existentes; `crear` habilita acciones en tu laboratorio. No ejecutar Run all en crear: Serving, Apps y logs son asíncronos.</span>
+<span id="L7"><a href="#L7">7</a> # MAGIC **Widgets:** catálogo y warehouse propios; sufijo opcional por equipo (vacío genera hash de identidad); esquema vacío genera `ais08_&lt;sufijo&gt;`; s07_schema identifica la fuente sintética de S07. Los campos no aceptan credenciales. Sólo el instructor usa explícitamente sufijo `neptuno` y esquema `ais08_lab` para su ensayo.</span>
+<span id="L8"><a href="#L8">8</a> # MAGIC Crear recursos, consultar SQL y llamar modelos genera consumo. La App comparte identidad de backend para el corpus autorizado; no promete permisos personales por fila.</span>
+<span id="L9"><a href="#L9">9</a> </span>
+<span id="L10"><a href="#L10">10</a> # COMMAND ----------</span>
+<span id="L11"><a href="#L11">11</a> </span>
+<span id="L12"><a href="#L12">12</a> dbutils.widgets.text(&quot;catalogo&quot;, &quot;neptuno_manuel_arguelles&quot;, &quot;Catálogo propio&quot;)</span>
+<span id="L13"><a href="#L13">13</a> dbutils.widgets.text(&quot;warehouse_id&quot;, &quot;828756322bedff37&quot;, &quot;Warehouse asignado&quot;)</span>
+<span id="L14"><a href="#L14">14</a> dbutils.widgets.text(&quot;sufijo&quot;, &quot;neptuno&quot;, &quot;Sufijo del equipo o automático&quot;)</span>
+<span id="L15"><a href="#L15">15</a> dbutils.widgets.text(&quot;esquema&quot;, &quot;ais08_lab&quot;, &quot;Esquema AIS08 o automático&quot;)</span>
+<span id="L16"><a href="#L16">16</a> dbutils.widgets.text(&quot;s07_schema&quot;, &quot;s07_bda09634f2&quot;, &quot;Schema S07 propio, opcional&quot;)</span>
+<span id="L17"><a href="#L17">17</a> dbutils.widgets.dropdown(&quot;modo&quot;, &quot;verificar&quot;, [&quot;verificar&quot;, &quot;crear&quot;], &quot;Recorrido&quot;)</span>
+<span id="L18"><a href="#L18">18</a> dbutils.widgets.dropdown(&quot;rollout&quot;, &quot;inspeccionar&quot;, [&quot;inspeccionar&quot;, &quot;preparar&quot;, &quot;canary&quot;, &quot;rollback&quot;], &quot;Acción CP3&quot;)</span>
+<span id="L19"><a href="#L19">19</a> dbutils.widgets.text(&quot;candidata&quot;, &quot;&quot;, &quot;Versión candidata evaluada&quot;)</span>
+<span id="L20"><a href="#L20">20</a> dbutils.widgets.text(&quot;source_sha256&quot;, &quot;&quot;, &quot;Hash source provisto por validador&quot;)</span>
+<span id="L21"><a href="#L21">21</a> </span>
+<span id="L22"><a href="#L22">22</a> # COMMAND ----------</span>
+<span id="L23"><a href="#L23">23</a> </span>
+<span id="L24"><a href="#L24">24</a> # MAGIC %md</span>
+<span id="L25"><a href="#L25">25</a> # MAGIC ## CP0 · Instala dependencias del notebook</span>
+<span id="L26"><a href="#L26">26</a> # MAGIC Esto instala Python en este cómputo, no en Serving. Las dependencias del modelo se registran aparte. Las versiones de rangos se documentan en la evidencia del entorno resuelto.</span>
+<span id="L27"><a href="#L27">27</a> </span>
+<span id="L28"><a href="#L28">28</a> # COMMAND ----------</span>
+<span id="L29"><a href="#L29">29</a> </span>
+<span id="L30"><a href="#L30">30</a> # MAGIC %pip install &quot;mlflow[databricks]==3.16.1&quot; &quot;databricks-sdk==0.143.0&quot; &quot;openai==2.54.0&quot; &quot;jsonschema==4.26.0&quot; &quot;PyYAML&gt;=6,&lt;7&quot;</span>
+<span id="L31"><a href="#L31">31</a> </span>
+<span id="L32"><a href="#L32">32</a> # COMMAND ----------</span>
+<span id="L33"><a href="#L33">33</a> </span>
+<span id="L34"><a href="#L34">34</a> # MAGIC %md</span>
+<span id="L35"><a href="#L35">35</a> # MAGIC ## CP0 · Reinicia Python</span>
+<span id="L36"><a href="#L36">36</a> # MAGIC Los widgets permanecen. Continúa en la siguiente celda después del reinicio.</span>
+<span id="L37"><a href="#L37">37</a> </span>
+<span id="L38"><a href="#L38">38</a> # COMMAND ----------</span>
+<span id="L39"><a href="#L39">39</a> </span>
+<span id="L40"><a href="#L40">40</a> dbutils.library.restartPython()</span>
+<span id="L41"><a href="#L41">41</a> </span>
+<span id="L42"><a href="#L42">42</a> # COMMAND ----------</span>
+<span id="L43"><a href="#L43">43</a> </span>
+<span id="L44"><a href="#L44">44</a> # MAGIC %md</span>
+<span id="L45"><a href="#L45">45</a> # MAGIC ## CP0 · Conserva una configuración para notebook y Terminal</span>
+<span id="L46"><a href="#L46">46</a> # MAGIC Entrada: widgets + config base sin secretos. Calcula nombres aislados; persiste **en tu copia del repo** `lab/config.json` para los scripts de esa misma copia. Si ejecutarás Terminal local, primero sincroniza con lab_import_workspace.py --pull-config según la guía; Workspace y ZIP local son copias distintas. No trabajar sobre la copia de otro equipo.</span>
+<span id="L47"><a href="#L47">47</a> # MAGIC Comprueba funciones S05, tabla RAG S04 y Safety S07. La tabla sintética `documentos_aprobados` de S07 ilustra licencias; no sustituye el corpus real S04. Si un requisito falta, detén el paso dependiente.</span>
+<span id="L48"><a href="#L48">48</a> </span>
+<span id="L49"><a href="#L49">49</a> # COMMAND ----------</span>
+<span id="L50"><a href="#L50">50</a> </span>
+<span id="L51"><a href="#L51">51</a> import sys, json, os, hashlib, importlib</span>
+<span id="L52"><a href="#L52">52</a> from pathlib import Path</span>
+<span id="L53"><a href="#L53">53</a> from datetime import datetime, timezone</span>
+<span id="L54"><a href="#L54">54</a> from databricks.sdk import WorkspaceClient</span>
+<span id="L55"><a href="#L55">55</a> ROOT=Path.cwd()</span>
+<span id="L56"><a href="#L56">56</a> assert (ROOT/&quot;lab/agent.py&quot;).exists(), &quot;Abre notebook.py dentro de s08-deployment del repo&quot;</span>
+<span id="L57"><a href="#L57">57</a> sys.path.insert(0,str(ROOT/&quot;lab&quot;))</span>
+<span id="L58"><a href="#L58">58</a> from lab_config import build_config</span>
+<span id="L59"><a href="#L59">59</a> w=WorkspaceClient(); identity=w.current_user.me().user_name</span>
+<span id="L60"><a href="#L60">60</a> MODE=dbutils.widgets.get(&quot;modo&quot;)</span>
+<span id="L61"><a href="#L61">61</a> CONFIG=build_config(json.loads((ROOT/&quot;lab/config.json&quot;).read_text()),dbutils.widgets.get(&quot;catalogo&quot;).strip(),dbutils.widgets.get(&quot;warehouse_id&quot;).strip(),identity,dbutils.widgets.get(&quot;sufijo&quot;).strip(),dbutils.widgets.get(&quot;esquema&quot;).strip())</span>
+<span id="L62"><a href="#L62">62</a> CONFIG[&#x27;approved_schema&#x27;]=dbutils.widgets.get(&#x27;s07_schema&#x27;).strip() or &#x27;s07_no_configurado&#x27;</span>
+<span id="L63"><a href="#L63">63</a> (ROOT/&quot;lab/config.json&quot;).write_text(json.dumps(CONFIG,indent=2))</span>
+<span id="L64"><a href="#L64">64</a> (ROOT/&quot;reports&quot;).mkdir(exist_ok=True)</span>
+<span id="L65"><a href="#L65">65</a> for name in [&#x27;ventas_categoria&#x27;,&#x27;productos_reponer&#x27;]:</span>
+<span id="L66"><a href="#L66">66</a>     w.functions.get(f&quot;{CONFIG[&#x27;catalog&#x27;]}.{CONFIG[&#x27;source_schema&#x27;]}.{name}&quot;)</span>
+<span id="L67"><a href="#L67">67</a> w.tables.get(f&quot;{CONFIG[&#x27;catalog&#x27;]}.rag.chunks_embeddings&quot;)</span>
+<span id="L68"><a href="#L68">68</a> w.warehouses.get(CONFIG[&#x27;warehouse_id&#x27;])</span>
+<span id="L69"><a href="#L69">69</a> gate=w.serving_endpoints.get(CONFIG[&#x27;moderation_endpoint&#x27;]).ai_gateway.guardrails</span>
+<span id="L70"><a href="#L70">70</a> assert gate.input.safety and gate.output.safety, &quot;Configura filtros Safety S07 antes de continuar&quot;</span>
+<span id="L71"><a href="#L71">71</a> report={&#x27;session&#x27;:&#x27;S08&#x27;,&#x27;mode&#x27;:MODE,&#x27;started_utc&#x27;:datetime.now(timezone.utc).isoformat(),&#x27;notebook_sha256&#x27;:dbutils.widgets.get(&#x27;source_sha256&#x27;) or None,&#x27;checks&#x27;:{},&#x27;resources&#x27;:{k:CONFIG[k] for k in [&#x27;catalog&#x27;,&#x27;schema&#x27;,&#x27;model_name&#x27;,&#x27;endpoint&#x27;,&#x27;app_name&#x27;]}}</span>
+<span id="L72"><a href="#L72">72</a> report[&#x27;checks&#x27;][&#x27;CP0_inventory&#x27;]=True</span>
+<span id="L73"><a href="#L73">73</a> print(json.dumps(report[&#x27;resources&#x27;],indent=2))</span>
+<span id="L74"><a href="#L74">74</a> </span>
+<span id="L75"><a href="#L75">75</a> # COMMAND ----------</span>
+<span id="L76"><a href="#L76">76</a> </span>
+<span id="L77"><a href="#L77">77</a> # MAGIC %md</span>
+<span id="L78"><a href="#L78">78</a> # MAGIC ## CP1 · Prueba el agente con APIs reales</span>
+<span id="L79"><a href="#L79">79</a> # MAGIC El LLM selecciona herramientas; S08 formatea cifras/citas de sus resultados de manera determinista para conservar los hechos. Esto es un cambio explícito respecto al agente de notebook, no una medición de mejora universal.</span>
+<span id="L80"><a href="#L80">80</a> # MAGIC Prueba ventas con año y aclaración sin año. Para la referencia del docente Bebidas2026=116024.88; otros datos requieren otra referencia. Safety sigue activo entrada/salida; un falso positivo se registra y se investiga, no se oculta.</span>
+<span id="L81"><a href="#L81">81</a> </span>
+<span id="L82"><a href="#L82">82</a> # COMMAND ----------</span>
+<span id="L83"><a href="#L83">83</a> </span>
+<span id="L84"><a href="#L84">84</a> from agent import AgenteNeptuno</span>
+<span id="L85"><a href="#L85">85</a> from mlflow.types.responses import ResponsesAgentRequest</span>
+<span id="L86"><a href="#L86">86</a> agent=AgenteNeptuno(CONFIG)</span>
+<span id="L87"><a href="#L87">87</a> def text_of(response):</span>
+<span id="L88"><a href="#L88">88</a>     d=response.model_dump() if hasattr(response,&#x27;model_dump&#x27;) else response</span>
+<span id="L89"><a href="#L89">89</a>     return &#x27;\n&#x27;.join(p.get(&#x27;text&#x27;,&#x27;&#x27;) for item in d.get(&#x27;output&#x27;,[]) for p in item.get(&#x27;content&#x27;,[]) if p.get(&#x27;type&#x27;)==&#x27;output_text&#x27;)</span>
+<span id="L90"><a href="#L90">90</a> question=&#x27;¿Cuánto vendimos de Bebidas en 2026?&#x27;</span>
+<span id="L91"><a href="#L91">91</a> local=agent.predict(ResponsesAgentRequest(input=[{&#x27;role&#x27;:&#x27;user&#x27;,&#x27;content&#x27;:question}]))</span>
+<span id="L92"><a href="#L92">92</a> assert text_of(local)</span>
+<span id="L93"><a href="#L93">93</a> clarify=agent.predict(ResponsesAgentRequest(input=[{&#x27;role&#x27;:&#x27;user&#x27;,&#x27;content&#x27;:&#x27;¿Cuánto vendimos de Bebidas?&#x27;}]))</span>
+<span id="L94"><a href="#L94">94</a> assert clarify.custom_outputs[&#x27;tool_calls&#x27;]==0</span>
+<span id="L95"><a href="#L95">95</a> report[&#x27;checks&#x27;][&#x27;CP1_real_agent_and_clarification&#x27;]=True</span>
+<span id="L96"><a href="#L96">96</a> print(text_of(local));print(text_of(clarify))</span>
+<span id="L97"><a href="#L97">97</a> </span>
+<span id="L98"><a href="#L98">98</a> # COMMAND ----------</span>
+<span id="L99"><a href="#L99">99</a> </span>
+<span id="L100"><a href="#L100">100</a> # MAGIC %md</span>
+<span id="L101"><a href="#L101">101</a> # MAGIC ## CP1 · Registra o inspecciona la versión estable</span>
+<span id="L102"><a href="#L102">102</a> # MAGIC En crear, empaqueta código/dependencias/recursos y prompt fijado. En verificar, consulta el alias existente, sin registrar ni promover otra versión. Alias mutable y versión numérica son cosas distintas.</span>
+<span id="L103"><a href="#L103">103</a> # MAGIC La evidencia completa del harness vive en los reportes del laboratorio; estas dos solicitudes no sustituyen todos los casos S06/S07.</span>
+<span id="L104"><a href="#L104">104</a> </span>
+<span id="L105"><a href="#L105">105</a> # COMMAND ----------</span>
+<span id="L106"><a href="#L106">106</a> </span>
+<span id="L107"><a href="#L107">107</a> import mlflow</span>
+<span id="L108"><a href="#L108">108</a> from mlflow import MlflowClient</span>
+<span id="L109"><a href="#L109">109</a> mlflow.set_tracking_uri(&#x27;databricks&#x27;);mlflow.set_registry_uri(&#x27;databricks-uc&#x27;)</span>
+<span id="L110"><a href="#L110">110</a> client=MlflowClient()</span>
+<span id="L111"><a href="#L111">111</a> if MODE==&#x27;crear&#x27;:</span>
+<span id="L112"><a href="#L112">112</a>     import lab_deploy</span>
+<span id="L113"><a href="#L113">113</a>     lab_deploy.CONFIG=CONFIG</span>
+<span id="L114"><a href="#L114">114</a>     sys.argv=[&#x27;lab_deploy.py&#x27;,&#x27;--package-only&#x27;];lab_deploy.main()</span>
+<span id="L115"><a href="#L115">115</a>     package=json.loads((ROOT/&#x27;reports/lab-package.json&#x27;).read_text())</span>
+<span id="L116"><a href="#L116">116</a> else:</span>
+<span id="L117"><a href="#L117">117</a>     version=client.get_model_version_by_alias(CONFIG[&#x27;model_name&#x27;],&#x27;champion&#x27;)</span>
+<span id="L118"><a href="#L118">118</a>     package={&#x27;model_name&#x27;:CONFIG[&#x27;model_name&#x27;],&#x27;version&#x27;:str(version.version),&#x27;source&#x27;:version.source}</span>
+<span id="L119"><a href="#L119">119</a> report[&#x27;package&#x27;]=package</span>
+<span id="L120"><a href="#L120">120</a> print(package)</span>
+<span id="L121"><a href="#L121">121</a> </span>
+<span id="L122"><a href="#L122">122</a> # COMMAND ----------</span>
+<span id="L123"><a href="#L123">123</a> </span>
+<span id="L124"><a href="#L124">124</a> # MAGIC %md</span>
+<span id="L125"><a href="#L125">125</a> # MAGIC ## CP2 · Configura Serving con versión numérica</span>
+<span id="L126"><a href="#L126">126</a> # MAGIC Crear solicita un endpoint nuevo y exige nombre libre; si ya existe, usa verificar. Una actualización del agente se gestiona como sustitución de versión única evaluada, no con el script de split CP3. No reemplaza recursos silenciosamente. La respuesta de creación sólo confirma envío.</span>
+<span id="L127"><a href="#L127">127</a> # MAGIC En verificar se consulta configuración existente. Inference Tables usa configuración AI Gateway vigente, no legacy auto_capture. `scale_to_zero` admite arranque en frío.</span>
+<span id="L128"><a href="#L128">128</a> </span>
+<span id="L129"><a href="#L129">129</a> # COMMAND ----------</span>
+<span id="L130"><a href="#L130">130</a> </span>
+<span id="L131"><a href="#L131">131</a> from databricks.sdk.service import serving</span>
+<span id="L132"><a href="#L132">132</a> if MODE==&#x27;crear&#x27;:</span>
+<span id="L133"><a href="#L133">133</a>     entity=serving.ServedEntityInput(name=&#x27;champion&#x27;,entity_name=CONFIG[&#x27;model_name&#x27;],entity_version=package[&#x27;version&#x27;],workload_size=&#x27;Small&#x27;,scale_to_zero_enabled=True)</span>
+<span id="L134"><a href="#L134">134</a>     w.serving_endpoints.create(name=CONFIG[&#x27;endpoint&#x27;],config=serving.EndpointCoreConfigInput(name=CONFIG[&#x27;endpoint&#x27;],served_entities=[entity]),ai_gateway=serving.AiGatewayConfig(inference_table_config=serving.AiGatewayInferenceTableConfig(enabled=True,catalog_name=CONFIG[&#x27;catalog&#x27;],schema_name=CONFIG[&#x27;schema&#x27;],table_name_prefix=&#x27;ais08_neptuno&#x27;)))</span>
+<span id="L135"><a href="#L135">135</a> endpoint=w.serving_endpoints.get(CONFIG[&#x27;endpoint&#x27;])</span>
+<span id="L136"><a href="#L136">136</a> print(endpoint.state.as_dict());print(endpoint.config.as_dict() if endpoint.config else &#x27;Configuración pendiente&#x27;)</span>
+<span id="L137"><a href="#L137">137</a> </span>
+<span id="L138"><a href="#L138">138</a> # COMMAND ----------</span>
+<span id="L139"><a href="#L139">139</a> </span>
+<span id="L140"><a href="#L140">140</a> # MAGIC %md</span>
+<span id="L141"><a href="#L141">141</a> # MAGIC ## CP2 · Consulta el servicio, no sólo su estado</span>
+<span id="L142"><a href="#L142">142</a> # MAGIC Espera READY antes de ejecutar. La prueba produce tráfico real y consumo. Guarda ID de cliente para buscar la inferencia. Si falla, revisa permisos/logs; no conviertas error en éxito vacío.</span>
+<span id="L143"><a href="#L143">143</a> # MAGIC Aceptación: respuesta no vacía y metadatos de versión del agente/prompt. Quality smoke completo se revisa aparte.</span>
+<span id="L144"><a href="#L144">144</a> </span>
+<span id="L145"><a href="#L145">145</a> # COMMAND ----------</span>
+<span id="L146"><a href="#L146">146</a> </span>
+<span id="L147"><a href="#L147">147</a> import uuid,time</span>
+<span id="L148"><a href="#L148">148</a> assert endpoint.state.ready.value==&#x27;READY&#x27; and endpoint.state.config_update.value==&#x27;NOT_UPDATING&#x27;,&#x27;Provisioning/update pendiente: espera READY sin actualización&#x27;</span>
+<span id="L149"><a href="#L149">149</a> assert str(package[&#x27;version&#x27;]) in {str(e.entity_version) for e in endpoint.config.served_entities},&#x27;La versión estable no está en la configuración activa&#x27;</span>
+<span id="L150"><a href="#L150">150</a> request_id=&#x27;s08-notebook-&#x27;+uuid.uuid4().hex</span>
+<span id="L151"><a href="#L151">151</a> started=time.monotonic()</span>
+<span id="L152"><a href="#L152">152</a> result=w.api_client.do(&#x27;POST&#x27;,f&quot;/serving-endpoints/{CONFIG[&#x27;endpoint&#x27;]}/invocations&quot;,body={&#x27;input&#x27;:[{&#x27;role&#x27;:&#x27;user&#x27;,&#x27;content&#x27;:question}],&#x27;client_request_id&#x27;:request_id})</span>
+<span id="L153"><a href="#L153">153</a> assert text_of(result), &#x27;Respuesta vacía&#x27;</span>
+<span id="L154"><a href="#L154">154</a> report[&#x27;checks&#x27;][&#x27;CP2_serving_invocation&#x27;]=True</span>
+<span id="L155"><a href="#L155">155</a> report[&#x27;serving&#x27;]={&#x27;client_request_id&#x27;:request_id,&#x27;elapsed_seconds&#x27;:round(time.monotonic()-started,3),&#x27;custom_outputs&#x27;:result.get(&#x27;custom_outputs&#x27;,{}),&#x27;served_versions&#x27;:[{&#x27;name&#x27;:e.name,&#x27;version&#x27;:e.entity_version} for e in endpoint.config.served_entities]}</span>
+<span id="L156"><a href="#L156">156</a> print(text_of(result));print(report[&#x27;serving&#x27;])</span>
+<span id="L157"><a href="#L157">157</a> </span>
+<span id="L158"><a href="#L158">158</a> # COMMAND ----------</span>
+<span id="L159"><a href="#L159">159</a> </span>
+<span id="L160"><a href="#L160">160</a> # MAGIC %md</span>
+<span id="L161"><a href="#L161">161</a> # MAGIC ## CP3 · Demuestra canary en un endpoint custom compatible</span>
+<span id="L162"><a href="#L162">162</a> # MAGIC El agente principal `agent/v1/responses` **no admite traffic splitting**. Esta práctica usa otro endpoint `CONFIG.endpoint + &#x27;-rollout&#x27;`: un PythonModel que consulta ventas reales de UC. Sus dos versiones sólo cambian la etiqueta de revisión; no acreditan mejora de calidad ni un A/B causal.</span>
+<span id="L163"><a href="#L163">163</a> # MAGIC En crear, selecciona rollout=preparar y ejecuta **sólo esta celda** para registrar/desplegar el custom; puede tardar más que el bloque de 15 minutos, por eso el docente lo prepara antes. Incluso los cambios de rutas pueden reprovisionar: la guía adelanta la solicitud de canary al bloque CP2 y verifica rollback después de la pausa o al cierre. Después de READY, usa canary con candidata=N y finalmente rollback. Inspeccionar sólo lee. No vuelvas a CP2 para medir este endpoint: su contrato es dataframe_records, no input de Responses.</span>
+<span id="L164"><a href="#L164">164</a> # MAGIC El snapshot anterior es el contrato de reversión. Conserva reporte de configuración efectiva y consulta SQL real posterior; no basta la solicitud de actualización.</span>
+<span id="L165"><a href="#L165">165</a> </span>
+<span id="L166"><a href="#L166">166</a> # COMMAND ----------</span>
+<span id="L167"><a href="#L167">167</a> </span>
+<span id="L168"><a href="#L168">168</a> action=dbutils.widgets.get(&#x27;rollout&#x27;)</span>
+<span id="L169"><a href="#L169">169</a> rollout_endpoint=CONFIG[&#x27;endpoint&#x27;]+&#x27;-rollout&#x27;</span>
+<span id="L170"><a href="#L170">170</a> rollout_model=f&quot;{CONFIG[&#x27;catalog&#x27;]}.{CONFIG[&#x27;schema&#x27;]}.ventas_rollout&quot;</span>
+<span id="L171"><a href="#L171">171</a> if action!=&#x27;inspeccionar&#x27;:</span>
+<span id="L172"><a href="#L172">172</a>     assert MODE==&#x27;crear&#x27;,&#x27;Acción de CP3 exige modo crear&#x27;</span>
+<span id="L173"><a href="#L173">173</a>     if action==&#x27;preparar&#x27;:</span>
+<span id="L174"><a href="#L174">174</a>         import lab_custom_rollout</span>
+<span id="L175"><a href="#L175">175</a>         lab_custom_rollout.CONFIG=CONFIG</span>
+<span id="L176"><a href="#L176">176</a>         sys.argv=[&#x27;lab_custom_rollout.py&#x27;,&#x27;--deploy&#x27;];lab_custom_rollout.main()</span>
+<span id="L177"><a href="#L177">177</a>     else:</span>
+<span id="L178"><a href="#L178">178</a>         import lab_rollout</span>
+<span id="L179"><a href="#L179">179</a>         lab_rollout.CONFIG=CONFIG</span>
+<span id="L180"><a href="#L180">180</a>         if action==&#x27;canary&#x27;:</span>
+<span id="L181"><a href="#L181">181</a>             candidate=dbutils.widgets.get(&#x27;candidata&#x27;).strip()</span>
+<span id="L182"><a href="#L182">182</a>             stable=client.get_model_version_by_alias(rollout_model,&#x27;champion&#x27;)</span>
+<span id="L183"><a href="#L183">183</a>             assert candidate.isdigit() and candidate!=str(stable.version),&#x27;Candidata custom distinta y evaluada&#x27;</span>
+<span id="L184"><a href="#L184">184</a>             sys.argv=[&#x27;lab_rollout.py&#x27;,&#x27;--challenger-version&#x27;,candidate,&#x27;--percent&#x27;,&#x27;10&#x27;]</span>
+<span id="L185"><a href="#L185">185</a>         else:sys.argv=[&#x27;lab_rollout.py&#x27;,&#x27;--rollback&#x27;]</span>
+<span id="L186"><a href="#L186">186</a>         lab_rollout.main()</span>
+<span id="L187"><a href="#L187">187</a> rollout_state=w.serving_endpoints.get(rollout_endpoint)</span>
+<span id="L188"><a href="#L188">188</a> effective=rollout_state.config</span>
+<span id="L189"><a href="#L189">189</a> report[&#x27;traffic&#x27;]={&#x27;endpoint&#x27;:rollout_endpoint,&#x27;task&#x27;:rollout_state.task,&#x27;state&#x27;:rollout_state.state.as_dict(),&#x27;routes&#x27;:effective.traffic_config.as_dict() if effective and effective.traffic_config else {}}</span>
+<span id="L190"><a href="#L190">190</a> print(report[&#x27;traffic&#x27;])</span>
+<span id="L191"><a href="#L191">191</a> if action==&#x27;inspeccionar&#x27;:</span>
+<span id="L192"><a href="#L192">192</a>     assert rollout_state.state.ready.value==&#x27;READY&#x27; and rollout_state.state.config_update.value==&#x27;NOT_UPDATING&#x27;,&#x27;Custom pendiente de preparación&#x27;</span>
+<span id="L193"><a href="#L193">193</a> print(&#x27;Inspección no acredita canary/rollback: adjunta reports/lab-rollout y verificación posterior del endpoint custom.&#x27;)</span>
+<span id="L194"><a href="#L194">194</a> </span>
+<span id="L195"><a href="#L195">195</a> # COMMAND ----------</span>
+<span id="L196"><a href="#L196">196</a> </span>
+<span id="L197"><a href="#L197">197</a> # MAGIC %md</span>
+<span id="L198"><a href="#L198">198</a> # MAGIC ## CP4 · Despliega o inspecciona la App y prueba el navegador</span>
+<span id="L199"><a href="#L199">199</a> # MAGIC Crear carga app/ y solicita deploy. Verificar consulta estado/URL. **ACTIVE de cómputo no demuestra respuesta de UI**: abre la URL, entra con identidad corporativa, consulta ventas y prueba una entrada inválida.</span>
+<span id="L200"><a href="#L200">200</a> # MAGIC El backend usa su principal de servicio para el endpoint; no tiene tokens en browser ni autorización por usuario a cada fila.</span>
+<span id="L201"><a href="#L201">201</a> </span>
+<span id="L202"><a href="#L202">202</a> # COMMAND ----------</span>
+<span id="L203"><a href="#L203">203</a> </span>
+<span id="L204"><a href="#L204">204</a> if MODE==&#x27;crear&#x27;:</span>
+<span id="L205"><a href="#L205">205</a>     import lab_app</span>
+<span id="L206"><a href="#L206">206</a>     lab_app.CONFIG=CONFIG</span>
+<span id="L207"><a href="#L207">207</a>     sys.argv=[&#x27;lab_app.py&#x27;];lab_app.main()</span>
+<span id="L208"><a href="#L208">208</a> app=w.apps.get(CONFIG[&#x27;app_name&#x27;])</span>
+<span id="L209"><a href="#L209">209</a> report[&#x27;app&#x27;]={&#x27;url&#x27;:app.url,&#x27;compute_status&#x27;:app.compute_status.as_dict() if app.compute_status else {},&#x27;app_status&#x27;:app.app_status.as_dict() if app.app_status else {}}</span>
+<span id="L210"><a href="#L210">210</a> print(json.dumps(report[&#x27;app&#x27;],indent=2))</span>
+<span id="L211"><a href="#L211">211</a> print(&#x27;Prueba UI y respuesta: seguir CONSIGNA CP4; status de API no la reemplaza.&#x27;)</span>
+<span id="L212"><a href="#L212">212</a> </span>
+<span id="L213"><a href="#L213">213</a> # COMMAND ----------</span>
+<span id="L214"><a href="#L214">214</a> </span>
+<span id="L215"><a href="#L215">215</a> # MAGIC %md</span>
+<span id="L216"><a href="#L216">216</a> # MAGIC ## CP5 · Verifica logs reales y el resultado del flatten</span>
+<span id="L217"><a href="#L217">217</a> # MAGIC Crear ejecuta MERGE por request_id mediante lab_monitor; repetirlo no debería duplicar filas. Verificar sólo consulta conteos/tablas ya procesadas. Los logs son asíncronos: el request recién creado puede tardar; inspecciona ventana e IDs de evidencia previa sin fingir inmediatez.</span>
+<span id="L218"><a href="#L218">218</a> # MAGIC Tabla raw administrada no se modifica. Tabla flat conserva métricas, errores de parseo y longitudes sin texto completo. Cero filas bloquea la aceptación.</span>
+<span id="L219"><a href="#L219">219</a> </span>
+<span id="L220"><a href="#L220">220</a> # COMMAND ----------</span>
+<span id="L221"><a href="#L221">221</a> </span>
+<span id="L222"><a href="#L222">222</a> import lab_monitor</span>
+<span id="L223"><a href="#L223">223</a> lab_monitor.CONFIG=CONFIG</span>
+<span id="L224"><a href="#L224">224</a> if MODE==&#x27;crear&#x27;:</span>
+<span id="L225"><a href="#L225">225</a>     sys.argv=[&#x27;lab_monitor.py&#x27;];lab_monitor.main()</span>
+<span id="L226"><a href="#L226">226</a> schema=f&quot;{CONFIG[&#x27;catalog&#x27;]}.{CONFIG[&#x27;schema&#x27;]}&quot;</span>
+<span id="L227"><a href="#L227">227</a> def query(statement):</span>
+<span id="L228"><a href="#L228">228</a>     r=lab_monitor.sql(w,statement)</span>
+<span id="L229"><a href="#L229">229</a>     return r.result.data_array or []</span>
+<span id="L230"><a href="#L230">230</a> raw=query(f&#x27;SELECT count(*) FROM {schema}.ais08_neptuno_payload&#x27;)</span>
+<span id="L231"><a href="#L231">231</a> flat=query(f&quot;SELECT count(*), count(DISTINCT request_id), sum(CASE WHEN parse_status=&#x27;parse_error&#x27; THEN 1 ELSE 0 END) FROM {schema}.inference_flat&quot;)</span>
+<span id="L232"><a href="#L232">232</a> assert int(raw[0][0])&gt;0 and int(flat[0][0])&gt;0,&#x27;Esperar logs y ejecutar flatten; no inventar filas&#x27;</span>
+<span id="L233"><a href="#L233">233</a> assert flat[0][0]==flat[0][1],&#x27;IDs duplicados&#x27;</span>
+<span id="L234"><a href="#L234">234</a> report[&#x27;checks&#x27;][&#x27;CP5_real_rows_and_unique_ids&#x27;]=True</span>
+<span id="L235"><a href="#L235">235</a> report[&#x27;inference&#x27;]={&#x27;raw_rows&#x27;:int(raw[0][0]),&#x27;flat_rows&#x27;:int(flat[0][0]),&#x27;parse_errors&#x27;:flat[0][2]}</span>
+<span id="L236"><a href="#L236">236</a> print(report[&#x27;inference&#x27;])</span>
+<span id="L237"><a href="#L237">237</a> # Elegimos un evento que ya llegó y fue aplanado; prioridad al request de CP2.</span>
+<span id="L238"><a href="#L238">238</a> example=query(f&quot;&quot;&quot;SELECT r.databricks_request_id,r.client_request_id,r.request_time,r.status_code,</span>
+<span id="L239"><a href="#L239">239</a>  get_json_object(r.response,&#x27;$.custom_outputs&#x27;) AS raw_custom_outputs,</span>
+<span id="L240"><a href="#L240">240</a>  f.latency_ms,f.tool_calls,f.tool_errors,f.parse_status</span>
+<span id="L241"><a href="#L241">241</a>  FROM {schema}.ais08_neptuno_payload r JOIN {schema}.inference_flat f ON r.databricks_request_id=f.request_id</span>
+<span id="L242"><a href="#L242">242</a>  ORDER BY CASE WHEN r.client_request_id=&#x27;{request_id}&#x27; THEN 0 ELSE 1 END,r.request_time DESC LIMIT 1&quot;&quot;&quot;)</span>
+<span id="L243"><a href="#L243">243</a> assert example,&#x27;No se pudo correlacionar raw con flat&#x27;</span>
+<span id="L244"><a href="#L244">244</a> keys=[&#x27;request_id&#x27;,&#x27;client_request_id&#x27;,&#x27;request_time&#x27;,&#x27;status_code&#x27;,&#x27;raw_custom_outputs&#x27;,&#x27;latency_ms&#x27;,&#x27;tool_calls&#x27;,&#x27;tool_errors&#x27;,&#x27;parse_status&#x27;]</span>
+<span id="L245"><a href="#L245">245</a> report[&#x27;inference_example&#x27;]=dict(zip(keys,example[0]))</span>
+<span id="L246"><a href="#L246">246</a> print(json.dumps(report[&#x27;inference_example&#x27;],indent=2,default=str))</span>
+<span id="L247"><a href="#L247">247</a> print(&#x27;La ruta $.custom_outputs.tool_calls del JSON se convierte en tool_calls; compara ambos valores. latency_ms viene de execution_duration_ms.&#x27;)</span>
+<span id="L248"><a href="#L248">248</a> if example[0][1]!=request_id:print(&#x27;Ejemplo previo real: el request de CP2 aún no está en la tabla plana. Conserva ambos IDs y espera ingestión.&#x27;)</span>
+<span id="L249"><a href="#L249">249</a> fixture=query((ROOT/&#x27;lab/lab_parse_contract.sql&#x27;).read_text())</span>
+<span id="L250"><a href="#L250">250</a> assert {x[0]:x[2] for x in fixture}=={&#x27;valido&#x27;:&#x27;ok&#x27;,&#x27;texto_movido&#x27;:&#x27;parse_error&#x27;,&#x27;error_http&#x27;:&#x27;http_error&#x27;}</span>
+<span id="L251"><a href="#L251">251</a> print(&#x27;Fixture de extracción, NO tráfico real&#x27;,fixture)</span>
+<span id="L252"><a href="#L252">252</a> report[&#x27;checks&#x27;][&#x27;CP5_parser_fixture&#x27;]=True</span>
+<span id="L253"><a href="#L253">253</a> </span>
+<span id="L254"><a href="#L254">254</a> # COMMAND ----------</span>
+<span id="L255"><a href="#L255">255</a> </span>
+<span id="L256"><a href="#L256">256</a> # MAGIC %md</span>
+<span id="L257"><a href="#L257">257</a> # MAGIC ## CP6 · Inspecciona perfil, baseline y métricas</span>
+<span id="L258"><a href="#L258">258</a> # MAGIC Crear solicita un monitor; verificar lee el existente y sus salidas. Baseline es un snapshot real de eventos exitosos iniciales, no una referencia de verdad semántica. Con muestras pequeñas/similares, drift nulo o cero no demuestra calidad.</span>
+<span id="L259"><a href="#L259">259</a> # MAGIC Revisa las tablas profile/drift y el refresh. El perfil puede representar un refresh anterior al SELECT de la tabla plana: compara ventanas y denominadores antes de mezclar sus cifras. Un monitor creado sin métricas es pendiente. Los juicios S06 y la revisión humana siguen midiendo calidad.</span>
+<span id="L260"><a href="#L260">260</a> </span>
+<span id="L261"><a href="#L261">261</a> # COMMAND ----------</span>
+<span id="L262"><a href="#L262">262</a> </span>
+<span id="L263"><a href="#L263">263</a> if MODE==&#x27;crear&#x27;:</span>
+<span id="L264"><a href="#L264">264</a>     sys.argv=[&#x27;lab_monitor.py&#x27;,&#x27;--create-monitor&#x27;];lab_monitor.main()</span>
+<span id="L265"><a href="#L265">265</a> table=w.tables.get(schema+&#x27;.inference_flat&#x27;)</span>
+<span id="L266"><a href="#L266">266</a> monitor=w.data_quality.get_monitor(object_type=&#x27;table&#x27;,object_id=table.table_id)</span>
+<span id="L267"><a href="#L267">267</a> report[&#x27;monitor&#x27;]=monitor.as_dict()</span>
+<span id="L268"><a href="#L268">268</a> report[&#x27;monitor_refreshes&#x27;]=[x.as_dict() for x in w.data_quality.list_refresh(&#x27;table&#x27;,table.table_id)]</span>
+<span id="L269"><a href="#L269">269</a> print(&#x27;Refreshes&#x27;,report[&#x27;monitor_refreshes&#x27;])</span>
+<span id="L270"><a href="#L270">270</a> profile=query(f&#x27;SELECT count(*) FROM {schema}.inference_flat_profile_metrics&#x27;)</span>
+<span id="L271"><a href="#L271">271</a> drift=query(f&#x27;SELECT count(*) FROM {schema}.inference_flat_drift_metrics&#x27;)</span>
+<span id="L272"><a href="#L272">272</a> assert int(profile[0][0])&gt;0 and int(drift[0][0])&gt;0,&#x27;Refresh pendiente o fallido: revisar antes de aprobar&#x27;</span>
+<span id="L273"><a href="#L273">273</a> report[&#x27;checks&#x27;][&#x27;CP6_profile_metrics_observed&#x27;]=True</span>
+<span id="L274"><a href="#L274">274</a> report[&#x27;monitor_metrics&#x27;]={&#x27;profile_rows&#x27;:int(profile[0][0]),&#x27;drift_rows&#x27;:int(drift[0][0])}</span>
+<span id="L275"><a href="#L275">275</a> print(report[&#x27;monitor_metrics&#x27;])</span>
+<span id="L276"><a href="#L276">276</a> # Lectura de métricas, además de verificar que las tablas existen.</span>
+<span id="L277"><a href="#L277">277</a> profile_name=schema+&#x27;.inference_flat_profile_metrics&#x27;</span>
+<span id="L278"><a href="#L278">278</a> drift_name=schema+&#x27;.inference_flat_drift_metrics&#x27;</span>
+<span id="L279"><a href="#L279">279</a> for label,name in [(&#x27;profile&#x27;,profile_name),(&#x27;drift&#x27;,drift_name)]:</span>
+<span id="L280"><a href="#L280">280</a>     columns=[c.name for c in w.tables.get(name).columns]</span>
+<span id="L281"><a href="#L281">281</a>     predicate=&quot; WHERE column_name=&#x27;latency_ms&#x27;&quot; if &#x27;column_name&#x27; in columns else &#x27;&#x27;</span>
+<span id="L282"><a href="#L282">282</a>     examples=query(f&#x27;SELECT * FROM {name}&#x27;+predicate+&#x27; LIMIT 3&#x27;)</span>
+<span id="L283"><a href="#L283">283</a>     report[label+&#x27;_examples&#x27;]=[dict(zip(columns,x)) for x in examples]</span>
+<span id="L284"><a href="#L284">284</a>     print(label,json.dumps(report[label+&#x27;_examples&#x27;],default=str,indent=2))</span>
+<span id="L285"><a href="#L285">285</a> window=query(f&quot;SELECT min(event_time),max(event_time),count(*),avg(latency_ms),sum(CASE WHEN status_code&gt;=400 THEN 1 ELSE 0 END) FROM {schema}.inference_flat&quot;)</span>
+<span id="L286"><a href="#L286">286</a> report[&#x27;metric_reading&#x27;]=dict(zip([&#x27;start&#x27;,&#x27;end&#x27;,&#x27;requests&#x27;,&#x27;avg_latency_ms&#x27;,&#x27;http_errors&#x27;],window[0]))</span>
+<span id="L287"><a href="#L287">287</a> print(&#x27;Ventana y denominador observados&#x27;,report[&#x27;metric_reading&#x27;])</span>
+<span id="L288"><a href="#L288">288</a> print(&#x27;Compara las ventanas del perfil y drift con este agregado. Una media de N solicitudes sólo describe esas N; drift frente al baseline no mide veracidad semántica. Si drift es nulo, revisa tipo de columna, tamaño de muestra y baseline antes de concluir.&#x27;)</span>
+<span id="L289"><a href="#L289">289</a> </span>
+<span id="L290"><a href="#L290">290</a> # COMMAND ----------</span>
+<span id="L291"><a href="#L291">291</a> </span>
+<span id="L292"><a href="#L292">292</a> # MAGIC %md</span>
+<span id="L293"><a href="#L293">293</a> # MAGIC ## CP7 · Valida la entrega declarativa desde Terminal</span>
+<span id="L294"><a href="#L294">294</a> # MAGIC El CLI de bundles corre en Terminal del repo, no se presupone instalado en el runtime del notebook. Abre GUIA-DOCENTE sección Terminal: `databricks bundle validate -t dev --var ...` con tus variables. El ejemplo CI está en bundle/; una validación no equivale a corrida CI remota.</span>
+<span id="L295"><a href="#L295">295</a> # MAGIC Aquí inspeccionamos el YAML entregado. Targets en un workspace no son aislamiento total; producción requiere identidades/recursos y destino separados. Costos incluyen modelo, Safety, SQL, App, Serving y monitoreo.</span>
+<span id="L296"><a href="#L296">296</a> </span>
+<span id="L297"><a href="#L297">297</a> # COMMAND ----------</span>
+<span id="L298"><a href="#L298">298</a> </span>
+<span id="L299"><a href="#L299">299</a> import yaml</span>
+<span id="L300"><a href="#L300">300</a> bundle=yaml.safe_load((ROOT/&#x27;bundle/databricks.yml&#x27;).read_text())</span>
+<span id="L301"><a href="#L301">301</a> assert &#x27;resources&#x27; in bundle and {&#x27;dev&#x27;,&#x27;prod&#x27;}&lt;=set(bundle[&#x27;targets&#x27;])</span>
+<span id="L302"><a href="#L302">302</a> print(&#x27;Recursos declarados&#x27;,list(bundle[&#x27;resources&#x27;]))</span>
+<span id="L303"><a href="#L303">303</a> print(&#x27;Validación CLI real: revisar reporte lab-bundle-validation y repetir comandos de la guía con tu perfil.&#x27;)</span>
+<span id="L304"><a href="#L304">304</a> print((ROOT/&#x27;lab/lab_costs.sql&#x27;).read_text())</span>
+<span id="L305"><a href="#L305">305</a> </span>
+<span id="L306"><a href="#L306">306</a> # COMMAND ----------</span>
+<span id="L307"><a href="#L307">307</a> </span>
+<span id="L308"><a href="#L308">308</a> # MAGIC %md</span>
+<span id="L309"><a href="#L309">309</a> # MAGIC ## CP7 · Observa versiones de prompt sin confundirlas con tráfico</span>
+<span id="L310"><a href="#L310">310</a> # MAGIC El artefacto de Serving fija una versión de prompt. En verificar se consulta el alias y versión reportada por servicio. Para la práctica crear, registra una versión con el mismo contrato más una regla didáctica, mueve alias, comprueba resolución y restaura el alias anterior; **esto no despliega el texto nuevo al modelo fijo**.</span>
+<span id="L311"><a href="#L311">311</a> # MAGIC Aceptación: IDs antes/después y retorno a la versión anterior. Un cambio de conducta requiere empaquetar/evaluar/desplegar otra versión; requiere empaquetar y actualizar la versión única; CP3 sólo demuestra split custom, no se atribuye al alias solo.</span>
+<span id="L312"><a href="#L312">312</a> </span>
+<span id="L313"><a href="#L313">313</a> # COMMAND ----------</span>
+<span id="L314"><a href="#L314">314</a> </span>
+<span id="L315"><a href="#L315">315</a> name=f&quot;{schema}.neptuno_system&quot;</span>
+<span id="L316"><a href="#L316">316</a> before=mlflow.genai.load_prompt(f&#x27;prompts:/{name}@champion&#x27;)</span>
+<span id="L317"><a href="#L317">317</a> report[&#x27;prompt&#x27;]={&#x27;alias_before&#x27;:str(before.version),&#x27;served_prompt_version&#x27;:result.get(&#x27;custom_outputs&#x27;,{}).get(&#x27;prompt_version&#x27;)}</span>
+<span id="L318"><a href="#L318">318</a> if MODE==&#x27;crear&#x27;:</span>
+<span id="L319"><a href="#L319">319</a>     candidate=mlflow.genai.register_prompt(name=name,template=before.template+&#x27;\nMantén respuestas breves con fuente.&#x27;,commit_message=&#x27;S08 ejercicio de alias; no despliega Serving&#x27;)</span>
+<span id="L320"><a href="#L320">320</a>     try:</span>
+<span id="L321"><a href="#L321">321</a>         mlflow.genai.set_prompt_alias(name,&#x27;champion&#x27;,candidate.version)</span>
+<span id="L322"><a href="#L322">322</a>         report[&#x27;prompt&#x27;][&#x27;candidate_resolved&#x27;]=str(mlflow.genai.load_prompt(f&#x27;prompts:/{name}@champion&#x27;).version)</span>
+<span id="L323"><a href="#L323">323</a>     finally:mlflow.genai.set_prompt_alias(name,&#x27;champion&#x27;,before.version)</span>
+<span id="L324"><a href="#L324">324</a>     report[&#x27;prompt&#x27;][&#x27;alias_after&#x27;]=str(mlflow.genai.load_prompt(f&#x27;prompts:/{name}@champion&#x27;).version)</span>
+<span id="L325"><a href="#L325">325</a>     assert report[&#x27;prompt&#x27;][&#x27;alias_after&#x27;]==report[&#x27;prompt&#x27;][&#x27;alias_before&#x27;]</span>
+<span id="L326"><a href="#L326">326</a> print(report[&#x27;prompt&#x27;])</span>
+<span id="L327"><a href="#L327">327</a> </span>
+<span id="L328"><a href="#L328">328</a> # COMMAND ----------</span>
+<span id="L329"><a href="#L329">329</a> </span>
+<span id="L330"><a href="#L330">330</a> # MAGIC %md</span>
+<span id="L331"><a href="#L331">331</a> # MAGIC ## CP8 · Conserva resultados y completa el portfolio</span>
+<span id="L332"><a href="#L332">332</a> # MAGIC El reporte automatizado acredita sólo sus checks, no UI/canary/calidad universal. Completa las 13 entregas nombradas en CONSIGNA.md; `s08-final.md` enlaza todas, incluidas S06/S07 y límites de alcance.</span>
+<span id="L333"><a href="#L333">333</a> # MAGIC No exportar payloads sensibles. Para el lunes consulta RUNBOOK.md: recursos detenidos requieren activación/prewarm. Después del ensayo conserva evidencia y limita consumo de recursos aislados.</span>
+<span id="L334"><a href="#L334">334</a> </span>
+<span id="L335"><a href="#L335">335</a> # COMMAND ----------</span>
+<span id="L336"><a href="#L336">336</a> </span>
+<span id="L337"><a href="#L337">337</a> report[&#x27;finished_utc&#x27;]=datetime.now(timezone.utc).isoformat()</span>
+<span id="L338"><a href="#L338">338</a> (ROOT/&#x27;reports/notebook-observed.json&#x27;).write_text(json.dumps(report,ensure_ascii=False,indent=2,default=str))</span>
+<span id="L339"><a href="#L339">339</a> print(&#x27;Checks observados&#x27;,report[&#x27;checks&#x27;])</span>
+<span id="L340"><a href="#L340">340</a> print(&#x27;Pendientes manuales: UI de usuario, juicio negocio completo, canary/rollback y decisiones de operación se prueban con evidencia separada.&#x27;)</span>
+<span id="L341"><a href="#L341">341</a> dbutils.notebook.exit(json.dumps(report,ensure_ascii=False,default=str))</span>
+</pre></html>

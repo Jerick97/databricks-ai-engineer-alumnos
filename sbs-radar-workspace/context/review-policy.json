@@ -1,0 +1,38 @@
+{
+  "user_instruction": "Revisión del piloto por GPT Astra high mediante skill",
+  "skill_id": "SK09",
+  "skill_path": "skills/sbs-evaluacion-jueces/SKILL.md",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "reference_kind": "ai_review",
+  "human_reviewer_required_for_pilot_review": false,
+  "institutional_approval_separate": true,
+  "conversation_requires_prior_approval": false,
+  "source": "Instrucciones explícitas del usuario 2026-09-27",
+  "status": "sample_review_completed_agent_response_review_pending",
+  "latest_completed_sample": "runs/astra-normative-review-003.json",
+  "required_invocation_fields": [
+    "skill_id",
+    "skill_version",
+    "skill_sha256",
+    "model",
+    "reasoning_effort",
+    "inputs_with_hashes",
+    "protocol",
+    "findings",
+    "limitations"
+  ],
+  "supplemental_completed_reviews": [
+    "runs/astra-normative-review-004.json"
+  ],
+  "resolved_source_gap": "00771-2026 documentary chain reviewed; not automatically integrated into runtime corpus",
+  "all_reviews_require_skill_invocation": true,
+  "invocation_must_precede_review_execution": true,
+  "review_scopes": [
+    "normative",
+    "technical",
+    "artifact",
+    "e2e"
+  ],
+  "model_scope": "gpt-6-astra/high designado para revisión normativa; revisión técnica según su invocación"
+}

@@ -1,0 +1,93 @@
+{
+  "review_id": "sk09-capture-recovery-016",
+  "skill": "SK09 v0.1.2",
+  "reviewer": "/root/sk09_publication_review",
+  "constructor": "sk07_green",
+  "finished_at": "2026-09-28T03:56:24.694189+00:00",
+  "verdict": "passed",
+  "scope": "Independent local technical review of complete capture recovery under trusted-administrator contract",
+  "findings": [],
+  "tests": {
+    "passed": 83,
+    "failed": 0,
+    "evidence": "runs/sk09-capture-recovery-016-tests.txt",
+    "command": ".venv/bin/python -m pytest -q tests/unit/test_capture_checkpoint.py tests/unit/test_remote_refresh.py tests/unit/test_cloud_writer.py tests/unit/test_cloud_driver.py tests/unit/test_shared_control.py"
+  },
+  "independent_probes": {
+    "passed": [
+      "initial published",
+      "pending preserves published pointer",
+      "fresh root same pending no refetch",
+      "all logical SQLite rows identical",
+      "wrongplan rejects without install",
+      "wrongrun rejects without install",
+      "wrongbase rejects without install",
+      "occupied state untouched",
+      "symlink rejected",
+      "new run uses restored history and captures",
+      "latest compatible pending selected",
+      "wrong prior current no checkpoint"
+    ],
+    "count": 12,
+    "remote_calls": 0
+  },
+  "criteria": [
+    {
+      "criterion": "Published restoration validates full materialized release and plan, reconstructs minimal historical rows with original timestamps",
+      "status": "passed"
+    },
+    {
+      "criterion": "Complete pending logical SQLite rows and backlog survive new root without same-run refetch; previous shared publication unchanged",
+      "status": "passed"
+    },
+    {
+      "criterion": "Separate CAS capture receipt binds plan/base/job/run, immutable staged closure and latest compatible revision",
+      "status": "passed"
+    },
+    {
+      "criterion": "Wrong plan/run/base, nonempty target and symlink rejected; corruption covered by constructor tests independently rerun",
+      "status": "passed"
+    },
+    {
+      "criterion": "New run uses restored history and captures again without promoting pending data",
+      "status": "passed"
+    },
+    {
+      "criterion": "SK02/SK11 documentation distinguishes complete pending durability, published minimum and partial local-only attempts",
+      "status": "passed"
+    },
+    {
+      "criterion": "Cloud Files/SQL/Jobs permissions, actual serverless continuity and costs",
+      "status": "not_evaluated"
+    }
+  ],
+  "probe_setup_note": "Initial probe used macOS /var symlink from tempfile and correctly failed STATE_PATH_INVALID. Original stderr retained; probe now resolves its trusted local temporary root. No production code changed. PDF fixture xref warnings did not fail tests.",
+  "limits": [
+    "Files/CAS and source adapters are fixtures; no cloud calls, remote SQL or inference.",
+    "No claim of recovery for partial captures interrupted before complete extraction.",
+    "Durability requires confirmed receipt; failed Files/CAS is not durable.",
+    "Logical SQLite roundtrip verified for actual generated rows; not an adversarial administrator or arbitrary forged internally consistent state acceptance guarantee.",
+    "Same-run pending is intentionally idempotent; processing with newly available capabilities requires a new authorized run.",
+    "No UI, conversational E2E, legal validity or zero-cost acceptance."
+  ],
+  "confidence": "high within stated local scope",
+  "input_drift": [],
+  "final_hashes": {
+    "skills/sbs-evaluacion-jueces/SKILL.md": "46e9f9851d46b2ec95f61dabdaed6ec30cc28799f8c8e017615d87dcff6d2b66",
+    "skills/sbs-evaluacion-jueces/references/revision-ia.md": "8ee94f8b3b26614996e07d86cf6c9ce878d29240009e922f4305639933506b25",
+    "runs/sk11-capture-recovery-016-record.json": "1a6c41b9d687dfb0bf314dd7e0b1470c141d5dd26cb8b79a8ecdc0ccab95ec76",
+    "src/sbs/operations/capture_recovery.py": "a8a77d16862a7f03165f2260ef3bc4237a5602d3155df3bcca8b89dd702aaad3",
+    "src/sbs/operations/cloud_writer.py": "da8cdc67a171497fb1c426dd3df881482908f2e4d3cd89a506a2aeec7583aa32",
+    "src/sbs/operations/cloud_driver.py": "bec1e8498e1352528a34b9fdbc7d30f504308e8327a671e9739fcbf897fa54a8",
+    "src/sbs/operations/shared_control.py": "6888ca98e88c4a3519c88a83b67d19e40485c147b7e3f97cd969658591e538e9",
+    "tests/unit/test_cloud_writer.py": "cf25f34e6b52396a43b04789e4c2d13785596da652f13a7c6b95865df33708a4",
+    "tests/unit/test_cloud_driver.py": "968129c57814442972e8754f204482c710915b31999a158ae4331b18865529a7",
+    "tests/unit/test_shared_control.py": "af3b998351793b9e6fc40cdf07a15902fcf8d983dee1333cd71a5c1da1ad2adf",
+    "skills/sbs-fundacion-datos/SKILL.md": "450349499652a3fa48d791b321d9b7dc50e469a3e788cc4fc02aa48605be5bc5",
+    "skills/sbs-observabilidad-operacion/SKILL.md": "77a991f60968835f09620f06285a74fd9afe7d9c3acea541ff4a88125f2762e0",
+    "tests/unit/test_capture_checkpoint.py": "a0fd184743ded28a7451da22b465ab90c543a9e9aea542c578bce64b7f51bbff",
+    "tests/unit/test_remote_refresh.py": "62092544e634b5e83db3020d5faa2018679c1442f39f0df66ee46ecc9c1f2de8",
+    "skills/sbs-observabilidad-operacion/references/remote-refresh.md": "8f932b28dc7c46550cafcc2bce45910cab606ed8365e29f6d08e1769f7f29ebb",
+    "src/sbs/foundation/store.py": "95e49fc471d60e110eb02d5bec6b93b70dd87bb8922d1790fbfdaf235699914f"
+  }
+}

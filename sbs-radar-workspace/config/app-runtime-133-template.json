@@ -1,0 +1,1 @@
+{"command":["python","app133.py"],"env":[{"name":"SBS_MODE","value":"cloud"},{"name":"SBS_GENIE_ROTATION_CONFIG","value":"config/genie-bootstrap-098.json"}],"required_platform_environment":["DATABRICKS_HOST","DATABRICKS_APP_PORT"],"required_reviewed_environment":["SBS_PUBLIC_ORIGIN"],"workers":1,"status":"template_not_app_yaml_or_deployment"}

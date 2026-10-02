@@ -1,0 +1,105 @@
+ 
+ 
+Lima,    05    de  noviembre  de 2012 
+                                                                                                  CIRCULAR N° G -   167  -  2012                 
+------------------------------------------------- 
+Ref.: Modificación de  la Circular N° G-
+140-2009. 
+------------------------------------------------  
+ 
+Señor 
+Gerente General: 
+ 
+Sírvase tomar conocimiento que, en uso de las atribuciones conferidas por el numeral 9 del artículo 
+349º de la Ley General del Sistema Financiero y del Sistema de Seguros y Orgánica de la 
+Superintendencia de Banca y Seguros, Ley Nº 26702 y sus modificatorias, en adelante Ley General, y 
+por el inciso d) del artículo 57° del Texto Único Ordenado de la Ley del Sistema Privado de 
+Administración de Fondos de P ensiones, aprobado p or Decreto Supremo N° 054 -97-EF, con la 
+finalidad de adecuar la Circular N° G-140-2009 al último estándar de auditoría y al Reglamento para la 
+Gestión de Riesgo Operacional, aprobado mediante  Resolución SB S Nº  2116-2009; y habiendo 
+cumplido con la pre publicación de normas dispuesta en el Decreto Supremo Nº 001 -2009-JUS, la 
+Superintendencia dispone la publicación de la presente Circular. 
+ 
+1. Alcance 
+La presente circular modifica el literal d) del artículo 2º de la Circular de Gestión de la Seguridad de la 
+Información, con la finalidad de adecuarlo al Reglamento para la Gestión de Riesgo Operacional, 
+aprobado mediante Resolución SBS Nº  2116-2009 y agrega el artículo 7. Aº sobre subcontratación 
+significativa de procesamiento de datos en el exte rior, con la finalidad  de actualizar la Circular de 
+Gestión de la Seguridad de la Información al último estándar de auditoría. 
+ 
+ 
+2. Aplicación 
+2.1. Modifíquese el literal d) del artículo 2º, de la Circular N° G -140-2009 de acuerdo al 
+siguiente texto: 
+ 
+“d. Informac ión: Cualquier forma de registro electrónico, óptico, magnético o en otros 
+medios, susceptible de ser procesada, distribuida y almacenada.” 
+ 
+2.2. Modifíquese el artículo 7° e incorpórese el artículo 7.Aº a la Circular N° G -140-2009 de 
+acuerdo al siguiente texto: 
+ 
+“Subcontratación 
+ 
+Artículo 7 º.-  Las empresas son responsables y deben verificar que se mantengan las 
+características de seguridad de la información contempladas en la presente norma, incluso 
+cuando ciertas funciones o procesos puedan ser objeto de una subcontratación. Para ello 
+se tendrá en cuenta lo dispuesto en el artículo 21° del Reglamento de la Gestión Integral de 
+Riesgos. Asimismo, las empresas deben asegurarse que el procesamiento y la información 
+objeto de la subcontratación, se encuentre efectivamente aislada en todo momento. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2/2 
+ 
+Subcontratación significativa de procesamiento de datos en el exterior 
+ 
+Artículo 7.Aº.- En caso que las empresas deseen realizar una subcontratación significativa de 
+su procesamiento de datos, de tal manera que éste sea  realizado en el exterior, requerirán 
+de la autorización previa y expresa de la Superintendencia. Para ello, la empresa debe 
+asegurar un adecuado cumplimiento de la presente Circular, en lo que sea aplicable al 
+servicio de procesamiento contratado. 
+ 
+La Superintendencia podrá requerir, cuando así lo considere apropiado, que el proveedor del 
+servicio en el exterior se encuentre sujeto a una supervisión efectiva por parte de la autoridad 
+supervisora del país en el cual se brindará dicho servicio.  
+ 
+La autorización concedida por la Superintendencia, de ser el caso, es específica al proveedor 
+del servicio y el país desde el que se recibe, así como a las condiciones generales que 
+fueron objeto de la autorización, por lo que de existir modificaciones en ellas, se r equiere de 
+un nuevo procedimiento de autorización ante la Superintendencia. 
+ 
+En el Anexo A que forma parte de la presente norma y se publica en el Portal electrónico 
+institucional (www.sbs.gob.pe), conforme a lo dispuesto en el Decreto Supremo N° 001-2009-
+JUS, se detalla la información que debe remitir la empresa adjunta a su solicitud de 
+autorización.  
+ 
+Una vez recibida la documentación completa, dentro de un plazo que no excederá de 
+sesenta (60) días útiles, la Superintendencia emitirá la resolución que autoriza o el oficio que 
+deniega la solicitud presentada por la empresa. 
+ 
+Los servicios objeto de subcontratación en el exterior deberán ser sometidos anualmente a 
+un examen de auditoría ind ependiente, por una empresa auditora de prestigio, que guarde 
+conformidad con el ISAE 3402, emitido por la Federación  Internacional de Contadores 
+(IFAC), o la SSAE 16, emitida por el Instituto Americano de Contadores Públicos Certificados 
+(AICPA), debiendo cada entidad remitir a esta Superintendencia el reporte tipo 2 previsto por 
+dichos estándares.” 
+ 
+3. Vigencia 
+La presente Circular entrará en vigencia al día siguiente de su publicación.  
+ 
+ 
+ 
+Atentamente, 
+ 
+ 
+ 
+ 
+DANIEL SCHYDLOWSKY ROSENBERG 
+Superintendente de Banca, Seguros y 
+Administradoras Privadas de Fondos de Pensiones  
+ 

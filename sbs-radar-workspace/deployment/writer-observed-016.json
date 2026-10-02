@@ -1,0 +1,18 @@
+{
+  "observed_at": "2026-09-28T04:09:25.379081+00:00",
+  "identity": {
+    "id": "72803555975940",
+    "applicationId": "33b6f37c-7e6a-489f-b313-f886418b0319",
+    "displayName": "sbs-radar-writer",
+    "active": true
+  },
+  "scope": "Account service principal via workspace proxy; metadata only",
+  "workspace_assigned_by_this_run": false,
+  "workspace_membership": "not_verified",
+  "roles_grants_modified": false,
+  "secrets_created": false,
+  "sql_compute_calls": 0,
+  "cost": null,
+  "source": "runs/sk12-writer-create-016b-result.json",
+  "review": "runs/sk09-writer-create-016b-post-review.json"
+}

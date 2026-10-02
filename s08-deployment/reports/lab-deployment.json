@@ -1,0 +1,10 @@
+{
+  "endpoint": "ais08-neptuno",
+  "version": "4",
+  "state": {
+    "config_update": "NOT_UPDATING",
+    "ready": "READY"
+  },
+  "verified_by": "lab-smoke-serving.json",
+  "pass": true
+}

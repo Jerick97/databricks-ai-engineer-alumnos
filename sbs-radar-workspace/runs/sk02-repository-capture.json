@@ -1,0 +1,162 @@
+{
+  "run": "sk02-repository-capture-20260927T231820Z",
+  "captured_at": "2026-09-27T23:18:21.612671+00:00",
+  "manifest": "/Users/macdenix/clawd/projects/sbs-genie-e2e/context/pilot-repository-manifest.json",
+  "root": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository",
+  "source_count": 3,
+  "sources": [
+    {
+      "source": {
+        "document_id": "sbs-3274-2017",
+        "family": "market_conduct",
+        "source_kind": "normative",
+        "synthetic": false,
+        "version_id": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+        "sha256": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+        "url": "https://intranet2.sbs.gob.pe/dv_int_cn/1731/v7.0/Adjuntos/3274-2017.R.pdf",
+        "captured_at": "2026-09-27T23:18:20.939205+00:00",
+        "published_on": null,
+        "effective_on": null,
+        "date_unknown_reasons": {
+          "published_on": "Not established by authoritative metadata review; repository path is not a publication date",
+          "effective_on": "Not established by authoritative review; capture and repository version are not legal effect"
+        }
+      },
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/66/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342.pdf",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/rawtext.txt",
+      "result_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/result.json",
+      "pages": 34,
+      "provisions": 34,
+      "rawtext_chars": 120596,
+      "quality": {
+        "status": "partial",
+        "limitations": [
+          "annex_references_pending",
+          "layout_table_review_pending",
+          "semantic_segmentation_pending"
+        ]
+      },
+      "annex_references_pending": [
+        "Anexo",
+        "anexo"
+      ],
+      "verification": {
+        "original_sha256_matches": true,
+        "source_contract_valid": true,
+        "provisions_contract_and_literal_offsets_valid": true,
+        "verified_cache_reuse": true
+      }
+    },
+    {
+      "source": {
+        "document_id": "sbs-504-2021",
+        "family": "cybersecurity",
+        "source_kind": "normative",
+        "synthetic": false,
+        "version_id": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771",
+        "sha256": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771",
+        "url": "https://intranet2.sbs.gob.pe/dv_int_cn/2046/v4.0/Adjuntos/504-2021.R.pdf",
+        "captured_at": "2026-09-27T23:18:21.174553+00:00",
+        "published_on": null,
+        "effective_on": null,
+        "date_unknown_reasons": {
+          "published_on": "Not established by authoritative metadata review; repository path is not a publication date",
+          "effective_on": "Not established by authoritative review; capture and repository version are not legal effect"
+        }
+      },
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/10/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771.pdf",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/rawtext.txt",
+      "result_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/result.json",
+      "pages": 23,
+      "provisions": 23,
+      "rawtext_chars": 69628,
+      "quality": {
+        "status": "partial",
+        "limitations": [
+          "annex_references_pending",
+          "layout_table_review_pending",
+          "semantic_segmentation_pending"
+        ]
+      },
+      "annex_references_pending": [
+        "Anexo",
+        "anexo"
+      ],
+      "verification": {
+        "original_sha256_matches": true,
+        "source_contract_valid": true,
+        "provisions_contract_and_literal_offsets_valid": true,
+        "verified_cache_reuse": true
+      }
+    },
+    {
+      "source": {
+        "document_id": "sbs-504-2021",
+        "family": "cybersecurity",
+        "source_kind": "normative",
+        "synthetic": false,
+        "version_id": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+        "sha256": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+        "url": "https://intranet2.sbs.gob.pe/dv_int_cn/2046/v5.0/Adjuntos/504-2021.R%20.pdf",
+        "captured_at": "2026-09-27T23:18:21.354023+00:00",
+        "published_on": null,
+        "effective_on": null,
+        "date_unknown_reasons": {
+          "published_on": "Not established by authoritative metadata review; repository path is not a publication date",
+          "effective_on": "Not established by authoritative review; capture and repository version are not legal effect"
+        }
+      },
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/b8/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18.pdf",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/rawtext.txt",
+      "result_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/result.json",
+      "pages": 23,
+      "provisions": 23,
+      "rawtext_chars": 69791,
+      "quality": {
+        "status": "partial",
+        "limitations": [
+          "annex_references_pending",
+          "layout_table_review_pending",
+          "semantic_segmentation_pending"
+        ]
+      },
+      "annex_references_pending": [
+        "Anexo",
+        "anexo"
+      ],
+      "verification": {
+        "original_sha256_matches": true,
+        "source_contract_valid": true,
+        "provisions_contract_and_literal_offsets_valid": true,
+        "verified_cache_reuse": true
+      }
+    }
+  ],
+  "limitations": [
+    "Raw page spans only; semantic segmentation pending",
+    "Tables/layout and annex coverage pending expert review",
+    "Observed repository versions and hash differences do not establish normative amendment or legal validity",
+    "No authentication or challenge bypass; exact configured public HTTPS endpoints only"
+  ],
+  "attempts": [
+    {
+      "id": 1,
+      "status": "captured",
+      "error": null
+    },
+    {
+      "id": 2,
+      "status": "captured",
+      "error": null
+    },
+    {
+      "id": 3,
+      "status": "captured",
+      "error": null
+    }
+  ],
+  "parser_warnings": [
+    "pypdf emitted: Xref table not zero-indexed. ID numbers for objects will be corrected. Original PDF bytes were not modified. Quality remains partial pending review."
+  ],
+  "manifest_sha256": "c996f89c07ac21813c065fd7eb5e4364455d498bc0bbf58c07e4370832b2669c"
+}

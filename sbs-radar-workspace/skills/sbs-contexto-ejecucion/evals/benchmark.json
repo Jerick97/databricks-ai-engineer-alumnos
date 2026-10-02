@@ -1,0 +1,14 @@
+{
+  "version": "0.1.0",
+  "status": "provisional",
+  "baseline_and_green": "passed all six cases each per independent grading",
+  "delta_percentage_points": 0,
+  "non_discriminating_cases": 6,
+  "time_ms": null,
+  "tokens": null,
+  "repeats": 1,
+  "variance": null,
+  "blind": false,
+  "evidence": "../../../runs/sk00-sk01-behavior-grade.json",
+  "limits": "v0.1.1 instructions refined after component review; generalization and strict evaluation incomplete"
+}

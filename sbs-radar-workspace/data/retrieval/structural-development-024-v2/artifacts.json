@@ -1,0 +1,54 @@
+{
+  "questions.json": {
+    "sha256": "f683270ddefa9c320f262cda73f9a85920395401a147204d9c13930e7f8d46f3",
+    "bytes": 1308
+  },
+  "passages.json": {
+    "sha256": "ac788c2bd2a39adc103fa5fa116fb57493ff70f0124259df2be7b9e5140e5846",
+    "bytes": 279375
+  },
+  "judgments.json": {
+    "sha256": "6cf60236fabfa52c3446a6f59ebf403b870a9744d1c8430fbdb23d260236752b",
+    "bytes": 2974
+  },
+  "pairs.json": {
+    "sha256": "98ee070f3ce1717ba59f961d9fdd5fdd497c5a94a688e91fbca79538c426b997",
+    "bytes": 3040
+  },
+  "query_inputs.json": {
+    "sha256": "bd1e2bfbe7b422b8b57418473dbbca344a3ad2914df5646f33b361e56bdd0e2e",
+    "bytes": 2709
+  },
+  "pair_wrappers.json": {
+    "sha256": "4f0eb545dd5b0192f20b550199421f69e392b1d288e1e1a0879f8d1d936fa839",
+    "bytes": 16051541
+  },
+  "passage_metadata.json": {
+    "sha256": "9aabf83f4165f25f76e3024ed6621fc45e8f580cd03ba9a528350dcb6c466bae",
+    "bytes": 73356
+  },
+  "context.json": {
+    "sha256": "6f2e90346da1eee552bbce54d254e63de66b5ef876c1afcbb2c880865026a2a9",
+    "bytes": 547630
+  },
+  "reference_provenance.json": {
+    "sha256": "65d488cc2fa119dcae461eaa84097b8d076094eea737678e7879e2f15d9e6fdc",
+    "bytes": 17094
+  },
+  "automatic_gaps.json": {
+    "sha256": "45e294e2d4469e46574b296f01c74dd4f8e14ac93a230289c53a203257d795bb",
+    "bytes": 2104
+  },
+  "embedding_inputs.json": {
+    "sha256": "69aa87405283ddb4047a6cb386964c9ee0f2d11075ecb5bc34f0690d69230f06",
+    "bytes": 501421
+  },
+  "qrels_partial.json": {
+    "sha256": "bb00cec2e8245a67acaed4ecf4700f6cbbc55b082932776be45b0eb718d18cf8",
+    "bytes": 1575
+  },
+  "manifest.json": {
+    "sha256": "e86bfda65ccdb3eaaf3a5a16a470d36a129a92a5dd8761f8faeccefb950e77ff",
+    "bytes": 17439
+  }
+}

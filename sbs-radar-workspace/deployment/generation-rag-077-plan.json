@@ -1,0 +1,89 @@
+{
+  "status": "prepared_pending_independent_review",
+  "generation_selection": "config/generation-selection-077.json",
+  "activation": "077runner injects server-only selection path;default073Qwenunchanged; no global promotion/deployment",
+  "turns": [
+    {
+      "question": "¿Cómo cambió la responsabilidad por pérdidas en operaciones digitales sin autenticación reforzada en el artículo 20.3 entre las versiones 4 y 5?",
+      "pair_id": "cyber-504",
+      "provision_id": "art20.3",
+      "query_cached": true
+    },
+    {
+      "question": "¿Qué cambió en el artículo 27 sobre seguros adicionales, contratación independiente y consentimiento del usuario entre las versiones 7 y 8?",
+      "pair_id": "market-3274",
+      "provision_id": "art27",
+      "query_cached": true
+    },
+    {
+      "question": "¿Qué cambió en el artículo 29.1 numeral 4 sobre canales para pagos anticipados y adelantos de cuotas entre las versiones 7 y 8?",
+      "pair_id": "market-3274",
+      "provision_id": "art29.1.4",
+      "query_cached": true
+    },
+    {
+      "question": "¿Y qué implicancia propuesta tiene ese cambio para un proceso ficticio de atención de pagos anticipados, y qué límite impide afirmar vigencia actual?",
+      "pair_id": "market-3274",
+      "provision_id": "art29.1.4",
+      "query_cached": false
+    }
+  ],
+  "limits": {
+    "generation_posts": 4,
+    "generation_output_tokens_each": 5000,
+    "generation_input_characters_each": 120000,
+    "new_query_embedding_posts": 2,
+    "new_query_embedding_tokens_total": 20000,
+    "automatic_retries": 0,
+    "new_document_embeddings": 0
+  },
+  "embedding_authorization": "Separate077max2queryPOST/20ktokens under autonomy053; no reopening075/073/041",
+  "runtime": "LocalService base135 with cached original query vectors, real local reranker and verified focal comparison expansion; no structural231 promotion",
+  "inputs": {
+    "src/sbs/models/generation_selection.py": "930fcb56eb70c4c4b7d14ecd428bf26fa1bb8c43693aac35694dab73dd703427",
+    "src/sbs/conversation/databricks.py": "fb26961fb0cff11104c0dbe38517967f7f05188f710ce3299ddb8dfc8be3d02a",
+    "src/sbs/runtime.py": "840e5fe04f3298367414c20857a759f6e8b3278cebe19a58be073d60149d7a25",
+    "config/generation-selection-073.json": "855b26355aeda42762575584a04c3ea320a341a9fcf75c95949c20f290d5273b",
+    "config/pilot-model-bundle.json": "76620b8bee92f3751503ca4658f396355dd1d436deac66a0155c1ab8bfd735ed",
+    "runs/sk05-generation-candidates-072-databricks-qwen3-next-80b-a3b-instruct.json": "2ca91c6c4aa7539c1e4028d964fa5c628486fa06f3a20905a0555af75c53bd11",
+    "runs/sk04-real-001-protocol.json": "85103535452d4872042e4aee49c5b1452fb8e44cc19afc40e73b057349a0c572",
+    "data/retrieval/sk04-real-001/queries-000.json": "fd899cb778c0a03e523274a5a7936028d4330b1e029fd17265fcf242e16430e5",
+    "data/retrieval/sk04-real-001/index.json": "3390bb05d9ee8a2d8a43aeb5cd5a43083553bfc4b257847d765918e24451b1f9",
+    "skills/sbs-modelos-configuracion/SKILL.md": "7788401ed121b653a5c8cc144a72e31b0344974bd724d29f2a41e2b4c98097b6",
+    "skills/sbs-conversacion-orquestacion/SKILL.md": "8168bff840c941a183fd962ab7011f0a72dc8163961cdc063754d5f0758ae16c",
+    "skills/sbs-conversacion-orquestacion/assets/generator-instructions.md": "3c774358f4c9fec4c3a78d7270f49d4aa413a08805b4a72ff1ebfd03bc992a6c",
+    "runs/sk00-autonomy-053.json": "241b0946ab052ead92a8e29a4abb8bc98d064030c5933a45397465df6fcb8d43",
+    "src/sbs/conversation/__init__.py": "bcd9ca72d234b16dc7aceeb0f3ef87d0c4261c94829c7f824e96d25e0ca725e8",
+    "src/sbs/conversation/compaction.py": "3197ba028859409e330d8fa21c9a22caffdc1314a29a5fa7f4bbeb5489e6dc03",
+    "src/sbs/conversation/process_context.py": "c46eea9cc8b15c16441a9e2a6ba04b6cc15c7ad78c87e7f97dba2f090102b9d1",
+    "config/fictitious-processes-075.json": "1d8385631b949d353c3d7b8061ed25ed22d5014ae82b69a34563148535363cca",
+    "runs/sk06-pilot-002/processes.jsonl": "4f3d6c36e51eb192933e1b1f362678cde58a8ff0c528f5a15b24da2efe125232",
+    "runs/sk09-astra-generation-074-review.json": "c5374566fca1a237343a9c538c470cdd9f31261f129e8c45f6c915ed5040fdfb",
+    "runs/sk09-generation-rag-073-outcome-review.json": "a44406cf3659c9c190b11dde19f8084973f800d4b5065faf0aafe1a4529ff9f7",
+    "config/generation-selection-077.json": "98b00ee7f32067bad31f111507e0db8ae7fff6a4c1ff0d189a170e6ad0a9c3bf",
+    "runs/sk05-generation-candidates-072-databricks-meta-llama-3-3-70b-instruct.json": "cd0f68b0076444e943ab76e1d0d4f38bbe9060a28d6215dac395d7bc0111c445",
+    "deployment/state/generation-rag-075/result.json": "778e0094a8d5a261611ba32952d6a265488d0ddbe707d770b740588074da0b42",
+    "deployment/state/generation-rag-075/generation-0-request.json": "de5c284a8bcd9bb01a7f5400f6a7ee08be0d73166e5a382962680a18230375ff",
+    "deployment/state/generation-rag-075/generation-0-request-manifest.json": "d0f8cb563791ab8ba1f41d6263ad466f2e1588218d55c1223b76d3e1e9f9848c",
+    "deployment/state/generation-rag-075/turn-0-result.json": "b182aee564818e0b419da8f684785d25183667436c122b7c18031de226870bee",
+    "runs/sk05-sk07-latency-077-diagnostic.json": "e5a943f2c580b49533403ffd764a90ff16852a19a24897b06cb668a1fa822e2e"
+  },
+  "quality_evaluated": false,
+  "cost": null,
+  "baseline_quality": {
+    "path": "runs/sk09-astra-generation-074-review.json",
+    "sha256": "c5374566fca1a237343a9c538c470cdd9f31261f129e8c45f6c915ed5040fdfb",
+    "status": "FAIL_CONTROLLED_SAMPLE",
+    "scope": "073 actual outputs only; retained without edits"
+  },
+  "changes_as_package": [
+    "Relative to075 only explicit generation provider/model selection and server path injection; same fidelity prompt/compaction/process context"
+  ],
+  "attribution": "Repeated-case controlled trial across different endpoint/time; not isolated causal proof of provider quality or latency, no holdout",
+  "request_archive": {
+    "pattern": "deployment/state/generation-rag-077/generation-N-request.json",
+    "max_bytes_each": 1048576,
+    "fields": "messages/max_tokens/stream only; no authheaders",
+    "manifest": "canonical JSON logical body SHA256 and saved artifact SHA256; not claimed wire bytes"
+  }
+}

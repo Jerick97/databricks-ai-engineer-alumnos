@@ -1,0 +1,10 @@
+{
+  "host": "https://dbc-0410b264-20c7.cloud.databricks.com",
+  "warehouse": "RUNNING",
+  "source_functions": [
+    "neptuno_manuel_arguelles.s05_agentes.ventas_categoria",
+    "neptuno_manuel_arguelles.s05_agentes.productos_reponer"
+  ],
+  "rag_table": "neptuno_manuel_arguelles.rag.chunks_embeddings",
+  "safety_input_output": true
+}

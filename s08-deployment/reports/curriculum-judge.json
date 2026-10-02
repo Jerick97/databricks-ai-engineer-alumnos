@@ -1,0 +1,957 @@
+{
+  "reviewer": "independent curriculum judge /root/class_curriculum_final; not material author",
+  "date": "2026-09-28T19:32:55.740494+00:00",
+  "dimension": "curriculum",
+  "verdict": "PASS",
+  "scope": "full-session",
+  "target_scope": "full-session",
+  "class_ready": false,
+  "readiness_reason": "Dimensión curricular aprobada para clase completa. El cierre global debe reunir los tres dictámenes independientes vigentes y QA actual; este juez no sustituye ejecución/pedagogía ni afirma el cierre agregado.",
+  "curriculum_ready": true,
+  "summary": "Revisión nueva desde temario original, PROJECT, 52 slides, consignas y ejemplo resuelto. Las 13 promesas mantienen explicación, práctica y entregable. Notebook docente corregido y CP4 real de hoy cierran brechas de acceso sin reducir el contrato.",
+  "original_sources_read": [
+    "/Users/macdenix/clawd/projects/databricks-genai-pathway/temario-curso/TEMARIO.md",
+    "/Users/macdenix/clawd/projects-index/personal/cursos-a-dictar/databricks-ai-engineer/PROJECT.md"
+  ],
+  "source_priority": "Usuario actual > temario aprobado > PROJECT/planificación > deck",
+  "artifact_hashes": {
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/ABRIR-NOTEBOOK-DOCENTE.md": "788344cf0e14fff458a9f8f07f24b8e84b75badd014f2852c9b26595c122f454",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/CERTIFICACION.md": "5beb52f7cc90efcd41d2fe78e022eb60414824f381e68db6ee30f3b7ab2856d2",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/CONSIGNA.md": "332c4c969300618c5dbecb103569070d5a9801194c3561caad1682e558ec37ce",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/EJEMPLO-RESUELTO.md": "ae4ea42e5901015994c32c8eb9b7494904066205d40bc23d2006fd30f6a6370c",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/ENTREGA.md": "7c654149e47288b19512e9ae01aea107b76b2b83e20a20250e6569173958b547",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/GUIA-DOCENTE.md": "da8290a37941287e560c34520c6c2df6e250930974160f1a9e06453d78ac86b2",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/PLAN-CLASE.md": "e06c535aeae9d4c86114038efb26d09845328be131d4c9ddf89102aaf513ee55",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/README.md": "c40f5907a57f85aa1abcb8ed7a77ce616ba9b34fdf8593a650d44990a135c100",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/RUNBOOK.md": "61b3a2c169c87a6b7476dd78956be21c411b1344ce68b183b3b44213b18b2152",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/VALIDACION.md": "0cde358b3081e1ffb5e44e82f897bb20619c4b11e46bad3c6784e762fc8a058f",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/agenda.json": "3747e52c1491e64c078a046cea88585e7aa7bb3ac07200c278042d757fbe7666",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/app/app.py": "dfc6dbce6f563c9123b0033986cedfdfc9cc5625809388a4b754c0271048e965",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/app/app.yaml": "f5f6869db1013fd0c680e80625b1a3255a132fbb43e3c42da76c460bb2b70736",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/bundle/ci-example.yml": "591d0c0653911404846fa1ce7a46143eb5eefc27e59a03577192178a5b4c3b99",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/bundle/databricks.yml": "2b424d0b15d5a3563284de0701f02792ede8447622ca349f9312f2348e7e798f",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/course-context.json": "e442f7d4de638a01313d3c32e574f195c5faf48c66b950e7c70ed85b9300f85d",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/coverage-manifest.json": "a2dc4545972105b7a6a69ac89280d375c7cc6c1d918f8687a16112d3419e8cd5",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/guion.md": "3fe533d8e02887cd168e0c6b9826b8e2fbd17eadd59bb366c509cf16dc3cf507",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/index.html": "ed6ec63948319ee3e02eb9c928ec340b8c322281039f01293452a584f43e6dad",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/CONTINUIDAD.md": "096273a3351ec0f3d76a634a57ab137fe0688eb8cf7a7632059f85635c2e691d",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/agent.py": "200febf66d9d8a36acd05fed147776e761156e27d065df600489dd838f292bb4",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/lab_app.py": "655a4a6e734838cb6c9e8e574f33dac5c588705b053430e6c453041e32077c1c",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/lab_config.py": "c9fda07a95c1de66dad6f4d3386065b180fc5fff3b61b94d5ba5c4b3d07b34db",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/lab_costs.sql": "dc3d2ed8530dca3372c6302b58d7dc9a69feacbb403e5d3ddd0f66d7015b11b2",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/lab_custom_rollout.py": "a362609395256969d16adf53f149153fab7aee42bf7377fa957d8aa88f0d3101",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/lab_custom_rollout_verify.py": "899e2449f2665c27622683ceed7cdf8d02d6b2eb2765e5cac658c5f221d32331",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/lab_deploy.py": "4634aaa447797307a40e23455d545a8c0029868b80848508ce8e599b9762aeff",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/lab_import_workspace.py": "ddc8f0326ae4c56a72643d798f33d6a19383f9cccdebdf797d4cdca9bde4a787",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/lab_monitor.py": "087833c48e179ecc7cc388b5784a8227fde8bef2b75376635fc89efd3e27caab",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/lab_parse_contract.sql": "89efa2c9c49a2dd4292b9a3f8f8e5ac7d0ce89c0adaab5ce4338da9687417495",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/lab_prompts.py": "1f2b830644f3799047d76f96aefec9ee62057e4b2c9b04fcfee8a13b863013c0",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/lab_rollout.py": "9661b99e9b0635b66b26566cc3b414eda899e794ba49733e62b4ddb4681b2329",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/lab_smoke.py": "dee2d97be74e95e1035476eb2f9a6e408fa9054fbb2e97923f6fb231e455031b",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/requirements.txt": "f7d7bf19dbd785f8b1f408fd2b4eb68a36b8c767550d0fb0b05878ff0ee5f277",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/notebook-docente.py": "53f0e331e04e18766bdfe1ef5f22593e8639ca58e119c60800986a4037a73e4c",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/notebook.ipynb": "8b350fde2321ca490642ffda5ec6188b5db90b1f5e4ae0258125072f78fa94f7",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/notebook.py": "4dbb89479b8d04d4e22de55110c9e47297e6e5f3d91e3d76339d9f9a4edf9510",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/app-browser.json": "7f2ea6e7cbbea310c582a8cdd83bb723067481d9587865c2c1bfafe89e508c67",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/app-visual.json": "cdf9918c351777604e55c473e3d524420705103a57dd902d1d18767721454032",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/class-day-browser.json": "ddeacc1cb4cf4c3ad85201a90afc2369ba433e3fdc7d4133c56c80374d91175d",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/class-day-smoke-serving.json": "07ee92aa323b3c47e9885e1c15fbd453f62a1bb774a0681db9aeebb6bffff537",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/import-validation.json": "3cc995274189ce1143d36fe970af82dded9169793e5d9964cca09053205a59d9",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-app-http.json": "a6881fafb7090ae7249b453f8aa8f63508e52e3406c296d179d4bae5627e4a70",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-artifact-check.json": "2a4bfe991602e4e1df81453999c7a87d72cb4bb8011517d6439a4db7ee1bb39a",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-bundle-validation.json": "903285fc8ece1079df40961261c34295414156c30200bfe65b759c63745a6563",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-custom-canary-verified.json": "4bdcaa4a3b1c37444f8865751e6abfd0207118a67aad91eed7ecf4b5616a002e",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-custom-rollback-verified.json": "56e1c2f1900933969ceddd206f46992b59b79ed78d2af7bbc67f3dcdaed7d4ad",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-flatten.json": "0aa2c1ba3fbc8dacd0b43b4adbd6987b21af1f7600d8f59abde88347ee697134",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-freeze.json": "2cd3661a6b4fc3511011c23cd46706ff3fe095bc5874e2c3ebbbf60b6d034213",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-monitor-values.json": "dae3617751266d784fdf5c09512f32118f6e900c237c208e404e273573001435",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-monitor-verified.json": "8bf585d71519ed799e1c302f26e8d8adcc756169051657c5e4ac51f9c8fc570f",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-parse-fixtures.json": "e10dafc0e0acff3c5e527eb927450a70bb4ce660ed9d155ba9966a71bd187518",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-preflight.json": "cc94ee643c7f21601892a81d22ebd1c5009c4d0c4ef74bc71e1a7b07ec06c312",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-prompts.json": "73aeba26b53c00cceb0bb72612908cd407e87381b3e881675586bd5c92d9f80c",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-security-smoke.json": "6dd49056cbdeb70a096b457157d3b75e411d0052b533a31afe199a758bedb9fa",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-smoke-serving.json": "a17e3d574ffe015c1c9f691cd6c8555a8592f4766f6c953823de7e07d9afba1a",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-status.json": "b2ddd85a3c1f9d3853538a0f7c40c0fa3bb70cad908f2a74b19bcecbac284cd9",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-unit-tests.json": "04cd05e363d38c8f57fb8144d906c9f51cd73429fef5c602ec44503484224f53",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/notebook-docente-observed.json": "bc1c4b04c96e06537d44da85217b118fcbb5d0202fc0fae5988facdfd9de0e94",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/notebook-observed.json": "711645f87a6c0c4ca6552abc9861fcee1a1dd9030cb1a40725cbfe44edfb4e4a",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/structural-qa.json": "9fcf0dafec41c5d448ff3a7a0b3231e967b7c57e1e684fe1753bc4c7713493b5",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/teacher-delivery-judge.json": "8fce12f6b131f436305f2b6a8456e43de435a0102afff53a27001b90e217ec9b",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/visual-qa.json": "812e38a2306bd574991bc662eaf46f0e250620bbfe0b17a5d7c4d6ca47d1451c",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/requirements.json": "6ea9a5101dbe85f835ac51e6c1486c4ef7ad7cac44af2ca25c0ecc87514c42ad",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/slides/S08-autonomo.html": "9b5049015512853a291fb5f69193f1ea9139293dfa1fa010bf5a450e5d680fcc",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/slides/S08-deck.html": "f70b7cb05ebb9053d6220da35892d01497b4a7a30b68466415acc11e166164df",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/slides/content.json": "e878d06acd3babe1b6c796a18ecc00f0dd72384d590ad25d93150407a62938a6",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/slides/deck.css": "bda749f090d887dfd096b45efad15e47644ef17aab182a8ff766953a75909f05",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/slides/deck.js": "31e25fd75f6cd7c6e59949f9b0c3874ebb27d1add52e5e688ccb72c4daec3eaf",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/sources.json": "be6f8590cb16394a7f92137e02993b649bd53b328f15cec80adaec7f6c2961a3",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/CERTIFICACION.md": "5beb52f7cc90efcd41d2fe78e022eb60414824f381e68db6ee30f3b7ab2856d2",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/CONSIGNA.md": "332c4c969300618c5dbecb103569070d5a9801194c3561caad1682e558ec37ce",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/EJEMPLO-RESUELTO.md": "ae4ea42e5901015994c32c8eb9b7494904066205d40bc23d2006fd30f6a6370c",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/ENTREGA.md": "7c654149e47288b19512e9ae01aea107b76b2b83e20a20250e6569173958b547",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/GUIA-DOCENTE.md": "da8290a37941287e560c34520c6c2df6e250930974160f1a9e06453d78ac86b2",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/PLAN-CLASE.md": "e06c535aeae9d4c86114038efb26d09845328be131d4c9ddf89102aaf513ee55",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/README.md": "c40f5907a57f85aa1abcb8ed7a77ce616ba9b34fdf8593a650d44990a135c100",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/RUNBOOK.md": "61b3a2c169c87a6b7476dd78956be21c411b1344ce68b183b3b44213b18b2152",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/VALIDACION.md": "0cde358b3081e1ffb5e44e82f897bb20619c4b11e46bad3c6784e762fc8a058f",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/agenda.json": "3747e52c1491e64c078a046cea88585e7aa7bb3ac07200c278042d757fbe7666",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/app/app.py": "dfc6dbce6f563c9123b0033986cedfdfc9cc5625809388a4b754c0271048e965",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/app/app.yaml": "f5f6869db1013fd0c680e80625b1a3255a132fbb43e3c42da76c460bb2b70736",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/bundle/ci-example.yml": "591d0c0653911404846fa1ce7a46143eb5eefc27e59a03577192178a5b4c3b99",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/bundle/databricks.yml": "2b424d0b15d5a3563284de0701f02792ede8447622ca349f9312f2348e7e798f",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/coverage-manifest.json": "a2dc4545972105b7a6a69ac89280d375c7cc6c1d918f8687a16112d3419e8cd5",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/guion.md": "3fe533d8e02887cd168e0c6b9826b8e2fbd17eadd59bb366c509cf16dc3cf507",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/index.html": "ed6ec63948319ee3e02eb9c928ec340b8c322281039f01293452a584f43e6dad",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/CONTINUIDAD.md": "096273a3351ec0f3d76a634a57ab137fe0688eb8cf7a7632059f85635c2e691d",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/agent.py": "200febf66d9d8a36acd05fed147776e761156e27d065df600489dd838f292bb4",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/lab_app.py": "655a4a6e734838cb6c9e8e574f33dac5c588705b053430e6c453041e32077c1c",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/lab_config.py": "c9fda07a95c1de66dad6f4d3386065b180fc5fff3b61b94d5ba5c4b3d07b34db",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/lab_costs.sql": "dc3d2ed8530dca3372c6302b58d7dc9a69feacbb403e5d3ddd0f66d7015b11b2",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/lab_custom_rollout.py": "a362609395256969d16adf53f149153fab7aee42bf7377fa957d8aa88f0d3101",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/lab_custom_rollout_verify.py": "899e2449f2665c27622683ceed7cdf8d02d6b2eb2765e5cac658c5f221d32331",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/lab_deploy.py": "4634aaa447797307a40e23455d545a8c0029868b80848508ce8e599b9762aeff",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/lab_import_workspace.py": "ddc8f0326ae4c56a72643d798f33d6a19383f9cccdebdf797d4cdca9bde4a787",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/lab_monitor.py": "087833c48e179ecc7cc388b5784a8227fde8bef2b75376635fc89efd3e27caab",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/lab_parse_contract.sql": "89efa2c9c49a2dd4292b9a3f8f8e5ac7d0ce89c0adaab5ce4338da9687417495",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/lab_prompts.py": "1f2b830644f3799047d76f96aefec9ee62057e4b2c9b04fcfee8a13b863013c0",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/lab_rollout.py": "9661b99e9b0635b66b26566cc3b414eda899e794ba49733e62b4ddb4681b2329",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/lab_smoke.py": "dee2d97be74e95e1035476eb2f9a6e408fa9054fbb2e97923f6fb231e455031b",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/requirements.txt": "f7d7bf19dbd785f8b1f408fd2b4eb68a36b8c767550d0fb0b05878ff0ee5f277",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/notebook.ipynb": "8b350fde2321ca490642ffda5ec6188b5db90b1f5e4ae0258125072f78fa94f7",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/notebook.py": "4dbb89479b8d04d4e22de55110c9e47297e6e5f3d91e3d76339d9f9a4edf9510",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/app-browser.json": "7f2ea6e7cbbea310c582a8cdd83bb723067481d9587865c2c1bfafe89e508c67",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/app-visual.json": "cdf9918c351777604e55c473e3d524420705103a57dd902d1d18767721454032",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/import-validation.json": "3cc995274189ce1143d36fe970af82dded9169793e5d9964cca09053205a59d9",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-app-http.json": "a6881fafb7090ae7249b453f8aa8f63508e52e3406c296d179d4bae5627e4a70",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-artifact-check.json": "2a4bfe991602e4e1df81453999c7a87d72cb4bb8011517d6439a4db7ee1bb39a",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-bundle-validation.json": "903285fc8ece1079df40961261c34295414156c30200bfe65b759c63745a6563",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-custom-canary-verified.json": "4bdcaa4a3b1c37444f8865751e6abfd0207118a67aad91eed7ecf4b5616a002e",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-custom-rollback-verified.json": "56e1c2f1900933969ceddd206f46992b59b79ed78d2af7bbc67f3dcdaed7d4ad",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-flatten.json": "0aa2c1ba3fbc8dacd0b43b4adbd6987b21af1f7600d8f59abde88347ee697134",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-freeze.json": "2cd3661a6b4fc3511011c23cd46706ff3fe095bc5874e2c3ebbbf60b6d034213",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-monitor-values.json": "dae3617751266d784fdf5c09512f32118f6e900c237c208e404e273573001435",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-monitor-verified.json": "8bf585d71519ed799e1c302f26e8d8adcc756169051657c5e4ac51f9c8fc570f",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-parse-fixtures.json": "e10dafc0e0acff3c5e527eb927450a70bb4ce660ed9d155ba9966a71bd187518",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-preflight.json": "cc94ee643c7f21601892a81d22ebd1c5009c4d0c4ef74bc71e1a7b07ec06c312",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-prompts.json": "73aeba26b53c00cceb0bb72612908cd407e87381b3e881675586bd5c92d9f80c",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-security-smoke.json": "6dd49056cbdeb70a096b457157d3b75e411d0052b533a31afe199a758bedb9fa",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-smoke-serving.json": "a17e3d574ffe015c1c9f691cd6c8555a8592f4766f6c953823de7e07d9afba1a",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-status.json": "b2ddd85a3c1f9d3853538a0f7c40c0fa3bb70cad908f2a74b19bcecbac284cd9",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-unit-tests.json": "04cd05e363d38c8f57fb8144d906c9f51cd73429fef5c602ec44503484224f53",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/notebook-observed.json": "711645f87a6c0c4ca6552abc9861fcee1a1dd9030cb1a40725cbfe44edfb4e4a",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/structural-qa.json": "9fcf0dafec41c5d448ff3a7a0b3231e967b7c57e1e684fe1753bc4c7713493b5",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/visual-qa.json": "812e38a2306bd574991bc662eaf46f0e250620bbfe0b17a5d7c4d6ca47d1451c",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/requirements.json": "6ea9a5101dbe85f835ac51e6c1486c4ef7ad7cac44af2ca25c0ecc87514c42ad",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/slides/S08-autonomo.html": "9b5049015512853a291fb5f69193f1ea9139293dfa1fa010bf5a450e5d680fcc",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/slides/S08-deck.html": "f70b7cb05ebb9053d6220da35892d01497b4a7a30b68466415acc11e166164df",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/slides/content.json": "e878d06acd3babe1b6c796a18ecc00f0dd72384d590ad25d93150407a62938a6",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/slides/deck.css": "bda749f090d887dfd096b45efad15e47644ef17aab182a8ff766953a75909f05",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/slides/deck.js": "31e25fd75f6cd7c6e59949f9b0c3874ebb27d1add52e5e688ccb72c4daec3eaf",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/sources.json": "be6f8590cb16394a7f92137e02993b649bd53b328f15cec80adaec7f6c2961a3",
+    "/Users/macdenix/clawd/projects/databricks-genai-pathway/temario-curso/TEMARIO.md": "e84cde07a10c39b0cdfd8b4cae5d6926be7912cc18c69e9afd0e16f296dc4a29",
+    "/Users/macdenix/clawd/projects-index/personal/cursos-a-dictar/databricks-ai-engineer/PROJECT.md": "8388fd47462edfa536e115ef471078449c19d9e90368ff2a5a0c5785ee85634c",
+    "/Users/macdenix/nix-skills/skills/operational/deck-craft/references/course-contract.md": "7f263b2768ad8382b25e7640b6072852075a1f70ec5d3f6f679a0d2884fc9d31",
+    "/Users/macdenix/nix-skills/skills/operational/deck-craft/references/course-deck-qa.md": "3a485c9ac129e0720f90c22db81bfb817e40c24f35db79725f52025e87ecfe5f"
+  },
+  "independent_syllabus_inventory": [
+    {
+      "id": "S08-CONTINUITY",
+      "source": "PROJECT.md: Parámetros / continuidad Neptuno",
+      "promise": "Continuidad datos→agente→evaluación→gobierno",
+      "slides": [
+        "slide-01",
+        "slide-04",
+        "slide-05",
+        "slide-10",
+        "slide-12",
+        "slide-18",
+        "slide-22",
+        "slide-30",
+        "slide-42",
+        "slide-43",
+        "slide-47"
+      ],
+      "practice": [
+        "CONSIGNA.md#cp0"
+      ],
+      "expected_student_outputs": [
+        "entregas/cont-neptuno.md"
+      ],
+      "provided_files_checked": [
+        "notebook.py",
+        "CONSIGNA.md",
+        "GUIA-DOCENTE.md",
+        "lab/config.json",
+        "lab/agent.py",
+        "lab/CONTINUIDAD.md",
+        "lab/lab_config.py",
+        "lab/lab_import_workspace.py"
+      ],
+      "status": "COVERED",
+      "assessment": "Datos/funciones S05, recuperación S04, controles S07 y evaluación S06 conservan el caso Neptuno; no se infiere Review App humana guardada."
+    },
+    {
+      "id": "S08-SERVING",
+      "source": "TEMARIO.md:89",
+      "promise": "Model Serving serverless, scale-to-zero y tres categorías",
+      "slides": [
+        "slide-07",
+        "slide-08",
+        "slide-09",
+        "slide-14",
+        "slide-15"
+      ],
+      "practice": [
+        "CONSIGNA.md#cp2"
+      ],
+      "expected_student_outputs": [
+        "entregas/s08-serving.md"
+      ],
+      "provided_files_checked": [
+        "notebook.py",
+        "CONSIGNA.md",
+        "GUIA-DOCENTE.md",
+        "lab/lab_deploy.py"
+      ],
+      "status": "COVERED",
+      "assessment": "Tres categorías y cold start explicados; seis casos reales de hoy PASS sobre UC4."
+    },
+    {
+      "id": "S08-DEPLOY",
+      "source": "TEMARIO.md:90",
+      "promise": "Deploy code versus deploy model",
+      "slides": [
+        "slide-10",
+        "slide-11",
+        "slide-12",
+        "slide-13"
+      ],
+      "practice": [
+        "CONSIGNA.md#cp1"
+      ],
+      "expected_student_outputs": [
+        "entregas/s08-deploy.md"
+      ],
+      "provided_files_checked": [
+        "notebook.py",
+        "CONSIGNA.md",
+        "GUIA-DOCENTE.md",
+        "lab/agent.py",
+        "lab/requirements.txt",
+        "lab/lab_deploy.py",
+        "lab/config.json"
+      ],
+      "status": "COVERED",
+      "assessment": "Artefacto/código/dependencias/versión distinguidos de App; starter y docente conservan propósito."
+    },
+    {
+      "id": "S08-BUNDLES",
+      "source": "TEMARIO.md:90",
+      "promise": "Databricks Asset Bundles, CI/CD y separación de entornos",
+      "slides": [
+        "slide-37",
+        "slide-38",
+        "slide-39",
+        "slide-40"
+      ],
+      "practice": [
+        "CONSIGNA.md#cp7"
+      ],
+      "expected_student_outputs": [
+        "entregas/s08-bundles.md"
+      ],
+      "provided_files_checked": [
+        "notebook.py",
+        "CONSIGNA.md",
+        "GUIA-DOCENTE.md",
+        "bundle/databricks.yml",
+        "bundle/ci-example.yml"
+      ],
+      "status": "COVERED",
+      "assessment": "Práctica valida dev y examina separación; YAML CI es ejemplo, sin atribuir ejecución remota."
+    },
+    {
+      "id": "S08-ROLLOUT",
+      "source": "TEMARIO.md:91",
+      "promise": "Aliases champion/challenger, canary/A-B y traffic splits",
+      "slides": [
+        "slide-16",
+        "slide-17",
+        "slide-18",
+        "slide-19",
+        "slide-34",
+        "slide-48"
+      ],
+      "practice": [
+        "CONSIGNA.md#cp3"
+      ],
+      "expected_student_outputs": [
+        "entregas/s08-rollout.md"
+      ],
+      "provided_files_checked": [
+        "notebook.py",
+        "CONSIGNA.md",
+        "GUIA-DOCENTE.md",
+        "lab/lab_rollout.py",
+        "lab/lab_custom_rollout.py",
+        "lab/lab_custom_rollout_verify.py",
+        "lab/rollout_model.py"
+      ],
+      "status": "COVERED",
+      "assessment": "Custom de ventas complementario acredita mecánica 90/10 y rollback; no se atribuye split al agente ni superioridad A/B."
+    },
+    {
+      "id": "S08-APPS",
+      "source": "TEMARIO.md:92,109",
+      "promise": "Databricks Apps: UI, identidad corporativa, sin tokens en browser",
+      "slides": [
+        "slide-05",
+        "slide-15",
+        "slide-21",
+        "slide-22",
+        "slide-23",
+        "slide-24",
+        "slide-49"
+      ],
+      "practice": [
+        "CONSIGNA.md#cp4"
+      ],
+      "expected_student_outputs": [
+        "entregas/s08-apps.md"
+      ],
+      "provided_files_checked": [
+        "notebook.py",
+        "CONSIGNA.md",
+        "GUIA-DOCENTE.md",
+        "app/app.py",
+        "app/app.yaml",
+        "app/requirements.txt",
+        "lab/lab_app.py"
+      ],
+      "status": "COVERED",
+      "assessment": "CP4 exige browser→backend→endpoint: reporte de hoy acredita ventas y aclaración en Chrome con consentimiento autorizado. Identidad compartida de backend explícita."
+    },
+    {
+      "id": "S08-INFERENCE",
+      "source": "TEMARIO.md:93",
+      "promise": "Inference Tables y flatten JSON",
+      "slides": [
+        "slide-25",
+        "slide-26",
+        "slide-27",
+        "slide-28",
+        "slide-29"
+      ],
+      "practice": [
+        "CONSIGNA.md#cp5"
+      ],
+      "expected_student_outputs": [
+        "entregas/s08-inference.md"
+      ],
+      "provided_files_checked": [
+        "notebook.py",
+        "CONSIGNA.md",
+        "GUIA-DOCENTE.md",
+        "lab/lab_monitor.py",
+        "lab/lab_parse_contract.sql"
+      ],
+      "status": "COVERED",
+      "assessment": "CP5 correlaciona solicitud real con raw/flat; parser fixture distinguido del logging."
+    },
+    {
+      "id": "S08-MONITOR",
+      "source": "TEMARIO.md:93,109",
+      "promise": "Lakehouse Monitoring y drift",
+      "slides": [
+        "slide-09",
+        "slide-30",
+        "slide-31",
+        "slide-32",
+        "slide-33",
+        "slide-34",
+        "slide-50"
+      ],
+      "practice": [
+        "CONSIGNA.md#cp6"
+      ],
+      "expected_student_outputs": [
+        "entregas/s08-monitor.md"
+      ],
+      "provided_files_checked": [
+        "notebook.py",
+        "CONSIGNA.md",
+        "GUIA-DOCENTE.md",
+        "lab/lab_monitor.py"
+      ],
+      "status": "COVERED",
+      "assessment": "CP6 exige refresh y lectura con ventana, count y baseline; 42/42 son métricas, no solicitudes."
+    },
+    {
+      "id": "S08-GATEWAY",
+      "source": "TEMARIO.md:94",
+      "promise": "AI Gateway: inference/usage tables, rate limiting y costos",
+      "slides": [
+        "slide-35",
+        "slide-36"
+      ],
+      "practice": [
+        "CONSIGNA.md#cp6"
+      ],
+      "expected_student_outputs": [
+        "entregas/s08-gateway.md"
+      ],
+      "provided_files_checked": [
+        "notebook.py",
+        "CONSIGNA.md",
+        "GUIA-DOCENTE.md",
+        "lab/lab_costs.sql"
+      ],
+      "status": "COVERED",
+      "assessment": "Media slide original ampliada a decisión de consumo/límite con matriz de capacidades; no exige feature no soportada ni inventa factura."
+    },
+    {
+      "id": "S08-PROMPTS",
+      "source": "TEMARIO.md:94",
+      "promise": "MLflow Prompt Registry con aliases",
+      "slides": [
+        "slide-41",
+        "slide-42"
+      ],
+      "practice": [
+        "CONSIGNA.md#cp7"
+      ],
+      "expected_student_outputs": [
+        "entregas/s08-prompts.md"
+      ],
+      "provided_files_checked": [
+        "notebook.py",
+        "CONSIGNA.md",
+        "GUIA-DOCENTE.md",
+        "lab/lab_prompts.py"
+      ],
+      "status": "COVERED",
+      "assessment": "Registro, alias y reversión explicados; prompt fijado en artefacto no cambia al mover alias."
+    },
+    {
+      "id": "S08-CERT",
+      "source": "TEMARIO.md:95,116",
+      "promise": "Cierre y preparación Generative AI Engineer Associate, seis dominios",
+      "slides": [
+        "slide-46",
+        "slide-47",
+        "slide-48",
+        "slide-49",
+        "slide-50",
+        "slide-51"
+      ],
+      "practice": [
+        "CONSIGNA.md#cp8"
+      ],
+      "expected_student_outputs": [
+        "entregas/s08-cert.md"
+      ],
+      "provided_files_checked": [
+        "notebook.py",
+        "CONSIGNA.md",
+        "GUIA-DOCENTE.md",
+        "CERTIFICACION.md"
+      ],
+      "status": "COVERED",
+      "assessment": "Seis dominios y 12 preguntas originales con razones; cuatro en cierre y ocho posteriores, sin garantía de examen."
+    },
+    {
+      "id": "S08-CLOUD",
+      "source": "TEMARIO.md:96",
+      "promise": "Model Serving y equivalentes GCP/Azure/AWS",
+      "slides": [
+        "slide-45"
+      ],
+      "practice": [
+        "CONSIGNA.md#cp8"
+      ],
+      "expected_student_outputs": [
+        "entregas/s08-cloud.md"
+      ],
+      "provided_files_checked": [
+        "notebook.py",
+        "CONSIGNA.md",
+        "GUIA-DOCENTE.md",
+        "CERTIFICACION.md"
+      ],
+      "status": "COVERED",
+      "assessment": "Equivalencia funcional de tres proveedores y comparación del alumno; cápsula conceptual, no triple despliegue."
+    },
+    {
+      "id": "S08-FINAL",
+      "source": "TEMARIO.md:100–116",
+      "promise": "Copiloto desplegado, evaluado, gobernado y monitoreado con UI Apps",
+      "slides": [
+        "slide-01",
+        "slide-02",
+        "slide-03",
+        "slide-06",
+        "slide-14",
+        "slide-20",
+        "slide-24",
+        "slide-29",
+        "slide-33",
+        "slide-43",
+        "slide-44",
+        "slide-52"
+      ],
+      "practice": [
+        "CONSIGNA.md#cp8"
+      ],
+      "expected_student_outputs": [
+        "entregas/s08-final.md"
+      ],
+      "provided_files_checked": [
+        "notebook.py",
+        "CONSIGNA.md",
+        "GUIA-DOCENTE.md"
+      ],
+      "status": "COVERED",
+      "assessment": "Manifestación de consulta, versión, evaluación, gobierno, interfaz y monitor con recuperación; entregas del alumno pendientes hasta dictado."
+    }
+  ],
+  "independent_deck_inventory": [
+    {
+      "slide": "slide-01",
+      "title": "El copiloto termina cuando otro usuario puede operarlo",
+      "requirements": [
+        "S08-FINAL",
+        "S08-CONTINUITY"
+      ]
+    },
+    {
+      "slide": "slide-02",
+      "title": "La clase conecta una llamada con su evidencia",
+      "requirements": [
+        "S08-FINAL"
+      ]
+    },
+    {
+      "slide": "slide-03",
+      "title": "Cada entrega debe permitir repetir una decisión",
+      "requirements": [
+        "S08-FINAL"
+      ]
+    },
+    {
+      "slide": "slide-04",
+      "title": "Neptuno conserva datos, herramientas y controles",
+      "requirements": [
+        "S08-CONTINUITY"
+      ]
+    },
+    {
+      "slide": "slide-05",
+      "title": "Una solicitud cruza tres identidades diferentes",
+      "requirements": [
+        "S08-APPS",
+        "S08-CONTINUITY"
+      ]
+    },
+    {
+      "slide": "slide-06",
+      "title": "Antes de desplegar comprobamos el acceso necesario",
+      "requirements": [
+        "S08-FINAL"
+      ]
+    },
+    {
+      "slide": "slide-07",
+      "title": "Model Serving reúne tres tipos de servicio",
+      "requirements": [
+        "S08-SERVING"
+      ]
+    },
+    {
+      "slide": "slide-08",
+      "title": "Serverless elimina servidores que administrar, no la espera",
+      "requirements": [
+        "S08-SERVING"
+      ]
+    },
+    {
+      "slide": "slide-09",
+      "title": "La latencia total suma más que el tiempo del modelo",
+      "requirements": [
+        "S08-SERVING",
+        "S08-MONITOR"
+      ]
+    },
+    {
+      "slide": "slide-10",
+      "title": "Un notebook depende de un contexto que Serving no tiene",
+      "requirements": [
+        "S08-DEPLOY",
+        "S08-CONTINUITY"
+      ]
+    },
+    {
+      "slide": "slide-11",
+      "title": "Empaquetar el agente conserva su contrato de entrada y salida",
+      "requirements": [
+        "S08-DEPLOY"
+      ]
+    },
+    {
+      "slide": "slide-12",
+      "title": "Registrar una versión fija permite repetir la prueba",
+      "requirements": [
+        "S08-DEPLOY",
+        "S08-CONTINUITY"
+      ]
+    },
+    {
+      "slide": "slide-13",
+      "title": "Deploy model y deploy code responden preguntas distintas",
+      "requirements": [
+        "S08-DEPLOY"
+      ]
+    },
+    {
+      "slide": "slide-14",
+      "title": "Un endpoint listo todavía necesita una prueba funcional",
+      "requirements": [
+        "S08-SERVING",
+        "S08-FINAL"
+      ]
+    },
+    {
+      "slide": "slide-15",
+      "title": "Los fallos enseñan qué frontera revisar primero",
+      "requirements": [
+        "S08-SERVING",
+        "S08-APPS"
+      ]
+    },
+    {
+      "slide": "slide-16",
+      "title": "Un alias nombra una versión, no reparte tráfico",
+      "requirements": [
+        "S08-ROLLOUT"
+      ]
+    },
+    {
+      "slide": "slide-17",
+      "title": "Canary limita exposición y A/B compara alternativas",
+      "requirements": [
+        "S08-ROLLOUT"
+      ]
+    },
+    {
+      "slide": "slide-18",
+      "title": "Decidimos el rollback antes de observar el resultado",
+      "requirements": [
+        "S08-ROLLOUT",
+        "S08-CONTINUITY"
+      ]
+    },
+    {
+      "slide": "slide-19",
+      "title": "La práctica termina al restaurar y volver a consultar",
+      "requirements": [
+        "S08-ROLLOUT"
+      ]
+    },
+    {
+      "slide": "slide-20",
+      "title": "La pausa deja una versión estable para continuar",
+      "requirements": [
+        "S08-FINAL"
+      ]
+    },
+    {
+      "slide": "slide-21",
+      "title": "Una App convierte la API en una tarea para una persona",
+      "requirements": [
+        "S08-APPS"
+      ]
+    },
+    {
+      "slide": "slide-22",
+      "title": "Autenticar al usuario no garantiza filtrar sus datos",
+      "requirements": [
+        "S08-APPS",
+        "S08-CONTINUITY"
+      ]
+    },
+    {
+      "slide": "slide-23",
+      "title": "Los recursos declarados evitan credenciales pegadas al código",
+      "requirements": [
+        "S08-APPS"
+      ]
+    },
+    {
+      "slide": "slide-24",
+      "title": "Probamos la interfaz con éxito y con error",
+      "requirements": [
+        "S08-APPS",
+        "S08-FINAL"
+      ]
+    },
+    {
+      "slide": "slide-25",
+      "title": "Una llamada correcta puede dejar evidencia incompleta",
+      "requirements": [
+        "S08-INFERENCE"
+      ]
+    },
+    {
+      "slide": "slide-26",
+      "title": "Inference Tables conservan el intercambio para analizarlo",
+      "requirements": [
+        "S08-INFERENCE"
+      ]
+    },
+    {
+      "slide": "slide-27",
+      "title": "Aplanar JSON convierte el intercambio en columnas medibles",
+      "requirements": [
+        "S08-INFERENCE"
+      ]
+    },
+    {
+      "slide": "slide-28",
+      "title": "Una fila defectuosa debe ser visible, no desaparecer",
+      "requirements": [
+        "S08-INFERENCE"
+      ]
+    },
+    {
+      "slide": "slide-29",
+      "title": "Seguimos una solicitud real hasta su fila procesada",
+      "requirements": [
+        "S08-INFERENCE",
+        "S08-FINAL"
+      ]
+    },
+    {
+      "slide": "slide-30",
+      "title": "Monitorear operación y calidad exige señales distintas",
+      "requirements": [
+        "S08-MONITOR",
+        "S08-CONTINUITY"
+      ]
+    },
+    {
+      "slide": "slide-31",
+      "title": "Drift señala un cambio, no demuestra una falla",
+      "requirements": [
+        "S08-MONITOR"
+      ]
+    },
+    {
+      "slide": "slide-32",
+      "title": "El monitor necesita una tabla y una comparación",
+      "requirements": [
+        "S08-MONITOR"
+      ]
+    },
+    {
+      "slide": "slide-33",
+      "title": "Crear el monitor no equivale a obtener métricas",
+      "requirements": [
+        "S08-MONITOR",
+        "S08-FINAL"
+      ]
+    },
+    {
+      "slide": "slide-34",
+      "title": "Una alerta útil indica quién debe hacer qué",
+      "requirements": [
+        "S08-MONITOR",
+        "S08-ROLLOUT"
+      ]
+    },
+    {
+      "slide": "slide-35",
+      "title": "AI Gateway permite observar y limitar según el endpoint",
+      "requirements": [
+        "S08-GATEWAY"
+      ]
+    },
+    {
+      "slide": "slide-36",
+      "title": "El costo combina inferencia, servicio y datos",
+      "requirements": [
+        "S08-GATEWAY"
+      ]
+    },
+    {
+      "slide": "slide-37",
+      "title": "El bundle describe recursos que podemos revisar en Git",
+      "requirements": [
+        "S08-BUNDLES"
+      ]
+    },
+    {
+      "slide": "slide-38",
+      "title": "Separar entornos exige más que cambiar un nombre",
+      "requirements": [
+        "S08-BUNDLES"
+      ]
+    },
+    {
+      "slide": "slide-39",
+      "title": "La promoción se detiene si falla una puerta de calidad",
+      "requirements": [
+        "S08-BUNDLES"
+      ]
+    },
+    {
+      "slide": "slide-40",
+      "title": "Podemos revisar el plan antes de desplegar el target",
+      "requirements": [
+        "S08-BUNDLES"
+      ]
+    },
+    {
+      "slide": "slide-41",
+      "title": "Versionar el prompt permite explicar qué cambió",
+      "requirements": [
+        "S08-PROMPTS"
+      ]
+    },
+    {
+      "slide": "slide-42",
+      "title": "El rollback del prompt también necesita una prueba",
+      "requirements": [
+        "S08-PROMPTS",
+        "S08-CONTINUITY"
+      ]
+    },
+    {
+      "slide": "slide-43",
+      "title": "El portafolio reúne el recorrido completo del copiloto",
+      "requirements": [
+        "S08-FINAL",
+        "S08-CONTINUITY"
+      ]
+    },
+    {
+      "slide": "slide-44",
+      "title": "La entrega se evalúa por evidencia, no por capturas bonitas",
+      "requirements": [
+        "S08-FINAL"
+      ]
+    },
+    {
+      "slide": "slide-45",
+      "title": "Los equivalentes cloud cumplen funciones comparables",
+      "requirements": [
+        "S08-CLOUD"
+      ]
+    },
+    {
+      "slide": "slide-46",
+      "title": "El examen evalúa decisiones en seis dominios",
+      "requirements": [
+        "S08-CERT"
+      ]
+    },
+    {
+      "slide": "slide-47",
+      "title": "Un endpoint disponible puede incumplir el contrato",
+      "requirements": [
+        "S08-CERT",
+        "S08-CONTINUITY"
+      ]
+    },
+    {
+      "slide": "slide-48",
+      "title": "Mover champion no prueba que el servicio cambió",
+      "requirements": [
+        "S08-CERT",
+        "S08-ROLLOUT"
+      ]
+    },
+    {
+      "slide": "slide-49",
+      "title": "El permiso de la App no reemplaza el del usuario",
+      "requirements": [
+        "S08-CERT",
+        "S08-APPS"
+      ]
+    },
+    {
+      "slide": "slide-50",
+      "title": "Una métrica de drift pide investigar antes de actuar",
+      "requirements": [
+        "S08-CERT",
+        "S08-MONITOR"
+      ]
+    },
+    {
+      "slide": "slide-51",
+      "title": "Tu plan de estudio parte de errores que puedes explicar",
+      "requirements": [
+        "S08-CERT"
+      ]
+    },
+    {
+      "slide": "slide-52",
+      "title": "Cerramos con una demostración y un límite explícito",
+      "requirements": [
+        "S08-FINAL"
+      ]
+    }
+  ],
+  "missing_promises": [],
+  "material_discrepancies": [],
+  "evidence": [
+    {
+      "path": "TEMARIO.md:87–116; PROJECT.md: Parámetros y cierre S08",
+      "observation": "Inventario original contrastado con 13 requisitos; todas las promesas S08 y portfolio permanecen."
+    },
+    {
+      "path": "index.html; README.md; ABRIR-NOTEBOOK-DOCENTE.md",
+      "observation": "Nuevo acceso docente preconfigurado separado del starter; modo verificar no elimina instrucciones de construcción ni CP0–8 del alumno."
+    },
+    {
+      "path": "CONSIGNA.md; ENTREGA.md; slides/content.json; EJEMPLO-RESUELTO.md",
+      "observation": "Cada promesa tiene salida concreta y criterio; archivos provided_files existen en destinatario local. 52 slides inventariadas sin temas huérfanos."
+    },
+    {
+      "path": "reports/class-day-browser.json",
+      "observation": "Hoy Chrome autenticado: venta116024.88 con fuente y aclaración sin año; app_source_sha256 coincide. El pendiente SSO histórico no describe este ensayo."
+    },
+    {
+      "path": "reports/class-day-smoke-serving.json",
+      "observation": "Seis casos PASS de endpoint hoy; no implica evaluación completa de calidad ni ejecución de alumno."
+    },
+    {
+      "path": "PLAN-CLASE.md; VALIDACION.md",
+      "observation": "180 minutos estimados con prewarm y espera cloud explícita; canary iniciado antes del bloque, rollback pendiente hasta observado; CI conceptual y limitaciones no ocultas."
+    },
+    {
+      "path": "alumnos/s08-deployment/{README.md,VALIDACION.md,index.html}",
+      "observation": "Revisión posterior a sincronización final: los tres contenidos son idénticos al docente por bytes. Acceso docente diferenciado del starter, CP4 real28/09 e instrucciones de preparación mantienen el contrato. Hashes destinatario renovados tras lectura directa."
+    }
+  ],
+  "findings": [
+    {
+      "id": "HISTORICAL-SSO",
+      "severity": "info",
+      "locator": "EJEMPLO-RESUELTO.md#S08-APPS; VALIDACION.md",
+      "description": "Ejemplo fechado27/09 conserva SSO pendiente; VALIDACION remite expresamente al ensayo28/09 aprobado. No tratar ese corte histórico como estado actual."
+    },
+    {
+      "id": "DOCENT-DEFAULTS",
+      "severity": "info",
+      "locator": "ABRIR-NOTEBOOK-DOCENTE.md; reports/teacher-delivery-judge.json",
+      "description": "Se corrigió una brecha real de arranque: prueba antigua usaba parámetros Job. Nueva copia tiene defaults comprobados sin overrides; starter sigue requiriendo recursos del alumno."
+    }
+  ],
+  "unverified": [
+    "Aprendizaje, entregas, permisos y consentimiento individual de la cohorte; no se exige evidencia antes de dictado.",
+    "No repetí cloud; revisé evidencia fechada y materiales. Disponibilidad futura no garantizada.",
+    "CI remoto, promoción productiva, despliegue por bundle y despliegues equivalentes en otras nubes no ejecutados.",
+    "Rate limiting/usage tracking no soportados del endpoint agente y factura total no medidos.",
+    "Este informe no ratifica por sí solo el cierre agregado de tres jueces y QA."
+  ],
+  "previous_report_archived": "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/judge-history/curriculum-judge-20260928T193255Z-pre-student-sync.json"
+}

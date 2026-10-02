@@ -1,0 +1,806 @@
+{
+  "schema_version": "1.1",
+  "run_id": "astra-normative-review-002",
+  "generated_at_utc": "2026-09-27T23:24:09.256780+00:00",
+  "skill_invocation": {
+    "run_id": "astra-normative-review-002",
+    "started_at_utc": "2026-09-27T23:20:42.000460+00:00",
+    "skill_id": "SK09",
+    "skill_version": "0.1.1",
+    "skill_path": "skills/sbs-evaluacion-jueces/SKILL.md",
+    "skill_sha256": "04c93c1d894905bb8053b74b14817d44c08363d1abee80c9b0bfdd37c5367be1",
+    "protocol_path": "skills/sbs-evaluacion-jueces/references/revision-ia.md",
+    "protocol_sha256": "8ee94f8b3b26614996e07d86cf6c9ce878d29240009e922f4305639933506b25",
+    "model": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "mode": "independent_ai_pilot_review",
+    "inputs": [
+      {
+        "path": "skills/sbs-evaluacion-jueces/SKILL.md",
+        "sha256": "04c93c1d894905bb8053b74b14817d44c08363d1abee80c9b0bfdd37c5367be1"
+      },
+      {
+        "path": "skills/sbs-evaluacion-jueces/references/revision-ia.md",
+        "sha256": "8ee94f8b3b26614996e07d86cf6c9ce878d29240009e922f4305639933506b25"
+      },
+      {
+        "path": "docs/12-spec-agente-v0.2.md",
+        "sha256": "7a028d0881c630950f69949229011238264fcaef3b70109776b3458c03929344"
+      },
+      {
+        "path": "runs/sk02-repository-capture.json",
+        "sha256": "5aa790331595736d982719f6a271da537557b2e9f2c0b9f9259065618cb53402"
+      },
+      {
+        "path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/context/pilot-repository-manifest.json",
+        "sha256": "c996f89c07ac21813c065fd7eb5e4364455d498bc0bbf58c07e4370832b2669c"
+      },
+      {
+        "path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/66/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342.pdf",
+        "sha256": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342"
+      },
+      {
+        "path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/rawtext.txt",
+        "sha256": "c9422c55c0a4f13ba2d94918e7f23ff401ede29b9f9448e23be57468b7e8073c"
+      },
+      {
+        "path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/result.json",
+        "sha256": "3bf4d7227a281a90422e64726a427b7aaae2e4499d11a62d2bfd2b1e0d12e11e"
+      },
+      {
+        "path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/10/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771.pdf",
+        "sha256": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771"
+      },
+      {
+        "path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/rawtext.txt",
+        "sha256": "66b63adace8a5e1f053d9af72b0c5fe45780cba6b6c1d0670673f1fcde919ce2"
+      },
+      {
+        "path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/result.json",
+        "sha256": "aca479067212837e1b6d90742892ca630a2ab0699e27b447eb729379c9d19379"
+      },
+      {
+        "path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/b8/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18.pdf",
+        "sha256": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18"
+      },
+      {
+        "path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/rawtext.txt",
+        "sha256": "1481d6a74d7f6988a2bdcb10081724101b41553fdfca03279a3dcb8076d96a3a"
+      },
+      {
+        "path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/result.json",
+        "sha256": "65b2304a6379933215424b0d077881bfd3ab9fcd631512ae1575e55013960488"
+      }
+    ],
+    "prior_run": "runs/astra-normative-review-001.json",
+    "status": "completed",
+    "output_artifacts": [
+      "runs/astra-normative-review.json",
+      "runs/astra-504-character-diff.json"
+    ]
+  },
+  "prior_run": {
+    "path": "runs/astra-normative-review-001.json",
+    "sha256": "fa5574a48c9af4c13960130a76be97c4f2969e1ea8e97806bc2d46e54056ee08",
+    "scope": "Earlier snapshot data/raw/pilot with no originals; retained unchanged."
+  },
+  "reviewer": {
+    "kind": "ai_independent_review",
+    "model": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "model_identification_basis": "Explicit user designation and parent dispatch for GPT-6 Astra high; no separate provider response metadata attached.",
+    "role": "Independent reviewer, not component author in this task",
+    "human_review": false,
+    "human_gold": false,
+    "institutional_approval": false,
+    "review_completed_for_available_evidence": true
+  },
+  "authorization": {
+    "ai_pilot_review_authorized": true,
+    "human_reviewer_required_for_this_pilot_review": false,
+    "conversation_requires_human_approval": false,
+    "institutional_impact_approval": "Separate authorized institutional workflow; not granted by this report."
+  },
+  "protocol": {
+    "id": "sbs-pilot-normative-rubric-v1",
+    "created_before_normative_scoring": true,
+    "rubric": [
+      {
+        "id": "R01",
+        "dimension": "Identidad, versión y cobertura",
+        "required_evidence": [
+          "Originales antes/después o actos fuente de reconstrucción con URL, captura y SHA256",
+          "Familia, norma, disposición y páginas/offsets de cada lado",
+          "Inventario de anexos, correcciones y documentos faltantes"
+        ],
+        "pass": "Las dos contrapartes pertenecen al par declarado; toda reconstrucción se etiqueta y conserva actos fuente; cobertura explícita.",
+        "fail": "Emparejamiento incorrecto, reconstrucción presentada como consolidación oficial o anexo omitido silenciosamente.",
+        "not_evaluated": "Falta una contraparte o no puede verificarse su contenido/procedencia."
+      },
+      {
+        "id": "R02",
+        "dimension": "Antes y después",
+        "required_evidence": [
+          "Span literal localizable antes",
+          "Span literal localizable después",
+          "Contexto suficiente de artículo/inciso/anexo"
+        ],
+        "pass": "Ambos textos son fieles; no se elimina una condición, excepción, sujeto, unidad o encabezado determinante. Inserción/supresión solo se afirma con cobertura suficiente.",
+        "fail": "Cita inventada, texto de otra versión o recorte que altera sentido.",
+        "not_evaluated": "No hay originales citables de ambos lados o cobertura para probar ausencia."
+      },
+      {
+        "id": "R03",
+        "dimension": "Cambio textual y relación normativa",
+        "required_evidence": [
+          "Alineamiento por unidad atómica",
+          "Operación textual y fundamento de relación entre actos",
+          "Listado de cambios detectados con IDs únicos por par/disposición"
+        ],
+        "pass": "Se distingue adición, supresión, sustitución, renumeración y cambio de redacción; la consecuencia obligacional se fundamenta separadamente.",
+        "fail": "Se infiere derogación, nueva obligación o ausencia de cambios solo del ranking, de una noticia o de extracción incompleta.",
+        "not_evaluated": "Sin diff de originales completos ni referencia independiente de cambios."
+      },
+      {
+        "id": "R04",
+        "dimension": "Temporalidad y aplicabilidad",
+        "required_evidence": [
+          "Cláusulas citables de publicación/efecto o fuentes oficiales explícitas",
+          "Fecha de captura/conocimiento",
+          "Sujetos, excepciones y transitorios aplicables"
+        ],
+        "pass": "Publicación, efecto y conocimiento se separan; plazo y ámbito cuentan con sustento y se exponen dudas.",
+        "fail": "Se usa versión de URL como fecha de efecto, se presume vigencia actual o se presenta proyecto como norma obligatoria.",
+        "not_evaluated": "Faltan cláusulas o actos pertinentes; no completar fechas por inferencia."
+      },
+      {
+        "id": "R05",
+        "dimension": "Implicancias propuestas",
+        "required_evidence": [
+          "Afirmación normativa y sus pasajes",
+          "Proceso/control ficticio identificado como simulado",
+          "Razonamiento explícito y supuestos que conectan norma y proceso"
+        ],
+        "pass": "Se distingue hecho normativo, interpretación y acción propuesta. La revisión IA puede opinar, pero no adjudica aprobación institucional ni acredita cumplimiento real.",
+        "fail": "Se convierte una sugerencia en obligación no sustentada o en impacto aprobado; el catálogo ficticio se cita como fuente legal.",
+        "not_evaluated": "No hay norma fuente o no hay respuesta/catálogo para juzgar la implicancia."
+      },
+      {
+        "id": "R06",
+        "dimension": "Citas, incertidumbre y conversación",
+        "required_evidence": [
+          "Respuesta materializada con afirmaciones y citas",
+          "Documento/versión/disposición/página u offsets verificables",
+          "Contexto activo y cobertura visible"
+        ],
+        "pass": "Cada afirmación material está sustentada; se informa insuficiencia y estado de revisión IA/propuesta sin requerir revisión humana para conversar.",
+        "fail": "Se ocultan faltantes, se confunde historial con fuente, se hereda aprobación tras cambiar evidencia o se desbloquea chat únicamente con experto.",
+        "not_evaluated": "No hay respuesta materializada con evidencias."
+      }
+    ],
+    "rating_policy": "Use passed/failed/not_evaluated per criterion and family. Do not compute an aggregate score when evidence is missing. Critical factual errors are not offset by writing quality.",
+    "critical_error_definitions": [
+      "Invented or materially altered source text",
+      "Wrong counterpart/version causing a false change",
+      "Unsupported obligation, deadline, repeal, effective date or applicability",
+      "Silent omission of a materially relevant annex/condition",
+      "Incomplete extraction represented as no changes",
+      "AI proposal represented as approved institutional impact"
+    ],
+    "accepted_change_thresholds": {
+      "recall": 0.95,
+      "precision": 0.9,
+      "critical_omissions": 0,
+      "citations_faithful_and_localizable": 1.0,
+      "test_insufficiencies_flagged": 1.0,
+      "median_paired_total_review_time_reduction": 0.3
+    },
+    "retrieval_protocol": {
+      "status": "not_evaluated",
+      "k": null,
+      "thresholds": null,
+      "reason": "No real corpus/qrels frozen; detection thresholds are not retrieval thresholds."
+    },
+    "reference_policy": "This run provides explicitly provisional independent AI annotations grounded in captured originals for the stated spans. It provides no human gold or institutional approval; it does not adjudicate complete current legal effect.",
+    "future_comparison_policy": "Score before/after outputs with frozen evidence and rubric; retain disagreements and model/prompt metadata. If answer variants are compared, mask variant identity when feasible. Reserve complete pairs and related versions/documents; do not tune on holdout judgments."
+  },
+  "corpus_snapshot": {
+    "root": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository",
+    "capture_run": "sk02-repository-capture-20260927T231820Z",
+    "captured_at": "2026-09-27T23:18:21.612671+00:00",
+    "source_count": 3,
+    "original_hashes_independently_verified": true,
+    "sources": [
+      {
+        "document_id": "sbs-3274-2017",
+        "version_id": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+        "url": "https://intranet2.sbs.gob.pe/dv_int_cn/1731/v7.0/Adjuntos/3274-2017.R.pdf",
+        "pages": 34,
+        "quality": {
+          "status": "partial",
+          "limitations": [
+            "annex_references_pending",
+            "layout_table_review_pending",
+            "semantic_segmentation_pending"
+          ]
+        },
+        "published_on_verified": null,
+        "effective_on_global_verified": null
+      },
+      {
+        "document_id": "sbs-504-2021",
+        "version_id": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771",
+        "url": "https://intranet2.sbs.gob.pe/dv_int_cn/2046/v4.0/Adjuntos/504-2021.R.pdf",
+        "pages": 23,
+        "quality": {
+          "status": "partial",
+          "limitations": [
+            "annex_references_pending",
+            "layout_table_review_pending",
+            "semantic_segmentation_pending"
+          ]
+        },
+        "published_on_verified": null,
+        "effective_on_global_verified": null
+      },
+      {
+        "document_id": "sbs-504-2021",
+        "version_id": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+        "url": "https://intranet2.sbs.gob.pe/dv_int_cn/2046/v5.0/Adjuntos/504-2021.R%20.pdf",
+        "pages": 23,
+        "quality": {
+          "status": "partial",
+          "limitations": [
+            "annex_references_pending",
+            "layout_table_review_pending",
+            "semantic_segmentation_pending"
+          ]
+        },
+        "published_on_verified": null,
+        "effective_on_global_verified": null
+      }
+    ],
+    "classification": "Downloaded original PDF bytes from official repository, containing texts and modification annotations. Not claimed to be an original unamended 2021 text or an independently certified complete official consolidation.",
+    "documentary_comparison_pair_count": 1,
+    "complete_legal_history_pair_count_verified": 0,
+    "scope_limits": [
+      "Both 504-2021 PDFs have 23 pages; original hashes differ. Text screening covered the full extracted streams; visual review covered PDF pages 12,13,15,23 in each copy.",
+      "3274-2017 PDF has 34 pages; hash verified and first extracted page identifies resolution. No second counterpart is present, and no substantive conduct-of-market before/after review is claimed.",
+      "Extraction remains partial: annex references, tables/layout and semantic segmentation not fully reviewed.",
+      "Modifying acts 2286-2024, 3240-2023, 3797-2023, 1515-2021 are referenced in the inspected PDFs but their complete originals are not included in this review.",
+      "pypdf xref warning was reported by SK02. Inspected rendered pages are legible, but no conclusion about all pages follows."
+    ]
+  },
+  "method": {
+    "source_policy": "Only SK02 frozen original PDFs and derivatives; no new web search or news-based legal assertions.",
+    "candidate_discovery": "Compared full extracted streams after removing whitespace and repeated Los Laureles footer lines, then inspected differences. Normalized strings are discovery aids only, never citation text.",
+    "diff_artifact": "runs/astra-504-character-diff.json",
+    "visual_verification": {
+      "renderer": "pdftoppm",
+      "dpi": 110,
+      "pages_per_pdf": [
+        12,
+        13,
+        15,
+        23
+      ],
+      "pages_inspected": 8,
+      "evidence_images": [
+        "tmp/pdfs/astra-review/source-1-page-12.png",
+        "tmp/pdfs/astra-review/source-1-page-13.png",
+        "tmp/pdfs/astra-review/source-1-page-15.png",
+        "tmp/pdfs/astra-review/source-1-page-23.png",
+        "tmp/pdfs/astra-review/source-2-page-12.png",
+        "tmp/pdfs/astra-review/source-2-page-13.png",
+        "tmp/pdfs/astra-review/source-2-page-15.png",
+        "tmp/pdfs/astra-review/source-2-page-23.png"
+      ]
+    },
+    "independence": "No SK03 VersionPair/result supplied to this invocation; independent candidate review from originals. Findings are AI annotations, not a measured evaluation of a constructor output.",
+    "blinding": "Repository labels visible for provenance; no blind answer-variant comparison performed.",
+    "completeness": "One material textual paragraph difference verified; not asserted as exhaustive legal-change inventory."
+  },
+  "citations": {
+    "v4-art20-3": {
+      "document_id": "sbs-504-2021",
+      "version_id": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2046/v4.0/Adjuntos/504-2021.R.pdf",
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/10/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771.pdf",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/rawtext.txt",
+      "original_sha256": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771",
+      "page": 13,
+      "provision": "20.3",
+      "citation_id": "2ffda3aea66db35068ca7cd94dece7d333dfb497206d0e6932831a49dee73af6",
+      "start": 38158,
+      "end": 38598,
+      "offset_unit": "Unicode code points, zero-based, end-exclusive in rawtext.txt",
+      "quote_raw": "20.3 Las operaciones no reconocidas por los clientes que h ayan sido efectuadas en aplicación  de la \nexención señalada en el párrafo 20.2 del presente artículo, o que fueron realizadas luego de que el \nusuario reportara el  robo o pérdida de sus credenciales, son responsabilidad de la empresa , para lo  \ncual debe n implementar mecanismos que ante el repudio de la operación por parte del usuario \ngaranticen su aplicación inmediata. \n \n",
+      "visual_original_verified": true
+    },
+    "v5-art20-3": {
+      "document_id": "sbs-504-2021",
+      "version_id": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2046/v5.0/Adjuntos/504-2021.R%20.pdf",
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/b8/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18.pdf",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/rawtext.txt",
+      "original_sha256": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+      "page": 13,
+      "provision": "20.3",
+      "citation_id": "17ffc5739170c18d396cf0c3937b1a4455a89e4de25eed4e831a42c03326bc6a",
+      "start": 38143,
+      "end": 38584,
+      "offset_unit": "Unicode code points, zero-based, end-exclusive in rawtext.txt",
+      "quote_raw": "20.3 La empresa es responsable de las pérdidas, salvo que acredite la responsabilidad del usuario, \npor las operaciones no reconocidas por los clientes que hayan sido efectuadas por canal digital sin \ncumplir con el requisito de autenticación reforzada, o en aplicación de la exención señalada en el \npárrafo 20.2 del presente artículo, o que fueron realizadas luego de que el usuario reportara el robo o \npérdida de sus credenciales.7 \n \n \n",
+      "visual_original_verified": true
+    },
+    "v5-note7": {
+      "document_id": "sbs-504-2021",
+      "version_id": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2046/v5.0/Adjuntos/504-2021.R%20.pdf",
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/b8/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18.pdf",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/rawtext.txt",
+      "original_sha256": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+      "page": 13,
+      "provision": "7 Párrafo modificado",
+      "citation_id": "17ffc5739170c18d396cf0c3937b1a4455a89e4de25eed4e831a42c03326bc6a",
+      "start": 40288,
+      "end": 40474,
+      "offset_unit": "Unicode code points, zero-based, end-exclusive in rawtext.txt",
+      "quote_raw": "7 Párrafo modificado por la Resolución SBS Nº 2286-2024, vigente a partir del 29/06/2024, con plazo de adecuación \nconforme al artículo séptimo de la misma Resolución SBS N°2286-2024. \n ",
+      "visual_original_verified": true
+    },
+    "v4-context-art19-20": {
+      "document_id": "sbs-504-2021",
+      "version_id": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2046/v4.0/Adjuntos/504-2021.R.pdf",
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/10/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771.pdf",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/rawtext.txt",
+      "original_sha256": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771",
+      "page": 12,
+      "provision": "Artículo 19.",
+      "citation_id": "44ced09e52ed34d2d6c06687c4ac0870169c82eecfc17d9933912afa7d5319e5",
+      "start": 34877,
+      "end": 37588,
+      "offset_unit": "Unicode code points, zero-based, end-exclusive in rawtext.txt",
+      "quote_raw": "Artículo 19. Autenticación reforzada para operaciones por canal digital \nSe requiere de autenticación reforzada para aquellas acciones que puedan originar operaciones \nfraudulentas u otro abuso del servicio en perjuicio del cliente, como las operaciones a través de un \ncanal digital que impliquen pagos o transferencia de fondos a terceros, registro de un beneficiario de \nconfianza, modificación en los productos de seguro ahorro/inversión contratados, la contratación de un \nproducto o servicio, modificación de límites y condiciones, para lo cual se requiere: \na) Utilizar una combinación de factores de autenticación , según el literal j) del artículo 2 de l \npresente Reglamento que, por lo menos, correspondan a dos categorías distintas y que sean \nindependientes uno del otro. \nb) Contar con un control ante ataques de hombre en el medio, que puede incluir un código único \ngenerado mediante métodos criptográficos, a part ir de los datos específicos de cada \noperación, el cual debe utilizarse por única vez4. \nc) Cuando la operación sea exitosa, notificar los datos de la operación al usuario. \n \nArtículo 20. Exenciones de autenticación reforzada para operaciones por canal digital \n20.1 Están exentas del requisito de autenticación  reforzada indicado en el artículo 19 del presente  \nReglamento, a excepción del indicado en el literal c), las  siguientes operaciones realizadas por canal \ndigital5: \na) Las operaciones de pago , pagos periódicos o transferencia hacia un beneficiario registrado \npreviamente por el usuario como beneficiario de confianza, como destinatario usual de dichas \noperaciones. \nb) Las operaciones de pago, pagos periódicos o transferencias a cuentas en las que el cliente y \nel beneficiario sean la misma persona, sea natural o jurídica, y siempre que dichas cuentas \nse mantengan en la misma empresa. \n \n20.2 Las operaciones de pago y transferencia que  presenten un nivel de riesgo de fraude bajo, como  \nresultado de un análisis del riesgo en línea por operación, están exentas de la autenticación reforzada, \nsiempre que la empresa cumpla con6: \ni. Implementar alguno de los estándares de la industria de pagos, EMV 3DS y tokenización de \npagos EMV, en sus versiones más recientes. \nii. Definir el monto de umbral por operación por debajo del cual  aplicará la exención por el \ncitado análisis de riesgos. \n \n3 Párrafo modificado por la Resolución SBS N° 03797-2023 del 17/11/2023, vigente a partir del 18/11/2023. \n4 Párrafo modificado por la Resolución SBS N° 03797-2023 del 17/11/2023, vigente a partir del 18/11/2023. \n5 Párrafo modificado por la Resolución SBS N° 3240-2023 del 03/10/2023. \n6 Párrafo modificado por la Resolución SBS N° 3240-2023 del 03/10/2023. ",
+      "visual_original_verified": true
+    },
+    "v5-context-art19-20": {
+      "document_id": "sbs-504-2021",
+      "version_id": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2046/v5.0/Adjuntos/504-2021.R%20.pdf",
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/b8/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18.pdf",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/rawtext.txt",
+      "original_sha256": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+      "page": 12,
+      "provision": "Artículo 19.",
+      "citation_id": "0b034a66b6b75ec44449cdf720f769bfe00df2d620fa6b18fcbe477efc6a9759",
+      "start": 34863,
+      "end": 37573,
+      "offset_unit": "Unicode code points, zero-based, end-exclusive in rawtext.txt",
+      "quote_raw": "Artículo 19. Autenticación reforzada para operaciones por canal digital \nSe requiere de autenticación reforzada para aquellas acciones que puedan originar operaciones \nfraudulentas u otro abuso del servicio en perjuicio del cliente, como las operaciones a través de un \ncanal digital que impliquen pagos o transferencia de fondos a terceros, registro de un beneficiario de \nconfianza, modificación en los productos de seguro ahorro/inversión contratados, la contratación de un \nproducto o servicio, modificación de límites y condiciones, para lo cual se requiere: \na) Utilizar una combinación de factores de autenticación , según el literal j) del artículo 2 de l \npresente Reglamento que, por lo menos, correspondan a dos categorías distintas y que sean \nindependientes uno del otro. \nb) Contar con un control ante ataques de hombre en el medio, que puede incluir un código único \ngenerado mediante métodos criptográficos, a partir de los datos específicos de cada \noperación, el cual debe utilizarse por única vez4. \nc) Cuando la operación sea exitosa, notificar los datos de la operación al usuario. \n \nArtículo 20. Exenciones de autenticación reforzada para operaciones por canal digital \n20.1 Están exentas del requisito de autenticación  reforzada indicado en el artículo 19 del presente  \nReglamento, a excepción del indicado en el literal c), las  siguientes operaciones realizadas por canal \ndigital5: \na) Las operaciones de pago , pagos periódicos o transferencia hacia un beneficiario registrado \npreviamente por el usuario como beneficiario de confianza, como destinatario usual de dichas \noperaciones. \nb) Las operaciones de pago, pagos periódicos o transferencias a cuentas en las que el cliente y \nel beneficiario sean la misma persona, sea natural o jurídica, y siempre que dichas cuentas \nse mantengan en la misma empresa. \n \n20.2 Las operaciones de pago y transferencia que  presenten un nivel de riesgo de fraude bajo, como  \nresultado de un análisis del riesgo en línea por operación, están exentas de la autenticación reforzada, \nsiempre que la empresa cumpla con6: \ni. Implementar alguno de los estándares de la industria de pagos, EMV 3DS y tokenización de \npagos EMV, en sus versiones más recientes. \nii. Definir el monto de umbral por operación por debajo del cual  aplicará la exención por el \ncitado análisis de riesgos. \n \n3 Párrafo modificado por la Resolución SBS N° 03797-2023 del 17/11/2023, vigente a partir del 18/11/2023. \n4 Párrafo modificado por la Resolución SBS N° 03797-2023 del 17/11/2023, vigente a partir del 18/11/2023. \n5 Párrafo modificado por la Resolución SBS N° 3240-2023 del 03/10/2023. \n6 Párrafo modificado por la Resolución SBS N° 3240-2023 del 03/10/2023. ",
+      "visual_original_verified": true
+    },
+    "v4-art24-3-25-notes": {
+      "document_id": "sbs-504-2021",
+      "version_id": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2046/v4.0/Adjuntos/504-2021.R.pdf",
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/10/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771.pdf",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/rawtext.txt",
+      "original_sha256": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771",
+      "page": 15,
+      "provision": "24.3",
+      "citation_id": "7b79ac24959ad7ebf0c1d074f96012d447118e2ca8f7291b7818df3fd6fd2963",
+      "start": 45582,
+      "end": 47487,
+      "offset_unit": "Unicode code points, zero-based, end-exclusive in rawtext.txt",
+      "quote_raw": "24.3 La empresa debe informar a esta Superintendencia sobre el servicio  contratado, el proveedor \ninvolucrado, los niveles de servicio acordados, infraestructura tecnológica utilizada, así como los \nprocedimientos y responsables para dar cumplimiento a los literales del a) al f), y según corresponda \ng) del párrafo anterior; como máximo treinta (30) días calendario después de iniciar la provisión del \nprocesamiento de datos8. \n \nArtículo 25.  Autorización para la contratación de servicio significativo de procesamiento de \ndatos provisto por terceros desde el exterior9 \n \n25.1 La empresa debe solicitar autorización de la Superintendencia, previo a la contratación de un \nservicio significativo de procesamiento de datos provisto por terceros desde el exterior, e n caso dicho \nservicio presente limitaciones para cumplir con los requerimientos establecidos en el párrafo 24.2 del \nartículo 24 del presente  Reglamento, la cual será respondida por la Superintendencia en el plazo de \nsesenta (60) días hábiles. Para solicitar dicha autorización las empresas deben presentar junto con su \nsolicitud, un informe con los sustentos legales de las limitaciones identificadas y una propuesta de \nplan de implementación de las medidas compensatorias. \n \n25.2 La autorización que conceda esta Superintendencia es específica al proveedor del servicio y, al \npaís y ciudad desde el que se recibe, así como a las condiciones generales que fueron objeto de la \nautorización, por lo que de existir modificaciones en ellas y , de mantenerse la limitación citada en el \npárrafo previo, se requiere de un nuevo procedimiento de autorización ante la Superintendencia. \n \n \n \nSUBCAPÍTULO V \nRÉGIMEN SIMPLIFICADO DEL SGSI-C \n \n \n7 Inciso modificado por la Resolución SBS Nº 1515-2021 del 24/05/2021. \n8 Párrafo modificado por la Resolución SBS Nº 1515-2021 del 24/05/2021. \n9 Artículo vigente a partir del 24.02.2021 ",
+      "visual_original_verified": true
+    },
+    "v5-art24-3-25-notes": {
+      "document_id": "sbs-504-2021",
+      "version_id": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2046/v5.0/Adjuntos/504-2021.R%20.pdf",
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/b8/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18.pdf",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/rawtext.txt",
+      "original_sha256": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+      "page": 15,
+      "provision": "24.3",
+      "citation_id": "e7123cc91a6ee6f0fd627f66d8e6c68ac1879c86173ed52cfe08eacc65394103",
+      "start": 45756,
+      "end": 47607,
+      "offset_unit": "Unicode code points, zero-based, end-exclusive in rawtext.txt",
+      "quote_raw": "24.3 La empresa debe informar a esta Superintendencia sobre el servicio  contratado, el proveedor \ninvolucrado, los niveles de servicio acordados, infraestructura tecnológica utilizada, así como los \nprocedimientos y responsables para dar cumplimiento a los literales del a) al f), y según corresponda \ng) del párrafo anterior; como máximo treinta (30) días calendario después de iniciar la provisión del \nprocesamiento de datos9. \n \nArtículo 25.  Autorización para la contratación de servicio significativo de procesamiento de \ndatos provisto por terceros desde el exterior10 \n \n25.1 La empresa debe solicitar autorización de la Superintendencia, previo a la contratación de un \nservicio significativo de procesamiento de datos provisto por terceros desde el exterior, e n caso dicho \nservicio presente limitaciones para cumplir con los requerimientos establecidos en el párrafo 24.2 del \nartículo 24 del presente  Reglamento, la cual será respondida por la Superintendencia en el plazo de \nsesenta (60) días hábiles. Para solicitar dicha autorización las empresas deben presentar junto con su \nsolicitud, un informe con los sustentos legales de las limitaciones identificadas y una propuesta de \nplan de implementación de las medidas compensatorias. \n \n25.2 La autorización que conceda esta Superintendencia es específica al proveedor del servicio y, al \npaís y ciudad desde el que se recibe, así como a las condiciones generales que fueron objeto de la \nautorización, por lo que de existir modificaciones en ellas y , de mantenerse la limitación citada en el \npárrafo previo, se requiere de un nuevo procedimiento de autorización ante la Superintendencia. \n \n8 Inciso modificado por la Resolución SBS Nº 1515-2021 del 24/05/2021. \n9 Párrafo modificado por la Resolución SBS Nº 1515-2021 del 24/05/2021. \n10 Artículo vigente a partir del 24.02.2021 ",
+      "visual_original_verified": true
+    },
+    "v4-vigencia": {
+      "document_id": "sbs-504-2021",
+      "version_id": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2046/v4.0/Adjuntos/504-2021.R.pdf",
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/10/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771.pdf",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/rawtext.txt",
+      "original_sha256": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771",
+      "page": 23,
+      "provision": "Artículo Décimo.",
+      "citation_id": "f6f090fa4bdeccde6a7eed30c7848715ff833bd5b444d3ed8e81483015388db0",
+      "start": 68109,
+      "end": 69467,
+      "offset_unit": "Unicode code points, zero-based, end-exclusive in rawtext.txt",
+      "quote_raw": "Artículo Décimo.- Vigencia \nLa presente Resolución entra en vigencia el 1 de julio de 2021, fecha en la que  se deroga la Circular \nG 140-2009, con excepción de lo siguiente: \n \na. Los párrafos 25.1 y 25.2 del artículo 25 del Reglamento para la Gestión de la Seguridad de la \nInformación y la Ciberseguridad, aprobado por el Artículo Primero, que entran en vigencia al \ndía siguiente de publicada la presente Resolución, fecha en la cual se deroga el artículo 7A \nde la Circular G 140-2009. \nb. El Artículo Segundo de la presente Resolución entra en vigencia a partir de la auditoría \ncorrespondiente al ejercicio 2022. \nc. Los Artículos Séptimo, Octavo y Noveno de la presente Resolución,  entran en vigencia al día \nsiguiente de la publicación de la presente Resolución, con excepción d e lo indicado en el \ninciso d. del presente Artículo. \nd. El requerimiento asociado a la inclusión conjunta de la información sobre la denominación \nsocial de la empresa emisora y el nombre comercial que la empresa asigne al producto  de \ntarjeta de crédito y/o débito , señalado en el  Artículo Séptimo de la presente Resolución , así \ncomo el requerimiento asociado a la inclusión de la dicha información en los dispositivos de \nsoporte al dinero electrónico, señalado en el artículo Octavo de la presente Resolución entran \nen vigencia el 1 de enero de 2022. \n \n \n \n",
+      "visual_original_verified": true
+    },
+    "v5-vigencia": {
+      "document_id": "sbs-504-2021",
+      "version_id": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+      "source_url": "https://intranet2.sbs.gob.pe/dv_int_cn/2046/v5.0/Adjuntos/504-2021.R%20.pdf",
+      "original_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/b8/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18.pdf",
+      "rawtext_path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/rawtext.txt",
+      "original_sha256": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+      "page": 23,
+      "provision": "Artículo Décimo.",
+      "citation_id": "ec9a4c2f3a3a61b56391b7f14b6aa9f81d7946a3bb8090beb390a7250b41d47a",
+      "start": 68272,
+      "end": 69630,
+      "offset_unit": "Unicode code points, zero-based, end-exclusive in rawtext.txt",
+      "quote_raw": "Artículo Décimo.- Vigencia \nLa presente Resolución entra en vigencia el 1 de julio de 2021, fecha en la que  se deroga la Circular \nG 140-2009, con excepción de lo siguiente: \n \na. Los párrafos 25.1 y 25.2 del artículo 25 del Reglamento para la Gestión de la Seguridad de la \nInformación y la Ciberseguridad, aprobado por el Artículo Primero, que entran en vigencia al \ndía siguiente de publicada la presente Resolución, fecha en la cual se deroga el artículo 7A \nde la Circular G 140-2009. \nb. El Artículo Segundo de la presente Resolución entra en vigencia a partir de la auditoría \ncorrespondiente al ejercicio 2022. \nc. Los Artículos Séptimo, Octavo y Noveno de la presente Resolución,  entran en vigencia al día \nsiguiente de la publicación de la presente Resolución, con excepción d e lo indicado en el \ninciso d. del presente Artículo. \nd. El requerimiento asociado a la inclusión conjunta de la información sobre la denominación \nsocial de la empresa emisora y el nombre comercial que la empresa asigne al producto  de \ntarjeta de crédito y/o débito , señalado en el  Artículo Séptimo de la presente Resolución , así \ncomo el requerimiento asociado a la inclusión de la dicha información en los dispositivos de \nsoporte al dinero electrónico, señalado en el artículo Octavo de la presente Resolución entran \nen vigencia el 1 de enero de 2022. \n \n \n \n",
+      "visual_original_verified": true
+    }
+  },
+  "normative_findings": [
+    {
+      "id": "N01",
+      "kind": "material_textual_modification",
+      "status": "passed",
+      "status_scope": "Verified existence and characterization of textual difference, not system acceptance or present legal applicability.",
+      "family": "cybersecurity",
+      "provision": "Reglamento, artículo 20.3",
+      "severity_if_omitted": "critical",
+      "citations": [
+        "v4-art20-3",
+        "v5-art20-3"
+      ],
+      "left_summary": "La copia obtenida desde v4 atribuye a la empresa las operaciones no reconocidas efectuadas bajo la exención del 20.2 o después del reporte de robo/pérdida de credenciales; exige mecanismos que garanticen aplicación inmediata ante el repudio del usuario.",
+      "right_summary": "La copia obtenida desde v5 atribuye a la empresa las pérdidas, salvo acreditación de responsabilidad del usuario; incluye operaciones digitales sin autenticación reforzada, además de la exención del 20.2 y las posteriores al reporte de robo/pérdida. No reproduce en este párrafo la cláusula de mecanismos de aplicación inmediata.",
+      "atomic_observations": [
+        {
+          "type": "substitution_and_added_condition",
+          "observation": "Responsabilidad de la empresa pasa a expresarse sobre las pérdidas y se incorpora la salvedad de que acredite responsabilidad del usuario."
+        },
+        {
+          "type": "added_explicit_scenario",
+          "observation": "Se añade el supuesto de operaciones por canal digital sin cumplir el requisito de autenticación reforzada."
+        },
+        {
+          "type": "deleted_text_in_this_paragraph",
+          "observation": "No figura en la copia v5 la oración que exige implementar mecanismos para aplicación inmediata ante repudio. Esto no acredita por sí solo derogación de cualquier deber de atención, devolución o respuesta que pudiera estar en otras disposiciones."
+        }
+      ],
+      "counting_policy": "One provision-level material difference with three explanatory facets; not three independently adjudicated gold changes.",
+      "ordering": "Left/right are document labels. A before/after legal-effective chronology is not established by folder numbers."
+    },
+    {
+      "id": "N02",
+      "kind": "source_annotation_and_temporal_limit",
+      "status": "passed",
+      "status_scope": "Existence and literal content of note 7; independent verification of modifying act and adaptation deadline is not_evaluated.",
+      "family": "cybersecurity",
+      "provision": "Página 13, nota 7 de la copia v5",
+      "citations": [
+        "v5-note7",
+        "v4-art20-3"
+      ],
+      "finding": "La nota 7 atribuye la modificación a la Resolución SBS 2286-2024, menciona vigencia a partir del 29/06/2024 y remite el plazo de adecuación al artículo séptimo de esa resolución.",
+      "qualified_temporal_value": {
+        "date": "2024-06-29",
+        "kind": "date asserted by annotation in captured official-repository PDF",
+        "modifying_act_captured": false,
+        "independent_effect_verification": "not_evaluated",
+        "adaptation_deadline": null
+      },
+      "limit": "No usar esta nota como si se hubiera leído el acto 2286-2024, ni equiparar fecha de vigencia con vencimiento de adecuación."
+    },
+    {
+      "id": "N03",
+      "kind": "editorial_renumbering_not_new_obligation",
+      "status": "passed",
+      "status_scope": "Verified note-number changes and unchanged compared note wording in inspected spans.",
+      "family": "cybersecurity",
+      "citations": [
+        "v4-art24-3-25-notes",
+        "v5-art24-3-25-notes"
+      ],
+      "finding": "Las notas 7/8/9 de la copia v4 se numeran 8/9/10 en la copia v5; las referencias a 1515-2021 y a 24.02.2021 permanecen. El cambio de numeración no demuestra nuevas obligaciones de terceros ni nuevo plazo de 30 días del 24.3.",
+      "limit": "La ubicación de texto entre páginas también cambia. El cotejo visual de p.15 evita interpretar una frontera de página como adición/supresión normativa."
+    },
+    {
+      "id": "N04",
+      "kind": "unchanged_temporal_clause_with_exceptions",
+      "status": "passed",
+      "status_scope": "Literal clause and exceptions as present in both captured PDFs, not current consolidated legal effect.",
+      "family": "cybersecurity",
+      "citations": [
+        "v4-vigencia",
+        "v5-vigencia"
+      ],
+      "finding": "Ambas copias mantienen el artículo Décimo: regla general 1 de julio de 2021 y excepciones a-d con fechas/eventos propios. Esa regla general no puede asignarse a todas las modificaciones posteriores ni a la versión v5 completa.",
+      "limit": "La fecha de publicación y todos los actos modificatorios no han sido verificados; no actualizar source.effective_on a una fecha única por este hallazgo."
+    }
+  ],
+  "proposed_implications": [
+    {
+      "id": "I01",
+      "kind": "ai_inference_proposed",
+      "source_finding": "N01",
+      "citations": [
+        "v4-art20-3",
+        "v5-art20-3",
+        "v5-context-art19-20"
+      ],
+      "proposal": "Para un banco ficticio al que resulten aplicables estas disposiciones, revisar el procedimiento de operaciones no reconocidas: distinguir ausencia de autenticación reforzada, exención del 20.2 y operación posterior al reporte de credenciales; conservar evidencia de autenticación y de la eventual responsabilidad del usuario.",
+      "reasoning": "El nuevo texto enumera esos supuestos y condiciona la salvedad a acreditar responsabilidad del usuario. La conveniencia de trazas y revisión del procedimiento es una inferencia operativa, no una exigencia técnica literal de este párrafo.",
+      "assumptions": [
+        "Banco ficticio sujeto al reglamento y operación dentro del ámbito relevante",
+        "Aplicabilidad temporal del cambio por confirmar con el acto 2286-2024 y transitorios"
+      ],
+      "institutional_approval": false
+    },
+    {
+      "id": "I02",
+      "kind": "ai_inference_proposed",
+      "source_finding": "N01",
+      "citations": [
+        "v4-art20-3",
+        "v5-art20-3",
+        "v5-note7"
+      ],
+      "proposal": "Antes de retirar controles de atención inmediata por el cambio textual, revisar las otras disposiciones aplicables y el acto modificatorio completo.",
+      "reasoning": "La ausencia de una oración en este párrafo no prueba que desaparezca una obligación en el conjunto normativo.",
+      "assumptions": [
+        "Los controles descritos pertenecen al banco ficticio; no se evaluó un proceso real"
+      ],
+      "institutional_approval": false
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "504-art20-3-documentary-comparison",
+      "family": "cybersecurity",
+      "status": "passed",
+      "status_scope": "Scoped textual comparison only",
+      "reference_kind": "ai_independent_review",
+      "left_version": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771",
+      "right_version": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+      "legal_before_after_order": "not_evaluated",
+      "findings": [
+        "N01",
+        "N02"
+      ],
+      "rubric_results": {
+        "R01": {
+          "status": "passed",
+          "scope": "identity of the two captured PDFs and paragraph correspondence; complete legal chain not_evaluated"
+        },
+        "R02": {
+          "status": "passed",
+          "scope": "art20.3 and context visually verified in both PDFs"
+        },
+        "R03": {
+          "status": "passed",
+          "scope": "literal differences and source annotation only"
+        },
+        "R04": {
+          "status": "not_evaluated",
+          "reason": "Act 2286-2024 and its adaptation clause absent; current applicability not verified"
+        },
+        "R05": {
+          "status": "passed",
+          "scope": "Explicitly conditional AI proposals I01-I02, no institutional approval"
+        },
+        "R06": {
+          "status": "not_evaluated",
+          "reason": "No agent conversation output under test"
+        }
+      }
+    },
+    {
+      "case_id": "504-note-renumbering",
+      "family": "cybersecurity",
+      "status": "passed",
+      "status_scope": "Scoped editorial comparison",
+      "findings": [
+        "N03"
+      ]
+    },
+    {
+      "case_id": "3274-before-after",
+      "family": "market_conduct",
+      "status": "not_evaluated",
+      "reason": "Single original repository PDF; no counterpart. No invented before-text or gold."
+    },
+    {
+      "case_id": "cross-family-change-comparison",
+      "family": "cross_family",
+      "status": "not_evaluated",
+      "reason": "No complete comparative pair for market_conduct and no materialized cross-family answer."
+    },
+    {
+      "case_id": "504-complete-legal-impact-and-annex-coverage",
+      "family": "cybersecurity",
+      "status": "not_evaluated",
+      "reason": "Full modifying acts, transitories, annex/table coverage and current applicability remain unverified."
+    }
+  ],
+  "family_metrics": {
+    "market_conduct": {
+      "change_recall": {
+        "status": "not_evaluated",
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No independent exhaustive reference inventory and no materialized agent run or paired time measurements; this scoped AI review is not a performance benchmark."
+      },
+      "change_precision": {
+        "status": "not_evaluated",
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No independent exhaustive reference inventory and no materialized agent run or paired time measurements; this scoped AI review is not a performance benchmark."
+      },
+      "critical_omissions": {
+        "status": "not_evaluated",
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No independent exhaustive reference inventory and no materialized agent run or paired time measurements; this scoped AI review is not a performance benchmark."
+      },
+      "faithful_localizable_citations": {
+        "status": "not_evaluated",
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No independent exhaustive reference inventory and no materialized agent run or paired time measurements; this scoped AI review is not a performance benchmark."
+      },
+      "insufficiency_detection": {
+        "status": "not_evaluated",
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No independent exhaustive reference inventory and no materialized agent run or paired time measurements; this scoped AI review is not a performance benchmark."
+      },
+      "paired_review_time_saving": {
+        "status": "not_evaluated",
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No independent exhaustive reference inventory and no materialized agent run or paired time measurements; this scoped AI review is not a performance benchmark."
+      }
+    },
+    "cybersecurity": {
+      "change_recall": {
+        "status": "not_evaluated",
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No independent exhaustive reference inventory and no materialized agent run or paired time measurements; this scoped AI review is not a performance benchmark."
+      },
+      "change_precision": {
+        "status": "not_evaluated",
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No independent exhaustive reference inventory and no materialized agent run or paired time measurements; this scoped AI review is not a performance benchmark."
+      },
+      "critical_omissions": {
+        "status": "not_evaluated",
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No independent exhaustive reference inventory and no materialized agent run or paired time measurements; this scoped AI review is not a performance benchmark."
+      },
+      "faithful_localizable_citations": {
+        "status": "not_evaluated",
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No independent exhaustive reference inventory and no materialized agent run or paired time measurements; this scoped AI review is not a performance benchmark."
+      },
+      "insufficiency_detection": {
+        "status": "not_evaluated",
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No independent exhaustive reference inventory and no materialized agent run or paired time measurements; this scoped AI review is not a performance benchmark."
+      },
+      "paired_review_time_saving": {
+        "status": "not_evaluated",
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No independent exhaustive reference inventory and no materialized agent run or paired time measurements; this scoped AI review is not a performance benchmark."
+      }
+    }
+  },
+  "harness_review": {
+    "scope": "src/sbs/evaluation/__init__.py and tests/unit/test_evaluation.py; read-only",
+    "code_modified": false,
+    "tests": {
+      "command": "python3 -m pytest tests/unit/test_evaluation.py -q",
+      "exit_code": 0,
+      "passed": 20,
+      "duration_reported_seconds": 0.01,
+      "evidence_type": "synthetic technical tests, not normative validation"
+    },
+    "findings": [
+      {
+        "id": "HR01",
+        "severity": "medium",
+        "type": "review_provenance_gap",
+        "location": "src/sbs/evaluation/__init__.py:116",
+        "test_location": "tests/unit/test_evaluation.py:131",
+        "finding": "The report copies reference.kind but drops review_provenance. An independent AI review therefore retains its kind but loses model, effort, rubric/prompt version, reviewer identity and source hashes unless an external wrapper persists them. There is no explicit AI-review test.",
+        "evidence": "Synthetic input kind=ai_independent_review and provenance actor=gpt-6-astra/effort=high/rubric=pilot-v1 returned reference_kind=ai_independent_review, report_kind=technical_only and no review_provenance field.",
+        "recommendation": "Persist typed review metadata separately from authentication; test synthetic, AI and claimed-human modes. Preserve provenance_authenticated=false unless actual authentication exists; do not gate AI review or chat on human_acceptance."
+      },
+      {
+        "id": "HR02",
+        "severity": "medium",
+        "type": "metric_scope_and_evidence_gap",
+        "location": "src/sbs/evaluation/__init__.py:78",
+        "test_location": "tests/unit/test_evaluation.py:42",
+        "finding": "Citation scoring validates Boolean assertions only. It can pass with no document, version, passage or locator; it also lacks an expected-material-claim denominator. This is documented as a technical assertion consumer, but its passed label must not be shown as independently verified citation fidelity.",
+        "evidence": "Synthetic citation {faithful:true, localizable:true}, without any source locator, yields numerator=1, denominator=1, value=1.0, status=passed. Existing test mutates the Boolean and does not check actual source linkage.",
+        "recommendation": "Label these as supplied judgments, carry judgment origin and evidence links, and add a separate evidence verification/claim-coverage gate before real citation acceptance. Do not infer real citations from this synthetic reproduction."
+      },
+      {
+        "id": "HR03",
+        "severity": "medium",
+        "type": "retrieval_threshold_label_ambiguity",
+        "location": "src/sbs/evaluation/__init__.py:146",
+        "test_location": "tests/unit/test_evaluation.py:69",
+        "finding": "retrieval_metrics emits passed/failed using _ratio default threshold=1, despite documenting measurements only and returning acceptance=not_evaluated. A measured Recall@1=0.5 is labeled failed without any frozen acceptance threshold being applied.",
+        "evidence": "retrieval_metrics([a], {a:1,b:1}, 1) gives recall.value=0.5, recall.status=failed and acceptance=not_evaluated.",
+        "recommendation": "Separate score availability from acceptance; apply acceptance only against a verified frozen protocol. Add tests showing that a raw metric alone never establishes protocol acceptance/failure."
+      }
+    ],
+    "positive_controls": [
+      {
+        "location": "src/sbs/evaluation/__init__.py:116",
+        "finding": "Always labels report technical_only, provenance_authenticated=false, legal_certification=false and human_acceptance=not_evaluated; claimed human kind cannot authenticate adjudication."
+      },
+      {
+        "location": "tests/unit/test_evaluation.py:18",
+        "finding": "Covers per-family gates, zero denominators and total review time; agent 1 plus review 15 versus baseline 10 correctly gives -0.6 saving."
+      },
+      {
+        "location": "tests/unit/test_evaluation.py:91",
+        "finding": "Covers shared document/version/derivative leakage and rejects incomplete pairs."
+      }
+    ],
+    "overall": "Technical tests pass; findings concern provenance and interpretation of metrics. They do not establish normative performance or require a human to perform the authorized pilot review.",
+    "review_run": "astra-normative-review-001",
+    "reviewed_input_hashes": {
+      "src/sbs/evaluation/__init__.py": "d6c719c8143c48cf36b1103bf661512ac8986af7ad8b0c3e7e2e2dee0e97fd4a",
+      "tests/unit/test_evaluation.py": "0b6e8612308ee89bdcd8b3c3c1bb1862d6d73c1db66c57b61ba8379513921211"
+    }
+  },
+  "final_verdict": {
+    "review_execution": "completed_for_available_sources",
+    "normative_comparison": "partial",
+    "verified_material_provision_differences": 1,
+    "note": "The count is a scoped AI review observation, not a recall denominator or a human gold label.",
+    "agent_quality_acceptance": "not_evaluated",
+    "human_adjudication": false,
+    "institutional_approval": false,
+    "e2e_acceptance": "not_evaluated"
+  },
+  "follow_up": {
+    "owner": "SK02 for missing originals, SK09 for subsequent review",
+    "missing_inputs": [
+      "Original complete Resolution 2286-2024, especially article seven and applicability/transition clauses",
+      "Counterpart for 3274-2017 and acts needed to reconstruct any proposed version pair",
+      "Remaining annex/table/layout coverage review",
+      "Actual SK03 comparison outputs and materialized agent answers for measured quality"
+    ],
+    "policy": "Preserve this AI annotation provenance and frozen input hashes. A new capture triggers a new SK09 invocation; do not relabel as human gold."
+  }
+}

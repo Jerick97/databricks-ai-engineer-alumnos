@@ -1,0 +1,526 @@
+[
+  {
+    "id": "A01",
+    "group": "decisions",
+    "n": 1,
+    "title": "Usuario, dueño y decisión",
+    "tagline": "Empieza por una tarea real.",
+    "what": "Identifica quién usa la respuesta, qué decide y quién acepta que sea correcta.",
+    "see": [
+      "Un caso reciente con entrada, pasos y resultado.",
+      "La persona que revisa y la que aprueba.",
+      "El punto del proceso donde una respuesta cambia una acción."
+    ],
+    "options": [
+      {
+        "name": "Asistente del analista",
+        "when": "La persona necesita comparar documentos antes de decidir.",
+        "tradeoff": "Reduce búsqueda; conserva la revisión humana."
+      },
+      {
+        "name": "Bandeja de revisión compartida",
+        "when": "Varios especialistas reparten y aprueban expedientes.",
+        "tradeoff": "Da seguimiento; exige responsables y estados claros."
+      },
+      {
+        "name": "Servicio para otro sistema",
+        "when": "Un proceso existente necesita cambios estructurados.",
+        "tradeoff": "Facilita integración; requiere un contrato estable."
+      }
+    ],
+    "evidence": [
+      "Mapa del proceso actual con un expediente concreto.",
+      "Dueño del caso y criterio de aceptación documentados."
+    ],
+    "mistake": "Definir un chatbot sin saber qué decisión mejora.",
+    "question": "¿Qué hizo el especialista con el último cambio normativo que revisó?",
+    "sbs": "Confirmar equipo destinatario y entidad financiera. Comparar textos no autoriza aprobar obligaciones.",
+    "links": [
+      "L1",
+      "L8",
+      "P2",
+      "P9"
+    ]
+  },
+  {
+    "id": "A02",
+    "group": "decisions",
+    "n": 2,
+    "title": "Valor y alternativa simple",
+    "tagline": "Mide el trabajo antes de prometer ahorro.",
+    "what": "Compara tiempo, errores y costo total del proceso actual con alternativas de menor complejidad.",
+    "see": [
+      "Tiempo de búsqueda, comparación y revisión por expediente.",
+      "Volumen y variación de dificultad.",
+      "Retrabajo generado por falsas alertas u omisiones."
+    ],
+    "options": [
+      {
+        "name": "Diff con revisión manual",
+        "when": "Los pares documentales están identificados y la tarea es literal.",
+        "tradeoff": "Es explicable; no interpreta cambios de significado."
+      },
+      {
+        "name": "Búsqueda y SQL",
+        "when": "La necesidad es encontrar, contar o filtrar hechos definidos.",
+        "tradeoff": "Es controlable; exige datos estructurados adecuados."
+      },
+      {
+        "name": "Síntesis asistida por modelo",
+        "when": "Explicar evidencia ahorra trabajo frente al baseline.",
+        "tradeoff": "Puede mejorar lectura; añade costo y verificación."
+      }
+    ],
+    "evidence": [
+      "Baseline medido sobre tareas comparables.",
+      "Comparación pareada que incluye tiempo del revisor."
+    ],
+    "mistake": "Contar solo segundos del modelo e ignorar la revisión.",
+    "question": "¿Qué mejora tendría que demostrar frente a un comparador de documentos?",
+    "sbs": "Medir el expediente completo: obtener versiones, localizar cambios, verificar citas y revisar impacto.",
+    "links": [
+      "L6",
+      "L9",
+      "P5",
+      "P7",
+      "P8"
+    ]
+  },
+  {
+    "id": "A03",
+    "group": "decisions",
+    "n": 3,
+    "title": "Alcance y unidad de trabajo",
+    "tagline": "Una norma, una versión y un artículo no son lo mismo.",
+    "what": "Delimita entidades, periodos, documentos y excepciones antes de diseñar respuestas.",
+    "see": [
+      "Familia normativa y entidad destinataria.",
+      "Artículos, incisos, anexos y tablas incluidos.",
+      "Preguntas ancla y consultas fuera de alcance."
+    ],
+    "options": [
+      {
+        "name": "Par de versiones conocido",
+        "when": "El analista proporciona ambos documentos.",
+        "tradeoff": "Acota la prueba; no descubre publicaciones nuevas."
+      },
+      {
+        "name": "Una familia normativa",
+        "when": "Se necesita seguir una norma base y sus modificatorias.",
+        "tradeoff": "Permite continuidad; exige relaciones e historial."
+      },
+      {
+        "name": "Portafolio de familias",
+        "when": "Hay propietarios, cobertura y pruebas para cada ámbito.",
+        "tradeoff": "Amplía utilidad; aumenta heterogeneidad y riesgo de omisión."
+      }
+    ],
+    "evidence": [
+      "Contrato de alcance con inclusiones y exclusiones.",
+      "Muestra de preguntas y documentos representativos."
+    ],
+    "mistake": "Prometer todas las normas sin un inventario verificable.",
+    "question": "¿Cuál es la menor unidad cuyo cambio necesita revisar el analista?",
+    "sbs": "Comenzar por una familia y pares reales, conservando anexos relevantes. El ámbito aún debe acordarse.",
+    "links": [
+      "L2",
+      "L4",
+      "P1",
+      "P2"
+    ]
+  },
+  {
+    "id": "A04",
+    "group": "decisions",
+    "n": 4,
+    "title": "Fuentes y autoridad",
+    "tagline": "Conserva el original y su procedencia.",
+    "what": "Determina qué fuente sustenta cada afirmación y cómo se conoce la cobertura del corpus.",
+    "see": [
+      "Origen oficial y acceso al archivo completo.",
+      "Versiones históricas y documentos faltantes.",
+      "Cadena entre original, extracción y cita."
+    ],
+    "options": [
+      {
+        "name": "Pares aportados y verificados",
+        "when": "Se inicia un piloto pequeño con documentos identificados.",
+        "tradeoff": "Acelera el análisis; limita cobertura y actualización."
+      },
+      {
+        "name": "Captura programada de fuentes oficiales",
+        "when": "El alcance y condiciones de acceso están definidos.",
+        "tradeoff": "Detecta publicaciones; requiere deduplicación y manejo de fallos."
+      },
+      {
+        "name": "Corpus consolidado revisado",
+        "when": "Existe un responsable que mantiene relaciones y versiones.",
+        "tradeoff": "Simplifica consulta; exige trazabilidad al acto original."
+      }
+    ],
+    "evidence": [
+      "Manifiesto con URL, fecha de captura y hash real.",
+      "Inventario de cobertura y faltantes por familia."
+    ],
+    "mistake": "Tratar un nombre de archivo o un hash ilustrativo como prueba de autoridad.",
+    "question": "¿Podemos abrir exactamente el archivo que sustenta esta respuesta?",
+    "sbs": "El portal SBS identifica fuentes; no acredita que todas las versiones históricas estén disponibles.",
+    "links": [
+      "L2",
+      "L5",
+      "P1",
+      "P3"
+    ]
+  },
+  {
+    "id": "A05",
+    "group": "decisions",
+    "n": 5,
+    "title": "Verdad y semántica temporal",
+    "tagline": "Publicado, conocido y efectivo son fechas distintas.",
+    "what": "Define qué significa correcto, cómo se relacionan las versiones y a qué momento responde la consulta.",
+    "see": [
+      "Fecha de publicación, captura y efecto.",
+      "Relaciones modifica, deroga o corrige.",
+      "Renumeraciones y equivalencias entre disposiciones."
+    ],
+    "options": [
+      {
+        "name": "Comparación documental",
+        "when": "La pregunta es qué texto difiere entre dos archivos.",
+        "tradeoff": "Es acotada; no determina vigencia jurídica."
+      },
+      {
+        "name": "Consulta a una fecha efectiva",
+        "when": "El corpus contiene efectos y relaciones revisados.",
+        "tradeoff": "Responde vigencia temporal; necesita adjudicación experta."
+      },
+      {
+        "name": "Reconstrucción de lo conocido entonces",
+        "when": "Se evalúa una decisión histórica o auditoría.",
+        "tradeoff": "Evita usar información futura; exige historial de conocimiento."
+      }
+    ],
+    "evidence": [
+      "Diccionario temporal con ejemplos resueltos por especialista.",
+      "Pares de disposiciones alineados y revisados."
+    ],
+    "mistake": "Elegir la versión anterior solo por su número o confundir descarga con vigencia.",
+    "question": "¿Preguntamos qué era efectivo o qué podía conocer el analista ese día?",
+    "sbs": "Guardar conocido_desde y efecto_desde/hasta por separado. Un cambio literal no prueba cambio de obligación.",
+    "links": [
+      "L2",
+      "L5",
+      "L7",
+      "P2",
+      "P7"
+    ]
+  },
+  {
+    "id": "A06",
+    "group": "decisions",
+    "n": 6,
+    "title": "Separación de responsabilidades",
+    "tagline": "Cada mecanismo debe resolver una necesidad demostrada.",
+    "what": "Separa extracción, cálculo, búsqueda, interpretación y acción mediante contratos observables.",
+    "see": [
+      "Operaciones que deben ser deterministas.",
+      "Preguntas que requieren evidencia no estructurada.",
+      "Decisiones que necesitan criterio humano."
+    ],
+    "options": [
+      {
+        "name": "Pipeline determinista y Genie",
+        "when": "Hay tablas curadas de versiones, relaciones y cambios.",
+        "tradeoff": "Hace verificables los hechos; requiere preparar esas tablas."
+      },
+      {
+        "name": "Recuperación y síntesis controladas",
+        "when": "La respuesta necesita pasajes de documentos.",
+        "tradeoff": "Aporta contexto; exige medir recuperación y citas."
+      },
+      {
+        "name": "Análisis directo de archivos",
+        "when": "La capacidad está disponible y se prueba con el mismo corpus.",
+        "tradeoff": "Reduce pasos visibles; sus límites y trazabilidad deben medirse."
+      }
+    ],
+    "evidence": [
+      "Flujo con entradas, salidas y errores por etapa.",
+      "Prueba comparativa contra la alternativa más simple."
+    ],
+    "mistake": "Pedir al modelo que invente el diff o añadir subagentes sin demostrar valor.",
+    "question": "¿Qué parte perdería fiabilidad si dependiera de una respuesta generativa?",
+    "sbs": "El diff estructural alimenta hechos; Genie facilita consultas; el especialista adjudica aplicabilidad ambigua.",
+    "links": [
+      "L4",
+      "L5",
+      "L6",
+      "L8",
+      "P4",
+      "P5"
+    ]
+  },
+  {
+    "id": "A07",
+    "group": "decisions",
+    "n": 7,
+    "title": "Autonomía, permisos y autoridad humana",
+    "tagline": "Leer, proponer y aprobar son permisos diferentes.",
+    "what": "Asigna capacidades por identidad y define cuándo una consecuencia requiere aprobación.",
+    "see": [
+      "Recursos visibles para cada rol.",
+      "Acciones permitidas y prohibidas.",
+      "Quién autoriza y cómo queda registrada la decisión."
+    ],
+    "options": [
+      {
+        "name": "Solo lectura",
+        "when": "Se valida el caso y se consulta evidencia.",
+        "tradeoff": "Reduce consecuencias; no actualiza el registro operativo."
+      },
+      {
+        "name": "Propuesta con aprobación",
+        "when": "El agente prepara un impacto que revisa un especialista.",
+        "tradeoff": "Ahorra preparación; requiere bandeja y responsabilidad humana."
+      },
+      {
+        "name": "Acción acotada tras aprobación",
+        "when": "Existe un contrato probado para registrar decisiones aprobadas.",
+        "tradeoff": "Integra el proceso; exige idempotencia y auditoría."
+      }
+    ],
+    "evidence": [
+      "Matriz actor, acción y recurso.",
+      "Pruebas de acceso y registro de aprobación."
+    ],
+    "mistake": "Asumir que una respuesta convincente autoriza modificar obligaciones.",
+    "question": "¿Quién puede convertir una propuesta en una decisión oficial?",
+    "sbs": "Empezar en lectura. Registrar impacto aprobado únicamente con identidad, fecha y evidencia de la revisión.",
+    "links": [
+      "L3",
+      "L7",
+      "L8",
+      "P2",
+      "P6",
+      "P9"
+    ]
+  },
+  {
+    "id": "A08",
+    "group": "decisions",
+    "n": 8,
+    "title": "Respuesta y abstención",
+    "tagline": "Una respuesta útil muestra también lo que falta.",
+    "what": "Define una salida que permita verificar hechos y distinguir insuficiencia, error y resultado válido.",
+    "see": [
+      "Norma, par de versiones y estado de cobertura.",
+      "Ambos pasajes con página y enlace.",
+      "Interpretación separada de hechos y pendientes."
+    ],
+    "options": [
+      {
+        "name": "Ficha de comparación",
+        "when": "La tarea central es revisar antes y después.",
+        "tradeoff": "Facilita inspección; ofrece menos libertad conversacional."
+      },
+      {
+        "name": "Respuesta conversacional con evidencia",
+        "when": "El usuario explora preguntas sobre un corpus curado.",
+        "tradeoff": "Es flexible; cada afirmación debe conservar sustento."
+      },
+      {
+        "name": "Expediente estructurado",
+        "when": "Otro proceso consume cambios y estados.",
+        "tradeoff": "Permite validación automática; exige schema y compatibilidad."
+      }
+    ],
+    "evidence": [
+      "Schema y ejemplos de respuesta válida, incompleta y fallida.",
+      "Pruebas que abren y verifican las citas emitidas."
+    ],
+    "mistake": "Devolver sin cambios cuando falta un documento o falló la extracción.",
+    "question": "¿Qué debe ver el usuario para distinguir ausencia de cambios de falta de evidencia?",
+    "sbs": "Si no existe la versión anterior, responder comparación incompleta. Separar texto cambiado de impacto tentativo.",
+    "links": [
+      "L1",
+      "L7",
+      "P3",
+      "P7"
+    ]
+  },
+  {
+    "id": "A09",
+    "group": "decisions",
+    "n": 9,
+    "title": "Riesgos y errores costosos",
+    "tagline": "Prioriza el daño, no solo la frecuencia.",
+    "what": "Construye escenarios de fallo y asigna controles y responsables según su consecuencia.",
+    "see": [
+      "Cambios relevantes omitidos y falsas alarmas.",
+      "Documentos mal extraídos o alineados.",
+      "Instrucciones hostiles dentro del corpus y accesos indebidos."
+    ],
+    "options": [
+      {
+        "name": "Bloquear resultado incompleto",
+        "when": "Una omisión puede inducir una decisión equivocada.",
+        "tradeoff": "Protege decisiones; puede aumentar derivaciones."
+      },
+      {
+        "name": "Mostrar parcial con advertencia",
+        "when": "Una parte verificable sigue siendo útil y el usuario lo entiende.",
+        "tradeoff": "Mantiene utilidad; requiere límites muy visibles."
+      },
+      {
+        "name": "Escalar a especialista",
+        "when": "Hay ambigüedad jurídica o consecuencias críticas.",
+        "tradeoff": "Conserva autoridad; añade espera y costo humano."
+      }
+    ],
+    "evidence": [
+      "Taxonomía de fallos con severidad y dueño.",
+      "Casos adversariales y pruebas negativas con resultado esperado."
+    ],
+    "mistake": "Medir solo respuestas correctas y ocultar las omisiones silenciosas.",
+    "question": "¿Qué error sería inaceptable aunque ocurriera pocas veces?",
+    "sbs": "Probar renumeración, anexos omitidos, OCR defectuoso y documento ajeno al ámbito; corpus no equivale instrucciones.",
+    "links": [
+      "L3",
+      "L4",
+      "L7",
+      "P6",
+      "P7"
+    ]
+  },
+  {
+    "id": "A10",
+    "group": "decisions",
+    "n": 10,
+    "title": "Evaluación y oráculo",
+    "tagline": "Primero comprueba la respuesta de referencia.",
+    "what": "Define quién adjudica la verdad y cómo comparar versiones sin contaminar la prueba.",
+    "see": [
+      "Gold revisado por especialista.",
+      "Pares o familias completos reservados para evaluación.",
+      "Regresiones, errores técnicos y errores del juez separados."
+    ],
+    "options": [
+      {
+        "name": "Comprobaciones deterministas",
+        "when": "Se validan hashes, citas literales, campos y cálculos.",
+        "tradeoff": "Son reproducibles; no cubren toda interpretación."
+      },
+      {
+        "name": "Adjudicación experta",
+        "when": "La corrección depende de significado o aplicabilidad.",
+        "tradeoff": "Aporta autoridad; consume tiempo y requiere criterio explícito."
+      },
+      {
+        "name": "Juez automático calibrado",
+        "when": "Hay suficiente referencia humana para medir su acuerdo.",
+        "tradeoff": "Escala revisión; no sustituye al experto ni garantiza verdad."
+      }
+    ],
+    "evidence": [
+      "Protocolo congelado con corpus, rúbrica y versiones.",
+      "Informe por tipo de error, denominadores y regresiones."
+    ],
+    "mistake": "Celebrar una nota alta contra referencias defectuosas o preguntas usadas para ajustar el agente.",
+    "question": "¿Cómo sabremos que el juez se equivocó?",
+    "sbs": "Medir recall y precisión de cambios, alineamiento, citas, temporalidad y abstención. Reservar pares completos.",
+    "links": [
+      "L7",
+      "L9",
+      "P7",
+      "P8"
+    ]
+  },
+  {
+    "id": "A11",
+    "group": "decisions",
+    "n": 11,
+    "title": "Economía y operación",
+    "tagline": "El costo incluye datos, fallos y revisión.",
+    "what": "Define cómo se sostiene el servicio, cómo se reconstruye una respuesta y quién recupera una falla.",
+    "see": [
+      "Costo por expediente e intervención humana.",
+      "Latencia, disponibilidad y dependencias.",
+      "Versiones, trazas y procedimiento de recuperación."
+    ],
+    "options": [
+      {
+        "name": "Procesamiento por lotes",
+        "when": "Las publicaciones admiten una ventana programada.",
+        "tradeoff": "Controla carga; introduce demora hasta el siguiente lote."
+      },
+      {
+        "name": "Procesamiento bajo demanda",
+        "when": "El analista selecciona un par cuando lo necesita.",
+        "tradeoff": "Simplifica el inicio; puede repetir trabajo o esperar recursos."
+      },
+      {
+        "name": "Ingesta programada y consulta interactiva",
+        "when": "El corpus se prepara antes de las preguntas.",
+        "tradeoff": "Mejora consulta; exige operar dos recorridos conectados."
+      }
+    ],
+    "evidence": [
+      "Presupuesto por expediente y supuestos medidos.",
+      "Runbook probado con trazas, alertas y recuperación."
+    ],
+    "mistake": "Confundir un endpoint disponible o un Job exitoso con un recorrido de usuario funcionando.",
+    "question": "¿Quién reconstruye y corrige una respuesta fallida mañana?",
+    "sbs": "Conservar hash del corpus, versión del extractor y configuración Genie; incluir OCR, consulta y revisión en costo.",
+    "links": [
+      "L1",
+      "L9",
+      "P8",
+      "P9"
+    ]
+  },
+  {
+    "id": "A12",
+    "group": "decisions",
+    "n": 12,
+    "title": "Prueba decisiva y parada",
+    "tagline": "Un piloto debe poder refutar la idea.",
+    "what": "Fija qué resultado permite avanzar, qué obliga a investigar y qué justifica no construir.",
+    "see": [
+      "Hipótesis de mejora frente al baseline.",
+      "Umbrales por severidad y responsable que acepta.",
+      "Fecha, presupuesto y condiciones de parada."
+    ],
+    "options": [
+      {
+        "name": "Prototipo acotado",
+        "when": "Existen dueño, muestra verificable y criterio de verdad.",
+        "tradeoff": "Produce evidencia temprana; no acredita operación general."
+      },
+      {
+        "name": "Investigar antes",
+        "when": "Faltan versiones, acceso, experto o baseline.",
+        "tradeoff": "Resuelve incertidumbre; retrasa implementación con propósito."
+      },
+      {
+        "name": "No construir todavía",
+        "when": "La alternativa simple basta o el riesgo no tiene dueño.",
+        "tradeoff": "Evita inversión improductiva; deja necesidades sin automatizar."
+      }
+    ],
+    "evidence": [
+      "Plan de piloto con casos difíciles y criterio de decisión.",
+      "Acta de resultados, límites y aceptación o rechazo."
+    ],
+    "mistake": "Convertir una demo atractiva en aprobación sin medir utilidad ni errores críticos.",
+    "question": "¿Qué resultado nos haría abandonar o cambiar la propuesta?",
+    "sbs": "Estado preliminar: investigar antes. Acordar familia, entidad, pares reales, especialista y umbrales antes de afirmar E2E validado.",
+    "links": [
+      "L1",
+      "L7",
+      "L9",
+      "P7",
+      "P9"
+    ]
+  }
+]

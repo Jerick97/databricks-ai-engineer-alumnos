@@ -1,0 +1,58 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>lab/lab_rollout.py · S08</title><style>body{font:18px system-ui;margin:32px;color:#122b43}header{max-width:1000px}a{color:#533afd}pre{font:14px/1.6 ui-monospace,monospace;overflow:auto;background:#f6f9fc;padding:20px}pre span{display:block}pre span:target{background:#fff0ad}pre a{display:inline-block;width:4ch;color:#65788a}p{line-height:1.5}</style><header><h1>lab/lab_rollout.py</h1><p>Código del repositorio local · Neptuno S08. Esta copia permite examinar el script sin ejecutarlo.</p><p><a href="https://github.com/manuelarguelles/databricks-ai-engineer-alumnos/blob/main/s08-deployment/lab/lab_rollout.py">Ver este archivo en GitHub · repositorio de alumnos</a></p><p><a href="../../lab/lab_rollout.py">Abrir archivo original</a> · <a href="../S08-autonomo.html#16">Volver a las diapositivas</a></p></header><pre><span id="L1"><a href="#L1">1</a> &quot;&quot;&quot;CP3: canary custom NeptunoVentas; agent/v1/responses no admite split.&quot;&quot;&quot;</span>
+<span id="L2"><a href="#L2">2</a> import argparse,json,os</span>
+<span id="L3"><a href="#L3">3</a> from pathlib import Path</span>
+<span id="L4"><a href="#L4">4</a> from mlflow import MlflowClient</span>
+<span id="L5"><a href="#L5">5</a> import mlflow</span>
+<span id="L6"><a href="#L6">6</a> from databricks.sdk import WorkspaceClient</span>
+<span id="L7"><a href="#L7">7</a> from databricks.sdk.service import serving</span>
+<span id="L8"><a href="#L8">8</a> from lab_deploy import CONFIG,save</span>
+<span id="L9"><a href="#L9">9</a> </span>
+<span id="L10"><a href="#L10">10</a> def normalized_snapshot(endpoint,workspace_host,model_name,config):</span>
+<span id="L11"><a href="#L11">11</a>     entities=sorted([serving.ServedEntityInput.from_dict(e.as_dict()).as_dict() for e in config.served_entities],key=lambda e:e[&#x27;name&#x27;])</span>
+<span id="L12"><a href="#L12">12</a>     traffic=config.traffic_config.as_dict()</span>
+<span id="L13"><a href="#L13">13</a>     traffic[&#x27;routes&#x27;]=sorted(traffic[&#x27;routes&#x27;],key=lambda r:r[&#x27;served_model_name&#x27;])</span>
+<span id="L14"><a href="#L14">14</a>     return {&#x27;endpoint&#x27;:endpoint,&#x27;workspace_host&#x27;:workspace_host,&#x27;model_name&#x27;:model_name,&#x27;served_entities&#x27;:entities,&#x27;traffic_config&#x27;:traffic}</span>
+<span id="L15"><a href="#L15">15</a> </span>
+<span id="L16"><a href="#L16">16</a> def validate_snapshot(snapshot,endpoint,workspace_host,model_name):</span>
+<span id="L17"><a href="#L17">17</a>     if any(snapshot.get(k)!=v for k,v in {&#x27;endpoint&#x27;:endpoint,&#x27;workspace_host&#x27;:workspace_host,&#x27;model_name&#x27;:model_name}.items()):</span>
+<span id="L18"><a href="#L18">18</a>         raise ValueError(&#x27;Snapshot pertenece a otro endpoint/workspace/modelo; no restaurar evidencia docente ni ajena&#x27;)</span>
+<span id="L19"><a href="#L19">19</a>     if not snapshot.get(&#x27;served_entities&#x27;) or any(e.get(&#x27;entity_name&#x27;)!=model_name for e in snapshot[&#x27;served_entities&#x27;]):</span>
+<span id="L20"><a href="#L20">20</a>         raise ValueError(&#x27;Snapshot contiene entidades de otro modelo&#x27;)</span>
+<span id="L21"><a href="#L21">21</a> </span>
+<span id="L22"><a href="#L22">22</a> def main():</span>
+<span id="L23"><a href="#L23">23</a>     p=argparse.ArgumentParser();p.add_argument(&#x27;--profile&#x27;);p.add_argument(&#x27;--challenger-version&#x27;);p.add_argument(&#x27;--percent&#x27;,type=int,default=10);p.add_argument(&#x27;--rollback&#x27;,action=&#x27;store_true&#x27;);a=p.parse_args()</span>
+<span id="L24"><a href="#L24">24</a>     if a.profile:os.environ[&#x27;DATABRICKS_CONFIG_PROFILE&#x27;]=a.profile</span>
+<span id="L25"><a href="#L25">25</a>     if not 0&lt;=a.percent&lt;=100:raise ValueError(&#x27;Porcentaje debe estar entre 0 y 100&#x27;)</span>
+<span id="L26"><a href="#L26">26</a>     w=WorkspaceClient();c=dict(CONFIG)</span>
+<span id="L27"><a href="#L27">27</a>     c[&#x27;endpoint&#x27;]=CONFIG[&#x27;endpoint&#x27;]+&#x27;-rollout&#x27;</span>
+<span id="L28"><a href="#L28">28</a>     c[&#x27;model_name&#x27;]=f&quot;{CONFIG[&#x27;catalog&#x27;]}.{CONFIG[&#x27;schema&#x27;]}.ventas_rollout&quot;</span>
+<span id="L29"><a href="#L29">29</a>     mlflow.set_registry_uri(&#x27;databricks-uc&#x27;);client=MlflowClient()</span>
+<span id="L30"><a href="#L30">30</a>     current=w.serving_endpoints.get(c[&#x27;endpoint&#x27;])</span>
+<span id="L31"><a href="#L31">31</a>     if current.task and current.task.startswith(&#x27;agent/&#x27;):</span>
+<span id="L32"><a href="#L32">32</a>         raise ValueError(&#x27;Traffic splitting no soportado para agentes; usa lab_custom_rollout.py&#x27;)</span>
+<span id="L33"><a href="#L33">33</a>     if current.pending_config or current.state.ready.value!=&#x27;READY&#x27;:raise RuntimeError(&#x27;Espera READY y NOT_UPDATING antes de otra actualización&#x27;)</span>
+<span id="L34"><a href="#L34">34</a>     assert c[&#x27;endpoint&#x27;].startswith(&#x27;ais08-&#x27;)</span>
+<span id="L35"><a href="#L35">35</a>     path=Path(__file__).resolve().parents[1]/&#x27;reports/lab-rollout-before.json&#x27;</span>
+<span id="L36"><a href="#L36">36</a>     if a.rollback:</span>
+<span id="L37"><a href="#L37">37</a>         old=json.loads(path.read_text())</span>
+<span id="L38"><a href="#L38">38</a>         validate_snapshot(old,c[&#x27;endpoint&#x27;],w.config.host,c[&#x27;model_name&#x27;])</span>
+<span id="L39"><a href="#L39">39</a>         w.serving_endpoints.update_config(c[&#x27;endpoint&#x27;],served_entities=[serving.ServedEntityInput.from_dict(e) for e in old[&#x27;served_entities&#x27;]],traffic_config=serving.TrafficConfig.from_dict(old[&#x27;traffic_config&#x27;]))</span>
+<span id="L40"><a href="#L40">40</a>         print(&#x27;Rollback solicitado; verificar READY y consulta antes de afirmar recuperación&#x27;);return</span>
+<span id="L41"><a href="#L41">41</a>     if not a.challenger_version:raise ValueError(&#x27;Especifica --challenger-version&#x27;)</span>
+<span id="L42"><a href="#L42">42</a>     before=normalized_snapshot(c[&#x27;endpoint&#x27;],w.config.host,c[&#x27;model_name&#x27;],current.config)</span>
+<span id="L43"><a href="#L43">43</a>     if path.exists():</span>
+<span id="L44"><a href="#L44">44</a>         old=json.loads(path.read_text());validate_snapshot(old,c[&#x27;endpoint&#x27;],w.config.host,c[&#x27;model_name&#x27;])</span>
+<span id="L45"><a href="#L45">45</a>         if old!=before:raise ValueError(&#x27;Ya existe snapshot de otro estado. Conservarlo; completar rollback o archivar explícitamente para nuevo ensayo&#x27;)</span>
+<span id="L46"><a href="#L46">46</a>     else:save(&#x27;rollout-before&#x27;,before)</span>
+<span id="L47"><a href="#L47">47</a>     champion=client.get_model_version_by_alias(c[&#x27;model_name&#x27;],&#x27;champion&#x27;).version</span>
+<span id="L48"><a href="#L48">48</a>     client.set_registered_model_alias(c[&#x27;model_name&#x27;],&#x27;challenger&#x27;,a.challenger_version)</span>
+<span id="L49"><a href="#L49">49</a>     wanted={&#x27;champion&#x27;:str(champion),&#x27;challenger&#x27;:str(a.challenger_version)}</span>
+<span id="L50"><a href="#L50">50</a>     existing={e.name:e for e in current.config.served_entities}</span>
+<span id="L51"><a href="#L51">51</a>     # Preservar parámetros exactos si las versiones ya están desplegadas; no cambiar workload/env.</span>
+<span id="L52"><a href="#L52">52</a>     entities=[serving.ServedEntityInput.from_dict(existing[name].as_dict()) if name in existing and existing[name].entity_version==version else serving.ServedEntityInput(name=name,entity_name=c[&#x27;model_name&#x27;],entity_version=version,workload_size=&#x27;Small&#x27;,scale_to_zero_enabled=True) for name,version in wanted.items()]</span>
+<span id="L53"><a href="#L53">53</a>     routes=[serving.Route(served_model_name=&#x27;champion&#x27;,traffic_percentage=100-a.percent),serving.Route(served_model_name=&#x27;challenger&#x27;,traffic_percentage=a.percent)]</span>
+<span id="L54"><a href="#L54">54</a>     # REST exige entidades incluso para cambio de rutas (lab-rollout-api-limitation.json).</span>
+<span id="L55"><a href="#L55">55</a>     w.serving_endpoints.update_config(c[&#x27;endpoint&#x27;],served_entities=entities,traffic_config=serving.TrafficConfig(routes=routes))</span>
+<span id="L56"><a href="#L56">56</a>     save(&#x27;rollout&#x27;,{&#x27;endpoint&#x27;:c[&#x27;endpoint&#x27;],&#x27;champion&#x27;:champion,&#x27;challenger&#x27;:a.challenger_version,&#x27;percent&#x27;:a.percent,&#x27;submitted&#x27;:True})</span>
+<span id="L57"><a href="#L57">57</a> if __name__==&#x27;__main__&#x27;:main()</span>
+</pre></html>

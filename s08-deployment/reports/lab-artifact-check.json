@@ -1,0 +1,42 @@
+{
+  "version": "4",
+  "source_matches": true,
+  "sha256": "200febf66d9d8a36acd05fed147776e761156e27d065df600489dd838f292bb4",
+  "prompt_version": "4",
+  "llm_endpoint": "databricks-meta-llama-3-3-70b-instruct",
+  "resources": {
+    "api_version": "1",
+    "databricks": {
+      "function": [
+        {
+          "name": "neptuno_manuel_arguelles.s05_agentes.ventas_categoria"
+        },
+        {
+          "name": "neptuno_manuel_arguelles.s05_agentes.productos_reponer"
+        }
+      ],
+      "serving_endpoint": [
+        {
+          "name": "databricks-meta-llama-3-3-70b-instruct"
+        },
+        {
+          "name": "databricks-qwen3-embedding-0-6b"
+        },
+        {
+          "name": "databricks-meta-llama-3-1-8b-instruct"
+        }
+      ],
+      "sql_warehouse": [
+        {
+          "name": "828756322bedff37"
+        }
+      ],
+      "table": [
+        {
+          "name": "neptuno_manuel_arguelles.rag.chunks_embeddings"
+        }
+      ]
+    }
+  },
+  "requirements": "mlflow==3.16.1\ndatabricks-sdk==0.143.0\nopenai==2.54.0\njsonschema==4.26.0"
+}

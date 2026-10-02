@@ -1,0 +1,73 @@
+{
+  "run_id": "astra-normative-review-002",
+  "started_at_utc": "2026-09-27T23:20:42.000460+00:00",
+  "skill_id": "SK09",
+  "skill_version": "0.1.1",
+  "skill_path": "skills/sbs-evaluacion-jueces/SKILL.md",
+  "skill_sha256": "04c93c1d894905bb8053b74b14817d44c08363d1abee80c9b0bfdd37c5367be1",
+  "protocol_path": "skills/sbs-evaluacion-jueces/references/revision-ia.md",
+  "protocol_sha256": "8ee94f8b3b26614996e07d86cf6c9ce878d29240009e922f4305639933506b25",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "mode": "independent_ai_pilot_review",
+  "inputs": [
+    {
+      "path": "skills/sbs-evaluacion-jueces/SKILL.md",
+      "sha256": "04c93c1d894905bb8053b74b14817d44c08363d1abee80c9b0bfdd37c5367be1"
+    },
+    {
+      "path": "skills/sbs-evaluacion-jueces/references/revision-ia.md",
+      "sha256": "8ee94f8b3b26614996e07d86cf6c9ce878d29240009e922f4305639933506b25"
+    },
+    {
+      "path": "docs/12-spec-agente-v0.2.md",
+      "sha256": "7a028d0881c630950f69949229011238264fcaef3b70109776b3458c03929344"
+    },
+    {
+      "path": "runs/sk02-repository-capture.json",
+      "sha256": "5aa790331595736d982719f6a271da537557b2e9f2c0b9f9259065618cb53402"
+    },
+    {
+      "path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/context/pilot-repository-manifest.json",
+      "sha256": "c996f89c07ac21813c065fd7eb5e4364455d498bc0bbf58c07e4370832b2669c"
+    },
+    {
+      "path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/66/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342.pdf",
+      "sha256": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342"
+    },
+    {
+      "path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/rawtext.txt",
+      "sha256": "c9422c55c0a4f13ba2d94918e7f23ff401ede29b9f9448e23be57468b7e8073c"
+    },
+    {
+      "path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/result.json",
+      "sha256": "3bf4d7227a281a90422e64726a427b7aaae2e4499d11a62d2bfd2b1e0d12e11e"
+    },
+    {
+      "path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/10/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771.pdf",
+      "sha256": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771"
+    },
+    {
+      "path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/rawtext.txt",
+      "sha256": "66b63adace8a5e1f053d9af72b0c5fe45780cba6b6c1d0670673f1fcde919ce2"
+    },
+    {
+      "path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/result.json",
+      "sha256": "aca479067212837e1b6d90742892ca630a2ab0699e27b447eb729379c9d19379"
+    },
+    {
+      "path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/b8/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18.pdf",
+      "sha256": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18"
+    },
+    {
+      "path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/rawtext.txt",
+      "sha256": "1481d6a74d7f6988a2bdcb10081724101b41553fdfca03279a3dcb8076d96a3a"
+    },
+    {
+      "path": "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/derived/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/result.json",
+      "sha256": "65b2304a6379933215424b0d077881bfd3ab9fcd631512ae1575e55013960488"
+    }
+  ],
+  "prior_run": "runs/astra-normative-review-001.json",
+  "status": "running"
+}

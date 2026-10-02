@@ -1,0 +1,27 @@
+{
+  "name": "sbs-radar-refresh-review-template",
+  "max_concurrent_runs": 1,
+  "timeout_seconds": 900,
+  "schedule": {
+    "quartz_cron_expression": "0 0 8 * * ?",
+    "timezone_id": "America/Lima",
+    "pause_status": "PAUSED"
+  },
+  "tasks": [
+    {
+      "task_key": "refresh",
+      "existing_cluster_id": "REPLACE_WITH_AUTHORIZED_EXISTING_CLUSTER",
+      "timeout_seconds": 600,
+      "max_retries": 0,
+      "notebook_task": {
+        "notebook_path": "/REPLACE_WITH_AUTHORIZED_WORKSPACE_PATH/sbs-radar-cloud-refresh",
+        "source": "WORKSPACE",
+        "base_parameters": {
+          "project_root": "/REPLACE_WITH_AUTHORIZED_PROJECT_ROOT",
+          "mode": "reuse_sealed",
+          "state_root": ""
+        }
+      }
+    }
+  ]
+}

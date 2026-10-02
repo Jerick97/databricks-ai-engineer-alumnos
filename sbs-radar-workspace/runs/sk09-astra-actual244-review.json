@@ -1,0 +1,225 @@
+{
+  "status": "PASS_CONTROLLED_ACTUAL_244_SAMPLE",
+  "skill_id": "SK09",
+  "skill_version": "0.1.2",
+  "skill_path": "skills/sbs-evaluacion-jueces/SKILL.md",
+  "skill_sha256": "46e9f9851d46b2ec95f61dabdaed6ec30cc28799f8c8e017615d87dcff6d2b66",
+  "protocol_sha256": "8ee94f8b3b26614996e07d86cf6c9ce878d29240009e922f4305639933506b25",
+  "reviewer": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "agent": "/root/astra_ui225",
+    "provenance": "AI review, not human adjudication or institutional approval"
+  },
+  "timestamp_utc": "2026-09-30T08:57:07.190606+00:00",
+  "invocation": "runs/sk09-astra-actual244-invocation.json",
+  "final_inputs": "runs/sk09-astra-actual244-final-inputs.json",
+  "final_inputs_sha256": "e60c019f85a9a7842d296f95827edf61fc1da5573f180751193f579168e40b8b",
+  "deployment_id": "01f1bcab3cce1ea18e411c7501f44b4f",
+  "source_sha256": "20a4518a6f973929b16a45f7dbfe11643cbb012efe1366206f3b9e025453f6e9",
+  "sample": {
+    "user_queries_evaluated": 5,
+    "user_queries_passed": 5,
+    "count_queries": 1,
+    "count_families_passed": 2,
+    "count_families_evaluated": 2,
+    "normative_turns_passed": 4,
+    "normative_turns_evaluated": 4,
+    "citation_instances_passed": 8,
+    "citation_instances_evaluated": 8,
+    "unique_citations": 6,
+    "generated_proposals_passed": 5,
+    "generated_proposals_evaluated": 5
+  },
+  "normative_turns": [
+    {
+      "case": "original",
+      "status": "passed",
+      "answer_matches_reviewed223_exact_after_CRLF_normalization": true,
+      "citations": [
+        {
+          "citation_id": "structural-a1846b1308fcae8f480124f1841aa5f1245a11c9055dc258ea09494c02fb79fc",
+          "source_sha256": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771",
+          "page": 13,
+          "exact_raw_span": true,
+          "pdf_hash_match": true,
+          "href_matches": true
+        },
+        {
+          "citation_id": "structural-ebf4c590b5c5b63b0976c26fd2cbf21d2285d34729c103504a2ba6b91120f49a",
+          "source_sha256": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+          "page": 13,
+          "exact_raw_span": true,
+          "pdf_hash_match": true,
+          "href_matches": true
+        }
+      ],
+      "scope": "Comparación literal del foco20.3; conserva excepción de responsabilidad y requisito de autenticación reforzada. No materialidad ni vigencia global.",
+      "inputs_sha256": {
+        "runs/ui244/original244.mhtml": "e34cb41d79907abba18ce94b367357f75117846043c998023090325bf2dc202b",
+        "runs/ui244/original244-visible.txt": "ef20891d36ea625f2b417c5aadde1fed8e6214a3a1374b29b93da1407f75b8b2",
+        "runs/ui223/original-response.json": "f8b50aeb0f49290269276a70ab8fbc48d8847d20cf61a7a25dcb182c51af6275"
+      }
+    },
+    {
+      "case": "market27",
+      "status": "passed",
+      "answer_comparison_matches_reviewed223_exact_after_CRLF_normalization": true,
+      "citations": [
+        {
+          "citation_id": "structural-6bf1ff7e2641b57554e5d34cef41bd354fa6da492af7321f6089949feb91f6f0",
+          "source_sha256": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+          "page": 15,
+          "exact_raw_span": true,
+          "pdf_hash_match": true,
+          "href_matches": true,
+          "pdf": "data/foundation-repository/objects/87/879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7.pdf",
+          "derived_text": "data/foundation-repository/derived/879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/rawtext.txt",
+          "rawtext_sha256": "d383f9575cea1f844e4c4cd19b6bf489f12794a58a37688b1c64171219dce1d3"
+        },
+        {
+          "citation_id": "structural-72c48d6f7ab21705bbbcc6cb46747e2a96f144ae09c18e7f828d3921aaadeb74",
+          "source_sha256": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+          "page": 15,
+          "exact_raw_span": true,
+          "pdf_hash_match": true,
+          "href_matches": true,
+          "pdf": "data/foundation-repository/objects/66/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342.pdf",
+          "derived_text": "data/foundation-repository/derived/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/rawtext.txt",
+          "rawtext_sha256": "c9422c55c0a4f13ba2d94918e7f23ff401ede29b9f9448e23be57468b7e8073c"
+        }
+      ],
+      "proposals": [
+        {
+          "text": "Para el proceso ficticio de revisión de información al usuario, se sugiere que las empresas verifiquen que la difusión del derecho de elección del usuario se realice en la oferta de productos que consideren seguros como condición para contratar, mediante los mecanismos que utilicen las empresas, conforme al mandato de informar establecido en la cita focal.",
+          "status": "passed",
+          "support": "Texto posterior27.1: difusión del derecho de elección en oferta mediante mecanismos de empresa."
+        },
+        {
+          "text": "En el supuesto de que el usuario acredite contratación propia de seguro que cumpla las condiciones establecidas por la empresa, se propone que el proceso ficticio registre que el seguro debe ser endosado a favor de la empresa hasta por el monto del saldo adeudado, sin que ello genere comisión o gasto adicional al usuario cuando se trate del seguro de desgravamen, manteniendo esta restricción concurrente con el mandato de endoso.",
+          "status": "passed",
+          "support": "Texto posterior27.1.a: endoso por saldo adeudado y sin comisión/gasto cuando se trate de desgravamen; la propuesta conserva ambas condiciones."
+        },
+        {
+          "text": "Para el proceso ficticio, se sugiere que las empresas resguarden los sustentos correspondientes del consentimiento expreso de los usuarios por cada producto de seguro o cobertura adicional, cuando las cláusulas o productos brinden coberturas distintas a las del seguro de desgravamen o a los seguros orientados a la protección del bien en garantía, conforme al mandato de la cita focal.",
+          "status": "passed",
+          "support": "Texto posterior27.3: coberturas adicionales distintas de desgravamen/protección de garantía requieren consentimiento expreso por producto y resguardo de sustentos. Sustento presente sólo en posterior; la propuesta no lo atribuye al anterior."
+        },
+        {
+          "text": "En el supuesto de que el usuario contrate el seguro comercializado por la empresa, se propone que el proceso ficticio verifique que la empresa entregue a los asegurados las pólizas del seguro individual o, en su caso, los certificados de seguro expedidos por las empresas del sistema de seguros, conforme al mandato de la cita focal.",
+          "status": "passed",
+          "support": "Texto posterior27.1.b: entregar póliza individual o certificado expedido por aseguradora si usuario contrata seguro comercializado por empresa."
+        }
+      ],
+      "limits": "Propuestas ilustrativas sobre proceso ficticio; no plan completo de cumplimiento. Opcionalidad y contratación independiente figuran en texto posterior completo aunque tercera propuesta aborda sólo resguardo. No afirmación de vigencia ni de exhaustividad.",
+      "inputs_sha256": {
+        "runs/ui244/market27_244.mhtml": "489a1b4c7b50c809c8ab59863e857c86dc81b53f17a4b058c1e77eec821a9a6b",
+        "runs/ui244/market27_244-visible.txt": "34570ffb85db6959501be864e870fcf188b131ebda1dfee31ef97373bf278d04",
+        "runs/ui223/turn1-response.json": "395e3143da6846706f04d9fbc1e7b371fd1d02ae7a02eb3ccebdb726f991dd29"
+      }
+    },
+    {
+      "case": "market29",
+      "status": "passed",
+      "comparison_matches223_after_CRLF_normalization": true,
+      "citations": [
+        {
+          "citation_id": "structural-26695dde36201ba4b36d6df15dae90b2f1964d804ac6ba8caee7ce31720913ec",
+          "source_sha256": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+          "page": 16,
+          "exact_raw_span": true,
+          "pdf_hash_match": true,
+          "href_matches": true
+        },
+        {
+          "citation_id": "structural-bfff74a43a1d99809eb8c2b2205d527ce49cb72cb46fd5ec3e08dec302184ecb",
+          "source_sha256": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+          "page": 16,
+          "exact_raw_span": true,
+          "pdf_hash_match": true,
+          "href_matches": true
+        }
+      ],
+      "proposals": []
+    },
+    {
+      "case": "followup",
+      "status": "passed",
+      "comparison_matches223_after_CRLF_normalization": true,
+      "citations": [
+        {
+          "citation_id": "structural-26695dde36201ba4b36d6df15dae90b2f1964d804ac6ba8caee7ce31720913ec",
+          "source_sha256": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+          "page": 16,
+          "exact_raw_span": true,
+          "pdf_hash_match": true,
+          "href_matches": true
+        },
+        {
+          "citation_id": "structural-bfff74a43a1d99809eb8c2b2205d527ce49cb72cb46fd5ec3e08dec302184ecb",
+          "source_sha256": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+          "page": 16,
+          "exact_raw_span": true,
+          "pdf_hash_match": true,
+          "href_matches": true
+        }
+      ],
+      "proposals": [
+        {
+          "text": "En el proceso ficticio de revisión de información al usuario, se sugiere que las empresas verifiquen que los canales habilitados para pago anticipado y adelanto de cuotas incluyan, como mínimo, los mismos canales utilizados para el pago de cuotas o de obligaciones de tarjeta de crédito, sin que resulten exigibles al usuario trámites o exigencias adicionales. Esta propuesta asume aplicabilidad al proceso ficticio sin que la obligación descrita en la fuente pase a depender de otra obligación.",
+          "status": "passed",
+          "support": "Posterior29.1.4 p16: canales para pago anticipado/adelanto de cuotas, como mínimo iguales a los de cuotas/tarjeta, sin trámites ni exigencias adicionales. Propuesta conserva mínimo abierto y restricción concurrente; supuesto ficticio explícito."
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "status": "passed",
+    "values": {
+      "cybersecurity": 2,
+      "market_conduct": 2
+    },
+    "assurance": "Published snapshot catalog count agrees with Genie; executed SQL not independently observed.",
+    "evidence": "UI and operator GET archives share current query IDs and values; strict decoder passes both. Visible generated SQL AST matches closed catalog references.",
+    "limits": "Operator archives are not fresh AppM2M replay; historical snapshot/readback and no legal-validity/material-change inference remain explicit."
+  },
+  "checks": [
+    {
+      "id": "actual_controlled_ui_flow",
+      "status": "passed",
+      "evidence": "Five actual user queries: both family counts, original cyber comparison, market27 comparison+4proposals, market29 comparison and contextual followup+1proposal. No blank answer or partial fallback observed."
+    },
+    {
+      "id": "citations_and_support",
+      "status": "passed",
+      "evidence": "Eight instances/six unique passages: PDF SHA, derived-text SHA, exact span and source/page href verified. Comparisons match reviewed223 after CRLF normalization. Five new proposals checked against posterior passages."
+    },
+    {
+      "id": "limits_and_assurance",
+      "status": "passed",
+      "evidence": "Fictitious process and proposal character explicit; comparison partial, materiality not adjudicated, corpus copies do not establish current legal validity. Count label denies independently executed SQL verification."
+    },
+    {
+      "id": "fallback243_actual",
+      "status": "not_evaluated",
+      "evidence": "All actual generated proposals accepted; invalid-proposal fallback tested in code but not triggered in this sample."
+    },
+    {
+      "id": "broad_sk09_thresholds",
+      "status": "not_evaluated",
+      "evidence": "Reused development sample is not a representative held-out benchmark. No general recall/precision, critical-omission or RAG@k acceptance."
+    },
+    {
+      "id": "institutional_legal_efficiency",
+      "status": "not_evaluated",
+      "evidence": "No institutional approval, legal applicability adjudication, full modifying-act/annex coverage or measured time/cost savings."
+    }
+  ],
+  "findings": [],
+  "controlled_sample_e2e_accepted": true,
+  "full_spec_e2e_accepted": false,
+  "operational_quality_certified": false,
+  "institutional_approval": false,
+  "new_remote_calls_by_reviewer": 0,
+  "historical_failures_preserved": true
+}

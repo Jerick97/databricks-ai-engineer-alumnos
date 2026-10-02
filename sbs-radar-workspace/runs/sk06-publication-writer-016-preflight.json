@@ -1,0 +1,93 @@
+{
+  "status": "pending_configuration",
+  "plan_sha256": "ec0832f9e5eb3dc1acc326d6499b31ad95d1e5d9be5ca363ca1b5eaae0974715",
+  "snapshot": "1d8f1ba4a1da7d5fe6d59a2609b5b89b602717bc1bb92cb9706295e6b732543d",
+  "tables": {
+    "documents": 6,
+    "versions": 6,
+    "provisions": 141,
+    "pairs": 2,
+    "changes": 3,
+    "evidence": 3,
+    "reviews": 1,
+    "processes": 2
+  },
+  "mutation_submissions": 16,
+  "read_submissions_success_path": 64,
+  "total_sql_success_path": 80,
+  "history_gets": 32,
+  "max_http_calls": 512,
+  "cloud_executed": false,
+  "cost": null,
+  "pending": [
+    "authorized execution",
+    "current writer identity/schema ownership and RUNNING warehouse",
+    "exclusive maintenance/retention/ABAC declarations",
+    "observed Delta versions and full readback",
+    "independent publisher Query History",
+    "separate reader SELECT-only governance and Genie space configuration"
+  ],
+  "plan_path": "runs/sk06-publication-writer-016-plan.json",
+  "schema_id": "ff244e9c-7d34-4c2d-8d74-a33292cd5f2c",
+  "warehouse_id": "828756322bedff37",
+  "schema_observation": "deployment/uc-observed-015.json",
+  "actor_profile": "initial_installer_existing_catalog_schema_owner; not runtime Job writer or reader app",
+  "sql": [
+    {
+      "table": "neptuno_manuel_arguelles.sbs_radar.documents",
+      "create_sha256": "dd3ce71fa07f99b5b569821b9513c520fb64e2c3b664197d95a65c88d065d219",
+      "insert_sha256": "958d80a158d06255734a86b5e98c4dcae38674da1454efccb7c53d1f1f0fd233",
+      "parameters_sha256": "fcf40bfa3a2e0beb3216718810ff41ebb19d828017025efb34411e0487797a29",
+      "row_count": 6
+    },
+    {
+      "table": "neptuno_manuel_arguelles.sbs_radar.versions",
+      "create_sha256": "4cc595fa8902c89dd5e831e8003cf68a4114a649a1876fe8066a9dbaa364640c",
+      "insert_sha256": "3c045c944c7f69983dca12c6fdc79ead7b7614830fde1e82208c077a14a1ff27",
+      "parameters_sha256": "fcf40bfa3a2e0beb3216718810ff41ebb19d828017025efb34411e0487797a29",
+      "row_count": 6
+    },
+    {
+      "table": "neptuno_manuel_arguelles.sbs_radar.provisions",
+      "create_sha256": "0931c87027aaa11880c36c3fb2ea38648c9d2a87a905088e7903725169e6d33b",
+      "insert_sha256": "fb9f38b8393c826a22e20004059774d4b4a4f2c9c1b9541bc3b37b3223043858",
+      "parameters_sha256": "ce59e8538c52ae37d80c872ec7ca58ed1c35fd68a5b9bef4496f1228910e3b02",
+      "row_count": 141
+    },
+    {
+      "table": "neptuno_manuel_arguelles.sbs_radar.pairs",
+      "create_sha256": "d99f6386ad7f85b1e0abd3ec07faa2ed6a5b5c09111d40021d8ae099cbea6a09",
+      "insert_sha256": "c59c4f05462c0ad3fa97d7f891bb266f62a1bc00fa9d5dcb24e7bc9ac752ea59",
+      "parameters_sha256": "93326092b2d3f08f4d4f5bf654a35cd6c14df1713d2c23d97fb718509f82cc0c",
+      "row_count": 2
+    },
+    {
+      "table": "neptuno_manuel_arguelles.sbs_radar.changes",
+      "create_sha256": "faa1b2587d3d16f5a080bc90de914b80b04b52ca02f9abd94eb3528bd3065f06",
+      "insert_sha256": "3ad13f897434c86d66824caa157089e0267407bd79ea05be338b7bad9e03b70c",
+      "parameters_sha256": "8006ab5926be15eb058a2df585d4102ab57ea918e099d304da94848726a7ec17",
+      "row_count": 3
+    },
+    {
+      "table": "neptuno_manuel_arguelles.sbs_radar.evidence",
+      "create_sha256": "c6a9ddf8ac9f4caa722c5c8ebf867c7b3ded6a9b1126300b87160d857d48f99a",
+      "insert_sha256": "489d854ae9c7ba31fb4b57cd4a6f93cd22107a68a52f96439c36b84fe752e1b2",
+      "parameters_sha256": "3eee8782e034b0e5d24d0aebcbc0d404b426e7fa678eba2883da9d462fbcefe2",
+      "row_count": 3
+    },
+    {
+      "table": "neptuno_manuel_arguelles.sbs_radar.reviews",
+      "create_sha256": "06be87109b39cce067db51eff07eb8f2ecc527350eb4a0a2180f1694b07a083b",
+      "insert_sha256": "fa9bbd697eac0615372f839721c9944b51b4a1773aa92e1ef770d04b27fdd4be",
+      "parameters_sha256": "a59e8341151a62b46a00097ae0af5b1977a7b31d57021772c91b0cabeb5e8ec0",
+      "row_count": 1
+    },
+    {
+      "table": "neptuno_manuel_arguelles.sbs_radar.processes",
+      "create_sha256": "c48ba626a615f0fb294c9455531ea6bec9a9609c3d32f6ea288668590e8360d4",
+      "insert_sha256": "460173a1b2623e71ecd8e13e044ee50618f4ffc4cba737581cfb7a118452455f",
+      "parameters_sha256": "104d79928d26201d78ee556203ab5b975658f37be5f0138c28affd9447a76fb2",
+      "row_count": 2
+    }
+  ]
+}

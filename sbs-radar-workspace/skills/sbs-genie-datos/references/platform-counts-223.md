@@ -1,0 +1,9 @@
+# Perfil explícito223 — conteos históricos autorizados por plataforma
+
+Implementa la propuesta posterior221 y revisión SK09 sin reutilizar permisos administrativos expirados. La garantía read-only corresponde al producto Genie Chat documentado; no acredita principal SELECT-only, privilegios mínimos ni permisos UC del humano. El actor es App M2M: Me exacto antes/después, actor del historial real, metadatos actuales, SQL cerrado/versiones/filas verificadas y revocación vigente siguen obligatorios. Evidencia219 original, perfil legado y fallo221 se conservan.
+
+El diagnóstico administrativo autenticado y CSRF hace ocho GET fijos, sin retries ni paginación, continúa tras errores y no consume consultas Genie/inferencia. No admite recursos arbitrarios ni habilita permisos cacheados. Un historial sin res y has_next_page=false es observación vacía válida, no prueba de ejecución. Parámetros de Query History usan notación punteada oficial.
+
+Warehouse STOPPED/STARTING puede intentar ejecución mediante auto-start de plataforma; no se inicia explícitamente. Espera de Genie: 23 polls, intervalo2s y deadline de aceptación45s, sin reintento POST. Una respuesta recibida tarde se rechaza; timeout de socket no es interrupción total garantizada. TTL de metadatos60s no cambia. Etiqueta histórica visible, rechazo de alcance específico, ningún resultado no verificado.
+
+La quinta asignación reserva adicionalmente6 generaciones,5 embeddings y50000tokens durante8h después de activación firmada. Conserva cuatro reservas anteriores y baseline sin refund; no apaga App al expirar. Total de cinco reservas34/31/310000 más baseline1/1/20000 y tentativa externa desconocida. Pruebas locales no acreditan acceso M2M real, calidad semántica ni E2E; ejecutar primero diagnóstico real y sólo entonces prueba Genie si observaciones suficientes.

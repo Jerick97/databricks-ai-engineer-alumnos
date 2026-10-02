@@ -1,0 +1,21 @@
+{
+  "data_profiling_config": {
+    "assets_dir": "/Shared/AIS08/monitor",
+    "baseline_table_name": "neptuno_manuel_arguelles.ais08_lab.inference_baseline",
+    "dashboard_id": "01f1ba1ec42a14e685504a71e6e191bb",
+    "drift_metrics_table_name": "neptuno_manuel_arguelles.ais08_lab.inference_flat_drift_metrics",
+    "monitor_version": 0,
+    "monitored_table_name": "neptuno_manuel_arguelles.ais08_lab.inference_flat",
+    "output_schema_id": "072e937d-4a67-4b92-a67c-b48b413cb9b8",
+    "profile_metrics_table_name": "neptuno_manuel_arguelles.ais08_lab.inference_flat_profile_metrics",
+    "status": "DATA_PROFILING_STATUS_ACTIVE",
+    "time_series": {
+      "granularities": [
+        "AGGREGATION_GRANULARITY_1_HOUR"
+      ],
+      "timestamp_column": "event_time"
+    }
+  },
+  "object_id": "f978ce71-ee30-4d43-88d3-60fb00453548",
+  "object_type": "table"
+}

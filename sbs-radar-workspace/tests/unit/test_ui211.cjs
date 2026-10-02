@@ -1,0 +1,48 @@
+'use strict';
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const vm=require('node:vm');
+const path=require('node:path');
+const root=path.resolve(__dirname,'../..');
+const file=fs.readFileSync(path.join(root,'deployment/overlay211/src/sbs/webapp/static/app.js'),'utf8');
+const start=file.indexOf('function assistantPresentation211(');
+const end=file.indexOf('function renderMessages()',start);
+const context={node:(tag,value,className)=>({tag,value,className,children:[],append(...items){this.children.push(...items);}})};
+vm.createContext(context);vm.runInContext(file.slice(start,end),context);
+const present=context.assistantPresentation211;
+const blank='Texto reemplazado (fragmentos literales):\nAntes:\n \t\nDespués:\n \n\n';
+const ocr='Texto reemplazado (fragmentos literales):\nAntes:\nh ayan\nDespués:\nhayan\n\n';
+const punctuation='Texto reemplazado (fragmentos literales):\nAntes:\n,\nDespués:\n.\n';
+const added='Texto añadido (fragmento literal):\nrequisito de autenticación reforzada\n';
+assert.equal(present(blank).display,'');
+assert.equal(present(blank+ocr+blank+added+blank).display,ocr+added);
+assert.equal(present(blank+ocr+blank+added+blank).omitted,3);
+for(const text of [ocr,punctuation,blank+'Conclusión: no borrar.',blank.replace('Después:\n ','Después:\ntexto'),blank.replace('Antes:\n ','Antes:\ntexto'),blank.replace('Después:','Otro:')]){
+  assert.equal(present(text).display,text);assert.equal(present(text).omitted,0);
+}
+const fixture=JSON.parse(fs.readFileSync(path.join(root,'runs/ui210/user-question-rendered.json'),'utf8'));
+const assistant=fixture.find(m=>m.role==='assistant');
+const before=JSON.stringify(fixture);
+const actual=present(assistant.text);
+assert.equal(actual.omitted,6);
+assert.ok(actual.display.includes('h ayan\r\nDespués:\r\nhayan'));
+assert.ok(actual.display.includes('credenciales.7'));
+assert.ok(actual.display.includes('La empresa es responsable de las pérdidas'));
+assert.ok(actual.display.includes('requisito de autenticación reforzada'));
+const box=context.node('article');
+context.appendMessageContent211(box,{role:'assistant',content:assistant.text});
+assert.equal(box.children[0].value,actual.display);
+assert.match(box.children[1].value,/6 bloques/);
+assert.equal(box.children[2].children[1].value,assistant.text);
+const user=context.node('article');context.appendMessageContent211(user,{role:'user',content:blank});
+assert.equal(user.children.length,1);assert.equal(user.children[0].value,blank);
+const meaningful=context.node('article');context.appendMessageContent211(meaningful,{role:'assistant',content:ocr});
+assert.equal(meaningful.children.length,1);
+assert.equal(JSON.stringify(fixture),before);
+assert.ok(file.includes('appendMessageContent211(box,m);citations(box,m.citations);structuredResults(box,m.structured_results)'));
+const base=fs.readFileSync(path.join(root,'deployment/overlay210/src/sbs/webapp/static/app.js'),'utf8');
+const strip=file.replace(file.slice(start,end),'').replace("box.append(node('strong',m.role==='user'?'TÚ':statusLabel(m.status)));appendMessageContent211(box,m);citations", "box.append(node('strong',m.role==='user'?'TÚ':statusLabel(m.status)),node('div',m.content));citations");
+assert.equal(strip,base); // No API, budgets, activation, citations or other behavior changed.
+const html=fs.readFileSync(path.join(root,'deployment/overlay211/src/sbs/webapp/static/index.html'),'utf8');
+assert.ok(!html.includes('Sesión local'));assert.ok(html.includes('Espacio de análisis'));
+console.log('UI211 PASS: real answer6 empty blocks; meaningful/OCR/punctuation retained; raw and citations unchanged; user content untouched; exact210 behavior remainder.');

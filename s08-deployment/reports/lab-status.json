@@ -1,0 +1,28 @@
+{
+  "endpoint": "ais08-neptuno",
+  "state": {
+    "config_update": "NOT_UPDATING",
+    "ready": "READY"
+  },
+  "versions": [
+    {
+      "name": "champion",
+      "version": "4"
+    }
+  ],
+  "pending_versions": [],
+  "traffic": {
+    "routes": [
+      {
+        "served_entity_name": "champion",
+        "served_model_name": "champion",
+        "traffic_percentage": 100
+      }
+    ]
+  },
+  "app_state": {
+    "message": "App has status: App is running",
+    "state": "RUNNING"
+  },
+  "app_url": "https://ais08-neptuno-ui-7474657121564806.aws.databricksapps.com"
+}

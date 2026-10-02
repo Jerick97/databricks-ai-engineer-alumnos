@@ -1,0 +1,528 @@
+{
+  "schema_version": "1.0",
+  "run_id": "astra-normative-review-001",
+  "generated_at_utc": "2026-09-27T23:20:12.658054+00:00",
+  "skill_invocation": {
+    "skill_id": "SK09",
+    "name": "sbs-evaluacion-jueces",
+    "version": "0.1.0",
+    "path": "skills/sbs-evaluacion-jueces/SKILL.md",
+    "sha256": "04c93c1d894905bb8053b74b14817d44c08363d1abee80c9b0bfdd37c5367be1",
+    "invoked_before_review": true,
+    "mode": "independent_ai_pilot_review_and_read_only_harness_review",
+    "context_skill": {
+      "skill_id": "SK00",
+      "version": "0.1.1",
+      "path": "skills/sbs-contexto-ejecucion/SKILL.md",
+      "sha256": "ef6404bb0a22a50718ad58fad96d430b2bf80fe6b13081ba6d2f38e5c2b17dbe",
+      "execution": "Read STATE, relevant plan and source-register; verified hashes of reused registered inputs."
+    },
+    "spec_hash": "7a028d0881c630950f69949229011238264fcaef3b70109776b3458c03929344",
+    "configuration": {
+      "scope": "independent_ai_pilot_review",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high",
+      "normative_source_policy": "Only locally available original regulatory text; project notes and discovery URLs are not normative evidence. No new web search.",
+      "source_root": "data/raw/pilot",
+      "rubric_version": "sbs-pilot-normative-rubric-v1",
+      "code_review": "read-only; synthetic reproductions explicitly separated"
+    },
+    "configuration_hash": "3532f66ede9b2b5d0f635057d007ea57df4ac35edec06b22fe4910e711333692",
+    "inputs": [
+      {
+        "id": "AGENTS.md",
+        "path": "AGENTS.md",
+        "sha256": "99996342db4cb7149f4f6a340495935d33008d1dc2d6709c7b4501059131ad5f"
+      },
+      {
+        "id": "STATE.md",
+        "path": "STATE.md",
+        "sha256": "536b22be1e8d991780b8760822d71962067df7f73c2339a30827910fc3a278a3"
+      },
+      {
+        "id": "skills/sbs-evaluacion-jueces/SKILL.md",
+        "path": "skills/sbs-evaluacion-jueces/SKILL.md",
+        "sha256": "04c93c1d894905bb8053b74b14817d44c08363d1abee80c9b0bfdd37c5367be1"
+      },
+      {
+        "id": "skills/sbs-contexto-ejecucion/SKILL.md",
+        "path": "skills/sbs-contexto-ejecucion/SKILL.md",
+        "sha256": "ef6404bb0a22a50718ad58fad96d430b2bf80fe6b13081ba6d2f38e5c2b17dbe"
+      },
+      {
+        "id": "skills/sbs-evaluacion-jueces/references/research-brief.md",
+        "path": "skills/sbs-evaluacion-jueces/references/research-brief.md",
+        "sha256": "2818b1deabb3569f8600913b725333e948a945689455bf6319c8e330b4a6b794"
+      },
+      {
+        "id": "skills/sbs-evaluacion-jueces/references/requirements-risks.md",
+        "path": "skills/sbs-evaluacion-jueces/references/requirements-risks.md",
+        "sha256": "d0c3f222bfefb9ec4aeda8fd9d64bc414c82efa06f2110d770957b1d27ec90ef"
+      },
+      {
+        "id": "docs/12-spec-agente-v0.2.md",
+        "path": "docs/12-spec-agente-v0.2.md",
+        "sha256": "7a028d0881c630950f69949229011238264fcaef3b70109776b3458c03929344"
+      },
+      {
+        "id": "docs/13-plan-implementacion-skills.md",
+        "path": "docs/13-plan-implementacion-skills.md",
+        "sha256": "eb617af73e77a339ac9ad0695503b84e2bf2529750db1f58681f9769e13d4f75"
+      },
+      {
+        "id": "context/source-register.json",
+        "path": "context/source-register.json",
+        "sha256": "569436c7b8963a2aefe1d0c34b7982882f186b29bd5d3b7cab5d8d968505b0fa"
+      },
+      {
+        "id": "context/foundation-source-notes.md",
+        "path": "context/foundation-source-notes.md",
+        "sha256": "c5c350dffafa53c6cc8a73365985d793384fc514a00b17dadac761968ed19722"
+      },
+      {
+        "id": "context/pilot-manifest.json",
+        "path": "context/pilot-manifest.json",
+        "sha256": "8ba8eb6d9d2cabf29d3e6be8f542e15dc233b5465e1684ddbf3bdbbfafb8752e"
+      },
+      {
+        "id": "data/raw/pilot/foundation.sqlite3",
+        "path": "data/raw/pilot/foundation.sqlite3",
+        "sha256": "a9310b219897f298245b9e3cfa6221f72e211994985e2a6039f773028bd914e9"
+      },
+      {
+        "id": "runs/sk02-real-capture-001.json",
+        "path": "runs/sk02-real-capture-001.json",
+        "sha256": "015da5bab49223b0f1811c049fd40d717eba5b5bfb764225f96e9638e61b75b7"
+      },
+      {
+        "id": "runs/sk02-real-transport-response-classification.txt",
+        "path": "runs/sk02-real-transport-response-classification.txt",
+        "sha256": "58ee3f4c60553d8eb193c1c1bcd99416ac368559e2c2f6ba9c811d02132c3e1e"
+      },
+      {
+        "id": "src/sbs/evaluation/__init__.py",
+        "path": "src/sbs/evaluation/__init__.py",
+        "sha256": "d6c719c8143c48cf36b1103bf661512ac8986af7ad8b0c3e7e2e2dee0e97fd4a"
+      },
+      {
+        "id": "tests/unit/test_evaluation.py",
+        "path": "tests/unit/test_evaluation.py",
+        "sha256": "0b6e8612308ee89bdcd8b3c3c1bb1862d6d73c1db66c57b61ba8379513921211"
+      }
+    ],
+    "registered_input_checks": [
+      {
+        "id": "12-spec-agente-v0.2",
+        "path": "docs/12-spec-agente-v0.2.md",
+        "matches_registered_hash": true
+      },
+      {
+        "id": "13-plan-implementacion-skills",
+        "path": "docs/13-plan-implementacion-skills.md",
+        "matches_registered_hash": true
+      }
+    ],
+    "output_artifacts": [
+      "runs/astra-normative-review.json"
+    ]
+  },
+  "reviewer": {
+    "kind": "ai_independent_review",
+    "model": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "model_identification_basis": "Explicit parent dispatch configuration/user request; no separate provider response metadata attached.",
+    "role": "Independent reviewer, not component author in this task",
+    "human_review": false,
+    "human_gold": false,
+    "institutional_approval": false,
+    "review_completed_for_available_evidence": true
+  },
+  "authorization": {
+    "ai_pilot_review_authorized": true,
+    "human_reviewer_required_for_this_pilot_review": false,
+    "conversation_requires_human_approval": false,
+    "institutional_impact_approval": "Separate authorized institutional workflow; not granted by this report."
+  },
+  "corpus_snapshot": {
+    "root": "data/raw/pilot",
+    "files": [
+      {
+        "path": "data/raw/pilot/foundation.sqlite3",
+        "bytes": 28672,
+        "sha256": "a9310b219897f298245b9e3cfa6221f72e211994985e2a6039f773028bd914e9"
+      }
+    ],
+    "database_counts": {
+      "attempts": 1,
+      "documents": 0,
+      "captures": 0,
+      "extraction_artifacts": 0
+    },
+    "original_normative_documents_available": 0,
+    "complete_pairs_verified": 0,
+    "original_text_in_source_notes": false,
+    "scope_limit": "Snapshot of data/raw/pilot only; not a permanent claim that originals cannot be obtained. Parent reports a new authorized SK02 capture in data/foundation-repository; its later outputs are not evaluated here.",
+    "acquisition_evidence": [
+      {
+        "path": "runs/sk02-real-capture-001.json",
+        "observation": "sources_requested=1; sources_captured=0; sources=[]"
+      },
+      {
+        "path": "data/raw/pilot/foundation.sqlite3",
+        "observation": "Read-only SELECT: one attempt failed with TransportError; zero documents/captures/extraction_artifacts."
+      },
+      {
+        "path": "runs/sk02-real-transport-response-classification.txt",
+        "observation": "Stored diagnostic classifies a later response as HTML JavaScript challenge, not PDF. No raw response inspected in this review; do not conflate this diagnostic with the earlier TransportError."
+      }
+    ],
+    "missing_evidence": [
+      "Original norm and modifying acts for each family, including annexes/corrections",
+      "Verified before/after pairs and any reconstruction source chain",
+      "Citable extracted spans with pages/offsets checked against originals",
+      "Materialized agent comparisons and conversations",
+      "Frozen independent reference changes/qrels, partitions and retrieval thresholds",
+      "Paired baseline and total agent-plus-review/rework timings"
+    ]
+  },
+  "protocol": {
+    "id": "sbs-pilot-normative-rubric-v1",
+    "created_before_normative_scoring": true,
+    "rubric": [
+      {
+        "id": "R01",
+        "dimension": "Identidad, versión y cobertura",
+        "required_evidence": [
+          "Originales antes/después o actos fuente de reconstrucción con URL, captura y SHA256",
+          "Familia, norma, disposición y páginas/offsets de cada lado",
+          "Inventario de anexos, correcciones y documentos faltantes"
+        ],
+        "pass": "Las dos contrapartes pertenecen al par declarado; toda reconstrucción se etiqueta y conserva actos fuente; cobertura explícita.",
+        "fail": "Emparejamiento incorrecto, reconstrucción presentada como consolidación oficial o anexo omitido silenciosamente.",
+        "not_evaluated": "Falta una contraparte o no puede verificarse su contenido/procedencia."
+      },
+      {
+        "id": "R02",
+        "dimension": "Antes y después",
+        "required_evidence": [
+          "Span literal localizable antes",
+          "Span literal localizable después",
+          "Contexto suficiente de artículo/inciso/anexo"
+        ],
+        "pass": "Ambos textos son fieles; no se elimina una condición, excepción, sujeto, unidad o encabezado determinante. Inserción/supresión solo se afirma con cobertura suficiente.",
+        "fail": "Cita inventada, texto de otra versión o recorte que altera sentido.",
+        "not_evaluated": "No hay originales citables de ambos lados o cobertura para probar ausencia."
+      },
+      {
+        "id": "R03",
+        "dimension": "Cambio textual y relación normativa",
+        "required_evidence": [
+          "Alineamiento por unidad atómica",
+          "Operación textual y fundamento de relación entre actos",
+          "Listado de cambios detectados con IDs únicos por par/disposición"
+        ],
+        "pass": "Se distingue adición, supresión, sustitución, renumeración y cambio de redacción; la consecuencia obligacional se fundamenta separadamente.",
+        "fail": "Se infiere derogación, nueva obligación o ausencia de cambios solo del ranking, de una noticia o de extracción incompleta.",
+        "not_evaluated": "Sin diff de originales completos ni referencia independiente de cambios."
+      },
+      {
+        "id": "R04",
+        "dimension": "Temporalidad y aplicabilidad",
+        "required_evidence": [
+          "Cláusulas citables de publicación/efecto o fuentes oficiales explícitas",
+          "Fecha de captura/conocimiento",
+          "Sujetos, excepciones y transitorios aplicables"
+        ],
+        "pass": "Publicación, efecto y conocimiento se separan; plazo y ámbito cuentan con sustento y se exponen dudas.",
+        "fail": "Se usa versión de URL como fecha de efecto, se presume vigencia actual o se presenta proyecto como norma obligatoria.",
+        "not_evaluated": "Faltan cláusulas o actos pertinentes; no completar fechas por inferencia."
+      },
+      {
+        "id": "R05",
+        "dimension": "Implicancias propuestas",
+        "required_evidence": [
+          "Afirmación normativa y sus pasajes",
+          "Proceso/control ficticio identificado como simulado",
+          "Razonamiento explícito y supuestos que conectan norma y proceso"
+        ],
+        "pass": "Se distingue hecho normativo, interpretación y acción propuesta. La revisión IA puede opinar, pero no adjudica aprobación institucional ni acredita cumplimiento real.",
+        "fail": "Se convierte una sugerencia en obligación no sustentada o en impacto aprobado; el catálogo ficticio se cita como fuente legal.",
+        "not_evaluated": "No hay norma fuente o no hay respuesta/catálogo para juzgar la implicancia."
+      },
+      {
+        "id": "R06",
+        "dimension": "Citas, incertidumbre y conversación",
+        "required_evidence": [
+          "Respuesta materializada con afirmaciones y citas",
+          "Documento/versión/disposición/página u offsets verificables",
+          "Contexto activo y cobertura visible"
+        ],
+        "pass": "Cada afirmación material está sustentada; se informa insuficiencia y estado de revisión IA/propuesta sin requerir revisión humana para conversar.",
+        "fail": "Se ocultan faltantes, se confunde historial con fuente, se hereda aprobación tras cambiar evidencia o se desbloquea chat únicamente con experto.",
+        "not_evaluated": "No hay respuesta materializada con evidencias."
+      }
+    ],
+    "rating_policy": "Use passed/failed/not_evaluated per criterion and family. Do not compute an aggregate score when evidence is missing. Critical factual errors are not offset by writing quality.",
+    "critical_error_definitions": [
+      "Invented or materially altered source text",
+      "Wrong counterpart/version causing a false change",
+      "Unsupported obligation, deadline, repeal, effective date or applicability",
+      "Silent omission of a materially relevant annex/condition",
+      "Incomplete extraction represented as no changes",
+      "AI proposal represented as approved institutional impact"
+    ],
+    "accepted_change_thresholds": {
+      "recall": 0.95,
+      "precision": 0.9,
+      "critical_omissions": 0,
+      "citations_faithful_and_localizable": 1.0,
+      "test_insufficiencies_flagged": 1.0,
+      "median_paired_total_review_time_reduction": 0.3
+    },
+    "retrieval_protocol": {
+      "status": "not_evaluated",
+      "k": null,
+      "thresholds": null,
+      "reason": "No real corpus/qrels frozen; detection thresholds are not retrieval thresholds."
+    },
+    "reference_policy": "An AI review is a provisional independent AI reference, never human adjudication or institutional approval. This run produces no normative reference facts because originals are absent.",
+    "future_comparison_policy": "Score before/after outputs with frozen evidence and rubric; retain disagreements and model/prompt metadata. If answer variants are compared, mask variant identity when feasible. Reserve complete pairs and related versions/documents; do not tune on holdout judgments."
+  },
+  "cases": [
+    {
+      "case_id": "pilot-market-conduct-before-after",
+      "family": "market_conduct",
+      "case_kind": "planned_review_slot_not_a_gold_case",
+      "discovery_leads": [
+        "3274-2017",
+        "03240-2023 (solo pista de relación, no par verificado)"
+      ],
+      "pair_id": null,
+      "status": "not_evaluated",
+      "reason": "No hay originales capturados ni contrapartes verificadas en data/raw/pilot en esta instantánea.",
+      "before": null,
+      "after": null,
+      "confirmed_changes": null,
+      "proposed_implications": null,
+      "rubric_results": {
+        "R01": "not_evaluated",
+        "R02": "not_evaluated",
+        "R03": "not_evaluated",
+        "R04": "not_evaluated",
+        "R05": "not_evaluated",
+        "R06": "not_evaluated"
+      },
+      "normative_findings": []
+    },
+    {
+      "case_id": "pilot-cybersecurity-before-after",
+      "family": "cybersecurity",
+      "case_kind": "planned_review_slot_not_a_gold_case",
+      "discovery_leads": [
+        "504-2021",
+        "03240-2023 (solo pista de relación, no par verificado)"
+      ],
+      "pair_id": null,
+      "status": "not_evaluated",
+      "reason": "No hay originales capturados ni contrapartes verificadas en data/raw/pilot en esta instantánea.",
+      "before": null,
+      "after": null,
+      "confirmed_changes": null,
+      "proposed_implications": null,
+      "rubric_results": {
+        "R01": "not_evaluated",
+        "R02": "not_evaluated",
+        "R03": "not_evaluated",
+        "R04": "not_evaluated",
+        "R05": "not_evaluated",
+        "R06": "not_evaluated"
+      },
+      "normative_findings": []
+    },
+    {
+      "case_id": "pilot-cross-family-implications",
+      "family": "cross_family",
+      "case_kind": "planned_review_slot_not_a_gold_case",
+      "discovery_leads": [],
+      "pair_id": null,
+      "status": "not_evaluated",
+      "reason": "No hay originales capturados ni contrapartes verificadas en data/raw/pilot en esta instantánea.",
+      "before": null,
+      "after": null,
+      "confirmed_changes": null,
+      "proposed_implications": null,
+      "rubric_results": {
+        "R01": "not_evaluated",
+        "R02": "not_evaluated",
+        "R03": "not_evaluated",
+        "R04": "not_evaluated",
+        "R05": "not_evaluated",
+        "R06": "not_evaluated"
+      },
+      "normative_findings": []
+    }
+  ],
+  "family_metrics": {
+    "market_conduct": {
+      "change_recall": {
+        "status": "not_evaluated",
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No hay corpus original completo ni respuestas de agente evaluables en esta instantánea; denominador desconocido no se sustituye por cero cambios."
+      },
+      "change_precision": {
+        "status": "not_evaluated",
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No hay corpus original completo ni respuestas de agente evaluables en esta instantánea; denominador desconocido no se sustituye por cero cambios."
+      },
+      "critical_omissions": {
+        "status": "not_evaluated",
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No hay corpus original completo ni respuestas de agente evaluables en esta instantánea; denominador desconocido no se sustituye por cero cambios."
+      },
+      "faithful_localizable_citations": {
+        "status": "not_evaluated",
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No hay corpus original completo ni respuestas de agente evaluables en esta instantánea; denominador desconocido no se sustituye por cero cambios."
+      },
+      "insufficiency_detection": {
+        "status": "not_evaluated",
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No hay corpus original completo ni respuestas de agente evaluables en esta instantánea; denominador desconocido no se sustituye por cero cambios."
+      },
+      "paired_review_time_saving": {
+        "status": "not_evaluated",
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No hay corpus original completo ni respuestas de agente evaluables en esta instantánea; denominador desconocido no se sustituye por cero cambios."
+      }
+    },
+    "cybersecurity": {
+      "change_recall": {
+        "status": "not_evaluated",
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No hay corpus original completo ni respuestas de agente evaluables en esta instantánea; denominador desconocido no se sustituye por cero cambios."
+      },
+      "change_precision": {
+        "status": "not_evaluated",
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No hay corpus original completo ni respuestas de agente evaluables en esta instantánea; denominador desconocido no se sustituye por cero cambios."
+      },
+      "critical_omissions": {
+        "status": "not_evaluated",
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No hay corpus original completo ni respuestas de agente evaluables en esta instantánea; denominador desconocido no se sustituye por cero cambios."
+      },
+      "faithful_localizable_citations": {
+        "status": "not_evaluated",
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No hay corpus original completo ni respuestas de agente evaluables en esta instantánea; denominador desconocido no se sustituye por cero cambios."
+      },
+      "insufficiency_detection": {
+        "status": "not_evaluated",
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No hay corpus original completo ni respuestas de agente evaluables en esta instantánea; denominador desconocido no se sustituye por cero cambios."
+      },
+      "paired_review_time_saving": {
+        "status": "not_evaluated",
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No hay corpus original completo ni respuestas de agente evaluables en esta instantánea; denominador desconocido no se sustituye por cero cambios."
+      }
+    }
+  },
+  "normative_status": "not_evaluated",
+  "normative_findings": [],
+  "harness_review": {
+    "scope": "src/sbs/evaluation/__init__.py and tests/unit/test_evaluation.py; read-only",
+    "code_modified": false,
+    "tests": {
+      "command": "python3 -m pytest tests/unit/test_evaluation.py -q",
+      "exit_code": 0,
+      "passed": 20,
+      "duration_reported_seconds": 0.01,
+      "evidence_type": "synthetic technical tests, not normative validation"
+    },
+    "findings": [
+      {
+        "id": "HR01",
+        "severity": "medium",
+        "type": "review_provenance_gap",
+        "location": "src/sbs/evaluation/__init__.py:116",
+        "test_location": "tests/unit/test_evaluation.py:131",
+        "finding": "The report copies reference.kind but drops review_provenance. An independent AI review therefore retains its kind but loses model, effort, rubric/prompt version, reviewer identity and source hashes unless an external wrapper persists them. There is no explicit AI-review test.",
+        "evidence": "Synthetic input kind=ai_independent_review and provenance actor=gpt-6-astra/effort=high/rubric=pilot-v1 returned reference_kind=ai_independent_review, report_kind=technical_only and no review_provenance field.",
+        "recommendation": "Persist typed review metadata separately from authentication; test synthetic, AI and claimed-human modes. Preserve provenance_authenticated=false unless actual authentication exists; do not gate AI review or chat on human_acceptance."
+      },
+      {
+        "id": "HR02",
+        "severity": "medium",
+        "type": "metric_scope_and_evidence_gap",
+        "location": "src/sbs/evaluation/__init__.py:78",
+        "test_location": "tests/unit/test_evaluation.py:42",
+        "finding": "Citation scoring validates Boolean assertions only. It can pass with no document, version, passage or locator; it also lacks an expected-material-claim denominator. This is documented as a technical assertion consumer, but its passed label must not be shown as independently verified citation fidelity.",
+        "evidence": "Synthetic citation {faithful:true, localizable:true}, without any source locator, yields numerator=1, denominator=1, value=1.0, status=passed. Existing test mutates the Boolean and does not check actual source linkage.",
+        "recommendation": "Label these as supplied judgments, carry judgment origin and evidence links, and add a separate evidence verification/claim-coverage gate before real citation acceptance. Do not infer real citations from this synthetic reproduction."
+      },
+      {
+        "id": "HR03",
+        "severity": "medium",
+        "type": "retrieval_threshold_label_ambiguity",
+        "location": "src/sbs/evaluation/__init__.py:146",
+        "test_location": "tests/unit/test_evaluation.py:69",
+        "finding": "retrieval_metrics emits passed/failed using _ratio default threshold=1, despite documenting measurements only and returning acceptance=not_evaluated. A measured Recall@1=0.5 is labeled failed without any frozen acceptance threshold being applied.",
+        "evidence": "retrieval_metrics([a], {a:1,b:1}, 1) gives recall.value=0.5, recall.status=failed and acceptance=not_evaluated.",
+        "recommendation": "Separate score availability from acceptance; apply acceptance only against a verified frozen protocol. Add tests showing that a raw metric alone never establishes protocol acceptance/failure."
+      }
+    ],
+    "positive_controls": [
+      {
+        "location": "src/sbs/evaluation/__init__.py:116",
+        "finding": "Always labels report technical_only, provenance_authenticated=false, legal_certification=false and human_acceptance=not_evaluated; claimed human kind cannot authenticate adjudication."
+      },
+      {
+        "location": "tests/unit/test_evaluation.py:18",
+        "finding": "Covers per-family gates, zero denominators and total review time; agent 1 plus review 15 versus baseline 10 correctly gives -0.6 saving."
+      },
+      {
+        "location": "tests/unit/test_evaluation.py:91",
+        "finding": "Covers shared document/version/derivative leakage and rejects incomplete pairs."
+      }
+    ],
+    "overall": "Technical tests pass; findings concern provenance and interpretation of metrics. They do not establish normative performance or require a human to perform the authorized pilot review."
+  },
+  "follow_up": {
+    "owner": "SK09 after SK02 original capture",
+    "trigger": "New original artifacts plus manifest/hash and extracted citable spans",
+    "action": "Start a new versioned SK09 invocation, preserve this snapshot, inspect originals, then populate only supportable case-level findings. Do not overwrite absent evidence with synthetic gold."
+  },
+  "final_verdict": {
+    "review_execution": "completed_for_current_snapshot",
+    "normative_comparison": "not_evaluated",
+    "reason": "Original regulatory corpus is absent in the reviewed snapshot; the missing input is evidence, not human reviewer permission.",
+    "human_adjudication": false,
+    "institutional_approval": false,
+    "e2e_acceptance": "not_evaluated"
+  }
+}

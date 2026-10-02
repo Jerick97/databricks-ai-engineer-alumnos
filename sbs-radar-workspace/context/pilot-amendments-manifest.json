@@ -1,0 +1,46 @@
+{
+  "allowed_hosts": [
+    "intranet2.sbs.gob.pe"
+  ],
+  "sources": [
+    {
+      "document_id": "sbs-2286-2024",
+      "family": "cybersecurity",
+      "url": "https://intranet2.sbs.gob.pe/dv_int_cn/2410/v2.0/Adjuntos/2286-2024.R%20%28modificado%29.pdf",
+      "source_kind": "normative",
+      "synthetic": false,
+      "published_on": null,
+      "effective_on": null,
+      "date_unknown_reasons": {
+        "published_on": "Unknown pending authoritative metadata review; not inferred from repository path",
+        "effective_on": "Unknown pending legal-effect review; not inferred from capture or path"
+      }
+    },
+    {
+      "document_id": "sbs-2220-2025",
+      "family": "cybersecurity",
+      "url": "https://intranet2.sbs.gob.pe/dv_int_cn/2506/v1.0/Adjuntos/Res.SBS%202220-2025.pdf",
+      "source_kind": "normative",
+      "synthetic": false,
+      "published_on": null,
+      "effective_on": null,
+      "date_unknown_reasons": {
+        "published_on": "Unknown pending authoritative metadata review; not inferred from repository path",
+        "effective_on": "Unknown pending legal-effect review; not inferred from capture or path"
+      }
+    },
+    {
+      "document_id": "sbs-3274-2017",
+      "family": "market_conduct",
+      "url": "https://intranet2.sbs.gob.pe/dv_int_cn/1731/v8.0/Adjuntos/3274-2017.R.pdf",
+      "source_kind": "normative",
+      "synthetic": false,
+      "published_on": null,
+      "effective_on": null,
+      "date_unknown_reasons": {
+        "published_on": "Unknown pending authoritative metadata review; not inferred from repository path",
+        "effective_on": "Unknown pending legal-effect review; not inferred from capture or path"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "status": "candidate_for_controlled_trial",
+  "endpoint": "databricks-gpt-oss-120b",
+  "expected_response_model": "gpt-oss-120b-080525",
+  "observation": "runs/sk05-generation-candidates-090-databricks-gpt-oss-120b.json",
+  "observation_sha256": "7cea220fc9ae4584485ca068a1e66c3346f4603cf38d6d2275e2e109c4d6488d",
+  "observed_http_status": 200,
+  "observed_finish_reason": "length",
+  "observed_max_tokens": 64,
+  "quality_accepted": false,
+  "scope": "Observed access and typed response only. Truncated smoke is not successful JSON, SBS quality, eligibility promotion, or Apps selection."
+}

@@ -1,0 +1,50 @@
+{
+  "reviewer": "independent publication_review agent",
+  "scope": "read-only review of /private/tmp/course-publication-0930; no remote mutations; no cloud E2E required",
+  "verdict": "PASS_PUBLICATION_SCOPE",
+  "nonblocking_findings": [
+    {
+      "path": "s08-deployment/reports/material-hoy-agenda-backup.html",
+      "issue": "31 historical backup links resolve incorrectly at reports depth; archival file, not main navigation.",
+      "action": "Exclude backup or mark explicitly historical; do not treat as functional index."
+    }
+  ],
+  "verified": [
+    "MATERIAL-HOY.html local file links exist.",
+    "Slides, S08 notebook, S08 agent code and App present.",
+    "SBS source, notebooks, framework web, teaching guide and teaching UI present.",
+    "13 SKILL.md files present.",
+    "Both published MP4 files present, approximately 10.9 MB and 11.4 MB.",
+    "All 25 ipynb files have empty cell outputs.",
+    "No deployment/state files, exact *-authorization.json files or foquito-key.js included.",
+    "No matches in bounded textual scan for Databricks PAT, OpenAI/Anthropic-style key, GitHub token, AWS access key or private-key PEM marker.",
+    "No file exceeds 50 MiB.",
+    "README clearly labels SBS IaC as unimplemented design; separates Terraform and Bundle ownership; names ianbal-genie-iac as independent example."
+  ],
+  "limitations": [
+    "No credentials or foquito-key.js read. Files whose names include credential or secret excluded from textual scan.",
+    "Secret scan is pattern based and not a proof of absence.",
+    "External URLs and live cloud resources not validated; publication does not establish E2E.",
+    "Historical reports and resource identifiers remain; identifiers alone are not credentials."
+  ],
+  "resolved_findings": [
+    {
+      "id": "PUB-01",
+      "path": "sbs-radar-workspace/deployment/job-recovery126-authorization-138.json",
+      "issue": "Temporary operational authorization with approved=true remains in package. Exclusion *-authorization.json misses numeric suffix.",
+      "action": "Exclude this file and add *-authorization-*.json to operational exclusion rules; retain explicit templates."
+    },
+    {
+      "id": "PUB-02",
+      "path": "sbs-radar-workspace/teaching-guide/index.html",
+      "issue": "13 broken local HTML links, 5 unique destinations: documents.jsonl, hybrid_125.py, retrieval/__init__.py, webapp/__init__.py under excluded runs/ui246/test-source246; also runs/sk09-astra-actual244-review.json.",
+      "action": "Retarget source links to included canonical source and corpus; remove missing review hyperlink or include sanitized appropriate review artifact."
+    }
+  ],
+  "blocking_findings": [],
+  "recheck": {
+    "guide_missing_links": [],
+    "authorization_138_removed": true,
+    "note": "Parent added exactly linked historical artifacts; independence retained; cloud E2E not required."
+  }
+}

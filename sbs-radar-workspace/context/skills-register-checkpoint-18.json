@@ -1,0 +1,132 @@
+[
+  {
+    "id": "SK00",
+    "name": "sbs-contexto-ejecucion",
+    "path": "skills/sbs-contexto-ejecucion/SKILL.md",
+    "status": "provisional",
+    "sha256": "ef6404bb0a22a50718ad58fad96d430b2bf80fe6b13081ba6d2f38e5c2b17dbe",
+    "component_status": "implemented_local_verification_with_remaining_integration_gates",
+    "e2e_status": "not_validated",
+    "version": "0.1.1"
+  },
+  {
+    "id": "SK01",
+    "name": "sbs-contratos-gobierno",
+    "path": "skills/sbs-contratos-gobierno/SKILL.md",
+    "status": "provisional",
+    "sha256": "172dbfb36212d5494a56a5c3fc3702a01495528c228b142e4617bd04109e48b0",
+    "component_status": "implemented_local_verification_with_remaining_integration_gates",
+    "e2e_status": "not_validated",
+    "version": "0.1.1"
+  },
+  {
+    "id": "SK02",
+    "name": "sbs-fundacion-datos",
+    "path": "skills/sbs-fundacion-datos/SKILL.md",
+    "status": "provisional",
+    "sha256": "450349499652a3fa48d791b321d9b7dc50e469a3e788cc4fc02aa48605be5bc5",
+    "component_status": "implemented_local_verification_with_remaining_integration_gates",
+    "e2e_status": "not_validated",
+    "version": "0.1.6"
+  },
+  {
+    "id": "SK03",
+    "name": "sbs-versiones-cambios",
+    "path": "skills/sbs-versiones-cambios/SKILL.md",
+    "status": "provisional",
+    "sha256": "eb30448ef00d20b32d5c93e9d6fc1e77d6dc0af62398660119a59d6dced519a1",
+    "component_status": "implemented_local_verification_with_remaining_integration_gates",
+    "e2e_status": "not_validated",
+    "version": "0.1.1"
+  },
+  {
+    "id": "SK04",
+    "name": "sbs-rag-hibrido",
+    "path": "skills/sbs-rag-hibrido/SKILL.md",
+    "status": "provisional",
+    "sha256": "be1bbce59fc145c17414e6cc9ef15515206f9f8becedea69019f27e26c92ba13",
+    "component_status": "implemented_local_verification_with_remaining_integration_gates",
+    "e2e_status": "not_validated",
+    "version": "0.1.0"
+  },
+  {
+    "id": "SK05",
+    "name": "sbs-modelos-configuracion",
+    "path": "skills/sbs-modelos-configuracion/SKILL.md",
+    "status": "provisional",
+    "sha256": "4283ae56ccbcc50236ba2cf2f1690537a432996a7bd4e1a68b63815adc315a3d",
+    "component_status": "implemented_local_verification_with_remaining_integration_gates",
+    "e2e_status": "not_validated",
+    "version": "0.1.3"
+  },
+  {
+    "id": "SK06",
+    "name": "sbs-genie-datos",
+    "path": "skills/sbs-genie-datos/SKILL.md",
+    "status": "provisional",
+    "sha256": "139816285867031a37aedf60c6404c7c36c3d496d024858ed7a773adaec35364",
+    "component_status": "implemented_local_verification_with_remaining_integration_gates",
+    "e2e_status": "not_validated",
+    "version": "0.1.11"
+  },
+  {
+    "id": "SK07",
+    "name": "sbs-conversacion-orquestacion",
+    "path": "skills/sbs-conversacion-orquestacion/SKILL.md",
+    "status": "provisional",
+    "sha256": "bf419ba44dbe086aa0a14fef9cf68159467e9b3e26a880b5030fe5d8a8746dbd",
+    "component_status": "implemented_local_verification_with_remaining_integration_gates",
+    "e2e_status": "not_validated",
+    "version": "0.1.11"
+  },
+  {
+    "id": "SK08",
+    "name": "sbs-guardrails-permisos",
+    "path": "skills/sbs-guardrails-permisos/SKILL.md",
+    "status": "provisional",
+    "sha256": "839fbcc46517807ea018fd949363d989984a765f3074da995655364824f9a7a0",
+    "component_status": "implemented_local_verification_with_remaining_integration_gates",
+    "e2e_status": "not_validated",
+    "version": "0.1.2"
+  },
+  {
+    "id": "SK09",
+    "name": "sbs-evaluacion-jueces",
+    "path": "skills/sbs-evaluacion-jueces/SKILL.md",
+    "status": "provisional",
+    "sha256": "46e9f9851d46b2ec95f61dabdaed6ec30cc28799f8c8e017615d87dcff6d2b66",
+    "component_status": "implemented_local_verification_with_remaining_integration_gates",
+    "e2e_status": "not_validated",
+    "version": "0.1.2"
+  },
+  {
+    "id": "SK10",
+    "name": "sbs-canal-revision",
+    "path": "skills/sbs-canal-revision/SKILL.md",
+    "status": "provisional",
+    "sha256": "b1f489d0c1099ea48bbe6543923e51eb60ba9d1340ffe757b2f7cc9c63eaa75e",
+    "component_status": "implemented_local_verification_with_remaining_integration_gates",
+    "e2e_status": "not_validated",
+    "version": "0.1.4"
+  },
+  {
+    "id": "SK11",
+    "name": "sbs-observabilidad-operacion",
+    "path": "skills/sbs-observabilidad-operacion/SKILL.md",
+    "status": "provisional",
+    "sha256": "77a991f60968835f09620f06285a74fd9afe7d9c3acea541ff4a88125f2762e0",
+    "component_status": "implemented_local_verification_with_remaining_integration_gates",
+    "e2e_status": "not_validated",
+    "version": "0.1.17"
+  },
+  {
+    "id": "SK12",
+    "name": "sbs-despliegue-e2e",
+    "path": "skills/sbs-despliegue-e2e/SKILL.md",
+    "status": "provisional",
+    "sha256": "f65f08891fe8e12bc6a9d0f9aa55ac992e3cefaf3100e397bf288dec5ebe55c6",
+    "component_status": "implemented_local_verification_with_remaining_integration_gates",
+    "e2e_status": "not_validated",
+    "version": "0.1.9"
+  }
+]

@@ -1,0 +1,23 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>lab/lab_app_smoke.py · S08</title><style>body{font:18px system-ui;margin:32px;color:#122b43}header{max-width:1000px}a{color:#533afd}pre{font:14px/1.6 ui-monospace,monospace;overflow:auto;background:#f6f9fc;padding:20px}pre span{display:block}pre span:target{background:#fff0ad}pre a{display:inline-block;width:4ch;color:#65788a}p{line-height:1.5}</style><header><h1>lab/lab_app_smoke.py</h1><p>Código del repositorio local · Neptuno S08. Esta copia permite examinar el script sin ejecutarlo.</p><p><a href="https://github.com/manuelarguelles/databricks-ai-engineer-alumnos/blob/main/s08-deployment/lab/lab_app_smoke.py">Ver este archivo en GitHub · repositorio de alumnos</a></p><p><a href="../../lab/lab_app_smoke.py">Abrir archivo original</a> · <a href="../S08-autonomo.html#24">Volver a las diapositivas</a></p></header><pre><span id="L1"><a href="#L1">1</a> &quot;&quot;&quot;Prueba HTTP oficial con auth unificada en servidor; jamás inyecta tokens en navegador.&quot;&quot;&quot;</span>
+<span id="L2"><a href="#L2">2</a> import argparse,os</span>
+<span id="L3"><a href="#L3">3</a> import requests</span>
+<span id="L4"><a href="#L4">4</a> from databricks.sdk import WorkspaceClient</span>
+<span id="L5"><a href="#L5">5</a> from lab_deploy import CONFIG,save,REPORTS</span>
+<span id="L6"><a href="#L6">6</a> p=argparse.ArgumentParser();p.add_argument(&#x27;--profile&#x27;);p.add_argument(&#x27;--health-only&#x27;,action=&#x27;store_true&#x27;);a=p.parse_args()</span>
+<span id="L7"><a href="#L7">7</a> if a.profile:os.environ[&#x27;DATABRICKS_CONFIG_PROFILE&#x27;]=a.profile</span>
+<span id="L8"><a href="#L8">8</a> w=WorkspaceClient();url=w.apps.get(CONFIG[&#x27;app_name&#x27;]).url.rstrip(&#x27;/&#x27;)</span>
+<span id="L9"><a href="#L9">9</a> # Credenciales sólo en memoria, no imprimir headers ni Response.request.</span>
+<span id="L10"><a href="#L10">10</a> headers=w.config.authenticate()</span>
+<span id="L11"><a href="#L11">11</a> health=requests.get(url+&#x27;/health&#x27;,headers=headers,timeout=30,allow_redirects=False)</span>
+<span id="L12"><a href="#L12">12</a> result={&#x27;url&#x27;:url,&#x27;health_status&#x27;:health.status_code,&#x27;health_ok&#x27;:health.status_code==200 and health.json().get(&#x27;status&#x27;)==&#x27;ok&#x27; if health.status_code==200 else False}</span>
+<span id="L13"><a href="#L13">13</a> invalid=requests.post(url+&#x27;/&#x27;,headers=headers,data={&#x27;question&#x27;:&#x27;&lt;script&gt;alert(1)&lt;/script&gt;&#x27;+&#x27;a&#x27;*2000},timeout=30,allow_redirects=False)</span>
+<span id="L14"><a href="#L14">14</a> result.update(invalid_status=invalid.status_code,invalid_has_form=&#x27;&lt;form&#x27; in invalid.text,invalid_escaped=&#x27;&amp;lt;script&amp;gt;&#x27; in invalid.text and &#x27;&lt;script&gt;alert(1)&lt;/script&gt;&#x27; not in invalid.text)</span>
+<span id="L15"><a href="#L15">15</a> if not a.health_only:</span>
+<span id="L16"><a href="#L16">16</a>     page=requests.post(url+&#x27;/&#x27;,headers=headers,data={&#x27;question&#x27;:&#x27;¿Cuánto vendimos de Bebidas en 2026?&#x27;},timeout=180,allow_redirects=False)</span>
+<span id="L17"><a href="#L17">17</a>     (REPORTS/&#x27;lab-app-observed.html&#x27;).write_text(page.text)</span>
+<span id="L18"><a href="#L18">18</a>     result.update(post_status=page.status_code,has_expected_business_answer=&#x27;116024.88&#x27; in page.text,has_source=&#x27;gold.ventas_por_categoria_mes&#x27; in page.text)</span>
+<span id="L19"><a href="#L19">19</a>     result[&#x27;pass&#x27;]=result[&#x27;health_ok&#x27;] and result[&#x27;has_expected_business_answer&#x27;] and result[&#x27;has_source&#x27;] and result[&#x27;invalid_status&#x27;]==400 and result[&#x27;invalid_has_form&#x27;] and result[&#x27;invalid_escaped&#x27;]</span>
+<span id="L20"><a href="#L20">20</a> else:result[&#x27;pass&#x27;]=result[&#x27;health_ok&#x27;]</span>
+<span id="L21"><a href="#L21">21</a> save(&#x27;app-http&#x27;,result);print(result)</span>
+<span id="L22"><a href="#L22">22</a> if not result[&#x27;pass&#x27;]:raise SystemExit(1)</span>
+</pre></html>

@@ -1,0 +1,14 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>lab/lab_parse_contract.sql · S08</title><style>body{font:18px system-ui;margin:32px;color:#122b43}header{max-width:1000px}a{color:#533afd}pre{font:14px/1.6 ui-monospace,monospace;overflow:auto;background:#f6f9fc;padding:20px}pre span{display:block}pre span:target{background:#fff0ad}pre a{display:inline-block;width:4ch;color:#65788a}p{line-height:1.5}</style><header><h1>lab/lab_parse_contract.sql</h1><p>Código del repositorio local · Neptuno S08. Esta copia permite examinar el script sin ejecutarlo.</p><p><a href="https://github.com/manuelarguelles/databricks-ai-engineer-alumnos/blob/main/s08-deployment/lab/lab_parse_contract.sql">Ver este archivo en GitHub · repositorio de alumnos</a></p><p><a href="../../lab/lab_parse_contract.sql">Abrir archivo original</a> · <a href="../S08-autonomo.html#27">Volver a las diapositivas</a></p></header><pre><span id="L1"><a href="#L1">1</a> -- Fixture explícito para probar extracción. No escribe inference tables ni acredita tráfico.</span>
+<span id="L2"><a href="#L2">2</a> WITH fixtures(case_name,status_code,response) AS (</span>
+<span id="L3"><a href="#L3">3</a>   VALUES</span>
+<span id="L4"><a href="#L4">4</a>   (&#x27;valido&#x27;,200,&#x27;{&quot;output&quot;:[{&quot;content&quot;:[{&quot;type&quot;:&quot;output_text&quot;,&quot;text&quot;:&quot;Respuesta de prueba&quot;}]}]}&#x27;),</span>
+<span id="L5"><a href="#L5">5</a>   (&#x27;texto_movido&#x27;,200,&#x27;{&quot;output&quot;:[{&quot;text&quot;:&quot;Respuesta en otra ruta&quot;}]}&#x27;),</span>
+<span id="L6"><a href="#L6">6</a>   (&#x27;error_http&#x27;,500,&#x27;{&quot;error&quot;:&quot;fallo de prueba&quot;}&#x27;)</span>
+<span id="L7"><a href="#L7">7</a> )</span>
+<span id="L8"><a href="#L8">8</a> SELECT case_name,</span>
+<span id="L9"><a href="#L9">9</a>  length(get_json_object(response,&#x27;$.output[0].content[0].text&#x27;)) AS output_chars,</span>
+<span id="L10"><a href="#L10">10</a>  CASE WHEN status_code&gt;=400 THEN &#x27;http_error&#x27;</span>
+<span id="L11"><a href="#L11">11</a>       WHEN get_json_object(response,&#x27;$.output[0].content[0].text&#x27;) IS NULL THEN &#x27;parse_error&#x27;</span>
+<span id="L12"><a href="#L12">12</a>       ELSE &#x27;ok&#x27; END AS parse_status</span>
+<span id="L13"><a href="#L13">13</a> FROM fixtures ORDER BY case_name</span>
+</pre></html>

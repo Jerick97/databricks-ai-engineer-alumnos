@@ -1,0 +1,21 @@
+{
+  "warehouse": [
+    "Detecta parámetro ausente antes deejecutar",
+    "Comprueba estado/permisos yconfigentregable"
+  ],
+  "empty": [
+    "Vacío no equivale ausencia decambios siacceso/carganoverificados"
+  ],
+  "citations": [
+    "No reemplaza pasajesnormativos porresumenSQL"
+  ],
+  "write": [
+    "Impideescritura ytoolscambiadosporPDF"
+  ],
+  "stale": [
+    "Separa snapshots eidentifica conflicto"
+  ],
+  "trigger_no": [
+    "RAGranking noesGenieprincipal"
+  ]
+}

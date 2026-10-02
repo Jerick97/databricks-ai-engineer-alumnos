@@ -1,0 +1,10 @@
+{
+  "status": "selected_for_controlled_trial",
+  "endpoint": "databricks-qwen3-next-80b-a3b-instruct",
+  "expected_response_model": "qwen3-next-instruct-091725",
+  "observation_path": "runs/sk05-generation-candidates-072-databricks-qwen3-next-80b-a3b-instruct.json",
+  "observation_sha256": "2ca91c6c4aa7539c1e4028d964fa5c628486fa06f3a20905a0555af75c53bd11",
+  "max_requests": 4,
+  "max_output_tokens": 5000,
+  "max_input_chars": 120000
+}

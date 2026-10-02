@@ -1,0 +1,8 @@
+[
+  {"id":"unknown_cost","input":"La respuesta llegó correctamente, pero el proveedor no devolvió uso de tokens ni costo. ¿Qué valor y estado registras en el panel de costos?"},
+  {"id":"capture_failure","input":"Última captura exitosa: lunes. El martes y miércoles se intentó y falló. El panel dice actualizado el miércoles porque hubo actividad. Diseña el estado correcto."},
+  {"id":"secret_log","input":"El error del cliente incluye Authorization Bearer token-demo-secret y una URL con api_key. Queremos guardar todo para poder depurar. Decide qué persiste."},
+  {"id":"trace","input":"Debemos reproducir una respuesta que compara dos versiones. ¿Qué identificadores/configuración registras sin volcar datos sensibles?"},
+  {"id":"trigger_yes","input":"Instrumenta latencia por etapa y errores del agente SBS. ¿Corresponde a observabilidad/operación?"},
+  {"id":"trigger_no","input":"Define el gold de exactitud jurídica y evalúa interpretación de 20 cambios. ¿Corresponde a observabilidad/operación como propietario principal?"}
+]

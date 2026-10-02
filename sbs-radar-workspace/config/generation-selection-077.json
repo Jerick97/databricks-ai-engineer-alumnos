@@ -1,0 +1,10 @@
+{
+  "status": "selected_for_controlled_trial",
+  "endpoint": "databricks-meta-llama-3-3-70b-instruct",
+  "expected_response_model": "meta-llama-3.3-70b-instruct-121024",
+  "observation_path": "runs/sk05-generation-candidates-072-databricks-meta-llama-3-3-70b-instruct.json",
+  "observation_sha256": "cd0f68b0076444e943ab76e1d0d4f38bbe9060a28d6215dac395d7bc0111c445",
+  "max_requests": 4,
+  "max_output_tokens": 5000,
+  "max_input_chars": 120000
+}

@@ -1,0 +1,6 @@
+{
+  "model_name": "neptuno_manuel_arguelles.ais08_lab.agente_neptuno",
+  "version": "4",
+  "model_uri": "models:/m-40c1877723fa4424a6035f8989f77c04",
+  "mlflow_version": "3.16.1"
+}

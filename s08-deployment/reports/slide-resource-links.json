@@ -1,0 +1,24 @@
+{
+  "updated_slides": [
+    "slide-06",
+    "slide-11",
+    "slide-12",
+    "slide-14",
+    "slide-16",
+    "slide-19",
+    "slide-21",
+    "slide-23",
+    "slide-24",
+    "slide-27",
+    "slide-32",
+    "slide-33",
+    "slide-37",
+    "slide-40",
+    "slide-41"
+  ],
+  "slide_count": 52,
+  "local_links": "PASS: all source viewers and relative links exist",
+  "github": "Both configured remotes returned 404; no remote code links claimed verified. Local source viewers provided. User indicates actual URL differs.",
+  "databricks_links": "Constructed from recorded resource names and IDs; browser navigation not verified in this turn.",
+  "visual_check": "BLOCKED: CUA app-server unavailable; Playwright Chromium launch SIGABRT. No new visual PASS claimed."
+}

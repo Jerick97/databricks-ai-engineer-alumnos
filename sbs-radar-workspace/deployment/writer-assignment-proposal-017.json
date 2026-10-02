@@ -1,0 +1,116 @@
+{
+  "version": "writer-assignment-017",
+  "status": "prepared_readonly_pending_independent_review",
+  "apply_allowed": false,
+  "remote_mutations": 0,
+  "host": "https://dbc-0410b264-20c7.cloud.databricks.com",
+  "profile": "databricks-ai-engineer-aws",
+  "identity": {
+    "id": "72803555975940",
+    "application_id": "33b6f37c-7e6a-489f-b313-f886418b0319",
+    "display_name": "sbs-radar-writer"
+  },
+  "workspace_assignment": {
+    "observed_workspace_scim_visible_active": true,
+    "direct_USER_assignment_observed": false,
+    "recommended_mutation_now": null,
+    "conditional_only_if_missing": {
+      "method": "PUT",
+      "path": "/api/2.0/preview/permissionassignments/principals/72803555975940",
+      "body": {
+        "permissions": [
+          "USER"
+        ]
+      }
+    },
+    "reason": "Avoid unnecessary assignment; active workspace visibility already observed. Direct versus inherited effective membership not fully enumerated."
+  },
+  "run_as": {
+    "future_job_field": {
+      "service_principal_name": "33b6f37c-7e6a-489f-b313-f886418b0319"
+    },
+    "observed_ruleset": {
+      "name": "accounts/d07dc225-12fb-4805-91a2-735f02373714/servicePrincipals/33b6f37c-7e6a-489f-b313-f886418b0319/ruleSets/default",
+      "etag": "1790568565370000",
+      "grant_rules": [
+        {
+          "principals": [
+            "users/sociosdosmilveintiseis@gmail.com"
+          ],
+          "role": "roles/servicePrincipal.manager"
+        }
+      ]
+    },
+    "proposed_add_only": {
+      "role": "roles/servicePrincipal.user",
+      "principals": [
+        "users/sociosdosmilveintiseis@gmail.com"
+      ]
+    },
+    "proposed_request": {
+      "method": "PUT",
+      "path": "/api/2.0/preview/accounts/access-control/rule-sets",
+      "body": {
+        "name": "accounts/d07dc225-12fb-4805-91a2-735f02373714/servicePrincipals/33b6f37c-7e6a-489f-b313-f886418b0319/ruleSets/default",
+        "rule_set": {
+          "etag": "1790568565370000",
+          "grant_rules": [
+            {
+              "principals": [
+                "users/sociosdosmilveintiseis@gmail.com"
+              ],
+              "role": "roles/servicePrincipal.manager"
+            },
+            {
+              "principals": [
+                "users/sociosdosmilveintiseis@gmail.com"
+              ],
+              "role": "roles/servicePrincipal.user"
+            }
+          ],
+          "name": "accounts/d07dc225-12fb-4805-91a2-735f02373714/servicePrincipals/33b6f37c-7e6a-489f-b313-f886418b0319/ruleSets/default"
+        }
+      }
+    },
+    "preconditions": [
+      "fresh exact ruleset GET; name/identity stable",
+      "merge only missing User grant preserving all current rules",
+      "use returned etag; stop if conflict",
+      "separate authorization for mutation; this artifact does not apply"
+    ],
+    "postconditions": [
+      "exact ruleset GET confirms User for intended requester and preserved prior grants",
+      "future Job run_as and actual run identity independently observed"
+    ]
+  },
+  "not_in_scope": [
+    "identity creation",
+    "ADMIN",
+    "workspace admin group",
+    "OAuth/PAT creation",
+    "data grants",
+    "warehouse start",
+    "Jobs create/run",
+    "app role changes"
+  ],
+  "phase_S_dependency": false,
+  "sdk_version": "0.102.0",
+  "serializer_network_calls": 0,
+  "workspace_GET_calls": 2,
+  "workspace_GET_cap": 3,
+  "sources": [
+    {
+      "url": "https://docs.databricks.com/aws/en/admin/users-groups/manage-service-principals",
+      "checked_on": "2026-09-28"
+    },
+    {
+      "url": "https://docs.databricks.com/aws/en/security/auth/access-control/service-principal-acl",
+      "checked_on": "2026-09-28"
+    },
+    {
+      "url": "https://docs.databricks.com/api/access-management/v1/workspace-permission-assignments",
+      "checked_on": "2026-09-28"
+    }
+  ],
+  "cost": null
+}

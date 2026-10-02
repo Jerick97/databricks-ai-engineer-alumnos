@@ -1,0 +1,146 @@
+[
+  {
+    "id":"L1","group":"layers","n":1,"title":"Canal y experiencia","tagline":"La tarea termina cuando el usuario puede usar la respuesta.",
+    "what":"Define cómo entra una consulta, cómo se presenta el resultado y cómo una persona revisa la evidencia. Incluye estados de espera, errores y recuperación de la conversación.",
+    "see":["El recorrido desde la pregunta hasta abrir la fuente.","La diferencia visible entre resultado, advertencia y fallo.","Qué información necesita el usuario para decidir el siguiente paso."],
+    "options":[{"name":"Portal de comparación","when":"El usuario necesita leer versiones lado a lado y revisar documentos.","tradeoff":"Permite una revisión precisa; requiere construir y mantener la interfaz."},{"name":"Chat integrado","when":"La consulta empieza en el canal habitual del equipo.","tradeoff":"Reduce cambios de contexto; las tablas y las citas largas necesitan una vista adicional."},{"name":"API","when":"Otro sistema consumirá resultados estructurados.","tradeoff":"Facilita integración; la experiencia y los errores deben resolverse en el cliente."}],
+    "evidence":["Un usuario completa una tarea real en el canal entregado.","Las fuentes se abren y los estados incompletos se entienden sin explicación del desarrollador."],
+    "mistake":"Dar por validada la experiencia porque una llamada HTTP respondió correctamente.","question":"¿Qué tiene que poder hacer la persona después de leer la respuesta?","sbs":"Mostrar antes/después, norma, versiones, páginas y estado de revisión; permitir abrir ambos originales.","links":["A01","A08","A12"]
+  },
+  {
+    "id":"L2","group":"layers","n":2,"title":"Entrada y normalización","tagline":"Convertir una solicitud en un contrato comprobable.",
+    "what":"Recibe eventos o documentos, verifica sus campos y produce una representación que las siguientes capacidades puedan procesar sin perder el original.",
+    "see":["Campos obligatorios, tipos y valores permitidos.","Identificadores, duplicados y reintentos del evento.","Transformaciones del texto que podrían cambiar cifras o significado."],
+    "options":[{"name":"Formulario tipado","when":"Se conocen norma, versiones y fecha de consulta.","tradeoff":"Reduce ambigüedad; exige más datos al usuario al comenzar."},{"name":"Extracción desde lenguaje natural","when":"El usuario formula preguntas libres.","tradeoff":"Es flexible; debe confirmar campos ambiguos antes de continuar."},{"name":"Ingesta documental","when":"La entrada es una nueva publicación o archivo.","tradeoff":"Automatiza recepción; necesita controles de formato, integridad y calidad de extracción."}],
+    "evidence":["Entradas inválidas devuelven errores específicos antes de invocar el modelo.","Cada representación procesada conserva un vínculo al evento o documento original."],
+    "mistake":"Normalizar espacios, guiones o números sin comprobar si se alteró una disposición.","question":"¿Qué ambigüedad debe resolverse antes de gastar una consulta?","sbs":"Validar norma, par de versiones, fecha de corte y ámbito; conservar texto original junto al normalizado.","links":["A03","A04","A05"]
+  },
+  {
+    "id":"L3","group":"layers","n":3,"title":"Borde, seguridad y gateway","tagline":"La identidad y los límites se comprueban antes del acceso.",
+    "what":"Protege la entrada al sistema con autenticación, autorización, gestión de secretos y límites de consumo. Los controles continúan en cada fuente y herramienta.",
+    "see":["Identidad efectiva del usuario y de cada servicio.","Recursos accesibles y límites de solicitudes.","Dónde se guardan secretos y cómo se registran rechazos sin exponerlos."],
+    "options":[{"name":"Identidad del usuario","when":"Las respuestas deben respetar permisos individuales.","tradeoff":"Mantiene atribución y acceso por persona; requiere propagar identidad correctamente."},{"name":"Identidad de servicio acotada","when":"Un proceso programado ingiere fuentes autorizadas.","tradeoff":"Simplifica operación; exige permisos mínimos y distinguirla del usuario final."},{"name":"Gateway compartido","when":"Varios clientes consumen el agente.","tradeoff":"Centraliza cuotas y autenticación; no reemplaza permisos sobre datos y tools."}],
+    "evidence":["Dos identidades con permisos distintos reciben accesos coherentes.","Excesos de cuota y credenciales inválidas se rechazan con trazas verificables."],
+    "mistake":"Usar una cuenta privilegiada para todas las consultas y confiar en el prompt para restringirlas.","question":"¿Con los permisos de quién se ejecuta cada operación?","sbs":"Separar documentos públicos de contexto interno del banco; comprobar permisos antes de recuperar procesos o controles internos.","links":["A07","A09","A11"]
+  },
+  {
+    "id":"L4","group":"layers","n":4,"title":"Clasificación y ruteo","tagline":"Elegir la capacidad antes de intentar responder.",
+    "what":"Determina intención, dominio y siguiente operación. Puede solicitar aclaraciones o rechazar una tarea cuando faltan datos o está fuera de alcance.",
+    "see":["Intenciones distintas que hoy parecen una sola pregunta.","Reglas de selección y argumentos de la herramienta elegida.","Qué ocurre cuando hay más de una intención o ninguna coincide."],
+    "options":[{"name":"Reglas explícitas","when":"Las intenciones son pocas y sus condiciones son claras.","tradeoff":"Son reproducibles; requieren mantener excepciones y vocabulario."},{"name":"Clasificador con salida tipada","when":"La variedad del lenguaje dificulta las reglas.","tradeoff":"Tolera formulaciones nuevas; necesita evaluación y opción de no decidir."},{"name":"Ruta híbrida","when":"Hay decisiones críticas fijas y otras ambiguas.","tradeoff":"Reserva flexibilidad para lo necesario; exige definir precedencia entre reglas y modelo."}],
+    "evidence":["Casos conocidos, ambiguos y fuera de alcance toman la ruta esperada.","La traza conserva intención, argumentos y motivo de aclaración o rechazo."],
+    "mistake":"Medir solo la herramienta seleccionada e ignorar que recibió versiones o fechas incorrectas.","question":"¿Qué preguntas necesitan capacidades diferentes aunque usen las mismas palabras?","sbs":"Distinguir comparar texto, consultar vigencia y proponer impacto; no resolver las tres con un único resumen.","links":["A03","A06","A09"]
+  },
+  {
+    "id":"L5","group":"layers","n":5,"title":"Recuperación / grounding","tagline":"Responder con la evidencia correspondiente, no con la más parecida.",
+    "what":"Obtiene los hechos y pasajes que sustentan la respuesta desde documentos, tablas o funciones. Comprueba pertinencia, versión y suficiencia del contexto.",
+    "see":["Filtros de identidad documental, versión y fecha.","Pasajes recuperados y su localización en el original.","Preguntas que no pueden resolverse con la evidencia disponible."],
+    "options":[{"name":"SQL gobernado","when":"La pregunta se resuelve con hechos estructurados y semántica definida.","tradeoff":"Facilita filtros y agregación; depende de una extracción y un modelo de datos correctos."},{"name":"Búsqueda textual o estructural","when":"Se conoce número de norma, artículo o expresión precisa.","tradeoff":"Es transparente; puede perder paráfrasis o cambios de denominación."},{"name":"Búsqueda híbrida con reranking","when":"Hay vocabulario variable y preguntas conceptuales.","tradeoff":"Puede mejorar recuperación; añade costo y debe compararse con una base más simple."}],
+    "evidence":["Un conjunto de preguntas demuestra recuperación suficiente de las fuentes correctas.","Las citas conservan página o localización y no mezclan versiones."],
+    "mistake":"Suponer que un pasaje relevante pertenece a la versión correcta.","question":"¿Cómo sabremos que no falta una excepción o un anexo decisivo?","sbs":"Recuperar ambos lados de la comparación y sus modificatorias; indicar cobertura incompleta si falta un original.","links":["A04","A05","A08","A10"]
+  },
+  {
+    "id":"L6","group":"layers","n":6,"title":"Razonamiento y decisión","tagline":"Transformar evidencia en una propuesta con límites.",
+    "what":"Interpreta contexto, descompone tareas y propone respuestas o próximos pasos. Debe distinguir cálculos, inferencias y decisiones reservadas a una persona.",
+    "see":["Qué afirmaciones requieren interpretación y cuáles son cálculos.","Dependencias entre subtareas y evidencia necesaria.","Cómo se comunica incertidumbre sin inventar confianza numérica."],
+    "options":[{"name":"Reglas y cálculo","when":"La decisión está definida por condiciones comprobables.","tradeoff":"Ofrece reproducibilidad; no resuelve por sí sola lenguaje ambiguo."},{"name":"Síntesis con evidencia fija","when":"Se necesita explicar resultados ya calculados o recuperados.","tradeoff":"Acota libertad y costo; requiere contexto suficiente y validación de afirmaciones."},{"name":"Planificación con herramientas","when":"La siguiente búsqueda depende de resultados intermedios.","tradeoff":"Resuelve exploración variable; necesita presupuesto, condición de parada y trazas."}],
+    "evidence":["Cada conclusión distingue hechos de interpretación y señala su sustento.","Casos insuficientes producen preguntas o abstención, no conclusiones definitivas."],
+    "mistake":"Tratar un cambio de redacción como una nueva obligación jurídica sin revisar contexto.","question":"¿Qué puede proponer el modelo y qué no tiene autoridad para decidir?","sbs":"Explicar diferencias y proponer impacto tentativo; la aplicabilidad al banco queda a revisión del especialista.","links":["A05","A06","A07","A08"]
+  },
+  {
+    "id":"L7","group":"layers","n":7,"title":"Validación y guardrails","tagline":"Una respuesta plausible todavía tiene que pasar controles.",
+    "what":"Verifica formato, permisos, evidencia y políticas antes de entregar una respuesta o ejecutar una acción. Incluye rechazo, reparación acotada y revisión humana.",
+    "see":["Controles deterministas y controles que requieren juicio.","Respuestas válidas que un filtro podría bloquear por error.","Condiciones de abstención y número máximo de reparaciones."],
+    "options":[{"name":"Validadores deterministas","when":"Se pueden comprobar schema, citas, IDs y permisos.","tradeoff":"Son auditables; no prueban por sí solos que la conclusión esté sustentada."},{"name":"Evaluador semántico","when":"Se necesita revisar relación entre evidencia y afirmación.","tradeoff":"Añade cobertura; también puede equivocarse y requiere calibración."},{"name":"Aprobación experta","when":"Hay ambigüedad o consecuencias relevantes.","tradeoff":"Aporta autoridad contextual; consume tiempo y necesita una cola de revisión usable."}],
+    "evidence":["Casos inválidos se detienen y casos válidos atraviesan el control.","Cada rechazo explica el requisito incumplido y conserva su evidencia."],
+    "mistake":"Añadir un juez LLM y asumir que sus aprobaciones equivalen a verdad.","question":"¿Qué fallo debe detener la salida aunque el resto parezca correcto?","sbs":"Comprobar ambas citas, versión y cobertura; impedir que un impacto tentativo aparezca como aprobado.","links":["A07","A08","A09","A10"]
+  },
+  {
+    "id":"L8","group":"layers","n":8,"title":"Acción y herramientas","tagline":"Cada herramienta necesita contrato, permiso y resultado verificable.",
+    "what":"Ejecuta consultas, comparaciones y escrituras autorizadas mediante funciones o APIs. Gestiona efectos, errores, reintentos e idempotencia.",
+    "see":["Argumentos y resultados tipados de cada operación.","Separación entre lectura, propuesta y escritura.","Efectos de ejecutar dos veces la misma solicitud."],
+    "options":[{"name":"Tools de solo lectura","when":"El objetivo es consultar y explicar.","tradeoff":"Reduce consecuencias; no completa tareas que requieren registrar decisiones."},{"name":"Workflow con aprobación","when":"Una propuesta debe convertirse en registro oficial.","tradeoff":"Hace explícita la autoridad; requiere estados y control de concurrencia."},{"name":"Acción automática acotada","when":"La regla y el riesgo permiten autonomía demostrada.","tradeoff":"Reduce trabajo repetitivo; exige límites, reversión y monitoreo de efectos."}],
+    "evidence":["Una operación rechaza argumentos inválidos y permisos insuficientes.","Repetir un evento no duplica registros ni pierde la aprobación asociada."],
+    "mistake":"Describir herramientas en un prompt que no corresponden a funciones implementadas.","question":"¿Qué cambio de estado puede producir esta herramienta y quién lo autorizó?","sbs":"Ejecutar comparación y consultas; registrar el impacto aprobado con identidad del revisor y clave idempotente.","links":["A06","A07","A11"]
+  },
+  {
+    "id":"L9","group":"layers","n":9,"title":"Observabilidad, evaluación y mejora","tagline":"Reconstruir una respuesta y aprender de sus fallos.",
+    "what":"Conecta trazas, métricas y feedback con las versiones del sistema. Permite localizar errores y comprobar si una modificación mejora la tarea sin introducir regresiones.",
+    "see":["Identificador común entre interfaz, consultas y herramientas.","Calidad, latencia y costo desglosados por etapa.","Qué feedback puede convertirse en un caso de evaluación."],
+    "options":[{"name":"Trazas por solicitud","when":"Se necesita explicar cómo se produjo un resultado.","tradeoff":"Facilita diagnóstico; exige retención y protección de contenidos."},{"name":"Evaluación por versión","when":"Cambian corpus, prompts, modelo o configuración.","tradeoff":"Detecta regresiones; depende de referencias representativas y estables."},{"name":"Monitoreo de uso real","when":"El sistema entra en piloto u operación.","tradeoff":"Descubre fallos no previstos; requiere denominadores y revisión de muestras."}],
+    "evidence":["Se reconstruye un resultado con sus fuentes y versiones.","Una mejora se compara contra una base y reporta también errores nuevos."],
+    "mistake":"Contar solo respuestas exitosas y excluir silenciosamente preguntas sin respuesta.","question":"¿Qué evidencia permitiría explicar mañana el resultado de hoy?","sbs":"Registrar par normativo, extractor, config Genie, citas, revisión, costo y tiempo de la corrida.","links":["A10","A11","A12"]
+  },
+  {
+    "id":"P1","group":"stages","n":1,"title":"Fundación de datos","tagline":"Preparar la materia prima antes de pedir inteligencia.",
+    "what":"Identifica, conserva y transforma fuentes con controles de calidad y cobertura. Organiza originales y derivados para no perder historia ni confundir procesamiento con verdad.",
+    "see":["Universo documental acordado y documentos faltantes.","Originales inmutables y transformaciones reproducibles.","Calidad de OCR, tablas, anexos y metadatos."],
+    "options":[{"name":"Muestra manual controlada","when":"Se valida el caso con pocos documentos.","tradeoff":"Permite inspección detallada; no demuestra escalabilidad ni cobertura histórica."},{"name":"Pipeline incremental","when":"Las fuentes publican cambios de forma recurrente.","tradeoff":"Automatiza actualización; necesita detectar duplicados, fallos y cambios de formato."},{"name":"Arquitectura Medallion","when":"Hay múltiples transformaciones y consumidores.","tradeoff":"Separa original, limpieza y consumo; añade gestión que debe justificar el volumen."}],
+    "evidence":["Inventario con origen, hash real, fecha y cobertura.","Perfilado y controles que detectan documentos incompletos o extracción degradada."],
+    "mistake":"Cargar PDFs en un índice y considerar resuelta su calidad o completitud.","question":"¿Qué parte del universo comprometido podemos demostrar que está disponible?","sbs":"Conservar norma base, modificatorias y anexos; una descarga reciente no sustituye una versión histórica.","links":["A03","A04","A05"]
+  },
+  {
+    "id":"P2","group":"stages","n":2,"title":"Contratos y gobierno","tagline":"Acordar significado, responsables y reglas de cambio.",
+    "what":"Define esquemas, semántica, propietarios y permisos. Establece cómo evolucionan datos y capacidades sin romper consumidores ni borrar decisiones previas.",
+    "see":["Quién responde por cada fuente y cada definición.","Compatibilidad entre versiones de schemas y herramientas.","Diferencia entre fecha de publicación, efecto y conocimiento."],
+    "options":[{"name":"Contrato mínimo versionado","when":"Un piloto tiene pocas entidades y un equipo pequeño.","tradeoff":"Permite acuerdos rápidos; hay que convertir ambigüedades en reglas explícitas."},{"name":"Catálogo gobernado","when":"Varios usuarios consumen tablas y documentos compartidos.","tradeoff":"Centraliza permisos y descubrimiento; exige responsables y mantenimiento."},{"name":"Validación de cambios en CI","when":"Schemas y tools evolucionan con frecuencia.","tradeoff":"Detecta incompatibilidades temprano; no sustituye revisión del significado de negocio."}],
+    "evidence":["Diccionario aprobado con responsables y ejemplos.","Un cambio incompatible se detecta antes de afectar consumidores."],
+    "mistake":"Versionar archivos sin definir qué representa una versión normativa.","question":"¿Quién puede cambiar esta definición y qué consumidores se verían afectados?","sbs":"Definir norma, versión, disposición, modificatoria y temporalidad; conservar relaciones y decisiones del revisor.","links":["A04","A05","A07"]
+  },
+  {
+    "id":"P3","group":"stages","n":3,"title":"Conocimiento y recuperación","tagline":"Diseñar qué sabe el sistema y cómo demuestra que lo encontró.",
+    "what":"Prepara corpus, representaciones y estrategia de acceso. Selecciona segmentación, metadatos y búsqueda según las preguntas que deben resolverse.",
+    "see":["Unidad documental que conserva contexto suficiente.","Metadatos necesarios para filtrar por versión y ámbito.","Diferencia entre encontrar una cita y sustentar una conclusión."],
+    "options":[{"name":"Índice por disposición","when":"Las preguntas señalan artículos o anexos.","tradeoff":"Mantiene estructura normativa; necesita manejar referencias cruzadas y renumeraciones."},{"name":"Hechos curados en tablas","when":"Se consultan relaciones y cambios ya extraídos.","tradeoff":"Facilita consultas con Genie; exige validar la extracción y conservar procedencia."},{"name":"Corpus con búsqueda híbrida","when":"Las preguntas usan conceptos o vocabulario variable.","tradeoff":"Amplía formas de acceso; requiere medir recuperación y evitar mezclar versiones."}],
+    "evidence":["Preguntas ancla con pasajes esperados y casos sin respuesta.","Comparación de estrategias de búsqueda sobre el mismo conjunto reservado."],
+    "mistake":"Elegir embeddings antes de definir la unidad de evidencia.","question":"¿Cuál es el fragmento mínimo que permite comprender sin perder una excepción?","sbs":"Diseñar recuperación de artículo, inciso y anexo con contexto; cada resultado debe apuntar al original de su versión.","links":["A04","A05","A08","A10"]
+  },
+  {
+    "id":"P4","group":"stages","n":4,"title":"Orquestación","tagline":"Asignar cada decisión al mecanismo que puede controlarla.",
+    "what":"Diseña orden, estados y responsabilidades entre código, modelo, herramientas y personas. Define presupuestos, reintentos y condiciones de parada antes de automatizar.",
+    "see":["Dependencias y entradas/salidas de cada tarea.","Decisiones deterministas frente a exploración abierta.","Recuperación tras fallos sin repetir efectos irreversibles."],
+    "options":[{"name":"Pipeline determinista","when":"Los pasos son conocidos y estables.","tradeoff":"Es fácil de probar; se adapta menos a recorridos imprevistos."},{"name":"Agente único con tools","when":"La secuencia depende de lo que se descubre.","tradeoff":"Aporta flexibilidad; necesita límites de llamadas y verificación de resultados."},{"name":"Especialistas coordinados","when":"Se demuestran tareas distintas con contratos claros.","tradeoff":"Separa responsabilidades; añade coordinación, costo y oportunidades de fallo."}],
+    "evidence":["Diagrama de estados y contratos implementables por etapa.","Escenarios de error y agotamiento de presupuesto con salida definida."],
+    "mistake":"Añadir subagentes para aparentar cobertura sin demostrar necesidad.","question":"¿Qué decisión dinámica aporta valor frente a un workflow fijo?","sbs":"Separar ingesta, alineamiento, diff, consulta e impacto; la revisión humana es un estado explícito.","links":["A06","A07","A11"]
+  },
+  {
+    "id":"P5","group":"stages","n":5,"title":"Modelo","tagline":"Elegir por la tarea medida, no por el prestigio del modelo.",
+    "what":"Determina qué capacidad necesita IA y compara alternativas bajo restricciones de calidad, costo, latencia y datos. Incluye la opción de resolver partes sin modelo.",
+    "see":["Casos donde el modelo agrega valor sobre reglas o SQL.","Errores relevantes en español y textos del dominio.","Restricciones de entorno, acceso y procesamiento de información."],
+    "options":[{"name":"Sin LLM en el cálculo","when":"Hashes, fechas o diferencias exactas tienen solución determinista.","tradeoff":"Reduce variabilidad; no interpreta significado por sí solo."},{"name":"Modelo general con contexto","when":"Se requiere síntesis y explicación de evidencia.","tradeoff":"Permite comenzar rápido; necesita contrato de respuesta y evaluación específica."},{"name":"Capacidad administrada de Genie","when":"El caso necesita conversar con hechos gobernados.","tradeoff":"Integra consulta y semántica; se deben verificar funciones disponibles, límites y permisos del entorno."}],
+    "evidence":["Benchmark comparativo del caso con criterios y costos comunes.","Decisión registrada con límites conocidos y alternativa de respaldo."],
+    "mistake":"Confundir una respuesta extensa con mejor exactitud o mejor abstención.","question":"¿Qué fallo concreto justifica cambiar de modelo?","sbs":"Mantener diff exacto fuera del LLM y medir la explicación; evaluar opciones documentales de Genie sin asumir que están habilitadas.","links":["A02","A06","A10","A11"]
+  },
+  {
+    "id":"P6","group":"stages","n":6,"title":"Seguridad y cumplimiento","tagline":"Preparar límites que se puedan hacer cumplir.",
+    "what":"Identifica datos sensibles, identidades, amenazas y obligaciones aplicables. Traduce riesgos en controles técnicos y responsabilidades humanas verificables.",
+    "see":["Flujos de información entre fuentes, modelos y canales.","Instrucciones maliciosas dentro de documentos recuperados.","Retención, acceso, auditoría y consecuencias de una salida indebida."],
+    "options":[{"name":"Piloto con corpus público","when":"Se valida detección y explicación sin información interna.","tradeoff":"Reduce exposición; todavía no prueba impacto sobre procesos del banco."},{"name":"Entorno con permisos segregados","when":"Se incorpora contexto confidencial.","tradeoff":"Permite análisis contextual; requiere pruebas de acceso y configuración operativa."},{"name":"Revisión obligatoria por riesgo","when":"La salida puede influir en obligaciones o acciones relevantes.","tradeoff":"Mantiene responsabilidad explícita; necesita disponibilidad y criterios del especialista."}],
+    "evidence":["Modelo de amenazas con pruebas de acceso e inyección documental.","Matriz de responsabilidades, retención y acciones autorizadas."],
+    "mistake":"Suponer que documentos públicos eliminan el riesgo de interpretaciones o acciones incorrectas.","question":"¿Qué información no debe cruzar cada frontera y quién acepta el riesgo residual?","sbs":"Tratar texto normativo como dato, no instrucción al agente; separar corpus público de controles internos y aprobación jurídica.","links":["A07","A09","A11"]
+  },
+  {
+    "id":"P7","group":"stages","n":7,"title":"Evaluación y calidad","tagline":"Definir la respuesta correcta antes de optimizar el sistema.",
+    "what":"Construye referencias, métricas y pruebas que distinguen omisiones, invenciones y errores operativos. Combina controles automáticos con adjudicación experta.",
+    "see":["Calidad del gold y desacuerdos entre revisores.","Separación entre datos de ajuste y evaluación.","Denominadores que incluyen rechazos, fallos y ausencia de respuesta."],
+    "options":[{"name":"Comprobación exacta","when":"Se evalúan IDs, cifras, citas o cambios literales.","tradeoff":"Es reproducible; no cubre toda la interpretación contextual."},{"name":"Rúbrica humana","when":"Hay decisiones semánticas o consecuencias normativas.","tradeoff":"Aporta criterio experto; requiere tiempo y resolver desacuerdos."},{"name":"Juez calibrado","when":"Se necesita escalar una revisión con criterios definidos.","tradeoff":"Reduce esfuerzo de muestreo; debe contrastarse contra humanos y casos adversariales."}],
+    "evidence":["Protocolo congelado con conjunto reservado y reglas de adjudicación.","Resultados por tipo de error, con ejemplos y regresiones visibles."],
+    "mistake":"Cambiar respuestas de referencia para subir la puntuación sin registrar la corrección.","question":"¿Qué prueba demostraría que nuestra métrica está equivocada?","sbs":"Medir recall y precisión de cambios, alineamiento, citas, temporalidad y tiempo humano; reservar pares completos de normas.","links":["A05","A09","A10","A12"]
+  },
+  {
+    "id":"P8","group":"stages","n":8,"title":"Observabilidad","tagline":"Diseñar desde el inicio qué podremos explicar después.",
+    "what":"Prepara instrumentación, identificadores y política de registro para reconstruir ejecuciones. Incluye costo total, fallos, latencia y versiones de fuentes y componentes.",
+    "see":["Trazabilidad desde la entrada hasta la respuesta y revisión.","Datos necesarios para reproducir sin registrar información excesiva.","Métricas que requieren alerta y una persona responsable."],
+    "options":[{"name":"Registro estructurado mínimo","when":"Se comienza con un piloto pequeño.","tradeoff":"Es sencillo y barato; exige IDs coherentes para no perder relaciones."},{"name":"Trazas distribuidas","when":"La solicitud cruza múltiples servicios y herramientas.","tradeoff":"Facilita localizar latencia y fallos; añade instrumentación y administración."},{"name":"Tablero operativo","when":"Hay uso recurrente con objetivos de servicio.","tradeoff":"Hace visibles tendencias; necesita denominadores correctos y acciones ante alertas."}],
+    "evidence":["Una corrida se reconstruye con corpus, código, prompts y configuración.","Una alerta de prueba llega al responsable con contexto suficiente para actuar."],
+    "mistake":"Guardar todo el prompt y todos los documentos sin una política de acceso o retención.","question":"¿Qué registro necesitamos para distinguir un fallo de datos de uno de razonamiento?","sbs":"Vincular documento, extracción, par comparado, consulta Genie y revisión; incluir el costo del trabajo humano.","links":["A08","A10","A11"]
+  },
+  {
+    "id":"P9","group":"stages","n":9,"title":"IA responsable y despliegue","tagline":"Entregar una versión operable con responsables y reversión.",
+    "what":"Prepara aceptación, publicación, configuración y operación segura. Define quién aprueba el uso, cómo se limita, qué se monitorea y cómo retirar o revertir una versión.",
+    "see":["Artefacto exacto que recibe el usuario y sus parámetros.","Criterios de aceptación, soporte y condiciones de suspensión.","Dependencias entre versión del código, corpus, modelo y configuración."],
+    "options":[{"name":"Piloto supervisado","when":"Todavía se está comprobando utilidad y calidad.","tradeoff":"Permite aprender con control; no acredita operación autónoma."},{"name":"Despliegue gradual","when":"La tarea ya tiene aceptación y métricas suficientes.","tradeoff":"Limita exposición inicial; requiere comparar versiones y definir reversión."},{"name":"Servicio operado","when":"Hay usuarios, responsables y capacidad de soporte.","tradeoff":"Sostiene uso recurrente; implica disponibilidad, incidentes y costo continuo."}],
+    "evidence":["Recorrido real probado en la copia y canal entregados, con aprobación registrada.","Runbook y rollback ensayados sobre versiones identificables."],
+    "mistake":"Equiparar un Job exitoso con un notebook listo para abrir o una aplicación disponible.","question":"¿Quién puede detener esta versión y cómo vuelve a una alternativa segura?","sbs":"Liberar un asistente de revisión, con límites visibles; ninguna propuesta de impacto queda aprobada sin el especialista.","links":["A07","A11","A12"]
+  }
+]

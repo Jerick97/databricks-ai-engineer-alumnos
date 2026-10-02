@@ -1,0 +1,18 @@
+{
+  "approved": false,
+  "scope": "writer_grants117",
+  "issued_at_ms": null,
+  "expires_at_ms": null,
+  "limits": {
+    "http": 64,
+    "patch": 4
+  },
+  "files": {
+    "src/sbs/guardrails/writer_grants_117.py": "5ccb6dd0d67ffebe21f261bdadeed625d5c3b4b1b43c091ba33409b7315dbc5b",
+    "src/sbs/operations/provision_105.py": "71a80caf1e31b590b077c0c257cd0c7c6af1684285795800a41e0b58c588a160",
+    "src/sbs/operations/provision_106.py": "418d1a9eda2b85b64d812d0c0dc6dc06394e9f3aa5e5ba397f1033eda5321365",
+    "src/sbs/operations/__init__.py": "33a389baa991bc0e107d95efb03397b6e31953096e6d86df9701660332b133f8",
+    "runs/sk08-sk11-writer-access-116.json": "5ef484610cad10ce64387b203e4533a9720b18c9e77e74df2942be0d57e83d65",
+    "runs/sk08-app-grants-069.py": "1380d59d158dbc22805536a8b3a40721d79df77cab8f128fcbca140b96991ba5"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "duration": 31.333333333333332,
+  "assertions": [
+    {
+      "kind": "appearsBy",
+      "selector": "#scene03-heading",
+      "bySec": 0.7
+    },
+    {
+      "kind": "staysInFrame",
+      "selector": "#scene03-n0"
+    }
+  ]
+}

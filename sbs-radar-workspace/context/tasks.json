@@ -1,0 +1,15 @@
+{
+  "SK01-build": {
+    "requires": [
+      "12-spec-agente-v0.2",
+      "13-plan-implementacion-skills",
+      "14-plan-creacion-skills"
+    ]
+  },
+  "SK02-research": {
+    "requires": [
+      "12-spec-agente-v0.2",
+      "sbs-forensic-genie"
+    ]
+  }
+}

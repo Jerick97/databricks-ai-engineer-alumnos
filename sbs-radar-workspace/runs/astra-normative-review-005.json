@@ -1,0 +1,1169 @@
+{
+  "run_id": "astra-normative-review-005",
+  "completed_at_utc": "2026-09-28T04:21:58.537608+00:00",
+  "artifact_type": "ai_historical_normative_review_not_human_reference",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "skill_id": "SK09",
+  "skill_version": "0.1.2",
+  "skill_sha256": "46e9f9851d46b2ec95f61dabdaed6ec30cc28799f8c8e017615d87dcff6d2b66",
+  "protocol_sha256": "8ee94f8b3b26614996e07d86cf6c9ce878d29240009e922f4305639933506b25",
+  "invocation_path": "runs/astra-normative-review-005-invocation.json",
+  "invocation_sha256": "79a12dfe86e807af6cd3674c54eb6890deddde84ecd43bebaf2406fdf037e872",
+  "human_approved": false,
+  "institutional_impact_approved": false,
+  "overall_verdict": "Historical literal comparison usable with cited limits; not independent holdout, not current-law certification.",
+  "method": {
+    "inputs": "Only 3 frozen original PDFs and corresponding frozen derivatives; source inventory used as provenance/selection, not substituted for normative proof.",
+    "reviewed_agent_outputs": false,
+    "reviewed_gold_or_qrels": false,
+    "blindness_limit": "Inventory contained literal snippets and lineage labels before source registration; disclosed in invocation. This is output-blind review, not double-blind adjudication.",
+    "visual_review": {
+      "g140_v1": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "g140_v2": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "g167": [
+        1,
+        2
+      ]
+    },
+    "visual_pages_count": 16,
+    "textual_page_reextraction_count": 20,
+    "renderer": "pdftoppm, PNG streamed in memory at scale-to1700; no source edits or image artifacts saved",
+    "consistency": "Original PDF re-extraction equals frozen rawtext page spans on20/20pages; raw diff plus page comparisons; substantive difference and all cited passages inspected visually. No second-model agreement or human adjudication.",
+    "web_research": false,
+    "external_legal_standards_interpreted": false
+  },
+  "sources": [
+    {
+      "source_id": "g140_v2",
+      "source": {
+        "document_id": "sbs-g140-2009",
+        "family": "cybersecurity",
+        "source_kind": "normative",
+        "synthetic": false,
+        "version_id": "b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38",
+        "sha256": "b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38",
+        "url": "https://intranet2.sbs.gob.pe/dv_int_cn/249/v2.0/Adjuntos/g-140-2009.pdf",
+        "captured_at": "2026-09-28T00:58:11.599840+00:00",
+        "published_on": null,
+        "effective_on": null,
+        "date_unknown_reasons": {
+          "effective_on": "Pending SK09 review; literal clauses retained separately",
+          "published_on": "Pending authoritative date reconciliation"
+        }
+      },
+      "original_path": "data/foundation-holdout/objects/b9/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38.pdf",
+      "rawtext_path": "data/foundation-holdout/derived/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "result_path": "data/foundation-holdout/derived/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/result.json",
+      "pages": 9,
+      "quality": {
+        "status": "partial",
+        "limitations": [
+          "annex_references_pending",
+          "layout_table_review_pending",
+          "semantic_segmentation_pending"
+        ]
+      },
+      "original_sha256": "b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38",
+      "result_sha256": "c17dd383010528f9c4f736106ec1061f3e3c1a785460d61d9312f4fd841fab01",
+      "rawtext_sha256": "cb2f64e58eee51383c9f1cc9b5d7639716dee7cf410b561bc583a7ecea642215",
+      "existing_six_pdf_hash_overlap": false,
+      "literal_evidence": [
+        {
+          "page": 1,
+          "start": 109,
+          "end": 135,
+          "text": "Lima, 02 de abril de 2009 "
+        },
+        {
+          "page": 2,
+          "start": 5408,
+          "end": 5475,
+          "text": "1 Literal modificado por la Circular N° G-167-2012 del 05/11/2012. "
+        },
+        {
+          "page": 5,
+          "start": 12261,
+          "end": 12363,
+          "text": "cumplidos, y cuando corresponda, incorporados en la lógica interna de las aplicaciones informáticas.  "
+        },
+        {
+          "page": 5,
+          "start": 14359,
+          "end": 14427,
+          "text": "2 Artículo modificado por la Circular N° G-167-2012 del 05/11/2012. "
+        },
+        {
+          "page": 6,
+          "start": 17590,
+          "end": 17659,
+          "text": "3 Artículo incorporado por la Circular N° G-167-2012 del 05/11/2012. "
+        },
+        {
+          "page": 6,
+          "start": 17660,
+          "end": 17725,
+          "text": "4 Párrafo modificado por la Circular N°G-193-2017 del 07/07/2017 "
+        },
+        {
+          "page": 6,
+          "start": 15631,
+          "end": 15734,
+          "text": "En el Anexo A que forma parte de la presente norma y se publica en el Portal electrónico institucional "
+        },
+        {
+          "page": 7,
+          "start": 18081,
+          "end": 18090,
+          "text": "Vigencia "
+        },
+        {
+          "page": 7,
+          "start": 18113,
+          "end": 18190,
+          "text": "posiciones de la presente Circular entran en vigencia al día siguiente de su "
+        }
+      ]
+    },
+    {
+      "source_id": "g140_v1",
+      "source": {
+        "document_id": "sbs-g140-2009",
+        "family": "cybersecurity",
+        "source_kind": "normative",
+        "synthetic": false,
+        "version_id": "778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8",
+        "sha256": "778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8",
+        "url": "https://intranet2.sbs.gob.pe/dv_int_cn/249/v1.0/Adjuntos/g-140-2009.c.pdf",
+        "captured_at": "2026-09-28T00:59:14.856586+00:00",
+        "published_on": null,
+        "effective_on": null,
+        "date_unknown_reasons": {
+          "published_on": "Review pending; path version not publication",
+          "effective_on": "Review pending"
+        }
+      },
+      "original_path": "data/foundation-holdout/objects/77/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8.pdf",
+      "rawtext_path": "data/foundation-holdout/derived/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "result_path": "data/foundation-holdout/derived/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/result.json",
+      "pages": 9,
+      "quality": {
+        "status": "partial",
+        "limitations": [
+          "annex_references_pending",
+          "layout_table_review_pending",
+          "semantic_segmentation_pending"
+        ]
+      },
+      "original_sha256": "778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8",
+      "result_sha256": "f903a47b7da646a5d2240059aa734157107332b485fb960117bf1c736baa7b7d",
+      "rawtext_sha256": "01c5a194f581f0a260410e417b72a83a866ced9680f877b74f4d48c786cb799e",
+      "existing_six_pdf_hash_overlap": false,
+      "literal_evidence": [
+        {
+          "page": 1,
+          "start": 109,
+          "end": 135,
+          "text": "Lima, 02 de abril de 2009 "
+        },
+        {
+          "page": 2,
+          "start": 5405,
+          "end": 5472,
+          "text": "1 Literal modificado por la Circular N° G-167-2012 del 05/11/2012. "
+        },
+        {
+          "page": 5,
+          "start": 12258,
+          "end": 12360,
+          "text": "cumplidos, y cuando corresponda, incorporados en la lógica interna de las aplicaciones informáticas.  "
+        },
+        {
+          "page": 5,
+          "start": 14356,
+          "end": 14424,
+          "text": "2 Artículo modificado por la Circular N° G-167-2012 del 05/11/2012. "
+        },
+        {
+          "page": 6,
+          "start": 17478,
+          "end": 17547,
+          "text": "3 Artículo incorporado por la Circular N° G-167-2012 del 05/11/2012. "
+        },
+        {
+          "page": 6,
+          "start": 15629,
+          "end": 15732,
+          "text": "En el Anexo A que forma parte de la presente norma y se publica en el Portal electrónico institucional "
+        },
+        {
+          "page": 7,
+          "start": 17900,
+          "end": 17909,
+          "text": "Vigencia "
+        },
+        {
+          "page": 7,
+          "start": 17932,
+          "end": 18010,
+          "text": "posiciones de la presente Circular entran en vigencia al día siguient e de su "
+        }
+      ]
+    },
+    {
+      "source_id": "g167",
+      "source": {
+        "document_id": "sbs-g167-2012",
+        "family": "cybersecurity",
+        "source_kind": "normative",
+        "synthetic": false,
+        "version_id": "1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0",
+        "sha256": "1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0",
+        "url": "https://intranet2.sbs.gob.pe/intranet/INT_CN/DV_INT_CN/161/v1.0/Adjuntos/g-167-2012.c.pdf",
+        "captured_at": "2026-09-28T00:58:12.053110+00:00",
+        "published_on": null,
+        "effective_on": null,
+        "date_unknown_reasons": {
+          "effective_on": "Pending SK09 review; literal clauses retained separately",
+          "published_on": "Pending authoritative date reconciliation"
+        }
+      },
+      "original_path": "data/foundation-holdout/objects/1f/1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0.pdf",
+      "rawtext_path": "data/foundation-holdout/derived/1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/f4e1f3fc370b26f5d3dd1c932b97ab417a8c6f08c0624dd413c75305474e2ae0/rawtext.txt",
+      "result_path": "data/foundation-holdout/derived/1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/f4e1f3fc370b26f5d3dd1c932b97ab417a8c6f08c0624dd413c75305474e2ae0/result.json",
+      "pages": 2,
+      "quality": {
+        "status": "partial",
+        "limitations": [
+          "annex_references_pending",
+          "layout_table_review_pending",
+          "semantic_segmentation_pending"
+        ]
+      },
+      "original_sha256": "1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0",
+      "result_sha256": "a9bd927f0dbd11bceafff5ba9e4cc58587e76fb95d01c3b28250e79d1fdfcf1a",
+      "rawtext_sha256": "0cdbb0dfc81e037164207a4208880598ac46f402dc9c88a23d2f32e01bfcffe3",
+      "existing_six_pdf_hash_overlap": false,
+      "literal_evidence": [
+        {
+          "page": 1,
+          "start": 4,
+          "end": 42,
+          "text": "Lima,    05    de  noviembre  de 2012 "
+        },
+        {
+          "page": 2,
+          "start": 3778,
+          "end": 3867,
+          "text": "En el Anexo A que forma parte de la presente norma y se publica en el Portal electrónico "
+        },
+        {
+          "page": 2,
+          "start": 4774,
+          "end": 4786,
+          "text": "3. Vigencia "
+        },
+        {
+          "page": 2,
+          "start": 4787,
+          "end": 4865,
+          "text": "La presente Circular entrará en vigencia al día siguiente de su publicación.  "
+        }
+      ]
+    }
+  ],
+  "integrity": {
+    "status": "passed",
+    "scope": "Byte identity to frozen inventory and readable coverage of captured PDFs, not authentication of publication or guarantee of complete legal history",
+    "hash_inputs_verified": 9,
+    "hash_inputs_total": 9,
+    "pdf_count": 3,
+    "pdf_pages_total": 20,
+    "checks": [
+      {
+        "source_id": "g140_v2",
+        "pdf_pages": 9,
+        "derivative_page_spans": 9,
+        "exact_page_reextraction_matches": 9,
+        "inventory_hashes_match": true
+      },
+      {
+        "source_id": "g140_v1",
+        "pdf_pages": 9,
+        "derivative_page_spans": 9,
+        "exact_page_reextraction_matches": 9,
+        "inventory_hashes_match": true
+      },
+      {
+        "source_id": "g167",
+        "pdf_pages": 2,
+        "derivative_page_spans": 2,
+        "exact_page_reextraction_matches": 2,
+        "inventory_hashes_match": true
+      }
+    ],
+    "page_comparison": [
+      {
+        "page": 1,
+        "equal_after_removing_whitespace_and_private_use_bullet": true
+      },
+      {
+        "page": 2,
+        "equal_after_removing_whitespace_and_private_use_bullet": true
+      },
+      {
+        "page": 3,
+        "equal_after_removing_whitespace_and_private_use_bullet": true
+      },
+      {
+        "page": 4,
+        "equal_after_removing_whitespace_and_private_use_bullet": true
+      },
+      {
+        "page": 5,
+        "equal_after_removing_whitespace_and_private_use_bullet": true
+      },
+      {
+        "page": 6,
+        "equal_after_removing_whitespace_and_private_use_bullet": false
+      },
+      {
+        "page": 7,
+        "equal_after_removing_whitespace_and_private_use_bullet": true
+      },
+      {
+        "page": 8,
+        "equal_after_removing_whitespace_and_private_use_bullet": true
+      },
+      {
+        "page": 9,
+        "equal_after_removing_whitespace_and_private_use_bullet": true
+      }
+    ],
+    "exact_quote_slices_verified": 31,
+    "emitted_unique_citations": 31
+  },
+  "identity_and_dates": [
+    {
+      "source_id": "g140_v1",
+      "identity_status": "passed",
+      "classification": "Consolidated repository copy; incorporates G167, not original2009 unamended text",
+      "header_act_date": "2009-04-02",
+      "repository_label": "v1.0",
+      "capture_utc": "2026-09-28T00:59:14.856586+00:00",
+      "published_on": null,
+      "effective_on": null,
+      "citations": [
+        "g140_v1_identity",
+        "g140_v1_note1",
+        "g140_v1_note2",
+        "g140_v1_note3",
+        "g140_v1_effective"
+      ],
+      "date_limit": "Header date is act date. Art11 says day after publication in ElPeruano;31March2010 is adaptation deadline and G105 cessation trigger, not proven publication date. These consolidated copies do not date the effectiveness of each amendment."
+    },
+    {
+      "source_id": "g140_v2",
+      "identity_status": "passed",
+      "classification": "Consolidated repository copy; incorporates G167, not original2009 unamended text",
+      "header_act_date": "2009-04-02",
+      "repository_label": "v2.0",
+      "capture_utc": "2026-09-28T00:58:11.599840+00:00",
+      "published_on": null,
+      "effective_on": null,
+      "citations": [
+        "g140_v2_identity",
+        "g140_v2_note1",
+        "g140_v2_note2",
+        "g140_v2_note3",
+        "g140_v2_effective"
+      ],
+      "date_limit": "Header date is act date. Art11 says day after publication in ElPeruano;31March2010 is adaptation deadline and G105 cessation trigger, not proven publication date. These consolidated copies do not date the effectiveness of each amendment."
+    },
+    {
+      "source_id": "g167",
+      "identity_status": "passed",
+      "classification": "Amending circular",
+      "header_act_date": "2012-11-05",
+      "capture_utc": "2026-09-28T00:58:12.053110+00:00",
+      "published_on": null,
+      "effective_on": null,
+      "citations": [
+        "g167_identity",
+        "g167_effective"
+      ],
+      "date_limit": "Clause3 says next day after publication. No evidence of publication date in frozen sources; do not substitute header date."
+    }
+  ],
+  "bank_applicability": {
+    "status": "passed",
+    "claim_scope": "Conditional historical thematic eligibility only",
+    "citations": [
+      "g140_v1_scope",
+      "g140_v2_scope",
+      "g167_amend2d",
+      "g167_amend7"
+    ],
+    "finding": "G140 art1 expressly covers enterprises of arts16/17 of LeyGeneral, plus listed entities including Banco de la Nación and Banco Agropecuario, with stated specific-regulation qualification. G167 amends G140. This is a defensible banking-related historical case, unlike inferring eligibility from cybersecurity label alone.",
+    "assumptions": [
+      "The fictitious pilot bank is an enterprise within the cited scope.",
+      "Historical task is literal comparison; no assertion the provisions govern a bank today."
+    ],
+    "not_evaluated": [
+      "External arts16/17 text and legal category of a real institution were not reviewed.",
+      "Applicable historical time window remains unresolved pending publication and intervening-act evidence.",
+      "No real bank process, contract, control, or institutional impact approved."
+    ]
+  },
+  "changes": [
+    {
+      "change_id": "G140-7A-audit-paragraph",
+      "status": "passed",
+      "severity": "high_for_historical_control_mapping",
+      "type": "modification",
+      "counting_unit": "One changed operative paragraph, decomposed into three literal facets; do not count as three independent pairs.",
+      "location": "Art7.A, final paragraph, p6 in both copies",
+      "before_source": "g140_v1",
+      "after_source": "g140_v2",
+      "citations": [
+        "g140_v1_audit",
+        "g140_v2_audit"
+      ],
+      "before": "Annual independent audit by a prestigious audit firm; conformity with ISAE3402(IFAC) or SSAE16(AICPA); entity submits type2 report under those standards.",
+      "after": "Annual independent audit performed by an external audit society or national/foreign firm demonstrating required knowledge and experience; conformity with AT101 and SOC2 report guide, both AICPA; supervised entity explicitly submits SOC2type2 annually.",
+      "literal_facets": [
+        {
+          "before": "por una empresa auditora de prestigio",
+          "after": "realizado por una sociedad auditora externa o una firma nacional o extranjera, que acredite contar con el conocimiento y experiencia requerida",
+          "inference": "Different auditor qualification wording; no conclusion about equivalence or quality of firms."
+        },
+        {
+          "before": "ISAE3402 or SSAE16; reporte tipo2 previsto por dichos estándares",
+          "after": "AT101 and SOC2 guide; reporte SOC2tipo2",
+          "inference": "Changes cited framework and deliverable. No external standard semantics or security-effectiveness claim."
+        },
+        {
+          "before": "debiendo cada entidad remitir ... el reporte tipo2",
+          "after": "debiendo la entidad supervisada remitir anualmente ... el reporte SOC2tipo2",
+          "inference": "Annual reporting frequency becomes explicit; annual audit was already required, so this is not a new annual-audit obligation."
+        }
+      ],
+      "unchanged": [
+        "Annual independent examination of outsourced services abroad",
+        "First five paragraphs of7.A, including prior express authorization, provider/country conditions, AnexoA reference, and60working-day response upon complete documentation"
+      ],
+      "chronology_limit": "Before/after labels mean the two compared textual states. G167 supports the v1 audit wording; v2 footnote attributes later wording to G193. Exact legal effectiveness and completeness are not established."
+    },
+    {
+      "change_id": "G140-note4",
+      "status": "passed",
+      "severity": "evidentiary",
+      "type": "addition_of_editorial_amendment_note",
+      "location": "p6 footnote4",
+      "citations": [
+        "g140_v2_note4",
+        "g140_v1_note3"
+      ],
+      "finding": "v2 adds note4 attributing paragraph modification to CircularG193-2017 del07/07/2017. This is repository-copy evidence of attribution, not independent review of the G193 original act."
+    },
+    {
+      "change_id": "layout-extraction",
+      "status": "passed",
+      "severity": "none_as_legal_change",
+      "type": "non_substantive_differences",
+      "citations": [
+        "g140_v1_annex8",
+        "g140_v2_annex8",
+        "g140_v1_annex9",
+        "g140_v2_annex9"
+      ],
+      "finding": "Rawtext includes newly extracted bullet glyphs and split-word/spacing differences. Both PDF renderings already display bullets; these are not newly added obligations. Pages1–5and7–9 have identical character sequence after whitespace/bullet removal. Visual annex comparison confirms unchanged row content and grouping.",
+      "limitation": "Normalization is an auxiliary diff, not a universal legal-equivalence test."
+    }
+  ],
+  "g167_linkage": {
+    "status": "passed",
+    "citations": [
+      "g167_amend2d",
+      "g167_amend7",
+      "g167_art7a_context",
+      "g167_audit",
+      "g140_v1_definition",
+      "g140_v2_definition",
+      "g140_v1_art7",
+      "g140_v2_art7",
+      "g140_v1_art7a_context",
+      "g140_v1_audit"
+    ],
+    "finding": "G167 expressly modifies2(d) and7 and incorporates7.A intoG140; both frozen G140 copies contain the amended2(d),7,and7.A with attribution notes. G167 final7.A paragraph matches v1 in substantive wording, while v2 contains the observed later wording.",
+    "baseline_limit": "No pre-G167 original G140 supplied: cannot reconstruct exact pre2012 before-text or claim these two copies measure all G167 changes. G167 is one linked amending act, not a second independent full version pair."
+  },
+  "annex_review": {
+    "status": "passed",
+    "citations": [
+      "g140_v1_annex8",
+      "g140_v1_annex9",
+      "g140_v2_annex8",
+      "g140_v2_annex9",
+      "g167_art7a_context"
+    ],
+    "findings": [
+      "Both G140 PDFs include AnexoA onpp8–9, all9document rows. Do not report it missing from this pair.",
+      "Row4 (communication withSBS/SUCAVE/RCD/others) continues acrosspp8–9 and must be reconstructed as one row.",
+      "Row2 contractual requirements, including service at least1year in special regimes and supervisory access extending to subcontractors, remain unchanged; row8 audit-plan scope/form/frequency remains unchanged.",
+      "G167p2 references AnexoA but its2-page PDF has no annex table attached. G140 copies provide an annex for their captured state; that does not authenticate the original2012 annex publication or all historical annex versions."
+    ],
+    "omission_risks": [
+      "Ignoringpp8–9 drops9requested-document categories.",
+      "Dropping the p8/p9 continuation truncates row4.",
+      "Treating extraction bullets as insertions generates false positives."
+    ],
+    "historical_annex_version_chain_status": "not_evaluated"
+  },
+  "leakage_and_partition": {
+    "independent_holdout_gate": "failed",
+    "reason": "No clean independent partition established. Two G140 PDFs andG167 share a proven normative chain; inventory/dispatch additionally signal linkage with already-used504 corpus. Different byte hashes and storage directory do not establish independence.",
+    "proven_primary_edges": [
+      {
+        "from": "g167",
+        "to": "g140",
+        "kind": "express_modification_and_incorporation",
+        "citations": [
+          "g167_amend2d",
+          "g167_amend7"
+        ]
+      }
+    ],
+    "attributed_not_originally_verified_edges": [
+      {
+        "from": "g193-2017",
+        "to": "g140_7A_last_paragraph",
+        "basis": "g140_v2_note4",
+        "missing": "OriginalG193, publication date, effectiveness clause and other operative dispositions."
+      }
+    ],
+    "declared_project_lineage": [
+      {
+        "group": [
+          "g140",
+          "g167",
+          "g193",
+          "sbs-504-2021"
+        ],
+        "basis": "candidate inventory group_with/connection and parent dispatch",
+        "primary_504_link_verified_in_this_review": false,
+        "missing": "Frozen504 original relevant provision and exact citation establishing G140/G167 relationship; all intervening amending/repealing acts needed for completeness."
+      }
+    ],
+    "reservation": "Keep the entire signaled connected lineage together conservatively until primary linkage and exposure audit; do not call it independent holdout.",
+    "known_exposure": "Reviewer now saw frozen documents and produced case-specific analysis. Inventory existed before review; full tuning/prompt/example/feedback exposure is unknown.",
+    "required_before_partition_claim": [
+      "Build a frozen lineage manifest with document IDs, original and derivative hashes, full version pairs, G167/G193 and exact504 linkage; include neighboring provisions and annex versions.",
+      "Record all prior use in tuning, prompts, examples, gold, evaluation feedback and human/AI review; account for this report as case-specific exposed reference.",
+      "Assign connected components, all versions/derivatives and full pairs together; do not split by question/article/PDFhash.",
+      "If chain was used in adjustment, classify it as historical development/regression and acquire a separately unexposed lineage; renaming or moving does not restore independence.",
+      "Freeze partition assignment, qrels by both counterpart passages, k, rubrics and numeric thresholds before agent trial; keep this report from prompt/example tuning for a future reserved evaluation.",
+      "Separate target-corpus indexing from exposure to case-specific gold/rubrics/feedback; source inclusion alone is not the same as label leakage."
+    ]
+  },
+  "not_evaluated_gates": [
+    {
+      "gate": "current_law_and_complete_amendment_chain",
+      "severity": "critical_if_used_operationally",
+      "reason": "NoG193original, no504original lineage check in this scope, no exhaustive later-acts chain or authoritative publication dates."
+    },
+    {
+      "gate": "exact_legal_transition_dates",
+      "severity": "high",
+      "reason": "Signed dates and repository labels insufficient; publication evidence missing."
+    },
+    {
+      "gate": "pre2012_before_after_G167_completeness",
+      "severity": "high",
+      "reason": "BothG140copies already includeG167; earlier baseline absent."
+    },
+    {
+      "gate": "independent_agent_precision_recall_critical_omissions",
+      "severity": "not_applicable_to_this_review",
+      "reason": "No agent answers examined, no adjudicated reference set; this report does not measure agent performance."
+    },
+    {
+      "gate": "rag_acceptance",
+      "severity": "not_evaluated",
+      "reason": "Noqrels/k/threshold-frozen experiment conducted."
+    },
+    {
+      "gate": "human_savings_cost_operational_reliability",
+      "severity": "not_evaluated",
+      "reason": "No paired human-time/rework/cost or operational study; cost unknown."
+    },
+    {
+      "gate": "human_adjudication_institutional_approval",
+      "severity": "not_evaluated",
+      "reason": "IAreview only; human_approved=false."
+    }
+  ],
+  "metrics": {
+    "family": "cybersecurity",
+    "frozen_original_pdfs_reviewed": 3,
+    "comparison_pairs_reviewed": 1,
+    "independent_pairs_certified": 0,
+    "linked_amending_acts_reviewed": 1,
+    "substantive_changed_paragraphs_observed": 1,
+    "editorial_note_additions_observed": 1,
+    "unique_citations_verified": 31,
+    "unique_citations_emitted": 31,
+    "agent_precision": null,
+    "agent_recall": null,
+    "agent_critical_omissions": null,
+    "human_savings": null,
+    "cost": null,
+    "interpretation": "Citation counts describe reviewer evidence verification only; not agent-quality acceptance, complete history, or legal truth."
+  },
+  "reusable_review_status": "AI historical reference candidate for separately governed evaluation; not gold/reference-human automatically, no mutations to runtime/index/spec/gold.",
+  "citations": [
+    {
+      "citation_id": "g140_v1_identity",
+      "source_id": "g140_v1",
+      "pdf_path": "data/foundation-holdout/objects/77/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8.pdf",
+      "pdf_sha256": "778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8",
+      "rawtext_path": "data/foundation-holdout/derived/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "rawtext_sha256": "01c5a194f581f0a260410e417b72a83a866ced9680f877b74f4d48c786cb799e",
+      "pdf_pages_1_based": [
+        1
+      ],
+      "rawtext_char_start": 109,
+      "rawtext_char_end_exclusive": 183,
+      "quote_exact_rawtext": "Lima, 02 de abril de 2009 \n \n \n \n              CIRCULAR  Nº   G- 140 -2009",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g140_v1_scope",
+      "source_id": "g140_v1",
+      "pdf_path": "data/foundation-holdout/objects/77/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8.pdf",
+      "pdf_sha256": "778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8",
+      "rawtext_path": "data/foundation-holdout/derived/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "rawtext_sha256": "01c5a194f581f0a260410e417b72a83a866ced9680f877b74f4d48c786cb799e",
+      "pdf_pages_1_based": [
+        1
+      ],
+      "rawtext_char_start": 1251,
+      "rawtext_char_end_exclusive": 2103,
+      "quote_exact_rawtext": "Artículo 1º.- La presente Circular será de aplicación a las empresas señaladas en los artículos 16°  y \n17° de la Ley General, así como a las Administradoras Privadas de F ondos de Pensiones (AFP), en \nadelante empresas. \n \nTambién será de aplicación a las Cajas Municipales de Ahorro y Crédito (CMAC), la Caja Municipal \nde Crédito Popular, el Fondo de Garantía para Préstamos a la Pequeña Industria (FOGAPI), el Banco \nde la Nación , el Banco Agropecuario, la Corporación Financiera de Desarrollo (COFIDE), el Fondo \nMIVIVIENDA S.A., y las Derramas y Cajas de Beneficios  bajo control de la Superintendencia , la \nFederación Peruana de Cajas Municipales de Ahorro y Crédito (FEPCMAC) y el Fon do de Cajas \nMunicipales de Ahorro y Crédito (FOCMAC), en tanto no se contrapongan con las normativas \nespecíficas que regulen el accionar de estas empresas.",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g140_v1_definition",
+      "source_id": "g140_v1",
+      "pdf_path": "data/foundation-holdout/objects/77/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8.pdf",
+      "pdf_sha256": "778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8",
+      "rawtext_path": "data/foundation-holdout/derived/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "rawtext_sha256": "01c5a194f581f0a260410e417b72a83a866ced9680f877b74f4d48c786cb799e",
+      "pdf_pages_1_based": [
+        2
+      ],
+      "rawtext_char_start": 3190,
+      "rawtext_char_end_exclusive": 3341,
+      "quote_exact_rawtext": "d. Información: Cualquier forma de registro electrónico, óptico, magnético o en otros medios, \nsusceptible de ser procesada, distribuida y almacenada.1",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g140_v1_note1",
+      "source_id": "g140_v1",
+      "pdf_path": "data/foundation-holdout/objects/77/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8.pdf",
+      "pdf_sha256": "778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8",
+      "rawtext_path": "data/foundation-holdout/derived/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "rawtext_sha256": "01c5a194f581f0a260410e417b72a83a866ced9680f877b74f4d48c786cb799e",
+      "pdf_pages_1_based": [
+        2
+      ],
+      "rawtext_char_start": 5405,
+      "rawtext_char_end_exclusive": 5471,
+      "quote_exact_rawtext": "1 Literal modificado por la Circular N° G-167-2012 del 05/11/2012.",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g140_v1_art7",
+      "source_id": "g140_v1",
+      "pdf_path": "data/foundation-holdout/objects/77/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8.pdf",
+      "pdf_sha256": "778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8",
+      "rawtext_path": "data/foundation-holdout/derived/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "rawtext_sha256": "01c5a194f581f0a260410e417b72a83a866ced9680f877b74f4d48c786cb799e",
+      "pdf_pages_1_based": [
+        5
+      ],
+      "rawtext_char_start": 13765,
+      "rawtext_char_end_exclusive": 14295,
+      "quote_exact_rawtext": "Artículo 7º.-  Las empresas son responsables y deben verificar que se mantengan las características \nde seguridad de la información contempladas en la presente nor ma, incluso cuando ciertas funciones \no procesos puedan ser objeto de una subcontratación. Para ello se tendrá en cuenta lo dispuesto en \nel artículo 21° del Reglamento de la Gestión Integral de Riesgos. Asimismo, las empresas deben \nasegurarse que el procesa miento y la información objeto de la subcontratación, se encuentre \nefectivamente aislada en todo momento.",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g140_v1_note2",
+      "source_id": "g140_v1",
+      "pdf_path": "data/foundation-holdout/objects/77/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8.pdf",
+      "pdf_sha256": "778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8",
+      "rawtext_path": "data/foundation-holdout/derived/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "rawtext_sha256": "01c5a194f581f0a260410e417b72a83a866ced9680f877b74f4d48c786cb799e",
+      "pdf_pages_1_based": [
+        5
+      ],
+      "rawtext_char_start": 14356,
+      "rawtext_char_end_exclusive": 14423,
+      "quote_exact_rawtext": "2 Artículo modificado por la Circular N° G-167-2012 del 05/11/2012.",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g140_v1_art7a_context",
+      "source_id": "g140_v1",
+      "pdf_path": "data/foundation-holdout/objects/77/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8.pdf",
+      "pdf_sha256": "778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8",
+      "rawtext_path": "data/foundation-holdout/derived/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "rawtext_sha256": "01c5a194f581f0a260410e417b72a83a866ced9680f877b74f4d48c786cb799e",
+      "pdf_pages_1_based": [
+        6
+      ],
+      "rawtext_char_start": 14617,
+      "rawtext_char_end_exclusive": 16143,
+      "quote_exact_rawtext": "Artículo 7.Aº. - En caso que las empresas deseen realizar una subcontratación significativa de su \nprocesamiento de datos, de tal manera que éste sea  realizado en el exterior, requerirán de la \nautorización previa y expresa de la Superintendencia. Para ello, la empresa debe asegurar un \nadecuado cumplimiento de la presente Circular, en lo que sea aplicable al servicio de procesamiento \ncontratado. \n \nLa Superintendencia podrá requerir, cuando así lo considere apropiado , que el proveedor del servicio \nen el exterior se encuentre sujeto a una supervisión efectiva por parte de la autoridad supervisora del \npaís en el cual se brindará dicho servicio.  \n \nLa autoriza ción concedida por la Superintendencia, de ser el caso, es específica al proveedor del \nservicio y el país desde el que se recibe, así como a las condiciones generales que fueron objeto de \nla autorización, por lo que de existir modificaciones en ellas, se r equiere de un nuevo procedimiento \nde autorización ante la Superintendencia. \n \nEn el Anexo A que forma parte de la presente norma y se publica en el Portal electrónico institucional \n(www.sbs.gob.pe), conforme a lo dispuesto en el Decreto Supremo N° 001 -2009-JUS, se detalla la \ninformación que debe remitir la empresa adjunta a su solicitud de autorización.  \n \nUna vez recibida la documentación completa, dentro de un plazo que no excederá de sesent a (60) \ndías útiles, la Superintendencia emitirá la resolución que autoriza o el oficio que deniega la solicitud \npresentada por la empresa.",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g140_v1_audit",
+      "source_id": "g140_v1",
+      "pdf_path": "data/foundation-holdout/objects/77/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8.pdf",
+      "pdf_sha256": "778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8",
+      "rawtext_path": "data/foundation-holdout/derived/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "rawtext_sha256": "01c5a194f581f0a260410e417b72a83a866ced9680f877b74f4d48c786cb799e",
+      "pdf_pages_1_based": [
+        6
+      ],
+      "rawtext_char_start": 16147,
+      "rawtext_char_end_exclusive": 16622,
+      "quote_exact_rawtext": "Los servicios objeto de subcontratación en el exterior deberán ser sometidos anualmente a un \nexamen de auditoría ind ependiente, por una empresa auditora de prestigio, que guarde conformidad \ncon el ISAE 3402, emitido por la Federación  Internacional de Contadores (I FAC), o la SSAE 16, \nemitida por el Instituto Americano de Contadores Públicos Certificados (AICPA), debiendo  cada \nentidad remitir a esta Superintendencia el reporte tipo 2 previsto por dichos estándares.",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g140_v1_note3",
+      "source_id": "g140_v1",
+      "pdf_path": "data/foundation-holdout/objects/77/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8.pdf",
+      "pdf_sha256": "778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8",
+      "rawtext_path": "data/foundation-holdout/derived/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "rawtext_sha256": "01c5a194f581f0a260410e417b72a83a866ced9680f877b74f4d48c786cb799e",
+      "pdf_pages_1_based": [
+        6
+      ],
+      "rawtext_char_start": 17478,
+      "rawtext_char_end_exclusive": 17546,
+      "quote_exact_rawtext": "3 Artículo incorporado por la Circular N° G-167-2012 del 05/11/2012.",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g140_v1_effective",
+      "source_id": "g140_v1",
+      "pdf_path": "data/foundation-holdout/objects/77/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8.pdf",
+      "pdf_sha256": "778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8",
+      "rawtext_path": "data/foundation-holdout/derived/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "rawtext_sha256": "01c5a194f581f0a260410e417b72a83a866ced9680f877b74f4d48c786cb799e",
+      "pdf_pages_1_based": [
+        7
+      ],
+      "rawtext_char_start": 17910,
+      "rawtext_char_end_exclusive": 18223,
+      "quote_exact_rawtext": "Artículo 11°.- Las disposiciones de la presente Circular entran en vigencia al día siguient e de su \npublicación en el Diario Oficial “El Peruano”, otorgándose para su cumplimiento un plazo de \nadecuación hasta el 31 de marzo de 2010, fecha a partir de la cual quedará  sin efecto la Circular \nSBS  Nº G-105-2002.",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g140_v1_annex8",
+      "source_id": "g140_v1",
+      "pdf_path": "data/foundation-holdout/objects/77/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8.pdf",
+      "pdf_sha256": "778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8",
+      "rawtext_path": "data/foundation-holdout/derived/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "rawtext_sha256": "01c5a194f581f0a260410e417b72a83a866ced9680f877b74f4d48c786cb799e",
+      "pdf_pages_1_based": [
+        8
+      ],
+      "rawtext_char_start": 19066,
+      "rawtext_char_end_exclusive": 21503,
+      "quote_exact_rawtext": "ANEXO A \n \nDOCUMENTACIÓN A REMITIR JUNTO CON LA SOLICITUD DE AUTORIZACIÓN PARA \nREALIZAR PROCESAMIENTO PRINCIPAL EN EL EXTERIOR \n \nDocumento Contenido mínimo requerido \n1. Información \ngeneral del \nproveedor y del \nservicio \n Razón social del proveedor. \n Giro del negocio y años de experiencia. Indicar a qué empresas brinda servicios \nactualmente. \n Estados Financieros del proveedor correspondientes a los dos últimos años. \n Relación de accionistas del proveedor y funcionarios principales. \n Relación con la empresa supervisada (indicar si pertenecen al mismo grupo \neconómico). \n Servicios que serán provistos por el proveedor y el tipo d e información a ser \nprocesada. \n Ubicación (país y ciudad) del centro de procesamiento principal.  \n Razones para seleccionar al proveedor. \n \n2. Borrador del \nContrato \nAspectos a considerar:  \n Acuerdos de niveles de servicio. \n Procedimientos de monitoreo. \n Procedimientos de contingencia. \n Cumplimiento de las normas sobre secreto bancario y confidencialidad de la \ninformación. \n Prestación del servicio en regímenes especiales (vigilancia, intervención, \nliquidación). El proveedor debe seguir brindando el servicio como mínimo un año \ndespués de que la empresa ha ingresado a un régimen especial. \n Compromiso de cumplimiento de la normativa de la Superintendencia. \n Aseguramiento del acceso adecuado a la información con fines de supervisión, \nen tiempos razonables y a solo requerimie nto, por parte de la Superintendencia, \nAuditoría Interna y Externa, en condiciones normales de operación y en \nregímenes especiales. Este aspecto debe ser aplicable sobre cualquier otra \nempresa que el proveedor subcontrate para brindar servicios a la entida d \nsupervisada. \n Cláusulas que faciliten una adecuada revisión por parte de la Unidad de \nAuditoría Interna, la Sociedad de Auditoría Externa y la Superintendencia. \n3. Informe de la \nPlataforma \nTecnológica \nAspectos a considerar: \n(Señalar qué equipos y aplicaciones estarán a cargo del proveedor) \n \n Inventario de equipos de cómputo. \n Inventario de software base. \n Herramientas y/o manejadores de base de datos. \n Aplicaciones críticas. \n Esquema de comunicaciones a ser implementado entre el proveedor y la \nempresa supervisada. \n \n4. Informe de \nComunicación con \n Descripción de la forma de envío de información a la Superintendencia luego de \nque se implemente el servicio de procesamiento en el exterior. Asimismo, indicar",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g140_v1_annex9",
+      "source_id": "g140_v1",
+      "pdf_path": "data/foundation-holdout/objects/77/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8.pdf",
+      "pdf_sha256": "778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8",
+      "rawtext_path": "data/foundation-holdout/derived/778c20e32f45c360ede48150c0b5b6767db501fe834e0b7bd2d380866b7318b8/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "rawtext_sha256": "01c5a194f581f0a260410e417b72a83a866ced9680f877b74f4d48c786cb799e",
+      "pdf_pages_1_based": [
+        9
+      ],
+      "rawtext_char_start": 21620,
+      "rawtext_char_end_exclusive": 23587,
+      "quote_exact_rawtext": "la \nSuperintendencia \n(SUCAVE, RCD, \notros) \nlos cambios que se apli carán sobre los procedimientos asociados a la \ngeneración, consolidación y reporte de dicha información. \n5. Informe de \nEvaluación de \nRiesgos \n Evaluación de los riesgos de operación asociados con el esquema propuesto \npor la empresa, realizada por la Unidad de Riesgos. \n6. Gestión de la \nseguridad de \ninformación \n Política de seguridad de información de la empresa. \n Estructura organizativa para la gestión de la seguridad de información. \n Asignación de responsabilidades asociadas con la seguridad de información en \nla entidad y el proveedor. \n Forma en que se aislará el procesamiento y la información objeto de la \nsubcontratación. \n Procedimientos y controles a implementar, considerando el procesamiento en el \nexterior, en los siguientes aspectos: \n- Seguridad lógica. \n- Seguridad de personal. \n- Seguridad física y ambiental. \n- Administración de las operaciones y comunicaciones. \n- Desarrollo y mantenimiento de los sistemas informáticos. \n- Administración de las copias de respaldo. \n7. Gestión de \ncontinuidad de \nnegocios \n Plan de Contingencia del proveedor, para asegurar la continuidad del servicio de \nprocesamiento informático. \n Señalar la prioridad asignada al procesamiento de la información de la empresa \nsupervisada respecto al resto de clientes del proveedor. \n Señalar la forma en que se dará aviso a la  empresa supervisada, y las acciones \nque deberá desarrollar la empresa en caso de una contingencia en el proveedor. \n Frecuencia y alcance de las pruebas al Plan de Contingencia del proveedor.  \n8. Plan de Auditoría \nde Sistemas \n Señalar el alcance, forma y perio dicidad de las revisiones de auditoría de \nsistemas considerando el nuevo esquema de procesamiento principal de la \nempresa. \n9. Gestión del \nproyecto \n Cronograma de actividades, incluyendo plazos, responsables y principales hitos \nde control. \n Costo estimado de implementación del proyecto.",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g140_v2_identity",
+      "source_id": "g140_v2",
+      "pdf_path": "data/foundation-holdout/objects/b9/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38.pdf",
+      "pdf_sha256": "b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38",
+      "rawtext_path": "data/foundation-holdout/derived/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "rawtext_sha256": "cb2f64e58eee51383c9f1cc9b5d7639716dee7cf410b561bc583a7ecea642215",
+      "pdf_pages_1_based": [
+        1
+      ],
+      "rawtext_char_start": 109,
+      "rawtext_char_end_exclusive": 183,
+      "quote_exact_rawtext": "Lima, 02 de abril de 2009 \n \n \n \n              CIRCULAR  Nº   G- 140 -2009",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g140_v2_scope",
+      "source_id": "g140_v2",
+      "pdf_path": "data/foundation-holdout/objects/b9/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38.pdf",
+      "pdf_sha256": "b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38",
+      "rawtext_path": "data/foundation-holdout/derived/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "rawtext_sha256": "cb2f64e58eee51383c9f1cc9b5d7639716dee7cf410b561bc583a7ecea642215",
+      "pdf_pages_1_based": [
+        1
+      ],
+      "rawtext_char_start": 1251,
+      "rawtext_char_end_exclusive": 2103,
+      "quote_exact_rawtext": "Artículo 1º.- La presente Circular será de aplicación a las empresas señaladas en los artículos 16°  y \n17° de la Ley General, así como a las Administradoras Privadas de F ondos de Pensiones (AFP), en \nadelante empresas. \n \nTambién será de aplicación a las Cajas Municipales de Ahorro y Crédito (CMAC), la Caja Municipal \nde Crédito Popular, el Fondo de Garantía para Préstamos a la Pequeña Industria (FOGAPI), el Banco \nde la Nación , el Banco Agropecuario, la Corporación Financiera de Desarrollo (COFIDE), el Fondo \nMIVIVIENDA S.A., y las Derramas y Cajas de Beneficios  bajo control de la Superintendencia , la \nFederación Peruana de Cajas Municipales de Ahorro y Crédito (FEPCMAC) y el Fon do de Cajas \nMunicipales de Ahorro y Crédito (FOCMAC), en tanto no se contrapongan con las normativas \nespecíficas que regulen el accionar de estas empresas.",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g140_v2_definition",
+      "source_id": "g140_v2",
+      "pdf_path": "data/foundation-holdout/objects/b9/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38.pdf",
+      "pdf_sha256": "b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38",
+      "rawtext_path": "data/foundation-holdout/derived/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "rawtext_sha256": "cb2f64e58eee51383c9f1cc9b5d7639716dee7cf410b561bc583a7ecea642215",
+      "pdf_pages_1_based": [
+        2
+      ],
+      "rawtext_char_start": 3193,
+      "rawtext_char_end_exclusive": 3344,
+      "quote_exact_rawtext": "d. Información: Cualquier forma de registro electrónico, óptico, magnético o en otros medios, \nsusceptible de ser procesada, distribuida y almacenada.1",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g140_v2_note1",
+      "source_id": "g140_v2",
+      "pdf_path": "data/foundation-holdout/objects/b9/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38.pdf",
+      "pdf_sha256": "b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38",
+      "rawtext_path": "data/foundation-holdout/derived/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "rawtext_sha256": "cb2f64e58eee51383c9f1cc9b5d7639716dee7cf410b561bc583a7ecea642215",
+      "pdf_pages_1_based": [
+        2
+      ],
+      "rawtext_char_start": 5408,
+      "rawtext_char_end_exclusive": 5474,
+      "quote_exact_rawtext": "1 Literal modificado por la Circular N° G-167-2012 del 05/11/2012.",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g140_v2_art7",
+      "source_id": "g140_v2",
+      "pdf_path": "data/foundation-holdout/objects/b9/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38.pdf",
+      "pdf_sha256": "b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38",
+      "rawtext_path": "data/foundation-holdout/derived/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "rawtext_sha256": "cb2f64e58eee51383c9f1cc9b5d7639716dee7cf410b561bc583a7ecea642215",
+      "pdf_pages_1_based": [
+        5
+      ],
+      "rawtext_char_start": 13768,
+      "rawtext_char_end_exclusive": 14298,
+      "quote_exact_rawtext": "Artículo 7º.-  Las empresas son responsables y deben verificar que se mantengan las características \nde seguridad de la información contempladas en la presente no rma, incluso cuando ciertas funciones \no procesos puedan ser objeto de una subcontratación. Para ello se tendrá en cuenta lo dispuesto en \nel artículo 21° del Reglamento de la Gestión Integral de Riesgos. Asimismo, las empresas deben \nasegurarse que el proces amiento y la información objeto de la subcontratación, se encuentre \nefectivamente aislada en todo momento.",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g140_v2_note2",
+      "source_id": "g140_v2",
+      "pdf_path": "data/foundation-holdout/objects/b9/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38.pdf",
+      "pdf_sha256": "b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38",
+      "rawtext_path": "data/foundation-holdout/derived/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "rawtext_sha256": "cb2f64e58eee51383c9f1cc9b5d7639716dee7cf410b561bc583a7ecea642215",
+      "pdf_pages_1_based": [
+        5
+      ],
+      "rawtext_char_start": 14359,
+      "rawtext_char_end_exclusive": 14426,
+      "quote_exact_rawtext": "2 Artículo modificado por la Circular N° G-167-2012 del 05/11/2012.",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g140_v2_art7a_context",
+      "source_id": "g140_v2",
+      "pdf_path": "data/foundation-holdout/objects/b9/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38.pdf",
+      "pdf_sha256": "b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38",
+      "rawtext_path": "data/foundation-holdout/derived/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "rawtext_sha256": "cb2f64e58eee51383c9f1cc9b5d7639716dee7cf410b561bc583a7ecea642215",
+      "pdf_pages_1_based": [
+        6
+      ],
+      "rawtext_char_start": 14620,
+      "rawtext_char_end_exclusive": 16145,
+      "quote_exact_rawtext": "Artículo 7.Aº. - En caso que las empresas deseen realizar una subcontrataci ón significativa de su \nprocesamiento de datos, de tal manera que éste sea realizado en el exterior, requerirán de la \nautorización previa y expresa de la Superintendencia. Para ello, la empresa debe asegurar un \nadecuado cumplimiento de la presente Circular,  en lo que sea aplicable al servicio de procesamiento \ncontratado. \n \nLa Superintendencia podrá requerir, cuando así lo considere apropiado, que el proveedor del servicio \nen el exterior se encuentre sujeto a una supervisión efectiva por parte de la autoridad supervisora del \npaís en el cual se brindará dicho servicio.  \n \nLa autorización concedida por la Superintendencia, de ser el caso, es específica al proveedor del \nservicio y el país desde el que se recibe, así como a las condiciones generales que fueron objet o de \nla autorización, por lo que de existir modificaciones en ellas, se requiere de un nuevo procedimiento \nde autorización ante la Superintendencia. \n \nEn el Anexo A que forma parte de la presente norma y se publica en el Portal electrónico institucional \n(www.sbs.gob.pe), conforme a lo dispuesto en el Decreto Supremo N° 001 -2009-JUS, se detalla la \ninformación que debe remitir la empresa adjunta a su solicitud de autorización.  \n \nUna vez recibid a la documentación completa, dentro de un plazo que no excederá de sesenta (60) \ndías útiles, la Superintendencia emitirá la resolución que autoriza o el oficio que deniega la solicitud \npresentada por la empresa.",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g140_v2_audit",
+      "source_id": "g140_v2",
+      "pdf_path": "data/foundation-holdout/objects/b9/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38.pdf",
+      "pdf_sha256": "b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38",
+      "rawtext_path": "data/foundation-holdout/derived/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "rawtext_sha256": "cb2f64e58eee51383c9f1cc9b5d7639716dee7cf410b561bc583a7ecea642215",
+      "pdf_pages_1_based": [
+        6
+      ],
+      "rawtext_char_start": 16149,
+      "rawtext_char_end_exclusive": 16740,
+      "quote_exact_rawtext": "Los servicios objeto de subcontratación en el exterior deberán ser sometidos anualmente a un \nexamen de auditoría independiente, realizado por una sociedad auditora externa o una firma nacional \no extranjera, que acredite contar con el conocimiento y experiencia requerida,  que guarde \nconformidad con el estándar AT101 y que cumpla con lo señalado en la guía para la elaboración del \nreporte SOC 2, ambos emitidos por el Instituto Americano de Contadores Públicos Certificados \n(AICPA), debiendo la entidad supervisada remitir anualmente a esta Superintenden cia el reporte SOC \n2 tipo 2.4",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g140_v2_note3",
+      "source_id": "g140_v2",
+      "pdf_path": "data/foundation-holdout/objects/b9/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38.pdf",
+      "pdf_sha256": "b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38",
+      "rawtext_path": "data/foundation-holdout/derived/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "rawtext_sha256": "cb2f64e58eee51383c9f1cc9b5d7639716dee7cf410b561bc583a7ecea642215",
+      "pdf_pages_1_based": [
+        6
+      ],
+      "rawtext_char_start": 17590,
+      "rawtext_char_end_exclusive": 17658,
+      "quote_exact_rawtext": "3 Artículo incorporado por la Circular N° G-167-2012 del 05/11/2012.",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g140_v2_effective",
+      "source_id": "g140_v2",
+      "pdf_path": "data/foundation-holdout/objects/b9/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38.pdf",
+      "pdf_sha256": "b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38",
+      "rawtext_path": "data/foundation-holdout/derived/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "rawtext_sha256": "cb2f64e58eee51383c9f1cc9b5d7639716dee7cf410b561bc583a7ecea642215",
+      "pdf_pages_1_based": [
+        7
+      ],
+      "rawtext_char_start": 18091,
+      "rawtext_char_end_exclusive": 18403,
+      "quote_exact_rawtext": "Artículo 11°.- Las disposiciones de la presente Circular entran en vigencia al día siguiente de su \npublicación en el Diario Oficial “El Peruano”, otorgándose para su cumplimiento un plazo de \nadecuación hasta el 31 de marzo de 2010, fecha a partir de la cual quedará  sin efecto la Circular \nSBS  Nº G-105-2002.",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g140_v2_annex8",
+      "source_id": "g140_v2",
+      "pdf_path": "data/foundation-holdout/objects/b9/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38.pdf",
+      "pdf_sha256": "b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38",
+      "rawtext_path": "data/foundation-holdout/derived/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "rawtext_sha256": "cb2f64e58eee51383c9f1cc9b5d7639716dee7cf410b561bc583a7ecea642215",
+      "pdf_pages_1_based": [
+        8
+      ],
+      "rawtext_char_start": 19245,
+      "rawtext_char_end_exclusive": 21704,
+      "quote_exact_rawtext": "ANEXO A \n \nDOCUMENTACIÓN A REMITIR JUNTO CON LA SOLICITUD DE AUTORIZACIÓN PARA \nREALIZAR PROCESAMIENTO PRINCIPAL EN EL EXTERIOR \n \nDocumento Contenido mínimo requerido \n1. Información \ngeneral del \nproveedor y del \nservicio \n Razón social del proveedor. \n Giro del negocio y años de experiencia. Indicar a qué empresas brinda servicios \nactualmente. \n Estados Financieros del proveedor correspondientes a los dos últimos años. \n Relación de accionistas del proveedor y funcionarios principales. \n Relación con la empresa super visada (indicar si pertenecen al mismo grupo \neconómico). \n Servicios que serán provistos por el proveedor y el tipo de información a ser \nprocesada. \n Ubicación (país y ciudad) del centro de procesamiento principal.  \n Razones para seleccionar al proveedor. \n \n2. Borrador del \nContrato \nAspectos a considerar:  \n Acuerdos de niveles de servicio. \n Procedimientos de monitoreo. \n Procedimientos de contingencia. \n Cumplimiento de las normas sobre secreto bancario y confidencialidad de la \ninformación. \n Prestación del servicio en regí menes especiales (vigilancia, intervención, \nliquidación). El proveedor debe seguir brindando el servicio como mínimo un año \ndespués de que la empresa ha ingresado a un régimen especial. \n Compromiso de cumplimiento de la normativa de la Superintendencia. \n Aseguramiento del acceso adecuado a la información con fines de supervisión, \nen tiempos razonables y a solo requerimiento, por parte de la Superintendencia, \nAuditoría Interna y Externa, en condiciones normales de operación y en \nregímenes especiales. Este aspe cto debe ser aplicable sobre cualquier otra \nempresa que el proveedor subcontrate para brindar servicios a la entidad \nsupervisada. \n Cláusulas que faciliten una adecuada revisión por parte de la Unidad de \nAuditoría Interna, la Sociedad de Auditoría Externa y la Superintendencia. \n3. Informe de la \nPlataforma \nTecnológica \nAspectos a considerar: \n(Señalar qué equipos y aplicaciones estarán a cargo del proveedor) \n \n Inventario de equipos de cómputo. \n Inventario de software base. \n Herramientas y/o manejadores de base de datos. \n Aplicaciones críticas. \n Esquema de comunicaciones a ser implementado entre el proveedor y la \nempresa supervisada. \n \n4. Informe de \nComunicación con \n Descripción de la forma de envío de información a la Superintendencia luego de \nque se implemente el servicio de procesamiento en el exterior. Asimismo, indicar",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g140_v2_annex9",
+      "source_id": "g140_v2",
+      "pdf_path": "data/foundation-holdout/objects/b9/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38.pdf",
+      "pdf_sha256": "b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38",
+      "rawtext_path": "data/foundation-holdout/derived/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "rawtext_sha256": "cb2f64e58eee51383c9f1cc9b5d7639716dee7cf410b561bc583a7ecea642215",
+      "pdf_pages_1_based": [
+        9
+      ],
+      "rawtext_char_start": 21821,
+      "rawtext_char_end_exclusive": 23800,
+      "quote_exact_rawtext": "la \nSuperintendencia \n(SUCAVE, RCD, \notros) \nlos cambios que se aplicarán sobre los procedimientos asociados a la \ngeneración, consolidación y reporte de dicha información. \n5. Informe de \nEvaluación de \nRiesgos \n Evaluación de los riesgos de operación asociados con el esquema propuesto \npor la empresa, realizada por la Unidad de Riesgos. \n6. Gestión de la \nseguridad de \ninformación \n Política de seguridad de información de la empresa. \n Estructura organizativa para la gestión de la seguridad de información. \n Asignación de responsabilidades asociadas con la seguridad de información en \nla entidad y el proveedor. \n Forma en que se aislará el procesamiento y la información objeto de la \nsubcontratación. \n Procedimientos y controles a impl ementar, considerando el procesamiento en el \nexterior, en los siguientes aspectos: \n- Seguridad lógica. \n- Seguridad de personal. \n- Seguridad física y ambiental. \n- Administración de las operaciones y comunicaciones. \n- Desarrollo y mantenimiento de los sistemas informáticos. \n- Administración de las copias de respaldo. \n7. Gestión de \ncontinuidad de \nnegocios \n Plan de Contingencia del proveedor, para asegurar la continuidad del servicio de \nprocesamiento informático. \n Señalar la prioridad asignada al procesamiento de la informació n de la empresa \nsupervisada respecto al resto de clientes del proveedor. \n Señalar la forma en que se dará aviso a la empresa supervisada, y las acciones \nque deberá desarrollar la empresa en caso de una contingencia en el proveedor. \n Frecuencia y alcance de las pruebas al Plan de Contingencia del proveedor.  \n8. Plan de Auditoría \nde Sistemas \n Señalar el alcance, forma y periodicidad de las revisiones de auditoría de \nsistemas considerando el nuevo esquema de procesamiento principal de la \nempresa. \n9. Gestión del \nproyecto \n Cronograma de actividades, incluyendo plazos, responsables y principales hitos \nde control. \n Costo estimado de implementación del proyecto.",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g140_v2_note4",
+      "source_id": "g140_v2",
+      "pdf_path": "data/foundation-holdout/objects/b9/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38.pdf",
+      "pdf_sha256": "b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38",
+      "rawtext_path": "data/foundation-holdout/derived/b987821e9c09878c5e0154c18e9c6f5353fb56a601a7a172687884c09ff11c38/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/18ff6ff6197377e7ac8400f1b8e9e5bb23985422d06607ac8d4dc9b95680808f/rawtext.txt",
+      "rawtext_sha256": "cb2f64e58eee51383c9f1cc9b5d7639716dee7cf410b561bc583a7ecea642215",
+      "pdf_pages_1_based": [
+        6
+      ],
+      "rawtext_char_start": 17660,
+      "rawtext_char_end_exclusive": 17724,
+      "quote_exact_rawtext": "4 Párrafo modificado por la Circular N°G-193-2017 del 07/07/2017",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g167_identity",
+      "source_id": "g167",
+      "pdf_path": "data/foundation-holdout/objects/1f/1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0.pdf",
+      "pdf_sha256": "1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0",
+      "rawtext_path": "data/foundation-holdout/derived/1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/f4e1f3fc370b26f5d3dd1c932b97ab417a8c6f08c0624dd413c75305474e2ae0/rawtext.txt",
+      "rawtext_sha256": "0cdbb0dfc81e037164207a4208880598ac46f402dc9c88a23d2f32e01bfcffe3",
+      "pdf_pages_1_based": [
+        1
+      ],
+      "rawtext_char_start": 4,
+      "rawtext_char_end_exclusive": 171,
+      "quote_exact_rawtext": "Lima,    05    de  noviembre  de 2012 \n                                                                                                  CIRCULAR N° G -   167  -  2012",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g167_amend2d",
+      "source_id": "g167",
+      "pdf_path": "data/foundation-holdout/objects/1f/1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0.pdf",
+      "pdf_sha256": "1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0",
+      "rawtext_path": "data/foundation-holdout/derived/1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/f4e1f3fc370b26f5d3dd1c932b97ab417a8c6f08c0624dd413c75305474e2ae0/rawtext.txt",
+      "rawtext_sha256": "0cdbb0dfc81e037164207a4208880598ac46f402dc9c88a23d2f32e01bfcffe3",
+      "pdf_pages_1_based": [
+        1
+      ],
+      "rawtext_char_start": 1724,
+      "rawtext_char_end_exclusive": 1990,
+      "quote_exact_rawtext": "2.1. Modifíquese el literal d) del artículo 2º, de la Circular N° G -140-2009 de acuerdo al \nsiguiente texto: \n \n“d. Informac ión: Cualquier forma de registro electrónico, óptico, magnético o en otros \nmedios, susceptible de ser procesada, distribuida y almacenada.”",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g167_amend7",
+      "source_id": "g167",
+      "pdf_path": "data/foundation-holdout/objects/1f/1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0.pdf",
+      "pdf_sha256": "1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0",
+      "rawtext_path": "data/foundation-holdout/derived/1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/f4e1f3fc370b26f5d3dd1c932b97ab417a8c6f08c0624dd413c75305474e2ae0/rawtext.txt",
+      "rawtext_sha256": "0cdbb0dfc81e037164207a4208880598ac46f402dc9c88a23d2f32e01bfcffe3",
+      "pdf_pages_1_based": [
+        1
+      ],
+      "rawtext_char_start": 1994,
+      "rawtext_char_end_exclusive": 2670,
+      "quote_exact_rawtext": "2.2. Modifíquese el artículo 7° e incorpórese el artículo 7.Aº a la Circular N° G -140-2009 de \nacuerdo al siguiente texto: \n \n“Subcontratación \n \nArtículo 7 º.-  Las empresas son responsables y deben verificar que se mantengan las \ncaracterísticas de seguridad de la información contempladas en la presente norma, incluso \ncuando ciertas funciones o procesos puedan ser objeto de una subcontratación. Para ello \nse tendrá en cuenta lo dispuesto en el artículo 21° del Reglamento de la Gestión Integral de \nRiesgos. Asimismo, las empresas deben asegurarse que el procesamiento y la información \nobjeto de la subcontratación, se encuentre efectivamente aislada en todo momento.",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g167_art7a_context",
+      "source_id": "g167",
+      "pdf_path": "data/foundation-holdout/objects/1f/1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0.pdf",
+      "pdf_sha256": "1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0",
+      "rawtext_path": "data/foundation-holdout/derived/1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/f4e1f3fc370b26f5d3dd1c932b97ab417a8c6f08c0624dd413c75305474e2ae0/rawtext.txt",
+      "rawtext_sha256": "0cdbb0dfc81e037164207a4208880598ac46f402dc9c88a23d2f32e01bfcffe3",
+      "pdf_pages_1_based": [
+        2
+      ],
+      "rawtext_char_start": 2769,
+      "rawtext_char_end_exclusive": 4291,
+      "quote_exact_rawtext": "Artículo 7.Aº.- En caso que las empresas deseen realizar una subcontratación significativa de \nsu procesamiento de datos, de tal manera que éste sea  realizado en el exterior, requerirán \nde la autorización previa y expresa de la Superintendencia. Para ello, la empresa debe \nasegurar un adecuado cumplimiento de la presente Circular, en lo que sea aplicable al \nservicio de procesamiento contratado. \n \nLa Superintendencia podrá requerir, cuando así lo considere apropiado, que el proveedor del \nservicio en el exterior se encuentre sujeto a una supervisión efectiva por parte de la autoridad \nsupervisora del país en el cual se brindará dicho servicio.  \n \nLa autorización concedida por la Superintendencia, de ser el caso, es específica al proveedor \ndel servicio y el país desde el que se recibe, así como a las condiciones generales que \nfueron objeto de la autorización, por lo que de existir modificaciones en ellas, se r equiere de \nun nuevo procedimiento de autorización ante la Superintendencia. \n \nEn el Anexo A que forma parte de la presente norma y se publica en el Portal electrónico \ninstitucional (www.sbs.gob.pe), conforme a lo dispuesto en el Decreto Supremo N° 001-2009-\nJUS, se detalla la información que debe remitir la empresa adjunta a su solicitud de \nautorización.  \n \nUna vez recibida la documentación completa, dentro de un plazo que no excederá de \nsesenta (60) días útiles, la Superintendencia emitirá la resolución que autoriza o el oficio que \ndeniega la solicitud presentada por la empresa.",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g167_audit",
+      "source_id": "g167",
+      "pdf_path": "data/foundation-holdout/objects/1f/1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0.pdf",
+      "pdf_sha256": "1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0",
+      "rawtext_path": "data/foundation-holdout/derived/1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/f4e1f3fc370b26f5d3dd1c932b97ab417a8c6f08c0624dd413c75305474e2ae0/rawtext.txt",
+      "rawtext_sha256": "0cdbb0dfc81e037164207a4208880598ac46f402dc9c88a23d2f32e01bfcffe3",
+      "pdf_pages_1_based": [
+        2
+      ],
+      "rawtext_char_start": 4295,
+      "rawtext_char_end_exclusive": 4770,
+      "quote_exact_rawtext": "Los servicios objeto de subcontratación en el exterior deberán ser sometidos anualmente a \nun examen de auditoría ind ependiente, por una empresa auditora de prestigio, que guarde \nconformidad con el ISAE 3402, emitido por la Federación  Internacional de Contadores \n(IFAC), o la SSAE 16, emitida por el Instituto Americano de Contadores Públicos Certificados \n(AICPA), debiendo cada entidad remitir a esta Superintendencia el reporte tipo 2 previsto por \ndichos estándares.”",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    },
+    {
+      "citation_id": "g167_effective",
+      "source_id": "g167",
+      "pdf_path": "data/foundation-holdout/objects/1f/1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0.pdf",
+      "pdf_sha256": "1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0",
+      "rawtext_path": "data/foundation-holdout/derived/1f851cb17b0903ab45dbbd00df0152bed3bdab20a53b68f62b877a311f439bb0/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/f4e1f3fc370b26f5d3dd1c932b97ab417a8c6f08c0624dd413c75305474e2ae0/rawtext.txt",
+      "rawtext_sha256": "0cdbb0dfc81e037164207a4208880598ac46f402dc9c88a23d2f32e01bfcffe3",
+      "pdf_pages_1_based": [
+        2
+      ],
+      "rawtext_char_start": 4774,
+      "rawtext_char_end_exclusive": 4863,
+      "quote_exact_rawtext": "3. Vigencia \nLa presente Circular entrará en vigencia al día siguiente de su publicación.",
+      "quote_kind": "Exact frozen derivative slice; internal extraction spaces retained. Rendered original checked for content.",
+      "verified_exact_slice": true,
+      "verified_against_rendered_pdf": true
+    }
+  ]
+}

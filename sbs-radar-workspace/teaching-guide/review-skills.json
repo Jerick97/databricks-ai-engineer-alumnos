@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "reviewer": "independent-agent /root/archify_evidence",
+  "date": "2026-09-30",
+  "scope": "Delta docente de skills, incluida cuarta columna explicativa; revisión local sin nube.",
+  "verdict": "PASS",
+  "material_errors": [],
+  "checks": [
+    "13 IDs SK00–SK12, nombres, versiones y estado provisional contrastados con sus SKILL.md.",
+    "12 pasos con principales/apoyo coherentes con contratos y componentes previamente revisados.",
+    "SKILL.md y evals/cases.json existen para las 13 skills.",
+    "Catálogo y enlaces por paso presentes en HTML.",
+    "Distingue responsabilidades de construcción/evaluación/mantenimiento de invocaciones por consulta; SK09 no se presenta como juez obligatorio en cada request.",
+    "Mantiene separados estado de skill, evidencia de componente y aceptación E2E.",
+    "Cuarta columna ¿En qué consiste?: 12 filas; title coincide exactamente con título del paso y summary con Qué ocurre (content.json steps[i][3]); cuatro celdas por fila del HTML."
+  ],
+  "sources": [
+    {
+      "skill": "SK00",
+      "path": "skills/sbs-contexto-ejecucion/SKILL.md",
+      "version": "0.1.1",
+      "status": "provisional",
+      "sha256": "ef6404bb0a22a50718ad58fad96d430b2bf80fe6b13081ba6d2f38e5c2b17dbe"
+    },
+    {
+      "skill": "SK01",
+      "path": "skills/sbs-contratos-gobierno/SKILL.md",
+      "version": "0.1.1",
+      "status": "provisional",
+      "sha256": "172dbfb36212d5494a56a5c3fc3702a01495528c228b142e4617bd04109e48b0"
+    },
+    {
+      "skill": "SK02",
+      "path": "skills/sbs-fundacion-datos/SKILL.md",
+      "version": "0.1.13",
+      "status": "provisional",
+      "sha256": "d5630bc1a2067dde14d0c57b820d1a23af4abef5edb619beb29d225ea30250a5"
+    },
+    {
+      "skill": "SK03",
+      "path": "skills/sbs-versiones-cambios/SKILL.md",
+      "version": "0.1.4",
+      "status": "provisional",
+      "sha256": "fcc7afde3f19395abebd39dc4a55ed7b7ac0f40f2eef62e56d4118783bf69497"
+    },
+    {
+      "skill": "SK04",
+      "path": "skills/sbs-rag-hibrido/SKILL.md",
+      "version": "0.1.6",
+      "status": "provisional",
+      "sha256": "6657fcfa4e1cad2f79d421eaed52f1884b50e44a5e6b6b04c2e6d1b9a5fce19e"
+    },
+    {
+      "skill": "SK05",
+      "path": "skills/sbs-modelos-configuracion/SKILL.md",
+      "version": "0.1.6",
+      "status": "provisional",
+      "sha256": "7788401ed121b653a5c8cc144a72e31b0344974bd724d29f2a41e2b4c98097b6"
+    },
+    {
+      "skill": "SK06",
+      "path": "skills/sbs-genie-datos/SKILL.md",
+      "version": "0.1.17",
+      "status": "provisional",
+      "sha256": "7907195c48f1e5b4de9b0bff4e64aacd03642be8493f494cfbabc236d949c14c"
+    },
+    {
+      "skill": "SK07",
+      "path": "skills/sbs-conversacion-orquestacion/SKILL.md",
+      "version": "0.1.18",
+      "status": "provisional",
+      "sha256": "647ab5e8a16f6f3516d72e34e86d140252d669dce92d39404e4f4678bc0803a5"
+    },
+    {
+      "skill": "SK08",
+      "path": "skills/sbs-guardrails-permisos/SKILL.md",
+      "version": "0.1.4",
+      "status": "provisional",
+      "sha256": "8dd96124319cb10e179c0cc440e61840aa94c02a919e487f1a42fbd47a2ca249"
+    },
+    {
+      "skill": "SK09",
+      "path": "skills/sbs-evaluacion-jueces/SKILL.md",
+      "version": "0.1.2",
+      "status": "provisional",
+      "sha256": "46e9f9851d46b2ec95f61dabdaed6ec30cc28799f8c8e017615d87dcff6d2b66"
+    },
+    {
+      "skill": "SK10",
+      "path": "skills/sbs-canal-revision/SKILL.md",
+      "version": "0.1.5",
+      "status": "provisional",
+      "sha256": "468177363a4ad0bcb3c9e8d6e160acba33dc87061a4ed3abf64c8cebb341d437"
+    },
+    {
+      "skill": "SK11",
+      "path": "skills/sbs-observabilidad-operacion/SKILL.md",
+      "version": "0.1.21",
+      "status": "provisional",
+      "sha256": "2fc5bcbbe5a6950d8469223afac7deb2844ef64a35099e7e8c3609ef20e9b07d"
+    },
+    {
+      "skill": "SK12",
+      "path": "skills/sbs-despliegue-e2e/SKILL.md",
+      "version": "0.1.16",
+      "status": "provisional",
+      "sha256": "658437d643b439923110e75d02fb177f38258e1e9227ce350ae74bafd5a9a342"
+    }
+  ],
+  "state_source": "ESTADO-ENTREGA.md",
+  "prior_review": "teaching-guide/review.json",
+  "artifacts": {
+    "teaching-guide/content.json": "a18891d3dae85acc7c9f00efd61d02df1352ca3d8cc0f9e2b04e3fc8b94bd501",
+    "teaching-guide/skills.json": "afb58d80f5e3d7c06eb26a485bf62eeea992adbbd2ef25651fa0904cdea29794",
+    "teaching-guide/skill_mapping.py": "fd7e47a193a636118f6299f076cf42584df8266c515a1700a7c44c32129bc73e",
+    "teaching-guide/index.html": "5c460fcaa0b9063188017afeb467aeb78d0b24481b9deff866e38a6556cd053a"
+  },
+  "limitations": [
+    "Mapeo de responsabilidad revisado semánticamente; no traza de ejecución por request.",
+    "No certifica skills para producción ni vuelve a ejecutar componentes."
+  ]
+}

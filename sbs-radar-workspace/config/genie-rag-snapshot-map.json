@@ -1,0 +1,160 @@
+{
+  "version": "1",
+  "status": "source_and_raw_page_compatible",
+  "sk06_snapshot": "a17e6dbfa26e1794729e472100ffd3c57d1e0b2f4956bb8209111923b42059c9",
+  "sk06_corpus_hash": "d639874e76cb354a3c2a574d48f4beb873f1ce75df73bba6d8d7f41d974b0614",
+  "rag_snapshot": "56572ce945c641ad33f3a5550b481587849bc619d96b441d09ab5243e174e728",
+  "rag_index_hash": "d200e920d5105a344ff6f3e3b4ef576fae076e86e4b54c90a622388bd0cc2248",
+  "source_set_sha256": "5679d241b3d30d3ba09396d96cbda5d7794105b16e992faa48944c4ddf01cf54",
+  "sources": [
+    {
+      "document_id": "sbs-2220-2025",
+      "version_id": "689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55",
+      "family": "cybersecurity",
+      "original_sha256": "689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55",
+      "rawtext_sha256": "644741ee0488bb79dad9dfb4cf2d7c566799d6652c2796621492ce5b1d519a22",
+      "extraction_sha256": "1fe91eb4ce5c93838aeecb8875c790cdff7538e632b4ebeaea1b80205e77929f",
+      "extraction_config_hash": "0905a638ac61ee563fb7cf40b8c9205cad74dfdb08932ba311ac0318746bb4a0"
+    },
+    {
+      "document_id": "sbs-2286-2024",
+      "version_id": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "family": "cybersecurity",
+      "original_sha256": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+      "rawtext_sha256": "3c19a4f4c19d9d7d4392fa7a228814504d9aa8b0fe62ca73409e25755b197458",
+      "extraction_sha256": "b2a4018432aa0d7a8d886bb54fdff1ba724afaf90892cf345ee49819d683d756",
+      "extraction_config_hash": "d7ab1b22b63dedd7f2a0e731d38c760584be04ed65d901a47a5fa160875a4dab"
+    },
+    {
+      "document_id": "sbs-3274-2017",
+      "version_id": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+      "family": "market_conduct",
+      "original_sha256": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+      "rawtext_sha256": "c9422c55c0a4f13ba2d94918e7f23ff401ede29b9f9448e23be57468b7e8073c",
+      "extraction_sha256": "3bf4d7227a281a90422e64726a427b7aaae2e4499d11a62d2bfd2b1e0d12e11e",
+      "extraction_config_hash": "7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b"
+    },
+    {
+      "document_id": "sbs-3274-2017",
+      "version_id": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+      "family": "market_conduct",
+      "original_sha256": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+      "rawtext_sha256": "d383f9575cea1f844e4c4cd19b6bf489f12794a58a37688b1c64171219dce1d3",
+      "extraction_sha256": "d298b739142b159a822521fdf2492fed34226c939775c8a49cbe75ce6a19367f",
+      "extraction_config_hash": "7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b"
+    },
+    {
+      "document_id": "sbs-504-2021",
+      "version_id": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771",
+      "family": "cybersecurity",
+      "original_sha256": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771",
+      "rawtext_sha256": "66b63adace8a5e1f053d9af72b0c5fe45780cba6b6c1d0670673f1fcde919ce2",
+      "extraction_sha256": "aca479067212837e1b6d90742892ca630a2ab0699e27b447eb729379c9d19379",
+      "extraction_config_hash": "24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9"
+    },
+    {
+      "document_id": "sbs-504-2021",
+      "version_id": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+      "family": "cybersecurity",
+      "original_sha256": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+      "rawtext_sha256": "1481d6a74d7f6988a2bdcb10081724101b41553fdfca03279a3dcb8076d96a3a",
+      "extraction_sha256": "65b2304a6379933215424b0d077881bfd3ab9fcd631512ae1575e55013960488",
+      "extraction_config_hash": "24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9"
+    }
+  ],
+  "matched_citations": 135,
+  "citation_set_sha256": "ec6f860b290c56299ead7c5153d82ca12f60d6a5989a01a81765925730e8df97",
+  "pair_mappings": [
+    {
+      "query_id": "cyber-art20-3",
+      "rag_pair_id": "cyber-art20-3",
+      "sk06_pair_id": "documentary-sbs-504-2021",
+      "family": "cybersecurity",
+      "before": {
+        "document_id": "sbs-504-2021",
+        "version_id": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771"
+      },
+      "after": {
+        "document_id": "sbs-504-2021",
+        "version_id": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18"
+      },
+      "selected_provision_id": null
+    },
+    {
+      "query_id": "market-art27",
+      "rag_pair_id": "market-art27",
+      "sk06_pair_id": "documentary-sbs-3274-2017",
+      "family": "market_conduct",
+      "before": {
+        "document_id": "sbs-3274-2017",
+        "version_id": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342"
+      },
+      "after": {
+        "document_id": "sbs-3274-2017",
+        "version_id": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7"
+      },
+      "selected_provision_id": null
+    },
+    {
+      "query_id": "market-art29-1-4",
+      "rag_pair_id": "market-art29-1-4",
+      "sk06_pair_id": "documentary-sbs-3274-2017",
+      "family": "market_conduct",
+      "before": {
+        "document_id": "sbs-3274-2017",
+        "version_id": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342"
+      },
+      "after": {
+        "document_id": "sbs-3274-2017",
+        "version_id": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7"
+      },
+      "selected_provision_id": null
+    }
+  ],
+  "semantic_provision_ids_equivalent": false,
+  "input_files": {
+    "runs/sk06-component-real/manifest.json": "f6e154eae0b1baff96b44a8b99750c254844ffa5fdc696484a29999855096518",
+    "runs/sk06-component-real/documents.jsonl": "0eb35c338cb9e8217010bad2faab1f95e7c82cd95416b5f4d312fc01df248357",
+    "runs/sk06-component-real/versions.jsonl": "0eb35c338cb9e8217010bad2faab1f95e7c82cd95416b5f4d312fc01df248357",
+    "runs/sk06-component-real/provisions.jsonl": "7bea4989191bf025bcf9cb07e83e0788823bbde4fd04c139144ebea7199b495a",
+    "runs/sk06-component-real/pairs.jsonl": "fd438d23dee39b90c3065570d5930e9523eaa1e320cb6d1a7933800bab9452a5",
+    "runs/sk06-component-real/changes.jsonl": "ab0321fd721badc4e55215b167aeb0e62da3ce4264b3175cc178714a880c97cb",
+    "runs/sk06-component-real/evidence.jsonl": "961402bbecaf44a198e2d4dde62b222a93d6a7eb35accfae6739a4aee78b32a5",
+    "runs/sk06-component-real/reviews.jsonl": "6d8d1e9c5e159c70a0f27cc48bad33999ba6e0def7533d7ca33b3e7176f68a66",
+    "runs/sk06-component-real/processes.jsonl": "926fbcc3732189786048d4f9426231c662ce46e7a5e2952bc612ad09607a96ad",
+    "runs/sk04-real-001-report.json": "5571b244f9fd920ea3a9c8b9748b1bea971b07348a3f9aac3b32d6405c664de3",
+    "data/retrieval/sk04-real-001/corpus.json": "509ae955b1ab38818620e14f209bc611b3e8fbc8fec9f33b0d179646dc5435d2",
+    "data/retrieval/sk04-real-001/records.json": "00a528c624fdd1d874997a708be8f7ef8ba22e613ac707311ac2dbc385fa5ec0",
+    "data/retrieval/sk04-real-001/index.json": "3390bb05d9ee8a2d8a43aeb5cd5a43083553bfc4b257847d765918e24451b1f9",
+    "runs/sk04-real-001-protocol.json": "85103535452d4872042e4aee49c5b1452fb8e44cc19afc40e73b057349a0c572",
+    "runs/sk02-repository-capture.json": "5aa790331595736d982719f6a271da537557b2e9f2c0b9f9259065618cb53402",
+    "context/pilot-repository-manifest.json": "c996f89c07ac21813c065fd7eb5e4364455d498bc0bbf58c07e4370832b2669c",
+    "data/foundation-repository/derived/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/result.json": "3bf4d7227a281a90422e64726a427b7aaae2e4499d11a62d2bfd2b1e0d12e11e",
+    "data/foundation-repository/objects/66/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342.pdf": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342",
+    "data/foundation-repository/derived/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/rawtext.txt": "c9422c55c0a4f13ba2d94918e7f23ff401ede29b9f9448e23be57468b7e8073c",
+    "data/foundation-repository/derived/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/result.json": "aca479067212837e1b6d90742892ca630a2ab0699e27b447eb729379c9d19379",
+    "data/foundation-repository/objects/10/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771.pdf": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771",
+    "data/foundation-repository/derived/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/rawtext.txt": "66b63adace8a5e1f053d9af72b0c5fe45780cba6b6c1d0670673f1fcde919ce2",
+    "data/foundation-repository/derived/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/result.json": "65b2304a6379933215424b0d077881bfd3ab9fcd631512ae1575e55013960488",
+    "data/foundation-repository/objects/b8/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18.pdf": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+    "data/foundation-repository/derived/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/rawtext.txt": "1481d6a74d7f6988a2bdcb10081724101b41553fdfca03279a3dcb8076d96a3a",
+    "runs/sk02-amendments-capture.json": "43f0a2d6494bda55a0182c5964c88cd31cd859bc2c97cd813b13267505630272",
+    "context/pilot-amendments-manifest.json": "76084e75b5357481059273fbced1b1c5f87eced5aa346ce41de7dc4f64ead768",
+    "data/foundation-repository/derived/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/d7ab1b22b63dedd7f2a0e731d38c760584be04ed65d901a47a5fa160875a4dab/result.json": "b2a4018432aa0d7a8d886bb54fdff1ba724afaf90892cf345ee49819d683d756",
+    "data/foundation-repository/objects/0e/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9.pdf": "0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9",
+    "data/foundation-repository/derived/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/d7ab1b22b63dedd7f2a0e731d38c760584be04ed65d901a47a5fa160875a4dab/rawtext.txt": "3c19a4f4c19d9d7d4392fa7a228814504d9aa8b0fe62ca73409e25755b197458",
+    "data/foundation-repository/derived/689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/0905a638ac61ee563fb7cf40b8c9205cad74dfdb08932ba311ac0318746bb4a0/result.json": "1fe91eb4ce5c93838aeecb8875c790cdff7538e632b4ebeaea1b80205e77929f",
+    "data/foundation-repository/objects/68/689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55.pdf": "689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55",
+    "data/foundation-repository/derived/689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/0905a638ac61ee563fb7cf40b8c9205cad74dfdb08932ba311ac0318746bb4a0/rawtext.txt": "644741ee0488bb79dad9dfb4cf2d7c566799d6652c2796621492ce5b1d519a22",
+    "data/foundation-repository/derived/879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/result.json": "d298b739142b159a822521fdf2492fed34226c939775c8a49cbe75ce6a19367f",
+    "data/foundation-repository/objects/87/879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7.pdf": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7",
+    "data/foundation-repository/derived/879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/rawtext.txt": "d383f9575cea1f844e4c4cd19b6bf489f12794a58a37688b1c64171219dce1d3"
+  },
+  "limitations": [
+    "Different snapshot algorithms retained; no hash is replaced by another.",
+    "Compatibility covers exact source bytes, extraction and raw-page citations, not legal validity or cloud publication.",
+    "Article-level RAG focus is not a curated raw-page provision ID; no automatic zero-count or semantic ID translation.",
+    "No table deployment/Genie execution is established by this local map."
+  ],
+  "mapping_sha256": "65d9aece99bc0549df85834e48a9feffad4801905089f34e7e3d450f9bb8b966"
+}

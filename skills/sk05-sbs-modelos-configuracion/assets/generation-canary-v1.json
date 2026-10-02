@@ -1,0 +1,13 @@
+{
+  "asset_version": "1.0.0",
+  "purpose": "Operability canary only; no user data or regulatory evidence",
+  "request": {
+    "messages": [
+      {"role": "system", "content": "Return only the exact JSON object requested. Do not add markdown or explanation."},
+      {"role": "user", "content": "Return this JSON object: {\"canary\":\"ok\"}"}
+    ],
+    "max_tokens": 128,
+    "stream": false
+  },
+  "expected_json": {"canary": "ok"}
+}

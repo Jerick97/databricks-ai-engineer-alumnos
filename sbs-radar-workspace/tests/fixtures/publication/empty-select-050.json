@@ -1,0 +1,102 @@
+{
+  "at": "2026-09-28T19:52:17.513477+00:00",
+  "skill": "SK05/SK06",
+  "scope": "GET existing SELECT result; no new SQL/start",
+  "statement_id": "01f1bb75-3eee-1732-a8c9-319e8333f466",
+  "response": {
+    "manifest": {
+      "format": "JSON_ARRAY",
+      "schema": {
+        "column_count": 13,
+        "columns": [
+          {
+            "name": "id",
+            "position": 0,
+            "type_name": "STRING",
+            "type_text": "STRING"
+          },
+          {
+            "name": "family",
+            "position": 1,
+            "type_name": "STRING",
+            "type_text": "STRING"
+          },
+          {
+            "name": "synthetic",
+            "position": 2,
+            "type_name": "BOOLEAN",
+            "type_text": "BOOLEAN"
+          },
+          {
+            "name": "source_kind",
+            "position": 3,
+            "type_name": "STRING",
+            "type_text": "STRING"
+          },
+          {
+            "name": "corpus_hash",
+            "position": 4,
+            "type_name": "STRING",
+            "type_text": "STRING"
+          },
+          {
+            "name": "config_hash",
+            "position": 5,
+            "type_name": "STRING",
+            "type_text": "STRING"
+          },
+          {
+            "name": "known_at",
+            "position": 6,
+            "type_name": "STRING",
+            "type_text": "STRING"
+          },
+          {
+            "name": "published_on",
+            "position": 7,
+            "type_name": "STRING",
+            "type_text": "STRING"
+          },
+          {
+            "name": "effective_on",
+            "position": 8,
+            "type_name": "STRING",
+            "type_text": "STRING"
+          },
+          {
+            "name": "review_status",
+            "position": 9,
+            "type_name": "STRING",
+            "type_text": "STRING"
+          },
+          {
+            "name": "human_approved",
+            "position": 10,
+            "type_name": "BOOLEAN",
+            "type_text": "BOOLEAN"
+          },
+          {
+            "name": "lineage_json",
+            "position": 11,
+            "type_name": "STRING",
+            "type_text": "STRING"
+          },
+          {
+            "name": "payload_json",
+            "position": 12,
+            "type_name": "STRING",
+            "type_text": "STRING"
+          }
+        ]
+      },
+      "total_chunk_count": 0,
+      "total_row_count": 0,
+      "truncated": false
+    },
+    "result": {},
+    "statement_id": "01f1bb75-3eee-1732-a8c9-319e8333f466",
+    "status": {
+      "state": "SUCCEEDED"
+    }
+  }
+}

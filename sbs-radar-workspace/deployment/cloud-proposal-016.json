@@ -1,0 +1,529 @@
+{
+  "proposal_version": "016-draft",
+  "created_at": "2026-09-28T03:46:17.656768+00:00",
+  "status": "prepared_pending_independent_review_and_remaining_bindings",
+  "artifact_kind": "phased_activation_proposal_not_API_request",
+  "apply_allowed": false,
+  "execution_performed": false,
+  "independent_review": "pending_other_actor_SK09",
+  "constructor": "/root/sk09_publication_review",
+  "invocation": "runs/sk12-activation-proposal-016-invocation.json",
+  "historical_proposal": {
+    "path": "deployment/cloud-proposal.json",
+    "sha256": "6236ec5f751932a7cae4969bfc285143cbe71cac6498578ab464387b7b6ff4f8"
+  },
+  "baseline_checkpoint": {
+    "path": "runs/sk00-checkpoint-15.json",
+    "sha256": "6a4e752ec24fff4f71f1dfe83e4a41fac85bc1777e7521226886bbf0cd6b3855"
+  },
+  "skills": [
+    {
+      "id": "SK00",
+      "version": "0.1.1"
+    },
+    {
+      "id": "SK12",
+      "version": "0.1.6"
+    }
+  ],
+  "workspace": {
+    "host": "https://dbc-0410b264-20c7.cloud.databricks.com",
+    "preparation_profile": "databricks-ai-engineer-aws",
+    "cloud_runtime_auth": {
+      "app": "OAuth M2M of the app service principal; no developer profile",
+      "job_writer": "Default Databricks SDK runtime Config() authentication inside the Job; current authenticated principal must match observed run_as writer. No new OAuth client secret implied.",
+      "initial_sql_publisher": "Existing catalog/schema owner user, with separately observed warehouse CAN_USE; do not transfer ownership or elevate app/writer service principals."
+    },
+    "catalog": "neptuno_manuel_arguelles",
+    "schema": "sbs_radar"
+  },
+  "observed_metadata": {
+    "source": {
+      "path": "deployment/uc-observed-015.json",
+      "sha256": "8c08daedff5c543d07a7b43a54fc6f48110e8a1e547e239102711f8351c87a0a"
+    },
+    "schema_id": "ff244e9c-7d34-4c2d-8d74-a33292cd5f2c",
+    "volume_id": "f08b4e85-862d-400e-9ade-b73fe134ea7d",
+    "volume": "neptuno_manuel_arguelles.sbs_radar.release_artifacts",
+    "already_created": true,
+    "recreate": false,
+    "grants": "empty observed representation, not privacy or app/writer-access proof",
+    "app": {
+      "name": "sbs-radar-pilot",
+      "id": "a947eccf-5f94-4369-a3d4-8f83b4ea98a1",
+      "client_id": "a947eccf-5f94-4369-a3d4-8f83b4ea98a1",
+      "principal_id": 77041447522099,
+      "url": "https://sbs-radar-pilot-7474657121564806.aws.databricksapps.com",
+      "last_observed_compute": "STOPPED",
+      "current_state_recheck_required": true,
+      "recreate": false,
+      "latest_observed_at": "2026-09-28T03:43:28.609794+00:00"
+    }
+  },
+  "warehouse": {
+    "id": "828756322bedff37",
+    "historical_metadata": {
+      "path": "runs/sk12-cost-metadata-001.json",
+      "sha256": "4ca38ef69004068755b5d6b41571da2af7c1772bfe1ecdd87af639a6d2e047ba"
+    },
+    "historical_state": "STOPPED",
+    "historical_size": "Small",
+    "historical_max_clusters": 1,
+    "historical_auto_stop_mins": 10,
+    "shared": true,
+    "resize": false,
+    "stop_only_if": "Own activation, no unrelated work and scope covers stop; otherwise retain and report residual exposure",
+    "latest_metadata": {
+      "path": "runs/sk12-metadata-preflight-016.json",
+      "sha256": "83153309e6c1597015bb15c894318259588adaf81c1522c63f54a768f1411949",
+      "observed_at": "2026-09-28T03:43:28.609794+00:00",
+      "workspace_writer_display_name_matches": 0,
+      "writer_account_identity": "not established by workspace filter",
+      "app_state": "STOPPED",
+      "warehouse_state": "STOPPED",
+      "warehouse_acl": "users CAN_USE; observed requester IS_OWNER; admins inherited CAN_MANAGE; no change proposed",
+      "sql_executed": false,
+      "mutations": false
+    }
+  },
+  "data": {
+    "candidate": "SK06 export002 initial Genie pilot",
+    "jsonl": {
+      "documents": {
+        "path": "runs/sk06-pilot-002/documents.jsonl",
+        "sha256": "59a232d6728f494d0ef974abaf15e24c3b203dae89e5c7ab847f445c57e60bd7",
+        "rows": 6,
+        "target": "neptuno_manuel_arguelles.sbs_radar.documents"
+      },
+      "versions": {
+        "path": "runs/sk06-pilot-002/versions.jsonl",
+        "sha256": "59a232d6728f494d0ef974abaf15e24c3b203dae89e5c7ab847f445c57e60bd7",
+        "rows": 6,
+        "target": "neptuno_manuel_arguelles.sbs_radar.versions"
+      },
+      "provisions": {
+        "path": "runs/sk06-pilot-002/provisions.jsonl",
+        "sha256": "a29ef6b8136e63800e08134403c388a5fc03919dd8a11be1fcedd1051307acca",
+        "rows": 141,
+        "target": "neptuno_manuel_arguelles.sbs_radar.provisions"
+      },
+      "pairs": {
+        "path": "runs/sk06-pilot-002/pairs.jsonl",
+        "sha256": "dcde60788f992bb6b5a53d9e0f1c9bf40c97de3eeebcf25e877aebc0e48ac1bd",
+        "rows": 2,
+        "target": "neptuno_manuel_arguelles.sbs_radar.pairs"
+      },
+      "changes": {
+        "path": "runs/sk06-pilot-002/changes.jsonl",
+        "sha256": "3329edc62ab0494a14192f40ea129db2e79ad01d40df8edb7988c4181d97ad28",
+        "rows": 3,
+        "target": "neptuno_manuel_arguelles.sbs_radar.changes"
+      },
+      "evidence": {
+        "path": "runs/sk06-pilot-002/evidence.jsonl",
+        "sha256": "2f585e5509fb9c28b013600bee977ee71f296d6f3b8243d1a83d8677b1652810",
+        "rows": 3,
+        "target": "neptuno_manuel_arguelles.sbs_radar.evidence"
+      },
+      "reviews": {
+        "path": "runs/sk06-pilot-002/reviews.jsonl",
+        "sha256": "701b7a5ad281021b87fcd5652acdd4a9cff654ced976cc16c452b26b2b257bb3",
+        "rows": 1,
+        "target": "neptuno_manuel_arguelles.sbs_radar.reviews"
+      },
+      "processes": {
+        "path": "runs/sk06-pilot-002/processes.jsonl",
+        "sha256": "4f3d6c36e51eb192933e1b1f362678cde58a8ff0c528f5a15b24da2efe125232",
+        "rows": 2,
+        "target": "neptuno_manuel_arguelles.sbs_radar.processes"
+      }
+    },
+    "snapshot_hash": "1d8f1ba4a1da7d5fe6d59a2609b5b89b602717bc1bb92cb9706295e6b732543d",
+    "corpus_hash": "d639874e76cb354a3c2a574d48f4beb873f1ce75df73bba6d8d7f41d974b0614",
+    "config_hash": "7f8076f398ef02733ddbfafe5ffcbe3e2d3f191e63c5c53ea531f463e5927510",
+    "runtime_mapping": {
+      "path": "runs/sk06-pilot-002/snapshot-map.json",
+      "sha256": "94f8816cac393f747be9ff0ec2c8b143ce8691893c0c57dfb563fc45a23f5ddd",
+      "mapping_sha256": "275b921a065e66c2f7ffa75ef9b5ffc2b1eb1410ca4445246b2aa67e26296580",
+      "rag_snapshot": "56572ce945c641ad33f3a5550b481587849bc619d96b441d09ab5243e174e728",
+      "genie_snapshot": "1d8f1ba4a1da7d5fe6d59a2609b5b89b602717bc1bb92cb9706295e6b732543d"
+    },
+    "limits": [
+      "135 raw-page provisions and 6 structural article spans are distinct granularities.",
+      "Three changes rows are partial ChangeSets, not three material changes.",
+      "AI review rows do not establish human approval; processes are fictitious.",
+      "Snapshot mapping is locally verified; neither snapshot is remotely published.",
+      "Refreshed135-page releases are distinct; do not reuse141-span snapshot/certificate."
+    ]
+  },
+  "resources_proposed": {
+    "tables": [
+      "neptuno_manuel_arguelles.sbs_radar.documents",
+      "neptuno_manuel_arguelles.sbs_radar.versions",
+      "neptuno_manuel_arguelles.sbs_radar.provisions",
+      "neptuno_manuel_arguelles.sbs_radar.pairs",
+      "neptuno_manuel_arguelles.sbs_radar.changes",
+      "neptuno_manuel_arguelles.sbs_radar.evidence",
+      "neptuno_manuel_arguelles.sbs_radar.reviews",
+      "neptuno_manuel_arguelles.sbs_radar.processes"
+    ],
+    "control_table": "neptuno_manuel_arguelles.sbs_radar.refresh_control",
+    "genie_title": "SBS Radar — piloto documental privado",
+    "genie_space_id": null,
+    "genie_acl_object_id": null,
+    "writer_display_name_candidate": "sbs-radar-writer",
+    "writer_principal_id": null,
+    "writer_client_id": null,
+    "job_name": "sbs-radar-daily",
+    "job_id": null,
+    "workspace_code_path_candidate": "/Workspace/Users/sociosdosmilveintiseis@gmail.com/sbs-radar/activation-016",
+    "volume_artifacts_prefix": "/Volumes/neptuno_manuel_arguelles/sbs_radar/release_artifacts/sbs-refresh",
+    "registry_prefix": "/Volumes/neptuno_manuel_arguelles/sbs_radar/release_artifacts/registry",
+    "writer_creation_status": "Root preparing separately scoped identity-federation-aware metadata proposal; no secret/admin/compute inferred"
+  },
+  "publication": {
+    "implementation_owner": "SK06 sk06_green",
+    "plan_manifest": "runs/sk06-publication-writer-016-plan.json",
+    "plan_manifest_sha256": "ec0832f9e5eb3dc1acc326d6499b31ad95d1e5d9be5ca363ca1b5eaae0974715",
+    "status": "concrete_plan_local_only_independent_publisher_review_and_execution_pending",
+    "method": "Exclusive CREATE TABLE plus exact parameterized INSERT batches; no CREATE SCHEMA and no old COPY plan",
+    "table_count": 8,
+    "control_table_separate": true,
+    "ownership": "publication_id+snapshot markers and exact identities; collisions reconcile/fail, no silent adoption",
+    "readback": "Observe actual Delta versions; PublicationReader32 observations then independent QueryHistory registry32 records; do not fabricate versions or combine these counts into assumed statement budget",
+    "certificate": null,
+    "registry": null,
+    "mutation_submissions": 16,
+    "read_submissions_success_path": 64,
+    "workspace_http_cap": 512,
+    "count_basis": "Constructor preflight/record success-path accounting; 8 CREATE + 8 INSERT observed in sealed plan; 64 SELECT/DESCRIBE reads and 32 Query History GET separately. Reconciliation/polling may consume HTTP cap; never blind resubmit.",
+    "record": {
+      "path": "runs/sk06-publication-writer-016-record.json",
+      "sha256": "bab7c7a01a7468666b265b0b4350e493dbf57abafb04bd10882ec1f7e51223cb"
+    },
+    "preflight": {
+      "path": "runs/sk06-publication-writer-016-preflight.json",
+      "sha256": "91f5732845282ab00d52b693de7d5ad7c7b9ee59912416d51a4ba4afa2bb8780"
+    },
+    "sql": [
+      {
+        "table": "neptuno_manuel_arguelles.sbs_radar.documents",
+        "rows": 6,
+        "create_sha256": "dd3ce71fa07f99b5b569821b9513c520fb64e2c3b664197d95a65c88d065d219",
+        "insert_sha256": "958d80a158d06255734a86b5e98c4dcae38674da1454efccb7c53d1f1f0fd233"
+      },
+      {
+        "table": "neptuno_manuel_arguelles.sbs_radar.versions",
+        "rows": 6,
+        "create_sha256": "4cc595fa8902c89dd5e831e8003cf68a4114a649a1876fe8066a9dbaa364640c",
+        "insert_sha256": "3c045c944c7f69983dca12c6fdc79ead7b7614830fde1e82208c077a14a1ff27"
+      },
+      {
+        "table": "neptuno_manuel_arguelles.sbs_radar.provisions",
+        "rows": 141,
+        "create_sha256": "0931c87027aaa11880c36c3fb2ea38648c9d2a87a905088e7903725169e6d33b",
+        "insert_sha256": "fb9f38b8393c826a22e20004059774d4b4a4f2c9c1b9541bc3b37b3223043858"
+      },
+      {
+        "table": "neptuno_manuel_arguelles.sbs_radar.pairs",
+        "rows": 2,
+        "create_sha256": "d99f6386ad7f85b1e0abd3ec07faa2ed6a5b5c09111d40021d8ae099cbea6a09",
+        "insert_sha256": "c59c4f05462c0ad3fa97d7f891bb266f62a1bc00fa9d5dcb24e7bc9ac752ea59"
+      },
+      {
+        "table": "neptuno_manuel_arguelles.sbs_radar.changes",
+        "rows": 3,
+        "create_sha256": "faa1b2587d3d16f5a080bc90de914b80b04b52ca02f9abd94eb3528bd3065f06",
+        "insert_sha256": "3ad13f897434c86d66824caa157089e0267407bd79ea05be338b7bad9e03b70c"
+      },
+      {
+        "table": "neptuno_manuel_arguelles.sbs_radar.evidence",
+        "rows": 3,
+        "create_sha256": "c6a9ddf8ac9f4caa722c5c8ebf867c7b3ded6a9b1126300b87160d857d48f99a",
+        "insert_sha256": "489d854ae9c7ba31fb4b57cd4a6f93cd22107a68a52f96439c36b84fe752e1b2"
+      },
+      {
+        "table": "neptuno_manuel_arguelles.sbs_radar.reviews",
+        "rows": 1,
+        "create_sha256": "06be87109b39cce067db51eff07eb8f2ecc527350eb4a0a2180f1694b07a083b",
+        "insert_sha256": "fa9bbd697eac0615372f839721c9944b51b4a1773aa92e1ef770d04b27fdd4be"
+      },
+      {
+        "table": "neptuno_manuel_arguelles.sbs_radar.processes",
+        "rows": 2,
+        "create_sha256": "c48ba626a615f0fb294c9455531ea6bec9a9609c3d32f6ea288668590e8360d4",
+        "insert_sha256": "460173a1b2623e71ecd8e13e044ee50618f4ffc4cba737581cfb7a118452455f"
+      }
+    ],
+    "statement_count_success_path": 80,
+    "read_submissions_cap_per_instance": 96,
+    "sql_submissions_cap_per_instance": 112,
+    "history_gets_success_path": 32,
+    "counter_scope": "112 SQL upper bound per instance = 96 read submissions plus 16 unique journaled mutations. Read/HTTP counters reset on a new instance; persisted journal prevents mutation retransmission. Neither is a cumulative cross-instance admission cap."
+  },
+  "phases": [
+    {
+      "id": "M",
+      "kind": "metadata_and_local_preparation",
+      "compute_authorization": false,
+      "actions": [
+        "Reconcile existing app/schema/volume and writer candidate identity",
+        "Observe principal-specific permissions and exact minimal deltas",
+        "Finish reviewed publication, recovery, config and bundle"
+      ],
+      "status": "in_progress_by_root_and_owners"
+    },
+    {
+      "id": "S",
+      "kind": "initial_SQL_publication",
+      "actions": [
+        "Upload only exact pinned project artifacts after effective access verification",
+        "Execute reviewed8table CREATE/INSERT plan once",
+        "Readback schema/content/Delta versions and independent history; persist certificate+registry",
+        "Create and preseed new own refresh_control only via separate reviewed3statement plan when required by J"
+      ],
+      "limits": {
+        "publications": 1,
+        "parallel_statement_submissions": 1,
+        "automatic_retries": 0,
+        "publisher_statement_cap": 112,
+        "control_DDL_seed_readback_statements": 3,
+        "publisher_mutation_submissions": 16,
+        "publisher_read_submissions_success_path": 64,
+        "publisher_workspace_http_calls_max": 512,
+        "publisher_sql_submissions_success_path": 80,
+        "publisher_read_submissions_cap_per_instance": 96,
+        "publisher_history_gets_success_path": 32,
+        "counter_scope": "112 SQL upper bound per instance = 96 read submissions plus 16 unique journaled mutations. Read/HTTP counters reset on a new instance; persisted journal prevents mutation retransmission. Neither is a cumulative cross-instance admission cap."
+      },
+      "status": "not_executed_concrete_plan_bound_review_config_consumption_scope_pending"
+    },
+    {
+      "id": "G",
+      "kind": "Genie_documentary_demo",
+      "actions": [
+        "Create one own Genie space and pin observed ACLobject_id",
+        "Configure exact reference SQL/map/version scope and CAN_RUN",
+        "Run bounded questions across both families and verify SQL/history"
+      ],
+      "limits": {
+        "spaces_created_max": 1,
+        "questions_max": 20,
+        "concurrent_conversations_max": 1,
+        "external_generation_calls": 0,
+        "new_embeddings": 0
+      },
+      "conversational_E2E": false,
+      "status": "not_executed"
+    },
+    {
+      "id": "A",
+      "kind": "private_app_and_conversation",
+      "actions": [
+        "Deploy final pinned package to existing app with M2M+verified user policy",
+        "Validate sources/before-after/followup/family switch/cross-family in actual UI",
+        "Record grounding/model/citation outcomes and stop own app after supervised window"
+      ],
+      "limits": {
+        "app_instances": 1,
+        "compute_size": "MEDIUM",
+        "window_minutes": 30,
+        "concurrent_requests": 1,
+        "user_turns_max": 6,
+        "generation_calls_max": 12,
+        "query_embedding_calls_max": 12,
+        "document_embedding_calls": 0,
+        "generation_output_tokens_per_call_max": 5000,
+        "embedding_input_tokens_total_max": 20000,
+        "automatic_retries": 0
+      },
+      "prerequisites": [
+        "Generation403 resolved by new access evidence; model/revision and bounded call plan pinned for chat",
+        "Exact source/configuration reviewed and target dependency package prepared; actual native execution is an outcome of authorized trial",
+        "Applicable rate evidence or explicit residual-cost-risk acceptance for this phase",
+        "Browser available when executing visual UI checks, not prerequisite for independent metadata/SQL phases"
+      ],
+      "status": "not_executed_not_authorized",
+      "trial_outcomes_not_pre_authorization_requirements": [
+        "Actual target native model loading",
+        "Apps M2M effective resource access and user SSO",
+        "Authenticated UI and cited conversation",
+        "Controlled stop on failed access/compatibility without escalating grants or broad retry"
+      ]
+    },
+    {
+      "id": "J",
+      "kind": "paused_job_and_single_controlled_run",
+      "actions": [
+        "Create own Job PAUSED from job_settings after bindings observed",
+        "Verify state-table singleton, writer identity, ACL and durable capture recovery",
+        "Admit exactly one manual run, verify receipt/closure and consuming runtime",
+        "Keep schedule PAUSED and preserve prior current pointer on failure"
+      ],
+      "job_binding_plan": {
+        "path": "deployment/refresh-job.json",
+        "sha256": "ae8603dad526975eab5efa915eeed52de8e40183f7e5b24695e0ef4b38144ae7"
+      },
+      "limits": {
+        "manual_run_admissions": 1,
+        "max_concurrent_runs": 1,
+        "queue_enabled": true,
+        "job_timeout_seconds": 900,
+        "task_timeout_seconds": 600,
+        "max_retries": 0,
+        "disable_auto_optimization": true
+      },
+      "compute": {
+        "mode": "serverless",
+        "environment_version": "4",
+        "environment_dependencies": [
+          "jsonschema==4.26.0",
+          "pypdf==6.13.3",
+          "requests==2.32.5",
+          "databricks-sdk==0.102.0",
+          "numpy==2.4.3",
+          "tokenizers==0.22.2",
+          "sqlglot==30.20.0"
+        ],
+        "existing_cluster_id": null,
+        "availability_verified": false,
+        "evidence": "runs/sk12-cluster-metadata-014.json"
+      },
+      "schedule": {
+        "quartz_cron_expression": "0 0 8 * * ?",
+        "timezone_id": "America/Lima",
+        "pause_status": "PAUSED"
+      },
+      "initial_data_mode": "sealed sixPDF cached preparation; remote capture phase must explicitly bind persistent recovery",
+      "status": "not_executed_unobserved_runtime_bindings",
+      "capture_recovery": {
+        "review": {
+          "path": "runs/sk09-capture-recovery-016-review.json",
+          "sha256": "62445a606460977d262238e3fca5556edbc473d13e21e3e631aae9e918809459"
+        },
+        "verdict": "passed_local_technical_only",
+        "tests": 83,
+        "independent_probes": 12,
+        "capability": "Published verified closure reconstructs minimum historical capture state; complete pending capture logical rows/backlog persist in Files plus separate CAS receipt without moving current. Fresh-root same-run restore does not refetch.",
+        "limits": [
+          "Partial interrupted capture before complete extraction remains local-only",
+          "Failed upload/CAS without confirmed receipt is not durable",
+          "Same-run pending preserves result; new authorized run needed for newly available downstream capabilities",
+          "Cloud permissions, serverless runtime continuity and cost remain trial outcomes, not preauthorization proof"
+        ]
+      }
+    },
+    {
+      "id": "R",
+      "kind": "future_recurring_operation",
+      "included_in_first_demo": false,
+      "actions": [
+        "Enable08:00 America/Lima after demonstrated remote pipeline and explicit recurring consumption scope"
+      ],
+      "status": "excluded_schedule_remains_PAUSED"
+    }
+  ],
+  "least_privilege": {
+    "app": [
+      "USE_CATALOG",
+      "USE_SCHEMA",
+      "SELECT on8published tables and control only if runtime reader enabled",
+      "READ_VOLUME own evidence",
+      "warehouse CAN_USE",
+      "Genie CAN_RUN"
+    ],
+    "app_not_granted": [
+      "MODIFY",
+      "CREATE_TABLE",
+      "MANAGE",
+      "ownership/admin"
+    ],
+    "writer": "Only observed own namespace/control/data and volume privileges needed by reviewed plan; exact principal/grant diff pending preflight",
+    "visibility": "No admin promotion merely to observe API; explicit trusted-admin observed profile and authorized evidence capability",
+    "unrelated_resources": "No changes to course agents/apps/schemas/endpoints/jobs or broad users/admins grants"
+  },
+  "cost": {
+    "currency": "USD",
+    "total_usd": null,
+    "account_rates_verified": false,
+    "account_credit": null,
+    "observed_metastore_region": "aws/us-west-2",
+    "public_sources_reused": {
+      "path": "runs/sk12-cost-scope-001.json",
+      "sha256": "abe6ff04bd965de87fb844be34809bde88ef64a75a30d523a6d70bf818f60b80"
+    },
+    "illustrative_app_only": {
+      "dbu_per_hour": 0.5,
+      "minutes": 30,
+      "example_usd_per_dbu": 0.75,
+      "dbu": 0.25,
+      "usd": 0.1875,
+      "scope": "AWS Premium Virginia public example only; not applicable account quote, not total or cap"
+    },
+    "unknown_components": [
+      "SQL AWS rate/DBUs",
+      "Genie SP LLM consumption and rate",
+      "generation/query embedding tokens/rates",
+      "serverless Job consumption/rate",
+      "storage/network",
+      "startup/idle/stop tail"
+    ],
+    "not_hard_caps": [
+      "Wall-clock supervised window",
+      "Process-local request quotas",
+      "Job timeouts",
+      "warehouse auto-stop10min",
+      "Genie budgets excludeSQL and not absolute cap"
+    ],
+    "spec100usd": "hypothesis only; neither authorization nor verified credit"
+  },
+  "operational_controls": {
+    "status": "proposed_values_require_final_bindings_and_execution_check",
+    "one_attempt_mutations": true,
+    "ambiguous_response": "Persist attempt before request; exact ID/readback reconciliation, no blind retry",
+    "admission": "Record per-phase admission; stop admitting at cap; process restart does not reset authorized session budget",
+    "timebox": "Named operator/start/end/observed stop; document alone cannot stop compute",
+    "recurring": false,
+    "close_when": "Stop own app/runs when supported; never stop unrelated/shared activity",
+    "billing": "Reconcile IDs and delayed usage; unknown remains null"
+  },
+  "rollback": {
+    "data": "Retain originals, immutable artifacts/current receipt; failed publication does not advance pointer; first publication has no prior remote release",
+    "jobs": "PAUSED; cancel only own recorded active run; no retries on ambiguous submit",
+    "app": "Stop only applicable observed own state; restore prior compatible deployment only if one exists; do not credit prior stop400",
+    "grants": "Revert only recorded added grants, preserving preexisting access",
+    "warehouse": "No unconditional stop of shared warehouse",
+    "destructive_removal": "Not included; no automatic DROP/CASCADE/schema/volume deletion"
+  },
+  "authorization": {
+    "request_now": false,
+    "local_QA_is_authorization": false,
+    "metadata_history_not_broad_approval": true,
+    "missing": "Explicit concrete consumption/resource/window scope for S/G, then A/J once prerequisites met; no recurring activation inferred",
+    "ready_for_request": false,
+    "remaining_before_request": [
+      "Independent SK09 review of updated proposal and publisher by different actor",
+      "Exact writer/resource identities and executable configuration for selected phase; publication plan and local recovery review are now bound",
+      "Exact code/config/package and declared target dependency plan; native runtime and actual durable recovery verification occur during authorized trial",
+      "Concrete admission/closure procedure and applicable rates or explicit residual unknown monetary exposure"
+    ],
+    "avoid_circular_gates": "Cloud E2E, actual deployed Apps identity/access and native target validation are trial outcomes, not prerequisites to authorize the trial that measures them. Stage failures stop affected execution, not unrelated preparation."
+  },
+  "pending_external": [
+    "Generation access after3POST403, no retry without new evidence",
+    "Browser capability for UI verification"
+  ],
+  "e2e_accepted": false,
+  "current_preflight": {
+    "path": "runs/sk12-metadata-preflight-016.json",
+    "sha256": "83153309e6c1597015bb15c894318259588adaf81c1522c63f54a768f1411949",
+    "observed_at": "2026-09-28T03:43:28.609794+00:00",
+    "workspace_writer_display_name_matches": 0,
+    "writer_account_identity": "not established by workspace filter",
+    "app_state": "STOPPED",
+    "warehouse_state": "STOPPED",
+    "warehouse_acl": "users CAN_USE; observed requester IS_OWNER; admins inherited CAN_MANAGE; no change proposed",
+    "sql_executed": false,
+    "mutations": false
+  }
+}

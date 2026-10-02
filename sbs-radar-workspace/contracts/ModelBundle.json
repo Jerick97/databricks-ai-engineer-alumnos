@@ -1,0 +1,89 @@
+{
+  "type": "object",
+  "properties": {
+    "bundle_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "revision": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "embedding_model": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "embedding_revision": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "tokenizer": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "dimension": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "reranker_model": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "reranker_revision": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "generation_model": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "generation_revision": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "chunking_version": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "parameters": {
+      "type": "object",
+      "additionalProperties": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      }
+    }
+  },
+  "required": [
+    "bundle_id",
+    "revision",
+    "embedding_model",
+    "embedding_revision",
+    "tokenizer",
+    "dimension",
+    "reranker_model",
+    "reranker_revision",
+    "generation_model",
+    "generation_revision",
+    "chunking_version",
+    "parameters"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sbs:contracts:ModelBundle:0.1.0",
+  "title": "ModelBundle",
+  "description": "SK01 v0.1.0. Local structural contract. Does not establish source truth, immutable persistence, citation literalness or authenticated authorization. Unknown fields rejected; ModelBundle parameters alone permits scalar extension keys."
+}

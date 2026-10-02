@@ -1,0 +1,11 @@
+{
+  "principals": {
+    "76826984571984": {
+      "role": "reader",
+      "families": [
+        "cybersecurity",
+        "market_conduct"
+      ]
+    }
+  }
+}

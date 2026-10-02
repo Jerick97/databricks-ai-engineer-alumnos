@@ -1,0 +1,78 @@
+{
+  "at": "2026-09-28T03:50:26.648194+00:00",
+  "status": "stable_ready_independent_review",
+  "invocations": [
+    "runs/sk11-capture-recovery-016-invocation.json",
+    "runs/sk11-capture-recovery-016-pending-invocation.json"
+  ],
+  "skills": {
+    "SK02": "0.1.6 provisional",
+    "SK11": "0.1.17 provisional",
+    "CreatorZ": "reused explicit refinement protocol"
+  },
+  "published_phase": {
+    "red_failed": 1,
+    "green_passed": 42,
+    "record": "runs/sk11-capture-recovery-016-published-record.json"
+  },
+  "pending_phase": {
+    "red_failed": 1,
+    "initial_green_passed": 1
+  },
+  "integrated_green": {
+    "passed": 104,
+    "failed": 0,
+    "seconds": 51.9,
+    "artifact": "runs/sk11-capture-recovery-016-integrated-green.txt"
+  },
+  "implemented": [
+    "Files published closure -> verified SourceDocuments/pairs/derivatives -> minimum historical SQLite rows",
+    "Files complete pending capture checkpoint -> original logical rows/result/backlog -> new machine same-run pending without refetch",
+    "CAS request/run capture receipt independent of published current; guard, plan/base identity, immutable receipt and latest revision selection",
+    "Coordinator integrated; existing cloud driver forwards remote mode/local path into recovery automatically",
+    "No DB/WAL transferred and no /Volumes POSIX assumption"
+  ],
+  "evidence": [
+    "changed sameURL -> fresh host unchanged -> another fresh host changed; pair history retained",
+    "failed stage explicit retry on same host performs no new capture",
+    "pending stage failure preserves local, retry confirms separate durable receipt",
+    "pending restore new host preserves backlog, no GET and no current publication",
+    "corrupt Files object rejects fresh install/shared pointer remains intact",
+    "bool/float IDs/revision, wrong path/status/request identity rejected"
+  ],
+  "protected_hashes_match": {
+    "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/66/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342.pdf": true,
+    "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/10/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771.pdf": true,
+    "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/b8/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18.pdf": true,
+    "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/0e/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9.pdf": true,
+    "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/68/689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55.pdf": true,
+    "/Users/macdenix/clawd/projects/sbs-genie-e2e/data/foundation-repository/objects/87/879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7.pdf": true,
+    "data/retrieval/sk04-real-001/records.json": true,
+    "data/retrieval/sk04-real-001/index.json": true
+  },
+  "limits": [
+    "No cloud Files/SQL/Jobs or model call executed; storage/guard/CAS boundary fixtures",
+    "Actual serverless execution and permissions remain unverified",
+    "Complete capture/extraction pending downstream is durable only after receipt confirmed; failed upload/CAS before confirmation cannot be called durable",
+    "Partial interrupted captures before complete extraction are local-only and can be lost with host; explicitly outside current automatic checkpoint",
+    "Pending models remain unavailable; same run returns prior pending result, new run needed to process with newly authorized capabilities",
+    "No legal freshness/current-law or E2E quality claim; cost unknown"
+  ],
+  "remote_calls": 0,
+  "inference_calls": 0,
+  "cost": null,
+  "hashes": {
+    "src/sbs/operations/capture_recovery.py": "a8a77d16862a7f03165f2260ef3bc4237a5602d3155df3bcca8b89dd702aaad3",
+    "src/sbs/operations/cloud_writer.py": "da8cdc67a171497fb1c426dd3df881482908f2e4d3cd89a506a2aeec7583aa32",
+    "src/sbs/operations/shared_control.py": "6888ca98e88c4a3519c88a83b67d19e40485c147b7e3f97cd969658591e538e9",
+    "tests/unit/test_capture_checkpoint.py": "a0fd184743ded28a7451da22b465ab90c543a9e9aea542c578bce64b7f51bbff",
+    "tests/unit/test_remote_refresh.py": "62092544e634b5e83db3020d5faa2018679c1442f39f0df66ee46ecc9c1f2de8",
+    "skills/sbs-fundacion-datos/SKILL.md": "450349499652a3fa48d791b321d9b7dc50e469a3e788cc4fc02aa48605be5bc5",
+    "skills/sbs-observabilidad-operacion/SKILL.md": "77a991f60968835f09620f06285a74fd9afe7d9c3acea541ff4a88125f2762e0",
+    "skills/sbs-observabilidad-operacion/references/remote-refresh.md": "8f932b28dc7c46550cafcc2bce45910cab606ed8365e29f6d08e1769f7f29ebb",
+    "runs/sk11-capture-recovery-016-red.txt": "b0efc9b896591f7505eb046924541729a81208bd2105ddfaa84cc638c7139ea8",
+    "runs/sk11-capture-recovery-016-green.txt": "6f0650dcf7dadecdedfa54a380492f65333fd7bf5371161c350cec5df5ff907e",
+    "runs/sk11-capture-recovery-016-pending-red.txt": "ece24f9b742605c73fb045ce19e00b320f5761ace47e64f3a5eba1ea0a7b782e",
+    "runs/sk11-capture-recovery-016-integrated-green.txt": "eafef111763dba03f431213945d97cc16bc577f5ce5428eb73b26a1165ae5dc7"
+  }
+}

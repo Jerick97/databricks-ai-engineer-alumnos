@@ -1,0 +1,577 @@
+{
+  "proposal_version": "2.0-draft",
+  "created_at": "2026-09-28T01:22:59.771435+00:00",
+  "status": "reconciled_export002_technical_gates_pending",
+  "apply_allowed": false,
+  "skills": [
+    {
+      "id": "SK00",
+      "version": "0.1.1",
+      "path": "skills/sbs-contexto-ejecucion/SKILL.md",
+      "sha256": "ef6404bb0a22a50718ad58fad96d430b2bf80fe6b13081ba6d2f38e5c2b17dbe"
+    },
+    {
+      "id": "SK06",
+      "version": "0.1.5",
+      "path": "skills/sbs-genie-datos/SKILL.md",
+      "sha256": "1ea3d23e4cf0c1351628434e4a769f5e14a8ff26f1a36dd7817684c99996968a"
+    },
+    {
+      "id": "SK12",
+      "version": "0.1.3",
+      "path": "skills/sbs-despliegue-e2e/SKILL.md",
+      "sha256": "59b7d59a450158b6d025ccbe5b7029f3b69c5449d3822fabb92ee1db642a3519"
+    }
+  ],
+  "observed_preflight": {
+    "path": "runs/sk12-cloud-preflight.json",
+    "sha256": "9804019f1c510cf8b3b48bf74182dd85c3f24d7e24b8ea3aadce60e8d298871a",
+    "catalog_owner_matches_requester": true,
+    "schema_exists": false,
+    "warehouse_state": "STOPPED",
+    "warehouse_permissions": "Requester IS_OWNER; users CAN_USE; does not establish future app principal or table permissions.",
+    "freshness": "Historical observation only; recheck before any apply. Not a statement of current cloud state."
+  },
+  "resource_names": {
+    "profile": "databricks-ai-engineer-aws",
+    "catalog": "neptuno_manuel_arguelles",
+    "schema": "sbs_radar",
+    "warehouse_id": "828756322bedff37",
+    "genie_title": "SBS Radar — piloto documental privado",
+    "app_name": "sbs-radar-pilot",
+    "job_name": "sbs-radar-daily",
+    "release_id": "pilot-1d8f1ba4a1da",
+    "workspace_path": "/Workspace/Users/sociosdosmilveintiseis@gmail.com/sbs-radar/pilot-1d8f1ba4a1da",
+    "volume": "neptuno_manuel_arguelles.sbs_radar.release_artifacts",
+    "volume_release_path": "/Volumes/neptuno_manuel_arguelles/sbs_radar/release_artifacts/pilot-1d8f1ba4a1da"
+  },
+  "unchanged_resources": [
+    "ais08-neptuno-ui",
+    "ais08-neptuno",
+    "neptuno_manuel_arguelles.ais08_lab",
+    "all course agents, schemas, jobs and endpoint configurations"
+  ],
+  "frozen_data": {
+    "snapshot_hash": "1d8f1ba4a1da7d5fe6d59a2609b5b89b602717bc1bb92cb9706295e6b732543d",
+    "corpus_hash": "d639874e76cb354a3c2a574d48f4beb873f1ce75df73bba6d8d7f41d974b0614",
+    "config_hash": "7f8076f398ef02733ddbfafe5ffcbe3e2d3f191e63c5c53ea531f463e5927510",
+    "counts": {
+      "documents": 6,
+      "versions": 6,
+      "provisions": 141,
+      "pairs": 2,
+      "changes": 3,
+      "evidence": 3,
+      "reviews": 1,
+      "processes": 2
+    },
+    "jsonl": {
+      "documents": {
+        "path": "runs/sk06-pilot-002/documents.jsonl",
+        "sha256": "59a232d6728f494d0ef974abaf15e24c3b203dae89e5c7ab847f445c57e60bd7",
+        "target": "neptuno_manuel_arguelles.sbs_radar.documents",
+        "stage_path": "/Volumes/neptuno_manuel_arguelles/sbs_radar/release_artifacts/pilot-1d8f1ba4a1da/documents.jsonl"
+      },
+      "versions": {
+        "path": "runs/sk06-pilot-002/versions.jsonl",
+        "sha256": "59a232d6728f494d0ef974abaf15e24c3b203dae89e5c7ab847f445c57e60bd7",
+        "target": "neptuno_manuel_arguelles.sbs_radar.versions",
+        "stage_path": "/Volumes/neptuno_manuel_arguelles/sbs_radar/release_artifacts/pilot-1d8f1ba4a1da/versions.jsonl"
+      },
+      "provisions": {
+        "path": "runs/sk06-pilot-002/provisions.jsonl",
+        "sha256": "a29ef6b8136e63800e08134403c388a5fc03919dd8a11be1fcedd1051307acca",
+        "target": "neptuno_manuel_arguelles.sbs_radar.provisions",
+        "stage_path": "/Volumes/neptuno_manuel_arguelles/sbs_radar/release_artifacts/pilot-1d8f1ba4a1da/provisions.jsonl"
+      },
+      "pairs": {
+        "path": "runs/sk06-pilot-002/pairs.jsonl",
+        "sha256": "dcde60788f992bb6b5a53d9e0f1c9bf40c97de3eeebcf25e877aebc0e48ac1bd",
+        "target": "neptuno_manuel_arguelles.sbs_radar.pairs",
+        "stage_path": "/Volumes/neptuno_manuel_arguelles/sbs_radar/release_artifacts/pilot-1d8f1ba4a1da/pairs.jsonl"
+      },
+      "changes": {
+        "path": "runs/sk06-pilot-002/changes.jsonl",
+        "sha256": "3329edc62ab0494a14192f40ea129db2e79ad01d40df8edb7988c4181d97ad28",
+        "target": "neptuno_manuel_arguelles.sbs_radar.changes",
+        "stage_path": "/Volumes/neptuno_manuel_arguelles/sbs_radar/release_artifacts/pilot-1d8f1ba4a1da/changes.jsonl"
+      },
+      "evidence": {
+        "path": "runs/sk06-pilot-002/evidence.jsonl",
+        "sha256": "2f585e5509fb9c28b013600bee977ee71f296d6f3b8243d1a83d8677b1652810",
+        "target": "neptuno_manuel_arguelles.sbs_radar.evidence",
+        "stage_path": "/Volumes/neptuno_manuel_arguelles/sbs_radar/release_artifacts/pilot-1d8f1ba4a1da/evidence.jsonl"
+      },
+      "reviews": {
+        "path": "runs/sk06-pilot-002/reviews.jsonl",
+        "sha256": "701b7a5ad281021b87fcd5652acdd4a9cff654ced976cc16c452b26b2b257bb3",
+        "target": "neptuno_manuel_arguelles.sbs_radar.reviews",
+        "stage_path": "/Volumes/neptuno_manuel_arguelles/sbs_radar/release_artifacts/pilot-1d8f1ba4a1da/reviews.jsonl"
+      },
+      "processes": {
+        "path": "runs/sk06-pilot-002/processes.jsonl",
+        "sha256": "4f3d6c36e51eb192933e1b1f362678cde58a8ff0c528f5a15b24da2efe125232",
+        "target": "neptuno_manuel_arguelles.sbs_radar.processes",
+        "stage_path": "/Volumes/neptuno_manuel_arguelles/sbs_radar/release_artifacts/pilot-1d8f1ba4a1da/processes.jsonl"
+      }
+    },
+    "limits": [
+      "135 raw-page provisions and 6 structural article spans are distinct granularities.",
+      "Three changes rows are partial ChangeSets, not three material changes.",
+      "AI review rows do not establish human approval; processes are fictitious.",
+      "Snapshot mapping is locally verified; neither snapshot is remotely published."
+    ],
+    "runtime_mapping": {
+      "path": "runs/sk06-pilot-002/snapshot-map.json",
+      "sha256": "94f8816cac393f747be9ff0ec2c8b143ce8691893c0c57dfb563fc45a23f5ddd",
+      "mapping_sha256": "275b921a065e66c2f7ffa75ef9b5ffc2b1eb1410ca4445246b2aa67e26296580",
+      "rag_snapshot": "56572ce945c641ad33f3a5550b481587849bc619d96b441d09ab5243e174e728",
+      "genie_snapshot": "1d8f1ba4a1da7d5fe6d59a2609b5b89b602717bc1bb92cb9706295e6b732543d"
+    }
+  },
+  "schema_and_load": {
+    "execution": "pending resource authorization and current-state check; SQL can start stopped warehouse",
+    "statements_in_order": [
+      "CREATE SCHEMA neptuno_manuel_arguelles.sbs_radar COMMENT 'SBS Radar private pilot; documentary evidence only';",
+      "CREATE VOLUME neptuno_manuel_arguelles.sbs_radar.release_artifacts;",
+      "CREATE TABLE neptuno_manuel_arguelles.sbs_radar.documents (id STRING, family STRING, synthetic BOOLEAN, source_kind STRING, corpus_hash STRING, config_hash STRING, known_at STRING, published_on STRING, effective_on STRING, review_status STRING, human_approved BOOLEAN, lineage_json STRING, payload_json STRING) USING DELTA COMMENT 'SBS Radar pilot; partial coverage; snapshot 1d8f1ba4a1da7d5fe6d59a2609b5b89b602717bc1bb92cb9706295e6b732543d';",
+      "CREATE TABLE neptuno_manuel_arguelles.sbs_radar.versions (id STRING, family STRING, synthetic BOOLEAN, source_kind STRING, corpus_hash STRING, config_hash STRING, known_at STRING, published_on STRING, effective_on STRING, review_status STRING, human_approved BOOLEAN, lineage_json STRING, payload_json STRING) USING DELTA COMMENT 'SBS Radar pilot; partial coverage; snapshot 1d8f1ba4a1da7d5fe6d59a2609b5b89b602717bc1bb92cb9706295e6b732543d';",
+      "CREATE TABLE neptuno_manuel_arguelles.sbs_radar.provisions (id STRING, family STRING, synthetic BOOLEAN, source_kind STRING, corpus_hash STRING, config_hash STRING, known_at STRING, published_on STRING, effective_on STRING, review_status STRING, human_approved BOOLEAN, lineage_json STRING, payload_json STRING) USING DELTA COMMENT 'SBS Radar pilot; partial coverage; snapshot 1d8f1ba4a1da7d5fe6d59a2609b5b89b602717bc1bb92cb9706295e6b732543d';",
+      "CREATE TABLE neptuno_manuel_arguelles.sbs_radar.pairs (id STRING, family STRING, synthetic BOOLEAN, source_kind STRING, corpus_hash STRING, config_hash STRING, known_at STRING, published_on STRING, effective_on STRING, review_status STRING, human_approved BOOLEAN, lineage_json STRING, payload_json STRING) USING DELTA COMMENT 'SBS Radar pilot; partial coverage; snapshot 1d8f1ba4a1da7d5fe6d59a2609b5b89b602717bc1bb92cb9706295e6b732543d';",
+      "CREATE TABLE neptuno_manuel_arguelles.sbs_radar.changes (id STRING, family STRING, synthetic BOOLEAN, source_kind STRING, corpus_hash STRING, config_hash STRING, known_at STRING, published_on STRING, effective_on STRING, review_status STRING, human_approved BOOLEAN, lineage_json STRING, payload_json STRING) USING DELTA COMMENT 'SBS Radar pilot; partial coverage; snapshot 1d8f1ba4a1da7d5fe6d59a2609b5b89b602717bc1bb92cb9706295e6b732543d';",
+      "CREATE TABLE neptuno_manuel_arguelles.sbs_radar.evidence (id STRING, family STRING, synthetic BOOLEAN, source_kind STRING, corpus_hash STRING, config_hash STRING, known_at STRING, published_on STRING, effective_on STRING, review_status STRING, human_approved BOOLEAN, lineage_json STRING, payload_json STRING) USING DELTA COMMENT 'SBS Radar pilot; partial coverage; snapshot 1d8f1ba4a1da7d5fe6d59a2609b5b89b602717bc1bb92cb9706295e6b732543d';",
+      "CREATE TABLE neptuno_manuel_arguelles.sbs_radar.reviews (id STRING, family STRING, synthetic BOOLEAN, source_kind STRING, corpus_hash STRING, config_hash STRING, known_at STRING, published_on STRING, effective_on STRING, review_status STRING, human_approved BOOLEAN, lineage_json STRING, payload_json STRING) USING DELTA COMMENT 'SBS Radar pilot; partial coverage; snapshot 1d8f1ba4a1da7d5fe6d59a2609b5b89b602717bc1bb92cb9706295e6b732543d';",
+      "CREATE TABLE neptuno_manuel_arguelles.sbs_radar.processes (id STRING, family STRING, synthetic BOOLEAN, source_kind STRING, corpus_hash STRING, config_hash STRING, known_at STRING, published_on STRING, effective_on STRING, review_status STRING, human_approved BOOLEAN, lineage_json STRING, payload_json STRING) USING DELTA COMMENT 'SBS Radar pilot; partial coverage; snapshot 1d8f1ba4a1da7d5fe6d59a2609b5b89b602717bc1bb92cb9706295e6b732543d';"
+    ],
+    "upload": "SDK FilesAPI.upload each exact verified JSONL to stage_path after volume exists; no overwrite of other release paths",
+    "load_statements": [
+      "COPY INTO neptuno_manuel_arguelles.sbs_radar.documents FROM '/Volumes/neptuno_manuel_arguelles/sbs_radar/release_artifacts/pilot-1d8f1ba4a1da/documents.jsonl' FILEFORMAT = JSON FORMAT_OPTIONS ('multiLine' = 'false') COPY_OPTIONS ('force' = 'false');",
+      "COPY INTO neptuno_manuel_arguelles.sbs_radar.versions FROM '/Volumes/neptuno_manuel_arguelles/sbs_radar/release_artifacts/pilot-1d8f1ba4a1da/versions.jsonl' FILEFORMAT = JSON FORMAT_OPTIONS ('multiLine' = 'false') COPY_OPTIONS ('force' = 'false');",
+      "COPY INTO neptuno_manuel_arguelles.sbs_radar.provisions FROM '/Volumes/neptuno_manuel_arguelles/sbs_radar/release_artifacts/pilot-1d8f1ba4a1da/provisions.jsonl' FILEFORMAT = JSON FORMAT_OPTIONS ('multiLine' = 'false') COPY_OPTIONS ('force' = 'false');",
+      "COPY INTO neptuno_manuel_arguelles.sbs_radar.pairs FROM '/Volumes/neptuno_manuel_arguelles/sbs_radar/release_artifacts/pilot-1d8f1ba4a1da/pairs.jsonl' FILEFORMAT = JSON FORMAT_OPTIONS ('multiLine' = 'false') COPY_OPTIONS ('force' = 'false');",
+      "COPY INTO neptuno_manuel_arguelles.sbs_radar.changes FROM '/Volumes/neptuno_manuel_arguelles/sbs_radar/release_artifacts/pilot-1d8f1ba4a1da/changes.jsonl' FILEFORMAT = JSON FORMAT_OPTIONS ('multiLine' = 'false') COPY_OPTIONS ('force' = 'false');",
+      "COPY INTO neptuno_manuel_arguelles.sbs_radar.evidence FROM '/Volumes/neptuno_manuel_arguelles/sbs_radar/release_artifacts/pilot-1d8f1ba4a1da/evidence.jsonl' FILEFORMAT = JSON FORMAT_OPTIONS ('multiLine' = 'false') COPY_OPTIONS ('force' = 'false');",
+      "COPY INTO neptuno_manuel_arguelles.sbs_radar.reviews FROM '/Volumes/neptuno_manuel_arguelles/sbs_radar/release_artifacts/pilot-1d8f1ba4a1da/reviews.jsonl' FILEFORMAT = JSON FORMAT_OPTIONS ('multiLine' = 'false') COPY_OPTIONS ('force' = 'false');",
+      "COPY INTO neptuno_manuel_arguelles.sbs_radar.processes FROM '/Volumes/neptuno_manuel_arguelles/sbs_radar/release_artifacts/pilot-1d8f1ba4a1da/processes.jsonl' FILEFORMAT = JSON FORMAT_OPTIONS ('multiLine' = 'false') COPY_OPTIONS ('force' = 'false');"
+    ],
+    "verification_statements": [
+      {
+        "sql": "SELECT COUNT(*) AS row_count FROM neptuno_manuel_arguelles.sbs_radar.documents WHERE corpus_hash = :corpus_hash",
+        "parameters": {
+          "corpus_hash": "d639874e76cb354a3c2a574d48f4beb873f1ce75df73bba6d8d7f41d974b0614"
+        },
+        "expected": 6
+      },
+      {
+        "sql": "SELECT COUNT(*) AS row_count FROM neptuno_manuel_arguelles.sbs_radar.versions WHERE corpus_hash = :corpus_hash",
+        "parameters": {
+          "corpus_hash": "d639874e76cb354a3c2a574d48f4beb873f1ce75df73bba6d8d7f41d974b0614"
+        },
+        "expected": 6
+      },
+      {
+        "sql": "SELECT COUNT(*) AS row_count FROM neptuno_manuel_arguelles.sbs_radar.provisions WHERE corpus_hash = :corpus_hash",
+        "parameters": {
+          "corpus_hash": "d639874e76cb354a3c2a574d48f4beb873f1ce75df73bba6d8d7f41d974b0614"
+        },
+        "expected": 141
+      },
+      {
+        "sql": "SELECT COUNT(*) AS row_count FROM neptuno_manuel_arguelles.sbs_radar.pairs WHERE corpus_hash = :corpus_hash",
+        "parameters": {
+          "corpus_hash": "d639874e76cb354a3c2a574d48f4beb873f1ce75df73bba6d8d7f41d974b0614"
+        },
+        "expected": 2
+      },
+      {
+        "sql": "SELECT COUNT(*) AS row_count FROM neptuno_manuel_arguelles.sbs_radar.changes WHERE corpus_hash = :corpus_hash",
+        "parameters": {
+          "corpus_hash": "d639874e76cb354a3c2a574d48f4beb873f1ce75df73bba6d8d7f41d974b0614"
+        },
+        "expected": 3
+      },
+      {
+        "sql": "SELECT COUNT(*) AS row_count FROM neptuno_manuel_arguelles.sbs_radar.evidence WHERE corpus_hash = :corpus_hash",
+        "parameters": {
+          "corpus_hash": "d639874e76cb354a3c2a574d48f4beb873f1ce75df73bba6d8d7f41d974b0614"
+        },
+        "expected": 3
+      },
+      {
+        "sql": "SELECT COUNT(*) AS row_count FROM neptuno_manuel_arguelles.sbs_radar.reviews WHERE corpus_hash = :corpus_hash",
+        "parameters": {
+          "corpus_hash": "d639874e76cb354a3c2a574d48f4beb873f1ce75df73bba6d8d7f41d974b0614"
+        },
+        "expected": 1
+      },
+      {
+        "sql": "SELECT COUNT(*) AS row_count FROM neptuno_manuel_arguelles.sbs_radar.processes WHERE corpus_hash = :corpus_hash",
+        "parameters": {
+          "corpus_hash": "d639874e76cb354a3c2a574d48f4beb873f1ce75df73bba6d8d7f41d974b0614"
+        },
+        "expected": 2
+      }
+    ],
+    "collision_policy": "If schema/table/app names now exist and are not owned by this recorded deployment, abort. No IF NOT EXISTS to hide a collision; no overwrite.",
+    "count_check_scope": "Counts only check cardinality. Full column/schema/key/content readback and independent publication proof are additionally required.",
+    "publication_readback": {
+      "module": "src/sbs/genie/publication.py",
+      "status": "independent_review_findings_pending_correction",
+      "delta_versions": null,
+      "certificate": null,
+      "policy": "Pin actually observed versions after load; do not assume version0. Current runtime still requires interval certificate; Delta v2 cannot be wired until reviewed integration. No readback has run remotely."
+    }
+  },
+  "genie_create": {
+    "sdk_method": "w.genie.create_space",
+    "request": {
+      "warehouse_id": "828756322bedff37",
+      "title": "SBS Radar — piloto documental privado",
+      "description": "Six real PDFs, AI reference separated, fictitious processes labeled. Not current-law authority.",
+      "parent_path": "/Workspace/Users/sociosdosmilveintiseis@gmail.com/sbs-radar/pilot-1d8f1ba4a1da",
+      "serialized_space": "{\"version\":2,\"config\":{\"sample_questions\":[{\"id\":\"03ac365349180c4ba0f2421c58f62f06\",\"question\":[\"Cuenta las filas documentales de art27 para el par market-3274 de market_conduct, versiones 661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342 y 879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7.\"]},{\"id\":\"114278b933f5b56f9881fb62fdaedb18\",\"question\":[\"Lista las filas documentales de art29.1.4 para el par market-3274 de market_conduct, versiones 661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342 y 879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7.\"]},{\"id\":\"2d99d0e870e48626bd5778e6c22502a5\",\"question\":[\"Lista las filas documentales de art20.3 para el par cyber-504 de cybersecurity, versiones 1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771 y b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18.\"]},{\"id\":\"3475c51fb20c7aa7839b62174255675e\",\"question\":[\"Cuenta las filas documentales de art20.3 para el par cyber-504 de cybersecurity, versiones 1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771 y b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18.\"]},{\"id\":\"b8f6ca36d1299748e2a95a547d854c08\",\"question\":[\"Lista las filas documentales de art27 para el par market-3274 de market_conduct, versiones 661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342 y 879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7.\"]},{\"id\":\"e90b16b1be7b5ef2ae4b77cb5919009c\",\"question\":[\"Cuenta las filas documentales de art29.1.4 para el par market-3274 de market_conduct, versiones 661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342 y 879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7.\"]}]},\"data_sources\":{\"tables\":[{\"identifier\":\"neptuno_manuel_arguelles.sbs_radar.changes\",\"description\":[\"Frozen documentary corpus; lineage and partial coverage retained.\"]},{\"identifier\":\"neptuno_manuel_arguelles.sbs_radar.documents\",\"description\":[\"Frozen documentary corpus; lineage and partial coverage retained.\"]},{\"identifier\":\"neptuno_manuel_arguelles.sbs_radar.evidence\",\"description\":[\"Frozen documentary corpus; lineage and partial coverage retained.\"]},{\"identifier\":\"neptuno_manuel_arguelles.sbs_radar.pairs\",\"description\":[\"Frozen documentary corpus; lineage and partial coverage retained.\"]},{\"identifier\":\"neptuno_manuel_arguelles.sbs_radar.processes\",\"description\":[\"Frozen documentary corpus; lineage and partial coverage retained.\"]},{\"identifier\":\"neptuno_manuel_arguelles.sbs_radar.provisions\",\"description\":[\"Frozen documentary corpus; lineage and partial coverage retained.\"]},{\"identifier\":\"neptuno_manuel_arguelles.sbs_radar.reviews\",\"description\":[\"Frozen documentary corpus; lineage and partial coverage retained.\"]},{\"identifier\":\"neptuno_manuel_arguelles.sbs_radar.versions\",\"description\":[\"Frozen documentary corpus; lineage and partial coverage retained.\"]}]},\"instructions\":{\"text_instructions\":[{\"id\":\"238fa28a94976c7da14563bc873c2729\",\"content\":[\"No current-law or human-approval inference. Fictitious processes are separate from norms. Return executed SQL provenance. Counts describe documentary rows only.\"]}],\"example_question_sqls\":[{\"id\":\"13c9adf2434063b98a45ceb99569f021\",\"question\":[\"Lista las filas documentales de art29.1.4 para el par market-3274 de market_conduct, versiones 661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342 y 879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7.\"],\"sql\":[\"SELECT id, family, corpus_hash, payload_json FROM neptuno_manuel_arguelles.sbs_radar.provisions WHERE family = :family AND corpus_hash = :corpus_hash AND ((get_json_object(payload_json, '$.document_id') = :before_document_id AND get_json_object(payload_json, '$.version_id') = :before_version_id) OR (get_json_object(payload_json, '$.document_id') = :after_document_id AND get_json_object(payload_json, '$.version_id') = :after_version_id)) AND get_json_object(payload_json, '$.provision_id') = :provision_id ORDER BY id\"],\"parameters\":[{\"name\":\"after_document_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"sbs-3274-2017\"]}},{\"name\":\"after_version_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7\"]}},{\"name\":\"before_document_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"sbs-3274-2017\"]}},{\"name\":\"before_version_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342\"]}},{\"name\":\"corpus_hash\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"d639874e76cb354a3c2a574d48f4beb873f1ce75df73bba6d8d7f41d974b0614\"]}},{\"name\":\"family\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"market_conduct\"]}},{\"name\":\"provision_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"art29.1.4\"]}}]},{\"id\":\"6f987432e5d4aa2a6f2b30e740e375f1\",\"question\":[\"Cuenta las filas documentales de art29.1.4 para el par market-3274 de market_conduct, versiones 661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342 y 879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7.\"],\"sql\":[\"SELECT COUNT(*) AS provision_row_count FROM neptuno_manuel_arguelles.sbs_radar.provisions WHERE family = :family AND corpus_hash = :corpus_hash AND ((get_json_object(payload_json, '$.document_id') = :before_document_id AND get_json_object(payload_json, '$.version_id') = :before_version_id) OR (get_json_object(payload_json, '$.document_id') = :after_document_id AND get_json_object(payload_json, '$.version_id') = :after_version_id)) AND get_json_object(payload_json, '$.provision_id') = :provision_id\"],\"parameters\":[{\"name\":\"after_document_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"sbs-3274-2017\"]}},{\"name\":\"after_version_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7\"]}},{\"name\":\"before_document_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"sbs-3274-2017\"]}},{\"name\":\"before_version_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342\"]}},{\"name\":\"corpus_hash\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"d639874e76cb354a3c2a574d48f4beb873f1ce75df73bba6d8d7f41d974b0614\"]}},{\"name\":\"family\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"market_conduct\"]}},{\"name\":\"provision_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"art29.1.4\"]}}]},{\"id\":\"8ca424cdefad4adf8f76ed622557e7d2\",\"question\":[\"Cuenta las filas documentales de art27 para el par market-3274 de market_conduct, versiones 661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342 y 879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7.\"],\"sql\":[\"SELECT COUNT(*) AS provision_row_count FROM neptuno_manuel_arguelles.sbs_radar.provisions WHERE family = :family AND corpus_hash = :corpus_hash AND ((get_json_object(payload_json, '$.document_id') = :before_document_id AND get_json_object(payload_json, '$.version_id') = :before_version_id) OR (get_json_object(payload_json, '$.document_id') = :after_document_id AND get_json_object(payload_json, '$.version_id') = :after_version_id)) AND get_json_object(payload_json, '$.provision_id') = :provision_id\"],\"parameters\":[{\"name\":\"after_document_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"sbs-3274-2017\"]}},{\"name\":\"after_version_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7\"]}},{\"name\":\"before_document_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"sbs-3274-2017\"]}},{\"name\":\"before_version_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342\"]}},{\"name\":\"corpus_hash\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"d639874e76cb354a3c2a574d48f4beb873f1ce75df73bba6d8d7f41d974b0614\"]}},{\"name\":\"family\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"market_conduct\"]}},{\"name\":\"provision_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"art27\"]}}]},{\"id\":\"9d897f61d7d732be00dcb13c60f4ee74\",\"question\":[\"Cuenta las filas documentales de art20.3 para el par cyber-504 de cybersecurity, versiones 1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771 y b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18.\"],\"sql\":[\"SELECT COUNT(*) AS provision_row_count FROM neptuno_manuel_arguelles.sbs_radar.provisions WHERE family = :family AND corpus_hash = :corpus_hash AND ((get_json_object(payload_json, '$.document_id') = :before_document_id AND get_json_object(payload_json, '$.version_id') = :before_version_id) OR (get_json_object(payload_json, '$.document_id') = :after_document_id AND get_json_object(payload_json, '$.version_id') = :after_version_id)) AND get_json_object(payload_json, '$.provision_id') = :provision_id\"],\"parameters\":[{\"name\":\"after_document_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"sbs-504-2021\"]}},{\"name\":\"after_version_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18\"]}},{\"name\":\"before_document_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"sbs-504-2021\"]}},{\"name\":\"before_version_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771\"]}},{\"name\":\"corpus_hash\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"d639874e76cb354a3c2a574d48f4beb873f1ce75df73bba6d8d7f41d974b0614\"]}},{\"name\":\"family\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"cybersecurity\"]}},{\"name\":\"provision_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"art20.3\"]}}]},{\"id\":\"dccc3d916dddb7555686683f4fbbb2af\",\"question\":[\"Lista las filas documentales de art20.3 para el par cyber-504 de cybersecurity, versiones 1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771 y b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18.\"],\"sql\":[\"SELECT id, family, corpus_hash, payload_json FROM neptuno_manuel_arguelles.sbs_radar.provisions WHERE family = :family AND corpus_hash = :corpus_hash AND ((get_json_object(payload_json, '$.document_id') = :before_document_id AND get_json_object(payload_json, '$.version_id') = :before_version_id) OR (get_json_object(payload_json, '$.document_id') = :after_document_id AND get_json_object(payload_json, '$.version_id') = :after_version_id)) AND get_json_object(payload_json, '$.provision_id') = :provision_id ORDER BY id\"],\"parameters\":[{\"name\":\"after_document_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"sbs-504-2021\"]}},{\"name\":\"after_version_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18\"]}},{\"name\":\"before_document_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"sbs-504-2021\"]}},{\"name\":\"before_version_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771\"]}},{\"name\":\"corpus_hash\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"d639874e76cb354a3c2a574d48f4beb873f1ce75df73bba6d8d7f41d974b0614\"]}},{\"name\":\"family\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"cybersecurity\"]}},{\"name\":\"provision_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"art20.3\"]}}]},{\"id\":\"de91dc07d1c2f4ab20a4cfb99f701234\",\"question\":[\"Lista las filas documentales de art27 para el par market-3274 de market_conduct, versiones 661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342 y 879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7.\"],\"sql\":[\"SELECT id, family, corpus_hash, payload_json FROM neptuno_manuel_arguelles.sbs_radar.provisions WHERE family = :family AND corpus_hash = :corpus_hash AND ((get_json_object(payload_json, '$.document_id') = :before_document_id AND get_json_object(payload_json, '$.version_id') = :before_version_id) OR (get_json_object(payload_json, '$.document_id') = :after_document_id AND get_json_object(payload_json, '$.version_id') = :after_version_id)) AND get_json_object(payload_json, '$.provision_id') = :provision_id ORDER BY id\"],\"parameters\":[{\"name\":\"after_document_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"sbs-3274-2017\"]}},{\"name\":\"after_version_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7\"]}},{\"name\":\"before_document_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"sbs-3274-2017\"]}},{\"name\":\"before_version_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342\"]}},{\"name\":\"corpus_hash\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"d639874e76cb354a3c2a574d48f4beb873f1ce75df73bba6d8d7f41d974b0614\"]}},{\"name\":\"family\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"market_conduct\"]}},{\"name\":\"provision_id\",\"type_hint\":\"STRING\",\"description\":[\"Exact frozen scope parameter; not a user authorization.\"],\"default_value\":{\"values\":[\"art27\"]}}]}]},\"benchmarks\":{\"questions\":[{\"id\":\"03cbbcd2c1fd885e72dccd7f288e38ba\",\"question\":[\"Lista las filas documentales de art20.3 para el par cyber-504 de cybersecurity, versiones 1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771 y b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18.\"],\"answer\":[{\"format\":\"SQL\",\"content\":[\"SELECT id, family, corpus_hash, payload_json FROM neptuno_manuel_arguelles.sbs_radar.provisions WHERE family = :family AND corpus_hash = :corpus_hash AND ((get_json_object(payload_json, '$.document_id') = :before_document_id AND get_json_object(payload_json, '$.version_id') = :before_version_id) OR (get_json_object(payload_json, '$.document_id') = :after_document_id AND get_json_object(payload_json, '$.version_id') = :after_version_id)) AND get_json_object(payload_json, '$.provision_id') = :provision_id ORDER BY id\"]}]},{\"id\":\"3551269b113c93519d3dd714ffcc4f1f\",\"question\":[\"Lista las filas documentales de art29.1.4 para el par market-3274 de market_conduct, versiones 661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342 y 879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7.\"],\"answer\":[{\"format\":\"SQL\",\"content\":[\"SELECT id, family, corpus_hash, payload_json FROM neptuno_manuel_arguelles.sbs_radar.provisions WHERE family = :family AND corpus_hash = :corpus_hash AND ((get_json_object(payload_json, '$.document_id') = :before_document_id AND get_json_object(payload_json, '$.version_id') = :before_version_id) OR (get_json_object(payload_json, '$.document_id') = :after_document_id AND get_json_object(payload_json, '$.version_id') = :after_version_id)) AND get_json_object(payload_json, '$.provision_id') = :provision_id ORDER BY id\"]}]},{\"id\":\"463ee944dd915e66c5367dd5fde52db6\",\"question\":[\"Cuenta las filas documentales de art20.3 para el par cyber-504 de cybersecurity, versiones 1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771 y b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18.\"],\"answer\":[{\"format\":\"SQL\",\"content\":[\"SELECT COUNT(*) AS provision_row_count FROM neptuno_manuel_arguelles.sbs_radar.provisions WHERE family = :family AND corpus_hash = :corpus_hash AND ((get_json_object(payload_json, '$.document_id') = :before_document_id AND get_json_object(payload_json, '$.version_id') = :before_version_id) OR (get_json_object(payload_json, '$.document_id') = :after_document_id AND get_json_object(payload_json, '$.version_id') = :after_version_id)) AND get_json_object(payload_json, '$.provision_id') = :provision_id\"]}]},{\"id\":\"880aebeb24e2dda7525e3ae9694a6b70\",\"question\":[\"Cuenta las filas documentales de art27 para el par market-3274 de market_conduct, versiones 661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342 y 879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7.\"],\"answer\":[{\"format\":\"SQL\",\"content\":[\"SELECT COUNT(*) AS provision_row_count FROM neptuno_manuel_arguelles.sbs_radar.provisions WHERE family = :family AND corpus_hash = :corpus_hash AND ((get_json_object(payload_json, '$.document_id') = :before_document_id AND get_json_object(payload_json, '$.version_id') = :before_version_id) OR (get_json_object(payload_json, '$.document_id') = :after_document_id AND get_json_object(payload_json, '$.version_id') = :after_version_id)) AND get_json_object(payload_json, '$.provision_id') = :provision_id\"]}]},{\"id\":\"cb741b669b1a6e9e33b0d2a80a844608\",\"question\":[\"Cuenta las filas documentales de art29.1.4 para el par market-3274 de market_conduct, versiones 661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342 y 879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7.\"],\"answer\":[{\"format\":\"SQL\",\"content\":[\"SELECT COUNT(*) AS provision_row_count FROM neptuno_manuel_arguelles.sbs_radar.provisions WHERE family = :family AND corpus_hash = :corpus_hash AND ((get_json_object(payload_json, '$.document_id') = :before_document_id AND get_json_object(payload_json, '$.version_id') = :before_version_id) OR (get_json_object(payload_json, '$.document_id') = :after_document_id AND get_json_object(payload_json, '$.version_id') = :after_version_id)) AND get_json_object(payload_json, '$.provision_id') = :provision_id\"]}]},{\"id\":\"f0b72655309de1280720517ed7e639d2\",\"question\":[\"Lista las filas documentales de art27 para el par market-3274 de market_conduct, versiones 661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342 y 879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7.\"],\"answer\":[{\"format\":\"SQL\",\"content\":[\"SELECT id, family, corpus_hash, payload_json FROM neptuno_manuel_arguelles.sbs_radar.provisions WHERE family = :family AND corpus_hash = :corpus_hash AND ((get_json_object(payload_json, '$.document_id') = :before_document_id AND get_json_object(payload_json, '$.version_id') = :before_version_id) OR (get_json_object(payload_json, '$.document_id') = :after_document_id AND get_json_object(payload_json, '$.version_id') = :after_version_id)) AND get_json_object(payload_json, '$.provision_id') = :provision_id ORDER BY id\"]}]}]}}"
+    },
+    "space_id": "capture actual response; never invent",
+    "remote_validation": "Pending. Six scoped examples derived from verified local reference queries; these reused training examples are not an independent quality benchmark.",
+    "do_not_claim": "No remote space/query has run. Genie may produce a different query; runtime must reject unverifiable scope. Lists are not yet fully rendered by conversational wrapper."
+  },
+  "permissions": {
+    "requester": "sociosdosmilveintiseis@gmail.com",
+    "app_principal": "Resolve generated service_principal_client_id after apps.create(no_compute=True); do not store a secret",
+    "grant_templates": [
+      "GRANT USE CATALOG ON CATALOG neptuno_manuel_arguelles TO `<app_service_principal_client_id>`;",
+      "GRANT USE SCHEMA ON SCHEMA neptuno_manuel_arguelles.sbs_radar TO `<app_service_principal_client_id>`;",
+      "GRANT SELECT ON TABLE neptuno_manuel_arguelles.sbs_radar.documents TO `<app_service_principal_client_id>`;",
+      "GRANT SELECT ON TABLE neptuno_manuel_arguelles.sbs_radar.versions TO `<app_service_principal_client_id>`;",
+      "GRANT SELECT ON TABLE neptuno_manuel_arguelles.sbs_radar.provisions TO `<app_service_principal_client_id>`;",
+      "GRANT SELECT ON TABLE neptuno_manuel_arguelles.sbs_radar.pairs TO `<app_service_principal_client_id>`;",
+      "GRANT SELECT ON TABLE neptuno_manuel_arguelles.sbs_radar.changes TO `<app_service_principal_client_id>`;",
+      "GRANT SELECT ON TABLE neptuno_manuel_arguelles.sbs_radar.evidence TO `<app_service_principal_client_id>`;",
+      "GRANT SELECT ON TABLE neptuno_manuel_arguelles.sbs_radar.reviews TO `<app_service_principal_client_id>`;",
+      "GRANT SELECT ON TABLE neptuno_manuel_arguelles.sbs_radar.processes TO `<app_service_principal_client_id>`;"
+    ],
+    "not_granted": [
+      "MODIFY",
+      "CREATE TABLE",
+      "MANAGE",
+      "schema/catalog ownership",
+      "access to unrelated tables"
+    ],
+    "warehouse": "CAN_USE only for generated app principal; preserve existing ACL",
+    "genie": "CAN_RUN on created space only; requester remains manager",
+    "app_acl": "Requester CAN_MANAGE only initially; no public/group-wide sharing",
+    "verification": "Inspect inherited grants for app principal before any Genie request; SELECT-only intent is not proof if broader inherited grants exist."
+  },
+  "query_provenance_probe": {
+    "required_receipt": [
+      "query_id",
+      "statement",
+      "parameters",
+      "source_tables",
+      "snapshot",
+      "state"
+    ],
+    "status": "literal_ast_history_probe_implemented_publication_integration_pending",
+    "evidence": "Exact executed literal SQL can be verified by pinned SQLGlot against closed templates. Values are labeled verified_executed_literal_values, never invented actual API bindings.",
+    "design": "Current runtime verifies history IDs, executor, warehouse, Genie source, SQL scope and an independently trusted interval publication certificate. Delta v2 readback is separate and under independent review.",
+    "fallback": "Until independently demonstrable receipts exist, keep Genie scoped counts unavailable/conflict. Do not fabricate receipt from requested context or expected templates.",
+    "options_to_evaluate": [
+      "Complete reviewed Delta-version AST/runtime integration and real server capabilities before enabling v2.",
+      "Verify actual readback, metadata/history access and governance under the intended cloud identity."
+    ]
+  },
+  "app": {
+    "create_sdk": "w.apps.create(app=App.from_dict(create_request), no_compute=True)",
+    "create_request": {
+      "name": "sbs-radar-pilot",
+      "description": "Private SBS Radar pilot; reviewed source release",
+      "compute_size": "MEDIUM",
+      "resources": [
+        {
+          "name": "warehouse",
+          "sql_warehouse": {
+            "id": "828756322bedff37",
+            "permission": "CAN_USE"
+          }
+        },
+        {
+          "name": "embedding",
+          "serving_endpoint": {
+            "name": "databricks-qwen3-embedding-0-6b",
+            "permission": "CAN_QUERY"
+          }
+        },
+        {
+          "name": "generation",
+          "serving_endpoint": {
+            "name": "databricks-gpt-6-sol",
+            "permission": "CAN_QUERY"
+          }
+        }
+      ]
+    },
+    "bind_after_creation": {
+      "name": "genie",
+      "genie_space": {
+        "name": "SBS Radar — piloto documental privado",
+        "space_id": "<created_space_id>",
+        "permission": "CAN_RUN"
+      }
+    },
+    "deployment_contract": {
+      "source_code_path": "/Workspace/Users/sociosdosmilveintiseis@gmail.com/sbs-radar/pilot-1d8f1ba4a1da",
+      "entrypoint": "app.py implements explicit cloud mode and requires observed identity/origin configuration.",
+      "port_source": "DATABRICKS_APP_PORT",
+      "command_after_code_ready": [
+        "python",
+        "app.py"
+      ],
+      "module_status": "Implemented locally and tested offline; Databricks Apps SSO and service-principal runtime untested.",
+      "max_concurrent_requests": 1,
+      "environment": {
+        "SBS_MODE": "cloud",
+        "DATABRICKS_HOST": "https://dbc-0410b264-20c7.cloud.databricks.com",
+        "SBS_PUBLIC_ORIGIN": null,
+        "DATABRICKS_APP_PORT": "platform-provided"
+      },
+      "config_builder": "deployment/prepare_app_config.py requires actual observed App URL; no guessed URL.",
+      "genie_dependencies": "Production ServerDependencies construction still pending; local config has null remote IDs."
+    },
+    "auth_design": {
+      "ingress": "Databricks Apps OAuth access control; deny unauthenticated requests",
+      "user": "Resolve authenticated platform user server-side; never accept actor/role/family from request or arbitrary forwarded headers",
+      "backend": "Apps injected service-principal unified authentication; no local named profile files in cloud",
+      "roles": "Use existing SK08 permissions with verified identity mapping; no human approval inferred",
+      "current_blocker": "Cloud adapter and real identity GET verified locally. Apps ingress OAuth/user forwarding, service principal grants and authenticated UI flow remain untested."
+    }
+  },
+  "existing_endpoints": {
+    "generation": "databricks-gpt-6-sol",
+    "embedding": "databricks-qwen3-embedding-0-6b",
+    "source": "runs/sk12-cloud-preflight.json; actual ENDPOINT in src/sbs/conversation/databricks.py",
+    "changes": "none; no endpoint creation/resizing",
+    "app_permissions": "not yet verified for future app identity",
+    "runtime_bundle_note": "pilot-model-bundle generation remains unselected; reconcile/pin accepted generation identity before cloud release"
+  },
+  "job": {
+    "status": "paused proposal; real daily-refresh handler not implemented",
+    "request": {
+      "name": "sbs-radar-daily",
+      "max_concurrent_runs": 1,
+      "timeout_seconds": 600,
+      "schedule": {
+        "quartz_cron_expression": "0 0 8 * * ?",
+        "timezone_id": "America/Lima",
+        "pause_status": "PAUSED"
+      },
+      "tasks": [
+        {
+          "task_key": "refresh",
+          "notebook_task": {
+            "notebook_path": "/Workspace/Users/sociosdosmilveintiseis@gmail.com/sbs-radar/pilot-1d8f1ba4a1da/notebooks/sbs-radar-cloud-refresh",
+            "base_parameters": {
+              "catalog": "neptuno_manuel_arguelles",
+              "schema": "sbs_radar",
+              "warehouse_id": "828756322bedff37",
+              "release_id": "pilot-1d8f1ba4a1da",
+              "max_sources": "6",
+              "mode": "incremental"
+            }
+          },
+          "timeout_seconds": 600,
+          "max_retries": 0
+        }
+      ]
+    },
+    "withheld_fields": [
+      "Validated job compute/environment choice",
+      "Dedicated write-capable job identity separate from read-only app principal"
+    ],
+    "do_not_create_until": "Real local preparation hooks under independent review. Distributed lock/state, runtime release promotion, cloud compute/run identity and complete cloud notebook still pending.",
+    "enable_schedule_requires_separate_authorization": true
+  },
+  "cost": {
+    "currency": "USD",
+    "estimate": null,
+    "rates_verified": false,
+    "remaining_credit": null,
+    "budget_authorized": false,
+    "spec_100_usd": "hypothesis only, not approval or verified account credit",
+    "components": [
+      "Existing SQL warehouse active time (Small serverless PRO)",
+      "Databricks Apps MEDIUM running time",
+      "Existing embedding/generation token consumption",
+      "Managed storage and job compute"
+    ],
+    "operational_limits_proposed": {
+      "pilot_window_minutes": 30,
+      "parallel_sql": 1,
+      "genie_max_polls": 8,
+      "http_timeout_seconds": 30,
+      "generation_requests_per_process": 20,
+      "embedding_calls_per_process": 20,
+      "generation_max_output_tokens": 5000,
+      "embedding_token_cap_per_process": 20000,
+      "job_max_concurrent_runs": 1,
+      "job_max_retries": 0,
+      "job_timeout_seconds": 600,
+      "schedule": "PAUSED"
+    },
+    "limit_caveat": "Request caps are process-local, not durable USD spend controls. Window limits proposed, not automatically enforced. Existing auto-stop=10 minutes only observed, not edited.",
+    "approval_needed": "Explicit resource/time/cost-risk authorization after technical blockers close; amount and duration must be accepted, not inferred from US$100."
+  },
+  "apply_phases": [
+    {
+      "id": "P0",
+      "action": "Close publication integration, real server dependency and distributed refresh gates; preserve verified identity/snapshot work; rebuild pinned release.",
+      "approval": "no cloud mutation",
+      "status": "incomplete"
+    },
+    {
+      "id": "P1",
+      "action": "Recheck metadata, then authorize this exact resource/time scope",
+      "approval": "required, not requested yet",
+      "status": "pending"
+    },
+    {
+      "id": "P2",
+      "action": "Create only private schema/volume/tables; stage hashes; load and verify counts/lineage",
+      "approval": "covered only if explicit P1 approval",
+      "status": "not_applied"
+    },
+    {
+      "id": "P3",
+      "action": "Create own Genie and app without compute; apply minimal grants; inspect inherited privileges",
+      "approval": "covered only if explicit P1 approval",
+      "status": "not_applied"
+    },
+    {
+      "id": "P4",
+      "action": "Deploy authenticated app and run bounded same-pair/followup/cross-family/UI tests; capture statement/usage evidence",
+      "approval": "billable window required",
+      "status": "not_applied"
+    },
+    {
+      "id": "P5",
+      "action": "Create tested daily job PAUSED; enable only after separate recurring authorization",
+      "approval": "recurring enable separate",
+      "status": "not_applied"
+    }
+  ],
+  "rollback": {
+    "preconditions": [
+      "Record every created resource ID, prior ACL, release hash and original STOPPED warehouse state before apply.",
+      "Rollback targets only IDs/names created by this proposal; abort on ownership drift or concurrent modification."
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "action": "Pause sbs-radar-daily by recorded job_id, cancel only its recorded active run IDs; never touch course jobs."
+      },
+      {
+        "order": 2,
+        "action": "Stop sbs-radar-pilot by recorded app name; if replacing its own prior deployment, redeploy recorded prior source/hash after compatibility checks."
+      },
+      {
+        "order": 3,
+        "action": "Revoke only app-principal grants this release added; restore previously captured ACL changes, preserving others."
+      },
+      {
+        "order": 4,
+        "action": "w.genie.trash_space(space_id=<recorded created_space_id>); never course space IDs."
+      },
+      {
+        "order": 5,
+        "action": "Preserve immutable release JSONL and manifests locally before data removal; no original PDFs deleted."
+      },
+      {
+        "order": 6,
+        "action": "If full removal explicitly authorized, execute listed DROP statements with identity checks; do not CASCADE."
+      },
+      {
+        "order": 7,
+        "action": "Shared warehouse: do not stop while unrelated activity exists. Restore STOPPED only when this run started it, no unrelated work is active, and rollback authorization covers it."
+      }
+    ],
+    "drop_sql": [
+      "DROP TABLE neptuno_manuel_arguelles.sbs_radar.processes;",
+      "DROP TABLE neptuno_manuel_arguelles.sbs_radar.reviews;",
+      "DROP TABLE neptuno_manuel_arguelles.sbs_radar.evidence;",
+      "DROP TABLE neptuno_manuel_arguelles.sbs_radar.changes;",
+      "DROP TABLE neptuno_manuel_arguelles.sbs_radar.pairs;",
+      "DROP TABLE neptuno_manuel_arguelles.sbs_radar.provisions;",
+      "DROP TABLE neptuno_manuel_arguelles.sbs_radar.versions;",
+      "DROP TABLE neptuno_manuel_arguelles.sbs_radar.documents;",
+      "DROP VOLUME neptuno_manuel_arguelles.sbs_radar.release_artifacts;",
+      "DROP SCHEMA neptuno_manuel_arguelles.sbs_radar RESTRICT;"
+    ],
+    "metadata_deletes": [
+      "w.jobs.delete(job_id=<created_job_id>) only after own runs finish and removal approval",
+      "w.apps.delete(name=\"sbs-radar-pilot\") only after own app stopped and removal approval"
+    ],
+    "code_vs_data": "Stopping/redeploying app does not revert tables; first release has no prior remote data. Future release must use retained table versions/export and pinned release ledger; no fabricated prior version."
+  },
+  "blocked_before_integral_approval": [
+    "Fix SK09 publication findings and integrate reviewed publication mode with exact SQL/runtime and real permission/history dependencies.",
+    "Generation requests returned403 in3 bounded attempts; no new attempt until new access evidence.",
+    "Validate selected reranker and entire release on native target architecture; emulated Linux ranking differs on small reused sample.",
+    "Complete distributed refresh state/locking, runtime promotion, real cloud notebook, run identity and compute choice.",
+    "Rebuild exact release after active edits; verify portable application plus authenticated browser UI.",
+    "Verify current rates and bounded cost exposure; request only genuinely missing resource/time authorization once technical preparation is concrete."
+  ],
+  "sources": [
+    {
+      "url": "https://docs.databricks.com/aws/en/genie-agents/conversation-api",
+      "checked_on": "2026-09-27",
+      "used_for": "serialized_space v2 IDs/sorting, create API, examples/benchmarks"
+    },
+    {
+      "url": "https://docs.databricks.com/aws/en/dev-tools/databricks-apps/auth",
+      "checked_on": "2026-09-27",
+      "used_for": "Apps platform identity and app/user authorization design"
+    },
+    {
+      "url": "https://docs.databricks.com/aws/en/dev-tools/databricks-apps/app-runtime",
+      "checked_on": "2026-09-27",
+      "used_for": "runtime command/environment contract"
+    },
+    {
+      "local": "databricks-sdk==0.102.0 introspection",
+      "used_for": "method signatures and QueryInfo parameter gap"
+    }
+  ],
+  "claims": {
+    "cloud_created": false,
+    "compute_started": false,
+    "ddl_executed": false,
+    "sql_queries_executed": false,
+    "cloud_auth_verified": false,
+    "e2e_verified": false,
+    "ready_for_integral_deployment_approval": false,
+    "cloud_identity_adapter_implemented": true,
+    "local_snapshot_mapping_verified": true,
+    "genie_remote_executed": false
+  },
+  "supersedes": {
+    "path": "deployment/archive/cloud-proposal-001.json",
+    "sha256": "a2b87794c75d620d7255cc2e5f3f53f07ae9ccff36df648d9e3ad7432d00e24c"
+  },
+  "validation_inputs": [
+    {
+      "path": "config/genie-pilot-002.json",
+      "sha256": "520fd9b67534751f2447720a821c6dcb76b5a22b02ba630ddd2da9629faa6d42"
+    },
+    {
+      "path": "runs/sk06-pilot-002/artifacts.json",
+      "sha256": "2965fa0e99a50626b3c67bcf3f7afeb3fae7d50498274a85174f69f23d40cdbd"
+    },
+    {
+      "path": "app.py",
+      "sha256": "444adcc428e863092f4274303eb6046a192787899d0c568a8f576f4437879fec"
+    },
+    {
+      "path": "runs/sk12-portable-app-check-005.json",
+      "sha256": "0ce1e8a8aa39ffa69e2641b254ce788166c826668d4d1108ff33b75e0305cfc8"
+    }
+  ]
+}

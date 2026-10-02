@@ -1,0 +1,210 @@
+{
+  "reviewer": "independent execution judge /root/judge_execution; not material author",
+  "verdict": "PASS",
+  "scope": "full-session",
+  "target_scope": "full-session",
+  "class_ready": true,
+  "class_ready_scope": "Execution dimension approved for full-session preparation; overall release requires curriculum and pedagogy PASS plus final packaging/visual gates. Not a claim of cohort learning or production SLA.",
+  "date": "2026-09-27T03:31:10.886858+00:00",
+  "original_sources": [
+    "/Users/macdenix/nix-skills/skills/operational/deck-craft/references/course-contract.md",
+    "/Users/macdenix/clawd/projects/databricks-genai-pathway/temario-curso/TEMARIO.md:87-110"
+  ],
+  "artifact_hashes": {
+    "CERTIFICACION.md": "5beb52f7cc90efcd41d2fe78e022eb60414824f381e68db6ee30f3b7ab2856d2",
+    "CONSIGNA.md": "332c4c969300618c5dbecb103569070d5a9801194c3561caad1682e558ec37ce",
+    "DESIGN.md": "d2076c5add3261cbac6a2827d850459738b22c444508c52c090e0975144f8ca1",
+    "EJEMPLO-RESUELTO.md": "ae4ea42e5901015994c32c8eb9b7494904066205d40bc23d2006fd30f6a6370c",
+    "ENTREGA.md": "7c654149e47288b19512e9ae01aea107b76b2b83e20a20250e6569173958b547",
+    "GUIA-DOCENTE.md": "da8290a37941287e560c34520c6c2df6e250930974160f1a9e06453d78ac86b2",
+    "PLAN-CLASE.md": "e06c535aeae9d4c86114038efb26d09845328be131d4c9ddf89102aaf513ee55",
+    "README.md": "b55d147b6c9357e3393536c9a3b733b02fc6f2bdf0d681ac3b0d8cfa8902d3a4",
+    "RUNBOOK.md": "61b3a2c169c87a6b7476dd78956be21c411b1344ce68b183b3b44213b18b2152",
+    "VALIDACION.md": "7a7f4b0b45378a3f3e7304e5124824a9fc25bce39b04e9e9ebb9f6f529297e3e",
+    "agenda.json": "3747e52c1491e64c078a046cea88585e7aa7bb3ac07200c278042d757fbe7666",
+    "app/app.py": "dfc6dbce6f563c9123b0033986cedfdfc9cc5625809388a4b754c0271048e965",
+    "app/app.yaml": "f5f6869db1013fd0c680e80625b1a3255a132fbb43e3c42da76c460bb2b70736",
+    "app/requirements.txt": "a4dcedb7b00ef849c6cbfaa6a33dca579f5bbe09bc526a6177d640d517937151",
+    "bundle/ci-example.yml": "591d0c0653911404846fa1ce7a46143eb5eefc27e59a03577192178a5b4c3b99",
+    "bundle/databricks.yml": "2b424d0b15d5a3563284de0701f02792ede8447622ca349f9312f2348e7e798f",
+    "course-context.json": "e442f7d4de638a01313d3c32e574f195c5faf48c66b950e7c70ed85b9300f85d",
+    "coverage-manifest.json": "a2dc4545972105b7a6a69ac89280d375c7cc6c1d918f8687a16112d3419e8cd5",
+    "ghost-deck.md": "60ed04a25f8e9406a25a164429d22a4050ac93be8249304bcf45253d7f6e895c",
+    "guion.md": "3fe533d8e02887cd168e0c6b9826b8e2fbd17eadd59bb366c509cf16dc3cf507",
+    "index.html": "6afc46627f6228acf1fd595fed968273ea15f95a4c3b393021da28d8e263a7db",
+    "lab/CONTINUIDAD.md": "096273a3351ec0f3d76a634a57ab137fe0688eb8cf7a7632059f85635c2e691d",
+    "lab/agent.py": "200febf66d9d8a36acd05fed147776e761156e27d065df600489dd838f292bb4",
+    "lab/config.json": "799cc5fdd23517980d45fb070e38444cdbb04dbef190142ccae59cec1927c2b6",
+    "lab/lab_app.py": "655a4a6e734838cb6c9e8e574f33dac5c588705b053430e6c453041e32077c1c",
+    "lab/lab_app_smoke.py": "ca449c453a00fe5673cef62ae8635df3cc52864c55a3df6240dddaefe4c695d2",
+    "lab/lab_config.py": "c9fda07a95c1de66dad6f4d3386065b180fc5fff3b61b94d5ba5c4b3d07b34db",
+    "lab/lab_costs.sql": "dc3d2ed8530dca3372c6302b58d7dc9a69feacbb403e5d3ddd0f66d7015b11b2",
+    "lab/lab_custom_rollout.py": "a362609395256969d16adf53f149153fab7aee42bf7377fa957d8aa88f0d3101",
+    "lab/lab_custom_rollout_verify.py": "899e2449f2665c27622683ceed7cdf8d02d6b2eb2765e5cac658c5f221d32331",
+    "lab/lab_deploy.py": "4634aaa447797307a40e23455d545a8c0029868b80848508ce8e599b9762aeff",
+    "lab/lab_import_workspace.py": "ddc8f0326ae4c56a72643d798f33d6a19383f9cccdebdf797d4cdca9bde4a787",
+    "lab/lab_lifecycle.py": "97064afffd8ab78342f104ca288d1af71db5db96929d5b3ce7a400cacf3e2e62",
+    "lab/lab_monitor.py": "087833c48e179ecc7cc388b5784a8227fde8bef2b75376635fc89efd3e27caab",
+    "lab/lab_parse_contract.sql": "89efa2c9c49a2dd4292b9a3f8f8e5ac7d0ce89c0adaab5ce4338da9687417495",
+    "lab/lab_preflight.py": "805245ef7f859105abdfc44b19eca6ac99f220e449e19812fb36615d7a6ca002",
+    "lab/lab_prompts.py": "1f2b830644f3799047d76f96aefec9ee62057e4b2c9b04fcfee8a13b863013c0",
+    "lab/lab_rollout.py": "9661b99e9b0635b66b26566cc3b414eda899e794ba49733e62b4ddb4681b2329",
+    "lab/lab_security_smoke.py": "436bcb98ce1a8de65eb90b913dec452741c5488a1da2d9e86dc7fd8809973ecd",
+    "lab/lab_smoke.py": "dee2d97be74e95e1035476eb2f9a6e408fa9054fbb2e97923f6fb231e455031b",
+    "lab/lab_status.py": "ead35550d5cda6299971420a961987ec64ace2f9d1dd256b8df77c9511f8678e",
+    "lab/lab_verify_monitor.py": "296d4bb62d1426891f7c8b8fea9904447aac2f85a3a9af836b3ac7a9e7a600a1",
+    "lab/requirements.txt": "f7d7bf19dbd785f8b1f408fd2b4eb68a36b8c767550d0fb0b05878ff0ee5f277",
+    "lab/rollout_model.py": "3d0eade350fd2394b475f3cfe3181dd7e829f1ec4202398516bd560283929dc8",
+    "notebook.ipynb": "8b350fde2321ca490642ffda5ec6188b5db90b1f5e4ae0258125072f78fa94f7",
+    "notebook.py": "4dbb89479b8d04d4e22de55110c9e47297e6e5f3d91e3d76339d9f9a4edf9510",
+    "reports/app-browser.json": "7f2ea6e7cbbea310c582a8cdd83bb723067481d9587865c2c1bfafe89e508c67",
+    "reports/app-visual.json": "cdf9918c351777604e55c473e3d524420705103a57dd902d1d18767721454032",
+    "reports/import-validation.json": "3cc995274189ce1143d36fe970af82dded9169793e5d9964cca09053205a59d9",
+    "reports/lab-app-http.json": "a6881fafb7090ae7249b453f8aa8f63508e52e3406c296d179d4bae5627e4a70",
+    "reports/lab-app-source-check.json": "0918d58b9ec83b2c3c4abb95f6e4e254668694cf00a38cd5594600169ed578ee",
+    "reports/lab-artifact-check.json": "2a4bfe991602e4e1df81453999c7a87d72cb4bb8011517d6439a4db7ee1bb39a",
+    "reports/lab-bundle-validation.json": "903285fc8ece1079df40961261c34295414156c30200bfe65b759c63745a6563",
+    "reports/lab-custom-canary-verified.json": "4bdcaa4a3b1c37444f8865751e6abfd0207118a67aad91eed7ecf4b5616a002e",
+    "reports/lab-custom-rollback-verified.json": "56e1c2f1900933969ceddd206f46992b59b79ed78d2af7bbc67f3dcdaed7d4ad",
+    "reports/lab-freeze.json": "2cd3661a6b4fc3511011c23cd46706ff3fe095bc5874e2c3ebbbf60b6d034213",
+    "reports/lab-monitor-values.json": "dae3617751266d784fdf5c09512f32118f6e900c237c208e404e273573001435",
+    "reports/lab-monitor-verified.json": "8bf585d71519ed799e1c302f26e8d8adcc756169051657c5e4ac51f9c8fc570f",
+    "reports/lab-parse-fixtures.json": "e10dafc0e0acff3c5e527eb927450a70bb4ce660ed9d155ba9966a71bd187518",
+    "reports/lab-prompts.json": "73aeba26b53c00cceb0bb72612908cd407e87381b3e881675586bd5c92d9f80c",
+    "reports/lab-rollout-before.json": "437aa537e13e9a970ab5ca7102f25bdcbbe8118c76c032ccaec3530c8309b443",
+    "reports/lab-security-smoke.json": "6dd49056cbdeb70a096b457157d3b75e411d0052b533a31afe199a758bedb9fa",
+    "reports/lab-smoke-serving.json": "a17e3d574ffe015c1c9f691cd6c8555a8592f4766f6c953823de7e07d9afba1a",
+    "reports/material-audit.json": "9e161fbed7941e26d47af20c96faeee34bbb8755ea553b6129c6465951cf1635",
+    "reports/notebook-observed.json": "711645f87a6c0c4ca6552abc9861fcee1a1dd9030cb1a40725cbfe44edfb4e4a",
+    "reports/notebook-run-35725070281647.json": "240e31fafc9a2f68bfb82994b534ccec138dad0332723dd7959f00d1089d086f",
+    "reports/notebook-submit.json": "6e27bfa5a5ea8109d2fa260ea77b0a326a054ab3c310f0d166cb3485475bbf26",
+    "requirements.json": "6ea9a5101dbe85f835ac51e6c1486c4ef7ad7cac44af2ca25c0ecc87514c42ad",
+    "scripts/audit_material.py": "45631d93ea8632e2e0a2994fac9f2f62b1351d7201f70e0fd3d6ec4a3413be78",
+    "scripts/author_notebook.py": "424832865c9a0fb32dcb474047fe850767ff066b5ab9fe88da848960b506176f",
+    "scripts/author_slides.py": "20dcb5d825f4961c1abbe5f8c89b4ecd1b3cb282b3bd34102f1dfe995e707fb6",
+    "scripts/build_index.py": "ad12a8c85f085514f86776b2c1afaae4800873367dd51d90375eac5b22ba5296",
+    "scripts/build_linkage.py": "575f66916f81c6345750f9caa937813227ef9740c8888cac2c839f0d3f4281a8",
+    "scripts/build_validation.py": "214fa989866cc4e3cafedc56b06a24e53f7dc2bf5908f2ab55f2093c15554978",
+    "scripts/close_validation.py": "bb94dcf02114ed92a615d8237edc092855bc5f954498a9b2a5fb1a96bdc986ae",
+    "scripts/package_material.py": "683804d34e2ce881eb153c58226f095a2d7e7bc3ef7c1ba152b2fa7bf0d4a4b6",
+    "scripts/qa_app_artifact.cjs": "6de8f492298e5ccb79673eb09f6b9b013e5e96cb29d79ff8a004b26c690af266",
+    "scripts/qa_deck.cjs": "fce38da27775f459ab9f3afb38876f4a395e4ad8eca541f73e1e36863bbf154a",
+    "scripts/render_deck.py": "88eeb3d9e548d318d8aad1cee0e619cfa6c51c2074f902645d08029b51afe7c4",
+    "scripts/validate_notebook.py": "25b2fa465ab9fcc07c76cb89de2b42ca318b1c5e9318e2ad58c4df6a4261f491",
+    "slides/S08-autonomo.html": "9b5049015512853a291fb5f69193f1ea9139293dfa1fa010bf5a450e5d680fcc",
+    "slides/S08-deck.html": "f70b7cb05ebb9053d6220da35892d01497b4a7a30b68466415acc11e166164df",
+    "slides/content.json": "e878d06acd3babe1b6c796a18ecc00f0dd72384d590ad25d93150407a62938a6",
+    "slides/deck.css": "bda749f090d887dfd096b45efad15e47644ef17aab182a8ff766953a75909f05",
+    "slides/deck.js": "31e25fd75f6cd7c6e59949f9b0c3874ebb27d1add52e5e688ccb72c4daec3eaf",
+    "sources.json": "be6f8590cb16394a7f92137e02993b649bd53b328f15cec80adaec7f6c2961a3",
+    "tests/test_app.py": "0e7ee2fa369dca672ca7672a32ff745bcaee920442a484db6d159ad967220a14",
+    "tests/test_config.py": "934fd21b236a1d0fa57cbeff8010be348c0a5f192d97ac12a4127824cc108cac",
+    "tests/test_contracts.py": "bc93f2cae88f910b43afdd9c5dc18022d9ca405d960bce9543bc42c4e07eefd4",
+    "tests/test_rollout_scope.py": "1d2f984bb5525483fd42d543be1871a011e106c7e3e1d9b09bea486788a5db25"
+  },
+  "evidence": [
+    {
+      "kind": "independent_local_execution",
+      "command": "/tmp/ais08-py312/bin/python -m unittest discover -s s08-deployment/tests -v",
+      "exit_code": 0,
+      "observed": "14 tests PASS: contracts, configuration isolation, App invalid-input preservation/escaping, rollback host/model/endpoint scope."
+    },
+    {
+      "kind": "independent_read_only_cloud",
+      "command": "WorkspaceClient(profile=databricks-ai-engineer-aws): jobs.get_run(35725070281647); serving_endpoints.get(ais08-neptuno); serving_endpoints.get(ais08-neptuno-rollout); apps.get(ais08-neptuno-ui)",
+      "observed": {
+        "job": "TERMINATED/SUCCESS",
+        "agent": "READY/NOT_UPDATING; agent/v1/responses; UC version4; champion100%",
+        "custom": "READY/NOT_UPDATING; champion version1 100%, challenger version2 0%",
+        "app": "ACTIVE/RUNNING"
+      },
+      "mutations": false,
+      "inferences": 0
+    },
+    {
+      "kind": "independent_hash_and_syntax_check",
+      "command": "Python hashlib against notebook-submit.staged_files and AST parsing lab/*.py",
+      "observed": "Notebook exact SHA4dbb89479b8d04d4e22de55110c9e47297e6e5f3d91e3d76339d9f9a4edf9510; only staged delta is evidence-only lab_custom_rollout_verify.py, not called by notebook; AST PASS."
+    },
+    {
+      "kind": "reviewed_cloud_execution",
+      "paths": [
+        "reports/lab-artifact-check.json",
+        "reports/lab-smoke-serving.json",
+        "reports/lab-security-smoke.json"
+      ],
+      "observed": "UC model4/prompt4 source SHA200febf66d9d8a36acd05fed147776e761156e27d065df600489dd838f292bb4 matches final agent; 6 remote business cases PASS;3 security cases PASS. Missing-category case rejects invalid tool input and asks clarification, with one recorded tool_error; not represented as zero LLM attempts."
+    },
+    {
+      "kind": "reviewed_cloud_execution",
+      "paths": [
+        "reports/lab-custom-canary-verified.json",
+        "reports/lab-custom-rollback-verified.json",
+        "reports/lab-rollout-before.json"
+      ],
+      "observed": "Custom real UC sales: configured90/10, observed42/8 across50; restored100/0, observed5 champion of5; versions1/2 and saved baseline match. Distinct from unsupported agent split; sample does not establish causal A/B quality."
+    },
+    {
+      "kind": "reviewed_cloud_execution",
+      "paths": [
+        "reports/lab-app-http.json",
+        "reports/lab-app-source-check.json",
+        "reports/app-visual.json",
+        "reports/app-browser.json"
+      ],
+      "observed": "Authenticated official HTTP GET/POST reaches deployed App backend and agent, returns116024.88 and SQL source. Invalid400 preserves escaped form. Source hashes match remote files. Rendered response usable390/1280 without overflow. Chrome SSO manual consent not completed."
+    },
+    {
+      "kind": "reviewed_cloud_execution",
+      "paths": [
+        "reports/notebook-observed.json",
+        "reports/notebook-run-35725070281647.json",
+        "reports/lab-monitor-verified.json",
+        "reports/lab-monitor-values.json",
+        "reports/lab-parse-fixtures.json"
+      ],
+      "observed": "Exact notebook verification mode succeeded; CP0/1/2/5/parser/6 observed;16 real raw/flat rows with unique IDs; monitor refreshSUCCESS and latest42 profile/42 drift rows across two hour windows. SQL parser fixtures identified as synthetic rather than logging evidence."
+    },
+    {
+      "kind": "reviewed_execution",
+      "paths": [
+        "reports/lab-prompts.json",
+        "reports/lab-bundle-validation.json",
+        "reports/import-validation.json",
+        "reports/material-audit.json"
+      ],
+      "observed": "Prompt alias4→5→4 restored; existing model retains4. Bundle CLI0.288.0 validatePASS with vars/model4; no deploy/CI claim. Personal Workspace import/config pull tested. Student source/IPYNB and ZIP parity auditPASS; import test predates final notebook hash, while exact final source run separately proves runtime execution."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "info",
+      "locator": "reports/app-browser.json",
+      "finding": "Chrome SSO consent remains manual and unverified. Integration acceptance is met by authenticated real App form→backend→agent response and current source/render checks; original syllabus does not require this particular browser automation login. Must not claim browser SSO tested."
+    },
+    {
+      "severity": "info",
+      "locator": "reports/lab-monitor-values.json",
+      "finding": "Baseline is one real row and monitoring volumes are small. Demonstrates actual metric/drift computation, not statistically reliable absence of drift or factual answer quality."
+    },
+    {
+      "severity": "info",
+      "locator": "reports/lab-rollout-api-limitation.json; GUIA-DOCENTE.md CP3",
+      "finding": "Agent endpoint cannot split; custom UC sales complement provides actual canary/rollback mechanics. Final notebook and guide accurately separate resources/contracts. Slow provisioning is handled by prepared resources and observed-state gates."
+    }
+  ],
+  "unverified": [
+    "Manual corporate SSO login in Chrome; consent explicitly pending, no authentication bypass.",
+    "New student identities/permissions and new workspace provisioning are not each pre-executed; documented prerequisites and isolated configuration are required.",
+    "Bundle deployment, remote CI run, usage-table/rate-limit operation and production cost totals are not executed; taught/configuration examples are labeled.",
+    "Statistical model-quality improvement, production resilience/SLA, exhaustive prompt-injection protection, student learning outcomes and certification success are not established."
+  ],
+  "resolved_prior_findings": [
+    "Bundle required variables and per-team names corrected in guide/YAML.",
+    "Terminal dependencies pinned to exercised versions.",
+    "CP3 guide uses custom package/verifier rather than agent package/smoke.",
+    "Rollback snapshots scoped to workspace/model/endpoint and protected from overwrite.",
+    "App invalid-input path preserves escaped form."
+  ],
+  "mutation_policy": "Only this independent report written; no material edits or cloud mutations during judging."
+}

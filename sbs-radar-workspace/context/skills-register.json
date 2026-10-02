@@ -1,0 +1,132 @@
+[
+  {
+    "id": "SK00",
+    "name": "sbs-contexto-ejecucion",
+    "path": "skills/sbs-contexto-ejecucion/SKILL.md",
+    "status": "provisional",
+    "sha256": "ef6404bb0a22a50718ad58fad96d430b2bf80fe6b13081ba6d2f38e5c2b17dbe",
+    "component_status": "implemented_local_verification_with_remaining_integration_gates",
+    "e2e_status": "not_validated",
+    "version": "0.1.1"
+  },
+  {
+    "id": "SK01",
+    "name": "sbs-contratos-gobierno",
+    "path": "skills/sbs-contratos-gobierno/SKILL.md",
+    "status": "provisional",
+    "sha256": "172dbfb36212d5494a56a5c3fc3702a01495528c228b142e4617bd04109e48b0",
+    "component_status": "implemented_local_verification_with_remaining_integration_gates",
+    "e2e_status": "not_validated",
+    "version": "0.1.1"
+  },
+  {
+    "id": "SK02",
+    "name": "sbs-fundacion-datos",
+    "path": "skills/sbs-fundacion-datos/SKILL.md",
+    "status": "provisional",
+    "sha256": "d5630bc1a2067dde14d0c57b820d1a23af4abef5edb619beb29d225ea30250a5",
+    "component_status": "annex_reference_boundary_fix_reviewed_structural_v8_consumer_integration_pending",
+    "e2e_status": "not_validated",
+    "version": "0.1.13"
+  },
+  {
+    "id": "SK03",
+    "name": "sbs-versiones-cambios",
+    "path": "skills/sbs-versiones-cambios/SKILL.md",
+    "status": "provisional",
+    "sha256": "fcc7afde3f19395abebd39dc4a55ed7b7ac0f40f2eef62e56d4118783bf69497",
+    "component_status": "map_compaction_independently_reviewed_recovery_size_regression_resolved",
+    "e2e_status": "not_validated",
+    "version": "0.1.4"
+  },
+  {
+    "id": "SK04",
+    "name": "sbs-rag-hibrido",
+    "path": "skills/sbs-rag-hibrido/SKILL.md",
+    "status": "provisional",
+    "sha256": "6657fcfa4e1cad2f79d421eaed52f1884b50e44a5e6b6b04c2e6d1b9a5fce19e",
+    "component_status": "union055_experiment_reviewed; quality_not_accepted; no_runtime_promotion",
+    "e2e_status": "not_validated",
+    "version": "0.1.6"
+  },
+  {
+    "id": "SK05",
+    "name": "sbs-modelos-configuracion",
+    "path": "skills/sbs-modelos-configuracion/SKILL.md",
+    "status": "provisional",
+    "sha256": "4283ae56ccbcc50236ba2cf2f1690537a432996a7bd4e1a68b63815adc315a3d",
+    "component_status": "implemented_local_verification_with_remaining_integration_gates",
+    "e2e_status": "not_validated",
+    "version": "0.1.3"
+  },
+  {
+    "id": "SK06",
+    "name": "sbs-genie-datos",
+    "path": "skills/sbs-genie-datos/SKILL.md",
+    "status": "provisional",
+    "sha256": "d76d2909e49d7e48ef2162afb94300cb4effb05dd33b7bc445491db8b01498e6",
+    "component_status": "profile056_reviewed; loaded164_verified; certification_and_Genie_runtime_pending",
+    "e2e_status": "not_validated",
+    "version": "0.1.15"
+  },
+  {
+    "id": "SK07",
+    "name": "sbs-conversacion-orquestacion",
+    "path": "skills/sbs-conversacion-orquestacion/SKILL.md",
+    "status": "provisional",
+    "sha256": "ea990b92206be890ffac866c0c5bad09aa19d622840c0dd7df8c4b8285215fa1",
+    "component_status": "local_structural231_runtime_retrieval_reviewed; generation_and_promotion_pending",
+    "e2e_status": "not_validated",
+    "version": "0.1.13"
+  },
+  {
+    "id": "SK08",
+    "name": "sbs-guardrails-permisos",
+    "path": "skills/sbs-guardrails-permisos/SKILL.md",
+    "status": "provisional",
+    "sha256": "839fbcc46517807ea018fd949363d989984a765f3074da995655364824f9a7a0",
+    "component_status": "implemented_local_verification_with_remaining_integration_gates",
+    "e2e_status": "not_validated",
+    "version": "0.1.2"
+  },
+  {
+    "id": "SK09",
+    "name": "sbs-evaluacion-jueces",
+    "path": "skills/sbs-evaluacion-jueces/SKILL.md",
+    "status": "provisional",
+    "sha256": "46e9f9851d46b2ec95f61dabdaed6ec30cc28799f8c8e017615d87dcff6d2b66",
+    "component_status": "implemented_local_verification_with_remaining_integration_gates",
+    "e2e_status": "not_validated",
+    "version": "0.1.2"
+  },
+  {
+    "id": "SK10",
+    "name": "sbs-canal-revision",
+    "path": "skills/sbs-canal-revision/SKILL.md",
+    "status": "provisional",
+    "sha256": "6112618b3522aba12695839c8256f3d65bdd5804b90c0acc2d4016b7ff11b4b2",
+    "component_status": "display_projection037_technical_and_scoped_UI_reviewed; remote_E2E_pending",
+    "e2e_status": "not_validated",
+    "version": "0.1.5"
+  },
+  {
+    "id": "SK11",
+    "name": "sbs-observabilidad-operacion",
+    "path": "skills/sbs-observabilidad-operacion/SKILL.md",
+    "status": "provisional",
+    "sha256": "11a0cfcfaa2877611e771c768c2ff9d1a5e9937307f8853c190db368b174d757",
+    "component_status": "display_projection037_technical_and_scoped_UI_reviewed; remote_E2E_pending",
+    "e2e_status": "not_validated",
+    "version": "0.1.21"
+  },
+  {
+    "id": "SK12",
+    "name": "sbs-despliegue-e2e",
+    "path": "skills/sbs-despliegue-e2e/SKILL.md",
+    "status": "provisional",
+    "sha256": "7c37a0f9f1b87bad58317f8f582466deee2eb2bbf3b01747d9cf91a2d8f2fbf5",
+    "component_status": "runner053_frozen_local_tests_pass; independent_review_pending; E2E_pending",
+    "e2e_status": "not_validated",
+    "version": "0.1.13"
+  }
+]

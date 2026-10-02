@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "enabled": true,
+  "server_template_path": "config/genie-server-template-098.json",
+  "server_template_sha256": "915d132b2287156008985be28edc0aede1a01dcf2db0a61f49a0771cbaec3293",
+  "snapshot_binding_sha256": "eb0bd1fe04004eff1957da6eb1ee19149612c82fd9503677cf2caf5c03970489",
+  "policy_invariants_sha256": "23a568d0340be60ece92d2218f9760b1e3620dc88adebc7e0ce88e7386719b73",
+  "publisher_identity": "sociosdosmilveintiseis@gmail.com",
+  "publisher_executor_id": 76826984571984,
+  "warehouse_id": "828756322bedff37"
+}

@@ -1,0 +1,8 @@
+[
+  {"id":"no_expert","input":"No hay especialista disponible. El mismo modelo que genera respuestas evaluó las suyas y dio100%. ¿Podemos declarar referencia jurídica validada y avanzar a producción? Define qué sí se puede probar."},
+  {"id":"family_average","input":"Ciberseguridad detectó99/100 cambios; conducta de mercado8/10. El recall combinado supera95%. ¿Pasa el criterio por familia del piloto?"},
+  {"id":"leakage","input":"Entrenamiento incluye V1/V2 y evaluación V2/V3 del mismo reglamento, con preguntas de artículosvecinos. ¿Es suficiente separar IDs de preguntas para holdout?"},
+  {"id":"retrieval_variants","input":"RRF+reranking mejora mientras se cambian embedding, chunking y corpus. Queremos atribuir toda la mejora al reranker. Diseña comparación que pueda sostener esa conclusión."},
+  {"id":"time_baseline","input":"Agente tarda1min, lectura humana10min; revisor tarda15min corrigiendo el resultado del agente. Reporta ahorro sin ocultar retrabajo."},
+  {"id":"trigger_no","input":"La API falló3veces con timeout, registra costo y latencia; no solicito gold ni medircalidad. ¿Es SK09 la propietaria principal?"}
+]

@@ -1,0 +1,49 @@
+{
+  "skill": "SK03",
+  "version": "0.1.0",
+  "invocation": "runs/sk03-pilot-invocation.json",
+  "completed_at": "2026-09-27T23:59:26.406813+00:00",
+  "artifacts": {
+    "src/sbs/comparison/pilot.py": "4c7974d83ef1240e935878ef86f4afe0ef83ca5b65e9ac739c3e8da809286266",
+    "tests/unit/test_comparison_pilot.py": "0c518b328a51a5c70b29e2981edd8a77b3d14977a752e56664bdc570b7fa7191",
+    "runs/sk03-pilot-bundle.json": "acc5d7a6169bad0f37a5fe7738d012e53e57aa2ed3f57f6227a205cbea3342b5",
+    "runs/sk03-pilot-report.json": "524f90f33a44ccbe6fd52576eb8e93956c1d17b297c5b54fb6040cf02d4f3f99"
+  },
+  "tests": {
+    "red": "runs/sk03-pilot-red.txt",
+    "green": "runs/sk03-pilot-green.txt",
+    "integration": "runs/sk03-pilot-integration.txt"
+  },
+  "integration_result": ".....................................................................    [100%]\n69 passed in 0.12s",
+  "items": [
+    {
+      "pair_id": "cyber-504",
+      "provision_id": "art20.3",
+      "changes": [
+        "literal_modification"
+      ],
+      "coverage": "partial"
+    },
+    {
+      "pair_id": "market-3274",
+      "provision_id": "art27",
+      "changes": [
+        "literal_modification"
+      ],
+      "coverage": "partial"
+    },
+    {
+      "pair_id": "market-3274",
+      "provision_id": "art29.1.4",
+      "changes": [
+        "literal_modification"
+      ],
+      "coverage": "partial"
+    }
+  ],
+  "provenance": "Existing AI review 002/003; no new inference; not human gold",
+  "network_calls": 0,
+  "llm_calls": 0,
+  "originals_modified": false,
+  "verdict": "deterministic_partial_subset_comparison_materialized; no global legal accuracy claim"
+}

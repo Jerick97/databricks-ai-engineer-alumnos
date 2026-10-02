@@ -1,0 +1,48 @@
+{
+  "proposal_version": "metadata-015",
+  "created_at": "2026-09-28T03:22:02.116136+00:00",
+  "status": "prepared_not_executed",
+  "skill_invocation": "runs/sk12-integration-015-invocation.json",
+  "workspace_host": "https://dbc-0410b264-20c7.cloud.databricks.com",
+  "profile": "databricks-ai-engineer-aws",
+  "preflight": {
+    "path": "runs/sk12-uc-metadata-preflight-015.json",
+    "sha256": "5de560f50c01580abd271dbf769ddbd416814018262cf4f2fa9c9532c71e4358"
+  },
+  "schema": {
+    "method": "POST",
+    "path": "/api/2.1/unity-catalog/schemas",
+    "body": {
+      "catalog_name": "neptuno_manuel_arguelles",
+      "name": "sbs_radar",
+      "comment": "SBS Radar pilot \u2014 isolated project namespace"
+    }
+  },
+  "volume": {
+    "method": "POST",
+    "path": "/api/2.1/unity-catalog/volumes",
+    "body": {
+      "catalog_name": "neptuno_manuel_arguelles",
+      "schema_name": "sbs_radar",
+      "name": "release_artifacts",
+      "volume_type": "MANAGED",
+      "comment": "SBS Radar immutable release artifacts; metadata only at creation"
+    }
+  },
+  "execution_contract": [
+    "Recheck target absence and catalog owner immediately before any create.",
+    "One POST attempt per resource; ambiguous response reconciled by exact GET, no blind retry.",
+    "Observe full name/id/owner/type and effective inherited grants. Existing resource is not overwritten, adopted or deleted silently.",
+    "If schema creation fails, do not create volume. Never set custom storage roots.",
+    "No uploads, tables, grants, jobs, SQL, compute start or app deploy in this phase.",
+    "No rollback deletion without evaluating existing contents and separate destructive authorization."
+  ],
+  "limits": [
+    "API payloads checked against installed databricks SDK0.102 generated methods; not executed.",
+    "Schema/managed volume availability does not establish table publication or permissions for app/writer.",
+    "Inherited grants and managed storage policy must be observed before loading data.",
+    "No zero-cost assertion; no compute operation in these requests."
+  ],
+  "independent_review": "pending_SK09",
+  "apply_allowed": false
+}

@@ -1,0 +1,10 @@
+{
+  "time": "2026-09-27T12:42:57.331664+00:00",
+  "health_status": 200,
+  "post_status": 200,
+  "has_form": true,
+  "expected_answer": true,
+  "has_source": true,
+  "browser_test": false,
+  "http_pass": true
+}

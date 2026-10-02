@@ -1,0 +1,49 @@
+{
+  "duration": 209.467,
+  "fps": 30,
+  "voice": "ef_dora",
+  "chapters": [
+    {
+      "id": "scene01",
+      "start": 0,
+      "duration": 32.167,
+      "voice_duration": 30.634666666666668,
+      "title": "Elegir el contexto de trabajo"
+    },
+    {
+      "id": "scene02",
+      "start": 32.167,
+      "duration": 33.5,
+      "voice_duration": 32.0,
+      "title": "Validar y decidir la ruta"
+    },
+    {
+      "id": "scene03",
+      "start": 65.667,
+      "duration": 37.833,
+      "voice_duration": 36.330666666666666,
+      "title": "Encontrar evidencia con búsqueda híbrida"
+    },
+    {
+      "id": "scene04",
+      "start": 103.5,
+      "duration": 30.933,
+      "voice_duration": 29.418666666666667,
+      "title": "Consultar tablas con Genie"
+    },
+    {
+      "id": "scene05",
+      "start": 134.433,
+      "duration": 38.433,
+      "voice_duration": 36.906666666666666,
+      "title": "Construir una respuesta verificable"
+    },
+    {
+      "id": "scene06",
+      "start": 172.867,
+      "duration": 36.6,
+      "voice_duration": 35.093333333333334,
+      "title": "Mostrar, seguir y evaluar"
+    }
+  ]
+}

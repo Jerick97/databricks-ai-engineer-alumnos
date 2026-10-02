@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "original_css_included_exactly": true,
+  "original_control_ids_preserved": 39,
+  "provisions": [
+    {
+      "provision": "art20.3",
+      "before_after_match_recorded_literal_stripped_boundary_whitespace": true
+    },
+    {
+      "provision": "art27",
+      "before_after_match_recorded_literal_stripped_boundary_whitespace": true
+    },
+    {
+      "provision": "art29.1.4",
+      "before_after_match_recorded_literal_stripped_boundary_whitespace": true
+    }
+  ],
+  "note": "Contenido comparado con muestra UI244 que ya tiene cotejo PDF/rawspan; sólo whitespace exterior strip, sin reescritura del texto."
+}

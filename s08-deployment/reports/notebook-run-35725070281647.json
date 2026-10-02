@@ -1,0 +1,75 @@
+{
+  "cleanup_duration": 0,
+  "creator_user_name": "sociosdosmilveintiseis@gmail.com",
+  "effective_performance_target": "PERFORMANCE_OPTIMIZED",
+  "end_time": 1790478997625,
+  "execution_duration": 71000,
+  "job_id": 886266256443483,
+  "job_run_id": 35725070281647,
+  "number_in_job": 35725070281647,
+  "run_duration": 77417,
+  "run_id": 35725070281647,
+  "run_name": "S08-notebook-validation",
+  "run_page_url": "https://dbc-0410b264-20c7.cloud.databricks.com/?o=7474657121564806#job/886266256443483/run/35725070281647",
+  "run_type": "SUBMIT_RUN",
+  "setup_duration": 5000,
+  "start_time": 1790478920208,
+  "state": {
+    "life_cycle_state": "TERMINATED",
+    "result_state": "SUCCESS",
+    "state_message": "",
+    "user_cancelled_or_timedout": false
+  },
+  "status": {
+    "state": "TERMINATED",
+    "termination_details": {
+      "code": "SUCCESS",
+      "message": "",
+      "type": "SUCCESS"
+    }
+  },
+  "tasks": [
+    {
+      "attempt_number": 0,
+      "cleanup_duration": 0,
+      "effective_performance_target": "PERFORMANCE_OPTIMIZED",
+      "end_time": 1790478997215,
+      "environment_key": "s08",
+      "execution_duration": 71000,
+      "notebook_task": {
+        "base_parameters": {
+          "catalogo": "neptuno_manuel_arguelles",
+          "warehouse_id": "828756322bedff37",
+          "sufijo": "neptuno",
+          "esquema": "ais08_lab",
+          "s07_schema": "s07_bda09634f2",
+          "modo": "verificar",
+          "rollout": "inspeccionar",
+          "source_sha256": "4dbb89479b8d04d4e22de55110c9e47297e6e5f3d91e3d76339d9f9a4edf9510"
+        },
+        "notebook_path": "/Shared/curso-databricks-ai-engineer/s08-validation/notebook",
+        "source": "WORKSPACE"
+      },
+      "run_id": 770222829162724,
+      "run_if": "ALL_SUCCESS",
+      "run_page_url": "https://dbc-0410b264-20c7.cloud.databricks.com/?o=7474657121564806#job/886266256443483/run/770222829162724",
+      "setup_duration": 5000,
+      "start_time": 1790478920238,
+      "state": {
+        "life_cycle_state": "TERMINATED",
+        "result_state": "SUCCESS",
+        "state_message": "",
+        "user_cancelled_or_timedout": false
+      },
+      "status": {
+        "state": "TERMINATED",
+        "termination_details": {
+          "code": "SUCCESS",
+          "message": "",
+          "type": "SUCCESS"
+        }
+      },
+      "task_key": "s08"
+    }
+  ]
+}

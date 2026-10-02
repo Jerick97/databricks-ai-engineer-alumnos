@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "status": "pending_refs",
+  "design_sha256": "83bc0352503fa3ab1c66a1b86c1ed9cb8cd9623aff4aa8d97643160f68b05fcb",
+  "corpus": null,
+  "questions": [],
+  "passages": [],
+  "pairs": [],
+  "reference": null,
+  "partitions": {
+    "tune": [],
+    "holdout": []
+  },
+  "development_inventory": {
+    "protocol_path": "runs/sk04-real-001-protocol.json",
+    "query_ids": [
+      "cyber-art20-3",
+      "market-art27",
+      "market-art29-1-4"
+    ],
+    "complete_version_pairs": [
+      {
+        "after": {
+          "document_id": "sbs-504-2021",
+          "version_id": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18"
+        },
+        "before": {
+          "document_id": "sbs-504-2021",
+          "version_id": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771"
+        },
+        "family": "cybersecurity",
+        "pair_id": "cyber-art20-3"
+      },
+      {
+        "after": {
+          "document_id": "sbs-3274-2017",
+          "version_id": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7"
+        },
+        "before": {
+          "document_id": "sbs-3274-2017",
+          "version_id": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342"
+        },
+        "family": "market_conduct",
+        "pair_id": "market-art27"
+      },
+      {
+        "after": {
+          "document_id": "sbs-3274-2017",
+          "version_id": "879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7"
+        },
+        "before": {
+          "document_id": "sbs-3274-2017",
+          "version_id": "661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342"
+        },
+        "family": "market_conduct",
+        "pair_id": "market-art29-1-4"
+      }
+    ],
+    "warning": "Two distinct version pairs across three questions; market27 and29 share pair; cross-family amendment dependencies require connected grouping."
+  },
+  "missing_by_family": {
+    "cybersecurity": [
+      "Independent eligible complete pair/components with exposure record; G140/G167 and0771 are exposed/connected, not clean holdout.",
+      "Exhaustive judged retrieval qrels and counterparts for frozen passage corpus; sampled Astra references are not this denominator.",
+      "Independent critical/insufficient cases, reference claim coverage, paired human time baseline."
+    ],
+    "market_conduct": [
+      "4036 now has captured counterpart v6 from concurrent SK02 market018; validate complete pair/applicability/lineage and exposure. Annotated3240 and4036v6 reference2286 already used in production; independence not established.4143 remains excluded.",
+      "New reserved questions and exhaustive passage qrels, critical/insufficiency references, claim coverage and timing pairs."
+    ]
+  },
+  "reference_inventory": [
+    {
+      "path": "runs/astra-normative-review-003.json",
+      "kind": "ai_review",
+      "human_approved": false,
+      "partition": "exposed_development"
+    },
+    {
+      "path": "runs/astra-normative-review-004.json",
+      "kind": "ai_review",
+      "human_approved": false,
+      "partition": "exposed_development"
+    },
+    {
+      "path": "runs/astra-normative-review-005.json",
+      "kind": "ai_review",
+      "human_approved": false,
+      "partition": "exposed_development"
+    }
+  ],
+  "input_supplement": {
+    "path": "context/holdout-source-candidates.json",
+    "sha256": "417ede9de76746dc20a62db191eaacacf1f09108e72290a880235609165155ee",
+    "observed_during_construction": true,
+    "reason": "Concurrent SK02 market018 adds4036v6 and3240 annotated copy; previous one-copy gap superseded, independence/qrels still absent."
+  }
+}

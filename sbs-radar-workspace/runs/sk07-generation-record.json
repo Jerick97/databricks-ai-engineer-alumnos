@@ -1,0 +1,32 @@
+{
+  "skill": "SK07",
+  "method": "systematic-debugging; instrument evidence then one authorized diagnostic POST",
+  "original_failure": "runs/sk07-live-d7b88ad54623436ab128944c608a412f.json",
+  "finding": "Diagnostic request rejected HTTP 403 PERMISSION_DENIED before generation; provider message classified as permission/rate-limit related. Exact policy or limit not disclosed by accessible metadata. Original failure discarded response so identical cause cannot be proven retrospectively.",
+  "fix": "Preserve safe HTTP status, allowlisted error code/hints, stage, numeric usage, bounded response model, finish reason and envelope diagnostics; no retries or secret/body logging.",
+  "endpoint_changed": false,
+  "inference_post_count": 1,
+  "cloud_mutations": 0,
+  "outputs": {
+    "src/sbs/conversation/databricks.py": "0364c40645760da2c55f43a255a4411a8df1e81ed62010bbeaab62073cccc8e7",
+    "tests/unit/test_generation_transport.py": "eb3ca4aac8433e7b766c84b443e38f52dade224af41becc213150e8d2dddb12f",
+    "runs/sk07-generation-diagnostic-invocation.json": "49bb39357c43dbe8e7246220f8c701ec4e3fc821cfff6e574389a7428fbaa28a",
+    "runs/sk07-generation-diagnostic-result.json": "5ad1cf52905be81934990aa752597224f636d1059207a9d3c461f28c2de4722e",
+    "runs/sk07-generation-endpoint-metadata.json": "fe54752d3133790dc4a5a6521b7f7c42f4c1cc8217e4ef5e6dc83a49962ceea8",
+    "runs/sk07-generation-permissions-get.json": "1a4704387c5fad907a450cc77cfa8342ee2d5c9f825c2f281c58b7c5dab61d21",
+    "runs/sk07-generation-list-metadata.json": "0559c759e2740216e503c20660a6f2aead9d8d5b356a151b90aa1a28e4c33394"
+  },
+  "tests": {
+    "red": "runs/sk07-generation-red.txt",
+    "hints_red": "runs/sk07-generation-hints-red.txt",
+    "regression": "runs/sk07-generation-regression.txt"
+  },
+  "test_result": ".................................................................        [100%]\n65 passed in 0.07s",
+  "limitations": [
+    "Permission/rate-limit policy remains external; code cannot fix authorization",
+    "READY and inventory visibility do not prove invocability",
+    "Alternative gpt-5-6-sol observed but effective permission unverified; no fallback selected",
+    "Successful content generation not established",
+    "Existing historical request cause unavailable because old transport discarded details"
+  ]
+}

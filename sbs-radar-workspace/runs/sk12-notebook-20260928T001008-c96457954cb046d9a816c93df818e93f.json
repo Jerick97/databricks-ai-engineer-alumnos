@@ -1,0 +1,16 @@
+{
+  "run_id": "sk12-notebook-20260928T001008-c96457954cb046d9a816c93df818e93f",
+  "status": "passed",
+  "started_at": "2026-09-28T00:10:08.657239+00:00",
+  "executed_at": "2026-09-28T00:10:09.413147+00:00",
+  "kernel": "python3",
+  "python_executable": "/opt/homebrew/opt/python@3.14/bin/python3.14",
+  "code_cells": 4,
+  "executed_cells": 4,
+  "errors": 0,
+  "error_class": null,
+  "source_sha256": "e983910bd2f5168ed42afc8c74760aae60d5bab16b214ffd69ea7512099068a2",
+  "output_path": "runs/sk12-notebook-20260928T001008-c96457954cb046d9a816c93df818e93f-executed.ipynb",
+  "output_sha256": "a1ae81cdb38466002a116783de1538dfd40b8c089a8b654a8187c031f45ac83a",
+  "scope": "Local offline corpus verification and declarative remote preflight; no deployed/E2E claim"
+}

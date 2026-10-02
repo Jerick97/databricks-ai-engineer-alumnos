@@ -1,0 +1,11 @@
+# SK12 / CreatorZ — corrección combinada214
+
+El usuario requiere una corrección operativa con pruebas reales. Se combina UI211 con política de propuestas212 en UNA actualización: `src/sbs/webapp/static/app.js`, `index.html`, `src/sbs/conversation/hybrid_125.py`, manifiesto lógico. Fuentes originales, beforeimages y outputs210 intactos. Paquete/runner211 preparados permanecen congelados y no se ejecutan.
+
+`deployment/incremental_app214.py` copia estrechamente el runner211 revisable, usando sólo utilidades210 independientes. Comprueba ACTIVE210 exacta, SCIM/App/source/creator y deploymentSUCCEEDED antesstaging y antesdeploy. Cuatroimports con beforehash/readback; unaPOSTdeploySNAPSHOT, ninguna start/stop. No cambia modelos, reglas de identidad, runtime210, clavepública ni cuotasruntime. Sí cambia política de propuesta: `display_only:false`, `proposal_policy212_changed:true`; nunca atribuir aceptación semántica a pruebas de UI.
+
+`deployment/activation214.py` vincula explícitamente review214 y conserva envelope210/publickey como pins necesarios. Sólo después de readiness y review, agrega una segunda reserva8generation/8embedding/80000tokens en MISMOledger/key210. Una fila previa debe coincidir byte/semánticamente con permiso210 fijado; se conservan baseline1/1/20000 y externalattemptunknown1. Relectura no renueva tiempos, tercera asignación rechazada. Preparación214 no escribe ledger ni emite permiso.
+
+Referencias propietarias: `../sbs-canal-revision/references/whitespace-presentation-211.md` (presentación), `../sbs-conversacion-orquestacion/references/clause-relations-212.md` (prompt), y evaluación `runs/sk07-proposal-relations-212-eval.json`. Fuente material fallida: `runs/ui210/turn3-rendered.json`; no se reemplaza ni se reclasifica como PASS.
+
+Pruebas locales: flujo4imports1deploy0start0stop sobre fixtureApp real; rechazoidentity/deploymentajeno; reservaappend-only/firma/key; A/Brequestprompt idéntico salvo política nueva; fuenteextractivaidéntica0POST; UI real omite6bloquesvacíos conservandoOCR/citas/respuestaraw. Estas pruebas acreditan contratos, no mejora del modelo. Root debe revisar plan/pins, ejecutar una vez, activar nuevoepoch enUI y regenerar propuesta problemática para SK09. Numeric188FAIL/final153bloqueado permanecen.

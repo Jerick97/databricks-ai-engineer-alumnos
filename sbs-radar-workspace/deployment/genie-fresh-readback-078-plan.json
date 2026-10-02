@@ -1,0 +1,270 @@
+{
+  "version": 1,
+  "phase": "fresh-readback-078",
+  "status": "review_required_not_executed",
+  "scope": "read_only_no_DDL_no_DML",
+  "warehouse_id": "828756322bedff37",
+  "executor_id": 76826984571984,
+  "snapshot_binding_sha256": "eb0bd1fe04004eff1957da6eb1ee19149612c82fd9503677cf2caf5c03970489",
+  "previous_ledger": {
+    "path": "deployment/state/phase-s-017/sql-budget-050.json",
+    "sha256": "83cb216db90de77fd4f0275c9e7c5b4dd275360864151ac862388d22c5907171",
+    "submission_records": 96,
+    "reserved": 99,
+    "limit": 112,
+    "must_not_reset": true
+  },
+  "new_ledger_path": "deployment/state/fresh-readback-078/sql-budget.json",
+  "new_ledger_created": false,
+  "sql_cap": 32,
+  "http_cap": 256,
+  "start_warehouse": false,
+  "retry_submission": false,
+  "unknown_submission": "reconcile_by_reserved_operation_id_no_blind_retry",
+  "certificate_profiles": [
+    "uc_managed_named_v1",
+    "uc_managed_named_replay_v1"
+  ],
+  "registry_ttl_ms": 300000,
+  "admin_window_cap_ms": 1800000,
+  "readback_max_age_ms": {
+    "named": 300000,
+    "replay": 7200000
+  },
+  "statements": [
+    {
+      "ordinal": 1,
+      "table": "neptuno_manuel_arguelles.sbs_radar.documents",
+      "kind": "detail_before",
+      "statement": "DESCRIBE DETAIL `neptuno_manuel_arguelles`.`sbs_radar`.`documents`",
+      "statement_sha256": "756ab434f5695581c8b8c1dad106b61e36dde9ddb70c1bce8abdabd5e1c954e6"
+    },
+    {
+      "ordinal": 2,
+      "table": "neptuno_manuel_arguelles.sbs_radar.documents",
+      "kind": "history",
+      "statement": "DESCRIBE HISTORY `neptuno_manuel_arguelles`.`sbs_radar`.`documents`",
+      "statement_sha256": "dcb88f1f668f70d1f92d88fed18b1e4e17ddf7aafee7259efdeafbbc0f793f83"
+    },
+    {
+      "ordinal": 3,
+      "table": "neptuno_manuel_arguelles.sbs_radar.documents",
+      "kind": "select_version",
+      "statement": "SELECT `id`, `family`, `synthetic`, `source_kind`, `corpus_hash`, `config_hash`, `known_at`, `published_on`, `effective_on`, `review_status`, `human_approved`, `lineage_json`, `payload_json` FROM `neptuno_manuel_arguelles`.`sbs_radar`.`documents` VERSION AS OF 1",
+      "statement_sha256": "7450e35335b5235e36b926ae7d25ee4c76015471c4fc87e8cc61db1e14cf3ddc"
+    },
+    {
+      "ordinal": 4,
+      "table": "neptuno_manuel_arguelles.sbs_radar.documents",
+      "kind": "detail_after",
+      "statement": "DESCRIBE DETAIL `neptuno_manuel_arguelles`.`sbs_radar`.`documents`",
+      "statement_sha256": "756ab434f5695581c8b8c1dad106b61e36dde9ddb70c1bce8abdabd5e1c954e6"
+    },
+    {
+      "ordinal": 5,
+      "table": "neptuno_manuel_arguelles.sbs_radar.versions",
+      "kind": "detail_before",
+      "statement": "DESCRIBE DETAIL `neptuno_manuel_arguelles`.`sbs_radar`.`versions`",
+      "statement_sha256": "2cc52cf441d7f984d563de28168fffe7203a4871ac44d8f2b6cf6263df38c765"
+    },
+    {
+      "ordinal": 6,
+      "table": "neptuno_manuel_arguelles.sbs_radar.versions",
+      "kind": "history",
+      "statement": "DESCRIBE HISTORY `neptuno_manuel_arguelles`.`sbs_radar`.`versions`",
+      "statement_sha256": "0a836a8ccde7a412a758d2c2813199921df718422357c624e26e389b4693fbc7"
+    },
+    {
+      "ordinal": 7,
+      "table": "neptuno_manuel_arguelles.sbs_radar.versions",
+      "kind": "select_version",
+      "statement": "SELECT `id`, `family`, `synthetic`, `source_kind`, `corpus_hash`, `config_hash`, `known_at`, `published_on`, `effective_on`, `review_status`, `human_approved`, `lineage_json`, `payload_json` FROM `neptuno_manuel_arguelles`.`sbs_radar`.`versions` VERSION AS OF 1",
+      "statement_sha256": "0b916792aa5cf2f176ae830193551f7bcb4d8b964485a1d17194ce2e84c397d4"
+    },
+    {
+      "ordinal": 8,
+      "table": "neptuno_manuel_arguelles.sbs_radar.versions",
+      "kind": "detail_after",
+      "statement": "DESCRIBE DETAIL `neptuno_manuel_arguelles`.`sbs_radar`.`versions`",
+      "statement_sha256": "2cc52cf441d7f984d563de28168fffe7203a4871ac44d8f2b6cf6263df38c765"
+    },
+    {
+      "ordinal": 9,
+      "table": "neptuno_manuel_arguelles.sbs_radar.provisions",
+      "kind": "detail_before",
+      "statement": "DESCRIBE DETAIL `neptuno_manuel_arguelles`.`sbs_radar`.`provisions`",
+      "statement_sha256": "2272b74700ab865d98a249135f56b5db8421cf2db9f2bb9d762ea0f31b9dcc10"
+    },
+    {
+      "ordinal": 10,
+      "table": "neptuno_manuel_arguelles.sbs_radar.provisions",
+      "kind": "history",
+      "statement": "DESCRIBE HISTORY `neptuno_manuel_arguelles`.`sbs_radar`.`provisions`",
+      "statement_sha256": "8d78576c7db0f6cc40d3fcd695d4d9c4d0cf613e4cd5b9bb3a1c4882913d043b"
+    },
+    {
+      "ordinal": 11,
+      "table": "neptuno_manuel_arguelles.sbs_radar.provisions",
+      "kind": "select_version",
+      "statement": "SELECT `id`, `family`, `synthetic`, `source_kind`, `corpus_hash`, `config_hash`, `known_at`, `published_on`, `effective_on`, `review_status`, `human_approved`, `lineage_json`, `payload_json` FROM `neptuno_manuel_arguelles`.`sbs_radar`.`provisions` VERSION AS OF 1",
+      "statement_sha256": "025894dc45c2282d82531b7dc2f9204a097303371d450f67298bf3360b7bace5"
+    },
+    {
+      "ordinal": 12,
+      "table": "neptuno_manuel_arguelles.sbs_radar.provisions",
+      "kind": "detail_after",
+      "statement": "DESCRIBE DETAIL `neptuno_manuel_arguelles`.`sbs_radar`.`provisions`",
+      "statement_sha256": "2272b74700ab865d98a249135f56b5db8421cf2db9f2bb9d762ea0f31b9dcc10"
+    },
+    {
+      "ordinal": 13,
+      "table": "neptuno_manuel_arguelles.sbs_radar.pairs",
+      "kind": "detail_before",
+      "statement": "DESCRIBE DETAIL `neptuno_manuel_arguelles`.`sbs_radar`.`pairs`",
+      "statement_sha256": "87a00e69bce5ab31a783fc8496a12ee665ac1ca70f0cda0d9f8a78d9a079ec41"
+    },
+    {
+      "ordinal": 14,
+      "table": "neptuno_manuel_arguelles.sbs_radar.pairs",
+      "kind": "history",
+      "statement": "DESCRIBE HISTORY `neptuno_manuel_arguelles`.`sbs_radar`.`pairs`",
+      "statement_sha256": "da8602cc06884f620bb85f1efb8d63ddf3be88cc09824b56578aded531b95721"
+    },
+    {
+      "ordinal": 15,
+      "table": "neptuno_manuel_arguelles.sbs_radar.pairs",
+      "kind": "select_version",
+      "statement": "SELECT `id`, `family`, `synthetic`, `source_kind`, `corpus_hash`, `config_hash`, `known_at`, `published_on`, `effective_on`, `review_status`, `human_approved`, `lineage_json`, `payload_json` FROM `neptuno_manuel_arguelles`.`sbs_radar`.`pairs` VERSION AS OF 1",
+      "statement_sha256": "678d27e11230499e650090e0934afb08eea2e0b107f9bd9dfea65a88f297b56b"
+    },
+    {
+      "ordinal": 16,
+      "table": "neptuno_manuel_arguelles.sbs_radar.pairs",
+      "kind": "detail_after",
+      "statement": "DESCRIBE DETAIL `neptuno_manuel_arguelles`.`sbs_radar`.`pairs`",
+      "statement_sha256": "87a00e69bce5ab31a783fc8496a12ee665ac1ca70f0cda0d9f8a78d9a079ec41"
+    },
+    {
+      "ordinal": 17,
+      "table": "neptuno_manuel_arguelles.sbs_radar.changes",
+      "kind": "detail_before",
+      "statement": "DESCRIBE DETAIL `neptuno_manuel_arguelles`.`sbs_radar`.`changes`",
+      "statement_sha256": "02a14bb561a04adccfac11a50972c40d6326a23ea896c2edb36d7c72273e8ac1"
+    },
+    {
+      "ordinal": 18,
+      "table": "neptuno_manuel_arguelles.sbs_radar.changes",
+      "kind": "history",
+      "statement": "DESCRIBE HISTORY `neptuno_manuel_arguelles`.`sbs_radar`.`changes`",
+      "statement_sha256": "135d52c95df5241fd3b122a946b6bd5d3ac33009ca66ce2434ec5d593043c53e"
+    },
+    {
+      "ordinal": 19,
+      "table": "neptuno_manuel_arguelles.sbs_radar.changes",
+      "kind": "select_version",
+      "statement": "SELECT `id`, `family`, `synthetic`, `source_kind`, `corpus_hash`, `config_hash`, `known_at`, `published_on`, `effective_on`, `review_status`, `human_approved`, `lineage_json`, `payload_json` FROM `neptuno_manuel_arguelles`.`sbs_radar`.`changes` VERSION AS OF 1",
+      "statement_sha256": "412ed80431f091fa455b7db10709f38eb6218b58b6083a8112a3a39e7cc64051"
+    },
+    {
+      "ordinal": 20,
+      "table": "neptuno_manuel_arguelles.sbs_radar.changes",
+      "kind": "detail_after",
+      "statement": "DESCRIBE DETAIL `neptuno_manuel_arguelles`.`sbs_radar`.`changes`",
+      "statement_sha256": "02a14bb561a04adccfac11a50972c40d6326a23ea896c2edb36d7c72273e8ac1"
+    },
+    {
+      "ordinal": 21,
+      "table": "neptuno_manuel_arguelles.sbs_radar.evidence",
+      "kind": "detail_before",
+      "statement": "DESCRIBE DETAIL `neptuno_manuel_arguelles`.`sbs_radar`.`evidence`",
+      "statement_sha256": "58215201c6ad9d9f6ed39dc1149e7909d6e55f72e40525641a551d329b5329f3"
+    },
+    {
+      "ordinal": 22,
+      "table": "neptuno_manuel_arguelles.sbs_radar.evidence",
+      "kind": "history",
+      "statement": "DESCRIBE HISTORY `neptuno_manuel_arguelles`.`sbs_radar`.`evidence`",
+      "statement_sha256": "4879f853d198e62d7090d9676bbe086472ca9f64b0b9fa65ff3ca7d896a665eb"
+    },
+    {
+      "ordinal": 23,
+      "table": "neptuno_manuel_arguelles.sbs_radar.evidence",
+      "kind": "select_version",
+      "statement": "SELECT `id`, `family`, `synthetic`, `source_kind`, `corpus_hash`, `config_hash`, `known_at`, `published_on`, `effective_on`, `review_status`, `human_approved`, `lineage_json`, `payload_json` FROM `neptuno_manuel_arguelles`.`sbs_radar`.`evidence` VERSION AS OF 1",
+      "statement_sha256": "25cb38afd466e39678649eadbba5b25c1a18b0d4da145104d64d044f08f09f2c"
+    },
+    {
+      "ordinal": 24,
+      "table": "neptuno_manuel_arguelles.sbs_radar.evidence",
+      "kind": "detail_after",
+      "statement": "DESCRIBE DETAIL `neptuno_manuel_arguelles`.`sbs_radar`.`evidence`",
+      "statement_sha256": "58215201c6ad9d9f6ed39dc1149e7909d6e55f72e40525641a551d329b5329f3"
+    },
+    {
+      "ordinal": 25,
+      "table": "neptuno_manuel_arguelles.sbs_radar.reviews",
+      "kind": "detail_before",
+      "statement": "DESCRIBE DETAIL `neptuno_manuel_arguelles`.`sbs_radar`.`reviews`",
+      "statement_sha256": "e72912299522d717bf2a0d66b6ecfc7ee7eea73c9761ce2c83d7edbc90de22e3"
+    },
+    {
+      "ordinal": 26,
+      "table": "neptuno_manuel_arguelles.sbs_radar.reviews",
+      "kind": "history",
+      "statement": "DESCRIBE HISTORY `neptuno_manuel_arguelles`.`sbs_radar`.`reviews`",
+      "statement_sha256": "64cf033f32cf82ad08bb9d6a00a11fd1d33686bccded3ee7c9472ec5cfc86cdb"
+    },
+    {
+      "ordinal": 27,
+      "table": "neptuno_manuel_arguelles.sbs_radar.reviews",
+      "kind": "select_version",
+      "statement": "SELECT `id`, `family`, `synthetic`, `source_kind`, `corpus_hash`, `config_hash`, `known_at`, `published_on`, `effective_on`, `review_status`, `human_approved`, `lineage_json`, `payload_json` FROM `neptuno_manuel_arguelles`.`sbs_radar`.`reviews` VERSION AS OF 1",
+      "statement_sha256": "0b9e60fd729fb4aedd32c465518339f3080929cfa3d4f92a56024db596dc6cf7"
+    },
+    {
+      "ordinal": 28,
+      "table": "neptuno_manuel_arguelles.sbs_radar.reviews",
+      "kind": "detail_after",
+      "statement": "DESCRIBE DETAIL `neptuno_manuel_arguelles`.`sbs_radar`.`reviews`",
+      "statement_sha256": "e72912299522d717bf2a0d66b6ecfc7ee7eea73c9761ce2c83d7edbc90de22e3"
+    },
+    {
+      "ordinal": 29,
+      "table": "neptuno_manuel_arguelles.sbs_radar.processes",
+      "kind": "detail_before",
+      "statement": "DESCRIBE DETAIL `neptuno_manuel_arguelles`.`sbs_radar`.`processes`",
+      "statement_sha256": "30f226ae93ba03098e4d5627b5639fb8dc51643b1e1b920dd6ea364d3b1914a9"
+    },
+    {
+      "ordinal": 30,
+      "table": "neptuno_manuel_arguelles.sbs_radar.processes",
+      "kind": "history",
+      "statement": "DESCRIBE HISTORY `neptuno_manuel_arguelles`.`sbs_radar`.`processes`",
+      "statement_sha256": "f56402ed2a12353ed3d2eb6fc1854c28828912f1786481dfcc3c24cbc7d68646"
+    },
+    {
+      "ordinal": 31,
+      "table": "neptuno_manuel_arguelles.sbs_radar.processes",
+      "kind": "select_version",
+      "statement": "SELECT `id`, `family`, `synthetic`, `source_kind`, `corpus_hash`, `config_hash`, `known_at`, `published_on`, `effective_on`, `review_status`, `human_approved`, `lineage_json`, `payload_json` FROM `neptuno_manuel_arguelles`.`sbs_radar`.`processes` VERSION AS OF 1",
+      "statement_sha256": "df81beb39507f90b13e1aa031b67b2c21a9fbf211729668bbeb6600b74f2a2e3"
+    },
+    {
+      "ordinal": 32,
+      "table": "neptuno_manuel_arguelles.sbs_radar.processes",
+      "kind": "detail_after",
+      "statement": "DESCRIBE DETAIL `neptuno_manuel_arguelles`.`sbs_radar`.`processes`",
+      "statement_sha256": "30f226ae93ba03098e4d5627b5639fb8dc51643b1e1b920dd6ea364d3b1914a9"
+    }
+  ],
+  "requirements": [
+    "Independent review before any SQL or cloud mutation",
+    "Durable reservation in new ledger before each submission; preserve prior99/112 ledger",
+    "GET UC identities and governance, full responses and independent Query History for every statement",
+    "Cache origins must satisfy original SQL identity attribution and original execution age; new query ID does not refresh cache age",
+    "Fresh certified identity/content/version must match pinned snapshot; reject otherwise",
+    "Publish immutable generation bytes with readback before pointer; protected operator-owned store and independent snapshot status",
+    "Registry renewal within readback age only; never extend ttl or rewrite origin timestamps"
+  ],
+  "cost": null
+}

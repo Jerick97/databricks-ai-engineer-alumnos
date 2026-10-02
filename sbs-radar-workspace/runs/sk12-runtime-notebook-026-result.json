@@ -1,0 +1,25 @@
+{
+  "at": "2026-09-28T06:44:09.362048+00:00",
+  "skill": "SK12 0.1.9",
+  "record": "runs/sk12-runtime-notebook-20260928T064341-3cf572ce5253449db024578b2063b16f.json",
+  "record_sha256": "7adc89b3cd0869db5419f000fb62e93c5a7bf1e7ea1834d182a6aff4a1fcd2b0",
+  "status": "passed",
+  "executed_cells": 4,
+  "errors": 0,
+  "source_drift": [],
+  "outputs": [
+    "Xref table not zero-indexed. ID numbers for objects will be corrected.\n",
+    "Xref table not zero-indexed. ID numbers for objects will be corrected.\n",
+    "Xref table not zero-indexed. ID numbers for objects will be corrected.\n",
+    "Xref table not zero-indexed. ID numbers for objects will be corrected.\n",
+    "Xref table not zero-indexed. ID numbers for objects will be corrected.\n",
+    "Xref table not zero-indexed. ID numbers for objects will be corrected.\n",
+    "Xref table not zero-indexed. ID numbers for objects will be corrected.\n",
+    "Xref table not zero-indexed. ID numbers for objects will be corrected.\n",
+    "{\"preparation\": \"published\", \"sources\": 6, \"cloud\": false, \"new_embedding_calls\": 0}\n",
+    "{\"runtime_promoted\": true, \"snapshot\": \"9f05cae625125e6c09e38d72b2ea2eae135cef04a83f6ede0a1fb6c5ac23c00c\", \"comparisons\": [{\"family\": \"cybersecurity\", \"pair\": \"cyber-504\", \"selection\": \"article-10-54817634810d7413\", \"provisions\": 41}, {\"family\": \"market_conduct\", \"pair\": \"market-3274\", \"selection\": \"article-10-df9172c083a9408f\", \"provisions\": 55}]}\n",
+    "{\"runtime_http\": [{\"family\": \"cybersecurity\", \"comparison_http\": 200, \"source_http\": 200, \"source_sha256\": \"1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771\"}, {\"family\": \"market_conduct\", \"comparison_http\": 200, \"source_http\": 200, \"source_sha256\": \"661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342\"}], \"ui_visual_verified\": false, \"generation_called\": false}\n",
+    "{\"invalid_release_rejected\": true, \"previous_runtime_preserved\": true, \"protected_files_unchanged\": 8, \"generation_calls\": 0, \"cloud_e2e_validated\": false}\n"
+  ],
+  "limits": "Local six-source runtime and real loopback HTTP only; no UI/cloud/generation or new embeddings"
+}

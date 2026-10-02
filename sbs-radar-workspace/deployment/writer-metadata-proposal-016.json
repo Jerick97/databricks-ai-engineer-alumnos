@@ -1,0 +1,68 @@
+{
+  "proposal_version": "writer-metadata-016",
+  "status": "prepared_not_executed",
+  "host": "https://dbc-0410b264-20c7.cloud.databricks.com",
+  "profile": "databricks-ai-engineer-aws",
+  "scope": "Dedicated SBS Radar writer principal identity only. Workspace assignment/run-as roles, data grants, OAuth secrets and compute activation are separate unexecuted phases.",
+  "preflight": {
+    "method": "GET",
+    "path": "/api/2.0/account/scim/v2/ServicePrincipals",
+    "query": {
+      "filter": "applicationId eq \"76e59c06-8fd2-489b-8ef3-2b73a98955d2\"",
+      "count": 2,
+      "startIndex": 1
+    }
+  },
+  "create": {
+    "method": "POST",
+    "path": "/api/2.0/account/scim/v2/ServicePrincipals",
+    "body": {
+      "applicationId": "76e59c06-8fd2-489b-8ef3-2b73a98955d2",
+      "displayName": "sbs-radar-writer",
+      "active": true,
+      "schemas": [
+        "urn:ietf:params:scim:schemas:core:2.0:ServicePrincipal"
+      ]
+    }
+  },
+  "reconciliation": "One POST attempt only; always exact applicationId filtered GET after. If response ambiguous, preserve unknown creation attribution and stop; never retry POST or adopt by displayName. Existing applicationId stops create.",
+  "postconditions": [
+    "returned UUID matches pinned applicationId",
+    "numeric service principal id present",
+    "displayName and active match",
+    "readback identity exact",
+    "record returned roles/groups/entitlements field presence; absence is not proof of no inherited permissions"
+  ],
+  "limits": {
+    "get_attempts": 3,
+    "post_attempts": 1,
+    "automatic_retries": 0,
+    "redirects": false,
+    "create_secret": false,
+    "assign_workspace": false,
+    "assign_admin": false,
+    "change_grants": false,
+    "sql_or_compute": false
+  },
+  "authorization_basis": "Approved E2E mission requires dedicated writer separate from app reader; identity metadata preparation within own project scope. No resource-billing authorization inferred.",
+  "evidence": "runs/sk12-metadata-preflight-016.json",
+  "independent_review": "pending_SK09",
+  "apply_allowed": false,
+  "cost": null,
+  "sources": [
+    {
+      "url": "https://docs.databricks.com/aws/en/admin/users-groups/manage-service-principals",
+      "checked_on": "2026-09-28",
+      "claim": "Workspace admins can manage account principals via workspace-domain /api/2.0/account/scim/v2; workspace assignment is separate."
+    },
+    {
+      "url": "https://docs.databricks.com/aws/en/assets/files/account-scim-2_1-da24f7cb52abfee4646aff48adb4307f.pdf",
+      "checked_on": "2026-09-28",
+      "claim": "Service principal list supports exact applicationId filter; POST returns id and applicationId. PDF create example uses User schema inconsistently; use SDK ServicePrincipal enum, not that typo."
+    },
+    {
+      "local": "databricks-sdk0.102 AccountServicePrincipalsAPI.create",
+      "claim": "Optional application_id UUID serialized as applicationId, active, displayName and ServicePrincipal schema supported. Endpoint proxy mapping documented separately."
+    }
+  ]
+}

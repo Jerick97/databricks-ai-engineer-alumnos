@@ -1,0 +1,10 @@
+# Matriz
+
+- no_expert: no goldjuridico validado por mismomodelo; pruebastecnicas separadas
+- family_average: marketconduct0.8 falla; globalnooculta
+- leakage: evitar versioncompartida; preguntaid no basta
+- retrieval_variants: congelar corpus preguntas fragmentos ymodelo; cuatrovariantes; no atribuircausa a cambiodemultiplesfactores
+- time_baseline: total16minvs10; empeora60%
+- trigger_no: observabilidadpropietaria
+
+No afirmar que reference.json revisado porque role dice expert; revisar provenance yworkflow humano.

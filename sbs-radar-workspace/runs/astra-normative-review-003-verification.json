@@ -1,0 +1,30 @@
+{
+  "run_id": "astra-normative-review-003",
+  "report_path": "runs/astra-normative-review-003.json",
+  "report_sha256": "590a8f400674d48a0d2b80e83d04c6ba4c5b0b84cdde8c8432f609059552ff24",
+  "json_valid": true,
+  "cited_raw_spans_verified": 21,
+  "source_pdf_hashes_verified": 6,
+  "prior_report_hash_unchanged": true,
+  "citation_references_resolve": true,
+  "new_visual_pages_inspected": 12,
+  "prior_visual_pages_reused": 2,
+  "sample_in_both_families": "passed",
+  "global_legal_validity": "not_evaluated",
+  "human_gold": false,
+  "institutional_approval": false,
+  "output_artifacts": [
+    {
+      "path": "runs/astra-normative-review-003.json",
+      "sha256": "590a8f400674d48a0d2b80e83d04c6ba4c5b0b84cdde8c8432f609059552ff24"
+    },
+    {
+      "path": "runs/astra-market-word-diff-003.json",
+      "sha256": "269b9eccb31e502f0de5c24cd5fbc819ecb5fb0fa8613be52864522fcde844f8"
+    },
+    {
+      "path": "runs/astra-normative-review-003-invocation.json",
+      "sha256": "2a6a23283ed1204d331d0fdf5789431beb7186296a57b3d01fc20d619be045ca"
+    }
+  ]
+}

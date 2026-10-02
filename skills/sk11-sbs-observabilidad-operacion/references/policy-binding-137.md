@@ -1,0 +1,7 @@
+# Corrección aditiva137 de binding130
+
+Preserva todos los bytes130 y sus fallos originales. Reutiliza su contrato operativo (64HTTP/2writes, sin Job/SQL/ACL writes ni runs). Cambios: journal equal/descendant/ancestor de provision106 rechazado antes mkdir en CLI y antes todo efecto constructor; authorize valida issued/expires de política persistida en cada operación, después de autenticación y al consumir respuesta/readback. No renueva ni retimestamp. Nueva ventana sólo en execute tras autenticación y observaciones frescas; no emitida en esta entrega.
+
+Usar módulo sbs.operations.policy_binding_137, template deployment/policy-binding137-review-template.json y journal separado deployment/state/policy-binding137. Scope se conserva policy_binding130 y documento policy130 para reconciliación compatible; hashes del registro fijan código137. No reutilizar capability con hashes130. Preflight por defecto; --execute --review-file <registro137> --journal <journal separado>.
+
+6 pruebas locales: cuatro contratos130 sobre implementación137 y dos regresiones discriminantes del revisor. Expiry cruzada en GET durante resume produce cero writes; journal overlap produce cero carpetas. Contratos HTTP simulados, no E2E cloud. Freeze130 sigue histórico FAIL;137 requiere revisión independiente. JobPAUSED; primer run, publicación, recuperación, renovación de política30min y certificadoGenie5min pendientes.

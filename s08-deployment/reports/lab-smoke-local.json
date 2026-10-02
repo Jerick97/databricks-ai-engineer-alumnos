@@ -1,0 +1,142 @@
+[
+  {
+    "case": "ventas",
+    "client_request_id": null,
+    "served_model_version": null,
+    "pass": true,
+    "answer": "Venta neta de Bebidas en 2026: 116024.88. Fuente: neptuno_manuel_arguelles.gold.ventas_por_categoria_mes.",
+    "metadata": {
+      "tool_audit": [
+        {
+          "tool": "ventas_categoria",
+          "ok": true
+        }
+      ],
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "latency_ms": 4100,
+      "input_tokens": 2252,
+      "output_tokens": 67,
+      "moderation": "ai_gateway_input_output",
+      "prompt_version": "embedded",
+      "agent_revision": "s08-v2",
+      "llm_endpoint": "databricks-meta-llama-3-3-70b-instruct"
+    },
+    "elapsed_seconds": 5.2
+  },
+  {
+    "case": "aclaracion",
+    "client_request_id": null,
+    "served_model_version": null,
+    "pass": true,
+    "answer": "¿De qué año necesitas la venta neta? Indica también la categoría.",
+    "metadata": {
+      "tool_audit": [],
+      "tool_calls": 0,
+      "tool_errors": 0,
+      "latency_ms": 655,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "moderation": "ai_gateway_input_output",
+      "prompt_version": "embedded",
+      "agent_revision": "s08-v2",
+      "llm_endpoint": "databricks-meta-llama-3-3-70b-instruct"
+    },
+    "elapsed_seconds": 0.66
+  },
+  {
+    "case": "categoria_ausente",
+    "client_request_id": null,
+    "served_model_version": null,
+    "pass": true,
+    "answer": "Falta la categoría para poder realizar la consulta de ventas. ¿Podrías proporcionar la categoría para la que deseas conocer las ventas en 2026?",
+    "metadata": {
+      "tool_audit": [
+        {
+          "tool": "ventas_categoria",
+          "ok": false
+        }
+      ],
+      "tool_calls": 1,
+      "tool_errors": 1,
+      "latency_ms": 4517,
+      "input_tokens": 2195,
+      "output_tokens": 60,
+      "moderation": "ai_gateway_input_output",
+      "prompt_version": "embedded",
+      "agent_revision": "s08-v2",
+      "llm_endpoint": "databricks-meta-llama-3-3-70b-instruct"
+    },
+    "elapsed_seconds": 4.52
+  },
+  {
+    "case": "reposicion",
+    "client_request_id": null,
+    "served_model_version": null,
+    "pass": true,
+    "answer": "Productos que requieren reposición según la tabla de inventario:\nNord-Ost Matjeshering (stock 10, en camino 0, punto de reorden 15)\nOutback Lager (stock 15, en camino 10, punto de reorden 30). Fuente: neptuno_manuel_arguelles.gold.inventario_disponible.",
+    "metadata": {
+      "tool_audit": [
+        {
+          "tool": "productos_reponer",
+          "ok": true
+        }
+      ],
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "latency_ms": 3842,
+      "input_tokens": 2267,
+      "output_tokens": 133,
+      "moderation": "ai_gateway_input_output",
+      "prompt_version": "embedded",
+      "agent_revision": "s08-v2",
+      "llm_endpoint": "databricks-meta-llama-3-3-70b-instruct"
+    },
+    "elapsed_seconds": 3.84
+  },
+  {
+    "case": "rag",
+    "client_request_id": null,
+    "served_model_version": null,
+    "pass": true,
+    "answer": "Evidencia recuperada (fragmentos; no una política completa):\nEl cliente debe informar el número de pedido. [documento_id=politica_devoluciones; chunk_id=5dfa4938954c886f65da095315df423892251df3a76b7290fb4baa631932e4a0]\nSi supera 48 horas, Neptuno puede solicitar una nota de crédito equivalente al 8 por ciento del flete. [documento_id=contrato_expreso_veloz; chunk_id=53df687b36a31865239afd862533f03123c2e7092acb3eb76f765daa07caa303]\nMercadería refrigerada requiere embalaje térmico provisto por Neptuno; el transportista registra temperatura en recepción y entrega. [documento_id=contrato_paquetes_unidos; chunk_id=f3b06517a6979fc3d122cac029634df939ca573e0456be50b8676b68d3a36012]",
+    "metadata": {
+      "tool_audit": [
+        {
+          "tool": "buscar_documentos",
+          "ok": true
+        }
+      ],
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "latency_ms": 4345,
+      "input_tokens": 2535,
+      "output_tokens": 124,
+      "moderation": "ai_gateway_input_output",
+      "prompt_version": "embedded",
+      "agent_revision": "s08-v2",
+      "llm_endpoint": "databricks-meta-llama-3-3-70b-instruct"
+    },
+    "elapsed_seconds": 4.35
+  },
+  {
+    "case": "costos",
+    "client_request_id": null,
+    "served_model_version": null,
+    "pass": true,
+    "answer": "No puedo calcular margen ni rentabilidad: faltan datos de costos. Puedo consultar venta neta.",
+    "metadata": {
+      "tool_audit": [],
+      "tool_calls": 0,
+      "tool_errors": 0,
+      "latency_ms": 663,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "moderation": "ai_gateway_input_output",
+      "prompt_version": "embedded",
+      "agent_revision": "s08-v2",
+      "llm_endpoint": "databricks-meta-llama-3-3-70b-instruct"
+    },
+    "elapsed_seconds": 0.67
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "type": "object",
+  "properties": {
+    "citation_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "document_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "version_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "provision_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "page": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "start": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "end": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "source_kind": {
+      "enum": [
+        "normative",
+        "fictitious_process"
+      ]
+    },
+    "synthetic": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "citation_id",
+    "document_id",
+    "version_id",
+    "provision_id",
+    "page",
+    "start",
+    "end",
+    "text",
+    "source_kind",
+    "synthetic"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sbs:contracts:Provision:0.1.0",
+  "title": "Provision",
+  "description": "SK01 v0.1.0. Local structural contract. Does not establish source truth, immutable persistence, citation literalness or authenticated authorization. Unknown fields rejected; ModelBundle parameters alone permits scalar extension keys."
+}

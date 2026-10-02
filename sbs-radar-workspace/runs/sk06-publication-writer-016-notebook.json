@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "code_cells": 2,
+  "executed_cells": 2,
+  "source_sha256": "822f82c45de7c23bc249af817fa6ac8e9d08a275387af28fb28b2c0271f811a3",
+  "output_sha256": "19bfb1c8efd0426e373aa6fc0b98bc5bd822eee1b35af92f0db25d9b1bad4e9a",
+  "scope": "Actual local notebook kernel; sealed export002 preflight only; no SDK creation or cloud",
+  "remote_sql": 0,
+  "resource_actions": 0
+}

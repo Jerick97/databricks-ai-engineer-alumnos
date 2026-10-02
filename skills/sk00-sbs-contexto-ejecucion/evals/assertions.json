@@ -1,0 +1,25 @@
+{
+  "reuse": [
+    "reutiliza fuentes actuales",
+    "no búsquedas globales duplicadas",
+    "registra vigencia/hash"
+  ],
+  "changed": [
+    "invalida spans y descendientes",
+    "conserva catálogo independiente"
+  ],
+  "capability": [
+    "capacidad no verificada",
+    "no checkpoint deployment passed"
+  ],
+  "insufficient": [
+    "no sustituye corpus real por fixtures",
+    "brecha explícita por familia"
+  ],
+  "trigger_yes": [
+    "sí contexto"
+  ],
+  "trigger_no": [
+    "no contenido jurídico"
+  ]
+}

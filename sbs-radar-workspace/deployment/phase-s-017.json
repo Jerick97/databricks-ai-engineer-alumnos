@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "phase": "S",
+  "profile": "databricks-ai-engineer-aws",
+  "publication_id": "pilot002-016",
+  "state_root": "deployment/state/phase-s-017",
+  "writer": {
+    "host": "https://dbc-0410b264-20c7.cloud.databricks.com",
+    "schema_name": "neptuno_manuel_arguelles.sbs_radar",
+    "schema_id": "ff244e9c-7d34-4c2d-8d74-a33292cd5f2c",
+    "warehouse_id": "828756322bedff37",
+    "executor_id": 76826984571984,
+    "owner": "sociosdosmilveintiseis@gmail.com",
+    "plan_sha256": "ec0832f9e5eb3dc1acc326d6499b31ad95d1e5d9be5ca363ca1b5eaae0974715",
+    "evidence_mode": "real",
+    "max_http_calls": 512
+  },
+  "max_window_ms": 1800000,
+  "inputs": {
+    "runs/sk06-publication-writer-016-plan.json": "ec0832f9e5eb3dc1acc326d6499b31ad95d1e5d9be5ca363ca1b5eaae0974715",
+    "src/sbs/genie/publication_writer.py": "865dafbfd7ba5e8d5971d50375d297fa6d55f238e77d46a86536a45f9116fb58",
+    "src/sbs/genie/publication.py": "ae74dd2a5a4c9f1490ca0eaa3dc26e95d11c7c23d6a9bcaeac6412995a40ae35",
+    "src/sbs/genie/publication_registry.py": "21b49e38cf0c24dc4094a798053726d4ae50520d8e49d99ed1441ac11829d01e",
+    "runs/sk12-uc-metadata-preflight-015.json": "5de560f50c01580abd271dbf769ddbd416814018262cf4f2fa9c9532c71e4358",
+    "deployment/uc-observed-015.json": "8c08daedff5c543d07a7b43a54fc6f48110e8a1e547e239102711f8351c87a0a",
+    "runs/sk09-genie-publication-writer-016-review.json": "ef79d8d120bc13282964d3f0e807556457316ae49ae5e810c105826e125d184c",
+    "src/sbs/genie/publication_renewal.py": "8d7567cf2b8fd48379061e3f1d784c97d897eeb9cbb387fec66c259298f0e302",
+    "src/sbs/genie/delta.py": "0722e906985d6afc32c57a7a920f9418c4110febfba81c69938117068d030478",
+    "src/sbs/genie/publication_recovery.py": "7aa9ff044f5dca50148b5fef9e1540c037497dea2655aa4df661b5b242769a47",
+    "runs/sk06-recovery-064.py": "e738d0dccdcdcc8a522101b47c31c8f3134907153755e8eb88e2c9353d2b24bb"
+  },
+  "cost": null,
+  "sql_success_path": 80,
+  "sql_cap_per_instance": 112,
+  "workspace_http_cap_per_instance": 512,
+  "start_warehouse": false,
+  "requires_genie_space": false,
+  "requires_job": false,
+  "requires_app": false,
+  "server_policy_assumptions_unobserved": {
+    "trusted_administrators": "Se conf\u00eda en los administradores existentes del piloto; no se prueba continuidad frente a un administrador adversarial.",
+    "exclusive_maintenance": "Durante esta publicaci\u00f3n y su readback, ninguna otra operaci\u00f3n modifica, reemplaza o elimina estas ocho tablas; el uso ajeno del warehouse compartido queda fuera de esta exclusividad de datos.",
+    "retention": "El administrador conservar\u00e1 las versiones Delta y las identidades certificadas durante la vigencia del registro; no ejecutar\u00e1 VACUUM ni eliminar\u00e1 o reemplazar\u00e1 estas tablas durante esa vigencia.",
+    "no_inherited_abac": "Supuesto t\u00e9cnico del perfil piloto: no hay ABAC heredada que altere estas ocho tablas. No observado por GET ni atestado por el usuario; cualquier pol\u00edtica/m\u00e1scara/filtro observada incompatible obliga a rechazar."
+  },
+  "server_policy_profile": "trusted_admin_observed_v1",
+  "policy_selected_by": "server_executor",
+  "policy_user_attestation": false
+}

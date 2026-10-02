@@ -1,0 +1,9 @@
+// Tests real turno branch with DOM mocks; no credentials or remote calls.
+const fs=require('fs'),vm=require('vm'),assert=require('assert'),path=require('path');
+const html=fs.readFileSync(path.join(__dirname,'index.html'),'utf8');
+function fn(name){return html.match(new RegExp('  (?:async )?function '+name+'\\([^]*?\\n  }'))[0];}
+const bubbles=[];let calls=0,removed=0,focuses=0;
+const env={conversacion:[],ultimaPregunta:null,input:{focus(){focuses++;}},fmt:undefined,pintarSelector(){},bloquear(){},burbuja(cls,text){bubbles.push(text);},preguntar(){calls++;throw Error('MODEL_FORBIDDEN');},fetch(){throw Error('NETWORK_FORBIDDEN');}};
+vm.createContext(env);vm.runInContext(fn('fmt')+'\n'+fn('turno'),env);
+const questions=['porque en el boton versiones a comprar solo hay una opcion?','¿Por qué en Versiones a comparar solo hay una opción? ¿Eso significa que hay una sola versión?','¿Y eso significa que al pulsar Actualizar catálogo en esta guía local aparecerán nuevas versiones?'];
+(async()=>{for(const q of questions)await env.turno(q,{remove(){removed++;}});assert.equal(calls,0);assert.equal(bubbles.length,3);assert.equal(env.conversacion.length,6);assert.equal(removed,3);assert.equal(focuses,3);for(let i=0;i<2;i++){assert(bubbles[i].includes('par de dos copias'));assert(bubbles[i].includes('un par por familia'));}assert(bubbles[2].includes('No lee un repositorio, no añade pares'));assert(bubbles.every(x=>x.includes('respuesta preparada, sin llamada al modelo')));assert.deepEqual(Array.from(env.conversacion.filter(x=>x.role==='user'),x=>x.content),questions);console.log(JSON.stringify({status:'PASS_UI_FACTS_DOM_MOCK',exact_user_question_and_two_probes:3,history_messages:6,model_calls:0,network_calls:0,prepared_label_present:true,sidecar_read:false,real_browser_e2e:false}));})().catch(e=>{console.error(e);process.exitCode=1;});

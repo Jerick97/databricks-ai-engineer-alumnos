@@ -1,0 +1,2266 @@
+{
+  "run_id": "astra-normative-review-006",
+  "completed_at_utc": "2026-09-28T04:50:13.387896+00:00",
+  "artifact_type": "revisión normativa IA histórica; no referencia humana ni reconstrucción oficial",
+  "skill_id": "SK09",
+  "skill_version": "0.1.2",
+  "skill_sha256": "46e9f9851d46b2ec95f61dabdaed6ec30cc28799f8c8e017615d87dcff6d2b66",
+  "protocol_path": "skills/sbs-evaluacion-jueces/references/revision-ia.md",
+  "protocol_sha256": "8ee94f8b3b26614996e07d86cf6c9ce878d29240009e922f4305639933506b25",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "human_approved": false,
+  "institutional_impact_approved": false,
+  "invocation_path": "runs/astra-normative-review-006-invocation.json",
+  "invocation_sha256": "0167a52d9a84ea0ec37a5e35db4248acaa36076a32a94a724c61e7dbba797dd6",
+  "scope": "Par documental4036 A/B y acto3240 anotado; comparación literal, alcance bancario condicional, cronología declarada, anexos y fuga de linaje.",
+  "overall_verdict": "Comparación histórica literal verificable; anexos/versionado jurídico incompletos; independencia de linaje rechazada. No current-law claim.",
+  "sources": [
+    {
+      "source_id": "4036_A",
+      "source": {
+        "document_id": "sbs-4036-2022",
+        "family": "market_conduct",
+        "source_kind": "normative",
+        "synthetic": false,
+        "version_id": "594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d",
+        "sha256": "594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d",
+        "url": "https://intranet2.sbs.gob.pe/dv_int_cn/2230/v1.0/Adjuntos/4036-2022.r.pdf",
+        "captured_at": "2026-09-28T00:58:12.579440+00:00",
+        "published_on": null,
+        "effective_on": null,
+        "date_unknown_reasons": {
+          "effective_on": "Pending SK09 review; literal clauses retained separately",
+          "published_on": "Pending authoritative date reconciliation"
+        }
+      },
+      "original_path": "data/foundation-holdout/objects/59/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d.pdf",
+      "rawtext_path": "data/foundation-holdout/derived/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "result_path": "data/foundation-holdout/derived/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/result.json",
+      "pages": 15,
+      "quality": {
+        "status": "partial",
+        "limitations": [
+          "annex_references_pending",
+          "layout_table_review_pending",
+          "semantic_segmentation_pending"
+        ]
+      },
+      "original_sha256": "594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d",
+      "result_sha256": "13af66189f7759ce29d74b08717e88c78b4acc92e131b56c829eabf2a4e12c80",
+      "rawtext_sha256": "b6f83c6421c0b049fe52a2297d29b080baa02f1164d0951acf3a95f7c6b440e2",
+      "existing_six_pdf_hash_overlap": false,
+      "literal_evidence": [
+        {
+          "page": 1,
+          "start": 213,
+          "end": 251,
+          "text": "Lima 27 - Perú   Telf.: (511) 6309000 "
+        },
+        {
+          "page": 1,
+          "start": 263,
+          "end": 293,
+          "text": "Lima, 28 de diciembre de 2022 "
+        },
+        {
+          "page": 2,
+          "start": 2698,
+          "end": 2736,
+          "text": "Lima 27 - Perú   Telf.: (511) 6309000 "
+        },
+        {
+          "page": 3,
+          "start": 5964,
+          "end": 6002,
+          "text": "Lima 27 - Perú   Telf.: (511) 6309000 "
+        },
+        {
+          "page": 4,
+          "start": 9377,
+          "end": 9415,
+          "text": "Lima 27 - Perú   Telf.: (511) 6309000 "
+        },
+        {
+          "page": 5,
+          "start": 13640,
+          "end": 13678,
+          "text": "Lima 27 - Perú   Telf.: (511) 6309000 "
+        },
+        {
+          "page": 6,
+          "start": 16957,
+          "end": 16995,
+          "text": "Lima 27 - Perú   Telf.: (511) 6309000 "
+        },
+        {
+          "page": 7,
+          "start": 20575,
+          "end": 20613,
+          "text": "Lima 27 - Perú   Telf.: (511) 6309000 "
+        },
+        {
+          "page": 2,
+          "start": 2742,
+          "end": 2796,
+          "text": "Que, el marco normativo sobre reclamos fue modificado "
+        },
+        {
+          "page": 15,
+          "start": 51612,
+          "end": 51675,
+          "text": "ntrada en vigencia del citado Reglamento , quedan derogadas la "
+        },
+        {
+          "page": 4,
+          "start": 10504,
+          "end": 10568,
+          "text": "con los códigos de los Anexos de los Reportes de Reclamos – RR. "
+        },
+        {
+          "page": 4,
+          "start": 11252,
+          "end": 11350,
+          "text": "información señalada en el Anexo Nº 1-A, la que debe mantenerse actualizada de manera que permita "
+        },
+        {
+          "page": 6,
+          "start": 17826,
+          "end": 17920,
+          "text": "la información señalada en  el Anexo Nº 1 -B la que debe mantenerse actualizada de manera que "
+        },
+        {
+          "page": 8,
+          "start": 26709,
+          "end": 26769,
+          "text": "reclamo previo, conforme a lo señalado en el Anexo 1 -A del "
+        },
+        {
+          "page": 11,
+          "start": 38030,
+          "end": 38129,
+          "text": "y RR3 que se presentan como Anexo N° 2 de la Resolución. Para tal fin, deben tenerse en cuenta las "
+        },
+        {
+          "page": 11,
+          "start": 38130,
+          "end": 38219,
+          "text": "tablas de códigos que se incluyen como anexos de la Resolución, así como sus respectivos "
+        },
+        {
+          "page": 11,
+          "start": 38676,
+          "end": 38718,
+          "text": "con los campos señalados en el Anexo N°2. "
+        },
+        {
+          "page": 13,
+          "start": 44034,
+          "end": 44089,
+          "text": "o para la atención de reclamos, mantienen su vigencia. "
+        }
+      ]
+    },
+    {
+      "source_id": "4036_B",
+      "source": {
+        "document_id": "sbs-4036-2022",
+        "family": "market_conduct",
+        "source_kind": "normative",
+        "synthetic": false,
+        "version_id": "7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749",
+        "sha256": "7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749",
+        "url": "https://intranet2.sbs.gob.pe/dv_int_cn/2230/v6.0/Adjuntos/4036-2022.R%20.pdf",
+        "captured_at": "2026-09-28T04:37:42.546804+00:00",
+        "published_on": null,
+        "effective_on": null,
+        "date_unknown_reasons": {
+          "published_on": "Literal issue dates/footnotes retained; publication metadata reconciliation pending SK09",
+          "effective_on": "Pending SK09 normative review; no effect inferred from repository version"
+        }
+      },
+      "original_path": "data/foundation-holdout/objects/7c/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749.pdf",
+      "rawtext_path": "data/foundation-holdout/derived/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "result_path": "data/foundation-holdout/derived/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/result.json",
+      "pages": 16,
+      "quality": {
+        "status": "partial",
+        "limitations": [
+          "annex_references_pending",
+          "layout_table_review_pending",
+          "semantic_segmentation_pending"
+        ]
+      },
+      "original_sha256": "7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749",
+      "result_sha256": "29c111b93000ea34ffaf94c00b9534c4de1ca230703416299192beac4e75b37a",
+      "rawtext_sha256": "1946f8f1988a8fd55e9a13d878dfc671cd65277af8b1a28adf2f7d7ad90063e2",
+      "source_capture": "real secure transport8GETledger; this sealing reuses exact verified bytes",
+      "classification": "official_repository_consolidated_copy_version6_not_asserted_current",
+      "literal_evidence": [
+        {
+          "pattern": "Lima, 28 de diciembre de 2022",
+          "page": 1,
+          "start": 183,
+          "end": 642,
+          "text": "   \n \n \nLos Laureles Nº 214 - Lima 27 - Perú   Telf.: (511) 6309000 \n1 \n \n \n \n \nLima, 28 de diciembre de 2022 \n \nResolución S.B.S. \nN° 04036- 2022 \n \nLa Superintendenta de Banca, Seguros y \nAdministradoras Privadas de Fondos de Pensiones \n \n \nCONSIDERANDO: \n \nQue, conforme al artículo 345 de la Ley N° 26702, Ley \nGeneral del Sistema Financiero y del Sistema de Seguros y Orgánica de la Superintendencia de \nBanca y Seguros, la Superintendencia protege los i",
+          "text_sha256": "8aed889196abeb90193b1e6d15087998bab5b79e7b2188a9c21fb40e890cb3df"
+        },
+        {
+          "pattern": "3240.?2023",
+          "page": 3,
+          "start": 9099,
+          "end": 9205,
+          "text": "reclamo o de un requerimiento. \n \n1 Párrafo modificado por la Resolución SBS N° 3240-2023 del 03/10/2023. ",
+          "text_sha256": "d07a2ef531414773766e9ee56010cd3ca7ff8ccdcf842732887b5ab19dd0e4ea"
+        },
+        {
+          "pattern": "3240.?2023",
+          "page": 11,
+          "start": 40017,
+          "end": 40123,
+          "text": "mar en dicho plazo sobre los \n \n10 Literal incorporado por la Resolución SBS N° 3240-2023 del 03/10/2023. ",
+          "text_sha256": "86cd943f65b36bddeeea0f7c7e5f25b78df500aac165548475867d0ad0be3a6b"
+        },
+        {
+          "pattern": "2286.?2024",
+          "page": 10,
+          "start": 36084,
+          "end": 36489,
+          "text": "os más frecuentes de reclamo.  \n \n8 Párrafo modificado por la Resolución SBS Nº 2286-2024, vigente a partir del 29/06/2024, con plazo de adecuación \nconforme al artículo séptimo de la misma Resolución SBS N°2286-2024. \n9 Párrafo modificado por la Resolución SBS Nº 2286-2024, vigente a partir del 29/06/2024, con plazo de adecuación \nconforme al artículo séptimo de la misma Resolución SBS N°2286-2024. \n ",
+          "text_sha256": "ab1d90006675104a8039b8bbdbb4a4e2ba0b7da4f8d0ed6af6f244e89be79664"
+        },
+        {
+          "pattern": "2286.?2024",
+          "page": 10,
+          "start": 36211,
+          "end": 36489,
+          "text": " plazo de adecuación \nconforme al artículo séptimo de la misma Resolución SBS N°2286-2024. \n9 Párrafo modificado por la Resolución SBS Nº 2286-2024, vigente a partir del 29/06/2024, con plazo de adecuación \nconforme al artículo séptimo de la misma Resolución SBS N°2286-2024. \n ",
+          "text_sha256": "3bc8b277dacb4a665820180be54a5269f592cfbd43e7cb2256d04446b2567156"
+        },
+        {
+          "pattern": "Art[ií]culo 2",
+          "page": 3,
+          "start": 6169,
+          "end": 6609,
+          "text": "istradoras Privadas de \nFondos de Pensiones (AFP), en adelante las empresas. \n \nArtículo 2. Definiciones \nPara efecto s de lo dispuesto en el presente Reglamento , deben considerarse las siguientes \ndefiniciones y referencias: \n1. Empresas: las consideradas en el alcance del artículo 1. \n2. Ley General: Ley General del Sistema Financiero y del Sistema de Seguros y Orgánica de la \nSuperintendencia de Banca y Seguros, Ley N° 26702 y sus n",
+          "text_sha256": "6384c9dc96ee5ad22223614ad67573403d7f51c5dfca6dc74a520ff4642274e4"
+        },
+        {
+          "pattern": "Artículo Octavo",
+          "page": 15,
+          "start": 52354,
+          "end": 52799,
+          "text": "es de recepción y/o respuesta de reclamos, conforme a la normativa \nvigente. \n \nArtículo Octavo.- La presente Resolución entra en vigencia el \n1 de enero de 2024 , siendo dicho mes el primer periodo a reportar de acuerdo con lo señalado en el \nartículo 16 del Reglamento. A la entrada en vigencia del citado Reglamento , quedan derogadas la \nCircular G-184-2015, Circular de Atención al Usuario y el Capítulo I del Título VI del Reglamento del \n",
+          "text_sha256": "1f4ba069e354d133ced10edf755b5645fb5742ba5ce76417bb37feec96bae051"
+        },
+        {
+          "pattern": "sistema financiero",
+          "page": 1,
+          "start": 430,
+          "end": 878,
+          "text": "IDERANDO: \n \nQue, conforme al artículo 345 de la Ley N° 26702, Ley \nGeneral del Sistema Financiero y del Sistema de Seguros y Orgánica de la Superintendencia de \nBanca y Seguros, la Superintendencia protege los intereses del público en el ámbito de  los sistemas \nfinanciero y de seguros; y conforme al inciso d) del artículo 57 del Texto Único Ordenado de la Ley del \nSistema Privado de Administración de Fondos de Pensiones, aprobado por Decreto ",
+          "text_sha256": "8b540e463bbc4dccd52f97680836c413f2121279510b1ca12b80d3fe8dbd31cf"
+        },
+        {
+          "pattern": "sistema financiero",
+          "page": 1,
+          "start": 1441,
+          "end": 1889,
+          "text": "o de atención de reclamos y requerimientos de los usuarios de las empresas \ndel sistema financiero, de seguros y privado de pensiones; \n \nQue, se han producido importantes cambios y avances en \nlos servicios financieros como resultado de la innovación tecnológica en  un entorno de mayor \ndigitalización, los cuales además se han acelerado como consecuencia de la pandemi a originada a \nraíz del COVID-19;  \n \nQue, los referidos cambios y avances s",
+          "text_sha256": "9e2e0b5288bd431fb3c014cc47c65b85c996efd5461473b9ea32ff67f28687bc"
+        }
+      ],
+      "repository_version_not_legal_effect": true,
+      "subsequent_2286_2024_annotation_present": true,
+      "extraction_warning": "pypdf strict reader emitted Xref table not zero-indexed warning; original bytes preserved; extraction quality partial"
+    },
+    {
+      "source_id": "3240",
+      "source": {
+        "document_id": "sbs-3240-2023",
+        "family": "market_conduct",
+        "source_kind": "normative",
+        "synthetic": false,
+        "version_id": "e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1",
+        "sha256": "e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1",
+        "url": "https://intranet2.sbs.gob.pe/dv_int_cn/2305/v1.0/Adjuntos/3240-2023.R.pdf",
+        "captured_at": "2026-09-28T04:37:42.543083+00:00",
+        "published_on": null,
+        "effective_on": null,
+        "date_unknown_reasons": {
+          "published_on": "Literal issue dates/footnotes retained; publication metadata reconciliation pending SK09",
+          "effective_on": "Pending SK09 normative review; no effect inferred from repository version"
+        }
+      },
+      "original_path": "data/foundation-holdout/objects/e3/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1.pdf",
+      "rawtext_path": "data/foundation-holdout/derived/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/a8750324698b9eeabd8cd9a0f560c530df6380c60b7b99da07c65087ecf8d910/rawtext.txt",
+      "result_path": "data/foundation-holdout/derived/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/a8750324698b9eeabd8cd9a0f560c530df6380c60b7b99da07c65087ecf8d910/result.json",
+      "pages": 7,
+      "quality": {
+        "status": "partial",
+        "limitations": [
+          "annex_references_pending",
+          "layout_table_review_pending",
+          "semantic_segmentation_pending"
+        ]
+      },
+      "original_sha256": "e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1",
+      "result_sha256": "3c2b5bad01be433e033ca62383b495d5a649deb4ebdc0dc62b971880951556ab",
+      "rawtext_sha256": "48ed43b6b32f82c5b8279aa949ec9d743c70ff470e5b4fdcad8a554e5a2f3872",
+      "source_capture": "real secure transport8GETledger; this sealing reuses exact verified bytes",
+      "classification": "official_repository_annotated_copy_of_amending_act_not_pristine_publication",
+      "literal_evidence": [
+        {
+          "pattern": "Lima, 02 de octubre de 2023",
+          "page": 1,
+          "start": 0,
+          "end": 443,
+          "text": " \n \nLos Laureles Nº 214 - Lima 27 - Perú   Telf. : (511) 6309000 \nLima, 02 de octubre de 2023 \n \nResolución S.B.S. \nN° 3240-2023 \n \nLa Superintendenta de Banca, Seguros y \nAdministradoras Privadas de Fondos de Pensiones \n \n \n     CONSIDERANDO: \n \nQue, mediante  la Resolución SBS N° 3274 -2017 y sus \nmodificatorias se aprobó el Reglamento de Gestión de Conducta de Mercado del Sistema Financiero, con la \nfinalidad de que las empresas cuenten",
+          "text_sha256": "84bd73ed4a515710fdd33a6c1baa7f15159982f9a6b988801815d5d100f553a3"
+        },
+        {
+          "pattern": "Artículo Sexto",
+          "page": 5,
+          "start": 11552,
+          "end": 11996,
+          "text": "e la autenticación reforzada, \nsiempre que la empresa cumpla con: \n(…)” \n \n     Artículo Sexto. - Modificar el Reglamento de Reclamos y \nRequerimientos, aprobado mediante la Resolución SBS N° 4036-2022, conforme se indica a continuación: \n \n1. Modificar el párrafo 4.1 del artículo 4 , la Segunda Disposición Complementaria Final  y el \ncódigo del motivo de reclamo 115 “Indebida contratación” aplicable a las empresas \nsupervisadas del Anexo C",
+          "text_sha256": "3e81b08f54c992aa1b0dc4564641663ff3dc774fc843b36a2f77df64fc82b817"
+        },
+        {
+          "pattern": "Artículo Sexto",
+          "page": 6,
+          "start": 14444,
+          "end": 14888,
+          "text": "l El Peruano. \n \n \nRegístrese, comuníquese y publíquese. \n \n \n \n \n1 Mediante el artículo Sexto de la Resolución SBS Nº 2286-2024, vigente a partir del 29/06/2024, se dispuso lo siguiente: “Con \nrelación al plazo de adecuación establecido en el artículo Séptimo de la Resolución SBS N° 3240 -2023, para la implementación de las \nmodificaciones al numeral 4 del párrafo 29.1 del artículo 29 del Reglamento de Gestión de Conducta de Mercado del Si",
+          "text_sha256": "464bca61d555018df1c20299d7ec03c1bfe06090b9395a881b6ff6950453dcd9"
+        },
+        {
+          "pattern": "4036.?2022",
+          "page": 5,
+          "start": 11664,
+          "end": 12103,
+          "text": "eglamento de Reclamos y \nRequerimientos, aprobado mediante la Resolución SBS N° 4036-2022, conforme se indica a continuación: \n \n1. Modificar el párrafo 4.1 del artículo 4 , la Segunda Disposición Complementaria Final  y el \ncódigo del motivo de reclamo 115 “Indebida contratación” aplicable a las empresas \nsupervisadas del Anexo C: Códigos de Motivos de Reclamos , de acuerdo con los siguientes \ntextos: \n \n“Artículo 4. Tramitación de re",
+          "text_sha256": "be202b34ae79fef3729860cf67487317a537d559404b31e94164494c10e37e03"
+        },
+        {
+          "pattern": "2286.?2024",
+          "page": 6,
+          "start": 14483,
+          "end": 14922,
+          "text": "ese y publíquese. \n \n \n \n \n1 Mediante el artículo Sexto de la Resolución SBS Nº 2286-2024, vigente a partir del 29/06/2024, se dispuso lo siguiente: “Con \nrelación al plazo de adecuación establecido en el artículo Séptimo de la Resolución SBS N° 3240 -2023, para la implementación de las \nmodificaciones al numeral 4 del párrafo 29.1 del artículo 29 del Reglamento de Gestión de Conducta de Mercado del Sistema \nFinanciero, aprobado median",
+          "text_sha256": "abb6d5667e102a570f36a22fe8cd372e6cdc0fb8e718fd08d28488dfc540c3b1"
+        },
+        {
+          "pattern": "Artículo S[eé]ptimo",
+          "page": 6,
+          "start": 14608,
+          "end": 15054,
+          "text": "e dispuso lo siguiente: “Con \nrelación al plazo de adecuación establecido en el artículo Séptimo de la Resolución SBS N° 3240 -2023, para la implementación de las \nmodificaciones al numeral 4 del párrafo 29.1 del artículo 29 del Reglamento de Gestión de Conducta de Mercado del Sistema \nFinanciero, aprobado mediante Resolución SBS N° 3274 -2017, se amplía el plazo otorgado por ciento ochenta (180) días adicionales \ncontados a partir del vencim",
+          "text_sha256": "92eac4e5c41120d1d0be5be3d88b946139aec2209c934627698d3a9008de4a4d"
+        },
+        {
+          "pattern": "Artículo S[eé]timo",
+          "page": 6,
+          "start": 13807,
+          "end": 14252,
+          "text": "productos y servicios contratados, o a las operaciones asociadas a estos.” \n \n  Artículo Sétimo.- Las modificaciones establecidas en l os \nartículos Primero y  Tercero cuentan con un plazo de adecuación de ciento ochenta  (180) días desde la \nvigencia de la presente resolución, salvo la modificación del artículo 29 del Reglamento de Gestión de \nConducta de Mercado del Sistema Financiero, que cuenta con un plazo de adecuación de trescientos s",
+          "text_sha256": "4fd51a138984c4ae5922e10d07cc48e9b3db63ee497118a125152d98e2013c10"
+        },
+        {
+          "pattern": "publicaci[oó]n",
+          "page": 2,
+          "start": 3202,
+          "end": 3643,
+          "text": " opiniones de los usuarios respecto \nde la propuesta de norma, se dispuso la prepublicación del proyecto de resolución, en el portal electrónico de \nla Superintendencia, al amparo de lo dispuesto en el Decreto Supremo N ° 001-2009-JUS; y que en lo \nconcerniente a la modificación del Reglamento de Reclamos y Requerimientos , se publica sobre la base de \nlas condiciones de excepción establecidas en el artículo 14 del Decreto Supremo N ° 00",
+          "text_sha256": "91ad49f317e995dfae7fc9498fb058e59e6c6fb12aad11ef68e4fa527e453306"
+        },
+        {
+          "pattern": "publicaci[oó]n",
+          "page": 6,
+          "start": 14333,
+          "end": 14774,
+          "text": "vo.- La presente resolución entra en vigencia a \npartir del día siguiente de su publicación en el Diario Oficial El Peruano. \n \n \nRegístrese, comuníquese y publíquese. \n \n \n \n \n1 Mediante el artículo Sexto de la Resolución SBS Nº 2286-2024, vigente a partir del 29/06/2024, se dispuso lo siguiente: “Con \nrelación al plazo de adecuación establecido en el artículo Séptimo de la Resolución SBS N° 3240 -2023, para la implementación de las \nmo",
+          "text_sha256": "966adcc68f0b6b899fac06c5605afae46ebbedd92adaa19cf45cf28a65e0d21f"
+        }
+      ],
+      "repository_version_not_legal_effect": true,
+      "subsequent_2286_2024_annotation_present": true,
+      "extraction_warning": "pypdf strict reader emitted Xref table not zero-indexed warning; original bytes preserved; extraction quality partial"
+    }
+  ],
+  "method": {
+    "no_agent_answers_gold_qrels_read_or_generated": true,
+    "blindness_limit": "SK02 record included snippets/labels before invocation; prior exposure disclosed. Review blind to agent outputs, not double-blind.",
+    "web_or_downloads": 0,
+    "supplementary_originals": 0,
+    "independent_model_recheck": false,
+    "human_adjudication": false,
+    "normalization": "Full raw diff plus full-body char diff after stripping page furniture/footnote lines and whitespace; visual check of every captured PDF page. Footnote marker renumbering kept distinct from normative content. This is auxiliary comparison, not general legal equivalence proof.",
+    "pdf_warnings": "pypdf strict reader reports Xref table not zero-indexed; reader correction is in memory. All bytes preserved;38/38page re-extractions match frozen derivative exactly.",
+    "renderer": "pdftoppm PNG streamed in memory, scale-to1500–1750; no image files saved.",
+    "residual_comparison": {
+      "status": "passed",
+      "method": "Mask five cited changed units with matching labels, strip page furniture and footnote lines plus whitespace, remove six shifted inline note markers before7.2–7.8. Compare remaining full body character sequences.",
+      "equal": true,
+      "remaining_characters_each": 38097,
+      "limits": "No additional unclassified literal difference in normalized captured4036body. Absent annexes and external normative history remain outside this equality."
+    }
+  },
+  "integrity": {
+    "status": "passed",
+    "hashes_passed": 9,
+    "hashes_total": 9,
+    "checks": [
+      {
+        "source_id": "4036_A",
+        "page_count": 15,
+        "exact_reextraction_pages": 15,
+        "hashes_match": true
+      },
+      {
+        "source_id": "4036_B",
+        "page_count": 16,
+        "exact_reextraction_pages": 16,
+        "hashes_match": true
+      },
+      {
+        "source_id": "3240",
+        "page_count": 7,
+        "exact_reextraction_pages": 7,
+        "hashes_match": true
+      }
+    ],
+    "pdf_pages": 38,
+    "reextraction_exact_pages": 38,
+    "visually_reviewed_pages": 38,
+    "coverage_limit": "All pages of the3captured files reviewed; does not cover absent annexes, missing acts or legal publication authentication.",
+    "scope": "Identidad de bytes frente a registro SK02 y reextracción, no autenticación jurídica."
+  },
+  "page_maps": [
+    {
+      "source_id": "4036_A",
+      "pages": [
+        {
+          "pdf_page_1_based": 1,
+          "rawtext_char_start": 0,
+          "rawtext_char_end_exclusive": 2484,
+          "headings": [],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 2,
+          "rawtext_char_start": 2485,
+          "rawtext_char_end_exclusive": 5750,
+          "headings": [
+            "Artículo Primero.- Aprobar el Reglamento de Gestión de",
+            "Artículo 1. Alcance"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 3,
+          "rawtext_char_start": 5751,
+          "rawtext_char_end_exclusive": 9163,
+          "headings": [
+            "Artículo 2. Definiciones",
+            "Artículo 3. Sistema de gestión de reclamos y requerimientos",
+            "Artículo 4. Tramitación de reclamos"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 4,
+          "rawtext_char_start": 9164,
+          "rawtext_char_end_exclusive": 13426,
+          "headings": [
+            "Artículo 5. Área y Responsable de la atención de reclamos"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 5,
+          "rawtext_char_start": 13427,
+          "rawtext_char_end_exclusive": 16743,
+          "headings": [
+            "Artículo 6. Tramitación de requerimientos"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 6,
+          "rawtext_char_start": 16744,
+          "rawtext_char_end_exclusive": 20361,
+          "headings": [
+            "Artículo 7. Cómputo de plazos"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 7,
+          "rawtext_char_start": 20362,
+          "rawtext_char_end_exclusive": 24567,
+          "headings": [
+            "Artículo 8. Canales de atención y de respuesta",
+            "Artículo 9. Registro, análisis y respuesta a los reclamos"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 8,
+          "rawtext_char_start": 24568,
+          "rawtext_char_end_exclusive": 28574,
+          "headings": [
+            "Artículo 10. Registro y respuesta a los requerimientos"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 9,
+          "rawtext_char_start": 28575,
+          "rawtext_char_end_exclusive": 32343,
+          "headings": [
+            "Artículo 11. Sustentos y archivo de los reclamos y requerimientos",
+            "Artículo 12. Indicadores e informes de gestión"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 10,
+          "rawtext_char_start": 32344,
+          "rawtext_char_end_exclusive": 35941,
+          "headings": [
+            "Artículo 13. Capacitación",
+            "Artículo 14. Información al usuario",
+            "Artículo 15. Difusión de estadísticas por parte de la empresa"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 11,
+          "rawtext_char_start": 35942,
+          "rawtext_char_end_exclusive": 39661,
+          "headings": [
+            "Artículo 16. Reporte a la Superintendencia",
+            "17. Absolución de consultas en forma grupal o gremial",
+            "17.1 Las empresas pueden organizarse de manera grupal o gremial para absolver y atender las"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 12,
+          "rawtext_char_start": 39662,
+          "rawtext_char_end_exclusive": 43127,
+          "headings": [
+            "Artículo 18. Tratamiento proporcional",
+            "Artículo 19. Solicitud de tratamiento proporcional"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 13,
+          "rawtext_char_start": 43128,
+          "rawtext_char_end_exclusive": 46275,
+          "headings": [
+            "Segunda.- Lo establecido e n el Reglamento no exime del cumplimiento de las  demás disposiciones",
+            "Artículo Segundo.-  Modificar la denominación del Título VI",
+            "Artículo Tercero.- Modificar el artículo 42 del Reglamento de"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 14,
+          "rawtext_char_start": 46276,
+          "rawtext_char_end_exclusive": 49730,
+          "headings": [
+            "Artículo Cuarto.- Los anexos que forman parte de la",
+            "Artículo Quinto.- Incorporar en el Texto Ú nico de",
+            "Artículo Sexto.- Incorporar en el  Anexo 1: Infracciones"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 15,
+          "rawtext_char_start": 49731,
+          "rawtext_char_end_exclusive": 52214,
+          "headings": [
+            "Artículo Séptimo.– Modificar el Anexo 1: Infracciones",
+            "Artículo Octavo.- La presente Resolución entra en vigencia el",
+            "MARIA DEL SOCORRO HEYSEN ZEGARRA"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        }
+      ]
+    },
+    {
+      "source_id": "4036_B",
+      "pages": [
+        {
+          "pdf_page_1_based": 1,
+          "rawtext_char_start": 0,
+          "rawtext_char_end_exclusive": 2482,
+          "headings": [],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 2,
+          "rawtext_char_start": 2483,
+          "rawtext_char_end_exclusive": 5742,
+          "headings": [
+            "Artículo Primero.- Aprobar el Reglamento de Gestión de",
+            "Artículo 1. Alcance"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 3,
+          "rawtext_char_start": 5743,
+          "rawtext_char_end_exclusive": 9205,
+          "headings": [
+            "Artículo 2. Definiciones",
+            "Artículo 3. Sistema de gestión de reclamos y requerimientos",
+            "Artículo 4. Tramitación de reclamos"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 4,
+          "rawtext_char_start": 9206,
+          "rawtext_char_end_exclusive": 13403,
+          "headings": [
+            "Artículo 5. Área y Responsable de la atención de reclamos"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 5,
+          "rawtext_char_start": 13404,
+          "rawtext_char_end_exclusive": 16906,
+          "headings": [
+            "Artículo 6. Tramitación de requerimientos"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 6,
+          "rawtext_char_start": 16907,
+          "rawtext_char_end_exclusive": 20750,
+          "headings": [
+            "Artículo 7. Cómputo de plazos"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 7,
+          "rawtext_char_start": 20751,
+          "rawtext_char_end_exclusive": 24850,
+          "headings": [
+            "Artículo 8. Canales de atención y de respuesta",
+            "Artículo 9. Registro, análisis y respuesta a los reclamos"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 8,
+          "rawtext_char_start": 24851,
+          "rawtext_char_end_exclusive": 28980,
+          "headings": [
+            "Artículo 10. Registro y respuesta a los requerimientos"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 9,
+          "rawtext_char_start": 28981,
+          "rawtext_char_end_exclusive": 32700,
+          "headings": [
+            "Artículo 11. Sustentos y archivo de los reclamos y requerimientos",
+            "Artículo 12. Indicadores e informes de gestión",
+            "Artículo 13. Capacitación"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 10,
+          "rawtext_char_start": 32701,
+          "rawtext_char_end_exclusive": 36489,
+          "headings": [
+            "Artículo 14. Información al usuario",
+            "Artículo 15. Difusión de estadísticas por parte de la empresa"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 11,
+          "rawtext_char_start": 36490,
+          "rawtext_char_end_exclusive": 40123,
+          "headings": [
+            "Artículo 16. Reporte a la Superintendencia",
+            "17. Absolución de consultas en forma grupal o gremial",
+            "17.1 Las empresas pueden organizarse de manera grupal o gremial para absolver y atender las"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 12,
+          "rawtext_char_start": 40124,
+          "rawtext_char_end_exclusive": 43667,
+          "headings": [
+            "Artículo 18. Tratamiento proporcional",
+            "Artículo 19. Solicitud de tratamiento proporcional"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 13,
+          "rawtext_char_start": 43668,
+          "rawtext_char_end_exclusive": 46665,
+          "headings": [
+            "Segunda.- Lo establecido en este reglamento no  exime del cumplimiento de las demás disposiciones",
+            "Artículo Segundo.-  Modificar la denominación del Título VI",
+            "Artículo Tercero.- Modificar el artículo 42 del Reglamento de"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 14,
+          "rawtext_char_start": 46666,
+          "rawtext_char_end_exclusive": 50081,
+          "headings": [
+            "Artículo Cuarto.- Los anexos que forman parte de la",
+            "Artículo Quinto.- Incorporar en el Texto Ú nico de",
+            "Artículo Sexto.- Incorporar en el Anexo 1: Infracciones"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 15,
+          "rawtext_char_start": 50082,
+          "rawtext_char_end_exclusive": 53234,
+          "headings": [
+            "Artículo Séptimo.– Modificar el Anexo 1: Infracciones",
+            "Artículo Octavo.- La presente Resolución entra en vigencia el",
+            "MARIA DEL SOCORRO HEYSEN ZEGARRA"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 16,
+          "rawtext_char_start": 53235,
+          "rawtext_char_end_exclusive": 53494,
+          "headings": [],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": "Página sin cuerpo normativo; solo numeración/mobiliario de página."
+        }
+      ]
+    },
+    {
+      "source_id": "3240",
+      "pages": [
+        {
+          "pdf_page_1_based": 1,
+          "rawtext_char_start": 0,
+          "rawtext_char_end_exclusive": 2722,
+          "headings": [],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 2,
+          "rawtext_char_start": 2723,
+          "rawtext_char_end_exclusive": 5268,
+          "headings": [
+            "Artículo Primero. - Modificar el Reglamento de Gestión de",
+            "17.2 Sobre el particular, debe observarse los siguientes criterios:",
+            "Artículo 27. Responsabilidad de las empresas en la contratación de seguros asociados"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 3,
+          "rawtext_char_start": 5269,
+          "rawtext_char_end_exclusive": 8143,
+          "headings": [
+            "Artículo 29. Pago anticipado y adelanto de cuotas"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 4,
+          "rawtext_char_start": 8144,
+          "rawtext_char_end_exclusive": 10337,
+          "headings": [
+            "Artículo Segundo.- Eliminar la comisión por “Retención Judicial",
+            "Artículo Tercero.- Sustituir el texto de la comisión por “Operación",
+            "Artículo Cuarto.- Modificar el Reglamento de Tarjetas de Crédito"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 5,
+          "rawtext_char_start": 10338,
+          "rawtext_char_end_exclusive": 12589,
+          "headings": [
+            "Artículo 23. Responsabilidad por operaciones no reconocidas",
+            "Artículo Quinto.- Modificar los párrafos 20.1 y 20.2  del artículo",
+            "Artículo Sexto. - Modificar el Reglamento de Reclamos y"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 6,
+          "rawtext_char_start": 12590,
+          "rawtext_char_end_exclusive": 15084,
+          "headings": [
+            "Segunda.- Lo establecido en este reglamento no exime del cumplimiento de las demás disposiciones",
+            "ANEXO C: CÓDIGOS DE MOTIVOS DE RECLAMOS",
+            "CÓDIGO MOTIVOS",
+            "117 Indebida contratación",
+            "Artículo 15. Difusión de estadísticas por parte de la empresa",
+            "Artículo Sétimo.- Las modificaciones establecidas en l os",
+            "Artículo Octavo.- La presente resolución entra en vigencia a"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": null
+        },
+        {
+          "pdf_page_1_based": 7,
+          "rawtext_char_start": 15085,
+          "rawtext_char_end_exclusive": 15231,
+          "headings": [
+            "MARIA DEL SOCORRO HEYSEN ZEGARRA"
+          ],
+          "reextraction_exact": true,
+          "visual_reviewed": true,
+          "note": "Solo bloque de suscripción/nombre y cargo."
+        }
+      ]
+    }
+  ],
+  "identity_dates": {
+    "4036": {
+      "header_act_date": "2022-12-28",
+      "signed_date_authenticated": false,
+      "published_on": null,
+      "general_effective_on_literal": "2024-01-01",
+      "citations": [
+        "4036_A_identity",
+        "4036_B_identity",
+        "4036_A_effective",
+        "4036_B_effective",
+        "4036_A_early_notes6",
+        "4036_B_early_notes6",
+        "4036_A_early_note7",
+        "4036_B_early_note7"
+      ],
+      "exceptions": "Art. Octavo exceptúa 7.1,7.2,7.3,7.4,7.5 y7.7: vigencia a60días calendario de publicación. Notas consignan28.02.2023; se conserva como dato atribuido en anotaciones, no fecha recalculada/autenticada sin publicación.",
+      "reporting": "Art. Octavo designa enero2024 como primer período a reportar según art.16; no confundir período con fecha límite de remisión.",
+      "currentness": "No se extiende la fecha general a todos los cambios posteriores ni se certifica vigencia actual."
+    },
+    "3240": {
+      "header_act_date": "2023-10-02",
+      "signed_date_authenticated": false,
+      "published_on": null,
+      "effective_on": null,
+      "publication_date_annotation_candidate": "2023-10-03",
+      "annotation_limit": "Notas1/10/11 de4036_B dicen del03/10/2023; no se convierte esa referencia en publicación verificada. La cabecera3240 dice02/10/2023.",
+      "effective_rule": "Artículo Octavo: día siguiente de publicación en ElPeruano.",
+      "adaptation": "Artículo Sétimo:180días desde vigencia para artículos Primero y Tercero, excepto modificación del art29 de3274 con360días. No atribuir ese plazo general de adecuación al artículo Sexto/4036.",
+      "later_note": "Nota1 transcribe2286 artSexto:180días adicionales desde vencimiento inicial solo para numeral4 de29.1; la nota declara2286 vigente29/06/2024. Acto2286 no revisado, no se calcularon fechas finales.",
+      "citations": [
+        "3240_identity",
+        "3240_transition",
+        "3240_note2286",
+        "4036_B_note3240_4",
+        "4036_B_note3240_15",
+        "4036_B_note3240_final"
+      ]
+    },
+    "capture_dates": {
+      "4036_A": "2026-09-28T00:58:12.579440+00:00",
+      "4036_B": "2026-09-28T04:37:42.546804+00:00",
+      "3240": "2026-09-28T04:37:42.543083+00:00"
+    },
+    "repository_labels": "A=v1.0 y B=v6.0 son nombres de repositorio; no son fechas de publicación/vigencia ni certificados de versiones jurídicas sucesivas.3240v1.0 contiene anotación posterior2286."
+  },
+  "bank_applicability": {
+    "status": "passed",
+    "citations": [
+      "4036_A_scope",
+      "4036_B_scope",
+      "4036_A_proportional",
+      "4036_B_proportional"
+    ],
+    "finding": "Art1 abarca empresas de literalesA/B/D delart16 yart17 deLeyGeneral, además de Banco de la Nación, Banco Agropecuario y otras entidades enumeradas. Es caso histórico relevante para banco ficticio supuesto dentro del alcance.",
+    "limits": [
+      "No se revisó la clasificación jurídica de un banco real ni texto externo deLeyGeneral.",
+      "No todos los destinatarios son bancos: disposiciones para AFP/corredores de seguros y tratamiento proporcional no se generalizan al banco.",
+      "4036 contiene referencias a4143; no se revisó ni incorporó4143 ni se amplió el piloto de banca a seguros.",
+      "Aplicabilidad institucional actual y sus impactos no adjudicados."
+    ],
+    "claim_scope": "Elegibilidad temática histórica condicional para banco ficticio dentro de alcance."
+  },
+  "operative_changes": [
+    {
+      "change_id": "C1",
+      "location": "Reglamento 4.1",
+      "type": "modificación por adición de delimitación",
+      "before_citation": "4036_A_art4_1",
+      "after_citation": "4036_B_art4_1",
+      "act_citations": [
+        "3240_art_sixth_lead",
+        "3240_art4_1"
+      ],
+      "literal_delta": "Añade: relacionados únicamente con los productos y servicios contratados, o con las operaciones asociadas a estos.",
+      "inference": "Delimita la clasificación de reclamos por relación con productos/servicios contratados y operaciones asociadas; se debe leer junto con el registro separado de quejas. No elimina el deber de registrar quejas.",
+      "severity_if_omitted": "high",
+      "attribution": "3240 art. Sexto cotejado; nota 1 de B concordante.",
+      "verdict": "passed",
+      "before_exact_rawtext": "4.1 Los reclamos son comunicaciones presentadas por los usuarios  o terceros en nombre de los \nusuarios, en las que expresan su insatisfacción con la operación, producto o servicio recibido o por el \nincumplimiento de las obligaciones contempladas en los contratos o en el marco normativo vigente, o \nmanifestando la presunta afectación de su legítimo interés.",
+      "after_exact_rawtext": "4.1 Los reclamos son comunicaciones presentadas  por los usuarios o terceros en nombre de los  \nusuarios, relacionados únicamente con los productos y servicios  contratados, o con las operaciones \nasociadas a estos, en las que expresan su insatisfacción con la operación, producto o servicio recibido \no por el incumplimiento de las  obligaciones contempladas en los contratos o en el marco  normativo \nvigente, o manifestando la presunta afectación de su legítimo interés.1",
+      "verdict_scope": "Fidelidad de comparación literal de las copias capturadas, sin adjudicación jurídica global."
+    },
+    {
+      "change_id": "C2",
+      "location": "Reglamento 14.1",
+      "type": "modificación",
+      "before_citation": "4036_A_art14_1",
+      "after_citation": "4036_B_art14_1",
+      "act_citations": [
+        "4036_B_notes2286"
+      ],
+      "literal_delta": "canales electrónicos o digitales pasa a canales digitales. Permanece el deber referido a todos los establecimientos abiertos al público.",
+      "inference": "Cambia la denominación de canales para mantener disponible información al usuario. No se concluye equivalencia tecnológica ni eliminación de la atención física.",
+      "severity_if_omitted": "medium",
+      "attribution": "Nota 8 de B atribuye a 2286-2024; acto 2286 no revisado en este encargo.",
+      "verdict": "passed",
+      "before_exact_rawtext": "14.1 Las empresas deben mantener a disposición de los usuarios, a través de sus canales \nelectrónicos o digitales, y en todos sus establ ecimientos abiertos al público, en un lugar visible y de \nfácil acceso, información, afiches y/o folletos sobre  los procedimientos de atención de reclamos y \nrequerimientos, los requisitos para su  trámite, plazos de atención,  los canales puestos a disposició n \nde los usuarios para su presentación  y canales para la  recepción o puesta a disposición de la \nrespuesta.",
+      "after_exact_rawtext": "14.1 Las empresas deben mantener a disposición de los usuarios, a través de sus canales digitales, y \nen todos sus establecimientos abiertos al público, en un lugar visible y de fácil acceso, información, \nafiches y/o folletos sobre los procedimientos de atención de reclamos y requerimientos, los requisitos \npara su trámite, plazos de atención, los canales puestos a disposición de los usuarios para su \npresentación y canales para la recepción o puesta a disposición de la respuesta.8",
+      "verdict_scope": "Fidelidad de comparación literal de las copias capturadas, sin adjudicación jurídica global."
+    },
+    {
+      "change_id": "C3",
+      "location": "Reglamento 14.2",
+      "type": "modificación",
+      "before_citation": "4036_A_art14_2",
+      "after_citation": "4036_B_art14_2",
+      "act_citations": [
+        "4036_B_notes2286"
+      ],
+      "literal_delta": "pudiendo ser difundida a través de sus canales presenciales, electrónicos o digitales pasa a pudiendo ser difundida a través cualquiera de sus canales de atención.",
+      "inference": "Reformula los canales facultativos de difusión del material SBS; mantiene la obligación de disponer del material. No se suple la preposición ausente en el texto capturado.",
+      "severity_if_omitted": "medium",
+      "attribution": "Nota 9 de B atribuye a 2286-2024; acto 2286 no revisado.",
+      "verdict": "passed",
+      "before_exact_rawtext": "14.2 Las empresas deben mantener a disposición del público, material informativo otorgado por la \nSuperintendencia con relación a la labor que realiz a, con la finalidad de informar sobre sus \ncompetencias en la atención de reclamos  o requerimientos  relacionados con los productos y/o \nservicios que prestan las empresas ; pudiendo ser  difundida a través de sus canales presenciales, \nelectrónicos o digitales.",
+      "after_exact_rawtext": "14.2 Las empresas deben mantener a disposición del público, material informativo otorgado por la \nSuperintendencia con relación a la labor que realiza, con la finalidad de informar sobre sus \ncompetencias en la atención de reclamos o requerimientos relacionados con los productos y/o \nservicios que prestan las empresas; pudiendo ser difundida a través cualquiera de sus canales de \natención.9",
+      "verdict_scope": "Fidelidad de comparación literal de las copias capturadas, sin adjudicación jurídica global."
+    },
+    {
+      "change_id": "C4",
+      "location": "Reglamento 15.2(h)",
+      "type": "adición",
+      "before_citation": "4036_A_art15_2_tail",
+      "after_citation": "4036_B_art15_2_tail",
+      "act_citations": [
+        "3240_art15_2h"
+      ],
+      "literal_delta": "En A la lista termina en g) y sigue 15.3. B inserta h): no considera comunicaciones con producto 112 y motivo 39 por no vincularse a productos/servicios contratados u operaciones asociadas.",
+      "inference": "Exclusión de esas comunicaciones de las estadísticas difundidas según 15.2; no autoriza borrar su registro. No se extiende por analogía a toda obligación de reporte.",
+      "severity_if_omitted": "high",
+      "attribution": "3240 art. Sexto numeral 2 cotejado y nota 10 de B.",
+      "verdict": "passed",
+      "before_exact_rawtext": "g) Es consistente con la información de los reportes de reclamos N° RR1, RR2 y RR3 enviados a la \nSuperintendencia.",
+      "after_exact_rawtext": "g) Es consistente con la información de los reportes de reclamos N° RR1, RR2 y RR3 enviados a la \nSuperintendencia. \nh) No considera las comunicaciones registradas bajo el código de producto 112 y motivo 39, por no \nestar vinculadas a los productos y servicios contratados, o a las  operaciones asociadas a \nestos.10",
+      "verdict_scope": "Fidelidad de comparación literal de las copias capturadas, sin adjudicación jurídica global."
+    },
+    {
+      "change_id": "C5",
+      "location": "Segunda Disposición Complementaria Final, segundo párrafo",
+      "type": "adición",
+      "before_citation": "4036_A_second_final",
+      "after_citation": "4036_B_second_final",
+      "act_citations": [
+        "3240_second_final"
+      ],
+      "literal_delta": "Añade obligación de mantener registro de todas las quejas; permite usar la base 4.5 bajo producto 112 y motivo 39.",
+      "inference": "El registro es obligatorio; el uso de la base 4.5 es una opción expresada por podrán. No confundir con desaparición de las quejas ni obligación exclusiva de una base única.",
+      "severity_if_omitted": "high",
+      "attribution": "3240 art. Sexto numeral 1 cotejado y nota 11 de B.",
+      "verdict": "passed",
+      "before_exact_rawtext": "Segunda.- Lo establecido e n el Reglamento no exime del cumplimiento de las  demás disposiciones \naplicables referidas a los reclamos y requerimientos,  comprendidas en el Código de Protección y \nDefensa del Consumidor, Ley N° 29571 y sus normas modificatorias, y en el Reglamento del Li bro de \nReclamaciones aprobado por el Decreto Supremo N° 011-2011-PCM y sus normas modificatorias.",
+      "after_exact_rawtext": "Segunda.- Lo establecido en este reglamento no  exime del cumplimiento de las demás disposiciones  \naplicables referidas a los reclamos y requerimientos,  comprendidas en el Código de Protección y \nDefensa del Consumidor, Ley N° 29571 y sus normas modificatorias, y  en el Reglamento del Libro de \nReclamaciones aprobado por el Decreto Supremo N° 011-2011-PCM y sus normas modificatorias. \n \nAsimismo, las empresas deben mantener un registro  de todas las quejas presentadas por los \nusuarios, en cumplimiento de lo señalado en el Reglamento del Libro  de Reclamaciones. Para ello, \npodrán utilizar la base de datos requerida en el párrafo 4.5 del artículo 4 del presente reglamento, bajo \nlos códigos de producto 112 y motivo 39.11",
+      "verdict_scope": "Fidelidad de comparación literal de las copias capturadas, sin adjudicación jurídica global."
+    }
+  ],
+  "other_literal_changes": [
+    {
+      "id": "L1",
+      "type": "ajuste léxico sin nueva obligación independiente",
+      "before": "Lo establecido en el Reglamento",
+      "after": "Lo establecido en este reglamento",
+      "citations": [
+        "4036_A_second_final",
+        "4036_B_second_final"
+      ],
+      "status": "passed",
+      "counting": "Incluido en mismaSegundaDCF queC5; no sexto cambio operativo."
+    },
+    {
+      "id": "L2",
+      "type": "notas editoriales añadidas",
+      "new_note_numbers_in_B": [
+        1,
+        8,
+        9,
+        10,
+        11
+      ],
+      "citations": [
+        "4036_B_note3240_4",
+        "4036_B_notes2286",
+        "4036_B_note3240_15",
+        "4036_B_note3240_final"
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "L3",
+      "type": "renumeración de notas preexistentes1–6 a2–7; repaginación/espaciado",
+      "citations": [
+        "4036_A_early_notes6",
+        "4036_B_early_notes6",
+        "4036_A_early_note7",
+        "4036_B_early_note7"
+      ],
+      "status": "passed",
+      "finding": "No renumeración de artículos ni cambio de plazos 7.1–7.5/7.7 observado. La nueva página16 no agrega disposición."
+    }
+  ],
+  "annex_review": {
+    "status": "partial",
+    "complete_pdf_files": true,
+    "complete_legal_annex_set": false,
+    "citations": [
+      "4036_A_annex_publication",
+      "4036_B_annex_publication",
+      "4036_A_annex1A_ref",
+      "4036_B_annex1A_ref",
+      "4036_A_annex1B_ref",
+      "4036_B_annex1B_ref",
+      "4036_A_reports_annex_ref",
+      "4036_B_reports_annex_ref",
+      "3240_art_sixth_lead",
+      "3240_annexC_row"
+    ],
+    "findings": [
+      "Ambos PDF 4036 omiten las tablas completas de anexos 1-A, 1-B, 2 (RR1/RR2/RR3) y códigos referenciados; art. Cuarto remite su publicación al portal. No atribuir la ausencia a una derogación ni considerar que 16 páginas completan los anexos.",
+      "B página 16 solo tiene número de página y mobiliario, sin anexo ni disposición nueva.",
+      "3240 art. Sexto numeral 1, p.5, identifica el código previo 115 Indebida contratación; su tabla de p.6 tiene columnas CÓDIGO/MOTIVOS y fila 117/Indebida contratación. Se verificó visualmente: es cambio de código solicitado, no simple error OCR o contradicción que deba corregirse.",
+      "La orden y el texto de reemplazo acreditan el cambio pretendido 115→117 dentro de 3240. No se cotejaron las tablas completas antes/después del Anexo C de 4036, ausentes de ambos PDF.",
+      "Los textos de infracciones del Anexo 1 del Reglamento 2755 reproducidos en artículos Sexto/Séptimo de 4036 están presentes y no muestran cambio sustantivo entre copias; no equivalen al Anexo 1-A/1-B de datos ni al Anexo C de motivos.",
+      "El procedimiento TUPA 206 referido por artículo Quinto de 4036 se anuncia adjunto/publicado en portal, pero su ficha completa no figura en estos PDF."
+    ],
+    "annex_change_case": {
+      "id": "A1",
+      "type": "renumeración de código",
+      "instruction_and_replacement_status": "passed",
+      "full_before_after_annex_status": "not_evaluated",
+      "before_citation": "3240_art_sixth_lead",
+      "after_citation": "3240_annexC_row",
+      "before_is_prior_annex_original": false,
+      "before_evidence_kind": "Código anterior designado en la orden modificatoria; no original de tabla previa",
+      "code_before": "115",
+      "code_after": "117",
+      "label_unchanged": "Indebida contratación",
+      "severity_if_omitted": "high",
+      "missing": "Tablas completas históricas de Anexo C con fechas/procedencia/hash, posibles oficios de actualización conforme 16.3."
+    }
+  },
+  "act3240_inventory": [
+    {
+      "article": "Primero",
+      "target": "3274-2017",
+      "order": "Incorpora17.2(1)(f) y27(3); modificaOctavaDCF5/7; sustituye2(16) y29.1(4).",
+      "citations": [
+        "3240_art_first"
+      ]
+    },
+    {
+      "article": "Segundo/Tercero",
+      "target": "3748-2021 Anexo1",
+      "order": "Elimina comisión Retención Judicial y/o Administrativa y sustituye texto Operación en ventanilla.",
+      "citations": [
+        "3240_art_second_third"
+      ]
+    },
+    {
+      "article": "Cuarto",
+      "target": "6523-2013",
+      "order": "Sustituye2(11) y modifica16(6),23segundopárrafo(6) ycuartopárrafo.",
+      "citations": [
+        "3240_art_fourth"
+      ]
+    },
+    {
+      "article": "Quinto",
+      "target": "504-2021",
+      "order": "Modifica20.1/20.2 sobre exenciones de autenticación reforzada.",
+      "citations": [
+        "3240_art_fifth"
+      ]
+    },
+    {
+      "article": "Sexto",
+      "target": "4036-2022",
+      "order": "Modifica4.1/SegundaDCF/código115AnexoC y añade15.2(h).",
+      "citations": [
+        "3240_art_sixth_lead",
+        "3240_annexC_row",
+        "3240_art15_2h"
+      ]
+    },
+    {
+      "article": "Sétimo/Octavo",
+      "target": "plazos y vigencia",
+      "order": "Adecuación selectiva180/360días y entrada en vigor al día siguiente de publicación. Nota posterior2286 separada.",
+      "citations": [
+        "3240_transition",
+        "3240_note2286"
+      ]
+    }
+  ],
+  "act_inventory_limit": "Inventario de mandatos expresos de3240; solo cambios4036C1/C4/C5 tienen contraparteA/B aquí. No reconstruye antes/después íntegro de3274/504/3748/6523 ni cadena posterior.",
+  "lineage_partition": {
+    "independent_holdout_gate": "failed",
+    "primary_edges": [
+      {
+        "from": "3240-2023",
+        "to": "3274-2017",
+        "relation": "Artículo Primero modifica su Reglamento",
+        "citations": [
+          "3240_art_first"
+        ]
+      },
+      {
+        "from": "3240-2023",
+        "to": "504-2021",
+        "relation": "Artículo Quinto modifica 20.1 y 20.2",
+        "citations": [
+          "3240_art_fifth"
+        ]
+      },
+      {
+        "from": "3240-2023",
+        "to": "4036-2022",
+        "relation": "Artículo Sexto modifica su Reglamento/anexo e incorpora 15.2(h)",
+        "citations": [
+          "3240_art_sixth_lead",
+          "3240_art15_2h"
+        ]
+      }
+    ],
+    "annotation_only_edges": [
+      {
+        "from": "2286-2024",
+        "to": "4036-2022 14.1/14.2",
+        "citations": [
+          "4036_B_notes2286"
+        ]
+      },
+      {
+        "from": "2286-2024",
+        "to": "3240 plazo relativo a 3274 art.29.1(4)",
+        "citations": [
+          "3240_note2286"
+        ]
+      }
+    ],
+    "finding": "4036 y 3240 no son linaje reservado independiente de 3274/504, corpus existente según encargo. Los enlaces de acto modificatorio se verificaron en el propio 3240, sin necesitar inferirlos de la familia o de hashes. La copia 3240 también contiene nota posterior de 2286.",
+    "limits": "No se leyó el corpus actual completo ni historial de tuning; conexión jurídica/documental no cuantifica exposición a gold ni prueba contaminación de todo pasaje. La independencia de linaje sí falla.",
+    "requirements": [
+      "Mantener documentos enteros, todas sus versiones/derivados, anexos y actos conectados en el mismo componente de partición; conservar enlaces primarios citados.",
+      "Registrar exposición previa a prompts, ejemplos, ajuste, feedback y revisiones IA (incluida006); hashes distintos no sanean exposición previa.",
+      "Si el componente se usó para ajuste, clasificarlo para desarrollo/regresión y reservar otro linaje no expuesto; no dividir preguntas/artículos para simular independencia.",
+      "Conseguir/congelar los anexos completos y publicaciones/actos faltantes antes de certificar completitud temporal, sin reescribir el original para simular una versión oficial.",
+      "Antes de un ensayo independiente, congelar protocolo, asignación de partición y parámetros aplicables; no trasladar esta revisión específica a ejemplos/prompts de la prueba. En este encargo no se generan preguntas, respuestas ni qrels.",
+      "Distinguir documentos indexados como objetivo de recuperación de exposición a referencias/rúbricas/feedback de evaluación."
+    ]
+  },
+  "rubric": [
+    {
+      "gate": "identidad/procedencia documental congelada",
+      "status": "passed",
+      "limit": "URL/captura SK02 e identidad en cabeceras; autenticación de publicación no evaluada."
+    },
+    {
+      "gate": "fidelidad/localización de citas emitidas",
+      "status": "passed",
+      "numerator": 46,
+      "denominator": 46,
+      "limit": "Citas de revisión IA, no métrica del agente."
+    },
+    {
+      "gate": "comparación literal cuerpo4036",
+      "status": "passed",
+      "numerator": 5,
+      "denominator": 5,
+      "limit": "Cinco unidades observadas en copias capturadas; no recall contra referencia humana ni totalidad de historia normativa."
+    },
+    {
+      "gate": "anexos completos antes/después",
+      "status": "not_evaluated",
+      "severity": "high",
+      "reason": "Anexos1-A/1-B/2/C y otras tablas externas no adjuntos; cambio115→117soloacreditado por orden/fila3240."
+    },
+    {
+      "gate": "independencia de linaje",
+      "status": "failed",
+      "reason": "3240 conecta primariamente3274/504/4036."
+    },
+    {
+      "gate": "fechas exactas de publicación y eficacia jurídica de cada modificación",
+      "status": "not_evaluated",
+      "reason": "Notas y cabeceras no sustituyen constancias de publicación ni actos faltantes."
+    },
+    {
+      "gate": "vigencia actual/completitud jurídica",
+      "status": "not_evaluated",
+      "reason": "Copias anotadas, actos/anexos externos ausentes; no búsqueda actual autorizada."
+    },
+    {
+      "gate": "precision/recall/criticos del agente y aceptaciónRAG",
+      "status": "not_evaluated",
+      "reason": "No resultados del agente ni experimento aplicable."
+    },
+    {
+      "gate": "aprobación humana/institucional, ahorro y eficacia operacional",
+      "status": "not_evaluated",
+      "reason": "Revisión IA; sin muestras humanas pareadas ni costo medido."
+    }
+  ],
+  "metrics": {
+    "original_pdfs": 3,
+    "documentary_pairs": 1,
+    "independent_holdout_pairs": 0,
+    "pages_reextracted": 38,
+    "pages_visual": 38,
+    "operative_body_units_observed": 5,
+    "annex_code_change_in_act": 1,
+    "complete_annex_before_after_pairs": 0,
+    "unique_citations_verified": 46,
+    "unique_citations_emitted": 46,
+    "agent_precision": null,
+    "agent_recall": null,
+    "agent_critical_omissions": null,
+    "human_savings": null,
+    "cost": null
+  },
+  "omission_risks": [
+    "PresentarBcomo actualización solo3240 omite14.1/14.2 atribuibles por notas a2286.",
+    "Omitir cambio115→117 por limitar lectura al cuerpo4036.",
+    "Confundir exclusiónestadística15.2h con supresión del registro obligatorio de quejas.",
+    "Confundir podránusarbase4.5 con obligación de usar exclusivamente esa base.",
+    "Aplicar180/360días de3240artSétimo a4036artSexto sin sustento.",
+    "Usar1enero2024 para todos los párrafos pese a excepción7.1–7.5/7.7.",
+    "Confundir repaginación/notas con nuevos artículos y página16 con anexo."
+  ],
+  "disposition": "Reutilizable como evidencia IA histórica con límites; no convertir automáticamente en gold humano. No se modificó corpus/índice/spec/runtime/gold ni artefactos005.",
+  "citations": [
+    {
+      "citation_id": "4036_A_identity",
+      "source_id": "4036_A",
+      "pdf_path": "data/foundation-holdout/objects/59/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d.pdf",
+      "pdf_sha256": "594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d",
+      "rawtext_path": "data/foundation-holdout/derived/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "b6f83c6421c0b049fe52a2297d29b080baa02f1164d0951acf3a95f7c6b440e2",
+      "pdf_pages_1_based": [
+        1
+      ],
+      "rawtext_char_start": 263,
+      "rawtext_char_end_exclusive": 329,
+      "quote_exact_rawtext": "Lima, 28 de diciembre de 2022 \n \nResolución S.B.S. \nN° 04036- 2022",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_A_scope",
+      "source_id": "4036_A",
+      "pdf_path": "data/foundation-holdout/objects/59/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d.pdf",
+      "pdf_sha256": "594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d",
+      "rawtext_path": "data/foundation-holdout/derived/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "b6f83c6421c0b049fe52a2297d29b080baa02f1164d0951acf3a95f7c6b440e2",
+      "pdf_pages_1_based": [
+        2,
+        3
+      ],
+      "rawtext_char_start": 5526,
+      "rawtext_char_end_exclusive": 6253,
+      "quote_exact_rawtext": "Artículo 1. Alcance \nLas disposiciones de la presente norma son aplicables a las empresas señaladas en los literales A, B \ny D del artículo 16, y en el artículo 17 de la Ley General, así como al Banco de la Nación, al Banco \n                                                                                                                                                                                          \n \n \nLos Laureles Nº 214 - Lima 27 - Perú   Telf.: (511) 6309000 \n3 \n \nAgropecuario, a las Derramas y Cajas de Beneficios,  a las Asociaciones de Fondos Regionales o \nProvinciales contra Accidentes de Tránsito (AFOCAT), así como a las Administradoras Privadas de \nFondos de Pensiones (AFP), en adelante las empresas.",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_A_art4_1",
+      "source_id": "4036_A",
+      "pdf_path": "data/foundation-holdout/objects/59/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d.pdf",
+      "pdf_sha256": "594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d",
+      "rawtext_path": "data/foundation-holdout/derived/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "b6f83c6421c0b049fe52a2297d29b080baa02f1164d0951acf3a95f7c6b440e2",
+      "pdf_pages_1_based": [
+        3
+      ],
+      "rawtext_char_start": 8415,
+      "rawtext_char_end_exclusive": 8775,
+      "quote_exact_rawtext": "4.1 Los reclamos son comunicaciones presentadas por los usuarios  o terceros en nombre de los \nusuarios, en las que expresan su insatisfacción con la operación, producto o servicio recibido o por el \nincumplimiento de las obligaciones contempladas en los contratos o en el marco normativo vigente, o \nmanifestando la presunta afectación de su legítimo interés.",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_A_art14_1",
+      "source_id": "4036_A",
+      "pdf_path": "data/foundation-holdout/objects/59/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d.pdf",
+      "pdf_sha256": "594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d",
+      "rawtext_path": "data/foundation-holdout/derived/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "b6f83c6421c0b049fe52a2297d29b080baa02f1164d0951acf3a95f7c6b440e2",
+      "pdf_pages_1_based": [
+        10
+      ],
+      "rawtext_char_start": 34067,
+      "rawtext_char_end_exclusive": 34576,
+      "quote_exact_rawtext": "14.1 Las empresas deben mantener a disposición de los usuarios, a través de sus canales \nelectrónicos o digitales, y en todos sus establ ecimientos abiertos al público, en un lugar visible y de \nfácil acceso, información, afiches y/o folletos sobre  los procedimientos de atención de reclamos y \nrequerimientos, los requisitos para su  trámite, plazos de atención,  los canales puestos a disposició n \nde los usuarios para su presentación  y canales para la  recepción o puesta a disposición de la \nrespuesta.",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_A_art14_2",
+      "source_id": "4036_A",
+      "pdf_path": "data/foundation-holdout/objects/59/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d.pdf",
+      "pdf_sha256": "594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d",
+      "rawtext_path": "data/foundation-holdout/derived/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "b6f83c6421c0b049fe52a2297d29b080baa02f1164d0951acf3a95f7c6b440e2",
+      "pdf_pages_1_based": [
+        10
+      ],
+      "rawtext_char_start": 34579,
+      "rawtext_char_end_exclusive": 34992,
+      "quote_exact_rawtext": "14.2 Las empresas deben mantener a disposición del público, material informativo otorgado por la \nSuperintendencia con relación a la labor que realiz a, con la finalidad de informar sobre sus \ncompetencias en la atención de reclamos  o requerimientos  relacionados con los productos y/o \nservicios que prestan las empresas ; pudiendo ser  difundida a través de sus canales presenciales, \nelectrónicos o digitales.",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_A_art15_2_tail",
+      "source_id": "4036_A",
+      "pdf_path": "data/foundation-holdout/objects/59/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d.pdf",
+      "pdf_sha256": "594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d",
+      "rawtext_path": "data/foundation-holdout/derived/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "b6f83c6421c0b049fe52a2297d29b080baa02f1164d0951acf3a95f7c6b440e2",
+      "pdf_pages_1_based": [
+        11
+      ],
+      "rawtext_char_start": 36623,
+      "rawtext_char_end_exclusive": 36738,
+      "quote_exact_rawtext": "g) Es consistente con la información de los reportes de reclamos N° RR1, RR2 y RR3 enviados a la \nSuperintendencia.",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_A_second_final",
+      "source_id": "4036_A",
+      "pdf_path": "data/foundation-holdout/objects/59/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d.pdf",
+      "pdf_sha256": "594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d",
+      "rawtext_path": "data/foundation-holdout/derived/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "b6f83c6421c0b049fe52a2297d29b080baa02f1164d0951acf3a95f7c6b440e2",
+      "pdf_pages_1_based": [
+        13
+      ],
+      "rawtext_char_start": 44092,
+      "rawtext_char_end_exclusive": 44478,
+      "quote_exact_rawtext": "Segunda.- Lo establecido e n el Reglamento no exime del cumplimiento de las  demás disposiciones \naplicables referidas a los reclamos y requerimientos,  comprendidas en el Código de Protección y \nDefensa del Consumidor, Ley N° 29571 y sus normas modificatorias, y en el Reglamento del Li bro de \nReclamaciones aprobado por el Decreto Supremo N° 011-2011-PCM y sus normas modificatorias.",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_A_effective",
+      "source_id": "4036_A",
+      "pdf_path": "data/foundation-holdout/objects/59/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d.pdf",
+      "pdf_sha256": "594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d",
+      "rawtext_path": "data/foundation-holdout/derived/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "b6f83c6421c0b049fe52a2297d29b080baa02f1164d0951acf3a95f7c6b440e2",
+      "pdf_pages_1_based": [
+        15
+      ],
+      "rawtext_char_start": 51414,
+      "rawtext_char_end_exclusive": 52091,
+      "quote_exact_rawtext": "Artículo Octavo.- La presente Resolución entra en vigencia el \n1 de enero de 2024 , siendo dicho mes el primer periodo a reportar de acuerdo con lo señalado en el \nartículo 16 del Reglamento. A la entrada en vigencia del citado Reglamento , quedan derogadas la \nCircular G-184-2015, Circular de Atención al Usuario y el Capítulo I del Título VI del Reglamento del \nRégimen Especial para la Gestión de Conducta de Mercado del Sistema Financiero aprobado \nmediante Resolución SBS N° 2304-2020; con excepción de los párrafos 7.1, 7.2,7.3, 7.4 ,7.5 y 7.7 del \nartículo 7 del presente Reglamento que entran en vigencia a los 60 días calendario de la publicación \nde esta Resolución.",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_A_early_notes6",
+      "source_id": "4036_A",
+      "pdf_path": "data/foundation-holdout/objects/59/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d.pdf",
+      "pdf_sha256": "594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d",
+      "rawtext_path": "data/foundation-holdout/derived/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "b6f83c6421c0b049fe52a2297d29b080baa02f1164d0951acf3a95f7c6b440e2",
+      "pdf_pages_1_based": [
+        6
+      ],
+      "rawtext_char_start": 20127,
+      "rawtext_char_end_exclusive": 20360,
+      "quote_exact_rawtext": "1 Disposición vigente a partir del 28.02.2023 \n2 Disposición vigente a partir del 28.02.2023 \n3 Disposición vigente a partir del 28.02.2023 \n4 Disposición vigente a partir del 28.02.2023 \n5 Disposición vigente a partir del 28.02.2023",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_A_early_note7",
+      "source_id": "4036_A",
+      "pdf_path": "data/foundation-holdout/objects/59/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d.pdf",
+      "pdf_sha256": "594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d",
+      "rawtext_path": "data/foundation-holdout/derived/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "b6f83c6421c0b049fe52a2297d29b080baa02f1164d0951acf3a95f7c6b440e2",
+      "pdf_pages_1_based": [
+        7
+      ],
+      "rawtext_char_start": 24521,
+      "rawtext_char_end_exclusive": 24566,
+      "quote_exact_rawtext": "6 Disposición vigente a partir del 28.02.2023",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_A_annex_publication",
+      "source_id": "4036_A",
+      "pdf_path": "data/foundation-holdout/objects/59/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d.pdf",
+      "pdf_sha256": "594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d",
+      "rawtext_path": "data/foundation-holdout/derived/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "b6f83c6421c0b049fe52a2297d29b080baa02f1164d0951acf3a95f7c6b440e2",
+      "pdf_pages_1_based": [
+        14
+      ],
+      "rawtext_char_start": 47917,
+      "rawtext_char_end_exclusive": 48130,
+      "quote_exact_rawtext": "Artículo Cuarto.- Los anexos que forman parte de la \nResolución se publican en el portal institucional ( www.sbs.gob.pe), conforme a lo dispuesto en el \nDecreto Supremo N° 001-2009-JUS y sus normas modificatorias.",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_A_annex1A_ref",
+      "source_id": "4036_A",
+      "pdf_path": "data/foundation-holdout/objects/59/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d.pdf",
+      "pdf_sha256": "594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d",
+      "rawtext_path": "data/foundation-holdout/derived/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "b6f83c6421c0b049fe52a2297d29b080baa02f1164d0951acf3a95f7c6b440e2",
+      "pdf_pages_1_based": [
+        4
+      ],
+      "rawtext_char_start": 11158,
+      "rawtext_char_end_exclusive": 11473,
+      "quote_exact_rawtext": "4.5 Las empresas deben contar con una base de datos de reclamos  que contenga como mínimo la \ninformación señalada en el Anexo Nº 1-A, la que debe mantenerse actualizada de manera que permita \nun adecuado seguimiento de la atención brindada, independientemente del canal utilizado para la \npresentación del reclamo.",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_A_annex1B_ref",
+      "source_id": "4036_A",
+      "pdf_path": "data/foundation-holdout/objects/59/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d.pdf",
+      "pdf_sha256": "594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d",
+      "rawtext_path": "data/foundation-holdout/derived/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "b6f83c6421c0b049fe52a2297d29b080baa02f1164d0951acf3a95f7c6b440e2",
+      "pdf_pages_1_based": [
+        6
+      ],
+      "rawtext_char_start": 17730,
+      "rawtext_char_end_exclusive": 18307,
+      "quote_exact_rawtext": "6.4 Las empresas deben contar con una base de datos de requerimientos que contenga como mínimo \nla información señalada en  el Anexo Nº 1 -B la que debe mantenerse actualizada de manera que \npermita un adecuado seguimiento de la atención brindada , independientemente del canal utilizado \npara la presentación del requerimiento. Aquellos requerimientos que son atendidos en el moment o en \nque se realizan, no requieren del registro mencionado; salvo que, al presentar el requerimiento, el \nusuario solicite una respuesta por escrito en la forma establecida en el párrafo 10.1.",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_A_reports_annex_ref",
+      "source_id": "4036_A",
+      "pdf_path": "data/foundation-holdout/objects/59/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d.pdf",
+      "pdf_sha256": "594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d",
+      "rawtext_path": "data/foundation-holdout/derived/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "b6f83c6421c0b049fe52a2297d29b080baa02f1164d0951acf3a95f7c6b440e2",
+      "pdf_pages_1_based": [
+        11
+      ],
+      "rawtext_char_start": 37837,
+      "rawtext_char_end_exclusive": 38473,
+      "quote_exact_rawtext": "16.2 Las estadísticas deben remitirse a l a Superintendencia vía el Sub -módulo de Captura y \nValidación Externa (SUCAVE), utilizando, según corresponda, los reportes de reclamo s N° RR1, RR2 \ny RR3 que se presentan como Anexo N° 2 de la Resolución. Para tal fin, deben tenerse en cuenta las \ntablas de códigos que se incluyen como anexos de la Resolución, así como sus respectivos \nlineamientos. \n16.3 La actualización de las tablas de códigos señaladas en el párrafo previo se publica en el portal \nweb de la Superintendencia  (https://www.sbs.gob.pe/) y comunica a las empresas por Oficio Múltiple , \npara el reporte correspondiente.",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_A_proportional",
+      "source_id": "4036_A",
+      "pdf_path": "data/foundation-holdout/objects/59/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d.pdf",
+      "pdf_sha256": "594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d",
+      "rawtext_path": "data/foundation-holdout/derived/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "b6f83c6421c0b049fe52a2297d29b080baa02f1164d0951acf3a95f7c6b440e2",
+      "pdf_pages_1_based": [
+        12
+      ],
+      "rawtext_char_start": 39962,
+      "rawtext_char_end_exclusive": 42071,
+      "quote_exact_rawtext": "Artículo 18. Tratamiento proporcional \n18.1 Las empresas señaladas a continuación, por su tamaño y características particulares, se \nencuentran sujetas a las disposiciones establecidas en el presente Capítulo: \na) Aquellas comprendidas en el literal B del artículo 16 y en el artículo 17 de la Ley General, así \ncomo las empresas de seguros que comercialicen exclusivamente seguros de Invalidez y \nSobrevivencia Colectivo – SISCO.  \nb) Derramas y Cajas de Beneficios.  \nc) Asociaciones de Fondos Regionales o Provinciales contra Accidentes de Tránsito (AFOCAT). \n \n18.2 A las empresas señaladas en el párrafo 18.1 le son de aplicación las siguientes disposiciones:  \na) Para la presentación de reclamos, las empresas deben poner a disposición  de los usuarios \ncomo mínimo: a) la red de oficinas de atención al público, en caso cuenten con estas; y un \ncanal adicional de entre los listados en el párrafo 8.1 del Reglamento. \nb) Para la presentación de requerimientos, las empresas deben poner a disposici ón de los \nusuarios la red de oficinas de atención al público. En caso no cuenten con estas, deben \ndesplegar uno de los canales listados en el párrafo 8.1 del Reglamento. \nc) Las labores de atención de reclamos y requerimientos pueden ser encargadas a un área  o \nfuncionario de la empresa que realice otro tipo de funciones, siempre que se asegure que ello \nno genera conflictos de intereses. \nd) Las empresas deben elaborar un informe anual sobre la evolución de la atención de reclamos y \nrequerimientos, a la que se hace referencia en el párrafo 12.2 del Reglamento.  \ne) Las demás disposiciones del presente Reglamento. \n \nArtículo 19. Solicitud de tratamiento proporcional \n19.1 De forma excepcional, aquellas empresas no comprendidas en el párrafo 18.1 del Reglamento \npueden solici tar autorización previa de la Superintendencia para que les sean de aplicación las \ndisposiciones establecidas en el párrafo 18.2, en razón de su naturaleza, tamaño y de la complejidad \nde sus productos y servicios; y siempre que el volumen y evolución de re clamos y las políticas \naplicadas así lo justifiquen.",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_B_identity",
+      "source_id": "4036_B",
+      "pdf_path": "data/foundation-holdout/objects/7c/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749.pdf",
+      "pdf_sha256": "7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749",
+      "rawtext_path": "data/foundation-holdout/derived/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "1946f8f1988a8fd55e9a13d878dfc671cd65277af8b1a28adf2f7d7ad90063e2",
+      "pdf_pages_1_based": [
+        1
+      ],
+      "rawtext_char_start": 263,
+      "rawtext_char_end_exclusive": 329,
+      "quote_exact_rawtext": "Lima, 28 de diciembre de 2022 \n \nResolución S.B.S. \nN° 04036- 2022",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_B_scope",
+      "source_id": "4036_B",
+      "pdf_path": "data/foundation-holdout/objects/7c/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749.pdf",
+      "pdf_sha256": "7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749",
+      "rawtext_path": "data/foundation-holdout/derived/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "1946f8f1988a8fd55e9a13d878dfc671cd65277af8b1a28adf2f7d7ad90063e2",
+      "pdf_pages_1_based": [
+        2,
+        3
+      ],
+      "rawtext_char_start": 5518,
+      "rawtext_char_end_exclusive": 6245,
+      "quote_exact_rawtext": "Artículo 1. Alcance \nLas disposiciones de la presente norma son aplicables a las empresas señaladas en los literales A, B \ny D del artículo 16, y en el artículo 17 de la Ley General, así como al Banco de la Nación, al Banco \n                                                                                                                                                                                          \n \n \nLos Laureles Nº 214 - Lima 27 - Perú   Telf.: (511) 6309000 \n3 \n \nAgropecuario, a las Derramas y Cajas de Beneficios,  a las Asociaciones de Fondos Regionales o \nProvinciales contra Accidentes de Tránsito (AFOCAT), así como a las Administradoras Privadas de \nFondos de Pensiones (AFP), en adelante las empresas.",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_B_art4_1",
+      "source_id": "4036_B",
+      "pdf_path": "data/foundation-holdout/objects/7c/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749.pdf",
+      "pdf_sha256": "7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749",
+      "rawtext_path": "data/foundation-holdout/derived/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "1946f8f1988a8fd55e9a13d878dfc671cd65277af8b1a28adf2f7d7ad90063e2",
+      "pdf_pages_1_based": [
+        3
+      ],
+      "rawtext_char_start": 8404,
+      "rawtext_char_end_exclusive": 8878,
+      "quote_exact_rawtext": "4.1 Los reclamos son comunicaciones presentadas  por los usuarios o terceros en nombre de los  \nusuarios, relacionados únicamente con los productos y servicios  contratados, o con las operaciones \nasociadas a estos, en las que expresan su insatisfacción con la operación, producto o servicio recibido \no por el incumplimiento de las  obligaciones contempladas en los contratos o en el marco  normativo \nvigente, o manifestando la presunta afectación de su legítimo interés.1",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_B_art14_1",
+      "source_id": "4036_B",
+      "pdf_path": "data/foundation-holdout/objects/7c/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749.pdf",
+      "pdf_sha256": "7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749",
+      "rawtext_path": "data/foundation-holdout/derived/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "1946f8f1988a8fd55e9a13d878dfc671cd65277af8b1a28adf2f7d7ad90063e2",
+      "pdf_pages_1_based": [
+        10
+      ],
+      "rawtext_char_start": 34083,
+      "rawtext_char_end_exclusive": 34570,
+      "quote_exact_rawtext": "14.1 Las empresas deben mantener a disposición de los usuarios, a través de sus canales digitales, y \nen todos sus establecimientos abiertos al público, en un lugar visible y de fácil acceso, información, \nafiches y/o folletos sobre los procedimientos de atención de reclamos y requerimientos, los requisitos \npara su trámite, plazos de atención, los canales puestos a disposición de los usuarios para su \npresentación y canales para la recepción o puesta a disposición de la respuesta.8",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_B_art14_2",
+      "source_id": "4036_B",
+      "pdf_path": "data/foundation-holdout/objects/7c/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749.pdf",
+      "pdf_sha256": "7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749",
+      "rawtext_path": "data/foundation-holdout/derived/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "1946f8f1988a8fd55e9a13d878dfc671cd65277af8b1a28adf2f7d7ad90063e2",
+      "pdf_pages_1_based": [
+        10
+      ],
+      "rawtext_char_start": 34572,
+      "rawtext_char_end_exclusive": 34965,
+      "quote_exact_rawtext": "14.2 Las empresas deben mantener a disposición del público, material informativo otorgado por la \nSuperintendencia con relación a la labor que realiza, con la finalidad de informar sobre sus \ncompetencias en la atención de reclamos o requerimientos relacionados con los productos y/o \nservicios que prestan las empresas; pudiendo ser difundida a través cualquiera de sus canales de \natención.9",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_B_art15_2_tail",
+      "source_id": "4036_B",
+      "pdf_path": "data/foundation-holdout/objects/7c/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749.pdf",
+      "pdf_sha256": "7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749",
+      "rawtext_path": "data/foundation-holdout/derived/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "1946f8f1988a8fd55e9a13d878dfc671cd65277af8b1a28adf2f7d7ad90063e2",
+      "pdf_pages_1_based": [
+        11
+      ],
+      "rawtext_char_start": 36965,
+      "rawtext_char_end_exclusive": 37281,
+      "quote_exact_rawtext": "g) Es consistente con la información de los reportes de reclamos N° RR1, RR2 y RR3 enviados a la \nSuperintendencia. \nh) No considera las comunicaciones registradas bajo el código de producto 112 y motivo 39, por no \nestar vinculadas a los productos y servicios contratados, o a las  operaciones asociadas a \nestos.10",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_B_second_final",
+      "source_id": "4036_B",
+      "pdf_path": "data/foundation-holdout/objects/7c/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749.pdf",
+      "pdf_sha256": "7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749",
+      "rawtext_path": "data/foundation-holdout/derived/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "1946f8f1988a8fd55e9a13d878dfc671cd65277af8b1a28adf2f7d7ad90063e2",
+      "pdf_pages_1_based": [
+        13
+      ],
+      "rawtext_char_start": 44700,
+      "rawtext_char_end_exclusive": 45432,
+      "quote_exact_rawtext": "Segunda.- Lo establecido en este reglamento no  exime del cumplimiento de las demás disposiciones  \naplicables referidas a los reclamos y requerimientos,  comprendidas en el Código de Protección y \nDefensa del Consumidor, Ley N° 29571 y sus normas modificatorias, y  en el Reglamento del Libro de \nReclamaciones aprobado por el Decreto Supremo N° 011-2011-PCM y sus normas modificatorias. \n \nAsimismo, las empresas deben mantener un registro  de todas las quejas presentadas por los \nusuarios, en cumplimiento de lo señalado en el Reglamento del Libro  de Reclamaciones. Para ello, \npodrán utilizar la base de datos requerida en el párrafo 4.5 del artículo 4 del presente reglamento, bajo \nlos códigos de producto 112 y motivo 39.11",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_B_effective",
+      "source_id": "4036_B",
+      "pdf_path": "data/foundation-holdout/objects/7c/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749.pdf",
+      "pdf_sha256": "7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749",
+      "rawtext_path": "data/foundation-holdout/derived/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "1946f8f1988a8fd55e9a13d878dfc671cd65277af8b1a28adf2f7d7ad90063e2",
+      "pdf_pages_1_based": [
+        15
+      ],
+      "rawtext_char_start": 52434,
+      "rawtext_char_end_exclusive": 53111,
+      "quote_exact_rawtext": "Artículo Octavo.- La presente Resolución entra en vigencia el \n1 de enero de 2024 , siendo dicho mes el primer periodo a reportar de acuerdo con lo señalado en el \nartículo 16 del Reglamento. A la entrada en vigencia del citado Reglamento , quedan derogadas la \nCircular G-184-2015, Circular de Atención al Usuario y el Capítulo I del Título VI del Reglamento del \nRégimen Especial para la Gestión de Conducta de Mercado del Sistema Financiero aprobado \nmediante Resolución SBS N° 2304-2020; con excepción de los párrafos 7.1, 7.2,7.3, 7.4 ,7.5 y 7.7 del \nartículo 7 del presente Reglamento que entran en vigencia a los 60 días calendario de la publicación \nde esta Resolución.",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_B_early_notes6",
+      "source_id": "4036_B",
+      "pdf_path": "data/foundation-holdout/objects/7c/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749.pdf",
+      "pdf_sha256": "7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749",
+      "rawtext_path": "data/foundation-holdout/derived/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "1946f8f1988a8fd55e9a13d878dfc671cd65277af8b1a28adf2f7d7ad90063e2",
+      "pdf_pages_1_based": [
+        6
+      ],
+      "rawtext_char_start": 20516,
+      "rawtext_char_end_exclusive": 20749,
+      "quote_exact_rawtext": "2 Disposición vigente a partir del 28.02.2023 \n3 Disposición vigente a partir del 28.02.2023 \n4 Disposición vigente a partir del 28.02.2023 \n5 Disposición vigente a partir del 28.02.2023 \n6 Disposición vigente a partir del 28.02.2023",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_B_early_note7",
+      "source_id": "4036_B",
+      "pdf_path": "data/foundation-holdout/objects/7c/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749.pdf",
+      "pdf_sha256": "7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749",
+      "rawtext_path": "data/foundation-holdout/derived/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "1946f8f1988a8fd55e9a13d878dfc671cd65277af8b1a28adf2f7d7ad90063e2",
+      "pdf_pages_1_based": [
+        7
+      ],
+      "rawtext_char_start": 24804,
+      "rawtext_char_end_exclusive": 24849,
+      "quote_exact_rawtext": "7 Disposición vigente a partir del 28.02.2023",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_B_annex_publication",
+      "source_id": "4036_B",
+      "pdf_path": "data/foundation-holdout/objects/7c/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749.pdf",
+      "pdf_sha256": "7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749",
+      "rawtext_path": "data/foundation-holdout/derived/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "1946f8f1988a8fd55e9a13d878dfc671cd65277af8b1a28adf2f7d7ad90063e2",
+      "pdf_pages_1_based": [
+        14
+      ],
+      "rawtext_char_start": 48945,
+      "rawtext_char_end_exclusive": 49158,
+      "quote_exact_rawtext": "Artículo Cuarto.- Los anexos que forman parte de la \nResolución se publican en el portal institucional ( www.sbs.gob.pe), conforme a lo dispuesto en el \nDecreto Supremo N° 001-2009-JUS y sus normas modificatorias.",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_B_annex1A_ref",
+      "source_id": "4036_B",
+      "pdf_path": "data/foundation-holdout/objects/7c/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749.pdf",
+      "pdf_sha256": "7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749",
+      "rawtext_path": "data/foundation-holdout/derived/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "1946f8f1988a8fd55e9a13d878dfc671cd65277af8b1a28adf2f7d7ad90063e2",
+      "pdf_pages_1_based": [
+        4
+      ],
+      "rawtext_char_start": 11335,
+      "rawtext_char_end_exclusive": 11650,
+      "quote_exact_rawtext": "4.5 Las empresas deben contar con una base de datos de reclamos  que contenga como mínimo la \ninformación señalada en el Anexo Nº 1-A, la que debe mantenerse actualizada de manera que permita \nun adecuado seguimiento de la atención brindada, independientemente del canal utilizado para la \npresentación del reclamo.",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_B_annex1B_ref",
+      "source_id": "4036_B",
+      "pdf_path": "data/foundation-holdout/objects/7c/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749.pdf",
+      "pdf_sha256": "7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749",
+      "rawtext_path": "data/foundation-holdout/derived/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "1946f8f1988a8fd55e9a13d878dfc671cd65277af8b1a28adf2f7d7ad90063e2",
+      "pdf_pages_1_based": [
+        6
+      ],
+      "rawtext_char_start": 17891,
+      "rawtext_char_end_exclusive": 18466,
+      "quote_exact_rawtext": "6.4 Las empresas deben contar con una base de datos de requerimientos que contenga como mínimo \nla información señalada en el Anexo Nº 1 -B la que debe mantenerse actualizada de manera que \npermita un adecuado seguimiento de la atención brindada , independientemente del canal utilizado \npara la presentación del requerimiento. Aquellos requerimientos que son atendidos en el momento en \nque se realizan, no requieren del registro mencionado; salvo que, al presentar el requerimiento, el \nusuario solicite una respuesta por escrito en la forma establecida en el párrafo 10.1.",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_B_reports_annex_ref",
+      "source_id": "4036_B",
+      "pdf_path": "data/foundation-holdout/objects/7c/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749.pdf",
+      "pdf_sha256": "7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749",
+      "rawtext_path": "data/foundation-holdout/derived/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "1946f8f1988a8fd55e9a13d878dfc671cd65277af8b1a28adf2f7d7ad90063e2",
+      "pdf_pages_1_based": [
+        11
+      ],
+      "rawtext_char_start": 38379,
+      "rawtext_char_end_exclusive": 39014,
+      "quote_exact_rawtext": "16.2 Las estadísticas deben remitirse a la Superintendencia vía el Sub -módulo de Captura y \nValidación Externa (SUCAVE), utilizando, según corresponda, los reportes de reclamo s N° RR1, RR2 \ny RR3 que se presentan como Anexo N° 2 de la Resolución. Para tal fin, deben tenerse en cuenta las \ntablas de códigos que se incluyen como anexos de la Resolución, así como sus respectivos \nlineamientos. \n16.3 La actualización de las tablas de códigos señaladas en el párrafo previo se publica en el portal \nweb de la Superintendencia  (https://www.sbs.gob.pe/) y comunica a las empresas por Oficio Múltiple , \npara el reporte correspondiente.",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_B_proportional",
+      "source_id": "4036_B",
+      "pdf_path": "data/foundation-holdout/objects/7c/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749.pdf",
+      "pdf_sha256": "7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749",
+      "rawtext_path": "data/foundation-holdout/derived/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "1946f8f1988a8fd55e9a13d878dfc671cd65277af8b1a28adf2f7d7ad90063e2",
+      "pdf_pages_1_based": [
+        12
+      ],
+      "rawtext_char_start": 40578,
+      "rawtext_char_end_exclusive": 42683,
+      "quote_exact_rawtext": "Artículo 18. Tratamiento proporcional \n18.1 Las empresas señaladas a continuación, por su tamaño y características particulares, se \nencuentran sujetas a las disposiciones establecidas en el presente Capítulo: \na) Aquellas comprendidas en el literal B del artículo 16 y en el artículo 17 de la Ley General, así \ncomo las empresas de seguros que comercialicen exclusivamente seguros de Invalidez y \nSobrevivencia Colectivo – SISCO.  \nb) Derramas y Cajas de Beneficios.  \nc) Asociaciones de Fondos Regionales o Provinciales contra Accidentes de Tránsito (AFOCAT). \n \n18.2 A las empresas señaladas en el párrafo 18.1 le son de aplicación las siguientes disposiciones:  \na) Para la presentación de reclamos, las empresas deben poner a disposición de los usuarios \ncomo mínimo: a) la red de oficinas de atención al público, en caso cuenten con estas; y un \ncanal adicional de entre los listados en el párrafo 8.1 del Reglamento. \nb) Para la presentación de requerimientos, las empresas deben poner a disposición de los \nusuarios la red de oficinas de atención al público. En caso no cuenten con estas, deben \ndesplegar uno de los canales listados en el párrafo 8.1 del Reglamento. \nc) Las labores de atención de reclamos y requerimientos pueden ser encargadas a un área  o \nfuncionario de la empresa que realice otro tipo de funciones, siempre que se asegure que ello \nno genera conflictos de intereses. \nd) Las empresas deben elaborar un informe anual sobre la evolución de la atención de reclamos y \nrequerimientos, a la que se hace referencia en el párrafo 12.2 del Reglamento.  \ne) Las demás disposiciones del presente Reglamento. \n \nArtículo 19. Solicitud de tratamiento proporcional \n19.1 De forma excepcional, aquellas empresas no comprendidas en el párrafo 18.1 del Reglamento \npueden solicitar autorización previa de la Superintendencia para que les sean de aplicación las \ndisposiciones establecidas en el párrafo 18.2, en razón de su naturaleza, tamaño y de la complejidad \nde sus productos y servicios; y siempre que el volumen y evolución de reclamos y las políticas \naplicadas así lo justifiquen.",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_B_note3240_4",
+      "source_id": "4036_B",
+      "pdf_path": "data/foundation-holdout/objects/7c/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749.pdf",
+      "pdf_sha256": "7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749",
+      "rawtext_path": "data/foundation-holdout/derived/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "1946f8f1988a8fd55e9a13d878dfc671cd65277af8b1a28adf2f7d7ad90063e2",
+      "pdf_pages_1_based": [
+        3
+      ],
+      "rawtext_char_start": 9133,
+      "rawtext_char_end_exclusive": 9204,
+      "quote_exact_rawtext": "1 Párrafo modificado por la Resolución SBS N° 3240-2023 del 03/10/2023.",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_B_notes2286",
+      "source_id": "4036_B",
+      "pdf_path": "data/foundation-holdout/objects/7c/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749.pdf",
+      "pdf_sha256": "7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749",
+      "rawtext_path": "data/foundation-holdout/derived/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "1946f8f1988a8fd55e9a13d878dfc671cd65277af8b1a28adf2f7d7ad90063e2",
+      "pdf_pages_1_based": [
+        10
+      ],
+      "rawtext_char_start": 36118,
+      "rawtext_char_end_exclusive": 36486,
+      "quote_exact_rawtext": "8 Párrafo modificado por la Resolución SBS Nº 2286-2024, vigente a partir del 29/06/2024, con plazo de adecuación \nconforme al artículo séptimo de la misma Resolución SBS N°2286-2024. \n9 Párrafo modificado por la Resolución SBS Nº 2286-2024, vigente a partir del 29/06/2024, con plazo de adecuación \nconforme al artículo séptimo de la misma Resolución SBS N°2286-2024.",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_B_note3240_15",
+      "source_id": "4036_B",
+      "pdf_path": "data/foundation-holdout/objects/7c/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749.pdf",
+      "pdf_sha256": "7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749",
+      "rawtext_path": "data/foundation-holdout/derived/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "1946f8f1988a8fd55e9a13d878dfc671cd65277af8b1a28adf2f7d7ad90063e2",
+      "pdf_pages_1_based": [
+        11
+      ],
+      "rawtext_char_start": 40049,
+      "rawtext_char_end_exclusive": 40122,
+      "quote_exact_rawtext": "10 Literal incorporado por la Resolución SBS N° 3240-2023 del 03/10/2023.",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "4036_B_note3240_final",
+      "source_id": "4036_B",
+      "pdf_path": "data/foundation-holdout/objects/7c/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749.pdf",
+      "pdf_sha256": "7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749",
+      "rawtext_path": "data/foundation-holdout/derived/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt",
+      "rawtext_sha256": "1946f8f1988a8fd55e9a13d878dfc671cd65277af8b1a28adf2f7d7ad90063e2",
+      "pdf_pages_1_based": [
+        13
+      ],
+      "rawtext_char_start": 46591,
+      "rawtext_char_end_exclusive": 46664,
+      "quote_exact_rawtext": "11 Párrafo incorporado por la Resolución SBS N° 3240-2023 del 03/10/2023.",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "3240_identity",
+      "source_id": "3240",
+      "pdf_path": "data/foundation-holdout/objects/e3/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1.pdf",
+      "pdf_sha256": "e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1",
+      "rawtext_path": "data/foundation-holdout/derived/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/a8750324698b9eeabd8cd9a0f560c530df6380c60b7b99da07c65087ecf8d910/rawtext.txt",
+      "rawtext_sha256": "48ed43b6b32f82c5b8279aa949ec9d743c70ff470e5b4fdcad8a554e5a2f3872",
+      "pdf_pages_1_based": [
+        1
+      ],
+      "rawtext_char_start": 66,
+      "rawtext_char_end_exclusive": 128,
+      "quote_exact_rawtext": "Lima, 02 de octubre de 2023 \n \nResolución S.B.S. \nN° 3240-2023",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "3240_art_first",
+      "source_id": "3240",
+      "pdf_path": "data/foundation-holdout/objects/e3/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1.pdf",
+      "pdf_sha256": "e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1",
+      "rawtext_path": "data/foundation-holdout/derived/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/a8750324698b9eeabd8cd9a0f560c530df6380c60b7b99da07c65087ecf8d910/rawtext.txt",
+      "rawtext_sha256": "48ed43b6b32f82c5b8279aa949ec9d743c70ff470e5b4fdcad8a554e5a2f3872",
+      "pdf_pages_1_based": [
+        2,
+        3,
+        4
+      ],
+      "rawtext_char_start": 4191,
+      "rawtext_char_end_exclusive": 8658,
+      "quote_exact_rawtext": "Artículo Primero. - Modificar el Reglamento de Gestión de \nConducta de Mercado del Sistema Financiero, aprobado por Resolución SBS N° 3274 -2017 y sus \nmodificatorias, conforme se indica a continuación: \n \n1. Incorporar el literal f) en el numeral 1 del párrafo 17.2 del artículo 17  y el numeral 3 en el \nartículo 27, de acuerdo con los siguientes textos: \n \n“Artículo 17. Aplicación de comisiones y gastos \n \n(…) \n17.2 Sobre el particular, debe observarse los siguientes criterios: \n1. Respecto de los productos activos, tanto en el caso de nuevos productos, como por \nrefinanciamiento o reestructuración de créditos, se entiende por servicios esenciales y/o inherentes \na: \n \n(…) \nf) El pago de obligaciones crediticias a través de canales propios puestos a disposición por cada \nempresa, incluyendo las operaciones de pago anticipado y adelanto de cuotas , siempre que no se \ntrate de un cargo incluido en el Anexo N° 1 del Reglamento de Comisiones y Gastos del Sistema \nFinanciero. \n \nArtículo 27. Responsabilidad de las empresas en la contratación de seguros asociados \n \n \n \nLos Laureles Nº 214 - Lima 27 - Perú   Telf. : (511) 6309000 \nLas empresas se encuentran sujetas a las exigencias establecidas en el Reglamento de \nComercialización de Productos de Seguros, las normas que lo modifiquen o sustituyan. \nAdicionalmente, las empresas que ofrezcan seguros considerados como una condición para \ncontratar, es decir, el seguro de desgravamen y los seguros para la protección del bien dado en \ngarantía, deben observar lo siguiente: \n \n(…) \n3. Las cláusulas adicionales a las pólizas contratadas o los productos de seguros que brinden \ncoberturas distintas a las del seguro de desgravamen o a los seguros orientados a la protección del \nbien en garantía, deben ser opcionales y su contratación debe ser  realizada de manera \nindependiente, debiendo requerir el consentimiento expreso de los usuarios por cada producto de \nseguro o cobertura adicional; para lo cual, las empresas deben resguardar los sustentos \ncorrespondientes de dicho consentimiento expreso.” \n \n2. Modificar los numerales 5 y 7 de la Octava Disposición Complementaria Final, de acuerdo con \nlos siguientes textos: \n \n“Octava.- Seguro de desgravamen como condición para contratar \nEn el caso de la contratación de seguros de desgravamen, como condición para contratar un \nproducto crediticio, complementariamente a lo dispuesto en el artículo 27 del presente Reglamento, \nlas empresas deben observar lo siguiente: \n \n(…) \n5. El seguro de desgravamen ofrecido por las empresas, debe contener únicamente las coberturas \nprincipales de fallecimiento e invalidez total y permanente, cuyo plazo de vigencia no debe exceder el \nplazo del crédito. \n \n(…) \n7. Si la empresa ofreciera otras coberturas distintas al seguro de desgravamen, estas deben ser \nopcionales y requieren ser presentadas mediante pólizas o cláusulas adicionales;  asimismo, su \ncontratación se debe realizar de manera independiente a la contratación del seguro de desgravamen \ny del producto de crédito, para lo cual se requiere el consentimiento expreso de los usuarios por cada \nproducto o cobertura adicional, debiendo la empresa resguardar los sustentos correspondientes de  \ndicho consentimiento.” \n \n3. Sustituir el numeral 16 del artículo 2  y el numeral 4 del párrafo 29.1 del artículo 29 , según los \nsiguientes textos: \n \n“16. Tasa de interés que depende de un factor variable: aquella tasa cuya fluctuación o ajuste \nperiódico depende de un indicador (factor) predeterminado que varía en el tiempo y cuya condición \nde ajuste es establecida en el contrato. Son ejemplos de factores variables: la variación del índice de \nprecios, las tasas de interés promedio del mercado tanto activas como pasivas, las tasas de \nreferencia que aplica el Banco Central de Reserva del Perú para productos de crédito con fines de \nregulación monetaria, entre otras. \n \nArtículo 29. Pago anticipado y adelanto de cuotas \n \n \nLos Laureles Nº 214 - Lima 27 - Perú   Telf. : (511) 6309000 \n \n29.1 Los usuarios tienen derecho a efectuar pagos por encima de la cuota exigible en el periodo, \nconsiderando para tal efecto lo siguiente:  \n \n(…) \n4.  Las empresas deben poner a disposición para realizar operaciones de pago anticipado y adelanto \nde cuotas, como mínimo los mismos canales utilizados para el pago de cuotas o de obligaciones de \ntarjeta de crédito, sin que resulten exigibles al usuario trámites o exigencias adicionales. \n(…)”",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "3240_art_second_third",
+      "source_id": "3240",
+      "pdf_path": "data/foundation-holdout/objects/e3/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1.pdf",
+      "pdf_sha256": "e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1",
+      "rawtext_path": "data/foundation-holdout/derived/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/a8750324698b9eeabd8cd9a0f560c530df6380c60b7b99da07c65087ecf8d910/rawtext.txt",
+      "rawtext_sha256": "48ed43b6b32f82c5b8279aa949ec9d743c70ff470e5b4fdcad8a554e5a2f3872",
+      "pdf_pages_1_based": [
+        4
+      ],
+      "rawtext_char_start": 8664,
+      "rawtext_char_end_exclusive": 9587,
+      "quote_exact_rawtext": "Artículo Segundo.- Eliminar la comisión por “Retención Judicial \ny/o Administrativa” de la categoría “Servicios brindados a solicitud del cliente” del rubro e) relacionado con \nservicios transversales del Anexo N° 1 del Reglamento de Comisiones y Gastos  del Sistema Financiero , \naprobado mediante Resolución SBS N° 3748-2021 y sus modificatorias. \n \n  Artículo Tercero.- Sustituir el texto de la comisión por “Operación \nen ventanilla” de la categoría “Uso de canales” del rubro b) relacionado con créditos hipotecario y de consumo \ndel Anexo N° 1 del Reglamento de Comisiones y Gastos  del Sistema Financiero , aprobado mediante \nResolución SBS N° 3748-2021 y sus modificatorias, según el siguiente texto: \n \n“2. Operación en ventanilla \n \nCobros por la realización de consultas de saldos y/o movimientos, entre otras operaciones, en ventanilla \nde la entidad. \nComprende las gestiones operativas asociadas al servicio.”",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "3240_art_fourth",
+      "source_id": "3240",
+      "pdf_path": "data/foundation-holdout/objects/e3/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1.pdf",
+      "pdf_sha256": "e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1",
+      "rawtext_path": "data/foundation-holdout/derived/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/a8750324698b9eeabd8cd9a0f560c530df6380c60b7b99da07c65087ecf8d910/rawtext.txt",
+      "rawtext_sha256": "48ed43b6b32f82c5b8279aa949ec9d743c70ff470e5b4fdcad8a554e5a2f3872",
+      "pdf_pages_1_based": [
+        4,
+        5
+      ],
+      "rawtext_char_start": 9593,
+      "rawtext_char_end_exclusive": 10800,
+      "quote_exact_rawtext": "Artículo Cuarto.- Modificar el Reglamento de Tarjetas de Crédito \ny Débito, aprobado por Resolución SBS N° 6523 -2013 y sus modificatorias , conforme se indica a \ncontinuación: \n \n1. Sustituir el numeral 11 del artículo 2, según el siguiente texto: \n \n“Artículo 2. Definiciones \n \n(…) \n11. Micropagos: operaciones por montos poco significativos y con un límite máximo, que no requieren \nautenticación reforzada del usuario.” \n \n2. Modificar el numeral 6 del artículo 16, el numeral 6 del segundo párrafo y el cuarto párrafo del \nartículo 23, de acuerdo con los siguientes textos: \n \n“Artículo 16. Medidas de seguridad respecto a los usuarios \n \n(…) \n6. En los casos de micropago, las operaciones deben encontrarse sujetas a un monto máximo.” \n \n \n \nLos Laureles Nº 214 - Lima 27 - Perú   Telf. : (511) 6309000 \nArtículo 23. Responsabilidad por operaciones no reconocidas \n \n(…) \n6. Micropago. \n \n(….) \nLa empresa no está obligada a asumir las pérdidas asociadas a las operaciones no reconocidas, \ncuando acredite la responsabilidad del usuario.  En el caso de micropago, el solo uso de la tarjeta o \nde su información no acredita la responsabilidad del usuario con respecto a la operación realizada. \n \n(…)”",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "3240_art_fifth",
+      "source_id": "3240",
+      "pdf_path": "data/foundation-holdout/objects/e3/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1.pdf",
+      "pdf_sha256": "e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1",
+      "rawtext_path": "data/foundation-holdout/derived/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/a8750324698b9eeabd8cd9a0f560c530df6380c60b7b99da07c65087ecf8d910/rawtext.txt",
+      "rawtext_sha256": "48ed43b6b32f82c5b8279aa949ec9d743c70ff470e5b4fdcad8a554e5a2f3872",
+      "pdf_pages_1_based": [
+        5
+      ],
+      "rawtext_char_start": 10804,
+      "rawtext_char_end_exclusive": 11623,
+      "quote_exact_rawtext": "Artículo Quinto.- Modificar los párrafos 20.1 y 20.2  del artículo \n20 del Reglamento para la Gestión de la Seguridad de la Información y la Ciberseguridad, aprobado por la \nResolución SBS N° 504-2021 y sus modificatorias, conforme se indica a continuación: \n \n“Artículo 20. Exenciones de autenticación reforzada para operaciones por canal digital \n \n20.1 Están exentas del requisito de autenticación reforzada indicado en el artículo 19 del presente \nReglamento, a excepción del indicado en el literal c), las siguientes operaciones realizadas por canal \ndigital: \n(…) \n \n20.2 Las operaciones de pago y transferencia que presenten un nivel de riesgo de fraude bajo, como \nresultado de un análisis del riesgo en línea por operación, están exentas de la autenticación reforzada, \nsiempre que la empresa cumpla con: \n(…)”",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "3240_art_sixth_lead",
+      "source_id": "3240",
+      "pdf_path": "data/foundation-holdout/objects/e3/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1.pdf",
+      "pdf_sha256": "e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1",
+      "rawtext_path": "data/foundation-holdout/derived/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/a8750324698b9eeabd8cd9a0f560c530df6380c60b7b99da07c65087ecf8d910/rawtext.txt",
+      "rawtext_sha256": "48ed43b6b32f82c5b8279aa949ec9d743c70ff470e5b4fdcad8a554e5a2f3872",
+      "pdf_pages_1_based": [
+        5
+      ],
+      "rawtext_char_start": 11632,
+      "rawtext_char_end_exclusive": 12069,
+      "quote_exact_rawtext": "Artículo Sexto. - Modificar el Reglamento de Reclamos y \nRequerimientos, aprobado mediante la Resolución SBS N° 4036-2022, conforme se indica a continuación: \n \n1. Modificar el párrafo 4.1 del artículo 4 , la Segunda Disposición Complementaria Final  y el \ncódigo del motivo de reclamo 115 “Indebida contratación” aplicable a las empresas \nsupervisadas del Anexo C: Códigos de Motivos de Reclamos , de acuerdo con los siguientes \ntextos:",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "3240_art4_1",
+      "source_id": "3240",
+      "pdf_path": "data/foundation-holdout/objects/e3/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1.pdf",
+      "pdf_sha256": "e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1",
+      "rawtext_path": "data/foundation-holdout/derived/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/a8750324698b9eeabd8cd9a0f560c530df6380c60b7b99da07c65087ecf8d910/rawtext.txt",
+      "rawtext_sha256": "48ed43b6b32f82c5b8279aa949ec9d743c70ff470e5b4fdcad8a554e5a2f3872",
+      "pdf_pages_1_based": [
+        5
+      ],
+      "rawtext_char_start": 12113,
+      "rawtext_char_end_exclusive": 12586,
+      "quote_exact_rawtext": "4.1 Los reclamos son comunicaciones presentadas por los usuarios o terceros en nombre de los \nusuarios, relacionados únicamente con los productos y servicios contratados, o con las operaciones \nasociadas a estos, en las que expresan su insatisfacción con la operación, producto o servicio recibido o \npor el incumplimiento de las obligaciones contempladas en los contratos o en el marco normativo \nvigente, o manifestando la presunta afectación de su legítimo interés. \n(…)",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "3240_second_final",
+      "source_id": "3240",
+      "pdf_path": "data/foundation-holdout/objects/e3/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1.pdf",
+      "pdf_sha256": "e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1",
+      "rawtext_path": "data/foundation-holdout/derived/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/a8750324698b9eeabd8cd9a0f560c530df6380c60b7b99da07c65087ecf8d910/rawtext.txt",
+      "rawtext_sha256": "48ed43b6b32f82c5b8279aa949ec9d743c70ff470e5b4fdcad8a554e5a2f3872",
+      "pdf_pages_1_based": [
+        6
+      ],
+      "rawtext_char_start": 12656,
+      "rawtext_char_end_exclusive": 13382,
+      "quote_exact_rawtext": "Segunda.- Lo establecido en este reglamento no exime del cumplimiento de las demás disposiciones \naplicables referidas a los reclamos y requerimientos, comprendidas en el Código de Protección y \nDefensa del Consumidor, Ley N° 29571 y sus normas modificatorias, y en el Reglamento del Libro de \nReclamaciones aprobado por el Decreto Supremo N° 011-2011-PCM y sus normas modificatorias. \n \nAsimismo, las empresas deben mantener un registro de  todas las quejas presentadas por los usuarios, \nen cumplimiento de lo señalado en el Reglamento del Libro de Reclamaciones.  Para ello, podrán utilizar \nla base de datos requerida en el párrafo 4.5 del artículo 4 del presente reglamento, bajo los códigos de \nproducto 112 y motivo 39.",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "3240_annexC_row",
+      "source_id": "3240",
+      "pdf_path": "data/foundation-holdout/objects/e3/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1.pdf",
+      "pdf_sha256": "e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1",
+      "rawtext_path": "data/foundation-holdout/derived/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/a8750324698b9eeabd8cd9a0f560c530df6380c60b7b99da07c65087ecf8d910/rawtext.txt",
+      "rawtext_sha256": "48ed43b6b32f82c5b8279aa949ec9d743c70ff470e5b4fdcad8a554e5a2f3872",
+      "pdf_pages_1_based": [
+        6
+      ],
+      "rawtext_char_start": 13386,
+      "rawtext_char_end_exclusive": 13509,
+      "quote_exact_rawtext": "ANEXO C: CÓDIGOS DE MOTIVOS DE RECLAMOS \nAPLICABLE A LAS EMPRESAS SUPERVISADAS \n \nCÓDIGO MOTIVOS \n117 Indebida contratación",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "3240_art15_2h",
+      "source_id": "3240",
+      "pdf_path": "data/foundation-holdout/objects/e3/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1.pdf",
+      "pdf_sha256": "e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1",
+      "rawtext_path": "data/foundation-holdout/derived/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/a8750324698b9eeabd8cd9a0f560c530df6380c60b7b99da07c65087ecf8d910/rawtext.txt",
+      "rawtext_sha256": "48ed43b6b32f82c5b8279aa949ec9d743c70ff470e5b4fdcad8a554e5a2f3872",
+      "pdf_pages_1_based": [
+        6
+      ],
+      "rawtext_char_start": 13513,
+      "rawtext_char_end_exclusive": 13881,
+      "quote_exact_rawtext": "2. Incorporar el literal h) en el párrafo 15.2 del artículo 15, de acuerdo con el siguiente texto: \n \nArtículo 15. Difusión de estadísticas por parte de la empresa \n \n(…) \nh) No considera las comunicaciones registradas bajo el código de producto 112 y motivo 39, por no estar \nvinculadas a los productos y servicios contratados, o a las operaciones asociadas a estos.”",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "3240_transition",
+      "source_id": "3240",
+      "pdf_path": "data/foundation-holdout/objects/e3/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1.pdf",
+      "pdf_sha256": "e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1",
+      "rawtext_path": "data/foundation-holdout/derived/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/a8750324698b9eeabd8cd9a0f560c530df6380c60b7b99da07c65087ecf8d910/rawtext.txt",
+      "rawtext_sha256": "48ed43b6b32f82c5b8279aa949ec9d743c70ff470e5b4fdcad8a554e5a2f3872",
+      "pdf_pages_1_based": [
+        6
+      ],
+      "rawtext_char_start": 13887,
+      "rawtext_char_end_exclusive": 14457,
+      "quote_exact_rawtext": "Artículo Sétimo.- Las modificaciones establecidas en l os \nartículos Primero y  Tercero cuentan con un plazo de adecuación de ciento ochenta  (180) días desde la \nvigencia de la presente resolución, salvo la modificación del artículo 29 del Reglamento de Gestión de \nConducta de Mercado del Sistema Financiero, que cuenta con un plazo de adecuación de trescientos sesenta \n(360) días desde la vigencia de la presente resolución.1 \n \nArtículo Octavo.- La presente resolución entra en vigencia a \npartir del día siguiente de su publicación en el Diario Oficial El Peruano.",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    },
+    {
+      "citation_id": "3240_note2286",
+      "source_id": "3240",
+      "pdf_path": "data/foundation-holdout/objects/e3/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1.pdf",
+      "pdf_sha256": "e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1",
+      "rawtext_path": "data/foundation-holdout/derived/e35934e4c9ba936821f45ed5a81d04739a85c4cdad6910d0030eac698eb28ab1/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/a8750324698b9eeabd8cd9a0f560c530df6380c60b7b99da07c65087ecf8d910/rawtext.txt",
+      "rawtext_sha256": "48ed43b6b32f82c5b8279aa949ec9d743c70ff470e5b4fdcad8a554e5a2f3872",
+      "pdf_pages_1_based": [
+        6
+      ],
+      "rawtext_char_start": 14510,
+      "rawtext_char_end_exclusive": 15079,
+      "quote_exact_rawtext": "1 Mediante el artículo Sexto de la Resolución SBS Nº 2286-2024, vigente a partir del 29/06/2024, se dispuso lo siguiente: “Con \nrelación al plazo de adecuación establecido en el artículo Séptimo de la Resolución SBS N° 3240 -2023, para la implementación de las \nmodificaciones al numeral 4 del párrafo 29.1 del artículo 29 del Reglamento de Gestión de Conducta de Mercado del Sistema \nFinanciero, aprobado mediante Resolución SBS N° 3274 -2017, se amplía el plazo otorgado por ciento ochenta (180) días adicionales \ncontados a partir del vencimiento del plazo inicial.”",
+      "verification": {
+        "exact_frozen_slice": true,
+        "original_page_reextraction_equal": true,
+        "visual_original_content_checked": true
+      },
+      "quote_limit": "Espacios internos, saltos, marcadores de nota y pies de página intermedios se preservan cuando forman parte del intervalo del derivado; no son texto dispositivo añadido."
+    }
+  ]
+}

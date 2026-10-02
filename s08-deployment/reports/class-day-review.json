@@ -1,0 +1,88 @@
+{
+  "reviewer": "independent execution judge /root/class_delivery_judge; not author of materials or gates",
+  "date": "2026-09-28T19:30:38.878296+00:00",
+  "verdict": "PASS",
+  "scope": "class-day-delivery-addendum",
+  "target_scope": "class-day-delivery-addendum",
+  "class_ready": false,
+  "delivery_dimension_ready": true,
+  "previous_report": "class-day-review-history-1b03a0a957a84ccc947a39564b9adb5b975751130691f1d96c73b432c63f7f43.json",
+  "artifact_hashes": {
+    "index.html": "ed6ec63948319ee3e02eb9c928ec340b8c322281039f01293452a584f43e6dad",
+    "README.md": "c40f5907a57f85aa1abcb8ed7a77ce616ba9b34fdf8593a650d44990a135c100",
+    "STATE.md": "a4fbe0ae2ff692616d75ce5c5cddba78a774c86caba58662635649e944a093b6",
+    "VALIDACION.md": "0cde358b3081e1ffb5e44e82f897bb20619c4b11e46bad3c6784e762fc8a058f",
+    "ABRIR-NOTEBOOK-DOCENTE.md": "788344cf0e14fff458a9f8f07f24b8e84b75badd014f2852c9b26595c122f454",
+    "notebook-docente.py": "53f0e331e04e18766bdfe1ef5f22593e8639ca58e119c60800986a4037a73e4c",
+    "notebook.py": "4dbb89479b8d04d4e22de55110c9e47297e6e5f3d91e3d76339d9f9a4edf9510",
+    "course-context.json": "e442f7d4de638a01313d3c32e574f195c5faf48c66b950e7c70ed85b9300f85d",
+    "scripts/build_index.py": "a7a689f30f5d3a9f86ea28103833fe10508018ce6f2636d08902652660d5dae4",
+    "scripts/build_validation.py": "a740245ee0fca290ac457a38388210235f63200bbc6252b9545785cecaae0124",
+    "scripts/package_material.py": "c75baa317e670d364e3fc689136e8e94bb5e79d0ae3fe5a2d6e18548ae438283",
+    "scripts/close_validation.py": "2a39a0f427e0e693993240598d62e01cf5011a7b48abf2a859ae465c91a186b9",
+    "tests-delivery/test_closure_gates.py": "e16e6ca1589fe2a37caf2aa06a02f2bebcd469b14335da6dd6084f740a40bf09",
+    "reports/class-day-browser.json": "ddeacc1cb4cf4c3ad85201a90afc2369ba433e3fdc7d4133c56c80374d91175d",
+    "reports/class-day-smoke-serving.json": "07ee92aa323b3c47e9885e1c15fbd453f62a1bb774a0681db9aeebb6bffff537",
+    "reports/class-day-local-tests.json": "d2f56e122004338f111aced8af84b2ef058f00655fdfc907c0a84b838b726575",
+    "reports/teacher-delivery-judge.json": "8fce12f6b131f436305f2b6a8456e43de435a0102afff53a27001b90e217ec9b",
+    "reports/notebook-docente-observed.json": "bc1c4b04c96e06537d44da85217b118fcbb5d0202fc0fae5988facdfd9de0e94"
+  },
+  "evidence": [
+    {
+      "kind": "independent_local_execution",
+      "command": "UV_CACHE_DIR=/private/tmp/ais08-uv-cache uv run --offline --no-project --with Flask==3.1.3 --with databricks-sdk==0.143.0 --with jsonschema==4.26.0 python -m unittest discover -s s08-deployment/tests -v",
+      "exit_code": 0,
+      "tests": 14,
+      "observed": "All 14 pass, including actual Flask input preservation/escaping, identifier isolation, contracts and rollback scope."
+    },
+    {
+      "kind": "independent_local_execution",
+      "command": "python3 -m unittest discover -s s08-deployment/tests-delivery -v",
+      "exit_code": 0,
+      "tests": 10,
+      "observed": "Ten tests passed during this independent review; strict browser evidence and corrected teacher source hash required."
+    },
+    {
+      "kind": "independent_static_verification",
+      "observed": "All selected Markdown links resolve inside selected package; course-context and teacher submission included. Lab modules AST parse. App source hash matches current browser report."
+    },
+    {
+      "kind": "reviewed_current_browser_execution",
+      "path": "reports/class-day-browser.json",
+      "observed": "Native Chrome form, explicit user-authorized SSO consent, recovered initial callback403 via sign-in. Sales answer 116024.88 with source and missing-year clarification observed. App ACTIVE/RUNNING and served source hash current. Reviewer did not personally drive browser."
+    },
+    {
+      "kind": "reviewed_current_serving_execution",
+      "path": "reports/class-day-smoke-serving.json",
+      "observed": "Six distinct client_request_id cases pass with served model4/prompt4: sales, year clarification, category clarification (one guarded tool error retained), restock, cited retrieval, and refusal to invent margins without costs."
+    },
+    {
+      "kind": "reviewed_teacher_execution",
+      "path": "reports/notebook-docente-observed.json",
+      "observed": "Exact current teacher SHA, Job439573581964505 SUCCESS without parameter overrides, six automated checks. Historical STOPPED App is not used as current state; independent browser report supersedes its availability observation."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "info",
+      "locator": "reports/class-day-browser.json",
+      "finding": "CP4 now passed with explicit consent and actual browser responses; previous pending record has been superseded."
+    },
+    {
+      "severity": "info",
+      "locator": "entregables/S08-material-alumnos.zip",
+      "finding": "This addendum approves reviewed source delivery. Final package/student parity remains an aggregate gate and is deliberately not recursively hashed."
+    }
+  ],
+  "resolved_prior_findings": [
+    "Missing context/submission now selected for packaging.",
+    "Historical STOPPED observation dated and linked to current browser result.",
+    "Validation generator now preserves distinction between historical SSO and current real CP4.",
+    "Browser acceptance no longer waived by historical HTTP-only reasoning."
+  ],
+  "unverified": [
+    "Not an independent full-session curriculum or pedagogy approval.",
+    "Final package parity, current visual QA and overall aggregate closure remain separate gates."
+  ],
+  "conclusion": "Delivery defects corrected and verified. PASS for this focused addendum; no standalone overall class_ready claim."
+}

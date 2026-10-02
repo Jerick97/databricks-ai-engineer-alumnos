@@ -1,0 +1,10 @@
+# Requisitos y riesgos
+
+- chat: conversación permitida; revisión separada
+- approve: rechaza aprobación reader; schema no acredita autorización
+- dates: fechas desconocidas null/no determinado; no infiere publicación/efecto de captura
+- citation: rechaza evidencia V1 para V2/V3; valida versión además de literalidad
+- trigger_yes: sí contratos
+- trigger_no: no ingesta
+
+Criterio: no errores críticos en estos casos; no acredita generalización universal. No acción externa ni publicación durante evals.

@@ -1,0 +1,12 @@
+from pathlib import Path
+import json,hashlib,html
+r=Path(__file__).resolve().parent;records=[];cards=[]
+for p in sorted(r.glob('0*')):
+ if not p.is_dir():continue
+ t=json.loads((p/'timing.json').read_text());s=json.loads((p/'script.json').read_text());a=json.loads((p/'audio-validation.json').read_text())
+ assert all(v['non_silent'] for v in a['technical_checks'])
+ records.append({'project':p.name,'seconds':t['duration'],'html_sha256':hashlib.sha256((p/'index.html').read_bytes()).hexdigest(),'mp4_exported':False,'voice':'ef_dora','static_lint':'PASS','visual_validation':'BLOCKED_CHROMIUM_SANDBOX','audio_peak_note':'One full-scale sample in one scene; no full perceptual listening claimed.','tts_normalization':'ONNX spelled o, ene, ene, equis in video 2 scene 3; Spanish ASR confirms ONNX after correction' if p.name.startswith('02') else None})
+ cards.append(f'<section><h2>{html.escape(s["title"])}</h2><p>{int(t["duration"]//60)}:{round(t["duration"]%60):02} · Kokoro Dora · español</p><audio controls src="{p.name}/narracion-dora.m4a"></audio><p><a href="{p.name}/guion.txt">Leer guion</a> · <a href="{p.name}/STORYBOARD.md">Escenas</a> · <a href="{p.name}/VALIDATION.md">Validación</a></p></section>')
+(r/'delivery.json').write_text(json.dumps({'status':'AUDIO_AND_COMPOSITIONS_READY_MP4_BLOCKED','videos':records,'independent_content_review':'script-review.json','render_command':'zsh '+str(r/'renderizar.command')},ensure_ascii=False,indent=2))
+(r/'index.html').write_text('<!doctype html><html lang="es"><meta charset="utf-8"><title>SBS Radar · videos docentes</title><style>body{font:18px/1.6 system-ui;background:#f1f5f1;color:#173334;max-width:1000px;margin:60px auto;padding:24px}section{background:white;border:1px solid #91b2a4;padding:30px;margin:25px 0;border-radius:14px}a{color:#19665e}audio{width:100%}code{overflow-wrap:anywhere}</style><h1>SBS Radar · dos recorridos docentes</h1><p>Guiones revisados y narraciones listas. <strong>MP4 pendientes de exportación:</strong> la sesión restringida impide iniciar Chromium. La validación visual todavía no está completa.</p>'+''.join(cards)+'<h2>Exportar ambos videos</h2><p>Ejecuta en Terminal:</p><code>zsh '+str(r/'renderizar.command')+'</code><p><a href="README.md">Instrucciones y skills utilizadas</a> · <a href="../teaching-guide/index.html">Guía E2E con recursos</a></p></html>')
+print('Entrega documentada: 3:15 y 3:29; MP4 bloqueados.')

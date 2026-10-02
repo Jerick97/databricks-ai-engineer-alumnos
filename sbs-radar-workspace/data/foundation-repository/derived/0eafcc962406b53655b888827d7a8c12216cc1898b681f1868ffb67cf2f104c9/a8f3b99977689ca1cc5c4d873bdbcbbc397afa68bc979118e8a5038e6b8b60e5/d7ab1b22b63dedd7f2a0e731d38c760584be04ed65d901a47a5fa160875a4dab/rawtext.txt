@@ -1,0 +1,391 @@
+  
+  
+Los Laureles Nº 214 - Lima 27 - Perú   Telf. : (511) 6309000     
+  
+Lima, 26 de junio de 2024  
+  
+Resolución S.B.S. 
+N° 2286-2024  
+  
+La Superintendenta de Banca, Seguros y  
+Administradoras Privadas de Fondos de Pensiones  
+  
+CONSIDERANDO: 
+  
+Que, mediante Resolución SBS N° 6523 -2013 se aprobó el 
+Reglamento de Tarjetas de Crédito y Débito, el cual establece disposiciones generales aplicables a las 
+tarjetas de crédito y débito, entre estas, aquellas referidas a las responsabilidades de las empresas en la 
+realización de operaciones y las validaciones necesarias requeridas para verificar la identidad de cada 
+tarjetahabiente;  
+ 
+Que, mediante Resolución SBS N° 504 -2021 se aprobó el 
+Reglamento para la Gestión de la Seguridad de la Información y la Ciberseguridad, con la finalidad de 
+fortalecer las capacidades de ciberseguridad y procesos de autenticación de las empresas del sistema 
+financiero, de seguros y privado de pensiones, considerando la creciente interconectividad y mayor 
+adopción de canales digitales para la provisión de los servicios, así como la virtualización de algunos 
+productos;  
+ 
+Que, mediante Resolución SBS N° 3274 -2017 se aprobó el 
+Reglamento de Gestión de Conducta de Mercado del Sistema Financiero, con la finalidad de que las 
+empresas cuenten con una adecuada gestión de conducta de mercado que se refleje en las prácticas que 
+adoptan en su relación con los usuarios, en la oferta de productos y servicios financieros, la transparencia 
+de información y la gestión de reclamos;  
+ 
+Que, se considera necesario modificar el marco normativo 
+señalado  previamente, considerando el actual funcionamiento de los productos y/o servicios ofrecidos 
+por las empresas del sistema financiero a los usuarios, así como el impacto del uso de las nuevas 
+tecnologías, siendo necesario precisar la responsabilidad de las empresas en los procedimientos de 
+validación de identidad de los usuarios  y la obtención su consentimiento  al momento de realizar 
+operaciones, ante casos de operaciones no reconocidas y de aquellas que fueron procesadas sin requerir 
+autenticación reforzada; así como las obligaciones de las empresas asociadas al cumplimiento de 
+disposiciones de carácter imperativo;  
+ 
+Que, en línea con lo señalado previamente, es necesario que 
+los mecanismos de validación de identidad  y obtención del consentimiento del usuario  sean 
+implementados por las empresas desde el momento de la contratación de productos y/o servicios,  asi 
+como durante su ejecución, con la finalidad de contar con información precisa sobre nuevos usuarios que 
+permita realizar un monitoreo adecuado de operaciones;  
+   
+  
+  
+Los Laureles Nº 214 - Lima 27 - Perú   Telf. : (511) 6309000     
+  
+Que, a efectos de recoger las opiniones de los usuarios 
+respecto de la propuesta de norma, se disp uso la prepublicación del proyecto de resolución, en el portal 
+electrónico de la Superintendencia, al amparo de lo dispuesto en el Decreto Supremo N° 001-2009-JUS;  
+ 
+Contando con el visto bueno de las Superintendencias Adjuntas 
+de Banca y Microfinanzas, de Seguros, de las Administradoras Privadas de Fondos de Pensiones, de 
+Riesgos, de Asesoría Jurídica y de Conducta de Mercado e Inclusión Financiera; y,   
+ 
+En uso de las atribuciones conferidas en los numerales 7 y 9 
+del artículo 349º de la Ley General del Sistema Financiero y del Sistema de Seguros y Orgánica de la 
+Superintendencia de Banca y Seguros, Ley N° 26702 y sus normas modificatorias;  
+  
+RESUELVE:  
+  
+Artículo Primero. - Modificar el Reglamento de Tarjetas de 
+Crédito y Débito, aprobado por Resolución SBS N° 6523-2013, conforme se indica a continuación:  
+  
+1. Incorporar l os numerales 23, 24 y 25 en el artículo 2 , el numeral 7 en el artículo 16 , un 
+último párrafo en el artículo 18  y el numeral 10 en el  segundo párrafo del  artículo 23, de 
+acuerdo con los siguientes textos:  
+  
+“Artículo 2°.- Definiciones  
+  
+Para efectos de lo dispuesto en el presente Reglamento, se considerarán las siguientes 
+definiciones: 
+  
+(…) 
+23.  Operaciones con tarjeta presente: Operaciones en las que el instrumento de pago 
+interactúa con el dispositivo de captura de información. 
+24.  Operaciones con tarjeta no presente: Operaciones en las que el instrumento de pago no 
+interactúa con el dispositivo de captura de información. 
+25.  Reglamento de Ciberseguridad: Reglamento para la Gestión de la Seguridad de la 
+Información y la Ciberseguridad, aprobado por la Resolución SBS N° 504 -2021 y sus 
+normas modificatorias.  
+ 
+Artículo 16°.- Medidas de seguridad respecto a los usuarios  
+  
+Las empresas deben adoptar, como mínimo, las siguientes medidas de seguridad con respecto a 
+los usuarios:  
+   
+(…)  
+7. El proceso de autenticación del usuario para efectuar operaciones con tarjeta s debe 
+realizarse según lo establecido en el artículo 19 del Reglamento de Ciberseguridad, mediante 
+factores categoriza dos en el literal j ) del artículo 2 del dicho reglamento, y siguiendo las 
+recomendaciones técnicas de los estándares EMV emitidos por EMVCo, según el tipo de 
+operación del que se trate: 
+7.1 Para operaciones con tarjeta presente se requieren dos factores, donde el primero es el 
+chip de la tarjeta  o su representación digital . E l segundo  factor puede ser una clave 
+secreta (PIN) u otro que establezca la Superintendencia.  
+  
+  
+Los Laureles Nº 214 - Lima 27 - Perú   Telf. : (511) 6309000     
+  
+7.2 Para operaciones con tarjeta no presente se requieren dos factores, donde el primero 
+son los datos contenidos en la representación física o digital de la tarjeta. El segundo 
+factor puede ser un código de verificación dinámico de la tarjeta u otro factor verificable 
+en línea requerido al usuario en el marco del estándar EMV 3DS, salvo los casos de 
+exención previstos en el artículo 20 del Reglamento de Ciberseguridad.  
+7.3 Para operaciones con billeteras móviles  de terceros basad as en tokenización de 
+tarjetas, la afiliación de la tarjeta para el uso de este servicio conforme al numeral 7.2 y 
+las operaciones subsiguientes  que se realicen  deben ser autenticadas mediante la 
+tokenización de la tarjeta y un segundo factor de distinta naturaleza. 
+7.4 El control requerido en el literal b) del artículo 19 el Reglamento de Ciberseguridad, ante 
+ataques de hombre en el medio,  es satisfecho mediante la adopción de los estándares 
+EMV 3DS y EMV Tokenization para los numerales 7.2 y 7.3 del presente artículo, según 
+corresponda. 
+7.5 Para operaciones en que no se valide el segundo factor  por limitaciones fuera de su 
+control, la empresa debe establecer reglas de aceptación o rechazo, en función al nivel 
+de riesgo de fraude , según e l sistema de monitoreo de transacciones descrito en el 
+artículo 17 ° del presente reglamento. Dichas limitaciones pueden estar asociadas al 
+terminal de atención, las prácticas del comercio o la tecnología utilizada por el usuario.   
+ 
+Artículo 18°.- Medidas en materia de seguridad de la información  
+ 
+(…) 
+La empresa debe poner a disposición de plataformas de terceros mecanismos para reemplazar 
+los datos de la tarjeta por un identificador único generado mediante técnicas criptográficas  
+(tokenización). 
+ 
+Artículo 23°.- Responsabilidad por operaciones no reconocidas 
+ 
+(…) 
+La empresa es responsable de las pérdidas por las operaciones realizadas en los siguientes 
+casos: 
+ 
+(…) 
+10. Operaciones realizadas sin el empleo de un segundo factor de autenticación, a que hace 
+referencia el párrafo 7.5 del numeral 7 del artículo 16 del presente reglamento.” 
+ 
+2. Modificar los numerales 9 y 14 del artículo 2, el numeral 1 del artículo 5, el tercer párrafo 
+del artículo 8, el numeral 1 del artículo 15 y la Primera Disposición Final y Transitoria, de 
+acuerdo con los siguientes textos:  
+  
+“Artículo 2°.- Definiciones  
+  
+Para efectos de lo dispuesto en el presente Reglamento, se considerarán las siguientes 
+definiciones:  
+  
+(…)  
+9.  Factor de autenticación: conforme a la definición señalada en el literal j) del artículo 2 del 
+Reglamento para la Gestión de la Seguridad de la Información y la Ciberseguridad.  
+  
+  
+  
+Los Laureles Nº 214 - Lima 27 - Perú   Telf. : (511) 6309000     
+  
+(…)  
+14. Reglamento de Gestión de Conducta de Mercado: Reglamento de Gestión de Conducta de 
+Mercado del Sistema Financiero, aprobado por la Resolución SBS N° 3274 -2017 y sus 
+normas modificatorias.  
+  
+(…)  
+  
+Artículo 5°.- Contenido mínimo del contrato  
+  
+El contrato de tarjeta de crédito deberá contener, como mínimo, la siguiente información:  
+1.  Las condiciones aplicables para la reducción o aumento de la línea de crédito y los 
+mecanismos aplicables para requerir el consentimiento previo del usuario en caso se busque 
+realizar un aumento de la línea conforme lo dispone el Reglamento de Gestión de Conducta 
+de Mercado, cuando corresponda.  
+  
+(…)  
+  
+Artículo 8°.- Tarjeta de crédito adicional  
+  
+(…)  
+Solo el titular de la línea de crédito puede elegir los servicios adicionales asociados a la tarjeta de 
+crédito adicional que solicite, conforme a lo dispuesto en el artículo 7 ° del presente Reglamento. 
+Los servicios adicionales de la tarjeta adicional, a excepción del sobregiro, deben poder ser 
+habilitados o deshabilitados por el titular de manera independiente de los servicios adicionales de 
+la tarjeta principal.  
+   
+Artículo 15°.- Medidas de seguridad incorporadas en las tarjetas  
+  
+Las tarjetas deberán contar con un circuito integrado o chip que permita almacenar y procesar la 
+información del usuario y sus operaciones, cumpliendo estándares internacionales de 
+interoperabilidad para el uso y verificación de las tarjetas, así como para la autenticación de 
+pagos; para lo cual deberá cumplirse como mínimo con los requisitos de seguridad establecidos 
+en el estándar EMV emitido por EMVCo. Al respecto, las empresas deberán aplicar, entre otras, 
+las siguientes medidas:  
+  
+1.  Reglas de seguridad definidas en el chip de las tarjetas  con soporte físico , que deben ser 
+utilizadas para verificar la autenticidad de la tarjeta y validar la identidad del usuario 
+conforme a los requerimientos mínimos señalados en el artículo 16° del presente 
+Reglamento. 
+ 
+(…) 
+ 
+Disposiciones Finales y Transitorias  
+  
+Primera.- Reglamento de Gestión de Conducta de Mercado   
+  
+Resultan aplicables las disposiciones reguladas en el Reglamento de Gestión de Conducta de 
+Mercado.” 
+  
+  
+  
+Los Laureles Nº 214 - Lima 27 - Perú   Telf. : (511) 6309000     
+  
+ 
+3. Sustituir los artículos 6, 9, 12 y 14, según los siguientes textos:  
+  
+“Artículo 6°.- Información mínima, condiciones y vigencia aplicable a la tarjeta de crédito  
+  
+Las tarjetas de crédito con soporte físico o digital se expiden con carácter de intransferible y 
+deben incluir como mínimo la siguiente información:  
+  
+1. Denominación social de la empresa que emite la tarjeta de crédito.  
+2. Nombre comercial que la empresa asigne al producto.  
+3. Identificación del sistema de tarjeta de crédito (marca) al que pertenece, de ser el caso.  
+  
+El plazo de vigencia de las tarjetas de crédito no puede exceder de cinco (5) años, pudiéndose 
+acordar plazos de vencimiento menores.  
+  
+Artículo 9°.- Cargos asociados a tarjetas de crédito 
+ 
+Las empresas cargarán  el importe de los bienes, servicios y obligaciones que el usuario de 
+tarjeta de crédito  adquiera o pague , asi como  de los servicios descritos en el artículo 7 ° del 
+Reglamento, conforme a la legislación vigente sobre la materia, al contrato suscrito entre las 
+partes y a la autorización del usuario de la tarjeta de crédito. 
+ 
+Artículo 12°.- Información mínima, condiciones y vigencia aplicable a las tarjetas de débito  
+ 
+Las tarjetas de débito con soporte físico o digital se expiden con carácter de intransferible y 
+deben incluir como mínimo la siguiente información:  
+   
+1. Denominación social de la empresa que emite la tarjeta de débito.  
+2. Nombre comercial que la empresa asigne al producto.  
+3. Identificación del sistema de tarjeta de débito (marca) al que pertenece, de ser el caso.  
+  
+El plazo de vigencia de las tarjetas de débito no puede exceder de cinco (5) años, pudiéndose 
+acordar plazos de vencimiento menores.  
+ 
+Artículo 14°.- Cargos asociados a tarjetas de débito  
+  
+Las empresas cargarán en la cuenta de depósitos  del usuario el importe de los bienes, servicios 
+y obligaciones que este adquiera o pague , así como de los servicios descritos en el artículo 13 ° 
+del Reglamento, conforme a la legislación vigente sobre la materia, al contrato suscrito entre las 
+partes y a la autorización del usuario de la tarjeta de débito.”  
+  
+4. Eliminar los numerales 5 y 6 del artículo 17.  
+  
+ 
+ 
+ 
+ 
+ 
+  
+  
+Los Laureles Nº 214 - Lima 27 - Perú   Telf. : (511) 6309000     
+  
+ 
+Artículo Segundo.- Modificar el párrafo 20.3 del artículo 20 del 
+Reglamento para la Gestión de la Seguridad de la Información y la Ciberseguridad, aprobado por 
+Resolución SBS N° 504-2021, conforme se indica a continuación: 
+  
+“Artículo 20. Exenciones de autenticación reforzada para operaciones por canal digital  
+  
+(…) 
+20.3 La empresa es responsable de las pérdidas , salvo que acredite la responsabilidad del usuario,  por 
+las operaciones no reconocidas por los clientes que hayan sido efectuadas  por canal digital sin cumplir 
+con el requisito de autenticación reforzada, o en aplicación de la exención señalada en el párrafo 20.2 del 
+presente artículo, o que fueron realizadas luego de que el usuario reportara el robo o pérdida de sus 
+credenciales. 
+   
+ 
+  
+Artículo Tercero.- Modificar el primer párrafo del artículo 49 
+del Reglamento de Gestión de Conducta de Mercado del Sistema Financiero, aprobado por Resolución 
+SBS N° 3274-2017, conforme se indica a continuación:  
+  
+“Artículo 49. Contratación de productos financieros  
+  
+49.1 En la contratación de productos y servicios financieros, se debe considerar lo siguiente:  
+ 
+1. La empresa debe verificar la identidad del cliente y dejar constancia de la aceptación del contrato, 
+que incluye la hoja resumen o cartilla de información y cualquier otra información que 
+corresponda, así como de cualquier operación realizada durante su ejecución. 
+2. Para la celebración del contrato y durante su ejecución a través de canales digitales, la empresa 
+debe aplicar lo establecido en la normatividad vigente sobre seguridad de la información y 
+ciberseguridad. 
+ 
+(…)”  
+  
+  Artículo Cuarto.- Modificar los párrafos 14.1 y 14.2 del artículo 
+14 del Reglamento de Reclamos y Requerimientos, aprobado por Resolución SBS N° 4036 -2022, 
+conforme se indica a continuación: 
+ 
+“Artículo 14.- Información al Usuario  
+  
+14.1 Las empresas deben mantener a disposición de los usuarios, a través de sus canales digitales, 
+y en todos sus establecimientos abiertos al público, en un lugar visible y de fácil acceso, información, 
+afiches y/o folletos sobre los procedimientos de atención de reclamos y requerimientos, los requisitos 
+para su trámite, plazos de atención, los canales puestos a disposición de los usuarios para su 
+presentación y canales para la recepción o puesta a disposición de la respuesta.   
+  
+14.2 Las empresas deben mantener a disposición del público, material informativo otorgado por la 
+Superintendencia con relación a la labor que realiza, con la finalidad de informar sobre sus 
+competencias en la atención de reclamos o requerimientos relacionados con los productos y/o 
+  
+  
+Los Laureles Nº 214 - Lima 27 - Perú   Telf. : (511) 6309000     
+  
+servicios que prestan las empresas; pudiendo ser difundida a través cualquiera de sus canales de 
+atención. 
+  
+(…)” 
+  
+  Artículo Quinto.- Con relación a lo dispuesto sobre servicios 
+adicionales en el último párrafo del artículo Décimo Segundo de la Resolución SBS N° 5570 -2019, las 
+tarjetas emitidas por nuevos contratos que se suscriban con posterioridad al 01.01.2021 se expiden con 
+todos los servicios adicionales deshabilitados, y son habilitados a requerimiento del usuario. De igual 
+forma, todas las primeras renovaciones por vencimiento o de reposiciones por pérdida, robo u otra causa, 
+que correspondan a contratos suscritos antes del 01.01.2021 deben expedirse con todos los servicios 
+adicionales deshabilitados, y son habilitados a requerimiento del usuario. En ambos casos, las posteriores 
+emisiones pueden conservar la última decisión del usuario de la cual se mantenga sustento, sobre 
+habilitar o deshabilitar los servicios adicionales.  
+ 
+ Artículo Sexto. - Con relación al plazo de adecuación 
+establecido en el artículo Sé ptimo de la Resolución SBS N° 3240 -2023, para la implementación de las 
+modificaciones al numeral 4 del párrafo 29.1 del artículo 29 del Reglamento de Gestión de Conducta de 
+Mercado del Sistema Financiero, aprobado mediante Resolución SBS N° 3274 -2017, se amplía el plazo 
+otorgado por ciento ochenta (180) días adicionales contados a partir del vencimiento del plazo inicial. 
+ 
+Artículo Séptimo. - Las modificaciones al Reglamento de 
+Tarjetas de Crédito y Débito aprobado por Resolución SBS N° 6523 -2013, establecidas en el artículo 
+Primero de la presente Resolución cuentan con un plazo de adecuación hasta el 31 de diciembre de 
+2024, salvo lo dispuesto a continuación: 
+ 
+a) Operación con tarjeta de débito presente:  desde el día siguiente de la publicación de esta 
+Resolución, la empresa debe autenticar al usuario conforme al numeral 7.1 del artículo 16° del 
+Reglamento. 
+b) Operación con tarjeta de crédito presente:  
+b.1.) En las tarjetas emitidas desde el 01 de julio de 2025 inclusive, la empresa debe autenticar 
+al usuario conforme al numeral 7.1 del artículo 16° del Reglamento. 
+b.2.) En las tarjetas emitidas antes del 01 de julio de 2025 y que aún sigan vigentes luego de 
+dicha fecha, la empresa debe autenticar al usuario conforme al numeral 7.1 del artículo 16° del 
+Reglamento como máximo a partir de su renovación.1 
+c) Operación con tarjeta de crédito o débito no presente : desde el 01 de julio de 2025 , la 
+empresa debe autenticar al usuario conforme a los numerales  7.2 y 7.4 del artículo 16° del 
+Reglamento, independientemente de la fecha de emisión de la tarjeta. 
+d) Operación con billeteras móviles de terceros basados en tokenización de tarjetas:  desde el 
+01 de julio del 2025, la empresa debe autenticar al usuario conforme al numeral 7.3 del artículo 
+16° del Reglamento, independientemente de la fecha de emisión de la tarjeta. 
+e) Operación con tarjeta de crédito adicional en la modalidad de tarjeta no presente:  a partir 
+del 01 de diciembre de 2025 , la empresa debe autenticar al usuario conforme a lo señalado en 
+los numerales 7.2, 7.3 y 7.4 del artículo 16° del Reglamento , independientemente de la fecha de 
+emisión de la tarjeta. 
+f) Responsabilidad por pérdidas en operaciones no reconocidas: desde el 01 de julio de 2025, 
+la empresa es responsable de las pérdidas en operaciones no reconocidas, salvo que acredite la 
+ 
+1 Prórroga de plazo al 1 de abril de 2026 por Resolución SBS N° 2220-2025, con fecha de vigencia 26.06.2025. 
+  
+  
+Los Laureles Nº 214 - Lima 27 - Perú   Telf. : (511) 6309000     
+  
+responsabilidad del usuario, conforme a lo establecido en los numerales 9 y 10 del artículo 23 del 
+Reglamento, con excepción de la operación prevista en el literal a) del presente artículo, en cuyo 
+caso la responsabilidad será exigible a partir de la vigencia de la presente Resolución.23 
+g) El numeral 7.5 del artículo 16° y el último párrafo del artículo 18° del Reglamento  tienen 
+plazo de adecuación hasta el 01 de julio de 20254. 
+ 
+Artículo Octavo.- La presente Resolución entra en vigencia a partir del día  
+siguiente de su publicación en el Diario Oficial El Peruano. 
+  
+  
+Regístrese, comuníquese y publíquese.  
+ 
+ 
+MARIA DEL SOCORRO HEYSEN ZEGARRA 
+Superintendenta de Banca, Seguros y AFP 
+ 
+ 
+2 Prórroga de plazo al 1 de abril de 2026 sobre el literal b.2) por Resolución SBS N° 2220 -2025, con fecha de vigencia 
+26.06.2025 
+3 Prórroga de plazo al 1 de junio de 2026 sobre el literal b.2) por Resolución SBS N° 0771-2026. 
+4 Prórroga de plazo al 1 de abril de 2026 sobre el último párrafo del artículo 18 por Resolución SBS N° 2220 -2025, con fecha 
+de vigencia 26.06.2025 
+ 

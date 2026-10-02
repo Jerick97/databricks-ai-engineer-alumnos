@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "enabled": false,
+  "identity_profile": "uc_managed_named_replay_v1",
+  "workspace_host": "https://dbc-0410b264-20c7.cloud.databricks.com",
+  "executor_id": 77041447522099,
+  "client_id": "a947eccf-5f94-4369-a3d4-8f83b4ea98a1",
+  "genie_acl_object_id": "/genie/2365958246005085",
+  "runtime_config_path": "config/genie-runtime-068.json",
+  "runtime_config_sha256": "8f03448a9cd11d057e532b3f2e0a0e34965a260e3da4e6beba4e9fd4ef67c67f",
+  "certificate_path": "deployment/state/phase-s-017/certificates/ffa5670ffcc48e8e7c44ebf9972d8ae16a8f412da17cbb2d5f71e4f8d923a875.json",
+  "certificate_sha256": "ffa5670ffcc48e8e7c44ebf9972d8ae16a8f412da17cbb2d5f71e4f8d923a875",
+  "policy_path": "config/genie-admin-policy-068-proposal.json",
+  "policy_sha256": "ac9a313a9c4015731043fac4846a250d87ec4129c0c213d182807494843856c4",
+  "evidence_prefix": "/Volumes/neptuno_manuel_arguelles/sbs_radar/release_artifacts/registry"
+}

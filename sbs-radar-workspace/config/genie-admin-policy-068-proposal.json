@@ -1,0 +1,12 @@
+{
+  "policy_id": "sbs-genie-reader-068",
+  "namespace": "neptuno_manuel_arguelles.sbs_radar",
+  "trusted_administrators": [
+    "sociosdosmilveintiseis@gmail.com"
+  ],
+  "maintenance_assumption": "Durante esta publicaci\u00f3n y su readback, ninguna otra operaci\u00f3n modifica, reemplaza o elimina estas ocho tablas; el uso ajeno del warehouse compartido queda fuera de esta exclusividad de datos.",
+  "abac_assumption": "Supuesto t\u00e9cnico del perfil piloto: no hay ABAC heredada que altere estas ocho tablas. No observado por GET ni atestado por el usuario; cualquier pol\u00edtica/m\u00e1scara/filtro observada incompatible obliga a rechazar.",
+  "issued_at_ms": 1790629961033,
+  "expires_at_ms": 1790631761033,
+  "observation_ttl_ms": 60000
+}

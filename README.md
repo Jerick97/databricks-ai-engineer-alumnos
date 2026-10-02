@@ -75,3 +75,20 @@ del repositorio docente llegó correctamente.
 ## S05 · actualización 14-sep-2026
 
 La sesión principal continúa con **Neptuno** en `s05-agentes/`. El caso SBS se conserva como **laboratorio complementario** en `laboratorios-complementarios/vigia-normativa-sbs/`, fuera de la progresión S05–S08. S05 preparada: Neptuno, 65 slides y 180 minutos. Notebook validado en Databricks, 7/7 casos; material de práctica en `s05-agentes/`.
+
+## S08 y SBS Radar — material de cierre
+
+- [Todo el material, en orden](MATERIAL-HOY.html) (descarga o clona el repo para abrir el HTML interactivo).
+- [Slides, notebooks, código, videos y skills](PUBLICACION-S08-SBS.md).
+- [Repositorio público SBS Radar](https://github.com/manuelarguelles/sbs-radar-e2e).
+- [Ejemplo público Genie IaC](https://github.com/manuelarguelles/ianbal-genie-iac).
+
+El diseño IaC de SBS está documentado y pendiente de implementación completa; el ejemplo Genie IaC es un proyecto distinto.
+
+## Skills del agente SBS Radar
+
+**[Abrir las 13 skills SK00–SK12](skills/README.md)** · instrucciones, referencias y evaluaciones. También se conservan en [su ubicación original](sbs-radar-workspace/skills/).
+
+## Framework agnóstico para nuevos agentes
+
+[Agent Engineering Skills — SK00–SK14](https://github.com/manuelarguelles/agent-engineering-skills): contexto, caso, arquitectura, ingesta, recuperación y demás responsabilidades seleccionadas según el proyecto. Independiente del caso SBS y de Databricks; versión provisional con evaluaciones documentadas.

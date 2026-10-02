@@ -1,0 +1,7 @@
+ La recuperación combina dos búsquedas dentro del alcance permitido. La búsqueda léxica
+ BM25 encuentra términos exactos. La búsqueda vectorial aproxima el significado.
+ RRF fusiona las posiciones de ambas listas, no suma directamente puntuaciones que tienen
+ escalas distintas. Después, un modelo de Reranking vuelve a evaluar la relevancia de los candidatos.
+ En este piloto, el Reranker se ejecuta localmente con ONG.
+ Se reunimos pasajes, referencias, trazas y límites en un paquete de evidencia.
+ Recuperar resultados relevantes no demuestra que hayamos cubierto toda la norma.

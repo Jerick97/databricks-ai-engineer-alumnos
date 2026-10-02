@@ -1,0 +1,7 @@
+# Corrección225 — resultado Genie tipado observado
+
+Causa223 reproducida sin red: proveedor devolvió PROTOBUF_ARRAY/data_typed_array completo; SDK0.102 eliminó esos campos y el adaptador interpretó cero filas como respuesta parcial, luego conflicto genérico. Conservar raw/SDK/replay y falloUI original; no reetiquetarlos como E2E satisfactorio.
+
+Preservar JSON crudo solamente en GET query-result del perfil plataforma mediante el mismo transporte acotado y autenticación. Mantener operaciones SDK restantes. Decoder cerrado del formato observado: exactamente un chunk/fila/columna COUNT LONG/BIGINT, offsets/cantidades coherentes, no truncación/paginación/ambigüedad, celda str entera canónica no negativa≤2^63−1. JSON_ARRAY legado se conserva. No extraer conteos de prosa ni del corpus esperado; comparación con corpus ocurre después junto con SQL AST, historial, actor, versión, metadatos/prepostTTL y revocación intactos.
+
+Prueba RED usa fixtures reales y muestra pérdida SDK; GREEN decodifica ambos resultados y alcanza validación de scope/AST e historial archivado. Dobles locales de permisos/historial no acreditan observación M2M nueva. Requiere revisiónSK09, despliegue único sin Appstart/stop y prueba real posterior. Sexta reserva adicional6/5/50000 preserva cinco anteriores+baseline y tentativa externa desconocida; acumulado40generaciones/36embeddings/360000tokens más baseline1/1/20000, sin refund ni apagado automático.

@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-30",
+  "deliverable": "index.html",
+  "sha256": "a259b8c750693ac95d1289509977690c3221e279399a7a77fb45891a11ba0752",
+  "skills": [
+    "skill-creator-z",
+    "sbs-canal-revision SK10",
+    "foquito",
+    "SK09 independent review"
+  ],
+  "mode": "local file://; no Databricks deployment",
+  "native_browser_verified": [
+    "faithful desktop layout screenshot inspected",
+    "family change cyber to market updates norm and provision",
+    "comparison original source links and text",
+    "exact user single option question corrected with explicit prepared answer",
+    "refresh catalogue followup corrected with explicit prepared answer",
+    "general live Groq response 1494ms",
+    "two-word selection Evidencia parcial: lightbulb and live explanation1821ms",
+    "highlight remains visible while panel input focused",
+    "tooltip placement adjusted after finding button overlap"
+  ],
+  "automated_checks": [
+    "review_payload.cjs PASS",
+    "review_no_key.cjs PASS DOM mock only",
+    "review_ui_facts.cjs PASS DOM mock only"
+  ],
+  "limitations": [
+    "Playwright Chromium launch blocked with SIGABRT/EPERM; native Chrome used",
+    "mobile browser not tested",
+    "no-key fallback tested with DOM mock, not real browser",
+    "LLM previously mixed replica and real app and inaccurately described version count; exact UI FAQ grounded in prepared facts",
+    "live general tutoring is not validated legal interpretation"
+  ],
+  "review": "review.json",
+  "rebuild": "sh rebuild.sh",
+  "credentials": "external symlink only; contents never read or embedded"
+}

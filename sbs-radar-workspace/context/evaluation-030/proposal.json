@@ -1,0 +1,99 @@
+{
+  "proposal_id": "sbs-evaluation-budget-030-v1",
+  "status": "proposed_not_effective",
+  "acceptance": "acceptance_not_run",
+  "effective_protocol": null,
+  "adopted": false,
+  "historical_results_reclassified": false,
+  "inputs": {
+    "docs/protocolo-evaluacion-018.md": "cdff359ff2aca9e6f706f160251e3642572d8bf2a71a0308fdf2f53f3dba53b3",
+    "context/evaluation-018/design.json": "83bc0352503fa3ab1c66a1b86c1ed9cb8cd9623aff4aa8d97643160f68b05fcb",
+    "context/evaluation-028/frozen-record.ai-review-028.json": "0f9f2b9b5b8bf0a7b865397fae5af8e0b49317aeff4c4d9596f20ad2e3dbd079",
+    "context/evaluation-028/qrels.ai-review-028.json": "44c0faa2ae63e2e617a976ffbdf6320b1700872a46bd98befa81461b4fe24083",
+    "runs/sk09-measure-development-028-result.json": "5b77d80e338ee907fc244922b824f3a55095a6ea07d58698aa3510ff208fb241",
+    "runs/sk09-measure-development-028-review.json": "9af901131e5f9ae6cf889a9faf0cf84f7280f7dee04535103d659442388501f3"
+  },
+  "recommended": {
+    "candidate_budget": 20,
+    "candidate_budget_status": "explicit_hypothesis_not_universal_guarantee",
+    "display_budget": 5,
+    "candidate_recall": {
+      "minimum": 0.9,
+      "k": 20,
+      "positive": "grade>0",
+      "aggregation": "macro_per_query_within_family"
+    },
+    "display_ndcg": {
+      "minimum": 0.8,
+      "k": 5,
+      "gain": "linear",
+      "ideal": "all_eligible_reference_passages",
+      "aggregation": "macro_per_query_within_family"
+    },
+    "direct_counterparts": {
+      "minimum": 1.0,
+      "k": 5,
+      "positive": "grade2",
+      "gate": "every_eligible_recoverable_comparison_query_each_pair_before_and_after"
+    },
+    "diagnostics": [
+      "recall@5",
+      "ndcg@20",
+      "grade>0_counterparts@5",
+      "per_query_ceiling",
+      "family_macro_ceiling"
+    ],
+    "missing_direct_reference": "not_evaluated or preregistered insufficient case; no empty-set pass"
+  },
+  "feasibility": {
+    "query_ceiling": "min(k,N)/N for N>0",
+    "query_minimum_slots": "ceil(0.90*N)",
+    "family_ceiling": "mean(query_ceiling), not pooled evidence",
+    "zero_positive": "not_evaluated; eligibility/insufficiency fixed before trial",
+    "candidate20_individual90_possible_only_if": "N<=22; necessary cardinality condition, not performance guarantee",
+    "current_diagnostic_counts": [
+      13,
+      16,
+      13
+    ],
+    "current_minimum_slots": [
+      12,
+      15,
+      12
+    ],
+    "current_ceiling_at5": [
+      "5/13",
+      "5/16",
+      "5/13"
+    ],
+    "scope": "formula and prior verified diagnosis only; no new result evaluation"
+  },
+  "alternative": {
+    "id": "retain018",
+    "recall_k": 5,
+    "recall_minimum": 0.9,
+    "ndcg_k": 5,
+    "ndcg_minimum": 0.8,
+    "counterparts_positive": "grade>0",
+    "candidate20": "diagnostic_only",
+    "infeasibility": "report budget/reference limitation without dropping queries or blaming all deficit on retrieval"
+  },
+  "unchanged_business_gates": {
+    "detection_recall": 0.95,
+    "detection_precision": 0.9,
+    "critical_omissions": 0,
+    "faithful_localizable_citations": 1.0,
+    "insufficiency_signaled": true,
+    "median_paired_human_time_saving": 0.3,
+    "review_rework_included": true
+  },
+  "reference_rules": [
+    "Preserve all positive grades1/2 and overlaps; no retrospective deduplication/filtering",
+    "Full eligible reference frozen before new trial, independent of rankings",
+    "Real heldout connected components;028 remains exposed development",
+    "Separate AI provenance from human adjudication",
+    "Missing/failed runs retained in completeness denominator"
+  ],
+  "implementation": "not_started; review harness compatibility before any future application",
+  "cost": null
+}

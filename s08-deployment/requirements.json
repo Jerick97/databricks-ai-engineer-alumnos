@@ -1,0 +1,618 @@
+{
+  "session": "S08",
+  "source_priority": "Usuario actual > temario aprobado > planificación",
+  "requirements": [
+    {
+      "id": "S08-CONTINUITY",
+      "promise": "Continuidad datos→agente→evaluación→gobierno",
+      "source": "PROJECT.md · continuidad Neptuno",
+      "required": true,
+      "explanation": [
+        "GUIA-DOCENTE.md#cp0"
+      ],
+      "worked_example": [
+        "notebook.py · CP0"
+      ],
+      "practice": [
+        "CONSIGNA.md#cp0"
+      ],
+      "provided_files": [
+        "notebook.py",
+        "CONSIGNA.md",
+        "GUIA-DOCENTE.md",
+        "lab/config.json",
+        "lab/agent.py",
+        "lab/CONTINUIDAD.md",
+        "lab/lab_config.py",
+        "lab/lab_import_workspace.py"
+      ],
+      "expected_outputs": [
+        "entregas/cont-neptuno.md"
+      ],
+      "observed_outputs": [
+        "reports/lab-preflight.json",
+        "reports/lab-security-smoke.json",
+        "reports/import-validation.json",
+        "reports/notebook-observed.json"
+      ],
+      "student_deliverable": [
+        "entregas/cont-neptuno.md"
+      ],
+      "acceptance": "Inventario nombra tablas, agente S05, benchmark S06 y controles S07; faltantes explícitos.",
+      "evidence": [
+        "lab/CONTINUIDAD.md",
+        "reports/lab-preflight.json",
+        "reports/lab-security-smoke.json",
+        "reports/import-validation.json",
+        "reports/notebook-observed.json"
+      ],
+      "status": "satisfied",
+      "shown_in": [
+        "slide-01",
+        "slide-04",
+        "slide-05",
+        "slide-10",
+        "slide-12",
+        "slide-18",
+        "slide-22",
+        "slide-30",
+        "slide-42",
+        "slide-43",
+        "slide-47"
+      ]
+    },
+    {
+      "id": "S08-SERVING",
+      "promise": "Model Serving serverless, scale-to-zero y tres categorías",
+      "source": "TEMARIO.md · Sesión 8 / Proyecto integrador",
+      "required": true,
+      "explanation": [
+        "GUIA-DOCENTE.md#cp2"
+      ],
+      "worked_example": [
+        "notebook.py · CP2"
+      ],
+      "practice": [
+        "CONSIGNA.md#cp2"
+      ],
+      "provided_files": [
+        "notebook.py",
+        "CONSIGNA.md",
+        "GUIA-DOCENTE.md",
+        "lab/lab_deploy.py"
+      ],
+      "expected_outputs": [
+        "entregas/s08-serving.md"
+      ],
+      "observed_outputs": [
+        "reports/lab-package.json",
+        "reports/lab-artifact-check.json",
+        "reports/lab-smoke-serving.json",
+        "reports/lab-status.json"
+      ],
+      "student_deliverable": [
+        "entregas/s08-serving.md"
+      ],
+      "acceptance": "Distingue modelos custom, foundation y external; endpoint listo e invocación observada; explica cold start.",
+      "evidence": [
+        "reports/lab-package.json",
+        "reports/lab-artifact-check.json",
+        "reports/lab-smoke-serving.json",
+        "reports/lab-status.json"
+      ],
+      "status": "satisfied",
+      "shown_in": [
+        "slide-07",
+        "slide-08",
+        "slide-09",
+        "slide-14",
+        "slide-15"
+      ]
+    },
+    {
+      "id": "S08-DEPLOY",
+      "promise": "Deploy code versus deploy model",
+      "source": "TEMARIO.md · Sesión 8 / Proyecto integrador",
+      "required": true,
+      "explanation": [
+        "GUIA-DOCENTE.md#cp1"
+      ],
+      "worked_example": [
+        "notebook.py · CP1"
+      ],
+      "practice": [
+        "CONSIGNA.md#cp1"
+      ],
+      "provided_files": [
+        "notebook.py",
+        "CONSIGNA.md",
+        "GUIA-DOCENTE.md",
+        "lab/agent.py",
+        "lab/requirements.txt",
+        "lab/lab_deploy.py",
+        "lab/config.json"
+      ],
+      "expected_outputs": [
+        "entregas/s08-deploy.md"
+      ],
+      "observed_outputs": [
+        "reports/lab-artifact-check.json",
+        "reports/lab-package.json"
+      ],
+      "student_deliverable": [
+        "entregas/s08-deploy.md"
+      ],
+      "acceptance": "Modelo empaquetado conserva código, dependencias, recursos e input example; distingue código Apps/Jobs de modelo UC.",
+      "evidence": [
+        "reports/lab-artifact-check.json",
+        "reports/lab-package.json"
+      ],
+      "status": "satisfied",
+      "shown_in": [
+        "slide-10",
+        "slide-11",
+        "slide-12",
+        "slide-13"
+      ]
+    },
+    {
+      "id": "S08-BUNDLES",
+      "promise": "Databricks Asset Bundles, CI/CD y separación de entornos",
+      "source": "TEMARIO.md · Sesión 8 / Proyecto integrador",
+      "required": true,
+      "explanation": [
+        "GUIA-DOCENTE.md#cp7"
+      ],
+      "worked_example": [
+        "notebook.py · CP7"
+      ],
+      "practice": [
+        "CONSIGNA.md#cp7"
+      ],
+      "provided_files": [
+        "notebook.py",
+        "CONSIGNA.md",
+        "GUIA-DOCENTE.md",
+        "bundle/databricks.yml",
+        "bundle/ci-example.yml"
+      ],
+      "expected_outputs": [
+        "entregas/s08-bundles.md"
+      ],
+      "observed_outputs": [
+        "reports/lab-bundle-validation.json"
+      ],
+      "student_deliverable": [
+        "entregas/s08-bundles.md"
+      ],
+      "acceptance": "Valida bundle dev; explica gates test→eval→deploy y aislamiento dev/prod; no promueve producción sin decisión.",
+      "evidence": [
+        "bundle/databricks.yml",
+        "reports/lab-bundle-validation.json",
+        "bundle/ci-example.yml"
+      ],
+      "status": "satisfied",
+      "shown_in": [
+        "slide-37",
+        "slide-38",
+        "slide-39",
+        "slide-40"
+      ],
+      "limits": "bundle validate real; plantilla CI entregada sin ejecución remota ni deploy por bundle."
+    },
+    {
+      "id": "S08-ROLLOUT",
+      "promise": "Aliases champion/challenger, canary/A-B y traffic splits",
+      "source": "TEMARIO.md · Sesión 8 / Proyecto integrador",
+      "required": true,
+      "explanation": [
+        "GUIA-DOCENTE.md#cp3"
+      ],
+      "worked_example": [
+        "notebook.py · CP3"
+      ],
+      "practice": [
+        "CONSIGNA.md#cp3"
+      ],
+      "provided_files": [
+        "notebook.py",
+        "CONSIGNA.md",
+        "GUIA-DOCENTE.md",
+        "lab/lab_rollout.py",
+        "lab/lab_custom_rollout.py",
+        "lab/lab_custom_rollout_verify.py",
+        "lab/rollout_model.py"
+      ],
+      "expected_outputs": [
+        "entregas/s08-rollout.md"
+      ],
+      "observed_outputs": [
+        "reports/lab-custom-rollout-package.json",
+        "reports/lab-custom-canary-verified.json",
+        "reports/lab-custom-rollback-verified.json",
+        "reports/lab-rollout-before.json",
+        "reports/lab-rollout-api-limitation.json"
+      ],
+      "student_deliverable": [
+        "entregas/s08-rollout.md"
+      ],
+      "acceptance": "Versiones numéricas resueltas; plan90/10 suma100; rollback restaura configuración y se verifica. Alias no mueve tráfico automáticamente.",
+      "evidence": [
+        "reports/lab-custom-rollout-package.json",
+        "reports/lab-custom-canary-verified.json",
+        "reports/lab-custom-rollback-verified.json",
+        "reports/lab-rollout-before.json",
+        "reports/lab-rollout-api-limitation.json"
+      ],
+      "status": "satisfied",
+      "shown_in": [
+        "slide-16",
+        "slide-17",
+        "slide-18",
+        "slide-19",
+        "slide-34",
+        "slide-48"
+      ],
+      "limits": "Split custom de ventas real, no split de agent/v1/responses; 50 muestras no acreditan mejora causal de calidad."
+    },
+    {
+      "id": "S08-APPS",
+      "promise": "Databricks Apps: UI, identidad corporativa, sin tokens en browser",
+      "source": "TEMARIO.md · Sesión 8 / Proyecto integrador",
+      "required": true,
+      "explanation": [
+        "GUIA-DOCENTE.md#cp4"
+      ],
+      "worked_example": [
+        "notebook.py · CP4"
+      ],
+      "practice": [
+        "CONSIGNA.md#cp4"
+      ],
+      "provided_files": [
+        "notebook.py",
+        "CONSIGNA.md",
+        "GUIA-DOCENTE.md",
+        "app/app.py",
+        "app/app.yaml",
+        "app/requirements.txt",
+        "lab/lab_app.py"
+      ],
+      "expected_outputs": [
+        "entregas/s08-apps.md"
+      ],
+      "observed_outputs": [
+        "reports/lab-app-http.json",
+        "reports/app-visual.json",
+        "reports/app-browser.json"
+      ],
+      "student_deliverable": [
+        "entregas/s08-apps.md"
+      ],
+      "acceptance": "UI consulta endpoint desde backend autenticado; permisos identidad app explícitos; no afirma propagación de ACL del usuario si usa SP.",
+      "evidence": [
+        "reports/lab-app-http.json",
+        "reports/app-visual.json",
+        "reports/app-browser.json"
+      ],
+      "status": "satisfied",
+      "shown_in": [
+        "slide-05",
+        "slide-15",
+        "slide-21",
+        "slide-22",
+        "slide-23",
+        "slide-24",
+        "slide-49"
+      ],
+      "limits": "HTTP autenticado real del formulario y render offline validados; consentimiento SSO inicial en Chrome requiere paso manual y no se afirma ejecutado."
+    },
+    {
+      "id": "S08-INFERENCE",
+      "promise": "Inference Tables y flatten JSON",
+      "source": "TEMARIO.md · Sesión 8 / Proyecto integrador",
+      "required": true,
+      "explanation": [
+        "GUIA-DOCENTE.md#cp5"
+      ],
+      "worked_example": [
+        "notebook.py · CP5"
+      ],
+      "practice": [
+        "CONSIGNA.md#cp5"
+      ],
+      "provided_files": [
+        "notebook.py",
+        "CONSIGNA.md",
+        "GUIA-DOCENTE.md",
+        "lab/lab_monitor.py",
+        "lab/lab_parse_contract.sql"
+      ],
+      "expected_outputs": [
+        "entregas/s08-inference.md"
+      ],
+      "observed_outputs": [
+        "reports/lab-flatten.json",
+        "reports/notebook-observed.json"
+      ],
+      "student_deliverable": [
+        "entregas/s08-inference.md"
+      ],
+      "acceptance": "Identifica request real, JSON parseado y columnas de tiempo/latencia/estado; distingue tabla vacía, retraso e ingestión fallida.",
+      "evidence": [
+        "reports/lab-flatten.json",
+        "reports/notebook-observed.json"
+      ],
+      "status": "satisfied",
+      "shown_in": [
+        "slide-25",
+        "slide-26",
+        "slide-27",
+        "slide-28",
+        "slide-29"
+      ]
+    },
+    {
+      "id": "S08-MONITOR",
+      "promise": "Lakehouse Monitoring y drift",
+      "source": "TEMARIO.md · Sesión 8 / Proyecto integrador",
+      "required": true,
+      "explanation": [
+        "GUIA-DOCENTE.md#cp6"
+      ],
+      "worked_example": [
+        "notebook.py · CP6"
+      ],
+      "practice": [
+        "CONSIGNA.md#cp6"
+      ],
+      "provided_files": [
+        "notebook.py",
+        "CONSIGNA.md",
+        "GUIA-DOCENTE.md",
+        "lab/lab_monitor.py"
+      ],
+      "expected_outputs": [
+        "entregas/s08-monitor.md"
+      ],
+      "observed_outputs": [
+        "reports/lab-monitor-verified.json",
+        "reports/notebook-observed.json"
+      ],
+      "student_deliverable": [
+        "entregas/s08-monitor.md"
+      ],
+      "acceptance": "Monitor refrescado sobre tabla Delta aplanada, baseline y ventana definidos, métricas observadas; drift no se equipara a mala respuesta.",
+      "evidence": [
+        "reports/lab-monitor-verified.json",
+        "reports/notebook-observed.json"
+      ],
+      "status": "satisfied",
+      "shown_in": [
+        "slide-09",
+        "slide-30",
+        "slide-31",
+        "slide-32",
+        "slide-33",
+        "slide-34",
+        "slide-50"
+      ]
+    },
+    {
+      "id": "S08-GATEWAY",
+      "promise": "AI Gateway: inference/usage tables, rate limiting y costos",
+      "source": "TEMARIO.md · Sesión 8 / Proyecto integrador",
+      "required": true,
+      "explanation": [
+        "GUIA-DOCENTE.md#cp6"
+      ],
+      "worked_example": [
+        "notebook.py · CP6"
+      ],
+      "practice": [
+        "CONSIGNA.md#cp6"
+      ],
+      "provided_files": [
+        "notebook.py",
+        "CONSIGNA.md",
+        "GUIA-DOCENTE.md",
+        "lab/lab_costs.sql"
+      ],
+      "expected_outputs": [
+        "entregas/s08-gateway.md"
+      ],
+      "observed_outputs": [],
+      "student_deliverable": [
+        "entregas/s08-gateway.md"
+      ],
+      "acceptance": "Distingue payloads de consumo; define límite y alerta de costo; registra disponibilidad y permiso; no equipara tokens con factura final.",
+      "evidence": [
+        "sources.json",
+        "lab/lab_costs.sql",
+        "EJEMPLO-RESUELTO.md"
+      ],
+      "status": "satisfied",
+      "shown_in": [
+        "slide-35",
+        "slide-36"
+      ]
+    },
+    {
+      "id": "S08-PROMPTS",
+      "promise": "MLflow Prompt Registry con aliases",
+      "source": "TEMARIO.md · Sesión 8 / Proyecto integrador",
+      "required": true,
+      "explanation": [
+        "GUIA-DOCENTE.md#cp7"
+      ],
+      "worked_example": [
+        "notebook.py · CP7"
+      ],
+      "practice": [
+        "CONSIGNA.md#cp7"
+      ],
+      "provided_files": [
+        "notebook.py",
+        "CONSIGNA.md",
+        "GUIA-DOCENTE.md",
+        "lab/lab_prompts.py"
+      ],
+      "expected_outputs": [
+        "entregas/s08-prompts.md"
+      ],
+      "observed_outputs": [
+        "reports/lab-prompts.json",
+        "reports/lab-artifact-check.json"
+      ],
+      "student_deliverable": [
+        "entregas/s08-prompts.md"
+      ],
+      "acceptance": "Prompt versionado e identificable; alias resuelve versión; cambio y reversión dejan evidencia sin confundir alias de prompt/modelo.",
+      "evidence": [
+        "reports/lab-prompts.json",
+        "reports/lab-artifact-check.json"
+      ],
+      "status": "satisfied",
+      "shown_in": [
+        "slide-41",
+        "slide-42"
+      ]
+    },
+    {
+      "id": "S08-CERT",
+      "promise": "Cierre y preparación Generative AI Engineer Associate, seis dominios",
+      "source": "TEMARIO.md · Sesión 8 / Proyecto integrador",
+      "required": true,
+      "explanation": [
+        "GUIA-DOCENTE.md#cp8"
+      ],
+      "worked_example": [
+        "CERTIFICACION.md#respuestas-razonadas"
+      ],
+      "practice": [
+        "CONSIGNA.md#cp8"
+      ],
+      "provided_files": [
+        "notebook.py",
+        "CONSIGNA.md",
+        "GUIA-DOCENTE.md",
+        "CERTIFICACION.md"
+      ],
+      "expected_outputs": [
+        "entregas/s08-cert.md"
+      ],
+      "observed_outputs": [],
+      "student_deliverable": [
+        "entregas/s08-cert.md"
+      ],
+      "acceptance": "Responde preguntas originales con justificación y plan personal por dominio; no acredita aprobar examen.",
+      "evidence": [
+        "CERTIFICACION.md",
+        "slides/content.json"
+      ],
+      "status": "satisfied",
+      "shown_in": [
+        "slide-46",
+        "slide-47",
+        "slide-48",
+        "slide-49",
+        "slide-50",
+        "slide-51"
+      ]
+    },
+    {
+      "id": "S08-CLOUD",
+      "promise": "Model Serving y equivalentes GCP/Azure/AWS",
+      "source": "TEMARIO.md · Sesión 8 / Proyecto integrador",
+      "required": true,
+      "explanation": [
+        "GUIA-DOCENTE.md#cp8"
+      ],
+      "worked_example": [
+        "GUIA-DOCENTE.md#cp8"
+      ],
+      "practice": [
+        "CONSIGNA.md#cp8"
+      ],
+      "provided_files": [
+        "notebook.py",
+        "CONSIGNA.md",
+        "GUIA-DOCENTE.md",
+        "CERTIFICACION.md"
+      ],
+      "expected_outputs": [
+        "entregas/s08-cloud.md"
+      ],
+      "observed_outputs": [],
+      "student_deliverable": [
+        "entregas/s08-cloud.md"
+      ],
+      "acceptance": "Compara Vertex AI Endpoints, Azure ML Online Endpoints y SageMaker Endpoints por función; documenta diferencias de IAM/costos/latencia.",
+      "evidence": [
+        "GUIA-DOCENTE.md",
+        "sources.json"
+      ],
+      "status": "satisfied",
+      "shown_in": [
+        "slide-45"
+      ]
+    },
+    {
+      "id": "S08-FINAL",
+      "promise": "Copiloto desplegado, evaluado, gobernado y monitoreado con UI Apps",
+      "source": "TEMARIO.md · Sesión 8 / Proyecto integrador",
+      "required": true,
+      "explanation": [
+        "GUIA-DOCENTE.md#cp8"
+      ],
+      "worked_example": [
+        "notebook.py · CP8"
+      ],
+      "practice": [
+        "CONSIGNA.md#cp8"
+      ],
+      "provided_files": [
+        "notebook.py",
+        "CONSIGNA.md",
+        "GUIA-DOCENTE.md"
+      ],
+      "expected_outputs": [
+        "entregas/s08-final.md"
+      ],
+      "observed_outputs": [
+        "reports/notebook-observed.json",
+        "reports/lab-custom-rollback-verified.json",
+        "reports/lab-monitor-verified.json",
+        "reports/lab-app-http.json"
+      ],
+      "student_deliverable": [
+        "entregas/s08-final.md"
+      ],
+      "acceptance": "Manifiesto enlaza endpoint invocable, App, registro UC, evaluación y gobierno previos, inferencias, monitor y rollback; todo resultado tiene fecha e identidad; faltante bloquea cierre funcional.",
+      "evidence": [
+        "EJEMPLO-RESUELTO.md",
+        "ENTREGA.md",
+        "reports/notebook-observed.json",
+        "reports/lab-custom-rollback-verified.json",
+        "reports/lab-monitor-verified.json",
+        "reports/lab-app-http.json"
+      ],
+      "status": "satisfied",
+      "shown_in": [
+        "slide-01",
+        "slide-02",
+        "slide-03",
+        "slide-06",
+        "slide-14",
+        "slide-20",
+        "slide-24",
+        "slide-29",
+        "slide-33",
+        "slide-43",
+        "slide-44",
+        "slide-52"
+      ]
+    }
+  ],
+  "note": "Salidas esperadas son entregas futuras del alumno. observed_outputs son pruebas reales del docente; no se confunden con aprendizaje de la cohorte. La satisfacción propuesta por el autor requiere los dictámenes independientes finales."
+}

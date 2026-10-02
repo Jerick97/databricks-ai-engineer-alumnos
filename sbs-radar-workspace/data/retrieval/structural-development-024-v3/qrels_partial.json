@@ -1,0 +1,49 @@
+{
+  "counterparts": {
+    "cyber-art20-3": {
+      "cyber-504": {
+        "after": [
+          "structural-ebf4c590b5c5b63b0976c26fd2cbf21d2285d34729c103504a2ba6b91120f49a"
+        ],
+        "before": [
+          "structural-a1846b1308fcae8f480124f1841aa5f1245a11c9055dc258ea09494c02fb79fc"
+        ]
+      }
+    },
+    "market-art27": {
+      "market-3274": {
+        "after": [
+          "structural-6bf1ff7e2641b57554e5d34cef41bd354fa6da492af7321f6089949feb91f6f0"
+        ],
+        "before": [
+          "structural-72c48d6f7ab21705bbbcc6cb46747e2a96f144ae09c18e7f828d3921aaadeb74"
+        ]
+      }
+    },
+    "market-art29-1-4": {
+      "market-3274": {
+        "after": [
+          "structural-26695dde36201ba4b36d6df15dae90b2f1964d804ac6ba8caee7ce31720913ec"
+        ],
+        "before": [
+          "structural-bfff74a43a1d99809eb8c2b2205d527ce49cb72cb46fd5ec3e08dec302184ecb"
+        ]
+      }
+    }
+  },
+  "exhaustive": false,
+  "qrels": {
+    "cyber-art20-3": {
+      "structural-a1846b1308fcae8f480124f1841aa5f1245a11c9055dc258ea09494c02fb79fc": 1,
+      "structural-ebf4c590b5c5b63b0976c26fd2cbf21d2285d34729c103504a2ba6b91120f49a": 1
+    },
+    "market-art27": {
+      "structural-6bf1ff7e2641b57554e5d34cef41bd354fa6da492af7321f6089949feb91f6f0": 1,
+      "structural-72c48d6f7ab21705bbbcc6cb46747e2a96f144ae09c18e7f828d3921aaadeb74": 1
+    },
+    "market-art29-1-4": {
+      "structural-26695dde36201ba4b36d6df15dae90b2f1964d804ac6ba8caee7ce31720913ec": 1,
+      "structural-bfff74a43a1d99809eb8c2b2205d527ce49cb72cb46fd5ec3e08dec302184ecb": 1
+    }
+  }
+}

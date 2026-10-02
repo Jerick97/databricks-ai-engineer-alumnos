@@ -1,0 +1,1995 @@
+{
+  "reviewer": "independent /root/judge_curriculum; no autor ni editor de material",
+  "date": "2026-09-27T03:32:10.549922+00:00",
+  "verdict": "PASS",
+  "scope": "full-session",
+  "target_scope": "full-session",
+  "class_ready": true,
+  "readiness_reason": "Preparación didáctica full-session: promesas originales cubiertas, artefactos entregados, tres dimensiones de juicio PASS y QA vigente. HTTP corporativo autenticado, POST real App→agente y render acreditan la UI integrada; automatizar consentimiento Chrome no es un requisito del temario. No se afirma SSO interactivo probado, dictado ni aprendizaje ya observado. La raíz debe conservar paridad final al agregar dictámenes.",
+  "artifact_hashes": {
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/CERTIFICACION.md": "5beb52f7cc90efcd41d2fe78e022eb60414824f381e68db6ee30f3b7ab2856d2",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/CONSIGNA.md": "332c4c969300618c5dbecb103569070d5a9801194c3561caad1682e558ec37ce",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/EJEMPLO-RESUELTO.md": "ae4ea42e5901015994c32c8eb9b7494904066205d40bc23d2006fd30f6a6370c",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/ENTREGA.md": "7c654149e47288b19512e9ae01aea107b76b2b83e20a20250e6569173958b547",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/GUIA-DOCENTE.md": "da8290a37941287e560c34520c6c2df6e250930974160f1a9e06453d78ac86b2",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/PLAN-CLASE.md": "e06c535aeae9d4c86114038efb26d09845328be131d4c9ddf89102aaf513ee55",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/README.md": "b55d147b6c9357e3393536c9a3b733b02fc6f2bdf0d681ac3b0d8cfa8902d3a4",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/RUNBOOK.md": "61b3a2c169c87a6b7476dd78956be21c411b1344ce68b183b3b44213b18b2152",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/VALIDACION.md": "7a7f4b0b45378a3f3e7304e5124824a9fc25bce39b04e9e9ebb9f6f529297e3e",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/agenda.json": "3747e52c1491e64c078a046cea88585e7aa7bb3ac07200c278042d757fbe7666",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/app/app.py": "dfc6dbce6f563c9123b0033986cedfdfc9cc5625809388a4b754c0271048e965",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/app/app.yaml": "f5f6869db1013fd0c680e80625b1a3255a132fbb43e3c42da76c460bb2b70736",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/bundle/ci-example.yml": "591d0c0653911404846fa1ce7a46143eb5eefc27e59a03577192178a5b4c3b99",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/bundle/databricks.yml": "2b424d0b15d5a3563284de0701f02792ede8447622ca349f9312f2348e7e798f",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/coverage-manifest.json": "a2dc4545972105b7a6a69ac89280d375c7cc6c1d918f8687a16112d3419e8cd5",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/guion.md": "3fe533d8e02887cd168e0c6b9826b8e2fbd17eadd59bb366c509cf16dc3cf507",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/index.html": "6afc46627f6228acf1fd595fed968273ea15f95a4c3b393021da28d8e263a7db",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/CONTINUIDAD.md": "096273a3351ec0f3d76a634a57ab137fe0688eb8cf7a7632059f85635c2e691d",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/agent.py": "200febf66d9d8a36acd05fed147776e761156e27d065df600489dd838f292bb4",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/lab_app.py": "655a4a6e734838cb6c9e8e574f33dac5c588705b053430e6c453041e32077c1c",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/lab_config.py": "c9fda07a95c1de66dad6f4d3386065b180fc5fff3b61b94d5ba5c4b3d07b34db",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/lab_costs.sql": "dc3d2ed8530dca3372c6302b58d7dc9a69feacbb403e5d3ddd0f66d7015b11b2",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/lab_custom_rollout.py": "a362609395256969d16adf53f149153fab7aee42bf7377fa957d8aa88f0d3101",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/lab_custom_rollout_verify.py": "899e2449f2665c27622683ceed7cdf8d02d6b2eb2765e5cac658c5f221d32331",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/lab_deploy.py": "4634aaa447797307a40e23455d545a8c0029868b80848508ce8e599b9762aeff",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/lab_import_workspace.py": "ddc8f0326ae4c56a72643d798f33d6a19383f9cccdebdf797d4cdca9bde4a787",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/lab_monitor.py": "087833c48e179ecc7cc388b5784a8227fde8bef2b75376635fc89efd3e27caab",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/lab_parse_contract.sql": "89efa2c9c49a2dd4292b9a3f8f8e5ac7d0ce89c0adaab5ce4338da9687417495",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/lab_prompts.py": "1f2b830644f3799047d76f96aefec9ee62057e4b2c9b04fcfee8a13b863013c0",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/lab_rollout.py": "9661b99e9b0635b66b26566cc3b414eda899e794ba49733e62b4ddb4681b2329",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/lab_smoke.py": "dee2d97be74e95e1035476eb2f9a6e408fa9054fbb2e97923f6fb231e455031b",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/lab/requirements.txt": "f7d7bf19dbd785f8b1f408fd2b4eb68a36b8c767550d0fb0b05878ff0ee5f277",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/notebook.ipynb": "8b350fde2321ca490642ffda5ec6188b5db90b1f5e4ae0258125072f78fa94f7",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/notebook.py": "4dbb89479b8d04d4e22de55110c9e47297e6e5f3d91e3d76339d9f9a4edf9510",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/app-browser.json": "7f2ea6e7cbbea310c582a8cdd83bb723067481d9587865c2c1bfafe89e508c67",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/app-visual.json": "cdf9918c351777604e55c473e3d524420705103a57dd902d1d18767721454032",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/import-validation.json": "3cc995274189ce1143d36fe970af82dded9169793e5d9964cca09053205a59d9",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-app-http.json": "a6881fafb7090ae7249b453f8aa8f63508e52e3406c296d179d4bae5627e4a70",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-artifact-check.json": "2a4bfe991602e4e1df81453999c7a87d72cb4bb8011517d6439a4db7ee1bb39a",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-bundle-validation.json": "903285fc8ece1079df40961261c34295414156c30200bfe65b759c63745a6563",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-custom-canary-verified.json": "4bdcaa4a3b1c37444f8865751e6abfd0207118a67aad91eed7ecf4b5616a002e",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-custom-rollback-verified.json": "56e1c2f1900933969ceddd206f46992b59b79ed78d2af7bbc67f3dcdaed7d4ad",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-flatten.json": "0aa2c1ba3fbc8dacd0b43b4adbd6987b21af1f7600d8f59abde88347ee697134",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-freeze.json": "2cd3661a6b4fc3511011c23cd46706ff3fe095bc5874e2c3ebbbf60b6d034213",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-monitor-values.json": "dae3617751266d784fdf5c09512f32118f6e900c237c208e404e273573001435",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-monitor-verified.json": "8bf585d71519ed799e1c302f26e8d8adcc756169051657c5e4ac51f9c8fc570f",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-parse-fixtures.json": "e10dafc0e0acff3c5e527eb927450a70bb4ce660ed9d155ba9966a71bd187518",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-preflight.json": "cc94ee643c7f21601892a81d22ebd1c5009c4d0c4ef74bc71e1a7b07ec06c312",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-prompts.json": "73aeba26b53c00cceb0bb72612908cd407e87381b3e881675586bd5c92d9f80c",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-security-smoke.json": "6dd49056cbdeb70a096b457157d3b75e411d0052b533a31afe199a758bedb9fa",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-smoke-serving.json": "a17e3d574ffe015c1c9f691cd6c8555a8592f4766f6c953823de7e07d9afba1a",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-status.json": "b2ddd85a3c1f9d3853538a0f7c40c0fa3bb70cad908f2a74b19bcecbac284cd9",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/lab-unit-tests.json": "04cd05e363d38c8f57fb8144d906c9f51cd73429fef5c602ec44503484224f53",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/notebook-observed.json": "711645f87a6c0c4ca6552abc9861fcee1a1dd9030cb1a40725cbfe44edfb4e4a",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/structural-qa.json": "9fcf0dafec41c5d448ff3a7a0b3231e967b7c57e1e684fe1753bc4c7713493b5",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/reports/visual-qa.json": "812e38a2306bd574991bc662eaf46f0e250620bbfe0b17a5d7c4d6ca47d1451c",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/requirements.json": "6ea9a5101dbe85f835ac51e6c1486c4ef7ad7cac44af2ca25c0ecc87514c42ad",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/slides/S08-autonomo.html": "9b5049015512853a291fb5f69193f1ea9139293dfa1fa010bf5a450e5d680fcc",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/slides/S08-deck.html": "f70b7cb05ebb9053d6220da35892d01497b4a7a30b68466415acc11e166164df",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/slides/content.json": "e878d06acd3babe1b6c796a18ecc00f0dd72384d590ad25d93150407a62938a6",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/slides/deck.css": "bda749f090d887dfd096b45efad15e47644ef17aab182a8ff766953a75909f05",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/slides/deck.js": "31e25fd75f6cd7c6e59949f9b0c3874ebb27d1add52e5e688ccb72c4daec3eaf",
+    "/Users/macdenix/clawd/databricks-ai-engineer/s08-deployment/sources.json": "be6f8590cb16394a7f92137e02993b649bd53b328f15cec80adaec7f6c2961a3",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/CERTIFICACION.md": "5beb52f7cc90efcd41d2fe78e022eb60414824f381e68db6ee30f3b7ab2856d2",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/CONSIGNA.md": "332c4c969300618c5dbecb103569070d5a9801194c3561caad1682e558ec37ce",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/EJEMPLO-RESUELTO.md": "ae4ea42e5901015994c32c8eb9b7494904066205d40bc23d2006fd30f6a6370c",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/ENTREGA.md": "7c654149e47288b19512e9ae01aea107b76b2b83e20a20250e6569173958b547",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/GUIA-DOCENTE.md": "da8290a37941287e560c34520c6c2df6e250930974160f1a9e06453d78ac86b2",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/PLAN-CLASE.md": "e06c535aeae9d4c86114038efb26d09845328be131d4c9ddf89102aaf513ee55",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/README.md": "b55d147b6c9357e3393536c9a3b733b02fc6f2bdf0d681ac3b0d8cfa8902d3a4",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/RUNBOOK.md": "61b3a2c169c87a6b7476dd78956be21c411b1344ce68b183b3b44213b18b2152",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/VALIDACION.md": "7a7f4b0b45378a3f3e7304e5124824a9fc25bce39b04e9e9ebb9f6f529297e3e",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/agenda.json": "3747e52c1491e64c078a046cea88585e7aa7bb3ac07200c278042d757fbe7666",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/app/app.py": "dfc6dbce6f563c9123b0033986cedfdfc9cc5625809388a4b754c0271048e965",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/app/app.yaml": "f5f6869db1013fd0c680e80625b1a3255a132fbb43e3c42da76c460bb2b70736",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/bundle/ci-example.yml": "591d0c0653911404846fa1ce7a46143eb5eefc27e59a03577192178a5b4c3b99",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/bundle/databricks.yml": "2b424d0b15d5a3563284de0701f02792ede8447622ca349f9312f2348e7e798f",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/coverage-manifest.json": "a2dc4545972105b7a6a69ac89280d375c7cc6c1d918f8687a16112d3419e8cd5",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/guion.md": "3fe533d8e02887cd168e0c6b9826b8e2fbd17eadd59bb366c509cf16dc3cf507",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/index.html": "6afc46627f6228acf1fd595fed968273ea15f95a4c3b393021da28d8e263a7db",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/CONTINUIDAD.md": "096273a3351ec0f3d76a634a57ab137fe0688eb8cf7a7632059f85635c2e691d",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/agent.py": "200febf66d9d8a36acd05fed147776e761156e27d065df600489dd838f292bb4",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/lab_app.py": "655a4a6e734838cb6c9e8e574f33dac5c588705b053430e6c453041e32077c1c",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/lab_config.py": "c9fda07a95c1de66dad6f4d3386065b180fc5fff3b61b94d5ba5c4b3d07b34db",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/lab_costs.sql": "dc3d2ed8530dca3372c6302b58d7dc9a69feacbb403e5d3ddd0f66d7015b11b2",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/lab_custom_rollout.py": "a362609395256969d16adf53f149153fab7aee42bf7377fa957d8aa88f0d3101",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/lab_custom_rollout_verify.py": "899e2449f2665c27622683ceed7cdf8d02d6b2eb2765e5cac658c5f221d32331",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/lab_deploy.py": "4634aaa447797307a40e23455d545a8c0029868b80848508ce8e599b9762aeff",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/lab_import_workspace.py": "ddc8f0326ae4c56a72643d798f33d6a19383f9cccdebdf797d4cdca9bde4a787",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/lab_monitor.py": "087833c48e179ecc7cc388b5784a8227fde8bef2b75376635fc89efd3e27caab",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/lab_parse_contract.sql": "89efa2c9c49a2dd4292b9a3f8f8e5ac7d0ce89c0adaab5ce4338da9687417495",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/lab_prompts.py": "1f2b830644f3799047d76f96aefec9ee62057e4b2c9b04fcfee8a13b863013c0",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/lab_rollout.py": "9661b99e9b0635b66b26566cc3b414eda899e794ba49733e62b4ddb4681b2329",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/lab_smoke.py": "dee2d97be74e95e1035476eb2f9a6e408fa9054fbb2e97923f6fb231e455031b",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/lab/requirements.txt": "f7d7bf19dbd785f8b1f408fd2b4eb68a36b8c767550d0fb0b05878ff0ee5f277",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/notebook.ipynb": "8b350fde2321ca490642ffda5ec6188b5db90b1f5e4ae0258125072f78fa94f7",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/notebook.py": "4dbb89479b8d04d4e22de55110c9e47297e6e5f3d91e3d76339d9f9a4edf9510",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/app-browser.json": "7f2ea6e7cbbea310c582a8cdd83bb723067481d9587865c2c1bfafe89e508c67",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/app-visual.json": "cdf9918c351777604e55c473e3d524420705103a57dd902d1d18767721454032",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/import-validation.json": "3cc995274189ce1143d36fe970af82dded9169793e5d9964cca09053205a59d9",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-app-http.json": "a6881fafb7090ae7249b453f8aa8f63508e52e3406c296d179d4bae5627e4a70",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-artifact-check.json": "2a4bfe991602e4e1df81453999c7a87d72cb4bb8011517d6439a4db7ee1bb39a",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-bundle-validation.json": "903285fc8ece1079df40961261c34295414156c30200bfe65b759c63745a6563",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-custom-canary-verified.json": "4bdcaa4a3b1c37444f8865751e6abfd0207118a67aad91eed7ecf4b5616a002e",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-custom-rollback-verified.json": "56e1c2f1900933969ceddd206f46992b59b79ed78d2af7bbc67f3dcdaed7d4ad",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-flatten.json": "0aa2c1ba3fbc8dacd0b43b4adbd6987b21af1f7600d8f59abde88347ee697134",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-freeze.json": "2cd3661a6b4fc3511011c23cd46706ff3fe095bc5874e2c3ebbbf60b6d034213",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-monitor-values.json": "dae3617751266d784fdf5c09512f32118f6e900c237c208e404e273573001435",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-monitor-verified.json": "8bf585d71519ed799e1c302f26e8d8adcc756169051657c5e4ac51f9c8fc570f",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-parse-fixtures.json": "e10dafc0e0acff3c5e527eb927450a70bb4ce660ed9d155ba9966a71bd187518",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-preflight.json": "cc94ee643c7f21601892a81d22ebd1c5009c4d0c4ef74bc71e1a7b07ec06c312",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-prompts.json": "73aeba26b53c00cceb0bb72612908cd407e87381b3e881675586bd5c92d9f80c",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-security-smoke.json": "6dd49056cbdeb70a096b457157d3b75e411d0052b533a31afe199a758bedb9fa",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-smoke-serving.json": "a17e3d574ffe015c1c9f691cd6c8555a8592f4766f6c953823de7e07d9afba1a",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-status.json": "b2ddd85a3c1f9d3853538a0f7c40c0fa3bb70cad908f2a74b19bcecbac284cd9",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/lab-unit-tests.json": "04cd05e363d38c8f57fb8144d906c9f51cd73429fef5c602ec44503484224f53",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/notebook-observed.json": "711645f87a6c0c4ca6552abc9861fcee1a1dd9030cb1a40725cbfe44edfb4e4a",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/structural-qa.json": "9fcf0dafec41c5d448ff3a7a0b3231e967b7c57e1e684fe1753bc4c7713493b5",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/reports/visual-qa.json": "812e38a2306bd574991bc662eaf46f0e250620bbfe0b17a5d7c4d6ca47d1451c",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/requirements.json": "6ea9a5101dbe85f835ac51e6c1486c4ef7ad7cac44af2ca25c0ecc87514c42ad",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/slides/S08-autonomo.html": "9b5049015512853a291fb5f69193f1ea9139293dfa1fa010bf5a450e5d680fcc",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/slides/S08-deck.html": "f70b7cb05ebb9053d6220da35892d01497b4a7a30b68466415acc11e166164df",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/slides/content.json": "e878d06acd3babe1b6c796a18ecc00f0dd72384d590ad25d93150407a62938a6",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/slides/deck.css": "bda749f090d887dfd096b45efad15e47644ef17aab182a8ff766953a75909f05",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/slides/deck.js": "31e25fd75f6cd7c6e59949f9b0c3874ebb27d1add52e5e688ccb72c4daec3eaf",
+    "/Users/macdenix/clawd/databricks-ai-engineer-alumnos/s08-deployment/sources.json": "be6f8590cb16394a7f92137e02993b649bd53b328f15cec80adaec7f6c2961a3",
+    "/Users/macdenix/clawd/projects/databricks-genai-pathway/temario-curso/TEMARIO.md": "e84cde07a10c39b0cdfd8b4cae5d6926be7912cc18c69e9afd0e16f296dc4a29",
+    "/Users/macdenix/clawd/projects-index/personal/cursos-a-dictar/databricks-ai-engineer/PROJECT.md": "59e024e6966cf292552b338a48e936d42794045a658458d08e743d7ef497e48c",
+    "/Users/macdenix/nix-skills/skills/operational/deck-craft/references/course-contract.md": "7f263b2768ad8382b25e7640b6072852075a1f70ec5d3f6f679a0d2884fc9d31",
+    "/Users/macdenix/nix-skills/skills/operational/deck-craft/references/course-deck-qa.md": "3a485c9ac129e0720f90c22db81bfb817e40c24f35db79725f52025e87ecfe5f"
+  },
+  "evidence": [
+    {
+      "path": "/Users/macdenix/clawd/projects/databricks-genai-pathway/temario-curso/TEMARIO.md",
+      "locator": "Sesión 8 / Proyecto integrador / Resultado del curso",
+      "observation": "Inventario independiente incluye todas las promesas originales, subdivididas en13 grupos para contraste."
+    },
+    {
+      "path": "slides/content.json",
+      "observation": "52 slides leídas; inventario inverso captura cuerpo, fuentes y artefactos por checkpoint."
+    },
+    {
+      "path": "GUIA-DOCENTE.md#Configuración unificada",
+      "observation": "ZIP local y Workspace se distinguen; --pull-config y comparación de nombres resuelven divergencia."
+    },
+    {
+      "path": "reports/notebook-observed.json",
+      "observation": "Source final SHA coincide; checks CP0,CP1,CP2,CP5,parser,CP6; modo verificar explícito."
+    },
+    {
+      "path": "reports/lab-custom-canary-verified.json",
+      "observation": "50 consultas UC reales,42/8,config90/10; rollback posterior snapshot true y5 respuestas."
+    },
+    {
+      "path": "reports/lab-monitor-values.json",
+      "observation": "Ventanas9y7,baseline1,perfil y drift con denominadores; ejemplo diferencia cortes temporales."
+    },
+    {
+      "path": "reports/lab-app-http.json",
+      "observation": "POST autenticado real200 con valor/fuente e inválido400; SSO manual separado."
+    },
+    {
+      "path": "reports/publication-parity.json",
+      "observation": "Además del reporte autor, este juez comparó directamente 63 archivos necesarios docente/alumno/ZIP: cero ausencias y diferencias; ZIP inspeccionado con84 entradas. ZIP/parity no se hashean por ser derivados."
+    },
+    {
+      "path": "reports/visual-qa.json; reports/structural-qa.json",
+      "observation": "QA visual52slides18escenarios y controles PASS; hashes deck coincidentes;15fuentes25marcadores."
+    }
+  ],
+  "findings": [
+    {
+      "id": "J-SSO-PENDING",
+      "severity": "info",
+      "locator": "reports/app-browser.json:live_browser_flow_pass; CONSIGNA.md#CP4",
+      "blocking_for": "none: limitación de alcance conservada",
+      "description": "Chrome requiere consentimiento manual pendiente; no se acreditó el recorrido interactivo. La promesa original pide UI con identidad corporativa y sin tokens en browser, no automatización del consentimiento. HTTP corporativo autenticado y POST real/render prueban integración y UI; este límite no invalida preparación del material.",
+      "resolution_required": "Antes de usar la App, cada usuario completa su acceso/consentimiento corporativo. No afirmar que el juez verificó ese paso en Chrome."
+    },
+    {
+      "id": "J-IMPORT-HISTORICAL",
+      "severity": "info",
+      "locator": "reports/import-validation.json:notebook_sha256",
+      "description": "Importador/pull-config probado sobre notebook previo289734..., no sobre source final4dbb...; notebook final tiene ejecución Databricks separada concordante. No atribuir al reporte importación el hash final."
+    }
+  ],
+  "unverified": [
+    "Consentimiento SSO y recorrido completo del navegador de usuario nuevo: app-browser pending_manual_consent.",
+    "Aprendizaje, entregas y permisos individuales de alumnos; clase aún no dictada.",
+    "CI remoto, despliegue bundle y producción; declarados fuera del ensayo observado.",
+    "Rate limit/usage tracking del endpoint de agentes no soportados; presupuesto/factura total no medidos.",
+    "No se reejecutaron llamadas cloud en este juicio; se inspeccionaron reportes fechados y coherencia con fuentes y código.",
+    "Importación con la revisión final del notebook no se deduce del reporte de importación histórico; ejecución final verificada por SHA separado."
+  ],
+  "dimension": "educational coverage",
+  "summary": "Inventario independiente de52slides, tareas, recursos y fuentes sin huérfanos. Artefactos y comandos entregados en copia alumno y ZIP; evidencia docente distingue conceptual, fixtures y ejecución.",
+  "orphan_items": [],
+  "misleading_items": [],
+  "missing_files": [],
+  "coverage_by_item": [
+    {
+      "id": "slide-01",
+      "title": "El copiloto termina cuando otro usuario puede operarlo",
+      "shown_content": [
+        "Neptuno: del agente evaluado a un servicio con interfaz y monitoreo.",
+        "Última clase · lunes 28 de septiembre de 2026 · 180 minutos"
+      ],
+      "kind": "hero",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-01",
+        "GUIA-DOCENTE.md#CP0"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP0"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/lab_config.py",
+        "lab/lab_import_workspace.py",
+        "lab/CONTINUIDAD.md"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-02",
+      "title": "La clase conecta una llamada con su evidencia",
+      "shown_content": [
+        [
+          "0–85",
+          "Empaquetar, servir y versionar"
+        ],
+        [
+          "85–95",
+          "Pausa"
+        ],
+        [
+          "95–145",
+          "App y monitoreo"
+        ],
+        [
+          "145–180",
+          "CI/CD, prompts y cierre"
+        ]
+      ],
+      "kind": "flow",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-02",
+        "GUIA-DOCENTE.md#CP0"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP0"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/lab_config.py",
+        "lab/lab_import_workspace.py",
+        "lab/CONTINUIDAD.md"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-03",
+      "title": "Cada entrega debe permitir repetir una decisión",
+      "shown_content": [
+        [
+          "Construcción",
+          "Código, dependencias, configuración y versión fija."
+        ],
+        [
+          "Operación",
+          "Solicitud, respuesta, identidad, métricas y rollback."
+        ]
+      ],
+      "kind": "pair",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-03",
+        "GUIA-DOCENTE.md#CP0"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP0"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/lab_config.py",
+        "lab/lab_import_workspace.py",
+        "lab/CONTINUIDAD.md"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-04",
+      "title": "Neptuno conserva datos, herramientas y controles",
+      "shown_content": [
+        [
+          "S01–S04",
+          "Gold y documentos con procedencia."
+        ],
+        [
+          "S05",
+          "Agente que decide qué herramienta invocar."
+        ],
+        [
+          "S06–S07",
+          "Casos de evaluación y fronteras de seguridad."
+        ],
+        [
+          "S08",
+          "Servicio, interfaz y señales operativas."
+        ]
+      ],
+      "kind": "flow",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-04",
+        "GUIA-DOCENTE.md#CP0"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP0"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/lab_config.py",
+        "lab/lab_import_workspace.py",
+        "lab/CONTINUIDAD.md"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-05",
+      "title": "Una solicitud cruza tres identidades diferentes",
+      "shown_content": [
+        [
+          "Persona",
+          "Se autentica para usar la App."
+        ],
+        [
+          "App",
+          "Su backend solicita una inferencia."
+        ],
+        [
+          "Servicio",
+          "Lee sólo los recursos autorizados."
+        ]
+      ],
+      "kind": "flow",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-05",
+        "GUIA-DOCENTE.md#CP0"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP0"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/lab_config.py",
+        "lab/lab_import_workspace.py",
+        "lab/CONTINUIDAD.md"
+      ],
+      "external_references": [
+        "https://docs.databricks.com/aws/en/dev-tools/databricks-apps/auth"
+      ],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-06",
+      "title": "Antes de desplegar comprobamos el acceso necesario",
+      "shown_content": [
+        "Abre el notebook S08 y ejecuta CP0 con tu catálogo y recursos.",
+        "Aceptación: inventario explícito; una ausencia detiene el paso que depende de ella."
+      ],
+      "kind": "task",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-06",
+        "GUIA-DOCENTE.md#CP0"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP0"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/lab_config.py",
+        "lab/lab_import_workspace.py",
+        "lab/CONTINUIDAD.md"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-07",
+      "title": "Model Serving reúne tres tipos de servicio",
+      "shown_content": [
+        [
+          "Custom models",
+          "Tu artefacto y su código de inferencia."
+        ],
+        [
+          "Foundation Model APIs",
+          "Modelos administrados disponibles mediante API."
+        ],
+        [
+          "External models",
+          "Acceso gobernado a un proveedor externo."
+        ]
+      ],
+      "kind": "flow",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-07",
+        "GUIA-DOCENTE.md#CP2"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP2"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/lab_deploy.py",
+        "lab/lab_smoke.py"
+      ],
+      "external_references": [
+        "https://docs.databricks.com/aws/en/machine-learning/model-serving/"
+      ],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-08",
+      "title": "Serverless elimina servidores que administrar, no la espera",
+      "shown_content": [
+        [
+          "Autoscaling",
+          "Ajusta capacidad dentro de las condiciones del servicio."
+        ],
+        [
+          "Scale-to-zero",
+          "Reduce capacidad ociosa en configuraciones compatibles; añade arranque en frío."
+        ]
+      ],
+      "kind": "pair",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-08",
+        "GUIA-DOCENTE.md#CP2"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP2"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/lab_deploy.py",
+        "lab/lab_smoke.py"
+      ],
+      "external_references": [
+        "https://docs.databricks.com/aws/en/machine-learning/model-serving/create-manage-serving-endpoints"
+      ],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-09",
+      "title": "La latencia total suma más que el tiempo del modelo",
+      "shown_content": [
+        [
+          "Usuario",
+          "Red + App + cola + agente + herramientas + respuesta."
+        ],
+        [
+          "Servicio",
+          "Su métrica de ejecución puede cubrir sólo parte del recorrido."
+        ]
+      ],
+      "kind": "pair",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-09",
+        "GUIA-DOCENTE.md#CP2"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP2"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/lab_deploy.py",
+        "lab/lab_smoke.py"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-10",
+      "title": "Un notebook depende de un contexto que Serving no tiene",
+      "shown_content": [
+        [
+          "En clase",
+          "spark, dbutils, %run y variables interactivas."
+        ],
+        [
+          "En el endpoint",
+          "Código importable, dependencias y acceso autenticado por API."
+        ]
+      ],
+      "kind": "pair",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-10",
+        "GUIA-DOCENTE.md#CP1"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP1"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/agent.py",
+        "lab/lab_deploy.py",
+        "lab/requirements.txt"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-11",
+      "title": "Empaquetar el agente conserva su contrato de entrada y salida",
+      "shown_content": [
+        [
+          "Entrada",
+          "Mensajes y parámetros permitidos."
+        ],
+        [
+          "Salida",
+          "Texto y metadatos de trazabilidad; errores definidos."
+        ]
+      ],
+      "kind": "pair",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-11",
+        "GUIA-DOCENTE.md#CP1"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP1"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/agent.py",
+        "lab/lab_deploy.py",
+        "lab/requirements.txt"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-12",
+      "title": "Registrar una versión fija permite repetir la prueba",
+      "shown_content": [
+        "Ejecuta CP1 y guarda nombre del modelo, versión y resultado local.",
+        "Aceptación: inferencia válida y controles del agente verificados antes de Serving."
+      ],
+      "kind": "task",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-12",
+        "GUIA-DOCENTE.md#CP1"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP1"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/agent.py",
+        "lab/lab_deploy.py",
+        "lab/requirements.txt"
+      ],
+      "external_references": [
+        "https://docs.databricks.com/aws/en/machine-learning/manage-model-lifecycle/"
+      ],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-13",
+      "title": "Deploy model y deploy code responden preguntas distintas",
+      "shown_content": [
+        [
+          "Deploy model",
+          "¿Qué artefacto probado promuevo al siguiente entorno?"
+        ],
+        [
+          "Deploy code",
+          "¿Qué proceso versionado reconstruye y valida la solución allí?"
+        ]
+      ],
+      "kind": "pair",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-13",
+        "GUIA-DOCENTE.md#CP1"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP1"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/agent.py",
+        "lab/lab_deploy.py",
+        "lab/requirements.txt"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-14",
+      "title": "Un endpoint listo todavía necesita una prueba funcional",
+      "shown_content": [
+        "Ejecuta CP2 y envía una pregunta real al endpoint del agente.",
+        "Aceptación: READY, respuesta coherente, versión identificada y error controlado."
+      ],
+      "kind": "task",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-14",
+        "GUIA-DOCENTE.md#CP2"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP2"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/lab_deploy.py",
+        "lab/lab_smoke.py"
+      ],
+      "external_references": [
+        "https://docs.databricks.com/aws/en/machine-learning/model-serving/create-manage-serving-endpoints"
+      ],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-15",
+      "title": "Los fallos enseñan qué frontera revisar primero",
+      "shown_content": [
+        [
+          "401 / 403",
+          "Identidad o autorización: verificar quién llama a qué recurso."
+        ],
+        [
+          "Timeout / 5xx",
+          "Estado, arranque, dependencia y logs: conservar la solicitud."
+        ]
+      ],
+      "kind": "pair",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-15",
+        "GUIA-DOCENTE.md#CP2"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP2"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/lab_deploy.py",
+        "lab/lab_smoke.py"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-16",
+      "title": "Un alias nombra una versión, no reparte tráfico",
+      "shown_content": [
+        [
+          "champion",
+          "Etiqueta mutable que apunta a una versión registrada."
+        ],
+        [
+          "Traffic split",
+          "Disponible en el endpoint custom del ejercicio, no en el agente."
+        ]
+      ],
+      "kind": "pair",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-16",
+        "GUIA-DOCENTE.md#CP3"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP3"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/lab_custom_rollout.py",
+        "lab/lab_rollout.py",
+        "lab/lab_custom_rollout_verify.py"
+      ],
+      "external_references": [
+        "https://docs.databricks.com/aws/en/machine-learning/manage-model-lifecycle/",
+        "https://docs.databricks.com/aws/en/machine-learning/model-serving/create-manage-serving-endpoints"
+      ],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-17",
+      "title": "Canary limita exposición y A/B compara alternativas",
+      "shown_content": [
+        [
+          "Canary",
+          "Aumentar tráfico gradualmente si cumple los criterios."
+        ],
+        [
+          "A/B",
+          "Comparar variantes con asignación y métricas de experimento."
+        ]
+      ],
+      "kind": "pair",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-17",
+        "GUIA-DOCENTE.md#CP3"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP3"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/lab_custom_rollout.py",
+        "lab/lab_rollout.py",
+        "lab/lab_custom_rollout_verify.py"
+      ],
+      "external_references": [
+        "https://docs.databricks.com/aws/en/machine-learning/model-serving/create-manage-serving-endpoints"
+      ],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-18",
+      "title": "Decidimos el rollback antes de observar el resultado",
+      "shown_content": [
+        [
+          "Criterio de calidad",
+          "Conservar casos S06 y rechazos S07."
+        ],
+        [
+          "Criterio operativo",
+          "Límite de errores y latencia con ventana y muestra definidas."
+        ]
+      ],
+      "kind": "pair",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-18",
+        "GUIA-DOCENTE.md#CP3"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP3"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/lab_custom_rollout.py",
+        "lab/lab_rollout.py",
+        "lab/lab_custom_rollout_verify.py"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-19",
+      "title": "La práctica termina al restaurar y volver a consultar",
+      "shown_content": [
+        "CP3: en el endpoint custom de ventas, reparte 90/10 y ejecuta rollback.",
+        "Aceptación: configuración antes/después y una respuesta de la versión restaurada."
+      ],
+      "kind": "task",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-19",
+        "GUIA-DOCENTE.md#CP3"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP3"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/lab_custom_rollout.py",
+        "lab/lab_rollout.py",
+        "lab/lab_custom_rollout_verify.py"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-20",
+      "title": "La pausa deja una versión estable para continuar",
+      "shown_content": [
+        "Guarda las coordenadas de tu endpoint y modelo.",
+        "Pausa de 10 minutos · al volver seguimos una solicitud hasta su tabla."
+      ],
+      "kind": "hero",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-20",
+        "GUIA-DOCENTE.md#CP0"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP0"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/lab_config.py",
+        "lab/lab_import_workspace.py",
+        "lab/CONTINUIDAD.md"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-21",
+      "title": "Una App convierte la API en una tarea para una persona",
+      "shown_content": [
+        [
+          "Interfaz",
+          "Pregunta, estado de espera, respuesta y error comprensible."
+        ],
+        [
+          "Backend",
+          "Valida entrada, llama al endpoint y conserva trazabilidad."
+        ]
+      ],
+      "kind": "pair",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-21",
+        "GUIA-DOCENTE.md#CP4"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP4"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "app/app.py",
+        "app/app.yaml",
+        "lab/lab_app.py"
+      ],
+      "external_references": [
+        "https://docs.databricks.com/aws/en/dev-tools/databricks-apps/model-serving"
+      ],
+      "limits": "Consentimiento SSO interactivo pendiente; backend HTTP y HTML verificados."
+    },
+    {
+      "id": "slide-22",
+      "title": "Autenticar al usuario no garantiza filtrar sus datos",
+      "shown_content": [
+        [
+          "App authorization",
+          "La App usa su principal de servicio y los permisos asignados."
+        ],
+        [
+          "User authorization",
+          "Operaciones delegadas usan identidad/permisos del usuario donde estén soportados."
+        ]
+      ],
+      "kind": "pair",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-22",
+        "GUIA-DOCENTE.md#CP4"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP4"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "app/app.py",
+        "app/app.yaml",
+        "lab/lab_app.py"
+      ],
+      "external_references": [
+        "https://docs.databricks.com/aws/en/dev-tools/databricks-apps/auth"
+      ],
+      "limits": "Consentimiento SSO interactivo pendiente; backend HTTP y HTML verificados."
+    },
+    {
+      "id": "slide-23",
+      "title": "Los recursos declarados evitan credenciales pegadas al código",
+      "shown_content": [
+        [
+          "Configuración",
+          "Endpoint del agente y permisos mínimos como recursos de la App."
+        ],
+        [
+          "Secreto",
+          "Autenticación gestionada sólo en el backend."
+        ]
+      ],
+      "kind": "pair",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-23",
+        "GUIA-DOCENTE.md#CP4"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP4"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "app/app.py",
+        "app/app.yaml",
+        "lab/lab_app.py"
+      ],
+      "external_references": [
+        "https://docs.databricks.com/aws/en/dev-tools/databricks-apps/model-serving",
+        "https://docs.databricks.com/aws/en/dev-tools/databricks-apps/auth"
+      ],
+      "limits": "Consentimiento SSO interactivo pendiente; backend HTTP y HTML verificados."
+    },
+    {
+      "id": "slide-24",
+      "title": "Probamos la interfaz con éxito y con error",
+      "shown_content": [
+        "CP4: abre la App con tu identidad y ejecuta una consulta legítima.",
+        "Aceptación: respuesta del endpoint y rechazo/aviso claro ante entrada inválida."
+      ],
+      "kind": "task",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-24",
+        "GUIA-DOCENTE.md#CP4"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP4"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "app/app.py",
+        "app/app.yaml",
+        "lab/lab_app.py"
+      ],
+      "external_references": [],
+      "limits": "Consentimiento SSO interactivo pendiente; backend HTTP y HTML verificados."
+    },
+    {
+      "id": "slide-25",
+      "title": "Una llamada correcta puede dejar evidencia incompleta",
+      "shown_content": [
+        [
+          "Inferencia",
+          "HTTP correcto y respuesta recibida."
+        ],
+        [
+          "Registro",
+          "Solicitud y respuesta disponibles después en una tabla."
+        ]
+      ],
+      "kind": "pair",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-25",
+        "GUIA-DOCENTE.md#CP5"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP5"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/lab_monitor.py",
+        "lab/lab_parse_contract.sql"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-26",
+      "title": "Inference Tables conservan el intercambio para analizarlo",
+      "shown_content": [
+        [
+          "Captura",
+          "Petición, respuesta y metadatos del servicio en Delta."
+        ],
+        [
+          "Uso",
+          "Investigar errores y construir métricas operativas."
+        ]
+      ],
+      "kind": "pair",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-26",
+        "GUIA-DOCENTE.md#CP5"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP5"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/lab_monitor.py",
+        "lab/lab_parse_contract.sql"
+      ],
+      "external_references": [
+        "https://docs.databricks.com/aws/en/ai-gateway/inference-tables-serving-endpoints"
+      ],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-27",
+      "title": "Aplanar JSON convierte el intercambio en columnas medibles",
+      "shown_content": [
+        [
+          "Antes",
+          "Un request/response anidado, distinto según la API."
+        ],
+        [
+          "Después",
+          "ID, tiempo, estado, versión y métricas calculadas."
+        ]
+      ],
+      "kind": "pair",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-27",
+        "GUIA-DOCENTE.md#CP5"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP5"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/lab_monitor.py",
+        "lab/lab_parse_contract.sql"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-28",
+      "title": "Una fila defectuosa debe ser visible, no desaparecer",
+      "shown_content": [
+        [
+          "Caso válido",
+          "Payload parseado con sus campos esperados."
+        ],
+        [
+          "Caso no válido",
+          "Contador y razón de parseo; inspección restringida."
+        ]
+      ],
+      "kind": "pair",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-28",
+        "GUIA-DOCENTE.md#CP5"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP5"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/lab_monitor.py",
+        "lab/lab_parse_contract.sql"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-29",
+      "title": "Seguimos una solicitud real hasta su fila procesada",
+      "shown_content": [
+        "CP5: invoca el endpoint, localiza el registro y ejecuta el flatten.",
+        "Aceptación: correlación verificable y tabla procesada con métricas válidas."
+      ],
+      "kind": "task",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-29",
+        "GUIA-DOCENTE.md#CP5"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP5"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/lab_monitor.py",
+        "lab/lab_parse_contract.sql"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-30",
+      "title": "Monitorear operación y calidad exige señales distintas",
+      "shown_content": [
+        [
+          "Operación",
+          "Errores, latencia, volumen y consumo."
+        ],
+        [
+          "Calidad",
+          "Aciertos, evidencia, utilidad y controles del agente."
+        ]
+      ],
+      "kind": "pair",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-30",
+        "GUIA-DOCENTE.md#CP6"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP6"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/lab_monitor.py",
+        "lab/lab_costs.sql"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-31",
+      "title": "Drift señala un cambio, no demuestra una falla",
+      "shown_content": [
+        [
+          "Cambio observado",
+          "Distribución reciente distinta de una referencia."
+        ],
+        [
+          "Investigación",
+          "Estacionalidad, nuevos usuarios, datos o versión del agente."
+        ]
+      ],
+      "kind": "pair",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-31",
+        "GUIA-DOCENTE.md#CP6"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP6"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/lab_monitor.py",
+        "lab/lab_costs.sql"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-32",
+      "title": "El monitor necesita una tabla y una comparación",
+      "shown_content": [
+        [
+          "Perfil temporal",
+          "Métricas por ventana sobre la tabla procesada."
+        ],
+        [
+          "Baseline",
+          "Referencia documentada para interpretar cambios."
+        ]
+      ],
+      "kind": "pair",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-32",
+        "GUIA-DOCENTE.md#CP6"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP6"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/lab_monitor.py",
+        "lab/lab_costs.sql"
+      ],
+      "external_references": [
+        "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/create-monitor-api"
+      ],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-33",
+      "title": "Crear el monitor no equivale a obtener métricas",
+      "shown_content": [
+        "CP6: solicita un refresh e inspecciona estado y tablas de salida.",
+        "Aceptación: actualización terminada, métricas localizables y límites interpretados."
+      ],
+      "kind": "task",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-33",
+        "GUIA-DOCENTE.md#CP6"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP6"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/lab_monitor.py",
+        "lab/lab_costs.sql"
+      ],
+      "external_references": [
+        "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/create-monitor-api"
+      ],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-34",
+      "title": "Una alerta útil indica quién debe hacer qué",
+      "shown_content": [
+        [
+          "Detección",
+          "Métrica, ventana, baseline y umbral acordados."
+        ],
+        [
+          "Respuesta",
+          "Responsable, diagnóstico, rollback y evidencia."
+        ]
+      ],
+      "kind": "pair",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-34",
+        "GUIA-DOCENTE.md#CP6"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP6"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/lab_monitor.py",
+        "lab/lab_costs.sql"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-35",
+      "title": "AI Gateway permite observar y limitar según el endpoint",
+      "shown_content": [
+        [
+          "Inference Tables",
+          "Contenido y metadatos para diagnóstico."
+        ],
+        [
+          "Usage / límites",
+          "Consumo y control del ritmo de solicitudes."
+        ]
+      ],
+      "kind": "pair",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-35",
+        "GUIA-DOCENTE.md#CP6"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP6"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/lab_monitor.py",
+        "lab/lab_costs.sql"
+      ],
+      "external_references": [
+        "https://docs.databricks.com/aws/en/ai-gateway/overview-serving-endpoints"
+      ],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-36",
+      "title": "El costo combina inferencia, servicio y datos",
+      "shown_content": [
+        [
+          "Por solicitud",
+          "Tokens o cargos del modelo, consultas y operaciones."
+        ],
+        [
+          "Por capacidad",
+          "Serving, App, warehouse y procesamiento de logs."
+        ]
+      ],
+      "kind": "pair",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-36",
+        "GUIA-DOCENTE.md#CP6"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP6"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "lab/lab_monitor.py",
+        "lab/lab_costs.sql"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-37",
+      "title": "El bundle describe recursos que podemos revisar en Git",
+      "shown_content": [
+        [
+          "Código",
+          "Agente, App, notebook y dependencias."
+        ],
+        [
+          "Configuración",
+          "Recursos, variables y targets del despliegue."
+        ]
+      ],
+      "kind": "pair",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-37",
+        "GUIA-DOCENTE.md#CP7"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP7"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "bundle/databricks.yml",
+        "bundle/ci-example.yml",
+        "lab/lab_prompts.py"
+      ],
+      "external_references": [
+        "https://docs.databricks.com/aws/en/dev-tools/bundles/"
+      ],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-38",
+      "title": "Separar entornos exige más que cambiar un nombre",
+      "shown_content": [
+        [
+          "Laboratorio",
+          "Targets y prefijos aíslan recursos dentro del workspace disponible."
+        ],
+        [
+          "Producción",
+          "Identidades, catálogos y, cuando aplica, workspaces separados."
+        ]
+      ],
+      "kind": "pair",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-38",
+        "GUIA-DOCENTE.md#CP7"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP7"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "bundle/databricks.yml",
+        "bundle/ci-example.yml",
+        "lab/lab_prompts.py"
+      ],
+      "external_references": [
+        "https://docs.databricks.com/aws/en/dev-tools/bundles/deployment-modes"
+      ],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-39",
+      "title": "La promoción se detiene si falla una puerta de calidad",
+      "shown_content": [
+        [
+          "1 · Validar",
+          "Sintaxis, tests y permisos previstos."
+        ],
+        [
+          "2 · Desplegar",
+          "Artefacto/configuración identificados."
+        ],
+        [
+          "3 · Comprobar",
+          "Smoke, evaluación y guardrails."
+        ],
+        [
+          "4 · Promover",
+          "Revisión, tráfico y rollback."
+        ]
+      ],
+      "kind": "flow",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-39",
+        "GUIA-DOCENTE.md#CP7"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP7"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "bundle/databricks.yml",
+        "bundle/ci-example.yml",
+        "lab/lab_prompts.py"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-40",
+      "title": "Podemos revisar el plan antes de desplegar el target",
+      "shown_content": [
+        "CP7: valida el bundle y examina el target del laboratorio.",
+        "Aceptación: validación del target y explicación de los recursos que aplicaría."
+      ],
+      "kind": "task",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-40",
+        "GUIA-DOCENTE.md#CP7"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP7"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "bundle/databricks.yml",
+        "bundle/ci-example.yml",
+        "lab/lab_prompts.py"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-41",
+      "title": "Versionar el prompt permite explicar qué cambió",
+      "shown_content": [
+        [
+          "Versión",
+          "Texto e instrucciones identificados y reproducibles."
+        ],
+        [
+          "Alias",
+          "Nombre para una versión aprobada después de evaluar."
+        ]
+      ],
+      "kind": "pair",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-41",
+        "GUIA-DOCENTE.md#CP7"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP7"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "bundle/databricks.yml",
+        "bundle/ci-example.yml",
+        "lab/lab_prompts.py"
+      ],
+      "external_references": [
+        "https://docs.databricks.com/aws/en/mlflow3/genai/prompt-version-mgmt/prompt-registry/"
+      ],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-42",
+      "title": "El rollback del prompt también necesita una prueba",
+      "shown_content": [
+        "CP7: registra dos versiones, compara y restaura el alias según la guía.",
+        "Aceptación: versión resuelta antes/después; el agente usa la versión declarada."
+      ],
+      "kind": "task",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO",
+        "DEMOSTRADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-42",
+        "GUIA-DOCENTE.md#CP7"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP7"
+      ],
+      "delivered_as": [
+        "notebook.py",
+        "bundle/databricks.yml",
+        "bundle/ci-example.yml",
+        "lab/lab_prompts.py"
+      ],
+      "external_references": [
+        "https://docs.databricks.com/aws/en/mlflow3/genai/prompt-version-mgmt/prompt-registry/"
+      ],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-43",
+      "title": "El portafolio reúne el recorrido completo del copiloto",
+      "shown_content": [
+        [
+          "Datos y agente",
+          "Fuente gobernada, herramientas y respuesta con evidencia."
+        ],
+        [
+          "Operación",
+          "UI, versión, evaluación, logs, monitor y recuperación."
+        ]
+      ],
+      "kind": "pair",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-43",
+        "GUIA-DOCENTE.md#CP8"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP8"
+      ],
+      "delivered_as": [
+        "CONSIGNA.md",
+        "CERTIFICACION.md",
+        "ENTREGA.md",
+        "EJEMPLO-RESUELTO.md"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-44",
+      "title": "La entrega se evalúa por evidencia, no por capturas bonitas",
+      "shown_content": [
+        "Entrega notebook, configuración, respuestas y ficha de operación.",
+        "Aceptación: otra persona reproduce la consulta y localiza versión, monitor y rollback."
+      ],
+      "kind": "task",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-44",
+        "GUIA-DOCENTE.md#CP8"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP8"
+      ],
+      "delivered_as": [
+        "CONSIGNA.md",
+        "CERTIFICACION.md",
+        "ENTREGA.md",
+        "EJEMPLO-RESUELTO.md"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-45",
+      "title": "Los equivalentes cloud cumplen funciones comparables",
+      "shown_content": [
+        [
+          "GCP",
+          "Vertex AI Endpoints"
+        ],
+        [
+          "Azure",
+          "Azure ML Online Endpoints"
+        ],
+        [
+          "AWS",
+          "SageMaker Endpoints"
+        ]
+      ],
+      "kind": "flow",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-45",
+        "GUIA-DOCENTE.md#CP8"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP8"
+      ],
+      "delivered_as": [
+        "CONSIGNA.md",
+        "CERTIFICACION.md",
+        "ENTREGA.md",
+        "EJEMPLO-RESUELTO.md"
+      ],
+      "external_references": [
+        "https://docs.cloud.google.com/vertex-ai/docs/predictions/overview",
+        "https://learn.microsoft.com/en-us/azure/machine-learning/concept-endpoints?view=azureml-api-2",
+        "https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html"
+      ],
+      "limits": "Referencia funcional conceptual, sin despliegue multinube."
+    },
+    {
+      "id": "slide-46",
+      "title": "El examen evalúa decisiones en seis dominios",
+      "shown_content": [
+        [
+          "Diseño y datos",
+          "Traducir necesidad, preparar contexto y elegir componentes."
+        ],
+        [
+          "Desarrollo y despliegue",
+          "Construir agente, interfaz y proceso de entrega."
+        ],
+        [
+          "Gobierno y evaluación",
+          "Controlar acceso y medir calidad/operación."
+        ]
+      ],
+      "kind": "flow",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-46",
+        "GUIA-DOCENTE.md#CP8"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP8"
+      ],
+      "delivered_as": [
+        "CONSIGNA.md",
+        "CERTIFICACION.md",
+        "ENTREGA.md",
+        "EJEMPLO-RESUELTO.md"
+      ],
+      "external_references": [
+        "https://www.databricks.com/sites/default/files/2026-03/Databricks-Certified-Generative-AI-Engineer-Associate-Exam-Guide-Mar26.pdf"
+      ],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-47",
+      "title": "Un endpoint disponible puede incumplir el contrato",
+      "shown_content": [
+        [
+          "READY y HTTP 200, pero el agente inventa cifras sin consultar datos.",
+          "Detener promoción, revisar traza y repetir el harness S06."
+        ]
+      ],
+      "kind": "quiz",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-47",
+        "GUIA-DOCENTE.md#CP8"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP8"
+      ],
+      "delivered_as": [
+        "CONSIGNA.md",
+        "CERTIFICACION.md",
+        "ENTREGA.md",
+        "EJEMPLO-RESUELTO.md"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-48",
+      "title": "Mover champion no prueba que el servicio cambió",
+      "shown_content": [
+        [
+          "El alias apunta a v2 y el endpoint sirve v1: ¿qué inspeccionas?",
+          "Versión configurada y entidad que atendió la llamada; después aplicas y pruebas el cambio."
+        ]
+      ],
+      "kind": "quiz",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-48",
+        "GUIA-DOCENTE.md#CP8"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP8"
+      ],
+      "delivered_as": [
+        "CONSIGNA.md",
+        "CERTIFICACION.md",
+        "ENTREGA.md",
+        "EJEMPLO-RESUELTO.md"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-49",
+      "title": "El permiso de la App no reemplaza el del usuario",
+      "shown_content": [
+        [
+          "Todos acceden al mismo backend con identidad compartida: ¿hay filtrado personal automático?",
+          "No. Diseña autorización por usuario o delimita un corpus común permitido."
+        ]
+      ],
+      "kind": "quiz",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-49",
+        "GUIA-DOCENTE.md#CP8"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP8"
+      ],
+      "delivered_as": [
+        "CONSIGNA.md",
+        "CERTIFICACION.md",
+        "ENTREGA.md",
+        "EJEMPLO-RESUELTO.md"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-50",
+      "title": "Una métrica de drift pide investigar antes de actuar",
+      "shown_content": [
+        [
+          "La longitud de preguntas sube y aún no hay etiquetas nuevas: ¿bajó la calidad?",
+          "No puede concluirse. Revisar muestras y obtener evidencia de calidad."
+        ]
+      ],
+      "kind": "quiz",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-50",
+        "GUIA-DOCENTE.md#CP8"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP8"
+      ],
+      "delivered_as": [
+        "CONSIGNA.md",
+        "CERTIFICACION.md",
+        "ENTREGA.md",
+        "EJEMPLO-RESUELTO.md"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-51",
+      "title": "Tu plan de estudio parte de errores que puedes explicar",
+      "shown_content": [
+        [
+          "Practica",
+          "Resuelve los casos originales de CERTIFICACION.md sin ver respuestas."
+        ],
+        [
+          "Refuerza",
+          "Vuelve a la sesión del dominio fallado y repite su laboratorio."
+        ]
+      ],
+      "kind": "pair",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-51",
+        "GUIA-DOCENTE.md#CP8"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP8"
+      ],
+      "delivered_as": [
+        "CONSIGNA.md",
+        "CERTIFICACION.md",
+        "ENTREGA.md",
+        "EJEMPLO-RESUELTO.md"
+      ],
+      "external_references": [
+        "https://www.databricks.com/sites/default/files/2026-03/Databricks-Certified-Generative-AI-Engineer-Associate-Exam-Guide-Mar26.pdf"
+      ],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    },
+    {
+      "id": "slide-52",
+      "title": "Cerramos con una demostración y un límite explícito",
+      "shown_content": [
+        "Muestra una consulta, su versión, su evaluación y su señal operativa.",
+        "El siguiente paso es operar con responsables, presupuesto y criterios de negocio."
+      ],
+      "kind": "hero",
+      "status": [
+        "ENSEÑADO",
+        "ENTREGADO"
+      ],
+      "taught_in": [
+        "guion.md#slide-52",
+        "GUIA-DOCENTE.md#CP8"
+      ],
+      "practiced_in": [
+        "CONSIGNA.md#CP8"
+      ],
+      "delivered_as": [
+        "CONSIGNA.md",
+        "CERTIFICACION.md",
+        "ENTREGA.md",
+        "EJEMPLO-RESUELTO.md"
+      ],
+      "external_references": [],
+      "limits": "Ver límites del ejemplo resuelto; una tarea no afirma aprendizaje ya observado."
+    }
+  ],
+  "verified_delivery": {
+    "directly_compared_files": 63,
+    "teacher_student_differences": [],
+    "zip_missing_or_different": [],
+    "publication": "local only; no remote publication claimed"
+  }
+}

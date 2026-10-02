@@ -1,0 +1,29 @@
+{
+  "at": "2026-09-28T04:47:10.322951+00:00",
+  "skill": "SK03 0.1.1 provisional",
+  "pair": {
+    "pair_id": "market-4036-development-018",
+    "family": "market_conduct",
+    "before": {
+      "document_id": "sbs-4036-2022",
+      "version_id": "594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d"
+    },
+    "after": {
+      "document_id": "sbs-4036-2022",
+      "version_id": "7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749"
+    }
+  },
+  "hashes": {
+    "data/foundation-holdout/objects/59/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d.pdf": "594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d",
+    "data/foundation-holdout/derived/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt": "b6f83c6421c0b049fe52a2297d29b080baa02f1164d0951acf3a95f7c6b440e2",
+    "data/foundation-holdout/derived/594e312f22500ea18d89214856cc863a8fbf9421328632930bb7f6576011e31d/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/result.json": "13af66189f7759ce29d74b08717e88c78b4acc92e131b56c829eabf2a4e12c80",
+    "data/foundation-holdout/objects/7c/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749.pdf": "7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749",
+    "data/foundation-holdout/derived/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/rawtext.txt": "1946f8f1988a8fd55e9a13d878dfc671cd65277af8b1a28adf2f7d7ad90063e2",
+    "data/foundation-holdout/derived/7c27c08559bcc1f0ffe9fd75cc712dbd9a348c56f8d3f1471a6facd48aef4749/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/b542c3bb7d54207fab8a199099fe7bf65da3f4881c7921fdeaaaeb57da51c1b0/result.json": "29c111b93000ea34ffaf94c00b9534c4de1ca230703416299192beac4e75b37a"
+  },
+  "alignments": null,
+  "coverage": "partial",
+  "selection": "Caller chooses previous captured15page vs newly captured16page text states; not chronological legal effectiveness",
+  "reference_access": "Astra006 and new references/qrels not read",
+  "partition": "development_exposed_not_independent_holdout"
+}

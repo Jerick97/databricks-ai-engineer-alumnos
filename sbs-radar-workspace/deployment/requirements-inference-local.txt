@@ -1,0 +1,8 @@
+-r requirements-local.txt
+databricks-sdk==0.102.0
+requests==2.32.5
+numpy==2.4.3
+onnxruntime==1.26.0
+tokenizers==0.22.2
+huggingface-hub==1.7.2
+sqlglot==30.20.0

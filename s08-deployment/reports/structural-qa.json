@@ -1,0 +1,12 @@
+{
+  "pass": true,
+  "slides": 52,
+  "external_references": 15,
+  "reference_markers": 25,
+  "manifest": {
+    "items": 28,
+    "missing_paths": []
+  },
+  "failures": [],
+  "note": "Este gate estructural no sustituye QA visual renderizado ni juez LLM."
+}

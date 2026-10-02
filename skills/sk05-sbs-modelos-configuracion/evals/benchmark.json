@@ -1,0 +1,28 @@
+{
+  "skill_id": "SK05",
+  "evaluated_version": "0.1.0",
+  "reviewer": "root",
+  "blind": false,
+  "baseline_cases": 6,
+  "green_cases": 6,
+  "criteria_total": 9,
+  "baseline_pass": 9,
+  "green_pass": 9,
+  "delta": 0,
+  "nondiscriminating_cases": 6,
+  "notes": [
+    "Baseline correctly identifies domain ownership without naming SK03; exact skill name is not necessary to pass no-trigger assertion.",
+    "No behavior gain claimed; instruction review found scope ambiguity corrected in v0.1.1.",
+    "v0.1.1 scope microtest and independent component review pending."
+  ],
+  "tokens": null,
+  "time": null,
+  "repetitions": 1,
+  "variance": null,
+  "status": "provisional",
+  "evidence": [
+    "runs/sk05-baseline.json",
+    "runs/sk05-green.json",
+    "runs/sk05-instruction-review.json"
+  ]
+}

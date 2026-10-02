@@ -1,0 +1,117 @@
+{
+  "cleanup_duration": 0,
+  "creator_user_name": "sociosdosmilveintiseis@gmail.com",
+  "effective_performance_target": "PERFORMANCE_OPTIMIZED",
+  "end_time": 1790477516965,
+  "execution_duration": 0,
+  "job_id": 266916665551695,
+  "job_run_id": 26139383227325,
+  "number_in_job": 26139383227325,
+  "run_duration": 166853,
+  "run_id": 26139383227325,
+  "run_name": "S08-notebook-validation",
+  "run_page_url": "https://dbc-0410b264-20c7.cloud.databricks.com/?o=7474657121564806#job/266916665551695/run/26139383227325",
+  "run_type": "SUBMIT_RUN",
+  "setup_duration": 0,
+  "start_time": 1790477350112,
+  "state": {
+    "life_cycle_state": "INTERNAL_ERROR",
+    "result_state": "FAILED",
+    "state_message": "Task s08 failed with message: Workload failed, see run output for details.",
+    "user_cancelled_or_timedout": false
+  },
+  "status": {
+    "state": "TERMINATED",
+    "termination_details": {
+      "code": "RUN_EXECUTION_ERROR",
+      "message": "Task s08 failed with message: Workload failed, see run output for details.",
+      "type": "CLIENT_ERROR"
+    }
+  },
+  "tasks": [
+    {
+      "attempt_number": 0,
+      "cleanup_duration": 0,
+      "effective_performance_target": "PERFORMANCE_OPTIMIZED",
+      "end_time": 1790477424516,
+      "environment_key": "s08",
+      "execution_duration": 70000,
+      "notebook_task": {
+        "base_parameters": {
+          "catalogo": "neptuno_manuel_arguelles",
+          "warehouse_id": "828756322bedff37",
+          "sufijo": "neptuno",
+          "esquema": "ais08_lab",
+          "s07_schema": "s07_bda09634f2",
+          "modo": "verificar",
+          "rollout": "inspeccionar",
+          "source_sha256": "c880b932257fc2639f2304edefa679fce0584e67f9f5d210665168cd98ed99ac"
+        },
+        "notebook_path": "/Shared/curso-databricks-ai-engineer/s08-validation/notebook",
+        "source": "WORKSPACE"
+      },
+      "run_id": 265776941393655,
+      "run_if": "ALL_SUCCESS",
+      "run_page_url": "https://dbc-0410b264-20c7.cloud.databricks.com/?o=7474657121564806#job/266916665551695/run/265776941393655",
+      "setup_duration": 4000,
+      "start_time": 1790477350150,
+      "state": {
+        "life_cycle_state": "TERMINATED",
+        "result_state": "FAILED",
+        "state_message": "Workload failed, see run output for details",
+        "user_cancelled_or_timedout": false
+      },
+      "status": {
+        "state": "TERMINATED",
+        "termination_details": {
+          "code": "RUN_EXECUTION_ERROR",
+          "message": "Workload failed, see run output for details",
+          "type": "CLIENT_ERROR"
+        }
+      },
+      "task_key": "s08"
+    },
+    {
+      "attempt_number": 1,
+      "cleanup_duration": 0,
+      "effective_performance_target": "PERFORMANCE_OPTIMIZED",
+      "end_time": 1790477516508,
+      "environment_key": "s08",
+      "execution_duration": 85000,
+      "notebook_task": {
+        "base_parameters": {
+          "catalogo": "neptuno_manuel_arguelles",
+          "warehouse_id": "828756322bedff37",
+          "sufijo": "neptuno",
+          "esquema": "ais08_lab",
+          "s07_schema": "s07_bda09634f2",
+          "modo": "verificar",
+          "rollout": "inspeccionar",
+          "source_sha256": "c880b932257fc2639f2304edefa679fce0584e67f9f5d210665168cd98ed99ac"
+        },
+        "notebook_path": "/Shared/curso-databricks-ai-engineer/s08-validation/notebook",
+        "source": "WORKSPACE"
+      },
+      "run_id": 514473188287204,
+      "run_if": "ALL_SUCCESS",
+      "run_page_url": "https://dbc-0410b264-20c7.cloud.databricks.com/?o=7474657121564806#job/266916665551695/run/514473188287204",
+      "setup_duration": 5000,
+      "start_time": 1790477426162,
+      "state": {
+        "life_cycle_state": "TERMINATED",
+        "result_state": "FAILED",
+        "state_message": "Workload failed, see run output for details",
+        "user_cancelled_or_timedout": false
+      },
+      "status": {
+        "state": "TERMINATED",
+        "termination_details": {
+          "code": "RUN_EXECUTION_ERROR",
+          "message": "Workload failed, see run output for details",
+          "type": "CLIENT_ERROR"
+        }
+      },
+      "task_key": "s08"
+    }
+  ]
+}

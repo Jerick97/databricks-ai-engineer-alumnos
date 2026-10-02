@@ -1,0 +1,46 @@
+{
+  "allowed_hosts": [
+    "intranet2.sbs.gob.pe"
+  ],
+  "sources": [
+    {
+      "document_id": "sbs-3274-2017",
+      "family": "market_conduct",
+      "url": "https://intranet2.sbs.gob.pe/dv_int_cn/1731/v7.0/Adjuntos/3274-2017.R.pdf",
+      "source_kind": "normative",
+      "synthetic": false,
+      "published_on": null,
+      "effective_on": null,
+      "date_unknown_reasons": {
+        "published_on": "Not established by authoritative metadata review; repository path is not a publication date",
+        "effective_on": "Not established by authoritative review; capture and repository version are not legal effect"
+      }
+    },
+    {
+      "document_id": "sbs-504-2021",
+      "family": "cybersecurity",
+      "url": "https://intranet2.sbs.gob.pe/dv_int_cn/2046/v4.0/Adjuntos/504-2021.R.pdf",
+      "source_kind": "normative",
+      "synthetic": false,
+      "published_on": null,
+      "effective_on": null,
+      "date_unknown_reasons": {
+        "published_on": "Not established by authoritative metadata review; repository path is not a publication date",
+        "effective_on": "Not established by authoritative review; capture and repository version are not legal effect"
+      }
+    },
+    {
+      "document_id": "sbs-504-2021",
+      "family": "cybersecurity",
+      "url": "https://intranet2.sbs.gob.pe/dv_int_cn/2046/v5.0/Adjuntos/504-2021.R%20.pdf",
+      "source_kind": "normative",
+      "synthetic": false,
+      "published_on": null,
+      "effective_on": null,
+      "date_unknown_reasons": {
+        "published_on": "Not established by authoritative metadata review; repository path is not a publication date",
+        "effective_on": "Not established by authoritative review; capture and repository version are not legal effect"
+      }
+    }
+  ]
+}

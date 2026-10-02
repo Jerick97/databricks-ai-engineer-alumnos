@@ -1,0 +1,37 @@
+{
+  "scope": "Direct invocation of each entity while traffic update pending; not rollout acceptance",
+  "results": [
+    {
+      "entity": "champion",
+      "response": {
+        "predictions": [
+          {
+            "categoria": "Bebidas",
+            "anio": 2026,
+            "venta_neta": 116024.88,
+            "filas": 5,
+            "fuente": "neptuno_manuel_arguelles.gold.ventas_por_categoria_mes",
+            "revision": "champion"
+          }
+        ]
+      },
+      "business_pass": true
+    },
+    {
+      "entity": "challenger",
+      "response": {
+        "predictions": [
+          {
+            "categoria": "Bebidas",
+            "anio": 2026,
+            "venta_neta": 116024.88,
+            "filas": 5,
+            "fuente": "neptuno_manuel_arguelles.gold.ventas_por_categoria_mes",
+            "revision": "challenger"
+          }
+        ]
+      },
+      "business_pass": true
+    }
+  ]
+}

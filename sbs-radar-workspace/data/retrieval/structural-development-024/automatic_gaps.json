@@ -1,0 +1,54 @@
+[
+  {
+    "automatic_covering_units": [
+      "34d68463e8dbebb20d5f6ffa6ee3090f9339c004b6b6347f69228a9d653f253d"
+    ],
+    "fallback_origin": "explicit_reused_ai_annotation_not_auto_mapping",
+    "fallback_passage_id": "structural-a1846b1308fcae8f480124f1841aa5f1245a11c9055dc258ea09494c02fb79fc",
+    "query_id": "cyber-art20-3",
+    "side": "before",
+    "status": "automatic_article_covering_reference"
+  },
+  {
+    "automatic_covering_units": [
+      "c2c0c6c98ea585b4f27203d002d99c101c7d5741aa7268058a44de2fdee33c08"
+    ],
+    "fallback_origin": "explicit_reused_ai_annotation_not_auto_mapping",
+    "fallback_passage_id": "structural-ebf4c590b5c5b63b0976c26fd2cbf21d2285d34729c103504a2ba6b91120f49a",
+    "query_id": "cyber-art20-3",
+    "side": "after",
+    "status": "automatic_article_covering_reference"
+  },
+  {
+    "automatic_covering_units": [],
+    "fallback_origin": "explicit_reused_ai_annotation_not_auto_mapping",
+    "fallback_passage_id": "structural-72c48d6f7ab21705bbbcc6cb46747e2a96f144ae09c18e7f828d3921aaadeb74",
+    "query_id": "market-art27",
+    "side": "before",
+    "status": "automatic_target_missing"
+  },
+  {
+    "automatic_covering_units": [],
+    "fallback_origin": "explicit_reused_ai_annotation_not_auto_mapping",
+    "fallback_passage_id": "structural-6bf1ff7e2641b57554e5d34cef41bd354fa6da492af7321f6089949feb91f6f0",
+    "query_id": "market-art27",
+    "side": "after",
+    "status": "automatic_target_missing"
+  },
+  {
+    "automatic_covering_units": [],
+    "fallback_origin": "explicit_reused_ai_annotation_not_auto_mapping",
+    "fallback_passage_id": "structural-bfff74a43a1d99809eb8c2b2205d527ce49cb72cb46fd5ec3e08dec302184ecb",
+    "query_id": "market-art29-1-4",
+    "side": "before",
+    "status": "automatic_target_missing"
+  },
+  {
+    "automatic_covering_units": [],
+    "fallback_origin": "explicit_reused_ai_annotation_not_auto_mapping",
+    "fallback_passage_id": "structural-26695dde36201ba4b36d6df15dae90b2f1964d804ac6ba8caee7ce31720913ec",
+    "query_id": "market-art29-1-4",
+    "side": "after",
+    "status": "automatic_target_missing"
+  }
+]

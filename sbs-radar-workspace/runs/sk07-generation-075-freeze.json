@@ -1,0 +1,13 @@
+{
+  "runs/sk07-generation-rag-075.py": "be95f78b58b914b2a348d647af55ce7d35468e865a3158c01bfa80ccf8fd4dea",
+  "deployment/generation-rag-075-plan.json": "1ca8420013a8005ca7ac59e612b7345c17f7b42a2cb9d81507e8f18fedf78088",
+  "src/sbs/conversation/__init__.py": "bcd9ca72d234b16dc7aceeb0f3ef87d0c4261c94829c7f824e96d25e0ca725e8",
+  "src/sbs/conversation/compaction.py": "3197ba028859409e330d8fa21c9a22caffdc1314a29a5fa7f4bbeb5489e6dc03",
+  "src/sbs/conversation/process_context.py": "c46eea9cc8b15c16441a9e2a6ba04b6cc15c7ad78c87e7f97dba2f090102b9d1",
+  "src/sbs/runtime.py": "6945b6b93583bd8f27e9dbdbb42040c86d1102cb84d1523051e4d58fdd38165e",
+  "skills/sbs-conversacion-orquestacion/SKILL.md": "6652cf3443a7043583f7f572b8d4498d5ba327461f611fe8e81f6a92ed0aed2b",
+  "skills/sbs-conversacion-orquestacion/assets/generator-instructions.md": "3c774358f4c9fec4c3a78d7270f49d4aa413a08805b4a72ff1ebfd03bc992a6c",
+  "tests/unit/test_generation_compaction_075.py": "2c55830b3f1efcdc5255dbe84841d517cde6a999198dad33f7ce5a798fa4ae78",
+  "runs/sk07-generation-075-tests.txt": "867ce68d6e55b285b8b431452d641ecec634650a0e21441e981caa5c5d57dd58",
+  "config/fictitious-processes-075.json": "1d8385631b949d353c3d7b8061ed25ed22d5014ae82b69a34563148535363cca"
+}

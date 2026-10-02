@@ -1,0 +1,23 @@
+{
+  "span_budget": [
+    "No recorta silenciosamente",
+    "Cuenta entrada completa; propone adaptación explícita o modelo alternativo"
+  ],
+  "version_mix": [
+    "Rechaza mezclar por dimensión igual",
+    "Versiona/reindexa nuevo bundle"
+  ],
+  "workspace": [
+    "Distingue documentación de comprobación runtime"
+  ],
+  "cost": [
+    "No inventa precio ni gasto autorizado",
+    "Conserva costo desconocido"
+  ],
+  "freeze": [
+    "No atribuye mejora aislada al modelo si cambia corpus/chunks"
+  ],
+  "trigger_no": [
+    "Deriva a SK03 como propietaria principal"
+  ]
+}

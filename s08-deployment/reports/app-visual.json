@@ -1,0 +1,19 @@
+{
+  "scope": "Offline rendering of authenticated HTTP response; no browser SSO claim",
+  "html_sha256": "a85dfc88358b64fe1b05161ccfc014a808407c84957ddf7f8d0e52b1a42eff6f",
+  "checks": [
+    {
+      "width": 1280,
+      "hasForm": true,
+      "hasAnswer": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "hasForm": true,
+      "hasAnswer": true,
+      "overflow": false
+    }
+  ],
+  "pass": true
+}

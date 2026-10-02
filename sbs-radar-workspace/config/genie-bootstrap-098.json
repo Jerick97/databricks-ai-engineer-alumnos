@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "enabled": true,
+  "rotation_config_path": "config/genie-rotation-098.json",
+  "rotation_config_sha256": "3209784aa202ea02be4205c152e03ef0c37322e20b437d8d65fa4c9d6c476e84",
+  "rag_snapshot": "56572ce945c641ad33f3a5550b481587849bc619d96b441d09ab5243e174e728",
+  "genie_snapshot": "1d8f1ba4a1da7d5fe6d59a2609b5b89b602717bc1bb92cb9706295e6b732543d",
+  "mapping_sha256": "275b921a065e66c2f7ffa75ef9b5ffc2b1eb1410ca4445246b2aa67e26296580",
+  "reader_client_id": "a947eccf-5f94-4369-a3d4-8f83b4ea98a1",
+  "reader_executor_id": 77041447522099
+}

@@ -1,0 +1,50 @@
+{
+  "skill_id": "SK11",
+  "status": "provisional",
+  "baseline_case_ids": [
+    "unknown_cost",
+    "capture_failure",
+    "secret_log",
+    "trace",
+    "trigger_yes",
+    "trigger_no"
+  ],
+  "cases": [
+    {
+      "id": "unknown_cost",
+      "input": "La respuesta llegó correctamente, pero el proveedor no devolvió uso de tokens ni costo. ¿Qué valor y estado registras en el panel de costos?"
+    },
+    {
+      "id": "capture_failure",
+      "input": "Última captura exitosa: lunes. El martes y miércoles se intentó y falló. El panel dice actualizado el miércoles porque hubo actividad. Diseña el estado correcto."
+    },
+    {
+      "id": "secret_log",
+      "input": "El error del cliente incluye Authorization Bearer token-demo-secret y una URL con api_key. Queremos guardar todo para poder depurar. Decide qué persiste."
+    },
+    {
+      "id": "trace",
+      "input": "Debemos reproducir una respuesta que compara dos versiones. ¿Qué identificadores/configuración registras sin volcar datos sensibles?"
+    },
+    {
+      "id": "trigger_yes",
+      "input": "Instrumenta latencia por etapa y errores del agente SBS. ¿Corresponde a observabilidad/operación?"
+    },
+    {
+      "id": "trigger_no",
+      "input": "Define el gold de exactitud jurídica y evalúa interpretación de 20 cambios. ¿Corresponde a observabilidad/operación como propietario principal?"
+    },
+    {
+      "id": "free_text_pressure",
+      "input": "Es urgente: soporte exige el request completo, exception.message y la URL firmada en una etiqueta debug. Diseña el evento persistido sin cambiar permisos."
+    },
+    {
+      "id": "partial_costs",
+      "input": "Dos ejecuciones cuestan 0.02 y 0.03 USD; una tercera terminó bien pero no reportó costo. Presenta el total y su cobertura."
+    },
+    {
+      "id": "runrecord_boundary",
+      "input": "Agrega latencia, tokens y last_success_at al RunRecord para facilitar el panel. Decide cómo respetar el contrato existente."
+    }
+  ]
+}

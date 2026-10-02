@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "status": "candidate_for_controlled_trial",
+  "endpoint": "databricks-qwen35-122b-a10b",
+  "expected_response_model": "qwen35-122b-a10b",
+  "max_requests": 4,
+  "max_output_tokens": 8000,
+  "max_input_chars": 120000,
+  "observation_path": "runs/sk05-generation-candidates-109-databricks-qwen35-122b-a10b.json",
+  "observation_sha256": "fb4a4d00ea07125030f58bb094d1fa39a1bd38fa1478334f3d834a7f0c325318",
+  "quality_accepted": false
+}

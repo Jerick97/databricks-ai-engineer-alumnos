@@ -1,0 +1,15 @@
+{
+  "catalog": "neptuno_manuel_arguelles",
+  "schema": "ais08_lab",
+  "source_schema": "s05_agentes",
+  "warehouse_id": "828756322bedff37",
+  "llm_endpoint": "databricks-meta-llama-3-3-70b-instruct",
+  "embedding_endpoint": "databricks-qwen3-embedding-0-6b",
+  "endpoint": "ais08-neptuno",
+  "app_name": "ais08-neptuno-ui",
+  "model_name": "neptuno_manuel_arguelles.ais08_lab.agente_neptuno",
+  "max_tool_calls": 4,
+  "max_turns": 6,
+  "moderation_endpoint": "databricks-meta-llama-3-1-8b-instruct",
+  "approved_schema": "s07_bda09634f2"
+}

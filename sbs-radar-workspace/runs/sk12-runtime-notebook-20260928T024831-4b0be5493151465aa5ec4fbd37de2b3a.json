@@ -1,0 +1,15 @@
+{
+  "run_id": "sk12-runtime-notebook-20260928T024831-4b0be5493151465aa5ec4fbd37de2b3a",
+  "executed_at": "2026-09-28T02:48:35.112380+00:00",
+  "status": "failed",
+  "error_class": "CellExecutionError",
+  "errors": 1,
+  "source_path": "notebooks/sbs-radar-runtime-promotion.ipynb",
+  "source_sha256": "0b732fd5c8ae317e767a025581747caa111834633e96fa7e2fb9e1787f6b2b1e",
+  "output_path": "runs/sk12-runtime-notebook-20260928T024831-4b0be5493151465aa5ec4fbd37de2b3a-executed.ipynb",
+  "output_sha256": "2ab0bd6f34fcab2f5c25c9f17d30b6caf10e3d3411bb2df26da76e889e068402",
+  "code_cells": 3,
+  "executed_cells": 2,
+  "python_executable": "/Users/macdenix/clawd/projects/sbs-genie-e2e/.venv/bin/python",
+  "scope": "Real six-PDF preparation and LocalService promotion; real cached embeddings; failed promotion preserves prior runtime; no cloud, UI or generation acceptance"
+}

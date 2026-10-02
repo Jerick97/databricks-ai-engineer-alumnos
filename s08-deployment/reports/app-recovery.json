@@ -1,0 +1,19 @@
+{
+  "time": "2026-09-27T12:39:39.376373+00:00",
+  "app": "ais08-neptuno-ui",
+  "start_submitted": true,
+  "observed": {
+    "app_status": {
+      "message": "App has status: App is running",
+      "state": "RUNNING"
+    },
+    "compute_status": {
+      "message": "App compute is running.",
+      "state": "ACTIVE"
+    }
+  },
+  "browser_validation": "BLOCKED: Chrome extension UI open",
+  "health_last_http_status": 200,
+  "http_evidence": "app-recovery-http.json",
+  "cp4_browser_acceptance": "PENDING"
+}

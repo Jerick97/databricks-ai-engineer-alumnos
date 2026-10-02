@@ -1,0 +1,18 @@
+[
+  {
+    "endpoint": "databricks-gpt-6-sol",
+    "identifier_basis": "foundation endpoint name; metadata lacks id",
+    "inference_executed": false,
+    "permissions_read": "failed",
+    "exception_type": "InvalidParameterValue",
+    "error_code": "INVALID_PARAMETER_VALUE"
+  },
+  {
+    "endpoint": "databricks-gpt-5-6-sol",
+    "identifier_basis": "foundation endpoint name; metadata lacks id",
+    "inference_executed": false,
+    "permissions_read": "failed",
+    "exception_type": "InvalidParameterValue",
+    "error_code": "INVALID_PARAMETER_VALUE"
+  }
+]

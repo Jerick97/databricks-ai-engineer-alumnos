@@ -1,0 +1,67 @@
+{
+  "scope": "offline fixtures, no SDK auth/network/SQL",
+  "results": [
+    {
+      "name": "wrong_full_name_before_SQL",
+      "passed": true,
+      "observed": true
+    },
+    {
+      "name": "wrong_format_before_SQL",
+      "passed": true,
+      "observed": true
+    },
+    {
+      "name": "masked_column_before_SQL",
+      "passed": true,
+      "observed": true
+    },
+    {
+      "name": "browse_only_before_SQL",
+      "passed": true,
+      "observed": true
+    },
+    {
+      "name": "policy_not_yet_valid",
+      "passed": true,
+      "observed": true
+    },
+    {
+      "name": "active_requires_true_bool",
+      "passed": true,
+      "observed": true
+    },
+    {
+      "name": "job_ID_exact_int",
+      "passed": true,
+      "observed": true
+    },
+    {
+      "name": "response_byte_cap",
+      "passed": true,
+      "observed": true
+    },
+    {
+      "name": "quota_prevents_second_request",
+      "passed": true,
+      "observed": true
+    },
+    {
+      "name": "stream_read_error_sanitized",
+      "passed": false,
+      "observed": {
+        "safe": true,
+        "type": "ValueError",
+        "message": "SDK_RESPONSE_READ_UNCONFIRMED",
+        "response_closed": true,
+        "requests": 1
+      }
+    },
+    {
+      "name": "default_notebook_no_execute",
+      "passed": true,
+      "observed": true
+    }
+  ],
+  "remote_calls": 0
+}

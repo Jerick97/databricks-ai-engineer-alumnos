@@ -1,0 +1,42 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>lab/lab_smoke.py · S08</title><style>body{font:18px system-ui;margin:32px;color:#122b43}header{max-width:1000px}a{color:#533afd}pre{font:14px/1.6 ui-monospace,monospace;overflow:auto;background:#f6f9fc;padding:20px}pre span{display:block}pre span:target{background:#fff0ad}pre a{display:inline-block;width:4ch;color:#65788a}p{line-height:1.5}</style><header><h1>lab/lab_smoke.py</h1><p>Código del repositorio local · Neptuno S08. Esta copia permite examinar el script sin ejecutarlo.</p><p><a href="https://github.com/manuelarguelles/databricks-ai-engineer-alumnos/blob/main/s08-deployment/lab/lab_smoke.py">Ver este archivo en GitHub · repositorio de alumnos</a></p><p><a href="../../lab/lab_smoke.py">Abrir archivo original</a> · <a href="../S08-autonomo.html#14">Volver a las diapositivas</a></p></header><pre><span id="L1"><a href="#L1">1</a> &quot;&quot;&quot;Pruebas REALES del agente, salidas saneadas; no usa mocks.&quot;&quot;&quot;</span>
+<span id="L2"><a href="#L2">2</a> import argparse,json,os,time,uuid</span>
+<span id="L3"><a href="#L3">3</a> from databricks.sdk import WorkspaceClient</span>
+<span id="L4"><a href="#L4">4</a> from lab_deploy import CONFIG,save</span>
+<span id="L5"><a href="#L5">5</a> </span>
+<span id="L6"><a href="#L6">6</a> def main():</span>
+<span id="L7"><a href="#L7">7</a>     p=argparse.ArgumentParser();p.add_argument(&#x27;--profile&#x27;);p.add_argument(&#x27;--local&#x27;,action=&#x27;store_true&#x27;);a=p.parse_args()</span>
+<span id="L8"><a href="#L8">8</a>     if a.profile:os.environ[&#x27;DATABRICKS_CONFIG_PROFILE&#x27;]=a.profile</span>
+<span id="L9"><a href="#L9">9</a>     if a.local:</span>
+<span id="L10"><a href="#L10">10</a>         import mlflow</span>
+<span id="L11"><a href="#L11">11</a>         mlflow.set_tracking_uri(&#x27;databricks&#x27;)</span>
+<span id="L12"><a href="#L12">12</a>         mlflow.set_experiment(f&quot;/Users/{WorkspaceClient().current_user.me().user_name}/AIS08-Neptuno&quot;)</span>
+<span id="L13"><a href="#L13">13</a>         from agent import AgenteNeptuno</span>
+<span id="L14"><a href="#L14">14</a>         from mlflow.types.responses import ResponsesAgentRequest</span>
+<span id="L15"><a href="#L15">15</a>         agent=AgenteNeptuno(CONFIG)</span>
+<span id="L16"><a href="#L16">16</a>         invoke=lambda q,request_id:agent.predict(ResponsesAgentRequest(input=[{&#x27;role&#x27;:&#x27;user&#x27;,&#x27;content&#x27;:q}])).model_dump()</span>
+<span id="L17"><a href="#L17">17</a>     else:</span>
+<span id="L18"><a href="#L18">18</a>         w=WorkspaceClient()</span>
+<span id="L19"><a href="#L19">19</a>         endpoint=w.serving_endpoints.get(CONFIG[&#x27;endpoint&#x27;])</span>
+<span id="L20"><a href="#L20">20</a>         if endpoint.pending_config or endpoint.state.ready.value!=&#x27;READY&#x27;: raise RuntimeError(&#x27;Endpoint no está estable; espera READY y NOT_UPDATING&#x27;)</span>
+<span id="L21"><a href="#L21">21</a>         served_version=endpoint.config.served_entities[0].entity_version</span>
+<span id="L22"><a href="#L22">22</a>         invoke=lambda q,request_id:w.api_client.do(&#x27;POST&#x27;,f&quot;/serving-endpoints/{CONFIG[&#x27;endpoint&#x27;]}/invocations&quot;,body={&#x27;input&#x27;:[{&#x27;role&#x27;:&#x27;user&#x27;,&#x27;content&#x27;:q}],&#x27;client_request_id&#x27;:request_id})</span>
+<span id="L23"><a href="#L23">23</a>     cases=[(&#x27;ventas&#x27;,&#x27;¿Cuánto vendimos de Bebidas en 2026?&#x27;),(&#x27;aclaracion&#x27;,&#x27;¿Cuánto vendimos de Bebidas?&#x27;),(&#x27;categoria_ausente&#x27;,&#x27;¿Cuánto vendimos en 2026?&#x27;),(&#x27;reposicion&#x27;,&#x27;¿Qué productos requieren reposición?&#x27;),(&#x27;rag&#x27;,&#x27;¿Qué condiciones rigen la devolución de productos Neptuno?&#x27;),(&#x27;costos&#x27;,&#x27;¿Cuál es el margen de Bebidas en 2026?&#x27;)]</span>
+<span id="L24"><a href="#L24">24</a>     results=[]</span>
+<span id="L25"><a href="#L25">25</a>     for name,q in cases:</span>
+<span id="L26"><a href="#L26">26</a>         started=time.monotonic();request_id=&#x27;ais08-&#x27;+name+&#x27;-&#x27;+uuid.uuid4().hex</span>
+<span id="L27"><a href="#L27">27</a>         try:</span>
+<span id="L28"><a href="#L28">28</a>             r=invoke(q,request_id);answer=&#x27;\n&#x27;.join(p.get(&#x27;text&#x27;,&#x27;&#x27;) for o in r.get(&#x27;output&#x27;,[]) for p in o.get(&#x27;content&#x27;,[]) if p.get(&#x27;type&#x27;)==&#x27;output_text&#x27;);meta=r.get(&#x27;custom_outputs&#x27;,{})</span>
+<span id="L29"><a href="#L29">29</a>             passed=bool(answer) and meta.get(&#x27;tool_errors&#x27;,0)==0</span>
+<span id="L30"><a href="#L30">30</a>             if name==&#x27;ventas&#x27;:passed=passed and (&#x27;11602488&#x27; in &#x27;&#x27;.join(ch for ch in answer if ch.isdigit())) and meta.get(&#x27;tool_calls&#x27;,0)&gt;0</span>
+<span id="L31"><a href="#L31">31</a>             if name==&#x27;aclaracion&#x27;:passed=passed and meta.get(&#x27;tool_calls&#x27;)==0 and (&#x27;año&#x27; in answer.lower())</span>
+<span id="L32"><a href="#L32">32</a>             if name==&#x27;categoria_ausente&#x27;:passed=bool(answer) and &#x27;categoría&#x27; in answer.lower() and not any(t.get(&#x27;ok&#x27;) for t in meta.get(&#x27;tool_audit&#x27;,[]))</span>
+<span id="L33"><a href="#L33">33</a>             if name==&#x27;reposicion&#x27;:passed=passed and &#x27;Nord&#x27; in answer and &#x27;Outback&#x27; in answer and &#x27;no requiere&#x27; not in answer.lower()</span>
+<span id="L34"><a href="#L34">34</a>             if name==&#x27;rag&#x27;:passed=passed and &#x27;documento_id=politica_devoluciones&#x27; in answer and &#x27;chunk_id=&#x27; in answer</span>
+<span id="L35"><a href="#L35">35</a>             if name==&#x27;costos&#x27;:passed=passed and &#x27;costo&#x27; in answer.lower()</span>
+<span id="L36"><a href="#L36">36</a>             results.append({&#x27;case&#x27;:name,&#x27;client_request_id&#x27;:None if a.local else request_id,&#x27;served_model_version&#x27;:None if a.local else served_version,&#x27;pass&#x27;:passed,&#x27;answer&#x27;:answer,&#x27;metadata&#x27;:meta,&#x27;elapsed_seconds&#x27;:round(time.monotonic()-started,2)})</span>
+<span id="L37"><a href="#L37">37</a>         except Exception as e:results.append({&#x27;case&#x27;:name,&#x27;pass&#x27;:False,&#x27;error&#x27;:type(e).__name__+&#x27;: &#x27;+str(e)[:300]})</span>
+<span id="L38"><a href="#L38">38</a>         save(&#x27;smoke-local&#x27; if a.local else &#x27;smoke-serving&#x27;,results)</span>
+<span id="L39"><a href="#L39">39</a>         print(name,results[-1][&#x27;pass&#x27;],flush=True)</span>
+<span id="L40"><a href="#L40">40</a>     if not all(r[&#x27;pass&#x27;] for r in results):raise SystemExit(1)</span>
+<span id="L41"><a href="#L41">41</a> if __name__==&#x27;__main__&#x27;:main()</span>
+</pre></html>

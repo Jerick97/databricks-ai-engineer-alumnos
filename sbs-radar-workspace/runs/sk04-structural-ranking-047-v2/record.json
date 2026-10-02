@@ -1,0 +1,61 @@
+{
+  "index_hash": "dbf90d1bd8296ac22e07640a5b335cc440e449c8ba8167d94c3272889c5120ce",
+  "index_sha256": "66cea84ac447ecd5b47e3a19f9c7a8b7f39a1ffe666036b7db4bc6b18d3ad5cb",
+  "inputs": {
+    "context/reranker-manifest.json": "c7877e17ffb280eed4accce96057eb72445eaa19eff2da78ae3cca11d804fe2c",
+    "data/foundation-repository/derived/0eafcc962406b53655b888827d7a8c12216cc1898b681f1868ffb67cf2f104c9/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/d7ab1b22b63dedd7f2a0e731d38c760584be04ed65d901a47a5fa160875a4dab/result.json": "b2a4018432aa0d7a8d886bb54fdff1ba724afaf90892cf345ee49819d683d756",
+    "data/foundation-repository/derived/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/result.json": "aca479067212837e1b6d90742892ca630a2ab0699e27b447eb729379c9d19379",
+    "data/foundation-repository/derived/661db5754e473552d5604aae3d3e0c81a0cf88a8af4c6df279f3f7624f656342/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/result.json": "3bf4d7227a281a90422e64726a427b7aaae2e4499d11a62d2bfd2b1e0d12e11e",
+    "data/foundation-repository/derived/689dfeebbe9122d2589019d28ca3b349b2e88dd309784d0fa316b5aaeb0e1a55/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/0905a638ac61ee563fb7cf40b8c9205cad74dfdb08932ba311ac0318746bb4a0/result.json": "1fe91eb4ce5c93838aeecb8875c790cdff7538e632b4ebeaea1b80205e77929f",
+    "data/foundation-repository/derived/879fddb3c653736f47c2b9661ca10d6cebf8cfc7c5a850a51d0582ac7b1a82f7/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/7ee583b7d21fa02c29d42db063b0426641f49fe7ce81d64bb15f42db1b0f829b/result.json": "d298b739142b159a822521fdf2492fed34226c939775c8a49cbe75ce6a19367f",
+    "data/foundation-repository/derived/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/result.json": "65b2304a6379933215424b0d077881bfd3ab9fcd631512ae1575e55013960488",
+    "data/retrieval/sk04-real-001/queries-000.json": "fd899cb778c0a03e523274a5a7936028d4330b1e029fd17265fcf242e16430e5",
+    "data/retrieval/structural-development-026/artifacts.json": "9aecd4a5615fa55ac60ce77d762512bda1591b2f08c34eb73ce03c0e25a0b438",
+    "data/retrieval/structural-development-026/embedding_inputs.json": "0ff6df5bbbb7faa322c5ed8898d2f08f5d77721719d4eab7ab7b19a29fd6f2f9",
+    "data/retrieval/structural-development-026/manifest.json": "b5e51af49a8f1a3288d303b87b526fc0c3ad2b383849b12cd357a9090285b537",
+    "data/retrieval/structural-development-026/pairs.json": "98ee070f3ce1717ba59f961d9fdd5fdd497c5a94a688e91fbca79538c426b997",
+    "data/retrieval/structural-development-026/passage_metadata.json": "072bd75ad3b076e15fea9f4ae17a90370dc060638ccdadda99842b50b381b4d0",
+    "data/retrieval/structural-development-026/passages.json": "2c9f89ff048ef31822f317b476b5d10e586f12398db2731db1118e25b4e13ac4",
+    "data/retrieval/structural-development-026/questions.json": "f683270ddefa9c320f262cda73f9a85920395401a147204d9c13930e7f8d46f3",
+    "runs/sk04-embeddings-041-vectors/vectors.json": "41a10dfba9bca41cba860c185c9bebee7613a7566567d210b5a07577c8ae1d01",
+    "runs/sk04-lexical-development-028-rankings-lexical.json": "36115b51aa6fb823d80794b3564b09aa69e56d55cc740c93de674c09d34ff842",
+    "runs/sk05-query-compatibility-046.json": "534851854b5586e536d862e71fa2372010130cc8498d23ddd9cbc0698de0ec07",
+    "runs/sk09-query-compatibility-046-review.json": "4b1aab5aa826d117279d80d0766144982f1b3ef37583d05a315730349dbd11ab"
+  },
+  "metrics_computed": false,
+  "policy": {
+    "bm25_b": 0.75,
+    "bm25_k1": 1.5,
+    "candidate_k": 20,
+    "cpu_threads": 2,
+    "judgments_read": false,
+    "lexical_028_comparison": "exact IDs/order;score delta <=2*unique_terms*ulp(max(abs(scores))) to cover unordered-set summation rounding",
+    "neighbors": false,
+    "partition": "exposed_development",
+    "reranker_pool": "same frozen RRF top20",
+    "rrf_k": 60,
+    "rrf_pool": "exact top20 RRF of lexical top20 and vector top20",
+    "scope": "server-owned family and pair document_versions before scoring",
+    "target_expansion": false,
+    "tie_break": "passage_id ascending",
+    "top_k": [
+      5,
+      20
+    ],
+    "version": "structural-ranking-047-v1",
+    "zero_lexical_scores": "unranked"
+  },
+  "promotion": false,
+  "queries": 3,
+  "ranking_hashes": {
+    "lexical": "5b31e3a97cbc3101903853cff28346726f95a5733aa039bfda870f4d160ae90b",
+    "rrf": "5508a72851500de399f98577a8639d7fa8b798a1a3657e646c913611258fdc2d",
+    "rrf_reranker": "0362c547882ce7f56f08590eb12d28b8c2cdab34b47da6fbd004aa8b326e4980",
+    "vector": "e3d35121ae6b1e25511de3afba478f9b537c69d44c8870e312d6feae5a3e5e3e"
+  },
+  "records": 231,
+  "records_sha256": "c4332302abceb2ff03e6d27f2f8d419e14ec8fd54eb39e0db03cbdb265bc382b",
+  "remote_calls": 0,
+  "source_drift": [],
+  "status": "completed_local_development"
+}

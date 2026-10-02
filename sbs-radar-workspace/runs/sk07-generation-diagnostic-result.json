@@ -1,0 +1,29 @@
+{
+  "run_id": "sk07-generation-diagnostic-001",
+  "metadata_get": {
+    "name": "databricks-gpt-6-sol",
+    "ready": "READY",
+    "task": "llm/v1/chat"
+  },
+  "output_persisted": false,
+  "result": "failed",
+  "exception_type": "RuntimeError",
+  "diagnostics": {
+    "endpoint": "databricks-gpt-6-sol",
+    "requests": 1,
+    "parameters": {
+      "max_tokens": 256,
+      "stream": false
+    },
+    "usage": null,
+    "stage": "http_error",
+    "http_status": 403,
+    "error_code": "PERMISSION_DENIED",
+    "error_hints": [
+      "rate limit",
+      "permission"
+    ],
+    "latency_seconds": 0.7963260419783182
+  },
+  "inference_requests": 1
+}

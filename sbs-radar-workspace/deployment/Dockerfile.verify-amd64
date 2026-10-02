@@ -1,0 +1,10 @@
+FROM --platform=linux/amd64 python:3.11-slim
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 TOKENIZERS_PARALLELISM=false
+WORKDIR /verify
+COPY requirements-app.txt /verify/requirements-app.txt
+RUN python -m pip download --only-binary=:all: --dest /wheels -r /verify/requirements-app.txt \
+ && sha256sum /wheels/* > /verify/wheel-sha256.txt \
+ && python -m pip install --no-index --find-links=/wheels -r /verify/requirements-app.txt \
+ && python -m pip freeze > /verify/installed.txt
+COPY verify_linux.py /verify/verify_linux.py
+ENTRYPOINT ["python", "/verify/verify_linux.py"]

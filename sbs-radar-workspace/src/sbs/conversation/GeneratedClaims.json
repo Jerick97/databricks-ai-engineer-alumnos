@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sbs:conversation:GeneratedClaims:0.1.2",
+  "title": "GeneratedClaims",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["material_claims", "limitations"],
+  "properties": {
+    "material_claims": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["text", "citation_ids"],
+        "properties": {
+          "text": {"type": "string", "pattern": "^(Antes|Después|Cambio|Implicancia propuesta):\\s*\\S"},
+          "citation_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1, "pattern": "\\S"}}
+        }
+      }
+    },
+    "limitations": {"type": "array", "items": {"type": "string", "minLength": 1, "pattern": "\\S"}}
+  }
+}

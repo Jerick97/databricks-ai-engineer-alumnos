@@ -1,0 +1,44 @@
+{
+  "time": "2026-09-28T19:04:15.864272+00:00",
+  "action": "start_existing_app",
+  "app": "ais08-neptuno-ui",
+  "submitted": true,
+  "response": {
+    "app_status": {
+      "message": "App status is unavailable.",
+      "state": "UNAVAILABLE"
+    },
+    "compute_size": "MEDIUM",
+    "compute_status": {
+      "message": "App compute is starting.",
+      "state": "STARTING"
+    },
+    "create_time": "2026-09-27T02:34:05Z",
+    "creator": "sociosdosmilveintiseis@gmail.com",
+    "default_source_code_path": "/Workspace/Users/sociosdosmilveintiseis@gmail.com/AIS08-labfiles/app",
+    "description": "S08 Neptuno: UI sobre Serving",
+    "effective_user_api_scopes": [
+      "iam.access-control:read",
+      "iam.current-user:read"
+    ],
+    "id": "eb71918a-799b-428d-ad8c-a55730390505",
+    "name": "ais08-neptuno-ui",
+    "oauth2_app_client_id": "da035caf-94bc-4194-80a3-4b4421ee75b5",
+    "oauth2_app_integration_id": "da035caf-94bc-4194-80a3-4b4421ee75b5",
+    "resources": [
+      {
+        "name": "neptuno-endpoint",
+        "serving_endpoint": {
+          "name": "ais08-neptuno",
+          "permission": "CAN_QUERY"
+        }
+      }
+    ],
+    "service_principal_client_id": "eb71918a-799b-428d-ad8c-a55730390505",
+    "service_principal_id": 71501120163958,
+    "service_principal_name": "app-5pfb4s ais08-neptuno-ui",
+    "update_time": "2026-09-28T19:04:15Z",
+    "updater": "sociosdosmilveintiseis@gmail.com",
+    "url": "https://ais08-neptuno-ui-7474657121564806.aws.databricksapps.com"
+  }
+}

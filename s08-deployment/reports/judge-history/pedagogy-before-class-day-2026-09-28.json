@@ -1,0 +1,152 @@
+{
+  "judge": "independent-pedagogy",
+  "agent": "/root/judge_pedagogy",
+  "date": "2026-09-27T03:31:10.354647+00:00",
+  "verdict": "PASS",
+  "scope": "full-session",
+  "target_scope": "full-session",
+  "class_ready": false,
+  "dimension": "pedagogy",
+  "pedagogical_ready": true,
+  "summary": "El material de sesión completa permite seguir teoría → ejemplo resuelto → práctica → aceptación, con continuidad S01–S07, recuperación y límites explícitos. PED-CP5 y PED-CP6 están resueltos. PASS evalúa pedagogía full-session. class_ready=false solo hasta agregación de tres dictámenes finales; el SSO interactivo no se añade como gate obligatorio distinto de la UI corporativa autenticada del temario.",
+  "artifact_hashes": {
+    "README.md": "b55d147b6c9357e3393536c9a3b733b02fc6f2bdf0d681ac3b0d8cfa8902d3a4",
+    "PLAN-CLASE.md": "e06c535aeae9d4c86114038efb26d09845328be131d4c9ddf89102aaf513ee55",
+    "GUIA-DOCENTE.md": "da8290a37941287e560c34520c6c2df6e250930974160f1a9e06453d78ac86b2",
+    "CONSIGNA.md": "332c4c969300618c5dbecb103569070d5a9801194c3561caad1682e558ec37ce",
+    "CERTIFICACION.md": "5beb52f7cc90efcd41d2fe78e022eb60414824f381e68db6ee30f3b7ab2856d2",
+    "RUNBOOK.md": "61b3a2c169c87a6b7476dd78956be21c411b1344ce68b183b3b44213b18b2152",
+    "EJEMPLO-RESUELTO.md": "ae4ea42e5901015994c32c8eb9b7494904066205d40bc23d2006fd30f6a6370c",
+    "agenda.json": "3747e52c1491e64c078a046cea88585e7aa7bb3ac07200c278042d757fbe7666",
+    "guion.md": "3fe533d8e02887cd168e0c6b9826b8e2fbd17eadd59bb366c509cf16dc3cf507",
+    "notebook.py": "4dbb89479b8d04d4e22de55110c9e47297e6e5f3d91e3d76339d9f9a4edf9510",
+    "notebook.ipynb": "8b350fde2321ca490642ffda5ec6188b5db90b1f5e4ae0258125072f78fa94f7",
+    "index.html": "6afc46627f6228acf1fd595fed968273ea15f95a4c3b393021da28d8e263a7db",
+    "slides/content.json": "e878d06acd3babe1b6c796a18ecc00f0dd72384d590ad25d93150407a62938a6",
+    "slides/S08-deck.html": "f70b7cb05ebb9053d6220da35892d01497b4a7a30b68466415acc11e166164df",
+    "slides/S08-autonomo.html": "9b5049015512853a291fb5f69193f1ea9139293dfa1fa010bf5a450e5d680fcc",
+    "slides/deck.js": "31e25fd75f6cd7c6e59949f9b0c3874ebb27d1add52e5e688ccb72c4daec3eaf",
+    "slides/deck.css": "bda749f090d887dfd096b45efad15e47644ef17aab182a8ff766953a75909f05",
+    "lab/lab_config.py": "c9fda07a95c1de66dad6f4d3386065b180fc5fff3b61b94d5ba5c4b3d07b34db",
+    "lab/lab_monitor.py": "087833c48e179ecc7cc388b5784a8227fde8bef2b75376635fc89efd3e27caab",
+    "lab/lab_parse_contract.sql": "89efa2c9c49a2dd4292b9a3f8f8e5ac7d0ce89c0adaab5ce4338da9687417495",
+    "lab/lab_import_workspace.py": "ddc8f0326ae4c56a72643d798f33d6a19383f9cccdebdf797d4cdca9bde4a787",
+    "reports/visual-qa.json": "812e38a2306bd574991bc662eaf46f0e250620bbfe0b17a5d7c4d6ca47d1451c",
+    "reports/structural-qa.json": "9fcf0dafec41c5d448ff3a7a0b3231e967b7c57e1e684fe1753bc4c7713493b5",
+    "reports/notebook-observed.json": "711645f87a6c0c4ca6552abc9861fcee1a1dd9030cb1a40725cbfe44edfb4e4a",
+    "reports/lab-monitor-values.json": "dae3617751266d784fdf5c09512f32118f6e900c237c208e404e273573001435",
+    "reports/lab-custom-canary-verified.json": "4bdcaa4a3b1c37444f8865751e6abfd0207118a67aad91eed7ecf4b5616a002e",
+    "reports/lab-custom-rollback-verified.json": "56e1c2f1900933969ceddd206f46992b59b79ed78d2af7bbc67f3dcdaed7d4ad",
+    "reports/app-browser.json": "7f2ea6e7cbbea310c582a8cdd83bb723067481d9587865c2c1bfafe89e508c67",
+    "reports/lab-app-http.json": "a6881fafb7090ae7249b453f8aa8f63508e52e3406c296d179d4bae5627e4a70",
+    "reports/app-visual.json": "cdf9918c351777604e55c473e3d524420705103a57dd902d1d18767721454032",
+    "reports/import-validation.json": "3cc995274189ce1143d36fe970af82dded9169793e5d9964cca09053205a59d9",
+    "/Users/macdenix/nix-skills/skills/operational/deck-craft/references/course-contract.md": "7f263b2768ad8382b25e7640b6072852075a1f70ec5d3f6f679a0d2884fc9d31",
+    "/Users/macdenix/clawd/projects/databricks-genai-pathway/temario-curso/TEMARIO.md": "e84cde07a10c39b0cdfd8b4cae5d6926be7912cc18c69e9afd0e16f296dc4a29",
+    "/Users/macdenix/clawd/projects-index/personal/cursos-a-dictar/databricks-ai-engineer/PROJECT.md": "59e024e6966cf292552b338a48e936d42794045a658458d08e743d7ef497e48c"
+  },
+  "evidence": [
+    {
+      "locator": "TEMARIO.md#Sesión8/Proyecto-integrador; PROJECT.md#Parámetros; course-contract.md",
+      "method": "Lectura independiente de fuentes originales",
+      "observed": "Audiencia desde cero tras S01–07, producción del Copiloto Neptuno, endpoint+App+monitoreo, equivalentes cloud y preparación certificación. Duración operativa180min reloj reconocida frente al borrador de horas académicas."
+    },
+    {
+      "locator": "agenda.json; PLAN-CLASE.md; GUIA-DOCENTE.md#CP3",
+      "method": "Lectura y comprobación programática de ruta/minutos",
+      "observed": "52slides una sola vez en ruta secuencial;180min con10min de pausa, subtotales de teoría/demo/práctica/recuperación coherentes. Recursos prewarm y canary solicitado desde minuto40; rollback se verifica después de pausa o cierre. No se presenta el tiempo asíncrono cloud como duración didáctica ensayada."
+    },
+    {
+      "locator": "guion.md; slides/content.json; GUIA-DOCENTE.md#CP0–CP8",
+      "method": "Lectura de guion, slides y guía",
+      "observed": "Define endpoint, serverless/cold start, alias, canary/A-B, identidades, flatten, baseline/drift, bundle y CI/CD junto al punto de uso. Recupera datos/tools/RAG/evaluación/gobierno previos y distingue custom de agente Responses."
+    },
+    {
+      "locator": "notebook.py#CP0; GUIA-DOCENTE.md#Configuración-unificada; lab/lab_import_workspace.py",
+      "method": "Lectura del recorrido de instalación/configuración/importación",
+      "observed": "Widgets explicados antes de código; nombres aislados por equipo; crear/verificar separados; configuración Workspace y Terminal local son copias distintas con pull-config explícito; rutas desde repo completo y recuperación por permisos."
+    },
+    {
+      "locator": "notebook.py#CP1–CP4; EJEMPLO-RESUELTO.md#S08-DEPLOY/SERVING/ROLLOUT/APPS",
+      "method": "Lectura de ejemplos y evidencias fechadas",
+      "observed": "Distingue versiónUC4, prompt4 y etiqueta código s08-v2. Seis casos incluyen categoría ausente como tool error esperado. Canary custom90/10 observado42/8 de50 y rollback5/5 con snapshot; no afirma experimento causal. App HTTP/render se mantiene separado del SSO interactivo."
+    },
+    {
+      "locator": "notebook.py#CP5; EJEMPLO-RESUELTO.md#S08-INFERENCE; reports/notebook-observed.json#inference_example",
+      "method": "Lectura de SQL y salida observada, sin volver a llamar cloud",
+      "observed": "JOIN request_id entre raw/flat, prioridad al client_request_id actual y aviso si usa evento previo. Ejemplo real costos046d13e7… correlaciona custom_outputs.tool_calls=0 con columna0; explica317ms internos frente328ms Serving. Fixture válido/texto_movido/errorHTTP se etiqueta y separa del tráfico real. Resuelve PED-CP5."
+    },
+    {
+      "locator": "notebook.py#CP6; EJEMPLO-RESUELTO.md#S08-MONITOR; reports/notebook-observed.json; reports/lab-monitor-values.json",
+      "method": "Lectura de consultas y resultados de métricas",
+      "observed": "Muestra refresh, filas profile/drift, valores latency_ms con ventana/count/avg y agregado directo. Ejemplo explica9eventos media2635.7778ms contra baseline1evento2614ms; otra ventana7eventos y1/7 tool_errors. Distingue28/14 filas del corte notebook de42/42 posterior y16solicitudes. Enseña denominador, asincronía y límites de inferencia estadística/semántica. Resuelve PED-CP6."
+    },
+    {
+      "locator": "notebook.py#CP7; GUIA-DOCENTE.md#Terminal; CONSIGNA.md",
+      "method": "Lectura de práctica y aceptación",
+      "observed": "Bundle se valida por Terminal con comando y variables concretas; prompt registra/resuelve/restaura alias sin afirmar cambio del modelo fijo.13entregas enlazadas por manifiesto final, cadaCP con salida y aceptación verificable."
+    },
+    {
+      "locator": "CERTIFICACION.md; slides/content.json#slide47–50; reports/visual-qa.json",
+      "method": "Lectura y cotejo de hashes QA actuales",
+      "observed": "12preguntas originales razonadas, mapa6dominios,4enclase y8posteriores; diagnóstico con2brechas personales. Cuatro slidesquiz; reporte QA acredita respuesta oculta/revelado y18escenarios sin incidencias. Hashes de5artefactos visuales coinciden con archivos actuales; este juez no repitió navegador."
+    },
+    {
+      "locator": "reports/notebook-observed.json; notebook.py",
+      "method": "Cotejo SHA del source y lectura de resultado",
+      "observed": "SHA4dbb89479b8d04d4e22de55110c9e47297e6e5f3d91e3d76339d9f9a4edf9510 coincide. Reporte registra Job35725070281647 SUCCESS en verificar, checksCP0/1/2/5/6. Modo verificar no acredita por sí solo mutaciones, UI ni rollout; esas evidencias están separadas."
+    }
+  ],
+  "findings": [
+    {
+      "id": "PED-TIMING",
+      "severity": "info",
+      "locator": "agenda.json#timing_status; PLAN-CLASE.md; RUNBOOK.md",
+      "status": "accepted_limitation",
+      "finding": "Los180min son estimados y requieren recursos preparados y evidencias fechadas de respaldo. Canary/rollback e ingestión pueden terminar fuera del bloque. Esta dependencia se enseña y planifica explícitamente.",
+      "action": "Conservar prewarm y comprobar acceso de equipos antes de clase; no anunciar duración ensayada con alumnos."
+    },
+    {
+      "id": "PED-SSO",
+      "severity": "info",
+      "locator": "reports/app-browser.json; EJEMPLO-RESUELTO.md#S08-APPS",
+      "status": "accepted_limitation",
+      "finding": "SSO/consentimiento interactivo sigue pending_manual_consent y no se afirma probado. El requisito original es UI del agente con autenticación corporativa y sin tokens en browser; no exige un ensayo separado de consentimiento Chrome. HTTP corporativo autenticado de formulario a backend/agente y render satisface la evidencia funcional revisada por ejecución. No se agrega un gate pedagógico nuevo.",
+      "action": "Conservar el límite declarado y comprobar acceso de participantes durante la preparación; no afirmar consentimiento interactivo probado."
+    },
+    {
+      "id": "PED-IMPORT-HASH",
+      "severity": "info",
+      "locator": "reports/import-validation.json; reports/notebook-observed.json",
+      "status": "execution_provenance_note",
+      "finding": "Ensayo de importación acredita SHA2897341a… anterior; el notebook final ejecutado es SHA4dbb8947…. Se acepta como evidencia del mecanismo de importación, no del source final importado por ese ensayo.",
+      "action": "El juez de ejecución debe conservar esta diferencia; no describir import-validation como prueba del hash final."
+    }
+  ],
+  "resolved_findings": [
+    {
+      "id": "PED-CP5",
+      "status": "resolved",
+      "evidence": "notebook.py#CP5 JOIN/fallback, fixture separado, EJEMPLO-RESUELTO.md y notebook-observed.inference_example"
+    },
+    {
+      "id": "PED-CP6",
+      "status": "resolved",
+      "evidence": "notebook.py#CP6 consultasvalores/ventana/denominador y EJEMPLO-RESUELTO.md#S08-MONITOR"
+    },
+    {
+      "id": "PED-INITIAL",
+      "status": "resolved",
+      "evidence": "Agendaúnica52slides, reveladoquiz, pausa sinApp prematura, configuración aislada sincronizable, CP3custom compatible, CP7Terminal/prompt y13entregasCP8"
+    }
+  ],
+  "unverified": [
+    "Este juez revisó artefactos/reportes y repitió comprobaciones locales de secuencia, tiempos y hashes; no ejecutó llamadas cloud ni la UI.",
+    "SSO interactivo no comprobado: requiere continuación manual para ese flujo particular. Es límite declarado, no gate adicional inventado al requisito de UI corporativa autenticada, acreditado por HTTP real/render según ejecución.",
+    "No hay ensayo de180min con estudiantes ni evidencia de aprendizaje de cohorte; no son requisitos de entregas reales previas al dictado.",
+    "La ejecución del notebook en verificar no prueba todas las mutaciones de crear. Los reportes separados corresponden al juez de ejecución.",
+    "Paridad final de ZIP/copia alumno y demás informes finales corresponde al gate de entrega; se excluyen de hashes para evitar circularidad.",
+    "No se afirma despliegue CI remoto, facturación medida ni rate limiting del agente; se enseñan configuración/compatibilidad/decisiones y se explicitan límites."
+  ],
+  "class_ready_reason": "A la firma se observó execution-judge PASS full-session y este PASS; curriculum-judge final aún no disponible. La raíz debe agregar los tres gates y QA actual antes de afirmar class_ready global."
+}

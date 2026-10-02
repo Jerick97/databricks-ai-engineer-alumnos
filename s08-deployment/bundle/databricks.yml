@@ -1,0 +1,54 @@
+bundle:
+  name: ais08-neptuno
+sync:
+  paths:
+    - ../app
+variables:
+  catalog:
+    description: Catálogo propio con Gold y RAG de S01-S07
+  schema:
+    description: Schema AIS08 aislado
+  app_name:
+    description: Nombre App AIS08 único en workspace
+  warehouse_id:
+    description: SQL warehouse asignado
+  model_name:
+    description: Modelo UC registrado y validado por CP1
+  model_version:
+    description: Versión NUMÉRICA; un alias no cambia Serving
+  endpoint_name:
+    description: Nombre endpoint AIS08 único en workspace
+resources:
+  model_serving_endpoints:
+    neptuno:
+      name: ${var.endpoint_name}
+      config:
+        served_entities:
+          - name: champion
+            entity_name: ${var.model_name}
+            entity_version: ${var.model_version}
+            workload_size: Small
+            scale_to_zero_enabled: true
+      ai_gateway:
+        inference_table_config:
+          enabled: true
+          catalog_name: ${var.catalog}
+          schema_name: ${var.schema}
+          table_name_prefix: ais08_bundle
+  apps:
+    neptuno_ui:
+      name: ${var.app_name}
+      source_code_path: ../app
+      resources:
+        - name: neptuno-endpoint
+          serving_endpoint:
+            name: ${resources.model_serving_endpoints.neptuno.name}
+            permission: CAN_QUERY
+targets:
+  dev:
+    default: true
+    mode: development
+  prod:
+    mode: production
+    # Configura host de workspace PROD mediante autenticación/perfil separado.
+    # Mover artefacto = deploy model; volver a ejecutar pipeline/test = deploy code.

@@ -1,0 +1,9 @@
+{
+  "end_time_ms": 1790479512610,
+  "object_id": "f978ce71-ee30-4d43-88d3-60fb00453548",
+  "object_type": "table",
+  "refresh_id": 475892185802083,
+  "start_time_ms": 1790479044858,
+  "state": "MONITOR_REFRESH_STATE_SUCCESS",
+  "trigger": "MONITOR_REFRESH_TRIGGER_MANUAL"
+}

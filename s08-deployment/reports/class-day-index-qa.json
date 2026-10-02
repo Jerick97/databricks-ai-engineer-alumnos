@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-28T19:31:55.764620+00:00",
+  "scope": "local index render/navigation; live CP4 separate",
+  "artifact_hashes": {
+    "index.html": "ed6ec63948319ee3e02eb9c928ec340b8c322281039f01293452a584f43e6dad"
+  },
+  "checks": [
+    {
+      "width": 1280,
+      "no_overflow": true,
+      "teacher_link": true,
+      "student_distinct": true,
+      "local_targets_exist": true
+    },
+    {
+      "width": 390,
+      "no_overflow": true,
+      "teacher_link": true,
+      "student_distinct": true,
+      "local_targets_exist": true
+    }
+  ],
+  "pass": true,
+  "visual_inspection": "Root inspected rendered 390px full-page screenshot: readable cards, distinct teacher/student links, no clipped text."
+}

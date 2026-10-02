@@ -1,0 +1,26 @@
+{
+  "at": "2026-09-28T05:25:32.056611+00:00",
+  "skills": [
+    "CreatorZ reused",
+    "SK02 0.1.9"
+  ],
+  "baseline_commit": "5a03e93",
+  "scope": "Ordinal dashwithoutdot only in explicitDCF; local no normative rereview",
+  "hashes": {
+    "skills/sbs-fundacion-datos/SKILL.md": "62e23b69852e169d701372c9a37b5f723dcc8e19e8063d71c32463f3f7e6b71a",
+    "src/sbs/foundation/structure.py": "aaa63da7bf1abb32addda8320cf4c8ee14c185078da53d5f90f0728ecae88176",
+    "tests/unit/test_foundation_structure.py": "8e983ee1ea0f5ad2ed5c733c90ca6efd96dd703b1adf8c6ee23f71961b7f90df",
+    "runs/sk02-structure-cyber-020-result.json": "3d9232caf44fc08d5d2701d1e7fa5988d06be26d116fe6d6954df09a0ec9afcd",
+    "/Users/macdenix/clawd/openclaw-codex/openclaw-workspace/skills/skill-creator-z/SKILL.md": "913c602cca1fcc8bfbe6a7b6300199f098c178970952302579d152029491fc99"
+  },
+  "source_parents": {
+    "data/foundation-repository/derived/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/result.json": "aca479067212837e1b6d90742892ca630a2ab0699e27b447eb729379c9d19379",
+    "data/foundation-repository/derived/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/rawtext.txt": "66b63adace8a5e1f053d9af72b0c5fe45780cba6b6c1d0670673f1fcde919ce2",
+    "data/foundation-repository/objects/10/1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771.pdf": "1077e8f94ce8c810435fc458953de9cb9a3c5a78d67324dd2fd59d9937505771",
+    "runs/sk02-structure-cyber-020-1.json": "4c88104722c5909608e85206d51ed6d55503f8a84df695e4ccd3fcb19a75447e",
+    "data/foundation-repository/derived/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/result.json": "65b2304a6379933215424b0d077881bfd3ab9fcd631512ae1575e55013960488",
+    "data/foundation-repository/derived/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18/a8f3b99977689ca1cc5c4d873bdbcbbc397afa68bc979118e8a5038e6b8b60e5/24800457398a1fcb94b0d42a399370b655ecd39ae085cd24b0bb486e29b51ce9/rawtext.txt": "1481d6a74d7f6988a2bdcb10081724101b41553fdfca03279a3dcb8076d96a3a",
+    "data/foundation-repository/objects/b8/b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18.pdf": "b8415c6ed06f908cf892dc4c39873345fc0dacc95106ebc4a41c55d914195f18",
+    "runs/sk02-structure-cyber-020-2.json": "86fe1fc250e0e8449f94c66cd7be0ebda7aa1be423116d18d5d39956faac81cc"
+  }
+}

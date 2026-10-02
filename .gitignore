@@ -25,3 +25,17 @@ terraform.tfvars
 # sistema
 .DS_Store
 
+
+# Publicación S08 / SBS Radar
+**/__pycache__/
+**/.venv/
+**/node_modules/
+.env
+.env.*
+**/foquito-key.js
+**/*.pem
+**/*.sqlite
+**/deployment/state/
+**/*-authorization.json
+**/.terraform/
+**/*.tfstate*

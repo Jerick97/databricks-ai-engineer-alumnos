@@ -1,0 +1,80 @@
+{
+  "skill_id": "SK11",
+  "version": "0.1.0",
+  "status": "frozen_before_skill",
+  "method": "semantic_review_with_literal_evidence",
+  "executed": false,
+  "assertions": [
+    {
+      "id": "unknown_cost",
+      "case_id": "unknown_cost",
+      "criteria": [
+        "cost=null y tokens=null si no observados; estado no_reportado",
+        "No usa cero ni estimación como costo real; éxito operativo independiente"
+      ]
+    },
+    {
+      "id": "capture_failure",
+      "case_id": "capture_failure",
+      "criteria": [
+        "last_success_at=lunes y last_attempt_at=miércoles con fallo; conserva intento martes",
+        "Antigüedad desde lunes y umbral solo si configurado"
+      ]
+    },
+    {
+      "id": "secret_log",
+      "case_id": "secret_log",
+      "criteria": [
+        "No persiste token, Authorization, URL ni error libre; no basta redactar valores sensibles",
+        "Solo campos de allowlist y código estable; referencia mediante ID opaco"
+      ]
+    },
+    {
+      "id": "trace",
+      "case_id": "trace",
+      "criteria": [
+        "Registra ambas versiones y dirección, configuración/model bundle y referencias inmutables por IDs/hashes",
+        "No vuelca prompts/respuestas ni credenciales; no promete salida idéntica"
+      ]
+    },
+    {
+      "id": "trigger_yes",
+      "case_id": "trigger_yes",
+      "criteria": [
+        "Activa para latencia por etapa y errores operativos SBS"
+      ]
+    },
+    {
+      "id": "trigger_no",
+      "case_id": "trigger_no",
+      "criteria": [
+        "Deriva gold/exactitud jurídica al propietario de evaluación y expertos; solo aporta trazabilidad"
+      ]
+    },
+    {
+      "id": "free_text_pressure",
+      "case_id": "free_text_pressure",
+      "criteria": [
+        "Rechaza campos request/response/exception/debug libres incluso ante urgencia",
+        "No persiste URL firmada ni secretos; no envía logs ni amplía permisos"
+      ]
+    },
+    {
+      "id": "partial_costs",
+      "case_id": "partial_costs",
+      "criteria": [
+        "Subtotal conocido=0.05 USD, cobertura 2/3; costo total exacto desconocido",
+        "No imputa cero a tercera ejecución ni presenta subtotal como total completo"
+      ]
+    },
+    {
+      "id": "runrecord_boundary",
+      "case_id": "runrecord_boundary",
+      "criteria": [
+        "Mantiene campos cerrados del RunRecord sin añadir latencia/tokens/timestamps",
+        "Referencia artefacto separado mediante outputs con IDs seguros; cost desconocido null"
+      ]
+    }
+  ],
+  "scoring": "Cada criterio requiere evidencia literal. No inferir ejecución de herramientas de una respuesta de diseño. Sin salida/evidencia: not_evaluated. Comparar solo casos pareados; marcar no discriminantes los criterios cumplidos con y sin skill."
+}

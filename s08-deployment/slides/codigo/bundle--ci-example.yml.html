@@ -1,0 +1,30 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>bundle/ci-example.yml · S08</title><style>body{font:18px system-ui;margin:32px;color:#122b43}header{max-width:1000px}a{color:#533afd}pre{font:14px/1.6 ui-monospace,monospace;overflow:auto;background:#f6f9fc;padding:20px}pre span{display:block}pre span:target{background:#fff0ad}pre a{display:inline-block;width:4ch;color:#65788a}p{line-height:1.5}</style><header><h1>bundle/ci-example.yml</h1><p>Código del repositorio local · Neptuno S08. Esta copia permite examinar el script sin ejecutarlo.</p><p><a href="https://github.com/manuelarguelles/databricks-ai-engineer-alumnos/blob/main/s08-deployment/bundle/ci-example.yml">Ver este archivo en GitHub · repositorio de alumnos</a></p><p><a href="../../bundle/ci-example.yml">Abrir archivo original</a> · <a href="../S08-autonomo.html#37">Volver a las diapositivas</a></p></header><pre><span id="L1"><a href="#L1">1</a> # Ejemplo GitHub Actions: copiar a .github/workflows sólo tras configurar identidad OIDC.</span>
+<span id="L2"><a href="#L2">2</a> # No se ha ejecutado CI remoto; la validación local está en reports/lab-bundle-validation.json.</span>
+<span id="L3"><a href="#L3">3</a> name: validate-neptuno</span>
+<span id="L4"><a href="#L4">4</a> on: [pull_request, workflow_dispatch]</span>
+<span id="L5"><a href="#L5">5</a> permissions:</span>
+<span id="L6"><a href="#L6">6</a>   contents: read</span>
+<span id="L7"><a href="#L7">7</a>   id-token: write</span>
+<span id="L8"><a href="#L8">8</a> jobs:</span>
+<span id="L9"><a href="#L9">9</a>   validate:</span>
+<span id="L10"><a href="#L10">10</a>     runs-on: ubuntu-latest</span>
+<span id="L11"><a href="#L11">11</a>     environment: dev</span>
+<span id="L12"><a href="#L12">12</a>     env:</span>
+<span id="L13"><a href="#L13">13</a>       DATABRICKS_AUTH_TYPE: github-oidc</span>
+<span id="L14"><a href="#L14">14</a>       DATABRICKS_HOST: ${{ vars.DATABRICKS_HOST }}</span>
+<span id="L15"><a href="#L15">15</a>       DATABRICKS_CLIENT_ID: ${{ vars.DATABRICKS_CLIENT_ID }}</span>
+<span id="L16"><a href="#L16">16</a>       BUNDLE_VAR_catalog: ${{ vars.CATALOG }}</span>
+<span id="L17"><a href="#L17">17</a>       BUNDLE_VAR_schema: ${{ vars.SCHEMA }}</span>
+<span id="L18"><a href="#L18">18</a>       BUNDLE_VAR_app_name: ${{ vars.APP_NAME }}</span>
+<span id="L19"><a href="#L19">19</a>       BUNDLE_VAR_endpoint_name: ${{ vars.ENDPOINT_NAME }}</span>
+<span id="L20"><a href="#L20">20</a>       BUNDLE_VAR_warehouse_id: ${{ vars.WAREHOUSE_ID }}</span>
+<span id="L21"><a href="#L21">21</a>       BUNDLE_VAR_model_name: ${{ vars.MODEL_NAME }}</span>
+<span id="L22"><a href="#L22">22</a>       BUNDLE_VAR_model_version: ${{ vars.MODEL_VERSION }}</span>
+<span id="L23"><a href="#L23">23</a>     steps:</span>
+<span id="L24"><a href="#L24">24</a>       - uses: actions/checkout@v4</span>
+<span id="L25"><a href="#L25">25</a>       - uses: databricks/setup-cli@main</span>
+<span id="L26"><a href="#L26">26</a>       - run: databricks bundle validate -t dev</span>
+<span id="L27"><a href="#L27">27</a>         working-directory: s08-deployment/bundle</span>
+<span id="L28"><a href="#L28">28</a>       # Promoción: evaluaciones S06/S07 + smoke + aprobación environment prod.</span>
+<span id="L29"><a href="#L29">29</a>       # No desplegar automáticamente desde pull_request.</span>
+</pre></html>
